@@ -1,0 +1,46 @@
+# General
+.DS_Store
+*.swp
+*.bak
+
+# IDE specific
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+*.env
+
+# ROS 2 Workspace
+build/
+install/
+log/
+
+# C/C++ Build artifacts
+*.o
+*.obj
+*.exe
+*.out
+*.elf
+*.map
+*.a
+*.so
+*.dll
+Debug/
+Release/
+
+# MATLAB & Simulink
+slprj/
+*.autosave
+*._ert_rtw/
+*.mex*
+*.asv
+*.r_mat
+*.slxc
+*_ert_rtw/
