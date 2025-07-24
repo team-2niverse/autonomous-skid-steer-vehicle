@@ -18,7 +18,7 @@ Libraries/iLLD/TC37A/Tricore/Can/Std/IfxCan.o
 
 # Each subdirectory must supply rules for building sources it contributes
 Libraries/iLLD/TC37A/Tricore/Can/Std/IfxCan.src: ../Libraries/iLLD/TC37A/Tricore/Can/Std/IfxCan.c Libraries/iLLD/TC37A/Tricore/Can/Std/subdir.mk
-	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/AURIX_WS2/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/Coding/C/proj1/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 Libraries/iLLD/TC37A/Tricore/Can/Std/IfxCan.o: Libraries/iLLD/TC37A/Tricore/Can/Std/IfxCan.src Libraries/iLLD/TC37A/Tricore/Can/Std/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 

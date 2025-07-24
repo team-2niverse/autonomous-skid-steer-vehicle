@@ -32,6 +32,7 @@
 #include "can.h"
 #include "GPIO.h"
 #include "asclin.h"
+#include "Motor.h"
 /*********************************************************************************************************************/
 /*------------------------------------------------------Macros-------------------------------------------------------*/
 /*********************************************************************************************************************/
@@ -64,6 +65,7 @@ void CanTxIsrHandler (void)
 }
 
 /* Default CAN Rx Handler */
+
 IFX_INTERRUPT(CanRxIsrHandler, 0, ISR_PRIORITY_CAN_RX);
 void CanRxIsrHandler (void)
 {
@@ -71,18 +73,44 @@ void CanRxIsrHandler (void)
     unsigned char rxData[8] = {0, };
     int rxLen;
     CAN_RecvMsg(&rxID, rxData, &rxLen);
-//    my_puts(rxData);
-//    my_puts("\r");
-    my_printf("CAN Rx: ");
-    for (int i = 0; i < rxLen; i++)
-    {
-        my_printf("%c", rxData[i]);
-    }
-    my_printf("\n");
+    // ¼Óµµ µ¥ÀÌÅÍ ÃßÃâ (Byte 0 - signed 8bit)
+    int8_t speed_raw = (int8_t)rxData[0];
+    int speed = (int)speed_raw; //-100~100
 
-    GPIO_SetLed(2, 1);
-    delay_ms(1);
-    GPIO_SetLed(2, 0);
+    // Á¶Çâ°¢ µ¥ÀÌÅÍ ÃßÃâ (Byte 1 - signed 8bit)
+    int8_t steering_raw = (int8_t)rxData[1];
+    int steering_angle = (int)steering_raw; //-100~100
+
+    // µ¥ÀÌÅÍ À¯È¿¼º °ËÁõ
+    if (speed >= -100 && speed <= 100 &&
+        steering_angle >= -100 && steering_angle <= 100) {
+
+        // À¯È¿ÇÑ µ¥ÀÌÅÍ Ã³¸®
+        int left_pwm=0; //pwm value
+        int right_pwm = 0 ;
+        int fb_way = 0; //motor dir (0;forward, 1:backward);
+        if (speed < 0){
+           left_pwm = -speed;
+           right_pwm = -speed;
+           fb_way = 1;
+        }
+        else if (speed > 0){
+            left_pwm = speed;
+            right_pwm=speed;
+        }
+        if (steering_angle > 0){
+            right_pwm -= steering_angle;
+        }
+        else if (steering_angle < 0){
+            left_pwm -= steering_angle;
+        }
+        Motor_movChA_PWM(right_pwm, fb_way);
+        Motor_movChB_PWM(left_pwm, fb_way);
+    } else {
+        my_printf("Invalid data received!\n");
+        my_printf("Speed: %d, Steering: %d\n", speed, steering_angle);
+    }
+
 }
 
 
@@ -103,7 +131,7 @@ void CAN_Init(CAN_BAUDRATES ls_baudrate, CAN_NODE CAN_Node){
     }
     g_mcmcan.canNodeConfig.busLoopbackEnabled = FALSE;
 
-    //PIN ì„¤ì •
+    //PIN mode
     if (CAN_Node == CAN_NODE0) { /* CAN Node 0 for lite kit */
         g_mcmcan.canNodeConfig.nodeId = IfxCan_NodeId_0;
         const IfxCan_Can_Pins pins =

@@ -22,11 +22,11 @@ Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.o
 
 # Each subdirectory must supply rules for building sources it contributes
 Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.src: ../Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.c Libraries/Service/CpuGeneric/SysSe/Bsp/subdir.mk
-	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/AURIX_WS2/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/Coding/C/proj1/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.o: Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.src Libraries/Service/CpuGeneric/SysSe/Bsp/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.src: ../Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.c Libraries/Service/CpuGeneric/SysSe/Bsp/subdir.mk
-	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/AURIX_WS2/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/Coding/C/proj1/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.o: Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.src Libraries/Service/CpuGeneric/SysSe/Bsp/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 
