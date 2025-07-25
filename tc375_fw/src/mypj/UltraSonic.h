@@ -54,6 +54,7 @@
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
 /*********************************************************************************************************************/
 void Ultrasonics_Init(void);
+void US_TestPinSetting(void);
 float Ultrasonic_ReadSensor_noFilt(void);
 void Ultrasonic_IR_Read_noFilt(void);
 void US_IR_init(void);

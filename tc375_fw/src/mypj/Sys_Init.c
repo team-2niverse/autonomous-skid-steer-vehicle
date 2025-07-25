@@ -72,6 +72,7 @@ void SYSTEM_INIT(void){
 //    Asclin1_InitUart();
 //    Evadc_Init();
     Motor_Init();
+    Encoder_Init();
 }
 
 

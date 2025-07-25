@@ -53,8 +53,8 @@
 
 void gpt1_init(void){
     //use CPU1 !!!! can't use CPU0;
-    IfxScuWdt_clearCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());//DISR비트가 보호되고 있어서 watch dog time를 꺼야함.
-    MODULE_GPT120.CLC.U = 0; //DISR enable설정
+    IfxScuWdt_clearCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());//DISR watch dog time
+    MODULE_GPT120.CLC.U = 0; //DISR enable
     IfxScuWdt_setCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());
 
     //T3 Timer
@@ -64,8 +64,8 @@ void gpt1_init(void){
     MODULE_GPT120.T3CON.B.BPS1 = 0x2;
 
     MODULE_GPT120.T3CON.B.T3UD = 0x1; //direction : count down
-//    MODULE_GPT120.T3.U = 375; // 1clock = 10.24us => 375clock = 3840.00 us => 3옥타브 도의 130hz,7692us 주기의 대략 절반
-    MODULE_GPT120.T3.U =  93; //5옥타브 도
+//    MODULE_GPT120.T3.U = 375; // 1clock = 10.24us => 375clock = 3840.00 us => 130hz,7692us
+    MODULE_GPT120.T3.U =  93; //5
 
     //T2 Timer
     MODULE_GPT120.T2CON.B.T2M = 0x4; //set reload mode. //Part2M, p30-15
@@ -87,24 +87,23 @@ void gpt1_init(void){
 
 void gpt2_init(void){
 
-    //part2 p30-58 default값이 003으로 초기화되서 0으로 설정해야 gpt12 모듈에 클럭 들어가고 동작을 시작함.
-    IfxScuWdt_clearCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());//DISR비트가 보호되고 있어서 watch dog time를 꺼야함.
-    MODULE_GPT120.CLC.U = 0; //DISR enable설정
+    //part2 p30-58 default
+    IfxScuWdt_clearCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());//
+    MODULE_GPT120.CLC.U = 0; //DISR enable
     IfxScuWdt_setCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());
 
     MODULE_GPT120.T6CON.B.T6M = 0x0; //set timer mode (p30-48)
 
-    //prescaler set 4 (ref Table 227, part2 M p30-52) ==> CPU 100MHz일떄 타이머 입력클럭 100/4=25MHz
+    //prescaler set 4 (ref Table 227, part2 M p30-52) ==> CPU 100MHz 100/4=25MHz
     MODULE_GPT120.T6CON.B.BPS2= 0x0; //prescaler parameter
     MODULE_GPT120.T6CON.B.T6I = 0x0; //prescaler parameter
 
     MODULE_GPT120.T6CON.B.T6UD = 0x1; //config: count down
-    //아마 T6CON.B.T6UDE =0인듯? t6UD에 따라 방향 결정하고 EUD는 연결안됨.
 
     MODULE_GPT120.T6CON.B.T6OE = 0x1; //overflow/under flow output enable
     MODULE_GPT120.T6CON.B.T6SR = 0x1; //reload from register CAPREL enabled
 
-    MODULE_GPT120.T6.U = 250u; //25MHz이므로 10us마다 발생할 것.
+    MODULE_GPT120.T6.U = 250u; //25MHz = 250u tick =  10us.
 
     MODULE_GPT120.CAPREL.U = 250u; //set CAPREL reload value
 
@@ -115,7 +114,7 @@ void gpt2_init(void){
     src -> B.CLRR = 1;
     src -> B.SRE  = 1;
 //    runGpt12_T6();//timer run
-    //t3R=1;로 해도 됨?
+    //t3R=1;
 }
 
 
@@ -125,6 +124,14 @@ void gpt2_init(void){
 //static volatile unsigned int cntDelay = 0;
 static volatile unsigned int g_Cnt10us=0;
 IFX_INTERRUPT(IsrGpt2T6BuzzerHandler, 0 , ISR_PRIORITY_GPT2T6_TIMER);
+void IsrGpt2T6USHandler(void){
+    g_Cnt10us++;
+    if (g_Cnt10us >= 2){
+        MODULE_P11.OUT.B.P12 = 0; // Rear TRIG_LOW
+        stopGpt12_T6();
+        g_Cnt10us=0;
+    }
+}
 void IsrGpt2T6BuzzerHandler(void){
     g_Cnt10us++;
     if (g_Cnt10us >= 2){

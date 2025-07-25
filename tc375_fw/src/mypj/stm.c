@@ -52,9 +52,9 @@
 /*********************************************************************************************************************/
 void interrupt1s(void){
 
-    //part2 p27-7 보면 CLC레지스터가 0으로 리셋되기 때문에 항상 동작해서 이렇게 안켜도 알아서 켜짐.
-//    IfxScuWdt_clearCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());//DISR비트가 보호되고 있어서 watch dog time를 꺼야함.
-//    MODULE_STM0.CLC.U = 0; //DISR enable설정
+    //part2 p27-7
+//    IfxScuWdt_clearCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());//DISR
+//    MODULE_STM0.CLC.U = 0; //DISR enable
 //    IfxScuWdt_setCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());
 
     MODULE_STM0.CMCON.B.MSIZE0 = 31; //compare 32 bit size
@@ -68,15 +68,15 @@ void interrupt1s(void){
 
     MODULE_STM0.ISCR.B.CMP0IRR = 1U; // clear interrupt Req.
     MODULE_STM0.ICR.B.CMP0EN = 1U; // Enable Interrupt
-    //=> 인터럽트를 설정했으니, CMP0IR 비트를 통해 인터럽트를 발생시킴.
+
 
     //set compare register to current time + 1s
-    MODULE_STM0.CMP[0].U = (unsigned int)(getTimeUs()+1000000) * 100; //100Mhz => 0.01us = 1tick당 1 count => 1us = 100tick 당 100 count
+    MODULE_STM0.CMP[0].U = (unsigned int)(getTimeUs()+1000000) * 100; //100Mhz => 0.01us = 1tick 1 count => 1us = 100tick 100 count
 
 }
 
 uint64 getTimeNs(void){
-    float32 frequency = 100000000.0f; //100Mhz
+//    float32 frequency = 100000000.0f; //100Mhz
     uint64 result;
     //read 64bit System Timer
     result = MODULE_STM0.TIM0.U;
@@ -97,9 +97,9 @@ uint64 getTimeUs(void){
     return result / (frequency/1000000); //100Mhz count, 1clock is 0.01us;
 }
 
-IFX_INTERRUPT(Stm0IsrHandler, 0 ,ISR_PRIORITY_STM0);//인터럽트 벡터 테이블에 해당 우선순위에 대응되는 공간에 ISR을 매핑
-void Stm0IsrHandler(void){ //ISR정의
+IFX_INTERRUPT(Stm0IsrHandler, 0 ,ISR_PRIORITY_STM0);//
+void Stm0IsrHandler(void){ //ISR
     MODULE_STM0.ISCR.B.CMP0IRR = 1U; // clear interrupt Req.
     MODULE_STM0.CMP[0].U = (unsigned int)(getTimeUs()+1000000)*100;
-    my_printf("STM!\n");
+//    my_printf("STM!\n");
 }

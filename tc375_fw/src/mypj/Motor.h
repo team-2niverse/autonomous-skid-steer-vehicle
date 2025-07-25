@@ -33,6 +33,8 @@
 /*********************************************************************************************************************/
 #include "IfxPort_reg.h"
 #include "gtm_atom_pwm.h"
+
+#include "isr_priority.h"
 /*********************************************************************************************************************/
 /*------------------------------------------------------Macros-------------------------------------------------------*/
 /*********************************************************************************************************************/
@@ -60,5 +62,10 @@ void Motor_movChA_PWM(int duty, int dir);
 void Motor_movChB(int dir);
 void Motor_stopChB(void);
 void Motor_movChB_PWM(int duty, int dir);
+
+void Encoder_Init(void);
+void Encoder_Int0_Handler(void);
+uint64 get_encoder(void);
+double get_V(void);
 
 #endif /* MOTOR_H_ */

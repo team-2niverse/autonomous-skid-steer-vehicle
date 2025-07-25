@@ -29,115 +29,36 @@
 #include "Cpu0_Main.h"
 //#include "CompilerTasking.h"
 //IFX_ALIGN(4) IfxCpu_syncEvent g_cpuSyncEvent = 0;
+//extern uint64 timer_start;
+//extern uint64 timer_end;
 
 
 void core0_main(void)
 {
     SYSTEM_INIT();
 
-    my_printf("BT start\n");
+    my_printf("Test start\n");
+    uint64 prev_encoder = get_encoder();
 
-
+    uint64 prev_time = getTimeUs();
+    my_printf("first : %d %llu\n", prev_encoder, prev_time);
+    uint64 now_time;
+    uint64 now_encoder;
+//    US_TestPinSetting();
+    int i = 100 ;
+    Motor_movChB_PWM(i, 0);
     while(1){
-        Motor_movChA_PWM(100, 1);
-        Motor_movChB_PWM(100, 1);
-        delay_ms(1000);
-
-        my_printf("50, 1 start\n");
-        Motor_movChA_PWM(50, 1);
-        Motor_movChB_PWM(50, 1);
-        delay_ms(3000);
-
-        my_printf("stop start\n");
-        Motor_movChA_PWM(0, 1);
-        Motor_movChB_PWM(0, 1);
-        delay_ms(1000);
-
-        my_printf("1000, 0 start\n");
-        Motor_movChA_PWM(100,0);
-        Motor_movChB_PWM(100,0);
-        delay_ms(3000);
-
-        my_printf("50, 0 start\n");
-        Motor_movChA_PWM(50, 0);
-        Motor_movChB_PWM(50, 0);
-        delay_ms(1000);
-
-//        my_printf("50, 0 start\n");
-//        Motor_movChA_PWM(30, 0);
-//        Motor_movChB_PWM(30, 0);
-//        delay_ms(3000);
-
-        my_printf("0, 0 start\n");
-        Motor_movChA_PWM(0, 0);
-        Motor_movChB_PWM(0, 0);
-        delay_ms(3000);
+//        if (MODULE_P15.IN.B.P4){
+//            prev_encoder++;
+//            my_printf("prev : %d\n", prev_encoder);
+//        }
+//        else{
+//            my_printf("black : 0\n");
+//        }
+//        i--;
+//        if (i < 0) i = 100;
+        my_printf("encoder ; %d | vel : %f\n", get_encoder(), get_V());
 
 
     };
-
-//    char data[40];
-//    int rxLen;
-//    unsigned int rxID;
-//    while(1) {
-//    CAN_SendMsg(0x10, (unsigned char *)"HiNGV!\r\n", 8);
-//    delay_ms(1000);
-//        CAN_RecvMsg(&rxID, data, &rxLen);
-//        my_printf("CAN Rx: ");
-//        for (int i = 0; i < rxLen; i++)
-//        {
-//            my_printf("%c", data[i]);
-//        }
-//        my_printf("\n");
-//        memset(data, 0, sizeof(data));
-//    }
-//    MODULE_P10.IOCR0.B.PC2 = 0x10; // Set Ch-B DIR as output
-//    MODULE_P02.IOCR4.B.PC6 = 0x10; // Set Ch-B Break as output
-//    MODULE_P10.IOCR0.B.PC3 = 0x10; // Set Ch-B Pwm as output
-//    MODULE_P10.OUT.B.P2 = 1; /* 모터 회전 방향 (1: 정방향, 0: 역방향) */
-//    MODULE_P02.OUT.B.P6 = 0; /* 모터 Brake 해제 (1: 정지, 0: PWM-B에 따라 동작) */
-//    MODULE_P10.OUT.B.P3 = 1; /* 모터 Duty 100% (항상 on) 제어 */
-//    delay_ms(5000);
-//    MODULE_P02.OUT.B.P6 = 1; /* 모터 Brake 동작 (1: 정지, 0: 모터 멈춤) */
-//    Motor_movChB_PWM(50,1);
-//    int duty = 1;
-//    int dir = 0;
-//    Bluetooth_SetName("BT-AAAACGU");
-//    my_printf("\n");
-//    delay_ms(2000);
-//    Bluetooth_SetPwd("1234");
-//    my_printf("\n");
-//    delay_ms(2000);
-//    Bluetooth_IsOK();
-//    delay_ms(2000);
-//    my_printf("setting over\n");
-//    Bluetooth_printf("Hello Bluetooth!\n");
-//    delay_ms(2000);
-//
-//
-//    while (1)
-//    {
-//        char ch = Bluetooth_RecvByteNonBlocked(); //bt -> tc375 message
-////        char ch = Bluetooth_RecvByteBlocked();
-//        //        unsigned char ch =  Asclin1_InUart();
-//        if (ch >= 0)
-//        {
-////            Bluetooth_SendByteBlocked(ch); //tc375 -> bt message
-////
-////            Bluetooth_printf(ch);
-////            Asclin0_OutUart(ch);
-//        }
-//    }
-
-//        if (dir)
-//            duty++;
-//        else
-//            duty--; //dir = 0이라서 duty -1되는데 괜찮나? => 초기값 1로 설정.
-//        if (duty>=100)
-//            dir = 0;
-//        if (duty <= 0)
-//            dir = 1;
-////        Motor_movChB_PWM(duty, 1);
-//        delay_ms(50);
-//        my_printf("duty: %d\n", duty);
 }

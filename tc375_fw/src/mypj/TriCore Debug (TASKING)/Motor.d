@@ -128,3 +128,5 @@ Motor.o :	"C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-veh
 "C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxDmu_regdef.h" :
 Motor.o :	"C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu.h"
 "C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu.h" :
+Motor.o :	..\isr_priority.h
+..\isr_priority.h :

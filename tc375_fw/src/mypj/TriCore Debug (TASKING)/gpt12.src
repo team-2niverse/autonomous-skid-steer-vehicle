@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc19940a --dep-file=gpt12.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\driver -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o gpt12.src ../gpt12.c"
+	.compiler_invocation	"ctc -f cc50372a --dep-file=gpt12.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\driver -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o gpt12.src ../gpt12.c"
 	.compiler_name		"ctc"
 	;source	'../gpt12.c'
 
@@ -13,99 +13,99 @@ $TC162
 	
 	.global	gpt1_init
 ; Function gpt1_init
-.L9:
+.L10:
 gpt1_init:	.type	func
 	call	IfxScuWdt_getGlobalEndinitPassword
 	mov	d4,d2
 	call	IfxScuWdt_clearCpuEndinit
-.L99:
+.L108:
 	mov	d15,#0
-.L100:
+.L109:
 	st.w	0xf0001800,d15
-.L101:
+.L110:
 	call	IfxScuWdt_getGlobalEndinitPassword
 	mov	d4,d2
 	call	IfxScuWdt_setCpuEndinit
-.L102:
+.L111:
 	ld.bu	d15,0xf0001814
-.L103:
+.L112:
 	insert	d15,d15,#0,#3,#3
 	st.b	0xf0001814,d15
-.L104:
+.L113:
 	ld.bu	d15,0xf0001814
-.L105:
+.L114:
 	insert	d15,d15,#5,#0,#3
 	st.b	0xf0001814,d15
-.L106:
+.L115:
 	ld.bu	d15,0xf0001815
-.L107:
+.L116:
 	insert	d15,d15,#2,#3,#2
 	st.b	0xf0001815,d15
-.L108:
+.L117:
 	ld.bu	d15,0xf0001814
-.L109:
+.L118:
 	or	d15,#128
 	st.b	0xf0001814,d15
-.L110:
+.L119:
 	mov	d15,#93
-.L111:
+.L120:
 	st.w	0xf0001838,d15
-.L112:
+.L121:
 	ld.bu	d15,0xf0001810
-.L113:
+.L122:
 	insert	d15,d15,#4,#3,#3
 	st.b	0xf0001810,d15
-.L114:
+.L123:
 	ld.bu	d15,0xf0001810
-.L115:
+.L124:
 	or	d15,#7
 	st.b	0xf0001810,d15
-.L116:
+.L125:
 	mov	d15,#93
-.L117:
+.L126:
 	st.w	0xf0001834,d15
-.L118:
+.L127:
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf00382e8)
-.L119:
+.L128:
 	mov	d15,#49
-.L120:
+.L129:
 	insert	d15,d0,d15,#0,#8
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf00382e8),d15
-.L121:
+.L130:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf00382eb)
-.L122:
+.L131:
 	or	d15,#2
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf00382eb),d15
-.L123:
+.L132:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf00382e9)
-.L124:
+.L133:
 	insert	d15,d15,#2,#3,#3
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf00382e9),d15
-.L125:
+.L134:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf00382e9)
-.L126:
+.L135:
 	or	d15,#4
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf00382e9),d15
-.L127:
+.L136:
 	ld.bu	d15,0xf0001814
-.L128:
+.L137:
 	or	d15,#64
 	st.b	0xf0001814,d15
-.L129:
+.L138:
 	ret
-.L77:
+.L85:
 	
 __gpt1_init_function_end:
 	.size	gpt1_init,__gpt1_init_function_end-gpt1_init
-.L34:
+.L37:
 	; End of function
 	
 	.sdecl	'.text.gpt12.gpt2_init',code,cluster('gpt2_init')
@@ -114,90 +114,137 @@ __gpt1_init_function_end:
 	
 	.global	gpt2_init
 ; Function gpt2_init
-.L11:
+.L12:
 gpt2_init:	.type	func
 	call	IfxScuWdt_getGlobalEndinitPassword
 	mov	d4,d2
 	call	IfxScuWdt_clearCpuEndinit
-.L134:
+.L143:
 	mov	d15,#0
-.L135:
+.L144:
 	st.w	0xf0001800,d15
-.L136:
+.L145:
 	call	IfxScuWdt_getGlobalEndinitPassword
 	mov	d4,d2
 	call	IfxScuWdt_setCpuEndinit
-.L137:
+.L146:
 	ld.bu	d15,0xf0001820
-.L138:
+.L147:
 	insert	d15,d15,#0,#3,#3
 	st.b	0xf0001820,d15
-.L139:
+.L148:
 	ld.bu	d15,0xf0001821
-.L140:
+.L149:
 	insert	d15,d15,#0,#3,#2
 	st.b	0xf0001821,d15
-.L141:
+.L150:
 	ld.bu	d15,0xf0001820
-.L142:
+.L151:
 	insert	d15,d15,#0,#0,#3
 	st.b	0xf0001820,d15
-.L143:
+.L152:
 	ld.bu	d15,0xf0001820
-.L144:
+.L153:
 	or	d15,#128
 	st.b	0xf0001820,d15
-.L145:
+.L154:
 	ld.bu	d15,0xf0001821
-.L146:
+.L155:
 	or	d15,#2
 	st.b	0xf0001821,d15
-.L147:
+.L156:
 	ld.bu	d15,0xf0001821
-.L148:
+.L157:
 	or	d15,#128
 	st.b	0xf0001821,d15
-.L149:
+.L158:
 	mov	d15,#250
-.L150:
+.L159:
 	st.w	0xf0001844,d15
-.L151:
+.L160:
 	mov	d15,#250
-.L152:
+.L161:
 	st.w	0xf0001830,d15
-.L79:
+.L87:
 	movh.a	a15,#61444
-.L90:
+.L99:
 	lea	a15,[a15]@los(0xf00382f4)
-.L153:
+.L162:
 	ld.bu	d0,[a15]
-.L154:
+.L163:
 	mov	d15,#51
-.L155:
+.L164:
 	insert	d15,d0,d15,#0,#8
 	st.b	[a15],d15
-.L156:
+.L165:
 	ld.bu	d15,[a15]1
-.L157:
+.L166:
 	insert	d15,d15,#0,#3,#3
 	st.b	[a15]1,d15
-.L158:
+.L167:
 	ld.bu	d15,[a15]3
-.L159:
+.L168:
 	or	d15,#2
 	st.b	[a15]3,d15
-.L160:
+.L169:
 	ld.bu	d15,[a15]1
-.L161:
+.L170:
 	or	d15,#4
 	st.b	[a15]1,d15
-.L162:
+.L171:
 	ret
-.L78:
+.L86:
 	
 __gpt2_init_function_end:
 	.size	gpt2_init,__gpt2_init_function_end-gpt2_init
-.L39:
+.L42:
+	; End of function
+	
+	.sdecl	'.text.gpt12.IsrGpt2T6USHandler',code,cluster('IsrGpt2T6USHandler')
+	.sect	'.text.gpt12.IsrGpt2T6USHandler'
+	.align	2
+	
+	.global	IsrGpt2T6USHandler
+; Function IsrGpt2T6USHandler
+.L14:
+IsrGpt2T6USHandler:	.type	func
+	movh.a	a15,#@his(g_Cnt10us)
+	lea	a15,[a15]@los(g_Cnt10us)
+	movh.a	a2,#@his(g_Cnt10us)
+	lea	a2,[a2]@los(g_Cnt10us)
+	ld.w	d15,[a2]
+.L176:
+	add	d15,#1
+	st.w	[a15],d15
+.L177:
+	movh.a	a15,#@his(g_Cnt10us)
+	lea	a15,[a15]@los(g_Cnt10us)
+	ld.w	d15,[a15]
+.L178:
+	jlt.u	d15,#2,.L2
+.L179:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf003ab01)
+.L180:
+	insert	d15,d15,#0,#4,#1
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf003ab01),d15
+.L181:
+	call	stopGpt12_T6
+.L182:
+	movh.a	a15,#@his(g_Cnt10us)
+	lea	a15,[a15]@los(g_Cnt10us)
+.L183:
+	mov	d15,#0
+.L184:
+	st.w	[a15],d15
+.L2:
+	ret
+.L90:
+	
+__IsrGpt2T6USHandler_function_end:
+	.size	IsrGpt2T6USHandler,__IsrGpt2T6USHandler_function_end-IsrGpt2T6USHandler
+.L47:
 	; End of function
 	
 	.sdecl	'.text.inttab0.intvec.033',code
@@ -211,48 +258,48 @@ __gpt2_init_function_end:
 	
 	.global	IsrGpt2T6BuzzerHandler
 ; Function IsrGpt2T6BuzzerHandler
-.L13:
+.L16:
 IsrGpt2T6BuzzerHandler:	.type	func
 	svlcx
-.L185:
+.L207:
 	movh.a	a15,#@his(g_Cnt10us)
 	lea	a15,[a15]@los(g_Cnt10us)
 	movh.a	a12,#@his(g_Cnt10us)
 	lea	a12,[a12]@los(g_Cnt10us)
 	ld.w	d15,[a12]
-.L186:
+.L208:
 	add	d15,#1
 	st.w	[a15],d15
-.L187:
+.L209:
 	movh.a	a15,#@his(g_Cnt10us)
 	lea	a15,[a15]@los(g_Cnt10us)
 	ld.w	d15,[a15]
-.L188:
-	jlt.u	d15,#2,.L2
-.L189:
+.L210:
+	jlt.u	d15,#2,.L3
+.L211:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003ad00)
-.L190:
+.L212:
 	insert	d15,d15,#0,#2,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003ad00),d15
-.L191:
+.L213:
 	call	stopGpt12_T6
-.L192:
+.L214:
 	movh.a	a15,#@his(g_Cnt10us)
 	lea	a15,[a15]@los(g_Cnt10us)
-.L193:
+.L215:
 	mov	d15,#0
-.L194:
+.L216:
 	st.w	[a15],d15
-.L2:
+.L3:
 	rslcx
 	rfe
-.L83:
+.L92:
 	
 __IsrGpt2T6BuzzerHandler_function_end:
 	.size	IsrGpt2T6BuzzerHandler,__IsrGpt2T6BuzzerHandler_function_end-IsrGpt2T6BuzzerHandler
-.L49:
+.L57:
 	; End of function
 	
 	.sdecl	'.text.gpt12.IsrGpt2T6Handler',code,cluster('IsrGpt2T6Handler')
@@ -261,59 +308,59 @@ __IsrGpt2T6BuzzerHandler_function_end:
 	
 	.global	IsrGpt2T6Handler
 ; Function IsrGpt2T6Handler
-.L15:
+.L18:
 IsrGpt2T6Handler:	.type	func
 	movh.a	a15,#@his(g_Cnt10us)
 	lea	a15,[a15]@los(g_Cnt10us)
 	movh.a	a2,#@his(g_Cnt10us)
 	lea	a2,[a2]@los(g_Cnt10us)
 	ld.w	d15,[a2]
-.L167:
+.L189:
 	add	d15,#1
 	st.w	[a15],d15
-.L168:
+.L190:
 	movh.a	a15,#@his(g_Cnt10us)
 	lea	a15,[a15]@los(g_Cnt10us)
 	ld.w	d15,[a15]
-.L169:
+.L191:
 	mov	d0,#10000
-.L170:
+.L192:
 	div.u	e0,d15,d0
-.L171:
-	jne	d1,#0,.L3
-.L172:
-	call	Task_100ms
-.L3:
-	movh.a	a15,#@his(g_Cnt10us)
-	lea	a15,[a15]@los(g_Cnt10us)
-	ld.w	d15,[a15]
-.L173:
-	mov	d0,#20000
-.L174:
-	div.u	e0,d15,d0
-.L175:
+.L193:
 	jne	d1,#0,.L4
-.L176:
-	call	Task_200ms
+.L194:
+	call	Task_100ms
 .L4:
 	movh.a	a15,#@his(g_Cnt10us)
 	lea	a15,[a15]@los(g_Cnt10us)
 	ld.w	d15,[a15]
-.L177:
-	mov.u	d0,#50000
-.L178:
+.L195:
+	mov	d0,#20000
+.L196:
 	div.u	e0,d15,d0
-.L179:
+.L197:
 	jne	d1,#0,.L5
-.L180:
-	call	Task_500ms
+.L198:
+	call	Task_200ms
 .L5:
+	movh.a	a15,#@his(g_Cnt10us)
+	lea	a15,[a15]@los(g_Cnt10us)
+	ld.w	d15,[a15]
+.L199:
+	mov.u	d0,#50000
+.L200:
+	div.u	e0,d15,d0
+.L201:
+	jne	d1,#0,.L6
+.L202:
+	call	Task_500ms
+.L6:
 	ret
-.L82:
+.L91:
 	
 __IsrGpt2T6Handler_function_end:
 	.size	IsrGpt2T6Handler,__IsrGpt2T6Handler_function_end-IsrGpt2T6Handler
-.L44:
+.L52:
 	; End of function
 	
 	.sdecl	'.text.gpt12.runGpt12_T6',code,cluster('runGpt12_T6')
@@ -322,19 +369,19 @@ __IsrGpt2T6Handler_function_end:
 	
 	.global	runGpt12_T6
 ; Function runGpt12_T6
-.L17:
+.L20:
 runGpt12_T6:	.type	func
 	ld.bu	d15,0xf0001820
-.L199:
+.L221:
 	or	d15,#64
 	st.b	0xf0001820,d15
-.L200:
+.L222:
 	ret
-.L84:
+.L93:
 	
 __runGpt12_T6_function_end:
 	.size	runGpt12_T6,__runGpt12_T6_function_end-runGpt12_T6
-.L54:
+.L62:
 	; End of function
 	
 	.sdecl	'.text.gpt12.stopGpt12_T6',code,cluster('stopGpt12_T6')
@@ -343,19 +390,19 @@ __runGpt12_T6_function_end:
 	
 	.global	stopGpt12_T6
 ; Function stopGpt12_T6
-.L19:
+.L22:
 stopGpt12_T6:	.type	func
 	ld.bu	d15,0xf0001820
-.L205:
+.L227:
 	insert	d15,d15,#0,#6,#1
 	st.b	0xf0001820,d15
-.L206:
+.L228:
 	ret
-.L85:
+.L94:
 	
 __stopGpt12_T6_function_end:
 	.size	stopGpt12_T6,__stopGpt12_T6_function_end-stopGpt12_T6
-.L59:
+.L67:
 	; End of function
 	
 	.sdecl	'.text.gpt12.Task_100ms',code,cluster('Task_100ms')
@@ -364,30 +411,30 @@ __stopGpt12_T6_function_end:
 	
 	.global	Task_100ms
 ; Function Task_100ms
-.L21:
+.L24:
 Task_100ms:	.type	func
 	call	GPIO_getSW1
-.L211:
-	jeq	d2,#0,.L6
-.L212:
+.L233:
+	jeq	d2,#0,.L7
+.L234:
 	mov	d4,#2
-.L213:
+.L235:
 	mov	d5,#1
 	call	GPIO_SetLed
-.L214:
-	j	.L7
-.L6:
+.L236:
+	j	.L8
+.L7:
 	mov	d4,#2
-.L215:
+.L237:
 	mov	d5,#0
 	call	GPIO_SetLed
-.L7:
+.L8:
 	ret
-.L86:
+.L95:
 	
 __Task_100ms_function_end:
 	.size	Task_100ms,__Task_100ms_function_end-Task_100ms
-.L64:
+.L72:
 	; End of function
 	
 	.sdecl	'.text.gpt12.Task_200ms',code,cluster('Task_200ms')
@@ -396,18 +443,18 @@ __Task_100ms_function_end:
 	
 	.global	Task_200ms
 ; Function Task_200ms
-.L23:
+.L26:
 Task_200ms:	.type	func
 	movh.a	a4,#@his(.2.str)
 	lea	a4,[a4]@los(.2.str)
 	call	my_printf
-.L220:
+.L242:
 	ret
-.L87:
+.L96:
 	
 __Task_200ms_function_end:
 	.size	Task_200ms,__Task_200ms_function_end-Task_200ms
-.L69:
+.L77:
 	; End of function
 	
 	.sdecl	'.text.gpt12.Task_500ms',code,cluster('Task_500ms')
@@ -416,17 +463,17 @@ __Task_200ms_function_end:
 	
 	.global	Task_500ms
 ; Function Task_500ms
-.L25:
+.L28:
 Task_500ms:	.type	func
 	mov	d4,#1
 	call	GPIO_ToggleLed
-.L225:
+.L247:
 	ret
-.L88:
+.L97:
 	
 __Task_500ms_function_end:
 	.size	Task_500ms,__Task_500ms_function_end-Task_500ms
-.L74:
+.L82:
 	; End of function
 	
 	.sdecl	'.data.gpt12.g_Cnt10us',data,cluster('g_Cnt10us')
@@ -449,6 +496,7 @@ g_Cnt10us:	.type	object
 	.calls	'gpt2_init','IfxScuWdt_getGlobalEndinitPassword'
 	.calls	'gpt2_init','IfxScuWdt_clearCpuEndinit'
 	.calls	'gpt2_init','IfxScuWdt_setCpuEndinit'
+	.calls	'IsrGpt2T6USHandler','stopGpt12_T6'
 	.calls	'IsrGpt2T6BuzzerHandler','stopGpt12_T6'
 	.calls	'IsrGpt2T6Handler','Task_100ms'
 	.calls	'IsrGpt2T6Handler','Task_200ms'
@@ -459,6 +507,7 @@ g_Cnt10us:	.type	object
 	.calls	'Task_500ms','GPIO_ToggleLed'
 	.calls	'gpt1_init','',0
 	.calls	'gpt2_init','',0
+	.calls	'IsrGpt2T6USHandler','',0
 	.calls	'IsrGpt2T6BuzzerHandler','',0
 	.calls	'IsrGpt2T6Handler','',0
 	.calls	'runGpt12_T6','',0
@@ -475,18 +524,18 @@ g_Cnt10us:	.type	object
 	.calls	'Task_500ms','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L27:
+.L30:
 	.word	157040
 	.half	3
-	.word	.L28
+	.word	.L31
 	.byte	4
-.L26:
+.L29:
 	.byte	1
 	.byte	'../gpt12.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L29
+	.word	.L32
 	.byte	2,1,1,3
 	.word	216
 	.byte	4
@@ -2109,7 +2158,7 @@ g_Cnt10us:	.type	object
 	.word	10012
 	.byte	4,2,35,0,0,14
 	.word	10302
-.L80:
+.L88:
 	.byte	3
 	.word	10341
 	.byte	4
@@ -3146,7 +3195,7 @@ g_Cnt10us:	.type	object
 	.byte	'GPIO_getSW1',0,15,61,5
 	.word	496
 	.byte	1,1,1,1,27
-	.byte	'my_printf',0,16,159,1,5
+	.byte	'my_printf',0,16,166,1,5
 	.word	496
 	.byte	1,1,1,7
 	.byte	'short int',0,2,5,28
@@ -23832,13 +23881,13 @@ g_Cnt10us:	.type	object
 	.byte	28
 	.byte	'Ifx_ASCLIN_LIN',0,27,166,5,3
 	.word	157009
-.L89:
+.L98:
 	.byte	14
 	.word	480
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L28:
+.L31:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -23851,12 +23900,12 @@ g_Cnt10us:	.type	object
 	.byte	0,0,31,38,0,73,19,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L29:
-	.word	.L92-.L91
-.L91:
+.L32:
+	.word	.L101-.L100
+.L100:
 	.half	3
-	.word	.L94-.L93
-.L93:
+	.word	.L103-.L102
+.L102:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
 	.byte	'C:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
@@ -23899,724 +23948,797 @@ g_Cnt10us:	.type	object
 	.byte	0,0,0
 	.byte	'IfxCbs_regdef.h',0,1,0,0
 	.byte	'IfxAsclin_regdef.h',0,1,0,0,0
-.L94:
-.L92:
+.L103:
+.L101:
 	.sdecl	'.debug_info',debug,cluster('gpt1_init')
 	.sect	'.debug_info'
-.L30:
+.L33:
 	.word	261
 	.half	3
-	.word	.L31
+	.word	.L34
 	.byte	4,1
 	.byte	'../gpt12.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L33,.L32
+	.word	.L36,.L35
 	.byte	2
-	.word	.L26
+	.word	.L29
 	.byte	3
 	.byte	'gpt1_init',0,1,54,6,1,1,1
-	.word	.L9,.L77,.L8
+	.word	.L10,.L85,.L9
 	.byte	4
-	.word	.L9,.L77
+	.word	.L10,.L85
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('gpt1_init')
 	.sect	'.debug_abbrev'
-.L31:
+.L34:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('gpt1_init')
 	.sect	'.debug_line'
-.L32:
-	.word	.L96-.L95
-.L95:
+.L35:
+	.word	.L105-.L104
+.L104:
 	.half	3
-	.word	.L98-.L97
-.L97:
+	.word	.L107-.L106
+.L106:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../gpt12.c',0,0,0,0,0
-.L98:
+.L107:
 	.byte	5,65,7,0,5,2
-	.word	.L9
+	.word	.L10
 	.byte	3,55,1,5,27,9
-	.half	.L99-.L9
+	.half	.L108-.L10
 	.byte	3,1,1,5,25,9
-	.half	.L100-.L99
-	.byte	1,5,63,9
-	.half	.L101-.L100
-	.byte	3,1,1,5,26,9
-	.half	.L102-.L101
-	.byte	3,3,1,5,31,9
-	.half	.L103-.L102
-	.byte	1,5,26,9
-	.half	.L104-.L103
-	.byte	3,2,1,5,31,9
-	.half	.L105-.L104
-	.byte	1,5,26,9
-	.half	.L106-.L105
-	.byte	3,1,1,5,32,9
-	.half	.L107-.L106
-	.byte	1,5,26,9
-	.half	.L108-.L107
-	.byte	3,2,1,5,32,9
 	.half	.L109-.L108
-	.byte	1,5,27,9
+	.byte	1,5,63,9
 	.half	.L110-.L109
-	.byte	3,2,1,5,24,9
+	.byte	3,1,1,5,26,9
 	.half	.L111-.L110
-	.byte	1,5,26,9
-	.half	.L112-.L111
 	.byte	3,3,1,5,31,9
+	.half	.L112-.L111
+	.byte	1,5,26,9
 	.half	.L113-.L112
-	.byte	1,5,26,9
+	.byte	3,2,1,5,31,9
 	.half	.L114-.L113
-	.byte	3,1,1,5,31,9
+	.byte	1,5,26,9
 	.half	.L115-.L114
-	.byte	1,5,26,9
+	.byte	3,1,1,5,32,9
 	.half	.L116-.L115
-	.byte	3,2,1,5,24,9
-	.half	.L117-.L116
-	.byte	1,5,35,9
-	.half	.L118-.L117
-	.byte	3,3,1,5,43,9
-	.half	.L119-.L118
-	.byte	1,5,41,9
-	.half	.L120-.L119
-	.byte	1,5,35,9
-	.half	.L121-.L120
-	.byte	3,1,1,5,41,9
-	.half	.L122-.L121
-	.byte	1,5,35,9
-	.half	.L123-.L122
-	.byte	3,1,1,5,40,9
-	.half	.L124-.L123
-	.byte	1,5,35,9
-	.half	.L125-.L124
-	.byte	3,1,1,5,40,9
-	.half	.L126-.L125
 	.byte	1,5,26,9
+	.half	.L117-.L116
+	.byte	3,2,1,5,32,9
+	.half	.L118-.L117
+	.byte	1,5,27,9
+	.half	.L119-.L118
+	.byte	3,2,1,5,24,9
+	.half	.L120-.L119
+	.byte	1,5,26,9
+	.half	.L121-.L120
+	.byte	3,3,1,5,31,9
+	.half	.L122-.L121
+	.byte	1,5,26,9
+	.half	.L123-.L122
+	.byte	3,1,1,5,31,9
+	.half	.L124-.L123
+	.byte	1,5,26,9
+	.half	.L125-.L124
+	.byte	3,2,1,5,24,9
+	.half	.L126-.L125
+	.byte	1,5,35,9
 	.half	.L127-.L126
-	.byte	3,4,1,5,31,9
+	.byte	3,3,1,5,43,9
 	.half	.L128-.L127
-	.byte	1,5,1,9
+	.byte	1,5,41,9
 	.half	.L129-.L128
+	.byte	1,5,35,9
+	.half	.L130-.L129
+	.byte	3,1,1,5,41,9
+	.half	.L131-.L130
+	.byte	1,5,35,9
+	.half	.L132-.L131
+	.byte	3,1,1,5,40,9
+	.half	.L133-.L132
+	.byte	1,5,35,9
+	.half	.L134-.L133
+	.byte	3,1,1,5,40,9
+	.half	.L135-.L134
+	.byte	1,5,26,9
+	.half	.L136-.L135
+	.byte	3,4,1,5,31,9
+	.half	.L137-.L136
+	.byte	1,5,1,9
+	.half	.L138-.L137
 	.byte	3,1,1,7,9
-	.half	.L34-.L129
+	.half	.L37-.L138
 	.byte	0,1,1
-.L96:
+.L105:
 	.sdecl	'.debug_ranges',debug,cluster('gpt1_init')
 	.sect	'.debug_ranges'
-.L33:
-	.word	-1,.L9,0,.L34-.L9,0,0
+.L36:
+	.word	-1,.L10,0,.L37-.L10,0,0
 	.sdecl	'.debug_info',debug,cluster('gpt2_init')
 	.sect	'.debug_info'
-.L35:
+.L38:
 	.word	288
 	.half	3
-	.word	.L36
+	.word	.L39
 	.byte	4,1
 	.byte	'../gpt12.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L38,.L37
+	.word	.L41,.L40
 	.byte	2
-	.word	.L26
+	.word	.L29
 	.byte	3
 	.byte	'gpt2_init',0,1,88,6,1,1,1
-	.word	.L11,.L78,.L10
+	.word	.L12,.L86,.L11
 	.byte	4
-	.word	.L11,.L78
+	.word	.L12,.L86
 	.byte	4
-	.word	.L79,.L78
+	.word	.L87,.L86
 	.byte	5
-	.byte	'src',0,1,111,28
-	.word	.L80,.L81
+	.byte	'src',0,1,110,28
+	.word	.L88,.L89
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('gpt2_init')
 	.sect	'.debug_abbrev'
-.L36:
+.L39:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('gpt2_init')
 	.sect	'.debug_line'
-.L37:
-	.word	.L131-.L130
-.L130:
+.L40:
+	.word	.L140-.L139
+.L139:
 	.half	3
-	.word	.L133-.L132
-.L132:
+	.word	.L142-.L141
+.L141:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../gpt12.c',0,0,0,0,0
-.L133:
+.L142:
 	.byte	5,65,7,0,5,2
-	.word	.L11
+	.word	.L12
 	.byte	3,218,0,1,5,27,9
-	.half	.L134-.L11
+	.half	.L143-.L12
 	.byte	3,1,1,5,25,9
-	.half	.L135-.L134
-	.byte	1,5,63,9
-	.half	.L136-.L135
-	.byte	3,1,1,5,26,9
-	.half	.L137-.L136
-	.byte	3,2,1,5,31,9
-	.half	.L138-.L137
-	.byte	1,5,26,9
-	.half	.L139-.L138
-	.byte	3,3,1,5,31,9
-	.half	.L140-.L139
-	.byte	1,5,26,9
-	.half	.L141-.L140
-	.byte	3,1,1,5,31,9
-	.half	.L142-.L141
-	.byte	1,5,26,9
-	.half	.L143-.L142
-	.byte	3,2,1,5,32,9
 	.half	.L144-.L143
-	.byte	1,5,26,9
+	.byte	1,5,63,9
 	.half	.L145-.L144
-	.byte	3,3,1,5,32,9
+	.byte	3,1,1,5,26,9
 	.half	.L146-.L145
-	.byte	1,5,26,9
+	.byte	3,2,1,5,31,9
 	.half	.L147-.L146
-	.byte	3,1,1,5,32,9
-	.half	.L148-.L147
 	.byte	1,5,26,9
+	.half	.L148-.L147
+	.byte	3,3,1,5,31,9
 	.half	.L149-.L148
-	.byte	3,2,1,5,24,9
+	.byte	1,5,26,9
 	.half	.L150-.L149
-	.byte	1,5,30,9
+	.byte	3,1,1,5,31,9
 	.half	.L151-.L150
-	.byte	3,2,1,5,28,9
+	.byte	1,5,26,9
 	.half	.L152-.L151
-	.byte	1,5,62,9
-	.half	.L79-.L152
-	.byte	3,3,1,5,13,9
-	.half	.L153-.L79
-	.byte	3,1,1,5,21,9
+	.byte	3,2,1,5,32,9
+	.half	.L153-.L152
+	.byte	1,5,26,9
 	.half	.L154-.L153
-	.byte	1,5,19,9
+	.byte	3,2,1,5,32,9
 	.half	.L155-.L154
-	.byte	1,5,13,9
+	.byte	1,5,26,9
 	.half	.L156-.L155
-	.byte	3,1,1,5,18,9
+	.byte	3,1,1,5,32,9
 	.half	.L157-.L156
-	.byte	1,5,13,9
+	.byte	1,5,26,9
 	.half	.L158-.L157
-	.byte	3,1,1,5,19,9
+	.byte	3,2,1,5,24,9
 	.half	.L159-.L158
-	.byte	1,5,13,9
+	.byte	1,5,30,9
 	.half	.L160-.L159
-	.byte	3,1,1,5,19,9
+	.byte	3,2,1,5,28,9
 	.half	.L161-.L160
+	.byte	1,5,62,9
+	.half	.L87-.L161
+	.byte	3,3,1,5,13,9
+	.half	.L162-.L87
+	.byte	3,1,1,5,21,9
+	.half	.L163-.L162
+	.byte	1,5,19,9
+	.half	.L164-.L163
+	.byte	1,5,13,9
+	.half	.L165-.L164
+	.byte	3,1,1,5,18,9
+	.half	.L166-.L165
+	.byte	1,5,13,9
+	.half	.L167-.L166
+	.byte	3,1,1,5,19,9
+	.half	.L168-.L167
+	.byte	1,5,13,9
+	.half	.L169-.L168
+	.byte	3,1,1,5,19,9
+	.half	.L170-.L169
 	.byte	1,5,1,9
-	.half	.L162-.L161
+	.half	.L171-.L170
 	.byte	3,3,1,7,9
-	.half	.L39-.L162
+	.half	.L42-.L171
 	.byte	0,1,1
-.L131:
+.L140:
 	.sdecl	'.debug_ranges',debug,cluster('gpt2_init')
 	.sect	'.debug_ranges'
-.L38:
-	.word	-1,.L11,0,.L39-.L11,0,0
-	.sdecl	'.debug_info',debug,cluster('IsrGpt2T6Handler')
+.L41:
+	.word	-1,.L12,0,.L42-.L12,0,0
+	.sdecl	'.debug_info',debug,cluster('IsrGpt2T6USHandler')
 	.sect	'.debug_info'
-.L40:
-	.word	269
+.L43:
+	.word	270
 	.half	3
-	.word	.L41
+	.word	.L44
 	.byte	4,1
 	.byte	'../gpt12.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L43,.L42
+	.word	.L46,.L45
 	.byte	2
-	.word	.L26
+	.word	.L29
 	.byte	3
-	.byte	'IsrGpt2T6Handler',0,1,139,1,6,1,1,1
-	.word	.L15,.L82,.L14
+	.byte	'IsrGpt2T6USHandler',0,1,127,6,1,1,1
+	.word	.L14,.L90,.L13
 	.byte	4
-	.word	.L15,.L82
+	.word	.L14,.L90
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IsrGpt2T6USHandler')
+	.sect	'.debug_abbrev'
+.L44:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IsrGpt2T6USHandler')
+	.sect	'.debug_line'
+.L45:
+	.word	.L173-.L172
+.L172:
+	.half	3
+	.word	.L175-.L174
+.L174:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../gpt12.c',0,0,0,0,0
+.L175:
+	.byte	5,5,7,0,5,2
+	.word	.L14
+	.byte	3,255,0,1,5,14,9
+	.half	.L176-.L14
+	.byte	1,5,9,9
+	.half	.L177-.L176
+	.byte	3,1,1,5,5,9
+	.half	.L178-.L177
+	.byte	1,5,25,7,9
+	.half	.L179-.L178
+	.byte	3,1,1,5,30,9
+	.half	.L180-.L179
+	.byte	1,5,21,9
+	.half	.L181-.L180
+	.byte	3,1,1,5,9,9
+	.half	.L182-.L181
+	.byte	3,1,1,5,19,9
+	.half	.L183-.L182
+	.byte	1,5,18,9
+	.half	.L184-.L183
+	.byte	1,5,1,9
+	.half	.L2-.L184
+	.byte	3,2,1,7,9
+	.half	.L47-.L2
+	.byte	0,1,1
+.L173:
+	.sdecl	'.debug_ranges',debug,cluster('IsrGpt2T6USHandler')
+	.sect	'.debug_ranges'
+.L46:
+	.word	-1,.L14,0,.L47-.L14,0,0
+	.sdecl	'.debug_info',debug,cluster('IsrGpt2T6Handler')
+	.sect	'.debug_info'
+.L48:
+	.word	269
+	.half	3
+	.word	.L49
+	.byte	4,1
+	.byte	'../gpt12.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L51,.L50
+	.byte	2
+	.word	.L29
+	.byte	3
+	.byte	'IsrGpt2T6Handler',0,1,146,1,6,1,1,1
+	.word	.L18,.L91,.L17
+	.byte	4
+	.word	.L18,.L91
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('IsrGpt2T6Handler')
 	.sect	'.debug_abbrev'
-.L41:
+.L49:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('IsrGpt2T6Handler')
 	.sect	'.debug_line'
-.L42:
-	.word	.L164-.L163
-.L163:
+.L50:
+	.word	.L186-.L185
+.L185:
 	.half	3
-	.word	.L166-.L165
-.L165:
+	.word	.L188-.L187
+.L187:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../gpt12.c',0,0,0,0,0
-.L166:
+.L188:
 	.byte	5,5,7,0,5,2
-	.word	.L15
-	.byte	3,139,1,1,5,14,9
-	.half	.L167-.L15
+	.word	.L18
+	.byte	3,146,1,1,5,14,9
+	.half	.L189-.L18
 	.byte	1,5,9,9
-	.half	.L168-.L167
+	.half	.L190-.L189
 	.byte	3,1,1,5,21,9
-	.half	.L169-.L168
+	.half	.L191-.L190
 	.byte	1,5,19,9
-	.half	.L170-.L169
+	.half	.L192-.L191
 	.byte	1,5,5,9
-	.half	.L171-.L170
+	.half	.L193-.L192
 	.byte	1,5,43,7,9
-	.half	.L172-.L171
+	.half	.L194-.L193
 	.byte	1,5,9,9
-	.half	.L3-.L172
+	.half	.L4-.L194
 	.byte	3,1,1,5,21,9
-	.half	.L173-.L3
+	.half	.L195-.L4
 	.byte	1,5,19,9
-	.half	.L174-.L173
+	.half	.L196-.L195
 	.byte	1,5,5,9
-	.half	.L175-.L174
+	.half	.L197-.L196
 	.byte	1,5,43,7,9
-	.half	.L176-.L175
+	.half	.L198-.L197
 	.byte	1,5,9,9
-	.half	.L4-.L176
+	.half	.L5-.L198
 	.byte	3,1,1,5,21,9
-	.half	.L177-.L4
+	.half	.L199-.L5
 	.byte	1,5,19,9
-	.half	.L178-.L177
+	.half	.L200-.L199
 	.byte	1,5,5,9
-	.half	.L179-.L178
+	.half	.L201-.L200
 	.byte	1,5,43,7,9
-	.half	.L180-.L179
+	.half	.L202-.L201
 	.byte	1,5,1,9
-	.half	.L5-.L180
+	.half	.L6-.L202
 	.byte	3,2,1,7,9
-	.half	.L44-.L5
+	.half	.L52-.L6
 	.byte	0,1,1
-.L164:
+.L186:
 	.sdecl	'.debug_ranges',debug,cluster('IsrGpt2T6Handler')
 	.sect	'.debug_ranges'
-.L43:
-	.word	-1,.L15,0,.L44-.L15,0,0
+.L51:
+	.word	-1,.L18,0,.L52-.L18,0,0
 	.sdecl	'.debug_info',debug,cluster('IsrGpt2T6BuzzerHandler')
 	.sect	'.debug_info'
-.L45:
+.L53:
 	.word	275
 	.half	3
-	.word	.L46
+	.word	.L54
 	.byte	4,1
 	.byte	'../gpt12.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L48,.L47
+	.word	.L56,.L55
 	.byte	2
-	.word	.L26
+	.word	.L29
 	.byte	3
-	.byte	'IsrGpt2T6BuzzerHandler',0,1,128,1,6,1,1,1
-	.word	.L13,.L83,.L12
+	.byte	'IsrGpt2T6BuzzerHandler',0,1,135,1,6,1,1,1
+	.word	.L16,.L92,.L15
 	.byte	4
-	.word	.L13,.L83
+	.word	.L16,.L92
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('IsrGpt2T6BuzzerHandler')
 	.sect	'.debug_abbrev'
-.L46:
+.L54:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('IsrGpt2T6BuzzerHandler')
 	.sect	'.debug_line'
-.L47:
-	.word	.L182-.L181
-.L181:
+.L55:
+	.word	.L204-.L203
+.L203:
 	.half	3
-	.word	.L184-.L183
-.L183:
+	.word	.L206-.L205
+.L205:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../gpt12.c',0,0,0,0,0
-.L184:
+.L206:
 	.byte	5,6,7,0,5,2
-	.word	.L13
-	.byte	3,255,0,1,5,5,9
-	.half	.L185-.L13
+	.word	.L16
+	.byte	3,134,1,1,5,5,9
+	.half	.L207-.L16
 	.byte	3,1,1,5,14,9
-	.half	.L186-.L185
+	.half	.L208-.L207
 	.byte	1,5,9,9
-	.half	.L187-.L186
+	.half	.L209-.L208
 	.byte	3,1,1,5,5,9
-	.half	.L188-.L187
+	.half	.L210-.L209
 	.byte	1,5,25,7,9
-	.half	.L189-.L188
+	.half	.L211-.L210
 	.byte	3,1,1,5,29,9
-	.half	.L190-.L189
+	.half	.L212-.L211
 	.byte	1,5,21,9
-	.half	.L191-.L190
+	.half	.L213-.L212
 	.byte	3,1,1,5,9,9
-	.half	.L192-.L191
+	.half	.L214-.L213
 	.byte	3,1,1,5,19,9
-	.half	.L193-.L192
+	.half	.L215-.L214
 	.byte	1,5,18,9
-	.half	.L194-.L193
+	.half	.L216-.L215
 	.byte	1,5,1,9
-	.half	.L2-.L194
+	.half	.L3-.L216
 	.byte	3,2,1,9
-	.half	.L49-.L2
+	.half	.L57-.L3
 	.byte	0,1,1
-.L182:
+.L204:
 	.sdecl	'.debug_ranges',debug,cluster('IsrGpt2T6BuzzerHandler')
 	.sect	'.debug_ranges'
-.L48:
-	.word	-1,.L13,0,.L49-.L13,0,0
+.L56:
+	.word	-1,.L16,0,.L57-.L16,0,0
 	.sdecl	'.debug_info',debug,cluster('runGpt12_T6')
 	.sect	'.debug_info'
-.L50:
+.L58:
 	.word	264
 	.half	3
-	.word	.L51
+	.word	.L59
 	.byte	4,1
 	.byte	'../gpt12.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L53,.L52
+	.word	.L61,.L60
 	.byte	2
-	.word	.L26
+	.word	.L29
 	.byte	3
-	.byte	'runGpt12_T6',0,1,146,1,6,1,1,1
-	.word	.L17,.L84,.L16
+	.byte	'runGpt12_T6',0,1,153,1,6,1,1,1
+	.word	.L20,.L93,.L19
 	.byte	4
-	.word	.L17,.L84
+	.word	.L20,.L93
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('runGpt12_T6')
 	.sect	'.debug_abbrev'
-.L51:
+.L59:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('runGpt12_T6')
 	.sect	'.debug_line'
-.L52:
-	.word	.L196-.L195
-.L195:
+.L60:
+	.word	.L218-.L217
+.L217:
 	.half	3
-	.word	.L198-.L197
-.L197:
+	.word	.L220-.L219
+.L219:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../gpt12.c',0,0,0,0,0
-.L198:
+.L220:
 	.byte	5,26,7,0,5,2
-	.word	.L17
-	.byte	3,146,1,1,5,31,9
-	.half	.L199-.L17
+	.word	.L20
+	.byte	3,153,1,1,5,31,9
+	.half	.L221-.L20
 	.byte	1,5,1,9
-	.half	.L200-.L199
+	.half	.L222-.L221
 	.byte	3,1,1,7,9
-	.half	.L54-.L200
+	.half	.L62-.L222
 	.byte	0,1,1
-.L196:
+.L218:
 	.sdecl	'.debug_ranges',debug,cluster('runGpt12_T6')
 	.sect	'.debug_ranges'
-.L53:
-	.word	-1,.L17,0,.L54-.L17,0,0
+.L61:
+	.word	-1,.L20,0,.L62-.L20,0,0
 	.sdecl	'.debug_info',debug,cluster('stopGpt12_T6')
 	.sect	'.debug_info'
-.L55:
+.L63:
 	.word	265
 	.half	3
-	.word	.L56
+	.word	.L64
 	.byte	4,1
 	.byte	'../gpt12.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L58,.L57
+	.word	.L66,.L65
 	.byte	2
-	.word	.L26
+	.word	.L29
 	.byte	3
-	.byte	'stopGpt12_T6',0,1,149,1,6,1,1,1
-	.word	.L19,.L85,.L18
+	.byte	'stopGpt12_T6',0,1,156,1,6,1,1,1
+	.word	.L22,.L94,.L21
 	.byte	4
-	.word	.L19,.L85
+	.word	.L22,.L94
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('stopGpt12_T6')
 	.sect	'.debug_abbrev'
-.L56:
+.L64:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('stopGpt12_T6')
 	.sect	'.debug_line'
-.L57:
-	.word	.L202-.L201
-.L201:
+.L65:
+	.word	.L224-.L223
+.L223:
 	.half	3
-	.word	.L204-.L203
-.L203:
+	.word	.L226-.L225
+.L225:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../gpt12.c',0,0,0,0,0
-.L204:
+.L226:
 	.byte	5,26,7,0,5,2
-	.word	.L19
-	.byte	3,149,1,1,5,31,9
-	.half	.L205-.L19
+	.word	.L22
+	.byte	3,156,1,1,5,31,9
+	.half	.L227-.L22
 	.byte	1,5,1,9
-	.half	.L206-.L205
+	.half	.L228-.L227
 	.byte	3,1,1,7,9
-	.half	.L59-.L206
+	.half	.L67-.L228
 	.byte	0,1,1
-.L202:
+.L224:
 	.sdecl	'.debug_ranges',debug,cluster('stopGpt12_T6')
 	.sect	'.debug_ranges'
-.L58:
-	.word	-1,.L19,0,.L59-.L19,0,0
+.L66:
+	.word	-1,.L22,0,.L67-.L22,0,0
 	.sdecl	'.debug_info',debug,cluster('Task_100ms')
 	.sect	'.debug_info'
-.L60:
+.L68:
 	.word	263
 	.half	3
-	.word	.L61
+	.word	.L69
 	.byte	4,1
 	.byte	'../gpt12.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L63,.L62
+	.word	.L71,.L70
 	.byte	2
-	.word	.L26
+	.word	.L29
 	.byte	3
-	.byte	'Task_100ms',0,1,154,1,6,1,1,1
-	.word	.L21,.L86,.L20
+	.byte	'Task_100ms',0,1,161,1,6,1,1,1
+	.word	.L24,.L95,.L23
 	.byte	4
-	.word	.L21,.L86
+	.word	.L24,.L95
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Task_100ms')
 	.sect	'.debug_abbrev'
-.L61:
+.L69:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Task_100ms')
 	.sect	'.debug_line'
-.L62:
-	.word	.L208-.L207
-.L207:
+.L70:
+	.word	.L230-.L229
+.L229:
 	.half	3
-	.word	.L210-.L209
-.L209:
+	.word	.L232-.L231
+.L231:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../gpt12.c',0,0,0,0,0
-.L210:
+.L232:
 	.byte	5,19,7,0,5,2
-	.word	.L21
-	.byte	3,154,1,1,5,5,9
-	.half	.L211-.L21
+	.word	.L24
+	.byte	3,161,1,1,5,5,9
+	.half	.L233-.L24
 	.byte	1,5,35,7,9
-	.half	.L212-.L211
+	.half	.L234-.L233
 	.byte	1,5,37,9
-	.half	.L213-.L212
+	.half	.L235-.L234
 	.byte	1,5,39,9
-	.half	.L214-.L213
+	.half	.L236-.L235
 	.byte	1,5,23,9
-	.half	.L6-.L214
+	.half	.L7-.L236
 	.byte	3,1,1,5,25,9
-	.half	.L215-.L6
+	.half	.L237-.L7
 	.byte	1,5,1,9
-	.half	.L7-.L215
+	.half	.L8-.L237
 	.byte	3,1,1,7,9
-	.half	.L64-.L7
+	.half	.L72-.L8
 	.byte	0,1,1
-.L208:
+.L230:
 	.sdecl	'.debug_ranges',debug,cluster('Task_100ms')
 	.sect	'.debug_ranges'
-.L63:
-	.word	-1,.L21,0,.L64-.L21,0,0
+.L71:
+	.word	-1,.L24,0,.L72-.L24,0,0
 	.sdecl	'.debug_info',debug,cluster('Task_200ms')
 	.sect	'.debug_info'
-.L65:
+.L73:
 	.word	263
 	.half	3
-	.word	.L66
+	.word	.L74
 	.byte	4,1
 	.byte	'../gpt12.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L68,.L67
+	.word	.L76,.L75
 	.byte	2
-	.word	.L26
+	.word	.L29
 	.byte	3
-	.byte	'Task_200ms',0,1,158,1,6,1,1,1
-	.word	.L23,.L87,.L22
+	.byte	'Task_200ms',0,1,165,1,6,1,1,1
+	.word	.L26,.L96,.L25
 	.byte	4
-	.word	.L23,.L87
+	.word	.L26,.L96
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Task_200ms')
 	.sect	'.debug_abbrev'
-.L66:
+.L74:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Task_200ms')
 	.sect	'.debug_line'
-.L67:
-	.word	.L217-.L216
-.L216:
+.L75:
+	.word	.L239-.L238
+.L238:
 	.half	3
-	.word	.L219-.L218
-.L218:
+	.word	.L241-.L240
+.L240:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../gpt12.c',0,0,0,0,0
-.L219:
+.L241:
 	.byte	5,15,7,0,5,2
-	.word	.L23
-	.byte	3,158,1,1,5,1,9
-	.half	.L220-.L23
+	.word	.L26
+	.byte	3,165,1,1,5,1,9
+	.half	.L242-.L26
 	.byte	3,1,1,7,9
-	.half	.L69-.L220
+	.half	.L77-.L242
 	.byte	0,1,1
-.L217:
+.L239:
 	.sdecl	'.debug_ranges',debug,cluster('Task_200ms')
 	.sect	'.debug_ranges'
-.L68:
-	.word	-1,.L23,0,.L69-.L23,0,0
+.L76:
+	.word	-1,.L26,0,.L77-.L26,0,0
 	.sdecl	'.debug_info',debug,cluster('Task_500ms')
 	.sect	'.debug_info'
-.L70:
+.L78:
 	.word	263
 	.half	3
-	.word	.L71
+	.word	.L79
 	.byte	4,1
 	.byte	'../gpt12.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L73,.L72
+	.word	.L81,.L80
 	.byte	2
-	.word	.L26
+	.word	.L29
 	.byte	3
-	.byte	'Task_500ms',0,1,161,1,6,1,1,1
-	.word	.L25,.L88,.L24
+	.byte	'Task_500ms',0,1,168,1,6,1,1,1
+	.word	.L28,.L97,.L27
 	.byte	4
-	.word	.L25,.L88
+	.word	.L28,.L97
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Task_500ms')
 	.sect	'.debug_abbrev'
-.L71:
+.L79:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Task_500ms')
 	.sect	'.debug_line'
-.L72:
-	.word	.L222-.L221
-.L221:
+.L80:
+	.word	.L244-.L243
+.L243:
 	.half	3
-	.word	.L224-.L223
-.L223:
+	.word	.L246-.L245
+.L245:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../gpt12.c',0,0,0,0,0
-.L224:
+.L246:
 	.byte	5,20,7,0,5,2
-	.word	.L25
-	.byte	3,161,1,1,5,1,9
-	.half	.L225-.L25
+	.word	.L28
+	.byte	3,168,1,1,5,1,9
+	.half	.L247-.L28
 	.byte	3,1,1,7,9
-	.half	.L74-.L225
+	.half	.L82-.L247
 	.byte	0,1,1
-.L222:
+.L244:
 	.sdecl	'.debug_ranges',debug,cluster('Task_500ms')
 	.sect	'.debug_ranges'
-.L73:
-	.word	-1,.L25,0,.L74-.L25,0,0
+.L81:
+	.word	-1,.L28,0,.L82-.L28,0,0
 	.sdecl	'.debug_info',debug,cluster('g_Cnt10us')
 	.sect	'.debug_info'
-.L75:
+.L83:
 	.word	238
 	.half	3
-	.word	.L76
+	.word	.L84
 	.byte	4,1
 	.byte	'../gpt12.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1,2
-	.word	.L26
+	.word	.L29
 	.byte	3
-	.byte	'g_Cnt10us',0,16,126,30
-	.word	.L89
+	.byte	'g_Cnt10us',0,16,125,30
+	.word	.L98
 	.byte	5,3
 	.word	g_Cnt10us
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('g_Cnt10us')
 	.sect	'.debug_abbrev'
-.L76:
+.L84:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
 	.sdecl	'.debug_loc',debug,cluster('IsrGpt2T6BuzzerHandler')
 	.sect	'.debug_loc'
-.L12:
-	.word	-1,.L13,0,.L83-.L13
+.L15:
+	.word	-1,.L16,0,.L92-.L16
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('IsrGpt2T6Handler')
 	.sect	'.debug_loc'
-.L14:
-	.word	-1,.L15,0,.L82-.L15
+.L17:
+	.word	-1,.L18,0,.L91-.L18
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IsrGpt2T6USHandler')
+	.sect	'.debug_loc'
+.L13:
+	.word	-1,.L14,0,.L90-.L14
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Task_100ms')
 	.sect	'.debug_loc'
-.L20:
-	.word	-1,.L21,0,.L86-.L21
+.L23:
+	.word	-1,.L24,0,.L95-.L24
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Task_200ms')
 	.sect	'.debug_loc'
-.L22:
-	.word	-1,.L23,0,.L87-.L23
+.L25:
+	.word	-1,.L26,0,.L96-.L26
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Task_500ms')
 	.sect	'.debug_loc'
-.L24:
-	.word	-1,.L25,0,.L88-.L25
+.L27:
+	.word	-1,.L28,0,.L97-.L28
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('gpt1_init')
 	.sect	'.debug_loc'
-.L8:
-	.word	-1,.L9,0,.L77-.L9
+.L9:
+	.word	-1,.L10,0,.L85-.L10
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('gpt2_init')
 	.sect	'.debug_loc'
-.L10:
-	.word	-1,.L11,0,.L78-.L11
+.L11:
+	.word	-1,.L12,0,.L86-.L12
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L81:
-	.word	-1,.L11,.L90-.L11,.L78-.L11
+.L89:
+	.word	-1,.L12,.L99-.L12,.L86-.L12
 	.half	1
 	.byte	111
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('runGpt12_T6')
 	.sect	'.debug_loc'
-.L16:
-	.word	-1,.L17,0,.L84-.L17
+.L19:
+	.word	-1,.L20,0,.L93-.L20
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('stopGpt12_T6')
 	.sect	'.debug_loc'
-.L18:
-	.word	-1,.L19,0,.L85-.L19
+.L21:
+	.word	-1,.L22,0,.L94-.L22
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L226:
+.L248:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -24624,39 +24746,43 @@ g_Cnt10us:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('gpt1_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L226,.L9,.L77-.L9
+	.word	.L248,.L10,.L85-.L10
 	.sdecl	'.debug_frame',debug,cluster('gpt2_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L226,.L11,.L78-.L11
+	.word	.L248,.L12,.L86-.L12
+	.sdecl	'.debug_frame',debug,cluster('IsrGpt2T6USHandler')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L248,.L14,.L90-.L14
 	.sdecl	'.debug_frame',debug,cluster('IsrGpt2T6BuzzerHandler')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L226,.L13,.L83-.L13
+	.word	.L248,.L16,.L92-.L16
 	.sdecl	'.debug_frame',debug,cluster('IsrGpt2T6Handler')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L226,.L15,.L82-.L15
+	.word	.L248,.L18,.L91-.L18
 	.sdecl	'.debug_frame',debug,cluster('runGpt12_T6')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L226,.L17,.L84-.L17
+	.word	.L248,.L20,.L93-.L20
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('stopGpt12_T6')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L226,.L19,.L85-.L19
+	.word	.L248,.L22,.L94-.L22
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Task_100ms')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L226,.L21,.L86-.L21
+	.word	.L248,.L24,.L95-.L24
 	.sdecl	'.debug_frame',debug,cluster('Task_200ms')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L226,.L23,.L87-.L23
+	.word	.L248,.L26,.L96-.L26
 	.sdecl	'.debug_frame',debug,cluster('Task_500ms')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L226,.L25,.L88-.L25
+	.word	.L248,.L28,.L97-.L28
 	; Module end

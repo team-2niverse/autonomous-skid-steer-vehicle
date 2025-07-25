@@ -62,12 +62,12 @@ void Motor_Init(void){
 }
 void Motor_movChB(int dir){
     if (dir){
-        MODULE_P10.OUT.B.P2 = 1; //방향
+        MODULE_P10.OUT.B.P2 = 1; //
     }
     else{
         MODULE_P10.OUT.B.P2 = 0;
     }
-    MODULE_P02.OUT.B.P6 = 0; //브레이크
+    MODULE_P02.OUT.B.P6 = 0; //
     GtmAtomPwmB_SetDutyCycle(1000);
 }
 void Motor_stopChB(void){
@@ -76,24 +76,24 @@ void Motor_stopChB(void){
 void Motor_movChB_PWM(int duty, int dir){
     GtmAtomPwmB_SetDutyCycle(duty*10);
     if (dir){
-        MODULE_P10.OUT.B.P2 = 1; //회전방향
+        MODULE_P10.OUT.B.P2 = 1; //
     }
     else{
-        MODULE_P10.OUT.B.P2 = 0; //회전방향
+        MODULE_P10.OUT.B.P2 = 0; //
     }
-    MODULE_P02.OUT.B.P6 = 0; // 모터 brake 해제
+    MODULE_P02.OUT.B.P6 = 0; //
 }
 
 
 //Motor A
 void Motor_movChA(int dir){
     if (dir){
-        MODULE_P10.OUT.B.P1 = 1; //방향
+        MODULE_P10.OUT.B.P1 = 1; //
     }
     else{
         MODULE_P10.OUT.B.P1 = 0;
     }
-    MODULE_P02.OUT.B.P7 = 0; //브레이크 해제
+    MODULE_P02.OUT.B.P7 = 0; //
     GtmAtomPwmA_SetDutyCycle(1000);
 }
 void Motor_stopChA(void){
@@ -102,10 +102,64 @@ void Motor_stopChA(void){
 void Motor_movChA_PWM(int duty, int dir){
     GtmAtomPwmA_SetDutyCycle(duty*10);
     if (dir){
-        MODULE_P10.OUT.B.P1 = 1; //회전방향
+        MODULE_P10.OUT.B.P1 = 1; //
     }
     else{
-        MODULE_P10.OUT.B.P1 = 0; //회전방향
+        MODULE_P10.OUT.B.P1 = 0; //
     }
-    MODULE_P02.OUT.B.P7 = 0; // 모터 brake 해제
+    MODULE_P02.OUT.B.P7 = 0; //
+}
+
+void Encoder_Init(void){
+
+    uint16 password = IfxScuWdt_getSafetyWatchdogPasswordInline();
+    IfxScuWdt_clearSafetyEndinitInline(password);
+
+    MODULE_P15.IOCR4.B.PC4 = 0x01;//set port33.7 as pull-up input;
+
+    //Setting ERU//
+    MODULE_SCU.EICR[0].B.EXIS0 = 0;//EICR.EXIS  : ESR4,  (EICR2, EXIS0=ERS4, 0(REQ8,P33.7)
+
+    MODULE_SCU.EICR[0].B.REN0 = 1;//rising edge
+//    MODULE_SCU.EICR[0].B.FEN0 = 1;//falling edge
+
+    MODULE_SCU.EICR[0].B.EIEN0 = 1;//enable trigger pulse
+
+    MODULE_SCU.EICR[0].B.INP0 = 0;//determination of output channel for trigger event (Register INP)
+
+    MODULE_SCU.IGCR[0].B.IGP0= 1;// configure output channels, outputgating unit OGU (Register IGPy)
+
+    //ISR
+    volatile Ifx_SRC_SRCR *src;
+    src = (volatile Ifx_SRC_SRCR*) (&MODULE_SRC.SCU.SCUERU[0]);
+    src -> B.SRPN = ISR_PRIORITY_Encoder_INT0;
+    src -> B.TOS = 0;
+    src -> B.CLRR = 1; //clear request
+    src -> B.SRE = 1; // interrupt enable;
+
+    IfxScuWdt_setSafetyEndinitInline(password);
+}
+
+//volatile uint64 encoder = 0;
+uint64 encoder = 0;
+uint64 prev_encoder = 0;
+uint64 prev_time = 0;
+uint64 now_time = 0;
+double v  = 0.0;
+
+IFX_INTERRUPT(Encoder_Int0_Handler, 0 , ISR_PRIORITY_Encoder_INT0);
+void Encoder_Int0_Handler(void){
+//    MODULE_SCU.EIFR.B.INTF0 = 1;
+    encoder++;
+    now_time = getTimeUs();
+    v = (double)(encoder-prev_encoder)/(now_time - prev_time) * 1000;
+    prev_time = now_time;
+    prev_encoder = encoder;
+}
+
+uint64 get_encoder(void){
+    return encoder;
+}
+double get_V(void){
+    return v;
 }
