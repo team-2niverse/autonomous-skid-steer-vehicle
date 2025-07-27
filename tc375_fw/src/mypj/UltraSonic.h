@@ -58,5 +58,8 @@ void US_TestPinSetting(void);
 float Ultrasonic_ReadSensor_noFilt(void);
 void Ultrasonic_IR_Read_noFilt(void);
 void US_IR_init(void);
+void US_Echo_test_Handler(void);
 void US_Echo_Int0_Handler(void);
+int is_ready(void);
+float get_distance(void);
 #endif /* ULTRASONIC_H_ */

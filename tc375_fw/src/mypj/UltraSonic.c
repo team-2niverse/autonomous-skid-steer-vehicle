@@ -32,6 +32,7 @@
 #include "UltraSonic.h"
 #include "gpt12.h"
 #include "stm.h"
+#include "asclin.h"
 /*********************************************************************************************************************/
 /*------------------------------------------------------Macros-------------------------------------------------------*/
 /*********************************************************************************************************************/
@@ -39,10 +40,12 @@
 /*********************************************************************************************************************/
 /*-------------------------------------------------Global variables--------------------------------------------------*/
 /*********************************************************************************************************************/
-uint64 timer_start = 0;
-uint64 timer_end = 0;
-float distance =0.0;
-uint64 rear_duration;
+volatile uint64 timer_start = 0;
+volatile uint64 timer_end = 0;
+volatile float distance=0.0;
+volatile uint64 rear_duration;
+volatile int measurement_ready = 0;  //
+//uint64 howmany = 0;
 /*********************************************************************************************************************/
 /*--------------------------------------------Private Variables/Constants--------------------------------------------*/
 /*********************************************************************************************************************/
@@ -57,7 +60,7 @@ uint64 rear_duration;
 
 void US_TestPinSetting(void){
     //test code for P11.10 echo interrupt, P11.11 trigger pin
-    MODULE_P11.IOCR8.B.PC11 = 0x10; /* Set TRIG (P11.11)Pin to output */
+    MODULE_P13.IOCR0.B.PC2 = 0x10; /* Set TRIG (P11.11)Pin to output */
     MODULE_P11.IOCR8.B.PC10 = 0x02; /* Set ECHO (P11.10) Pin to input */
 
     //button interrupt
@@ -69,16 +72,15 @@ void US_TestPinSetting(void){
 
     MODULE_SCU.EICR[3].B.REN0 = 1;//rising edge
     MODULE_SCU.EICR[3].B.FEN0 = 1;//falling edge
-
     MODULE_SCU.EICR[3].B.EIEN0 = 1;//enable trigger pulse
 
-    MODULE_SCU.EICR[3].B.INP0 = 0;//determination of output channel for trigger event (Register INP)
-    MODULE_SCU.IGCR[3].B.IGP0= 1;// configure output channels, outputgating unit OGU (Register IGPy)
+    MODULE_SCU.EICR[3].B.INP0 = 0;//determination of output channel for trigger event (Register INP
+    MODULE_SCU.IGCR[0].B.IGP0= 1;// configure output channels, outputgating unit OGU (Register IGPy)/ must set 1
 
 
     //ISR setting
     volatile Ifx_SRC_SRCR *src;
-    src = (volatile Ifx_SRC_SRCR*) (&MODULE_SRC.SCU.SCUERU[2]);
+    src = (volatile Ifx_SRC_SRCR*) (&MODULE_SRC.SCU.SCUERU[0]);
     src -> B.SRPN = ISR_PRIORITY_US_ECHO_INT0;
     src -> B.TOS = 0;
     src -> B.CLRR = 1; //clear request
@@ -89,9 +91,14 @@ void US_TestPinSetting(void){
 void Ultrasonics_Init(void)
 {
     /* Init Ultrasonic Pin */
-    MODULE_P13.IOCR0.B.PC2 = 0x10; /* Set TRIG (P13.2)Pin to output */
-//    MODULE_P13.IOCR0.B.PC1 = 0x02; /* Set ECHO (P13.1) Pin to input */
-    MODULE_P15.IOCR4.B.PC4 = 0x02; /* Set ECHO (P13.1) Pin to input */
+//    MODULE_P13.IOCR0.B.PC2 = 0x10; /* Set TRIG (P13.2)Pin to output */
+////    MODULE_P13.IOCR0.B.PC1 = 0x02; /* Set ECHO (P13.1) Pin to input */
+//    MODULE_P15.IOCR4.B.PC4 = 0x02; /* Set ECHO (P13.1) Pin to input */
+
+    IfxPort_setPinMode(&MODULE_P15, 4, IfxPort_Mode_inputPullUp);
+    IfxStm_waitTicks(&MODULE_STM0, IfxStm_getTicksFromMicroseconds(&MODULE_STM0, 1000));
+    IfxPort_setPinMode(&MODULE_P13, 2, IfxPort_Mode_outputPushPullGeneral);
+    IfxStm_waitTicks(&MODULE_STM0, IfxStm_getTicksFromMicroseconds(&MODULE_STM0, 1000));
 }
 
 
@@ -138,11 +145,10 @@ void US_IR_init(void){
     uint16 password = IfxScuWdt_getSafetyWatchdogPasswordInline();
     IfxScuWdt_clearSafetyEndinitInline(password);
 
-    MODULE_P15.IOCR4.B.PC4 = 0x02;//set port33.7 as pull-up input;
+    //MODULE_P15.IOCR4.B.PC4 = 0x02;//set port33.7 as pull-up input;
 
     //Setting ERU//
     MODULE_SCU.EICR[0].B.EXIS0 = 0;//EICR.EXIS  : ESR4,  (EICR2, EXIS0=ERS4, 0(REQ8,P33.7)
-
     MODULE_SCU.EICR[0].B.REN0 = 1;//rising edge
     MODULE_SCU.EICR[0].B.FEN0 = 1;//falling edge
 
@@ -152,7 +158,7 @@ void US_IR_init(void){
 
     MODULE_SCU.IGCR[0].B.IGP0= 1;// configure output channels, outputgating unit OGU (Register IGPy)
 
-    //ISR �벑濡�
+    //ISR
     volatile Ifx_SRC_SRCR *src;
     src = (volatile Ifx_SRC_SRCR*) (&MODULE_SRC.SCU.SCUERU[0]);
     src -> B.SRPN = ISR_PRIORITY_US_ECHO_INT0;
@@ -168,24 +174,54 @@ void US_IR_init(void){
 
 
 
-IFX_INTERRUPT(US_Echo_Int0_Handler, 0 , ISR_PRIORITY_US_ECHO_INT0);
-volatile uint64 howmany = 0;
-void US_Echo_Int0_Handler(void){
-    MODULE_SCU.EIFR.B.INTF0 = 1;
+IFX_INTERRUPT(US_Echo_test_Handler, 0 , ISR_PRIORITY_US_ECHO_INT0);
+void US_Echo_test_Handler(void){
+    if (MODULE_P11.IN.B.P10 == 1){
+        timer_end = 0;
+        timer_start = getTimeUs();
+        measurement_ready = 0;
+    }
+    else{
+        timer_end = getTimeUs();
+        measurement_ready = 1;  // 측정 완료 신호
+    }
+}
 
-    howmany++;
+void US_Echo_Int0_Handler(void){
+//    MODULE_SCU.EIFR.B.INTF0 = 1;
+//    MODULE_SCU.EIFR.B.INTF0 = 1;
+
+    // EIFR 클리어 후 동기화 대기
+//    volatile uint32 sync_dummy;
+//    sync_dummy = MODULE_SCU.EIFR.U;  // EIFR read-back
+//    sync_dummy = MODULE_P15.IN.U;    // 포트 전체 레지스터 읽기
+
+    //howmany++;
     if (MODULE_P15.IN.B.P4 == 1){
         timer_end = 0;
         timer_start = getTimeUs();
+        measurement_ready = 0;
     }
-    else if (MODULE_P15.IN.B.P4 == 0){
+//    else if (MODULE_P15.IN.B.P4 == 0){
+    else{
         timer_end = getTimeUs();
-    }
-    if (timer_start == 0 || timer_end == 0) return;
+        measurement_ready = 1;  // 측정 완료 신호
 
+    }
+//    if (timer_start == 0 || timer_end == 0) return;
 //    my_printf("s: %d, e: %d\n", timer_start, timer_end);
 //    rear_duration = (timer_end - timer_start);
-//    distance = 0.0343 * (float)rear_duration / 2.0; // cm/us
-//    my_printf("dist: %f", distance);
-}
+//    distance = 343 * (float)rear_duration / 20000; // cm/us
 
+}
+int is_ready(void){
+    return measurement_ready;
+}
+float get_distance(void){
+    if (!measurement_ready || timer_end == 0 || timer_start == 0) return 0;
+
+    measurement_ready = 0;
+    rear_duration = (timer_end - timer_start);
+    distance = 343 * (float)rear_duration / 20000; // cm/us
+    return distance;
+}

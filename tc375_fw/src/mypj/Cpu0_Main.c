@@ -38,27 +38,16 @@ void core0_main(void)
     SYSTEM_INIT();
 
     my_printf("Test start\n");
-    uint64 prev_encoder = get_encoder();
-
-    uint64 prev_time = getTimeUs();
-    my_printf("first : %d %llu\n", prev_encoder, prev_time);
-    uint64 now_time;
-    uint64 now_encoder;
-//    US_TestPinSetting();
-    int i = 100 ;
-    Motor_movChB_PWM(i, 0);
+//    float dist = 0;
     while(1){
-//        if (MODULE_P15.IN.B.P4){
-//            prev_encoder++;
-//            my_printf("prev : %d\n", prev_encoder);
-//        }
-//        else{
-//            my_printf("black : 0\n");
-//        }
-//        i--;
-//        if (i < 0) i = 100;
-        my_printf("encoder ; %d | vel : %f\n", get_encoder(), get_V());
-
-
+//        my_printf("debg start\n");
+        MODULE_P13.OUT.B.P2 = 1; // Rear TRIG_HIGH
+        runGpt12_T6();//timer run => 10us
+        while(!is_ready()) {
+             // 강제로 CPU 점유 방지용 짧은 대기 또는 다른 작업 수행 가능
+         }
+        my_printf("dist : %f\n", get_distance());
+        //my_printf("dist : %f\n", Ultrasonic_ReadSensor_noFilt());
+//        delay_ms(2000);
     };
 }
