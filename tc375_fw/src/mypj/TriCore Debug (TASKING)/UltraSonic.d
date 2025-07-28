@@ -258,3 +258,5 @@ UltraSonic.o :	"C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-stee
 "C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\Scu\Std\IfxScuCcu.h" :
 UltraSonic.o :	..\stm.h
 ..\stm.h :
+UltraSonic.o :	"C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\driver\asclin.h"
+"C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\driver\asclin.h" :

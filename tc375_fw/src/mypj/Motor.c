@@ -121,7 +121,7 @@ void Encoder_Init(void){
     MODULE_SCU.EICR[0].B.EXIS0 = 0;//EICR.EXIS  : ESR4,  (EICR2, EXIS0=ERS4, 0(REQ8,P33.7)
 
     MODULE_SCU.EICR[0].B.REN0 = 1;//rising edge
-//    MODULE_SCU.EICR[0].B.FEN0 = 1;//falling edge
+    MODULE_SCU.EICR[0].B.FEN0 = 0;//falling edge
 
     MODULE_SCU.EICR[0].B.EIEN0 = 1;//enable trigger pulse
 
@@ -140,26 +140,36 @@ void Encoder_Init(void){
     IfxScuWdt_setSafetyEndinitInline(password);
 }
 
-//volatile uint64 encoder = 0;
-uint64 encoder = 0;
+volatile uint64 encoder = 0;
+//uint64 encoder = 0;
 uint64 prev_encoder = 0;
 uint64 prev_time = 0;
 uint64 now_time = 0;
-double v  = 0.0;
+double double_v  = 0.0;
+uint64 v = 0;
 
 IFX_INTERRUPT(Encoder_Int0_Handler, 0 , ISR_PRIORITY_Encoder_INT0);
 void Encoder_Int0_Handler(void){
 //    MODULE_SCU.EIFR.B.INTF0 = 1;
     encoder++;
-    now_time = getTimeUs();
-    v = (double)(encoder-prev_encoder)/(now_time - prev_time) * 1000;
-    prev_time = now_time;
-    prev_encoder = encoder;
+//    now_time = getTimeUs();
+//    v = (double)(encoder-prev_encoder)/(now_time - prev_time) * 1000000;
+
 }
 
 uint64 get_encoder(void){
     return encoder;
 }
-double get_V(void){
+uint64 get_V(void){
+    v  = (encoder - prev_encoder);
+    prev_encoder = encoder;
     return v;
+}
+double get_timeV(void){
+//    if (now_time == prev_time) return -1.0;
+    double_v  = (double)(encoder - prev_encoder) / (getTimeUs() - prev_time) * 1000000;
+    prev_time = getTimeUs();
+    prev_encoder = encoder;
+    return double_v;
+
 }

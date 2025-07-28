@@ -66,6 +66,6 @@ void Motor_movChB_PWM(int duty, int dir);
 void Encoder_Init(void);
 void Encoder_Int0_Handler(void);
 uint64 get_encoder(void);
-double get_V(void);
-
+uint64 get_V(void);
+double get_timeV(void);
 #endif /* MOTOR_H_ */

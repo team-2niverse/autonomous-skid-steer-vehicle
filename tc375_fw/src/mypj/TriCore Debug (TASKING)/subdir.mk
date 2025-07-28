@@ -13,6 +13,7 @@ C_SRCS += \
 ../EV_ADC.c \
 ../GPIO.c \
 ../Motor.c \
+../PID.c \
 ../Sys_Init.c \
 ../UltraSonic.c \
 ../gpt12.c \
@@ -29,6 +30,7 @@ ERU.src \
 EV_ADC.src \
 GPIO.src \
 Motor.src \
+PID.src \
 Sys_Init.src \
 UltraSonic.src \
 gpt12.src \
@@ -45,6 +47,7 @@ ERU.d \
 EV_ADC.d \
 GPIO.d \
 Motor.d \
+PID.d \
 Sys_Init.d \
 UltraSonic.d \
 gpt12.d \
@@ -61,6 +64,7 @@ ERU.o \
 EV_ADC.o \
 GPIO.o \
 Motor.o \
+PID.o \
 Sys_Init.o \
 UltraSonic.o \
 gpt12.o \
@@ -105,6 +109,10 @@ Motor.src: ../Motor.c subdir.mk
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/Coding/C/proj1/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 Motor.o: Motor.src subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+PID.src: ../PID.c subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/Coding/C/proj1/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+PID.o: PID.src subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 Sys_Init.src: ../Sys_Init.c subdir.mk
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/Coding/C/proj1/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 Sys_Init.o: Sys_Init.src subdir.mk
@@ -129,7 +137,7 @@ stm.o: stm.src subdir.mk
 clean: clean--2e-
 
 clean--2e-:
-	-$(RM) Bluetooth.d Bluetooth.o Bluetooth.src Buzzer.d Buzzer.o Buzzer.src Cpu0_Main.d Cpu0_Main.o Cpu0_Main.src Cpu1_Main.d Cpu1_Main.o Cpu1_Main.src Cpu2_Main.d Cpu2_Main.o Cpu2_Main.src ERU.d ERU.o ERU.src EV_ADC.d EV_ADC.o EV_ADC.src GPIO.d GPIO.o GPIO.src Motor.d Motor.o Motor.src Sys_Init.d Sys_Init.o Sys_Init.src UltraSonic.d UltraSonic.o UltraSonic.src gpt12.d gpt12.o gpt12.src gtm_atom_pwm.d gtm_atom_pwm.o gtm_atom_pwm.src stm.d stm.o stm.src
+	-$(RM) Bluetooth.d Bluetooth.o Bluetooth.src Buzzer.d Buzzer.o Buzzer.src Cpu0_Main.d Cpu0_Main.o Cpu0_Main.src Cpu1_Main.d Cpu1_Main.o Cpu1_Main.src Cpu2_Main.d Cpu2_Main.o Cpu2_Main.src ERU.d ERU.o ERU.src EV_ADC.d EV_ADC.o EV_ADC.src GPIO.d GPIO.o GPIO.src Motor.d Motor.o Motor.src PID.d PID.o PID.src Sys_Init.d Sys_Init.o Sys_Init.src UltraSonic.d UltraSonic.o UltraSonic.src gpt12.d gpt12.o gpt12.src gtm_atom_pwm.d gtm_atom_pwm.o gtm_atom_pwm.src stm.d stm.o stm.src
 
 .PHONY: clean--2e-
 

@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc55736a --dep-file=Motor.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\driver -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o Motor.src ../Motor.c"
+	.compiler_invocation	"ctc -f cc65064a --dep-file=Motor.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\driver -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o Motor.src ../Motor.c"
 	.compiler_name		"ctc"
 	;source	'../Motor.c'
 
@@ -13,58 +13,58 @@ $TC162
 	
 	.global	Motor_Init
 ; Function Motor_Init
-.L20:
+.L21:
 Motor_Init:	.type	func
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003aa11)
-.L178:
+.L190:
 	mov	d15,#16
-.L179:
+.L191:
 	insert	d15,d0,d15,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa11),d15
-.L180:
+.L192:
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003a217)
-.L181:
+.L193:
 	mov	d15,#16
-.L182:
+.L194:
 	insert	d15,d0,d15,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003a217),d15
-.L183:
+.L195:
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003aa12)
-.L184:
+.L196:
 	mov	d15,#16
-.L185:
+.L197:
 	insert	d15,d0,d15,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa12),d15
-.L186:
+.L198:
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003a216)
-.L187:
+.L199:
 	mov	d15,#16
-.L188:
+.L200:
 	insert	d15,d0,d15,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003a216),d15
-.L189:
+.L201:
 	call	GtmAtomPwm_Init
-.L190:
+.L202:
 	mov	d4,#0
 	call	GtmAtomPwmA_SetDutyCycle
-.L191:
+.L203:
 	mov	d4,#0
 	call	GtmAtomPwmB_SetDutyCycle
-.L192:
+.L204:
 	ret
-.L110:
+.L120:
 	
 __Motor_Init_function_end:
 	.size	Motor_Init,__Motor_Init_function_end-Motor_Init
-.L49:
+.L52:
 	; End of function
 	
 	.sdecl	'.text.Motor.Motor_movChB',code,cluster('Motor_movChB')
@@ -73,43 +73,43 @@ __Motor_Init_function_end:
 	
 	.global	Motor_movChB
 ; Function Motor_movChB
-.L22:
+.L23:
 Motor_movChB:	.type	func
 	jeq	d4,#0,.L2
-.L222:
+.L234:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003aa00)
-.L223:
+.L235:
 	or	d15,#4
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa00),d15
-.L224:
+.L236:
 	j	.L3
 .L2:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003aa00)
-.L225:
+.L237:
 	insert	d15,d15,#0,#2,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa00),d15
 .L3:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003a200)
-.L226:
+.L238:
 	insert	d15,d15,#0,#6,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003a200),d15
-.L227:
+.L239:
 	mov	d4,#1000
-.L151:
+.L163:
 	call	GtmAtomPwmB_SetDutyCycle
-.L228:
+.L240:
 	ret
-.L118:
+.L128:
 	
 __Motor_movChB_function_end:
 	.size	Motor_movChB,__Motor_movChB_function_end-Motor_movChB
-.L69:
+.L72:
 	; End of function
 	
 	.sdecl	'.text.Motor.Motor_stopChB',code,cluster('Motor_stopChB')
@@ -118,21 +118,21 @@ __Motor_movChB_function_end:
 	
 	.global	Motor_stopChB
 ; Function Motor_stopChB
-.L24:
+.L25:
 Motor_stopChB:	.type	func
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003a200)
-.L233:
+.L245:
 	or	d15,#64
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003a200),d15
-.L234:
+.L246:
 	ret
-.L120:
+.L130:
 	
 __Motor_stopChB_function_end:
 	.size	Motor_stopChB,__Motor_stopChB_function_end-Motor_stopChB
-.L74:
+.L77:
 	; End of function
 	
 	.sdecl	'.text.Motor.Motor_movChB_PWM',code,cluster('Motor_movChB_PWM')
@@ -141,45 +141,45 @@ __Motor_stopChB_function_end:
 	
 	.global	Motor_movChB_PWM
 ; Function Motor_movChB_PWM
-.L26:
+.L27:
 Motor_movChB_PWM:	.type	func
 	mov	d15,d5
-.L154:
+.L166:
 	mul	d4,d4,#10
-.L153:
+.L165:
 	call	GtmAtomPwmB_SetDutyCycle
-.L152:
+.L164:
 	jeq	d15,#0,.L4
-.L239:
+.L251:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003aa00)
-.L155:
+.L167:
 	or	d15,#4
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa00),d15
-.L240:
+.L252:
 	j	.L5
 .L4:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003aa00)
-.L156:
+.L168:
 	insert	d15,d15,#0,#2,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa00),d15
 .L5:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003a200)
-.L241:
+.L253:
 	insert	d15,d15,#0,#6,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003a200),d15
-.L242:
+.L254:
 	ret
-.L121:
+.L131:
 	
 __Motor_movChB_PWM_function_end:
 	.size	Motor_movChB_PWM,__Motor_movChB_PWM_function_end-Motor_movChB_PWM
-.L79:
+.L82:
 	; End of function
 	
 	.sdecl	'.text.Motor.Motor_movChA',code,cluster('Motor_movChA')
@@ -188,43 +188,43 @@ __Motor_movChB_PWM_function_end:
 	
 	.global	Motor_movChA
 ; Function Motor_movChA
-.L28:
+.L29:
 Motor_movChA:	.type	func
 	jeq	d4,#0,.L6
-.L197:
+.L209:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003aa00)
-.L198:
+.L210:
 	or	d15,#2
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa00),d15
-.L199:
+.L211:
 	j	.L7
 .L6:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003aa00)
-.L200:
+.L212:
 	insert	d15,d15,#0,#1,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa00),d15
 .L7:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003a200)
-.L201:
+.L213:
 	insert	d15,d15,#0,#7,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003a200),d15
-.L202:
+.L214:
 	mov	d4,#1000
-.L157:
+.L169:
 	call	GtmAtomPwmA_SetDutyCycle
-.L203:
+.L215:
 	ret
-.L111:
+.L121:
 	
 __Motor_movChA_function_end:
 	.size	Motor_movChA,__Motor_movChA_function_end-Motor_movChA
-.L54:
+.L57:
 	; End of function
 	
 	.sdecl	'.text.Motor.Motor_stopChA',code,cluster('Motor_stopChA')
@@ -233,21 +233,21 @@ __Motor_movChA_function_end:
 	
 	.global	Motor_stopChA
 ; Function Motor_stopChA
-.L30:
+.L31:
 Motor_stopChA:	.type	func
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003a200)
-.L208:
+.L220:
 	or	d15,#128
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003a200),d15
-.L209:
+.L221:
 	ret
-.L114:
+.L124:
 	
 __Motor_stopChA_function_end:
 	.size	Motor_stopChA,__Motor_stopChA_function_end-Motor_stopChA
-.L59:
+.L62:
 	; End of function
 	
 	.sdecl	'.text.Motor.Motor_movChA_PWM',code,cluster('Motor_movChA_PWM')
@@ -256,45 +256,45 @@ __Motor_stopChA_function_end:
 	
 	.global	Motor_movChA_PWM
 ; Function Motor_movChA_PWM
-.L32:
+.L33:
 Motor_movChA_PWM:	.type	func
 	mov	d15,d5
-.L160:
+.L172:
 	mul	d4,d4,#10
-.L159:
+.L171:
 	call	GtmAtomPwmA_SetDutyCycle
-.L158:
+.L170:
 	jeq	d15,#0,.L8
-.L214:
+.L226:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003aa00)
-.L161:
+.L173:
 	or	d15,#2
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa00),d15
-.L215:
+.L227:
 	j	.L9
 .L8:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003aa00)
-.L162:
+.L174:
 	insert	d15,d15,#0,#1,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa00),d15
 .L9:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003a200)
-.L216:
+.L228:
 	insert	d15,d15,#0,#7,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003a200),d15
-.L217:
+.L229:
 	ret
-.L115:
+.L125:
 	
 __Motor_movChA_PWM_function_end:
 	.size	Motor_movChA_PWM,__Motor_movChA_PWM_function_end-Motor_movChA_PWM
-.L64:
+.L67:
 	; End of function
 	
 	.sdecl	'.text.Motor.Encoder_Init',code,cluster('Encoder_Init')
@@ -303,179 +303,186 @@ __Motor_movChA_PWM_function_end:
 	
 	.global	Encoder_Init
 ; Function Encoder_Init
-.L34:
+.L35:
 Encoder_Init:	.type	func
 	movh.a	a15,#61443
-.L163:
+.L175:
 	lea	a15,[a15]@los(0xf00362a8)
-.L247:
+.L259:
 	ld.w	d15,[a15]
 	extr.u	d15,d15,#2,#14
-.L165:
+.L177:
 	xor	d1,d15,#63
-.L166:
+.L178:
 	j	.L10
 .L10:
 	movh.a	a15,#61443
-.L164:
+.L176:
 	ld.w	d15,[a15]@los(0xf00362a8)
-.L248:
+.L260:
 	jz.t	d15:1,.L11
-.L249:
+.L261:
 	sha	d15,d1,#2
 	or	d15,#1
-.L250:
+.L262:
 	movh.a	a15,#61443
 	ld.w	d0,[a15]@los(0xf00362a8)
 	extr.u	d0,d0,#16,#16
-.L251:
+.L263:
 	sha	d0,d0,#16
-.L252:
+.L264:
 	or	d15,d0
-.L253:
+.L265:
 	movh.a	a15,#61443
 	st.w	[a15]@los(0xf00362a8),d15
 .L11:
 	sha	d15,d1,#2
 	or	d15,#2
-.L254:
+.L266:
 	movh.a	a15,#61443
 	ld.w	d0,[a15]@los(0xf00362a8)
 	extr.u	d0,d0,#16,#16
-.L255:
+.L267:
 	sha	d0,d0,#16
-.L256:
+.L268:
 	or	d15,d0
-.L257:
+.L269:
 	movh.a	a15,#61443
 	st.w	[a15]@los(0xf00362a8),d15
-.L258:
+.L270:
 	j	.L12
 .L13:
 .L12:
 	movh.a	a15,#61443
 	ld.w	d15,[a15]@los(0xf00362a8)
 	and	d15,#1
-.L259:
+.L271:
 	jeq	d15,#1,.L13
-.L133:
+.L143:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003af14)
-.L260:
+.L272:
 	insert	d15,d15,#1,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003af14),d15
-.L261:
+.L273:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036210)
-.L262:
+.L274:
 	insert	d15,d15,#0,#4,#3
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf0036210),d15
-.L263:
+.L275:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036211)
-.L264:
+.L276:
 	or	d15,#2
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf0036211),d15
-.L265:
+.L277:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036211)
-.L266:
+.L278:
+	insert	d15,d15,#0,#0,#1
+	movh.a	a15,#61443
+	st.b	[a15]@los(0xf0036211),d15
+.L279:
+	movh.a	a15,#61443
+	ld.bu	d15,[a15]@los(0xf0036211)
+.L280:
 	or	d15,#8
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf0036211),d15
-.L267:
+.L281:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036211)
-.L268:
+.L282:
 	insert	d15,d15,#0,#4,#3
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf0036211),d15
-.L269:
+.L283:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf003622d)
-.L270:
+.L284:
 	insert	d15,d15,#1,#6,#2
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf003622d),d15
-.L137:
+.L147:
 	movh.a	a15,#61444
-.L168:
+.L180:
 	lea	a15,[a15]@los(0xf0038880)
-.L271:
+.L285:
 	ld.bu	d0,[a15]
-.L272:
+.L286:
 	mov	d15,#30
-.L273:
+.L287:
 	insert	d15,d0,d15,#0,#8
 	st.b	[a15],d15
-.L274:
+.L288:
 	ld.bu	d15,[a15]1
-.L275:
+.L289:
 	insert	d15,d15,#0,#3,#3
 	st.b	[a15]1,d15
-.L276:
+.L290:
 	ld.bu	d15,[a15]3
-.L277:
+.L291:
 	or	d15,#2
 	st.b	[a15]3,d15
-.L278:
+.L292:
 	ld.bu	d15,[a15]1
-.L279:
+.L293:
 	or	d15,#4
 	st.b	[a15]1,d15
-.L141:
+.L151:
 	movh.a	a15,#61443
-.L169:
+.L181:
 	ld.w	d15,[a15]@los(0xf00362a8)
-.L280:
+.L294:
 	jz.t	d15:1,.L14
-.L281:
+.L295:
 	sha	d15,d1,#2
 	or	d15,#1
-.L282:
+.L296:
 	movh.a	a15,#61443
 	ld.w	d0,[a15]@los(0xf00362a8)
 	extr.u	d0,d0,#16,#16
-.L283:
+.L297:
 	sha	d0,d0,#16
-.L284:
+.L298:
 	or	d15,d0
-.L285:
+.L299:
 	movh.a	a15,#61443
 	st.w	[a15]@los(0xf00362a8),d15
 .L14:
 	sha	d1,#2
-.L167:
+.L179:
 	or	d15,d1,#3
-.L286:
+.L300:
 	movh.a	a15,#61443
 	ld.w	d0,[a15]@los(0xf00362a8)
 	extr.u	d0,d0,#16,#16
-.L287:
+.L301:
 	sha	d0,d0,#16
-.L288:
+.L302:
 	or	d15,d0
-.L289:
+.L303:
 	movh.a	a15,#61443
 	st.w	[a15]@los(0xf00362a8),d15
-.L290:
+.L304:
 	j	.L15
 .L16:
 .L15:
 	movh.a	a15,#61443
 	ld.w	d15,[a15]@los(0xf00362a8)
-.L291:
+.L305:
 	jz.t	d15:0,.L16
-.L142:
+.L152:
 	ret
-.L124:
+.L134:
 	
 __Encoder_Init_function_end:
 	.size	Encoder_Init,__Encoder_Init_function_end-Encoder_Init
-.L84:
+.L87:
 	; End of function
 	
 	.sdecl	'.text.inttab0.intvec.01e',code
@@ -489,90 +496,27 @@ __Encoder_Init_function_end:
 	
 	.global	Encoder_Int0_Handler
 ; Function Encoder_Int0_Handler
-.L36:
+.L37:
 Encoder_Int0_Handler:	.type	func
 	svlcx
-.L296:
-	movh.a	a15,#@his(encoder)
-	lea	a15,[a15]@los(encoder)
-	movh.a	a2,#@his(encoder)
-	lea	a2,[a2]@los(encoder)
-	ld.d	e0,[a2]0
-.L297:
-	addx	d0,d0,#1
-	addc	d1,d1,#0
-	st.d	[a15]0,e0
-.L298:
-	movh.a	a15,#@his(now_time)
-	lea	a15,[a15]@los(now_time)
-.L299:
-	call	getTimeUs
-	mov	e0,d2
-.L300:
-	st.d	[a15]0,e0
-.L301:
-	movh.a	a12,#@his(v)
-	lea	a12,[a12]@los(v)
-.L302:
-	movh.a	a15,#@his(encoder)
-	lea	a15,[a15]@los(encoder)
-	ld.d	e0,[a15]0
-.L303:
-	movh.a	a15,#@his(prev_encoder)
-	lea	a15,[a15]@los(prev_encoder)
-	ld.d	e2,[a15]0
-.L304:
-	subx	d4,d0,d2
-	subc	d5,d1,d3
-.L305:
-	call	__f_ulltof
-	mov	d15,d2
-.L306:
-	movh.a	a15,#@his(now_time)
-	lea	a15,[a15]@los(now_time)
-	ld.d	e0,[a15]0
-.L307:
-	movh.a	a15,#@his(prev_time)
-	lea	a15,[a15]@los(prev_time)
-	ld.d	e2,[a15]0
-.L308:
-	subx	d4,d0,d2
-	subc	d5,d1,d3
-	call	__f_ulltof
-.L309:
-	div.f	d15,d15,d2
 .L310:
-	movh	d8,#17530
-.L311:
-	mul.f	d15,d15,d8
-.L312:
-	st.w	[a12],d15
-.L313:
-	movh.a	a15,#@his(prev_time)
-	lea	a15,[a15]@los(prev_time)
-.L314:
-	movh.a	a12,#@his(now_time)
-	lea	a12,[a12]@los(now_time)
-	ld.d	e8,[a12]0
-.L315:
-	st.d	[a15]0,e8
-.L316:
-	movh.a	a15,#@his(prev_encoder)
-	lea	a15,[a15]@los(prev_encoder)
-.L317:
+	movh.a	a15,#@his(encoder)
+	lea	a15,[a15]@los(encoder)
 	movh.a	a12,#@his(encoder)
 	lea	a12,[a12]@los(encoder)
 	ld.d	e8,[a12]0
-.L318:
+.L311:
+	addx	d8,d8,#1
+	addc	d9,d9,#0
 	st.d	[a15]0,e8
-.L319:
+.L312:
 	rslcx
 	rfe
-.L146:
+.L156:
 	
 __Encoder_Int0_Handler_function_end:
 	.size	Encoder_Int0_Handler,__Encoder_Int0_Handler_function_end-Encoder_Int0_Handler
-.L89:
+.L92:
 	; End of function
 	
 	.sdecl	'.text.Motor.get_encoder',code,cluster('get_encoder')
@@ -581,20 +525,20 @@ __Encoder_Int0_Handler_function_end:
 	
 	.global	get_encoder
 ; Function get_encoder
-.L38:
+.L39:
 get_encoder:	.type	func
 	movh.a	a15,#@his(encoder)
 	lea	a15,[a15]@los(encoder)
 	ld.d	e2,[a15]0
-.L324:
+.L317:
 	j	.L17
 .L17:
 	ret
-.L148:
+.L158:
 	
 __get_encoder_function_end:
 	.size	get_encoder,__get_encoder_function_end-get_encoder
-.L94:
+.L97:
 	; End of function
 	
 	.sdecl	'.text.Motor.get_V',code,cluster('get_V')
@@ -603,20 +547,121 @@ __get_encoder_function_end:
 	
 	.global	get_V
 ; Function get_V
-.L40:
+.L41:
 get_V:	.type	func
 	movh.a	a15,#@his(v)
 	lea	a15,[a15]@los(v)
-	ld.w	d2,[a15]
+.L322:
+	movh.a	a2,#@his(encoder)
+	lea	a2,[a2]@los(encoder)
+	ld.d	e0,[a2]0
+.L323:
+	movh.a	a2,#@his(prev_encoder)
+	lea	a2,[a2]@los(prev_encoder)
+	ld.d	e2,[a2]0
+.L324:
+	subx	d0,d0,d2
+	subc	d1,d1,d3
+.L325:
+	st.d	[a15]0,e0
+.L326:
+	movh.a	a15,#@his(prev_encoder)
+	lea	a15,[a15]@los(prev_encoder)
+.L327:
+	movh.a	a2,#@his(encoder)
+	lea	a2,[a2]@los(encoder)
+	ld.d	e0,[a2]0
+.L328:
+	st.d	[a15]0,e0
 .L329:
+	movh.a	a15,#@his(v)
+	lea	a15,[a15]@los(v)
+	ld.d	e2,[a15]0
+.L330:
 	j	.L18
 .L18:
 	ret
-.L150:
+.L159:
 	
 __get_V_function_end:
 	.size	get_V,__get_V_function_end-get_V
-.L99:
+.L102:
+	; End of function
+	
+	.sdecl	'.text.Motor.get_timeV',code,cluster('get_timeV')
+	.sect	'.text.Motor.get_timeV'
+	.align	2
+	
+	.global	get_timeV
+; Function get_timeV
+.L43:
+get_timeV:	.type	func
+	movh.a	a15,#@his(double_v)
+	lea	a15,[a15]@los(double_v)
+.L335:
+	movh.a	a2,#@his(encoder)
+	lea	a2,[a2]@los(encoder)
+	ld.d	e0,[a2]0
+.L336:
+	movh.a	a2,#@his(prev_encoder)
+	lea	a2,[a2]@los(prev_encoder)
+	ld.d	e2,[a2]0
+.L337:
+	subx	d4,d0,d2
+	subc	d5,d1,d3
+.L338:
+	call	__f_ulltof
+	mov	d15,d2
+.L339:
+	call	getTimeUs
+	mov	e0,d2
+.L340:
+	movh.a	a2,#@his(prev_time)
+	lea	a2,[a2]@los(prev_time)
+	ld.d	e2,[a2]0
+.L341:
+	subx	d4,d0,d2
+	subc	d5,d1,d3
+	call	__f_ulltof
+.L342:
+	div.f	d15,d15,d2
+.L343:
+	mov	d0,#9216
+	addih	d0,d0,#18804
+.L344:
+	mul.f	d15,d15,d0
+.L345:
+	st.w	[a15],d15
+.L346:
+	movh.a	a15,#@his(prev_time)
+	lea	a15,[a15]@los(prev_time)
+.L347:
+	call	getTimeUs
+	mov	e0,d2
+.L348:
+	st.d	[a15]0,e0
+.L349:
+	movh.a	a15,#@his(prev_encoder)
+	lea	a15,[a15]@los(prev_encoder)
+.L350:
+	movh.a	a2,#@his(encoder)
+	lea	a2,[a2]@los(encoder)
+	ld.d	e0,[a2]0
+.L351:
+	st.d	[a15]0,e0
+.L352:
+	movh.a	a15,#@his(double_v)
+	lea	a15,[a15]@los(double_v)
+	ld.w	d2,[a15]
+.L353:
+	j	.L19
+.L19:
+	ret
+.L161:
+	
+__get_timeV_function_end:
+	.size	get_timeV,__get_timeV_function_end-get_timeV
+.L107:
 	; End of function
 	
 	.sdecl	'.data.Motor.encoder',data,cluster('encoder')
@@ -647,14 +692,21 @@ prev_time:	.type	object
 now_time:	.type	object
 	.size	now_time,8
 	.space	8
+	.sdecl	'.data.Motor.double_v',data,cluster('double_v')
+	.sect	'.data.Motor.double_v'
+	.global	double_v
+	.align	2
+double_v:	.type	object
+	.size	double_v,4
+	.space	4
 	.sdecl	'.data.Motor.v',data,cluster('v')
 	.sect	'.data.Motor.v'
 	.global	v
-	.align	2
+	.align	4
 v:	.type	object
-	.size	v,4
-	.space	4
-	.calls	'Encoder_Int0_Handler','__f_ulltof'
+	.size	v,8
+	.space	8
+	.calls	'get_timeV','__f_ulltof'
 	.calls	'Motor_Init','GtmAtomPwm_Init'
 	.calls	'Motor_Init','GtmAtomPwmA_SetDutyCycle'
 	.calls	'Motor_Init','GtmAtomPwmB_SetDutyCycle'
@@ -662,7 +714,7 @@ v:	.type	object
 	.calls	'Motor_movChB_PWM','GtmAtomPwmB_SetDutyCycle'
 	.calls	'Motor_movChA','GtmAtomPwmA_SetDutyCycle'
 	.calls	'Motor_movChA_PWM','GtmAtomPwmA_SetDutyCycle'
-	.calls	'Encoder_Int0_Handler','getTimeUs'
+	.calls	'get_timeV','getTimeUs'
 	.calls	'Motor_Init','',0
 	.calls	'Motor_movChB','',0
 	.calls	'Motor_stopChB','',0
@@ -673,26 +725,27 @@ v:	.type	object
 	.calls	'Encoder_Init','',0
 	.calls	'Encoder_Int0_Handler','',0
 	.calls	'get_encoder','',0
+	.calls	'get_V','',0
 	.extern	GtmAtomPwm_Init
 	.extern	GtmAtomPwmA_SetDutyCycle
 	.extern	GtmAtomPwmB_SetDutyCycle
 	.extern	getTimeUs
 	.extern	__f_ulltof
-	.calls	'get_V','',0
+	.calls	'get_timeV','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L42:
-	.word	277295
+.L45:
+	.word	277300
 	.half	3
-	.word	.L43
+	.word	.L46
 	.byte	4
-.L41:
+.L44:
 	.byte	1
 	.byte	'../Motor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L44
+	.word	.L47
 	.byte	2,1,1,3
 	.word	216
 	.byte	4
@@ -717,7 +770,7 @@ v:	.type	object
 	.word	280
 	.byte	6,0,9
 	.byte	'__fract',0,4,128,1
-.L149:
+.L160:
 	.byte	9
 	.byte	'float',0,4,4,10
 	.byte	'Ifx__float_to_fract',0,3,1,149,2,18
@@ -738,7 +791,7 @@ v:	.type	object
 	.byte	'value',0,2,111,75
 	.word	465
 	.byte	6,0
-.L147:
+.L157:
 	.byte	9
 	.byte	'unsigned long long int',0,8,7,3
 	.word	264
@@ -756,7 +809,7 @@ v:	.type	object
 	.byte	'value',0,2,143,1,43
 	.word	543
 	.byte	6,0
-.L112:
+.L122:
 	.byte	9
 	.byte	'int',0,4,5,9
 	.byte	'unsigned int',0,4,7,11
@@ -783,7 +836,7 @@ v:	.type	object
 	.word	678
 	.byte	4,2,35,0,0,9
 	.byte	'unsigned char',0,1,8
-.L125:
+.L135:
 	.byte	9
 	.byte	'unsigned short int',0,2,7,11
 	.byte	'_Ifx_SCU_WDTCPU_CON1_Bits',0,4,217,9,16,4,12
@@ -893,14 +946,14 @@ v:	.type	object
 	.byte	'password',0,3,166,4,82
 	.word	831
 	.byte	6,0
-.L132:
+.L142:
 	.byte	4
 	.byte	'IfxScuWdt_clearSafetyEndinitInline',0,3,3,199,4,17,1,1
-.L134:
+.L144:
 	.byte	5
 	.byte	'password',0,3,199,4,59
 	.word	831
-.L136:
+.L146:
 	.byte	6,0,4
 	.byte	'IfxScuWdt_setCpuEndinitInline',0,3,3,146,5,17,1,1,5
 	.byte	'watchdog',0,3,146,5,63
@@ -909,14 +962,14 @@ v:	.type	object
 	.byte	'password',0,3,146,5,80
 	.word	831
 	.byte	6,0
-.L140:
+.L150:
 	.byte	4
 	.byte	'IfxScuWdt_setSafetyEndinitInline',0,3,3,179,5,17,1,1
-.L143:
+.L153:
 	.byte	5
 	.byte	'password',0,3,179,5,57
 	.word	831
-.L145:
+.L155:
 	.byte	6,0,10
 	.byte	'IfxScuWdt_getCpuWatchdogPasswordInline',0,3,3,222,4,19
 	.word	831
@@ -924,12 +977,12 @@ v:	.type	object
 	.byte	'watchdog',0,3,222,4,74
 	.word	1418
 	.byte	6,0
-.L127:
+.L137:
 	.byte	10
 	.byte	'IfxScuWdt_getSafetyWatchdogPasswordInline',0,3,3,131,5,19
 	.word	831
 	.byte	1,1
-.L128:
+.L138:
 	.byte	6,0,11
 	.byte	'_Ifx_P_OUT_Bits',0,6,145,3,16,4,12
 	.byte	'P0',0,1
@@ -2316,7 +2369,7 @@ v:	.type	object
 	.word	9511
 	.byte	4,2,35,0,0,8
 	.word	9801
-.L138:
+.L148:
 	.byte	3
 	.word	9840
 	.byte	4
@@ -4688,11 +4741,11 @@ v:	.type	object
 	.word	26159
 	.byte	4,2,35,8,0,8
 	.word	26199
-.L130:
+.L140:
 	.byte	3
 	.word	26260
 	.byte	27
-	.byte	'getTimeUs',0,17,154,1,16
+	.byte	'getTimeUs',0,17,170,1,53
 	.word	655
 	.byte	1,1,1,9
 	.byte	'short int',0,2,5,28
@@ -39270,10 +39323,13 @@ v:	.type	object
 	.byte	1,2,35,5,0,28
 	.byte	'IfxGtm_Atom_Pwm_pin',0,33,155,1,3
 	.word	277204
+.L162:
+	.byte	8
+	.word	543
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L43:
+.L46:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,59,0,3,8,0,0,8,53
 	.byte	0,73,19,0,0,9,36,0,3,8,11,15,62,15,0,0,10,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,11,19
@@ -39286,12 +39342,12 @@ v:	.type	object
 	.byte	15,0,0,31,38,0,73,19,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L44:
-	.word	.L171-.L170
-.L170:
+.L47:
+	.word	.L183-.L182
+.L182:
 	.half	3
-	.word	.L173-.L172
-.L172:
+	.word	.L185-.L184
+.L184:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
 	.byte	'C:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl',0
@@ -39350,947 +39406,921 @@ v:	.type	object
 	.byte	'C:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Gtm\\Std\\IfxGtm_Dtm.h',0
 	.byte	0,0,0
 	.byte	'IfxGtm_Atom_Pwm.h',0,3,0,0,0
-.L173:
-.L171:
+.L185:
+.L183:
 	.sdecl	'.debug_info',debug,cluster('Motor_Init')
 	.sect	'.debug_info'
-.L45:
+.L48:
 	.word	262
 	.half	3
-	.word	.L46
+	.word	.L49
 	.byte	4,1
 	.byte	'../Motor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L48,.L47
+	.word	.L51,.L50
 	.byte	2
-	.word	.L41
+	.word	.L44
 	.byte	3
 	.byte	'Motor_Init',0,1,52,6,1,1,1
-	.word	.L20,.L110,.L19
+	.word	.L21,.L120,.L20
 	.byte	4
-	.word	.L20,.L110
+	.word	.L21,.L120
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Motor_Init')
 	.sect	'.debug_abbrev'
-.L46:
+.L49:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Motor_Init')
 	.sect	'.debug_line'
-.L47:
-	.word	.L175-.L174
-.L174:
+.L50:
+	.word	.L187-.L186
+.L186:
 	.half	3
-	.word	.L177-.L176
-.L176:
+	.word	.L189-.L188
+.L188:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../Motor.c',0,0,0,0,0
-.L177:
+.L189:
 	.byte	5,23,7,0,5,2
-	.word	.L20
+	.word	.L21
 	.byte	3,52,1,5,30,9
-	.half	.L178-.L20
+	.half	.L190-.L21
 	.byte	1,5,28,9
-	.half	.L179-.L178
-	.byte	1,5,23,9
-	.half	.L180-.L179
-	.byte	3,1,1,5,30,9
-	.half	.L181-.L180
-	.byte	1,5,28,9
-	.half	.L182-.L181
-	.byte	1,5,23,9
-	.half	.L183-.L182
-	.byte	3,2,1,5,30,9
-	.half	.L184-.L183
-	.byte	1,5,28,9
-	.half	.L185-.L184
-	.byte	1,5,23,9
-	.half	.L186-.L185
-	.byte	3,1,1,5,30,9
-	.half	.L187-.L186
-	.byte	1,5,28,9
-	.half	.L188-.L187
-	.byte	1,5,20,9
-	.half	.L189-.L188
-	.byte	3,2,1,5,30,9
-	.half	.L190-.L189
-	.byte	3,1,1,9
 	.half	.L191-.L190
-	.byte	3,1,1,5,1,9
+	.byte	1,5,23,9
 	.half	.L192-.L191
+	.byte	3,1,1,5,30,9
+	.half	.L193-.L192
+	.byte	1,5,28,9
+	.half	.L194-.L193
+	.byte	1,5,23,9
+	.half	.L195-.L194
+	.byte	3,2,1,5,30,9
+	.half	.L196-.L195
+	.byte	1,5,28,9
+	.half	.L197-.L196
+	.byte	1,5,23,9
+	.half	.L198-.L197
+	.byte	3,1,1,5,30,9
+	.half	.L199-.L198
+	.byte	1,5,28,9
+	.half	.L200-.L199
+	.byte	1,5,20,9
+	.half	.L201-.L200
+	.byte	3,2,1,5,30,9
+	.half	.L202-.L201
+	.byte	3,1,1,9
+	.half	.L203-.L202
+	.byte	3,1,1,5,1,9
+	.half	.L204-.L203
 	.byte	3,1,1,7,9
-	.half	.L49-.L192
+	.half	.L52-.L204
 	.byte	0,1,1
-.L175:
+.L187:
 	.sdecl	'.debug_ranges',debug,cluster('Motor_Init')
 	.sect	'.debug_ranges'
-.L48:
-	.word	-1,.L20,0,.L49-.L20,0,0
+.L51:
+	.word	-1,.L21,0,.L52-.L21,0,0
 	.sdecl	'.debug_info',debug,cluster('Motor_movChA')
 	.sect	'.debug_info'
-.L50:
+.L53:
 	.word	280
 	.half	3
-	.word	.L51
+	.word	.L54
 	.byte	4,1
 	.byte	'../Motor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L53,.L52
+	.word	.L56,.L55
 	.byte	2
-	.word	.L41
+	.word	.L44
 	.byte	3
 	.byte	'Motor_movChA',0,1,89,6,1,1,1
-	.word	.L28,.L111,.L27
+	.word	.L29,.L121,.L28
 	.byte	4
 	.byte	'dir',0,1,89,23
-	.word	.L112,.L113
+	.word	.L122,.L123
 	.byte	5
-	.word	.L28,.L111
+	.word	.L29,.L121
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Motor_movChA')
 	.sect	'.debug_abbrev'
-.L51:
+.L54:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Motor_movChA')
 	.sect	'.debug_line'
-.L52:
-	.word	.L194-.L193
-.L193:
+.L55:
+	.word	.L206-.L205
+.L205:
 	.half	3
-	.word	.L196-.L195
-.L195:
+	.word	.L208-.L207
+.L207:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../Motor.c',0,0,0,0,0
-.L196:
+.L208:
 	.byte	5,5,7,0,5,2
-	.word	.L28
+	.word	.L29
 	.byte	3,217,0,1,5,25,7,9
-	.half	.L197-.L28
+	.half	.L209-.L29
 	.byte	3,1,1,5,29,9
-	.half	.L198-.L197
+	.half	.L210-.L209
 	.byte	1,5,32,9
-	.half	.L199-.L198
+	.half	.L211-.L210
 	.byte	1,5,25,9
-	.half	.L6-.L199
+	.half	.L6-.L211
 	.byte	3,3,1,5,29,9
-	.half	.L200-.L6
+	.half	.L212-.L6
 	.byte	1,5,21,9
-	.half	.L7-.L200
+	.half	.L7-.L212
 	.byte	3,2,1,5,25,9
-	.half	.L201-.L7
+	.half	.L213-.L7
 	.byte	1,5,30,9
-	.half	.L202-.L201
+	.half	.L214-.L213
 	.byte	3,1,1,5,1,9
-	.half	.L203-.L202
+	.half	.L215-.L214
 	.byte	3,1,1,7,9
-	.half	.L54-.L203
+	.half	.L57-.L215
 	.byte	0,1,1
-.L194:
+.L206:
 	.sdecl	'.debug_ranges',debug,cluster('Motor_movChA')
 	.sect	'.debug_ranges'
-.L53:
-	.word	-1,.L28,0,.L54-.L28,0,0
+.L56:
+	.word	-1,.L29,0,.L57-.L29,0,0
 	.sdecl	'.debug_info',debug,cluster('Motor_stopChA')
 	.sect	'.debug_info'
-.L55:
+.L58:
 	.word	265
 	.half	3
-	.word	.L56
+	.word	.L59
 	.byte	4,1
 	.byte	'../Motor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L58,.L57
+	.word	.L61,.L60
 	.byte	2
-	.word	.L41
+	.word	.L44
 	.byte	3
 	.byte	'Motor_stopChA',0,1,99,6,1,1,1
-	.word	.L30,.L114,.L29
+	.word	.L31,.L124,.L30
 	.byte	4
-	.word	.L30,.L114
+	.word	.L31,.L124
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Motor_stopChA')
 	.sect	'.debug_abbrev'
-.L56:
+.L59:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Motor_stopChA')
 	.sect	'.debug_line'
-.L57:
-	.word	.L205-.L204
-.L204:
+.L60:
+	.word	.L217-.L216
+.L216:
 	.half	3
-	.word	.L207-.L206
-.L206:
+	.word	.L219-.L218
+.L218:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../Motor.c',0,0,0,0,0
-.L207:
+.L219:
 	.byte	5,21,7,0,5,2
-	.word	.L30
+	.word	.L31
 	.byte	3,227,0,1,5,25,9
-	.half	.L208-.L30
+	.half	.L220-.L31
 	.byte	1,5,1,9
-	.half	.L209-.L208
+	.half	.L221-.L220
 	.byte	3,1,1,7,9
-	.half	.L59-.L209
+	.half	.L62-.L221
 	.byte	0,1,1
-.L205:
+.L217:
 	.sdecl	'.debug_ranges',debug,cluster('Motor_stopChA')
 	.sect	'.debug_ranges'
-.L58:
-	.word	-1,.L30,0,.L59-.L30,0,0
+.L61:
+	.word	-1,.L31,0,.L62-.L31,0,0
 	.sdecl	'.debug_info',debug,cluster('Motor_movChA_PWM')
 	.sect	'.debug_info'
-.L60:
+.L63:
 	.word	301
 	.half	3
-	.word	.L61
+	.word	.L64
 	.byte	4,1
 	.byte	'../Motor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L63,.L62
+	.word	.L66,.L65
 	.byte	2
-	.word	.L41
+	.word	.L44
 	.byte	3
 	.byte	'Motor_movChA_PWM',0,1,102,6,1,1,1
-	.word	.L32,.L115,.L31
+	.word	.L33,.L125,.L32
 	.byte	4
 	.byte	'duty',0,1,102,27
-	.word	.L112,.L116
+	.word	.L122,.L126
 	.byte	4
 	.byte	'dir',0,1,102,37
-	.word	.L112,.L117
+	.word	.L122,.L127
 	.byte	5
-	.word	.L32,.L115
+	.word	.L33,.L125
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Motor_movChA_PWM')
 	.sect	'.debug_abbrev'
-.L61:
+.L64:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Motor_movChA_PWM')
 	.sect	'.debug_line'
-.L62:
-	.word	.L211-.L210
-.L210:
+.L65:
+	.word	.L223-.L222
+.L222:
 	.half	3
-	.word	.L213-.L212
-.L212:
+	.word	.L225-.L224
+.L224:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../Motor.c',0,0,0,0,0
-.L213:
+.L225:
 	.byte	5,6,7,0,5,2
-	.word	.L32
+	.word	.L33
 	.byte	3,229,0,1,5,34,9
-	.half	.L160-.L32
+	.half	.L172-.L33
 	.byte	3,1,1,5,5,9
-	.half	.L158-.L160
+	.half	.L170-.L172
 	.byte	3,1,1,5,25,7,9
-	.half	.L214-.L158
+	.half	.L226-.L170
 	.byte	3,1,1,5,29,9
-	.half	.L161-.L214
+	.half	.L173-.L226
 	.byte	1,5,32,9
-	.half	.L215-.L161
+	.half	.L227-.L173
 	.byte	1,5,25,9
-	.half	.L8-.L215
+	.half	.L8-.L227
 	.byte	3,3,1,5,29,9
-	.half	.L162-.L8
+	.half	.L174-.L8
 	.byte	1,5,21,9
-	.half	.L9-.L162
+	.half	.L9-.L174
 	.byte	3,2,1,5,25,9
-	.half	.L216-.L9
+	.half	.L228-.L9
 	.byte	1,5,1,9
-	.half	.L217-.L216
+	.half	.L229-.L228
 	.byte	3,1,1,7,9
-	.half	.L64-.L217
+	.half	.L67-.L229
 	.byte	0,1,1
-.L211:
+.L223:
 	.sdecl	'.debug_ranges',debug,cluster('Motor_movChA_PWM')
 	.sect	'.debug_ranges'
-.L63:
-	.word	-1,.L32,0,.L64-.L32,0,0
+.L66:
+	.word	-1,.L33,0,.L67-.L33,0,0
 	.sdecl	'.debug_info',debug,cluster('Motor_movChB')
 	.sect	'.debug_info'
-.L65:
+.L68:
 	.word	280
 	.half	3
-	.word	.L66
+	.word	.L69
 	.byte	4,1
 	.byte	'../Motor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L68,.L67
+	.word	.L71,.L70
 	.byte	2
-	.word	.L41
+	.word	.L44
 	.byte	3
 	.byte	'Motor_movChB',0,1,63,6,1,1,1
-	.word	.L22,.L118,.L21
+	.word	.L23,.L128,.L22
 	.byte	4
 	.byte	'dir',0,1,63,23
-	.word	.L112,.L119
+	.word	.L122,.L129
 	.byte	5
-	.word	.L22,.L118
+	.word	.L23,.L128
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Motor_movChB')
 	.sect	'.debug_abbrev'
-.L66:
+.L69:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Motor_movChB')
 	.sect	'.debug_line'
-.L67:
-	.word	.L219-.L218
-.L218:
+.L70:
+	.word	.L231-.L230
+.L230:
 	.half	3
-	.word	.L221-.L220
-.L220:
+	.word	.L233-.L232
+.L232:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../Motor.c',0,0,0,0,0
-.L221:
+.L233:
 	.byte	5,5,7,0,5,2
-	.word	.L22
+	.word	.L23
 	.byte	3,63,1,5,25,7,9
-	.half	.L222-.L22
+	.half	.L234-.L23
 	.byte	3,1,1,5,29,9
-	.half	.L223-.L222
+	.half	.L235-.L234
 	.byte	1,5,32,9
-	.half	.L224-.L223
+	.half	.L236-.L235
 	.byte	1,5,25,9
-	.half	.L2-.L224
+	.half	.L2-.L236
 	.byte	3,3,1,5,29,9
-	.half	.L225-.L2
+	.half	.L237-.L2
 	.byte	1,5,21,9
-	.half	.L3-.L225
+	.half	.L3-.L237
 	.byte	3,2,1,5,25,9
-	.half	.L226-.L3
+	.half	.L238-.L3
 	.byte	1,5,30,9
-	.half	.L227-.L226
+	.half	.L239-.L238
 	.byte	3,1,1,5,1,9
-	.half	.L228-.L227
+	.half	.L240-.L239
 	.byte	3,1,1,7,9
-	.half	.L69-.L228
+	.half	.L72-.L240
 	.byte	0,1,1
-.L219:
+.L231:
 	.sdecl	'.debug_ranges',debug,cluster('Motor_movChB')
 	.sect	'.debug_ranges'
-.L68:
-	.word	-1,.L22,0,.L69-.L22,0,0
+.L71:
+	.word	-1,.L23,0,.L72-.L23,0,0
 	.sdecl	'.debug_info',debug,cluster('Motor_stopChB')
 	.sect	'.debug_info'
-.L70:
+.L73:
 	.word	265
 	.half	3
-	.word	.L71
+	.word	.L74
 	.byte	4,1
 	.byte	'../Motor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L73,.L72
+	.word	.L76,.L75
 	.byte	2
-	.word	.L41
+	.word	.L44
 	.byte	3
 	.byte	'Motor_stopChB',0,1,73,6,1,1,1
-	.word	.L24,.L120,.L23
+	.word	.L25,.L130,.L24
 	.byte	4
-	.word	.L24,.L120
+	.word	.L25,.L130
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Motor_stopChB')
 	.sect	'.debug_abbrev'
-.L71:
+.L74:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Motor_stopChB')
 	.sect	'.debug_line'
-.L72:
-	.word	.L230-.L229
-.L229:
+.L75:
+	.word	.L242-.L241
+.L241:
 	.half	3
-	.word	.L232-.L231
-.L231:
+	.word	.L244-.L243
+.L243:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../Motor.c',0,0,0,0,0
-.L232:
+.L244:
 	.byte	5,21,7,0,5,2
-	.word	.L24
+	.word	.L25
 	.byte	3,201,0,1,5,25,9
-	.half	.L233-.L24
+	.half	.L245-.L25
 	.byte	1,5,1,9
-	.half	.L234-.L233
+	.half	.L246-.L245
 	.byte	3,1,1,7,9
-	.half	.L74-.L234
+	.half	.L77-.L246
 	.byte	0,1,1
-.L230:
+.L242:
 	.sdecl	'.debug_ranges',debug,cluster('Motor_stopChB')
 	.sect	'.debug_ranges'
-.L73:
-	.word	-1,.L24,0,.L74-.L24,0,0
+.L76:
+	.word	-1,.L25,0,.L77-.L25,0,0
 	.sdecl	'.debug_info',debug,cluster('Motor_movChB_PWM')
 	.sect	'.debug_info'
-.L75:
+.L78:
 	.word	301
 	.half	3
-	.word	.L76
+	.word	.L79
 	.byte	4,1
 	.byte	'../Motor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L78,.L77
+	.word	.L81,.L80
 	.byte	2
-	.word	.L41
+	.word	.L44
 	.byte	3
 	.byte	'Motor_movChB_PWM',0,1,76,6,1,1,1
-	.word	.L26,.L121,.L25
+	.word	.L27,.L131,.L26
 	.byte	4
 	.byte	'duty',0,1,76,27
-	.word	.L112,.L122
+	.word	.L122,.L132
 	.byte	4
 	.byte	'dir',0,1,76,37
-	.word	.L112,.L123
+	.word	.L122,.L133
 	.byte	5
-	.word	.L26,.L121
+	.word	.L27,.L131
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Motor_movChB_PWM')
 	.sect	'.debug_abbrev'
-.L76:
+.L79:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Motor_movChB_PWM')
 	.sect	'.debug_line'
-.L77:
-	.word	.L236-.L235
-.L235:
+.L80:
+	.word	.L248-.L247
+.L247:
 	.half	3
-	.word	.L238-.L237
-.L237:
+	.word	.L250-.L249
+.L249:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../Motor.c',0,0,0,0,0
-.L238:
+.L250:
 	.byte	5,6,7,0,5,2
-	.word	.L26
+	.word	.L27
 	.byte	3,203,0,1,5,34,9
-	.half	.L154-.L26
+	.half	.L166-.L27
 	.byte	3,1,1,5,5,9
-	.half	.L152-.L154
+	.half	.L164-.L166
 	.byte	3,1,1,5,25,7,9
-	.half	.L239-.L152
+	.half	.L251-.L164
 	.byte	3,1,1,5,29,9
-	.half	.L155-.L239
+	.half	.L167-.L251
 	.byte	1,5,32,9
-	.half	.L240-.L155
+	.half	.L252-.L167
 	.byte	1,5,25,9
-	.half	.L4-.L240
+	.half	.L4-.L252
 	.byte	3,3,1,5,29,9
-	.half	.L156-.L4
+	.half	.L168-.L4
 	.byte	1,5,21,9
-	.half	.L5-.L156
+	.half	.L5-.L168
 	.byte	3,2,1,5,25,9
-	.half	.L241-.L5
+	.half	.L253-.L5
 	.byte	1,5,1,9
-	.half	.L242-.L241
+	.half	.L254-.L253
 	.byte	3,1,1,7,9
-	.half	.L79-.L242
+	.half	.L82-.L254
 	.byte	0,1,1
-.L236:
+.L248:
 	.sdecl	'.debug_ranges',debug,cluster('Motor_movChB_PWM')
 	.sect	'.debug_ranges'
-.L78:
-	.word	-1,.L26,0,.L79-.L26,0,0
+.L81:
+	.word	-1,.L27,0,.L82-.L27,0,0
 	.sdecl	'.debug_info',debug,cluster('Encoder_Init')
 	.sect	'.debug_info'
-.L80:
+.L83:
 	.word	457
 	.half	3
-	.word	.L81
+	.word	.L84
 	.byte	4,1
 	.byte	'../Motor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L83,.L82
+	.word	.L86,.L85
 	.byte	2
-	.word	.L41
+	.word	.L44
 	.byte	3
 	.byte	'Encoder_Init',0,1,113,6,1,1,1
-	.word	.L34,.L124,.L33
+	.word	.L35,.L134,.L34
 	.byte	4
-	.word	.L34,.L124
+	.word	.L35,.L134
 	.byte	5
 	.byte	'password',0,1,115,12
-	.word	.L125,.L126
+	.word	.L135,.L136
 	.byte	6
-	.word	.L127,.L34,.L10
+	.word	.L137,.L35,.L10
 	.byte	7
-	.word	.L128,.L34,.L10
+	.word	.L138,.L35,.L10
 	.byte	5
 	.byte	'password',0,2,133,5,19
-	.word	.L125,.L129
+	.word	.L135,.L139
 	.byte	5
 	.byte	'watchdog',0,2,134,5,19
-	.word	.L130,.L131
+	.word	.L140,.L141
 	.byte	0,0,6
-	.word	.L132,.L10,.L133
+	.word	.L142,.L10,.L143
 	.byte	8
-	.word	.L134,.L135
+	.word	.L144,.L145
 	.byte	9
-	.word	.L136,.L10,.L133
+	.word	.L146,.L10,.L143
 	.byte	0,4
-	.word	.L137,.L124
+	.word	.L147,.L134
 	.byte	5
 	.byte	'src',0,1,133,1,28
-	.word	.L138,.L139
+	.word	.L148,.L149
 	.byte	6
-	.word	.L140,.L141,.L142
+	.word	.L150,.L151,.L152
 	.byte	8
-	.word	.L143,.L144
+	.word	.L153,.L154
 	.byte	9
-	.word	.L145,.L141,.L142
+	.word	.L155,.L151,.L152
 	.byte	0,0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Encoder_Init')
 	.sect	'.debug_abbrev'
-.L81:
+.L84:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,6,29,1
 	.byte	49,16,17,1,18,1,0,0,7,11,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Encoder_Init')
 	.sect	'.debug_line'
-.L82:
-	.word	.L244-.L243
-.L243:
+.L85:
+	.word	.L256-.L255
+.L255:
 	.half	3
-	.word	.L246-.L245
-.L245:
+	.word	.L258-.L257
+.L257:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../Motor.c',0,0,0,0
 	.byte	'C:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Scu\\Std\\IfxScuWdt.h',0
 	.byte	0,0,0,0
-.L246:
+.L258:
 	.byte	4,2,5,41,7,0,5,2
-	.word	.L34
+	.word	.L35
 	.byte	3,133,5,1,5,33,9
-	.half	.L247-.L34
+	.half	.L259-.L35
 	.byte	3,5,1,5,14,9
-	.half	.L165-.L247
+	.half	.L177-.L259
 	.byte	3,1,1,5,5,9
-	.half	.L166-.L165
+	.half	.L178-.L177
 	.byte	3,2,1,5,24,9
-	.half	.L10-.L166
+	.half	.L10-.L178
 	.byte	3,187,127,1,5,5,9
-	.half	.L248-.L10
+	.half	.L260-.L10
 	.byte	1,5,37,7,9
-	.half	.L249-.L248
-	.byte	3,5,1,5,43,9
-	.half	.L250-.L249
-	.byte	3,1,1,5,48,9
-	.half	.L251-.L250
-	.byte	1,5,66,9
-	.half	.L252-.L251
-	.byte	3,127,1,5,25,9
-	.half	.L253-.L252
-	.byte	3,126,1,5,33,9
-	.half	.L11-.L253
-	.byte	3,9,1,5,39,9
-	.half	.L254-.L11
-	.byte	3,1,1,5,44,9
-	.half	.L255-.L254
-	.byte	1,5,62,9
-	.half	.L256-.L255
-	.byte	3,127,1,5,21,9
-	.half	.L257-.L256
-	.byte	3,126,1,5,40,9
-	.half	.L258-.L257
-	.byte	3,6,1,5,27,9
-	.half	.L12-.L258
-	.byte	1,5,40,9
-	.half	.L259-.L12
-	.byte	1,4,1,5,23,7,9
-	.half	.L133-.L259
-	.byte	3,157,124,1,5,28,9
-	.half	.L260-.L133
-	.byte	1,5,25,9
 	.half	.L261-.L260
-	.byte	3,3,1,5,32,9
-	.half	.L262-.L261
-	.byte	1,5,25,9
-	.half	.L263-.L262
-	.byte	3,2,1,5,31,9
-	.half	.L264-.L263
-	.byte	1,5,25,9
-	.half	.L265-.L264
-	.byte	3,3,1,5,32,9
-	.half	.L266-.L265
-	.byte	1,5,25,9
-	.half	.L267-.L266
-	.byte	3,2,1,5,31,9
-	.half	.L268-.L267
-	.byte	1,5,25,9
-	.half	.L269-.L268
-	.byte	3,2,1,5,30,9
-	.half	.L270-.L269
-	.byte	1,5,59,9
-	.half	.L137-.L270
-	.byte	3,4,1,5,13,9
-	.half	.L271-.L137
-	.byte	3,1,1,5,21,9
-	.half	.L272-.L271
-	.byte	1,5,19,9
-	.half	.L273-.L272
-	.byte	1,5,13,9
-	.half	.L274-.L273
-	.byte	3,1,1,5,18,9
-	.half	.L275-.L274
-	.byte	1,5,13,9
-	.half	.L276-.L275
-	.byte	3,1,1,5,19,9
-	.half	.L277-.L276
-	.byte	1,5,13,9
-	.half	.L278-.L277
-	.byte	3,1,1,5,18,9
-	.half	.L279-.L278
-	.byte	1,4,2,5,24,9
-	.half	.L141-.L279
-	.byte	3,171,4,1,5,5,9
-	.half	.L280-.L141
-	.byte	1,5,37,7,9
-	.half	.L281-.L280
 	.byte	3,5,1,5,43,9
-	.half	.L282-.L281
+	.half	.L262-.L261
 	.byte	3,1,1,5,48,9
-	.half	.L283-.L282
+	.half	.L263-.L262
 	.byte	1,5,66,9
-	.half	.L284-.L283
+	.half	.L264-.L263
 	.byte	3,127,1,5,25,9
-	.half	.L285-.L284
+	.half	.L265-.L264
 	.byte	3,126,1,5,33,9
-	.half	.L14-.L285
+	.half	.L11-.L265
 	.byte	3,9,1,5,39,9
-	.half	.L286-.L14
+	.half	.L266-.L11
 	.byte	3,1,1,5,44,9
-	.half	.L287-.L286
+	.half	.L267-.L266
 	.byte	1,5,62,9
-	.half	.L288-.L287
+	.half	.L268-.L267
 	.byte	3,127,1,5,21,9
-	.half	.L289-.L288
+	.half	.L269-.L268
 	.byte	3,126,1,5,40,9
-	.half	.L290-.L289
+	.half	.L270-.L269
 	.byte	3,6,1,5,27,9
-	.half	.L15-.L290
+	.half	.L12-.L270
 	.byte	1,5,40,9
-	.half	.L291-.L15
+	.half	.L271-.L12
+	.byte	1,4,1,5,23,7,9
+	.half	.L143-.L271
+	.byte	3,157,124,1,5,28,9
+	.half	.L272-.L143
+	.byte	1,5,25,9
+	.half	.L273-.L272
+	.byte	3,3,1,5,32,9
+	.half	.L274-.L273
+	.byte	1,5,25,9
+	.half	.L275-.L274
+	.byte	3,2,1,5,31,9
+	.half	.L276-.L275
+	.byte	1,5,25,9
+	.half	.L277-.L276
+	.byte	3,1,1,5,31,9
+	.half	.L278-.L277
+	.byte	1,5,25,9
+	.half	.L279-.L278
+	.byte	3,2,1,5,32,9
+	.half	.L280-.L279
+	.byte	1,5,25,9
+	.half	.L281-.L280
+	.byte	3,2,1,5,31,9
+	.half	.L282-.L281
+	.byte	1,5,25,9
+	.half	.L283-.L282
+	.byte	3,2,1,5,30,9
+	.half	.L284-.L283
+	.byte	1,5,59,9
+	.half	.L147-.L284
+	.byte	3,4,1,5,13,9
+	.half	.L285-.L147
+	.byte	3,1,1,5,21,9
+	.half	.L286-.L285
+	.byte	1,5,19,9
+	.half	.L287-.L286
+	.byte	1,5,13,9
+	.half	.L288-.L287
+	.byte	3,1,1,5,18,9
+	.half	.L289-.L288
+	.byte	1,5,13,9
+	.half	.L290-.L289
+	.byte	3,1,1,5,19,9
+	.half	.L291-.L290
+	.byte	1,5,13,9
+	.half	.L292-.L291
+	.byte	3,1,1,5,18,9
+	.half	.L293-.L292
+	.byte	1,4,2,5,24,9
+	.half	.L151-.L293
+	.byte	3,171,4,1,5,5,9
+	.half	.L294-.L151
+	.byte	1,5,37,7,9
+	.half	.L295-.L294
+	.byte	3,5,1,5,43,9
+	.half	.L296-.L295
+	.byte	3,1,1,5,48,9
+	.half	.L297-.L296
+	.byte	1,5,66,9
+	.half	.L298-.L297
+	.byte	3,127,1,5,25,9
+	.half	.L299-.L298
+	.byte	3,126,1,5,33,9
+	.half	.L14-.L299
+	.byte	3,9,1,5,39,9
+	.half	.L300-.L14
+	.byte	3,1,1,5,44,9
+	.half	.L301-.L300
+	.byte	1,5,62,9
+	.half	.L302-.L301
+	.byte	3,127,1,5,21,9
+	.half	.L303-.L302
+	.byte	3,126,1,5,40,9
+	.half	.L304-.L303
+	.byte	3,6,1,5,27,9
+	.half	.L15-.L304
+	.byte	1,5,40,9
+	.half	.L305-.L15
 	.byte	1,4,1,5,1,7,9
-	.half	.L142-.L291
+	.half	.L152-.L305
 	.byte	3,200,123,1,7,9
-	.half	.L84-.L142
+	.half	.L87-.L152
 	.byte	0,1,1
-.L244:
+.L256:
 	.sdecl	'.debug_ranges',debug,cluster('Encoder_Init')
 	.sect	'.debug_ranges'
-.L83:
-	.word	-1,.L34,0,.L84-.L34,0,0
+.L86:
+	.word	-1,.L35,0,.L87-.L35,0,0
 	.sdecl	'.debug_info',debug,cluster('Encoder_Int0_Handler')
 	.sect	'.debug_info'
-.L85:
+.L88:
 	.word	273
 	.half	3
-	.word	.L86
+	.word	.L89
 	.byte	4,1
 	.byte	'../Motor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L88,.L87
+	.word	.L91,.L90
 	.byte	2
-	.word	.L41
+	.word	.L44
 	.byte	3
-	.byte	'Encoder_Int0_Handler',0,1,151,1,6,1,1,1
-	.word	.L36,.L146,.L35
+	.byte	'Encoder_Int0_Handler',0,1,152,1,6,1,1,1
+	.word	.L37,.L156,.L36
 	.byte	4
-	.word	.L36,.L146
+	.word	.L37,.L156
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Encoder_Int0_Handler')
 	.sect	'.debug_abbrev'
-.L86:
+.L89:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Encoder_Int0_Handler')
 	.sect	'.debug_line'
-.L87:
-	.word	.L293-.L292
-.L292:
+.L90:
+	.word	.L307-.L306
+.L306:
 	.half	3
-	.word	.L295-.L294
-.L294:
+	.word	.L309-.L308
+.L308:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../Motor.c',0,0,0,0,0
-.L295:
+.L309:
 	.byte	5,6,7,0,5,2
-	.word	.L36
-	.byte	3,150,1,1,5,5,9
-	.half	.L296-.L36
+	.word	.L37
+	.byte	3,151,1,1,5,5,9
+	.half	.L310-.L37
 	.byte	3,2,1,5,12,9
-	.half	.L297-.L296
-	.byte	1,5,5,9
-	.half	.L298-.L297
-	.byte	3,1,1,5,25,9
-	.half	.L299-.L298
-	.byte	1,5,14,9
-	.half	.L300-.L299
-	.byte	1,5,5,9
-	.half	.L301-.L300
-	.byte	3,1,1,5,18,9
-	.half	.L302-.L301
-	.byte	1,5,26,9
-	.half	.L303-.L302
-	.byte	1,5,25,9
-	.half	.L304-.L303
-	.byte	1,5,9,9
-	.half	.L305-.L304
-	.byte	1,5,41,9
-	.half	.L306-.L305
-	.byte	1,5,52,9
-	.half	.L307-.L306
-	.byte	1,5,50,9
-	.half	.L308-.L307
-	.byte	1,5,39,9
-	.half	.L309-.L308
-	.byte	1,5,65,9
-	.half	.L310-.L309
-	.byte	1,5,63,9
 	.half	.L311-.L310
-	.byte	1,5,7,9
-	.half	.L312-.L311
-	.byte	1,5,5,9
-	.half	.L313-.L312
-	.byte	3,1,1,5,17,9
-	.half	.L314-.L313
-	.byte	1,5,15,9
-	.half	.L315-.L314
-	.byte	1,5,5,9
-	.half	.L316-.L315
-	.byte	3,1,1,5,20,9
-	.half	.L317-.L316
-	.byte	1,5,18,9
-	.half	.L318-.L317
 	.byte	1,5,1,9
-	.half	.L319-.L318
-	.byte	3,1,1,9
-	.half	.L89-.L319
+	.half	.L312-.L311
+	.byte	3,4,1,9
+	.half	.L92-.L312
 	.byte	0,1,1
-.L293:
+.L307:
 	.sdecl	'.debug_ranges',debug,cluster('Encoder_Int0_Handler')
 	.sect	'.debug_ranges'
-.L88:
-	.word	-1,.L36,0,.L89-.L36,0,0
+.L91:
+	.word	-1,.L37,0,.L92-.L37,0,0
 	.sdecl	'.debug_info',debug,cluster('get_encoder')
 	.sect	'.debug_info'
-.L90:
+.L93:
 	.word	268
 	.half	3
-	.word	.L91
+	.word	.L94
 	.byte	4,1
 	.byte	'../Motor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L93,.L92
+	.word	.L96,.L95
 	.byte	2
-	.word	.L41
+	.word	.L44
 	.byte	3
 	.byte	'get_encoder',0,1,160,1,8
-	.word	.L147
+	.word	.L157
 	.byte	1,1,1
-	.word	.L38,.L148,.L37
+	.word	.L39,.L158,.L38
 	.byte	4
-	.word	.L38,.L148
+	.word	.L39,.L158
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('get_encoder')
 	.sect	'.debug_abbrev'
-.L91:
+.L94:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('get_encoder')
 	.sect	'.debug_line'
-.L92:
-	.word	.L321-.L320
-.L320:
+.L95:
+	.word	.L314-.L313
+.L313:
 	.half	3
-	.word	.L323-.L322
-.L322:
+	.word	.L316-.L315
+.L315:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../Motor.c',0,0,0,0,0
-.L323:
+.L316:
 	.byte	5,12,7,0,5,2
-	.word	.L38
+	.word	.L39
 	.byte	3,160,1,1,5,5,9
-	.half	.L324-.L38
+	.half	.L317-.L39
 	.byte	1,5,1,9
-	.half	.L17-.L324
+	.half	.L17-.L317
 	.byte	3,1,1,7,9
-	.half	.L94-.L17
+	.half	.L97-.L17
 	.byte	0,1,1
-.L321:
+.L314:
 	.sdecl	'.debug_ranges',debug,cluster('get_encoder')
 	.sect	'.debug_ranges'
-.L93:
-	.word	-1,.L38,0,.L94-.L38,0,0
+.L96:
+	.word	-1,.L39,0,.L97-.L39,0,0
 	.sdecl	'.debug_info',debug,cluster('get_V')
 	.sect	'.debug_info'
-.L95:
+.L98:
 	.word	262
 	.half	3
-	.word	.L96
+	.word	.L99
 	.byte	4,1
 	.byte	'../Motor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L98,.L97
+	.word	.L101,.L100
 	.byte	2
-	.word	.L41
+	.word	.L44
 	.byte	3
 	.byte	'get_V',0,1,163,1,8
-	.word	.L149
+	.word	.L157
 	.byte	1,1,1
-	.word	.L40,.L150,.L39
+	.word	.L41,.L159,.L40
 	.byte	4
-	.word	.L40,.L150
+	.word	.L41,.L159
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('get_V')
 	.sect	'.debug_abbrev'
-.L96:
+.L99:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('get_V')
 	.sect	'.debug_line'
-.L97:
-	.word	.L326-.L325
-.L325:
+.L100:
+	.word	.L319-.L318
+.L318:
 	.half	3
-	.word	.L328-.L327
-.L327:
+	.word	.L321-.L320
+.L320:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../Motor.c',0,0,0,0,0
-.L328:
-	.byte	5,12,7,0,5,2
-	.word	.L40
-	.byte	3,163,1,1,5,5,9
-	.half	.L329-.L40
+.L321:
+	.byte	5,5,7,0,5,2
+	.word	.L41
+	.byte	3,163,1,1,5,11,9
+	.half	.L322-.L41
+	.byte	1,5,21,9
+	.half	.L323-.L322
+	.byte	1,5,19,9
+	.half	.L324-.L323
+	.byte	1,5,8,9
+	.half	.L325-.L324
+	.byte	1,5,5,9
+	.half	.L326-.L325
+	.byte	3,1,1,5,20,9
+	.half	.L327-.L326
+	.byte	1,5,18,9
+	.half	.L328-.L327
+	.byte	1,5,12,9
+	.half	.L329-.L328
+	.byte	3,1,1,5,5,9
+	.half	.L330-.L329
 	.byte	1,5,1,9
-	.half	.L18-.L329
+	.half	.L18-.L330
 	.byte	3,1,1,7,9
-	.half	.L99-.L18
+	.half	.L102-.L18
 	.byte	0,1,1
-.L326:
+.L319:
 	.sdecl	'.debug_ranges',debug,cluster('get_V')
 	.sect	'.debug_ranges'
-.L98:
-	.word	-1,.L40,0,.L99-.L40,0,0
+.L101:
+	.word	-1,.L41,0,.L102-.L41,0,0
+	.sdecl	'.debug_info',debug,cluster('get_timeV')
+	.sect	'.debug_info'
+.L103:
+	.word	266
+	.half	3
+	.word	.L104
+	.byte	4,1
+	.byte	'../Motor.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L106,.L105
+	.byte	2
+	.word	.L44
+	.byte	3
+	.byte	'get_timeV',0,1,168,1,8
+	.word	.L160
+	.byte	1,1,1
+	.word	.L43,.L161,.L42
+	.byte	4
+	.word	.L43,.L161
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('get_timeV')
+	.sect	'.debug_abbrev'
+.L104:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('get_timeV')
+	.sect	'.debug_line'
+.L105:
+	.word	.L332-.L331
+.L331:
+	.half	3
+	.word	.L334-.L333
+.L333:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Motor.c',0,0,0,0,0
+.L334:
+	.byte	5,5,7,0,5,2
+	.word	.L43
+	.byte	3,169,1,1,5,26,9
+	.half	.L335-.L43
+	.byte	1,5,36,9
+	.half	.L336-.L335
+	.byte	1,5,34,9
+	.half	.L337-.L336
+	.byte	1,5,17,9
+	.half	.L338-.L337
+	.byte	1,5,62,9
+	.half	.L339-.L338
+	.byte	1,5,67,9
+	.half	.L340-.L339
+	.byte	1,5,65,9
+	.half	.L341-.L340
+	.byte	1,5,50,9
+	.half	.L342-.L341
+	.byte	1,5,80,9
+	.half	.L343-.L342
+	.byte	1,5,78,9
+	.half	.L344-.L343
+	.byte	1,5,15,9
+	.half	.L345-.L344
+	.byte	1,5,5,9
+	.half	.L346-.L345
+	.byte	3,1,1,5,26,9
+	.half	.L347-.L346
+	.byte	1,5,15,9
+	.half	.L348-.L347
+	.byte	1,5,5,9
+	.half	.L349-.L348
+	.byte	3,1,1,5,20,9
+	.half	.L350-.L349
+	.byte	1,5,18,9
+	.half	.L351-.L350
+	.byte	1,5,12,9
+	.half	.L352-.L351
+	.byte	3,1,1,5,5,9
+	.half	.L353-.L352
+	.byte	1,5,1,9
+	.half	.L19-.L353
+	.byte	3,2,1,7,9
+	.half	.L107-.L19
+	.byte	0,1,1
+.L332:
+	.sdecl	'.debug_ranges',debug,cluster('get_timeV')
+	.sect	'.debug_ranges'
+.L106:
+	.word	-1,.L43,0,.L107-.L43,0,0
 	.sdecl	'.debug_info',debug,cluster('encoder')
 	.sect	'.debug_info'
-.L100:
-	.word	238
-	.half	3
-	.word	.L101
-	.byte	4,1
-	.byte	'../Motor.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
-	.byte	12,1,2
-	.word	.L41
-	.byte	3
-	.byte	'encoder',0,17,144,1,8
-	.word	.L147
-	.byte	1,5,3
-	.word	encoder
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('encoder')
-	.sect	'.debug_abbrev'
-.L101:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('prev_encoder')
-	.sect	'.debug_info'
-.L102:
-	.word	243
-	.half	3
-	.word	.L103
-	.byte	4,1
-	.byte	'../Motor.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
-	.byte	12,1,2
-	.word	.L41
-	.byte	3
-	.byte	'prev_encoder',0,17,145,1,8
-	.word	.L147
-	.byte	1,5,3
-	.word	prev_encoder
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('prev_encoder')
-	.sect	'.debug_abbrev'
-.L103:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('prev_time')
-	.sect	'.debug_info'
-.L104:
-	.word	240
-	.half	3
-	.word	.L105
-	.byte	4,1
-	.byte	'../Motor.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
-	.byte	12,1,2
-	.word	.L41
-	.byte	3
-	.byte	'prev_time',0,17,146,1,8
-	.word	.L147
-	.byte	1,5,3
-	.word	prev_time
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('prev_time')
-	.sect	'.debug_abbrev'
-.L105:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('now_time')
-	.sect	'.debug_info'
-.L106:
-	.word	239
-	.half	3
-	.word	.L107
-	.byte	4,1
-	.byte	'../Motor.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
-	.byte	12,1,2
-	.word	.L41
-	.byte	3
-	.byte	'now_time',0,17,147,1,8
-	.word	.L147
-	.byte	1,5,3
-	.word	now_time
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('now_time')
-	.sect	'.debug_abbrev'
-.L107:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('v')
-	.sect	'.debug_info'
 .L108:
-	.word	232
+	.word	238
 	.half	3
 	.word	.L109
 	.byte	4,1
@@ -40298,164 +40328,286 @@ v:	.type	object
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1,2
-	.word	.L41
+	.word	.L44
 	.byte	3
-	.byte	'v',0,17,148,1,8
-	.word	.L149
+	.byte	'encoder',0,17,143,1,17
+	.word	.L162
+	.byte	1,5,3
+	.word	encoder
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('encoder')
+	.sect	'.debug_abbrev'
+.L109:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('prev_encoder')
+	.sect	'.debug_info'
+.L110:
+	.word	243
+	.half	3
+	.word	.L111
+	.byte	4,1
+	.byte	'../Motor.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L44
+	.byte	3
+	.byte	'prev_encoder',0,17,145,1,8
+	.word	.L157
+	.byte	1,5,3
+	.word	prev_encoder
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('prev_encoder')
+	.sect	'.debug_abbrev'
+.L111:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('prev_time')
+	.sect	'.debug_info'
+.L112:
+	.word	240
+	.half	3
+	.word	.L113
+	.byte	4,1
+	.byte	'../Motor.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L44
+	.byte	3
+	.byte	'prev_time',0,17,146,1,8
+	.word	.L157
+	.byte	1,5,3
+	.word	prev_time
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('prev_time')
+	.sect	'.debug_abbrev'
+.L113:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('now_time')
+	.sect	'.debug_info'
+.L114:
+	.word	239
+	.half	3
+	.word	.L115
+	.byte	4,1
+	.byte	'../Motor.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L44
+	.byte	3
+	.byte	'now_time',0,17,147,1,8
+	.word	.L157
+	.byte	1,5,3
+	.word	now_time
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('now_time')
+	.sect	'.debug_abbrev'
+.L115:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('double_v')
+	.sect	'.debug_info'
+.L116:
+	.word	239
+	.half	3
+	.word	.L117
+	.byte	4,1
+	.byte	'../Motor.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L44
+	.byte	3
+	.byte	'double_v',0,17,148,1,8
+	.word	.L160
+	.byte	1,5,3
+	.word	double_v
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('double_v')
+	.sect	'.debug_abbrev'
+.L117:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('v')
+	.sect	'.debug_info'
+.L118:
+	.word	232
+	.half	3
+	.word	.L119
+	.byte	4,1
+	.byte	'../Motor.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L44
+	.byte	3
+	.byte	'v',0,17,149,1,8
+	.word	.L157
 	.byte	1,5,3
 	.word	v
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('v')
 	.sect	'.debug_abbrev'
-.L109:
+.L119:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('Encoder_Init')
 	.sect	'.debug_loc'
-.L33:
-	.word	-1,.L34,0,.L124-.L34
+.L34:
+	.word	-1,.L35,0,.L134-.L35
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L126:
+.L136:
 	.word	0,0
-.L135:
+.L145:
 	.word	0,0
-.L129:
-	.word	-1,.L34,.L165-.L34,.L166-.L34
+.L139:
+	.word	-1,.L35,.L177-.L35,.L178-.L35
 	.half	1
 	.byte	95
-	.word	.L166-.L34,.L167-.L34
+	.word	.L178-.L35,.L179-.L35
 	.half	1
 	.byte	81
 	.word	0,0
-.L144:
+.L154:
 	.word	0,0
-.L139:
-	.word	-1,.L34,.L168-.L34,.L169-.L34
+.L149:
+	.word	-1,.L35,.L180-.L35,.L181-.L35
 	.half	1
 	.byte	111
 	.word	0,0
-.L131:
-	.word	-1,.L34,.L163-.L34,.L164-.L34
+.L141:
+	.word	-1,.L35,.L175-.L35,.L176-.L35
 	.half	1
 	.byte	111
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Encoder_Int0_Handler')
 	.sect	'.debug_loc'
-.L35:
-	.word	-1,.L36,0,.L146-.L36
+.L36:
+	.word	-1,.L37,0,.L156-.L37
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Motor_Init')
 	.sect	'.debug_loc'
-.L19:
-	.word	-1,.L20,0,.L110-.L20
+.L20:
+	.word	-1,.L21,0,.L120-.L21
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Motor_movChA')
 	.sect	'.debug_loc'
-.L27:
-	.word	-1,.L28,0,.L111-.L28
+.L28:
+	.word	-1,.L29,0,.L121-.L29
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L113:
-	.word	-1,.L28,0,.L157-.L28
+.L123:
+	.word	-1,.L29,0,.L169-.L29
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Motor_movChA_PWM')
 	.sect	'.debug_loc'
-.L31:
-	.word	-1,.L32,0,.L115-.L32
+.L32:
+	.word	-1,.L33,0,.L125-.L33
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L117:
-	.word	-1,.L32,0,.L158-.L32
+.L127:
+	.word	-1,.L33,0,.L170-.L33
 	.half	1
 	.byte	85
-	.word	.L160-.L32,.L161-.L32
+	.word	.L172-.L33,.L173-.L33
 	.half	1
 	.byte	95
-	.word	.L8-.L32,.L162-.L32
+	.word	.L8-.L33,.L174-.L33
 	.half	1
 	.byte	95
 	.word	0,0
-.L116:
-	.word	-1,.L32,0,.L159-.L32
+.L126:
+	.word	-1,.L33,0,.L171-.L33
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Motor_movChB')
 	.sect	'.debug_loc'
-.L21:
-	.word	-1,.L22,0,.L118-.L22
+.L22:
+	.word	-1,.L23,0,.L128-.L23
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L119:
-	.word	-1,.L22,0,.L151-.L22
+.L129:
+	.word	-1,.L23,0,.L163-.L23
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Motor_movChB_PWM')
 	.sect	'.debug_loc'
-.L25:
-	.word	-1,.L26,0,.L121-.L26
+.L26:
+	.word	-1,.L27,0,.L131-.L27
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L123:
-	.word	-1,.L26,0,.L152-.L26
+.L133:
+	.word	-1,.L27,0,.L164-.L27
 	.half	1
 	.byte	85
-	.word	.L154-.L26,.L155-.L26
+	.word	.L166-.L27,.L167-.L27
 	.half	1
 	.byte	95
-	.word	.L4-.L26,.L156-.L26
+	.word	.L4-.L27,.L168-.L27
 	.half	1
 	.byte	95
 	.word	0,0
-.L122:
-	.word	-1,.L26,0,.L153-.L26
+.L132:
+	.word	-1,.L27,0,.L165-.L27
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Motor_stopChA')
 	.sect	'.debug_loc'
-.L29:
-	.word	-1,.L30,0,.L114-.L30
+.L30:
+	.word	-1,.L31,0,.L124-.L31
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Motor_stopChB')
 	.sect	'.debug_loc'
-.L23:
-	.word	-1,.L24,0,.L120-.L24
+.L24:
+	.word	-1,.L25,0,.L130-.L25
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('get_V')
 	.sect	'.debug_loc'
-.L39:
-	.word	-1,.L40,0,.L150-.L40
+.L40:
+	.word	-1,.L41,0,.L159-.L41
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('get_encoder')
 	.sect	'.debug_loc'
-.L37:
-	.word	-1,.L38,0,.L148-.L38
+.L38:
+	.word	-1,.L39,0,.L158-.L39
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('get_timeV')
+	.sect	'.debug_loc'
+.L42:
+	.word	-1,.L43,0,.L161-.L43
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L330:
+.L354:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -40463,50 +40615,54 @@ v:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('Motor_Init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L330,.L20,.L110-.L20
+	.word	.L354,.L21,.L120-.L21
 	.sdecl	'.debug_frame',debug,cluster('Motor_movChB')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L330,.L22,.L118-.L22
+	.word	.L354,.L23,.L128-.L23
 	.sdecl	'.debug_frame',debug,cluster('Motor_stopChB')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L330,.L24,.L120-.L24
+	.word	.L354,.L25,.L130-.L25
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Motor_movChB_PWM')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L330,.L26,.L121-.L26
+	.word	.L354,.L27,.L131-.L27
 	.sdecl	'.debug_frame',debug,cluster('Motor_movChA')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L330,.L28,.L111-.L28
+	.word	.L354,.L29,.L121-.L29
 	.sdecl	'.debug_frame',debug,cluster('Motor_stopChA')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L330,.L30,.L114-.L30
+	.word	.L354,.L31,.L124-.L31
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Motor_movChA_PWM')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L330,.L32,.L115-.L32
+	.word	.L354,.L33,.L125-.L33
 	.sdecl	'.debug_frame',debug,cluster('Encoder_Init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L330,.L34,.L124-.L34
+	.word	.L354,.L35,.L134-.L35
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Encoder_Int0_Handler')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L330,.L36,.L146-.L36
+	.word	.L354,.L37,.L156-.L37
 	.sdecl	'.debug_frame',debug,cluster('get_encoder')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L330,.L38,.L148-.L38
+	.word	.L354,.L39,.L158-.L39
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('get_V')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L330,.L40,.L150-.L40
-	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.word	.L354,.L41,.L159-.L41
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('get_timeV')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L354,.L43,.L161-.L43
 	; Module end

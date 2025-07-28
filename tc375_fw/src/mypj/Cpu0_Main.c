@@ -39,15 +39,21 @@ void core0_main(void)
 
     my_printf("Test start\n");
 //    float dist = 0;
+    int i= 100;
+    int j = 0;
     while(1){
+        int pwm = i-(j/100);
+        Motor_movChB_PWM(pwm,0);
+        j+=1;
 //        my_printf("debg start\n");
-        MODULE_P13.OUT.B.P2 = 1; // Rear TRIG_HIGH
-        runGpt12_T6();//timer run => 10us
-        while(!is_ready()) {
-             // 강제로 CPU 점유 방지용 짧은 대기 또는 다른 작업 수행 가능
-         }
-        my_printf("dist : %f\n", get_distance());
-        //my_printf("dist : %f\n", Ultrasonic_ReadSensor_noFilt());
-//        delay_ms(2000);
+//        MODULE_P13.OUT.B.P2 = 1; // Rear TRIG_HIGH
+//        runGpt12_T6();//timer run => 10us
+//        while(!is_ready()) {
+//         }
+//        my_printf("dist : %f\n", get_distance());
+//        my_printf("dist : %f\n", )
+//        my_printf("encoder : %d\n", get_encoder());
+        my_printf("pwm : %d , v : %f\n", pwm, get_timeV());
+        delay_ms(10);
     };
 }

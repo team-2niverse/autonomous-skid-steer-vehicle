@@ -969,3 +969,519 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 
 !ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-25 17:49:58.005
 !MESSAGE Include paths were discovered in 34 milliseconds.
+!SESSION 2025-07-28 11:45:00.601 -----------------------------------------------
+eclipse.buildId=1.10.2
+java.version=17.0.4.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -perspective com.infineon.aurix.buildmanager.perspective.c
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -perspective com.infineon.aurix.buildmanager.perspective.c
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-07-28 11:45:10.064
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2025-07-28 11:45:10.679
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-28 11:45:10.680
+!MESSAGE Commands should really have a category: plug-in='com.infineon.aurix.buildsystem.debug', id='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand', categoryId='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand'
+
+!ENTRY org.eclipse.ui 2 0 2025-07-28 11:45:11.279
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-28 11:45:11.279
+!MESSAGE Commands should really have a category: plug-in='com.infineon.aurix.buildsystem.debug', id='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand', categoryId='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand'
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:45:13.283
+!MESSAGE Url https://registerviewer.infineon.com/ is not reachable.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2025-07-28 11:45:15.112
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.tcf.TraceView" id and the "TCF Trace" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2025-07-28 11:45:15.113
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.tcf.ProfilerView" id and the "TCF Profiler" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY com.infineon.aurix.buildsystem 4 0 2025-07-28 11:45:15.399
+!MESSAGE ConnectException
+!STACK 0
+java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:573)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at com.infineon.aurix.buildsystem.IFXNetworkUtils$1.run(IFXNetworkUtils.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1047)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+	at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.sendHeadersAsync(Http1Exchange.java:239)
+	at java.net.http/jdk.internal.net.http.Exchange.lambda$responseAsyncImpl0$9(Exchange.java:472)
+	at java.net.http/jdk.internal.net.http.Exchange.checkFor407(Exchange.java:404)
+	at java.net.http/jdk.internal.net.http.Exchange.lambda$responseAsyncImpl0$10(Exchange.java:476)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:476)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:380)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:372)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:408)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:449)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:439)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:341)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:157)
+	at java.base/java.util.concurrent.CompletableFuture.completeAsync(CompletableFuture.java:2673)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsync(MultiExchange.java:294)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.sendAsync(HttpClientImpl.java:654)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:552)
+	... 3 more
+Caused by: java.nio.channels.UnresolvedAddressException
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:149)
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:157)
+	at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+	... 29 more
+
+!ENTRY com.infineon.aurix.buildsystem.analytics 2 0 2025-07-28 11:45:15.492
+!MESSAGE Unable to initialize Analytics Service.
+
+!ENTRY com.infineon.aurix.buildsystem.analytics 4 0 2025-07-28 11:45:15.494
+!MESSAGE java.net.MalformedURLException: no protocol: 
+!STACK 0
+java.lang.IllegalArgumentException: java.net.MalformedURLException: no protocol: 
+	at com.google.api.client.http.GenericUrl.parseURL(GenericUrl.java:679)
+	at com.google.api.client.http.GenericUrl.<init>(GenericUrl.java:125)
+	at com.google.api.client.http.GenericUrl.<init>(GenericUrl.java:108)
+	at com.infineon.aurix.buildsystem.analytics.AnalyticsService.<init>(AnalyticsService.java:66)
+	at com.infineon.aurix.buildsystem.analytics.AnalyticsService.getInstance(AnalyticsService.java:95)
+	at com.infineon.aurix.buildsystem.Logger.logError(Logger.java:34)
+	at com.infineon.aurix.buildsystem.IFXNetworkUtils$1.run(IFXNetworkUtils.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.MalformedURLException: no protocol: 
+	at java.base/java.net.URL.<init>(URL.java:674)
+	at java.base/java.net.URL.<init>(URL.java:569)
+	at java.base/java.net.URL.<init>(URL.java:516)
+	at com.google.api.client.http.GenericUrl.parseURL(GenericUrl.java:677)
+	... 7 more
+
+!ENTRY com.infineon.aurix.buildsystem.notification 4 0 2025-07-28 11:45:15.984
+!MESSAGE PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+!STACK 0
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:371)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:314)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:309)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1357)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1232)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1175)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:480)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:458)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1505)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1420)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:580)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:187)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:148)
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:84)
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:1012)
+	at com.infineon.aurix.buildsystem.notification.NotificationService$NotificationGetJob.run(NotificationService.java:205)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:439)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:264)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:231)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1341)
+	... 19 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:434)
+	... 24 more
+
+!ENTRY com.infineon.aurix.buildsystem.notification 4 0 2025-07-28 11:45:15.988
+!MESSAGE PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+!STACK 0
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:371)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:314)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:309)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1357)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1232)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1175)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:480)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:458)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1505)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1420)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:580)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:187)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:148)
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:84)
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:1012)
+	at com.infineon.aurix.buildsystem.notification.NotificationService$NotificationGetJob.run(NotificationService.java:205)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:439)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:264)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:231)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1341)
+	... 19 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:434)
+	... 24 more
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:46:24.507
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:46:24.508
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 1 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:46:24.604
+!MESSAGE Include paths were discovered in 94 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:47:59.980
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 1907 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:48:00.058
+!MESSAGE Include paths were discovered in 75 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:48:09.087
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 1397 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:48:09.177
+!MESSAGE Include paths were discovered in 88 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:53:58.738
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:53:58.738
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:53:58.839
+!MESSAGE Include paths were discovered in 99 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:57:25.778
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:57:25.779
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:57:25.871
+!MESSAGE Include paths were discovered in 90 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:58:06.019
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:58:06.020
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 11:58:06.093
+!MESSAGE Include paths were discovered in 71 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:07:18.571
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:07:18.572
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:07:18.647
+!MESSAGE Include paths were discovered in 73 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:09:12.190
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:09:12.191
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:09:12.281
+!MESSAGE Include paths were discovered in 88 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:09:29.567
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:09:29.568
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:09:29.638
+!MESSAGE Include paths were discovered in 68 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:20:39.264
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 513 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:20:39.337
+!MESSAGE Include paths were discovered in 72 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:22:19.418
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:22:19.418
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:22:19.508
+!MESSAGE Include paths were discovered in 87 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:26:16.755
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:26:16.756
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:26:16.838
+!MESSAGE Include paths were discovered in 80 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:26:30.080
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 365 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:26:30.118
+!MESSAGE Include paths were discovered in 37 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:27:53.113
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 430 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 12:27:53.166
+!MESSAGE Include paths were discovered in 52 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:35:29.934
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:35:29.935
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:35:29.993
+!MESSAGE Include paths were discovered in 56 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:37:44.268
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:37:44.269
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:37:44.338
+!MESSAGE Include paths were discovered in 68 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:39:32.731
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:39:32.732
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:39:32.778
+!MESSAGE Include paths were discovered in 45 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:44:35.042
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:44:35.043
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:44:35.123
+!MESSAGE Include paths were discovered in 78 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:45:37.106
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:45:37.107
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:45:37.166
+!MESSAGE Include paths were discovered in 57 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem.notification 4 0 2025-07-28 14:55:47.514
+!MESSAGE PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+!STACK 0
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:371)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:314)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:309)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1357)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1232)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1175)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:480)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:458)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1505)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1420)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:580)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:187)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:148)
+	at com.google.api.client.http.javanet.NetHttpRequest.execute(NetHttpRequest.java:84)
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:1012)
+	at com.infineon.aurix.buildsystem.notification.NotificationService$NotificationGetJob.run(NotificationService.java:205)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:439)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:264)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:231)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1341)
+	... 19 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:434)
+	... 24 more
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:56:02.124
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:56:02.124
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:56:02.176
+!MESSAGE Include paths were discovered in 49 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:57:16.704
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:57:16.705
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:57:16.772
+!MESSAGE Include paths were discovered in 65 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:58:40.020
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:58:40.021
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:58:40.076
+!MESSAGE Include paths were discovered in 53 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:59:11.450
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:59:11.450
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 14:59:11.522
+!MESSAGE Include paths were discovered in 70 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 15:09:12.354
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 15:09:12.354
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 15:09:12.402
+!MESSAGE Include paths were discovered in 47 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 15:09:44.613
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 15:09:44.614
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 15:09:44.699
+!MESSAGE Include paths were discovered in 82 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:08:36.170
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 6746 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:08:36.207
+!MESSAGE Include paths were discovered in 35 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:11:31.430
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:11:31.431
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:11:31.501
+!MESSAGE Include paths were discovered in 67 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:12:28.592
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:12:28.592
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:12:28.673
+!MESSAGE Include paths were discovered in 82 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:13:39.855
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:13:39.856
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:13:39.907
+!MESSAGE Include paths were discovered in 49 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:15:09.002
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:15:09.003
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:15:09.067
+!MESSAGE Include paths were discovered in 62 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:18:52.233
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:18:52.234
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:18:52.317
+!MESSAGE Include paths were discovered in 81 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:19:04.515
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:19:04.515
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:19:04.564
+!MESSAGE Include paths were discovered in 47 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:29:29.382
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:29:29.382
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:29:29.425
+!MESSAGE Include paths were discovered in 42 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:36:05.752
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:36:05.753
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project mypj boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-28 17:36:05.845
+!MESSAGE Include paths were discovered in 90 milliseconds.
