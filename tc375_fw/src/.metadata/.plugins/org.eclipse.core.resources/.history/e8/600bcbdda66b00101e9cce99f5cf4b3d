@@ -1,5 +1,5 @@
 /**********************************************************************************************************************
- * \file Sys_Init.c
+ * \file Motor.c
  * \copyright Copyright (C) Infineon Technologies AG 2019
  * 
  * Use of this file is subject to the terms of use agreed between (i) you or the company in which ordinary course of 
@@ -29,8 +29,8 @@
 /*********************************************************************************************************************/
 /*-----------------------------------------------------Includes------------------------------------------------------*/
 /*********************************************************************************************************************/
-#include "Sys_Init.h"
-
+#include "Motor.h"
+#include "stm.h"
 /*********************************************************************************************************************/
 /*------------------------------------------------------Macros-------------------------------------------------------*/
 /*********************************************************************************************************************/
@@ -50,35 +50,141 @@
 /*********************************************************************************************************************/
 /*---------------------------------------------Function Implementations----------------------------------------------*/
 /*********************************************************************************************************************/
-void SYSTEM_INIT(void){
-    IfxCpu_enableInterrupts();
+void Motor_Init(void){
+    MODULE_P10.IOCR0.B.PC1 = 0x10;
+    MODULE_P02.IOCR4.B.PC7 = 0x10;
 
-    /* !!WATCHDOG0 AND SAFETY WATCHDOG ARE DISABLED HERE!!
-     * Enable the watchdogs and service them periodically if it is required
-     */
-    IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
-    IfxScuWdt_disableSafetyWatchdog(IfxScuWdt_getSafetyWatchdogPassword());
+    MODULE_P10.IOCR0.B.PC2 = 0x10;
+    MODULE_P02.IOCR4.B.PC6 = 0x10;
 
-    GPIO_Init();
-    Buzzer_Init();
-    Asclin0_InitUart();
-//    ScuEru_Init(); P2.1
-//    gpt1_init();
-    gpt2_init();
-//    Ultrasonics_Init();
-//    US_IR_init();
-//    US_TestPinSetting();
-
-//    Bluetooth_Init();
-    CAN_Init(BD_1M, CAN_NODE0);
-//    Asclin1_InitUart();
-//    Evadc_Init();
-    Motor_Init();
-    Encoder_Init();
+    GtmAtomPwm_Init();
+    GtmAtomPwmA_SetDutyCycle(0);
+    GtmAtomPwmB_SetDutyCycle(0);
+}
+void Motor_movChB(int dir){
+    if (dir){
+        MODULE_P10.OUT.B.P2 = 1; //
+    }
+    else{
+        MODULE_P10.OUT.B.P2 = 0;
+    }
+    MODULE_P02.OUT.B.P6 = 0; //
+    GtmAtomPwmB_SetDutyCycle(1000);
+}
+void Motor_stopChB(void){
+    MODULE_P02.OUT.B.P6 = 1;
+}
+void Motor_movChB_PWM(int duty, int dir){
+    GtmAtomPwmB_SetDutyCycle(duty*10);
+    if (dir){
+        MODULE_P10.OUT.B.P2 = 1; //
+    }
+    else{
+        MODULE_P10.OUT.B.P2 = 0; //
+    }
+    MODULE_P02.OUT.B.P6 = 0; //
 }
 
 
+//Motor A
+void Motor_movChA(int dir){
+    if (dir){
+        MODULE_P10.OUT.B.P1 = 1; //
+    }
+    else{
+        MODULE_P10.OUT.B.P1 = 0;
+    }
+    MODULE_P02.OUT.B.P7 = 0; //
+    GtmAtomPwmA_SetDutyCycle(1000);
+}
+void Motor_stopChA(void){
+    MODULE_P02.OUT.B.P7 = 1;
+}
+void Motor_movChA_PWM(int duty, int dir){
+    GtmAtomPwmA_SetDutyCycle(duty*10);
+    if (dir){
+        MODULE_P10.OUT.B.P1 = 1; //
+    }
+    else{
+        MODULE_P10.OUT.B.P1 = 0; //
+    }
+    MODULE_P02.OUT.B.P7 = 0; //
+}
+
+void Encoder_Init(void){
+
+    uint16 password = IfxScuWdt_getSafetyWatchdogPasswordInline();
+    IfxScuWdt_clearSafetyEndinitInline(password);
+
+    MODULE_P15.IOCR4.B.PC4 = 0x01;//set port33.7 as pull-up input;
+
+    //Setting ERU//
+    MODULE_SCU.EICR[0].B.EXIS0 = 0;//EICR.EXIS  : ESR4,  (EICR2, EXIS0=ERS4, 0(REQ8,P33.7)
+
+    MODULE_SCU.EICR[0].B.REN0 = 1;//rising edge
+    MODULE_SCU.EICR[0].B.FEN0 = 0;//falling edge
+
+    MODULE_SCU.EICR[0].B.EIEN0 = 1;//enable trigger pulse
+
+    MODULE_SCU.EICR[0].B.INP0 = 0;//determination of output channel for trigger event (Register INP)
+
+    MODULE_SCU.IGCR[0].B.IGP0= 1;// configure output channels, outputgating unit OGU (Register IGPy)
 
 
+    MODULE_SCU.EIFILT.B.FILRQ0A = 1;        // 글리치 필터
+    MODULE_SCU.EIFILT.B.FILTDIV = 4;
+    MODULE_SCU.EIFILT.B.DEPTH   = 5;
+    //ISR
+    volatile Ifx_SRC_SRCR *src;
+    src = (volatile Ifx_SRC_SRCR*) (&MODULE_SRC.SCU.SCUERU[0]);
+    src -> B.SRPN = ISR_PRIORITY_Encoder_INT0;
+    src -> B.TOS = 0;
+    src -> B.CLRR = 1; //clear request
+    src -> B.SRE = 1; // interrupt enable;
 
+    IfxScuWdt_setSafetyEndinitInline(password);
+}
 
+volatile uint64 encoder = 0;
+//uint64 encoder = 0;
+uint64 prev_encoder = 0;
+volatile uint64 prev_time = 0;
+volatile uint64 now_time = 0;
+double double_v  = 0.0;
+uint64 v = 0;
+volatile uint64 InstV = 0;
+
+//IFX_INTERRUPT(Encoder_Int0_Handler, 0 , ISR_PRIORITY_Encoder_INT0);
+IFX_INTERRUPT(Encoder_Instant_Handler, 0 , ISR_PRIORITY_Encoder_INT0);
+void Encoder_Instant_Handler(void){
+    encoder++;
+    now_time = getTimeUs();
+    InstV = now_time - prev_time;
+    prev_time = now_time;
+}
+uint64 get_InstV(void){
+    return InstV;
+}
+
+void Encoder_Int0_Handler(void){
+//    MODULE_SCU.EIFR.B.INTF0 = 1;
+    encoder++;
+//    now_time = getTimeUs();
+//    v = (double)(encoder-prev_encoder)/(now_time - prev_time) * 1000000;
+}
+
+uint64 get_encoder(void){
+    return encoder;
+}
+uint64 get_V(void){
+    v  = (encoder - prev_encoder);
+    prev_encoder = encoder;
+    return v;
+}
+double get_timeV(void){
+//    if (now_time == prev_time) return -1.0;
+    double_v  = (double)(encoder - prev_encoder) / (getTimeUs() - prev_time) * 1000000;
+    prev_time = getTimeUs();
+    prev_encoder = encoder;
+    return double_v;
+}

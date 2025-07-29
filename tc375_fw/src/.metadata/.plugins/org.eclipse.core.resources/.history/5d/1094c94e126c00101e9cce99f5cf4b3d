@@ -122,7 +122,7 @@ void Encoder_Init(void){
     MODULE_SCU.EICR[0].B.EXIS0 = 0;//EICR.EXIS  : ESR4,  (EICR2, EXIS0=ERS4, 0(REQ8,P33.7)
 
     MODULE_SCU.EICR[0].B.REN0 = 1;//rising edge
-    MODULE_SCU.EICR[0].B.FEN0 = 0;//falling edge
+    MODULE_SCU.EICR[0].B.FEN0 = 1;//falling edge
 
     MODULE_SCU.EICR[0].B.EIEN0 = 1;//enable trigger pulse
 
@@ -161,8 +161,8 @@ volatile uint64 now_time_f = 0;
 volatile uint32 InstV_f = 0;
 
 //IFX_INTERRUPT(Encoder_Int0_Handler, 0 , ISR_PRIORITY_Encoder_INT0);
-IFX_INTERRUPT(Encoder_Instant_Handler, 0 , ISR_PRIORITY_Encoder_INT0);
-//IFX_INTERRUPT(Encoder_Dual_Handler, 0 , ISR_PRIORITY_Encoder_INT0);
+//IFX_INTERRUPT(Encoder_Instant_Handler, 0 , ISR_PRIORITY_Encoder_INT0);
+IFX_INTERRUPT(Encoder_Dual_Handler, 0 , ISR_PRIORITY_Encoder_INT0);
 void Encoder_Dual_Handler(void){
     if (MODULE_P15.IN.B.P4){
         encoder++;
@@ -188,7 +188,7 @@ void Encoder_Instant_Handler(void){
     InstV = (uint32)(now_time - prev_time);
     prev_time = now_time;
 }
-uint32 get_InstV(void){
+uint64 get_InstV(void){
     return InstV;
 }
 

@@ -1,12 +1,8 @@
 Build started...
-17:36:06 **** Incremental Build of configuration TriCore Debug (TASKING) for project mypj ****
+09:27:40 **** Incremental Build of configuration TriCore Debug (TASKING) for project mypj ****
 amk -j12 all 
 TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
 cctc -cs --dep-file="Motor.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/Coding/C/proj1/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "Motor.src" "../Motor.c"
-ctc W505: ["../Motor.c" 170/53] implicit declaration of function "getTimeUs"
-ctc W577: ["../Motor.c" 170/62] calling a function without a prototype
-ctc W577: ["../Motor.c" 171/26] calling a function without a prototype
-0 errors, 3 warnings
 astc -Og -Os --no-warnings= --error-limit=42 -o  "Motor.o" "Motor.src"
 Building target: mypj.elf
 Invoking: TASKING Linker
@@ -16,7 +12,7 @@ Finished building target: mypj.elf
 Invoking: Print Size
 elfsize  "mypj.elf"
 Total sizes:
-ROM: 0x6309 (25353) = code: 0x4de4 (19940) + romdata: 0x1525 (5413)
+ROM: 0x7aaa (31402) = code: 0x6432 (25650) + romdata: 0x1678 (5752)
 RAM: 0x96b5 (38581) = data + bss
 Finished building: mypj.siz
  

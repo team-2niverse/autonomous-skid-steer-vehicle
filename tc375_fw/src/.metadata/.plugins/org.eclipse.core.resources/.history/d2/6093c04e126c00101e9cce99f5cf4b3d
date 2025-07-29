@@ -37,13 +37,13 @@ void core0_main(void)
 {
     SYSTEM_INIT();
 
-//    my_printf("Test start\n");
+    my_printf("Test start\n");
 //    float dist = 0;
-    int i= 100;
-    int j = 0;
+//    int i= 100;
+//    int j = 0;
     while(1){
-        int pwm = i-(j/100);
-        Motor_movChB_PWM(pwm,0);
+//        int pwm = i-(j/100);
+//        Motor_movChB_PWM(pwm,0);
 //        j+=1;
 //        my_printf("debg start\n");
 //        MODULE_P13.OUT.B.P2 = 1; // Rear TRIG_HIGH
@@ -54,8 +54,8 @@ void core0_main(void)
 //        my_printf("dist : %f\n", )
 //        my_printf("encoder : %d\n", get_encoder());
 //        my_printf("pwm : %d , v : %f\n", pwm, get_timeV());
-        my_printf("pwm : %d, v : %d\n", pwm, get_InstV());
-//        my_printf("v : %d\n", get_DualTime());
+//        my_printf("pwm : %d, v : %d\n", pwm, get_InstV());
+        my_printf("v : %d\n", get_DualTime());
         delay_ms(10);
     };
 }

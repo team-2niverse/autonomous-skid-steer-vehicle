@@ -70,7 +70,7 @@ void SYSTEM_INIT(void){
 //    US_TestPinSetting();
 
 //    Bluetooth_Init();
-    CAN_Init(BD_1M, CAN_NODE0);
+//    CAN_Init(BD_500K, CAN_NODE0);
 //    Asclin1_InitUart();
 //    Evadc_Init();
     Motor_Init();

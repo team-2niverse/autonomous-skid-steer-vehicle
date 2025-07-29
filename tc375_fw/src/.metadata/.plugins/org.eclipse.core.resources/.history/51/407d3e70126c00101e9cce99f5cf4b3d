@@ -37,13 +37,13 @@ void core0_main(void)
 {
     SYSTEM_INIT();
 
-//    my_printf("Test start\n");
+    my_printf("Test start\n");
 //    float dist = 0;
     int i= 100;
     int j = 0;
     while(1){
         int pwm = i-(j/100);
-        Motor_movChB_PWM(pwm,0);
+//        Motor_movChB_PWM(pwm,0);
 //        j+=1;
 //        my_printf("debg start\n");
 //        MODULE_P13.OUT.B.P2 = 1; // Rear TRIG_HIGH

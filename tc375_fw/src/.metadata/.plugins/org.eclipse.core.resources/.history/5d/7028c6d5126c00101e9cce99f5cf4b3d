@@ -188,7 +188,7 @@ void Encoder_Instant_Handler(void){
     InstV = (uint32)(now_time - prev_time);
     prev_time = now_time;
 }
-uint32 get_InstV(void){
+uint64 get_InstV(void){
     return InstV;
 }
 

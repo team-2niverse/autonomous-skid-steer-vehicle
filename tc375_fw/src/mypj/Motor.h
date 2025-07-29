@@ -64,6 +64,13 @@ void Motor_stopChB(void);
 void Motor_movChB_PWM(int duty, int dir);
 
 void Encoder_Init(void);
+
+void Encoder_Dual_Handler(void);
+uint32 get_DualTime(void);
+
+void Encoder_Instant_Handler(void);
+uint32 get_InstV(void);
+
 void Encoder_Int0_Handler(void);
 uint64 get_encoder(void);
 uint64 get_V(void);
