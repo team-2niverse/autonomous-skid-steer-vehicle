@@ -387,3 +387,145 @@ void remove_null(char *s)
     }
     *(s + i) = '\0';
 }
+
+/* ASCLIN1 (ToF) */
+void Asclin1_InitUart (void)
+{
+    /* 921600 */
+    unsigned int numerator = 2304;
+    unsigned int denominator = 3125;
+
+    /* RXA = P15.1, TX = P15.0*/
+    /* Set TX/P15.0 to "output" and "high" */
+    MODULE_P15.IOCR0.B.PC0 = 0x12;
+    MODULE_P15.OUT.B.P0 = 1;
+
+    /* Enable ASCn */
+    IfxScuWdt_clearCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());
+    MODULE_ASCLIN1.CLC.U = 0;
+    IfxScuWdt_setCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());
+    /* read back for activating module */
+    (void) MODULE_ASCLIN1.CLC.U;
+
+    /* select RX as input pin */
+    MODULE_ASCLIN1.IOCR.B.ALTI = 0; // Select Alternate Input A
+
+    /* Program ASC0 */
+    MODULE_ASCLIN1.CSR.U = 0; // 클럭 멈추고 설정
+
+    /* configure TX and RX FIFOs */
+    MODULE_ASCLIN1.TXFIFOCON.U = (1 << 6) | (1 << 1) | (1 << 0);
+
+    // Receive buffer Mode - Single Stage RX Buffer
+    MODULE_ASCLIN1.RXFIFOCON.U = (1 << 31) | (1 << 6) | (1 << 1) | (1 << 0);
+
+    /* 115200 */
+    // prescaler = (4 + 1), oversampling = (15 + 1), samplePoint = 9, SM = 1(비트당 3샘플)
+    MODULE_ASCLIN1.BITCON.U = (4 << 0) | (15 << 16) | (9 << 24) | (1u << 31);
+
+    /* data format: 8N1 */
+    // stop bit = 1, parity = disable
+    MODULE_ASCLIN1.FRAMECON.U = (1 << 9);
+
+    /* datalen = 8 bit */
+    MODULE_ASCLIN1.DATCON.U = (7 << 0);
+
+    /* set baudrate value */
+    MODULE_ASCLIN1.BRG.U = (denominator << 0) | (numerator << 16);
+
+    MODULE_ASCLIN1.FRAMECON.B.MODE = 1; /* ASC mode */
+    MODULE_ASCLIN1.CSR.U = 1; /* select CLC as clock source */
+    // 원래는 1이 아니라 2나 4로 해야하는데, 1로 된다?
+    MODULE_ASCLIN1.FLAGSSET.U = (IFX_ASCLIN_FLAGSSET_TFLS_MSK << IFX_ASCLIN_FLAGSSET_TFLS_OFF);
+
+    /* Initialize ASCLIN1 RX Interrupt */
+    MODULE_SRC.ASCLIN.ASCLIN[1].RX.B.SRPN = ISR_PRIORITY_ASCLIN1_RX;
+    MODULE_SRC.ASCLIN.ASCLIN[1].RX.B.TOS = 0;
+    MODULE_SRC.ASCLIN.ASCLIN[1].RX.B.CLRR = 1;
+    MODULE_ASCLIN1.FLAGSENABLE.B.RFLE = 1;
+    MODULE_SRC.ASCLIN.ASCLIN[1].RX.B.SRE = 1;
+}
+
+
+int Asclin1_PollUart (unsigned char *chr)
+{
+    unsigned char ret;
+    int res = 0;
+
+    if (MODULE_ASCLIN1.FLAGS.B.RFL != 0) /* If RX ready */
+    {
+        ret = (unsigned char) MODULE_ASCLIN1.RXDATA.U;
+
+        MODULE_ASCLIN1.FLAGSCLEAR.U = (IFX_ASCLIN_FLAGSCLEAR_RFLC_MSK << IFX_ASCLIN_FLAGSCLEAR_RFLC_OFF);
+        //RX Clear
+        /* check for error condition */
+        // parity error, framing error, receive FIFO overflow error
+        if ((MODULE_ASCLIN1.FLAGS.U)
+                & ((IFX_ASCLIN_FLAGS_PE_MSK << IFX_ASCLIN_FLAGS_PE_OFF)
+                        | (IFX_ASCLIN_FLAGS_FE_MSK << IFX_ASCLIN_FLAGS_FE_OFF)
+                        | (IFX_ASCLIN_FLAGS_RFO_MSK << IFX_ASCLIN_FLAGS_RFO_OFF)))
+        {
+            /* reset error flags */
+            MODULE_ASCLIN1.FLAGSCLEAR.U = ((IFX_ASCLIN_FLAGSCLEAR_PEC_MSK << IFX_ASCLIN_FLAGSCLEAR_PEC_OFF)
+                    | (IFX_ASCLIN_FLAGSCLEAR_FEC_MSK << IFX_ASCLIN_FLAGSCLEAR_FEC_OFF)
+                    | (IFX_ASCLIN_FLAGSCLEAR_RFOC_MSK << IFX_ASCLIN_FLAGSCLEAR_RFOC_OFF));
+        }
+        else
+        {
+            /* this is a valid character */
+            *chr = ret;
+            res = 1;
+        }
+    }
+    return res;
+}
+
+unsigned char Asclin1_InUart (void)
+{
+    unsigned char ch;
+
+    //입력 받을 때까지 기다렸다가 받음
+    while (Asclin1_PollUart(&ch) == 0)
+        ;
+
+    return ch;
+}
+
+char Asclin1_InUartNonBlock (void)
+{
+    unsigned char ch = 0;
+    int res = Asclin1_PollUart(&ch);
+
+    return res == 1 ? ch : -1;
+}
+
+void Asclin1_OutUart (const unsigned char chr)
+{
+    /* wait until space is available in the FIFO */
+    while (!(MODULE_ASCLIN1.FLAGS.B.TFL != 0));
+
+    /* TX Clear */
+    MODULE_ASCLIN1.FLAGSCLEAR.U = (IFX_ASCLIN_FLAGSCLEAR_TFLC_MSK << IFX_ASCLIN_FLAGSCLEAR_TFLC_OFF);
+
+    /* send the character */
+    MODULE_ASCLIN1.TXDATA.U = chr;
+}
+
+
+/* Adding of the interrupt service routines */
+IFX_INTERRUPT(Asclin1RxIsrHandler, 0, ISR_PRIORITY_ASCLIN1_RX);
+void Asclin1RxIsrHandler (void)
+{
+    unsigned char data[17] = {0};
+    for(int i=0; i<16; i++)
+    {
+        data[i] = Asclin1_InUart();
+    }
+
+    unsigned int dis = data[8] | (data[9] << 8) | (data[10] << 16);
+    float result = dis / 1000.0f;
+//    float result = dis/1000;
+//    float dis = (data[9]<<8 | data[10] << 16 | data[11]<<24)/256/1000;
+    my_printf("dis: %.3f m\n", result);
+}
+

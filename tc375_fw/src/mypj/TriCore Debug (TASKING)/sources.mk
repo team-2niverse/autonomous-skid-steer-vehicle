@@ -25,7 +25,6 @@ SECONDARY_SIZE :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 . \
-Configurations/Debug \
 Configurations \
 Libraries/Infra/Platform/Tricore/Compilers \
 Libraries/Infra/Ssw/TC37A/Tricore \

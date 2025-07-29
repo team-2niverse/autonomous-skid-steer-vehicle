@@ -34,47 +34,19 @@
 void core0_main(void)
 {
     SYSTEM_INIT();
-
-    my_printf("BT start\n");
-
+    //US_IR_init();
 
     while(1){
-        Motor_movChA_PWM(100, 1);
-        Motor_movChB_PWM(100, 1);
+
+        setBeepCycle(260);
+        delay_ms(2000);
+        setBeepCycle(130);
+        delay_ms(2000);
+        setBeepCycle(1);
         delay_ms(1000);
-
-        my_printf("50, 1 start\n");
-        Motor_movChA_PWM(50, 1);
-        Motor_movChB_PWM(50, 1);
-        delay_ms(3000);
-
-        my_printf("stop start\n");
-        Motor_movChA_PWM(0, 1);
-        Motor_movChB_PWM(0, 1);
+        setBeepCycle(0);
         delay_ms(1000);
-
-        my_printf("1000, 0 start\n");
-        Motor_movChA_PWM(100,0);
-        Motor_movChB_PWM(100,0);
-        delay_ms(3000);
-
-        my_printf("50, 0 start\n");
-        Motor_movChA_PWM(50, 0);
-        Motor_movChB_PWM(50, 0);
-        delay_ms(1000);
-
-//        my_printf("50, 0 start\n");
-//        Motor_movChA_PWM(30, 0);
-//        Motor_movChB_PWM(30, 0);
-//        delay_ms(3000);
-
-        my_printf("0, 0 start\n");
-        Motor_movChA_PWM(0, 0);
-        Motor_movChB_PWM(0, 0);
-        delay_ms(3000);
-
-
-    };
+    }
 
 //    char data[40];
 //    int rxLen;

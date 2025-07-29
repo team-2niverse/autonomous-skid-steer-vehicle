@@ -25,7 +25,6 @@
  * IN THE SOFTWARE.
  *********************************************************************************************************************/
 
-
 /*********************************************************************************************************************/
 /*-----------------------------------------------------Includes------------------------------------------------------*/
 /*********************************************************************************************************************/
@@ -41,8 +40,13 @@
 /*********************************************************************************************************************/
 uint64 timer_start = 0;
 uint64 timer_end = 0;
-float distance =0.0;
+float distance = 0.0;
 uint64 rear_duration;
+
+uint64 timer_start2 = 0;
+uint64 timer_end2 = 0;
+float distance2 = 0.0;
+uint64 rear_duration2;
 /*********************************************************************************************************************/
 /*--------------------------------------------Private Variables/Constants--------------------------------------------*/
 /*********************************************************************************************************************/
@@ -54,80 +58,97 @@ uint64 rear_duration;
 /*********************************************************************************************************************/
 /*---------------------------------------------Function Implementations----------------------------------------------*/
 /*********************************************************************************************************************/
-void Ultrasonics_Init(void)
+void Ultrasonics_Init (void)
 {
     /* Init Ultrasonic Pin */
     MODULE_P13.IOCR0.B.PC2 = 0x10; /* Set TRIG (P13.2)Pin to output */
-//    MODULE_P13.IOCR0.B.PC1 = 0x02; /* Set ECHO (P13.1) Pin to input */
-    MODULE_P15.IOCR4.B.PC4 = 0x02; /* Set ECHO (P13.1) Pin to input */
+//    MODULE_P11.IOCR8.B.PC10 = 0x02; /* Set ECHO (P15.4) Pin to input */
 }
 
-float Ultrasonic_ReadSensor_noFilt(void)
+float Ultrasonic_ReadSensor_noFilt (void)
 {
-//    volatile int j = 0;
+    volatile int j = 0;
     uint64 timer_start, timer_end, rear_duration;
     float distance;
     /* Send Trigger Pulse */
     MODULE_P13.OUT.B.P2 = 1; // Rear TRIG_HIGH
-//    for(j=0; j<1000; j++) continue;
-//    MODULE_P13.OUT.B.P2 = 0; // Rear TRIG_LOW
-    runGpt12_T6();//timer run => 10us 이후 자동으로 trig신호 끄고 타이머 OFF
-
+    for (j = 0; j < 1000; j++)
+        continue;
+    MODULE_P13.OUT.B.P2 = 0; // Rear TRIG_LOW
+//    runGpt12_T6();//timer run => 10us 이후 자동으로 trig신호 끄고 타이머 OFF
 
     /* Calculate Distance */
-//    while (MODULE_P13.IN.B.P1 == 0); // wait for Rear ECHO_HIGH
-    while (MODULE_P15.IN.B.P4 == 0);
+    while (MODULE_P13.IN.B.P1 == 0)
+        ; // wait for Rear ECHO_HIGH
+//    while (MODULE_P15.IN.B.P8 == 0);
     timer_start = getTimeUs();
-//    while (MODULE_P13.IN.B.P1 == 1); // wait for Rear ECHO_LOW
-    while (MODULE_P15.IN.B.P4 == 1);
+    while (MODULE_P13.IN.B.P1 == 1)
+        ; // wait for Rear ECHO_LOW
+//    while (MODULE_P15.IN.B.P8 == 1);
     timer_end = getTimeUs();
     rear_duration = (timer_end - timer_start);
     distance = (float) 0.0343 * rear_duration / 2.0; // cm/us
     return distance;
 }
 
-
-void Ultrasonic_IR_Read_noFilt(void)
+void Ultrasonic_IR_Read_noFilt (void)
 {
     /* Send Trigger Pulse */
-    MODULE_P13.OUT.B.P2 = 1; // Rear TRIG_HIGH
-    runGpt12_T6();//timer run => 20us 이후 자동으로 trig신호 끄고 타이머 OFF
+//    MODULE_P13.OUT.B.P2 = 1; // Rear TRIG_HIGH
+//    runGpt12_T6();//timer run => 20us 이후 자동으로 trig신호 끄고 타이머 OFF
+//    volatile int j = 0;
+//    MODULE_P33.OUT.B.P5 = 1; // Rear TRIG_HIGH
+//    for(j=0; j<1000; j++) continue;
+//    MODULE_P33.OUT.B.P5 = 0; // Rear TRIG_LOW
+    volatile int j = 0;
+    MODULE_P13.OUT.B.P1 = 1; // Rear TRIG_HIGH
+    for (j = 0; j < 1000; j++)
+        continue;
+    MODULE_P13.OUT.B.P1 = 0; // Rear TRIG_LOW
+//
+//    delay_ms(10);
+//    volatile int k = 0;
+//    MODULE_P33.OUT.B.P3 = 1; // Rear TRIG_HIGH
+//    for (k = 0; k < 1000; k++)
+//        continue;
+//    MODULE_P33.OUT.B.P3 = 0; // Rear TRIG_LOW
 
 //    my_printf("triggerpulse end\n");
-    /* Calculate Distance */
+//    /* Calculate Distance */
 //    while (MODULE_P13.IN.B.P1 == 0); // wait for Rear ECHO_HIGH
 //    timer_start = getTimeUs();
 //    while (MODULE_P13.IN.B.P1 == 1); // wait for Rear ECHO_LOW
 //    timer_end = getTimeUs();
-    ///
 }
 
-void US_IR_init(void){
+void US_IR_init (void)
+{
     //button interrupt
     uint16 password = IfxScuWdt_getSafetyWatchdogPasswordInline();
     IfxScuWdt_clearSafetyEndinitInline(password);
 
-    MODULE_P15.IOCR4.B.PC4 = 0x02;//set port33.7 as pull-up input;
+    /* Ultrasonic1 */
+    MODULE_P13.IOCR0.B.PC1 = 0x10;
+    MODULE_P15.IOCR0.B.PC1 = 0x02; //set port15.8 as pull-up input;
 
     //Setting ERU//
-    MODULE_SCU.EICR[0].B.EXIS0 = 0;//EICR.EXIS 레지스터 설정 : ESR4, 0번 신호 (EICR2번, EXIS0=ERS4, 0(REQ8,P33.7)
+    MODULE_SCU.EICR[3].B.EXIS1 = 0; //EICR.EXIS 레지스터 설정 : ESR4, 0번 신호 (EICR2번, EXIS0=ERS4, 0(REQ8,P33.7)
 
-    MODULE_SCU.EICR[0].B.REN0 = 1;//rising edge 트리거 설정
-    MODULE_SCU.EICR[0].B.FEN0 = 1;//falling edge 트리거 설정함.
+    MODULE_SCU.EICR[3].B.REN1 = 1; //rising edge 트리거 설정
+    MODULE_SCU.EICR[3].B.FEN1 = 1; //falling edge 트리거 설정함.
+    MODULE_SCU.EICR[3].B.EIEN1 = 1; //enable trigger pulse
 
-    MODULE_SCU.EICR[0].B.EIEN0 = 1;//enable trigger pulse
+    MODULE_SCU.EICR[3].B.INP1 = 2; //determination of output channel for trigger event (Register INP)
 
-    MODULE_SCU.EICR[0].B.INP0 = 0;//determination of output channel for trigger event (Register INP)
-
-    MODULE_SCU.IGCR[0].B.IGP0= 1;// configure output channels, outputgating unit OGU (Register IGPy)
+    MODULE_SCU.IGCR[1].B.IGP0 = 1; // configure output channels, outputgating unit OGU (Register IGPy)
 
     //ISR 등록
     volatile Ifx_SRC_SRCR *src;
-    src = (volatile Ifx_SRC_SRCR*) (&MODULE_SRC.SCU.SCUERU);
-    src -> B.SRPN = ISR_PRIORITY_US_ECHO_INT0;
-    src -> B.TOS = 0;
-    src -> B.CLRR = 1; //clear request
-    src -> B.SRE = 1; // interrupt enable;
+    src = (volatile Ifx_SRC_SRCR*) (&MODULE_SRC.SCU.SCUERU[2]);
+    src->B.SRPN = ISR_PRIORITY_US_ECHO_INT0;
+    src->B.TOS = 0;
+    src->B.CLRR = 1; //clear request
+    src->B.SRE = 1; // interrupt enable;
 
     IfxScuWdt_setSafetyEndinitInline(password);
 }
@@ -135,29 +156,29 @@ void US_IR_init(void){
 //    MODULE_SCU.EICR[2].B.EIEN0 = 0;//enable trigger pulse
 //}
 
+IFX_INTERRUPT(US_Echo_Int0_Handler, 0, ISR_PRIORITY_US_ECHO_INT0);
 
+void US_Echo_Int0_Handler (void)
+{
 
-IFX_INTERRUPT(US_Echo_Int0_Handler, 0 , ISR_PRIORITY_US_ECHO_INT0);
-
-volatile uint64 howmany = 0;
-void US_Echo_Int0_Handler(void){
-    howmany++;
-
-    if (MODULE_P15.IN.B.P4 == 1){
-        timer_end = 0;
+    if (MODULE_P15.IN.B.P1 == 1)
+    {
+        //timer_end = 0;
         timer_start = getTimeUs();
     }
-    else if (MODULE_P15.IN.B.P4 == 0){
+    else if (MODULE_P15.IN.B.P1 == 0)
+    {
         timer_end = getTimeUs();
     }
-    if (timer_start == 0 || timer_end == 0) return;
+    if (timer_start == 0 || timer_end == 0)
+        return;
 
-    my_printf("s: %d, e: %d\n", timer_start, timer_end);
+//    my_printf("s: %d, e: %d\n", timer_start, timer_end);
     rear_duration = (timer_end - timer_start);
-    distance = 0.0343 * (float)rear_duration / 2.0; // cm/us
-    my_printf("dist: %f", distance);
-
-}
-
+    distance = 0.0343 * (float) rear_duration / 2.0; // cm/us
+    my_printf("dist1: %f cm\n", distance);
+    timer_start = 0;
+    timer_end = 0;
 
 //스위치 누르고 거리 가까워지면 비프음 빨리지게 만들어보기
+}

@@ -68,6 +68,14 @@ unsigned char Asclin0_InUart(void);
 unsigned char Asclin0_InUartNonBlock(void);
 void Asclin0_OutUart(const unsigned char chr);
 
+void Asclin1_InitUart(void);
+void Asclin1RxIsrHandler(void);
+
+int Asclin1_PollUart(unsigned char *chr);
+unsigned char Asclin1_InUart(void);
+char Asclin1_InUartNonBlock(void);
+void Asclin1_OutUart(const unsigned char chr);
+
 void remove_null(char *s);
 void my_puts(const char *str);
 void my_printf(const char *fmt, ...);

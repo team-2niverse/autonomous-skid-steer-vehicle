@@ -59,24 +59,30 @@ void ScuEru_Init(void){
     IfxScuWdt_clearSafetyEndinitInline(password);
 
 
-    MODULE_P02.IOCR0.B.PC1 = 0x02; //set p2.1 as pull-up input;
+    //MODULE_P02.IOCR0.B.PC1 = 0x02; //set p2.1 as pull-up input;
+    MODULE_P15.IOCR4.B.PC4 = 0x02; //set p2.1 as pull-up input;
 
+
+
+//    //Setting ERU//
+//    MODULE_SCU.EICR[1].B.EXIS0 = 1;//EICR.EXIS 레지스터 설정 : ESR2, 1번 신호 (EICR1번, EXIS0=ERS2, 1(REQ14,P2.1)
+//    MODULE_SCU.EICR[1].B.REN0 = 0;//rising edge 트리거 설정안함
+//    MODULE_SCU.EICR[1].B.FEN0 = 1;//falling edge 트리거 설정함.
+//    MODULE_SCU.EICR[1].B.EIEN0 = 1;//enable trigger pulse
+//    MODULE_SCU.EICR[1].B.INP0 = 0;//determination of output channel for trigger event (Register INP)
+//    MODULE_SCU.IGCR[0].B.IGP0= 1;// configure output channels, outputgating unit OGU (Register IGPy)
 
     //Setting ERU//
-    MODULE_SCU.EICR[1].B.EXIS0 = 1;//EICR.EXIS 레지스터 설정 : ESR2, 1번 신호 (EICR1번, EXIS0=ERS2, 1(REQ14,P2.1)
-
-    MODULE_SCU.EICR[1].B.REN0 = 0;//rising edge 트리거 설정안함
-    MODULE_SCU.EICR[1].B.FEN0 = 1;//falling edge 트리거 설정함.
-
-    MODULE_SCU.EICR[1].B.EIEN0 = 1;//enable trigger pulse
-
-    MODULE_SCU.EICR[1].B.INP0 = 0;//determination of output channel for trigger event (Register INP)
-
-    MODULE_SCU.IGCR[0].B.IGP0= 1;// configure output channels, outputgating unit OGU (Register IGPy)
+    MODULE_SCU.EICR[2].B.EXIS1 = 0;//EICR.EXIS 레지스터 설정 : ESR2, 1번 신호 (EICR1번, EXIS0=ERS2, 1(REQ14,P2.1)
+    MODULE_SCU.EICR[2].B.REN1 = 0;//rising edge 트리거 설정안함
+    MODULE_SCU.EICR[2].B.FEN1 = 1;//falling edge 트리거 설정함.
+    MODULE_SCU.EICR[2].B.EIEN1 = 1;//enable trigger pulse
+    MODULE_SCU.EICR[2].B.INP1 = 0;//determination of output channel for trigger event (Register INP)
+    MODULE_SCU.IGCR[0].B.IGP1= 1;// configure output channels, outputgating unit OGU (Register IGPy)
 
     //ISR 등록
     volatile Ifx_SRC_SRCR *src;
-    src = (volatile Ifx_SRC_SRCR*) (&MODULE_SRC.SCU.SCUERU);
+    src = (volatile Ifx_SRC_SRCR*) (&MODULE_SRC.SCU.SCUERU[0]);
     src -> B.SRPN = ISR_PRIORITY_ERU_INT0;
     src -> B.TOS = 0;
     src -> B.CLRR = 1; //clear request

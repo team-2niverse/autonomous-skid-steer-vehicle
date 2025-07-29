@@ -29,7 +29,6 @@ RM := rm -rf
 -include Libraries/Service/CpuGeneric/SysSe/Bsp/subdir.mk
 -include Libraries/Infra/Ssw/TC37A/Tricore/subdir.mk
 -include Libraries/Infra/Platform/Tricore/Compilers/subdir.mk
--include Configurations/Debug/subdir.mk
 -include Configurations/subdir.mk
 -include subdir.mk
 ifneq ($(MAKECMDGOALS),clean)

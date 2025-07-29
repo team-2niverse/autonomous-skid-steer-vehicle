@@ -78,136 +78,136 @@ void BT_SetBaudRate(int n, unsigned int* numerator){
 }
 
 
-void Asclin1_InitUart(void){
-    //CLC enable
-    IfxScuWdt_clearCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());//DISR비트가 보호되고 있어서 watch dog time를 꺼야함.
-    MODULE_ASCLIN1.CLC.U = 0; //DISR enable설정
-    IfxScuWdt_setCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());
-    (void)MODULE_ASCLIN1.CLC.U; //cpu클락때문에 너무 빨라서 저장이 안될 수 있는데 한번 읽음으로써 저장될때가지 기다렸다 읽게 됨.
-
-    //IOCR ALTI set Alternate Input A selected
-    MODULE_ASCLIN1.IOCR.B.ALTI = 0x0;
-
-    //TX pin p15.0 set
-    MODULE_P15.IOCR0.B.PC0 = 0x12; // P15.0 = tx = output ALt 2 type output
-    MODULE_P15.OUT.B.P0 = 1;
-
-    //Rx pin p15.1 set?
-//    MODULE_P15.IOCR0.B.PC1 = 0x10; //P15.1 rx = input = 0x10 = default
-//    MODULE_P15.IOCR0.B.PC1 = 0x01; //pull-down
-
-    //config baud rate 9600
-    MODULE_ASCLIN1.BITCON.U = (9 << 0) //prescaler 10
-                            | (15 << 16) // oversampling 16
-                            | (9 << 24) // samplepoint; position at 9
-                            | (1u << 31); // 3 samples per bit => sampling at 7, 8, 9
-
-    //Baud Rate set 9600 = 100MHz/(prescaler) / (oversampling) * (numerator / denominator);
-    unsigned int numerator = 48;
-    unsigned int denominator = 3125;
-    MODULE_ASCLIN1.BRG.U = (denominator << 0) | (numerator << 16); // dominator | numerator
-
-
-    // setting 전에 0한 다음 세팅 다 하고 킬려고 일단 끔.//
-    MODULE_ASCLIN1.CSR.U = 0;
-
-    //TXFIFO set
-    MODULE_ASCLIN1.TXFIFOCON.U = (1 << 6) //INW: 1byte
-                               | (1 << 1) //ENO
-                               | (1 << 0); //FLUSH
-    //configure TX and RX FIFOs
-    MODULE_ASCLIN1.RXFIFOCON.U = (0 << 31) //BUF;0으로 해서 RXFIFO 쓴다고 해야 통신이 되는듯???
-                               | (1 << 6) //OUTW
-                               | (1 << 1) //ENI
-                               | (1 << 0); //FLUSH
-    //data format 8N1
-    MODULE_ASCLIN1.FRAMECON.U = (1 << 9 ) //stop
-                               |(0 << 16) // MODE: Init
-                               |(0 << 30); //pen : no parity;
-
-    //pairty set (you must set putty too.)
-//    MODULE_ASCLIN0.FRAMECON.U = (1 << 9 ) //stop
-//                               |(0 << 16) // MODE: Init
-//                               |(1 << 30) //yes parity
-//                               |(1 << 31); //odd parity;
-    //bit length per data
-    MODULE_ASCLIN1.DATCON.U = (7 <<0); //DATLEN= 8bit
-    //UART 통신 프레임 설정 레지스터
-    MODULE_ASCLIN1.FRAMECON.B.MODE = 1; //set init mode
-
-    MODULE_ASCLIN1.CSR.U = 1;
-    // setting is end. turn on the clock.//
-
-
-    MODULE_ASCLIN1.FLAGSSET.U = (IFX_ASCLIN_FLAGSSET_TFLS_MSK << IFX_ASCLIN_FLAGSSET_TFLS_OFF);
-                                //0x1u << 31u;
-                                //TFFS 1 => TFL ON
-    //txfifo에 데이터가 차있으면 0, 비면 1을 쓰는 인터럽트를 사용하겠다는 뜻.
-    //fifo queue가 가득 찼으면 0, 하나라도 비면 1로 인터럽트.
-
-    //ASCLIN0 RX interrupt Initialization
-//    volatile Ifx_SRC_SRCR *src;
-//    src = (volatile Ifx_SRC_SRCR *)(&MODULE_SRC.ASCLIN.ASCLIN[1].RX);
-////    MODULE_SRC.ASCLIN.ASCLIN[0].RX.B.SRPN = ISR_PRIORITY_ASCLIN0_RX;
-//    //or this way
-//    src -> B.SRPN = ISR_PRIORITY_ASCLIN1_RX; //priority
-//    src -> B.TOS = 0; //cpu number to request
-//    src -> B.CLRR = 1; //clear request
-//    MODULE_ASCLIN1.FLAGSENABLE.B.RFLE = 1; //enable RXFIFO fill level flag;
-//    src -> B.SRE = 1; //interrupt enable
-//    delay_ms(1000);
-
-}
-void Asclin1_OutUart(const unsigned char chr){
-    while (!(MODULE_ASCLIN1.FLAGS.B.TFL != 0)); //txdata에 빈 공간이 남으면 1을 반환하면서 탈출.
-
-    //TX CLEAR => 해당 flag를 확인했으므로 내림.
-    MODULE_ASCLIN1.FLAGSCLEAR.U = (IFX_ASCLIN_FLAGSCLEAR_TFLC_MSK << IFX_ASCLIN_FLAGSCLEAR_TFLC_OFF);
-                                   //0x1u << 31u;
-
-    //Send the character 해당 자리에 글짜 쓰기.
-    MODULE_ASCLIN1.TXDATA.U = chr;
-    //이럼 clock에 따라 txdata에 있는 데이터를 전송하고 삭제함. => TFL이 1이 되게 됨. => 데이터 더 받을 수 있음. 반복.
-}
-unsigned char Asclin1_InUart(void){
-//    while ( MODULE_ASCLIN0.FLAGS.B.RFL != 0 ){};
-//    MODULE_ASCLIN0.FLAGSCLEAR.U = (IFX_ASCLIN_FLAGSCLEAR_RFLC_MSK << IFX_ASCLIN_FLAGSCLEAR_RFLC_OFF);
+//void Asclin1_InitUart(void){
+//    //CLC enable
+//    IfxScuWdt_clearCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());//DISR비트가 보호되고 있어서 watch dog time를 꺼야함.
+//    MODULE_ASCLIN1.CLC.U = 0; //DISR enable설정
+//    IfxScuWdt_setCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());
+//    (void)MODULE_ASCLIN1.CLC.U; //cpu클락때문에 너무 빨라서 저장이 안될 수 있는데 한번 읽음으로써 저장될때가지 기다렸다 읽게 됨.
 //
-//    unsigned char chr = MODULE_ASCLIN0.RXDATA.U;
-//    return chr;
-    unsigned char ch;
-    while (Asclin1_PollUart(&ch)==0);
-    return ch;
-}
-int Asclin1_PollUart(unsigned char *chr){
-    unsigned char ret;
-    int res= 0;
-
-    if (MODULE_ASCLIN1.FLAGS.B.RFL == 1) { //receive했다면
-        //receive message
-        ret = (unsigned char)MODULE_ASCLIN1.RXDATA.U;
-
-        //RX clear
-        MODULE_ASCLIN1.FLAGSCLEAR.U = (IFX_ASCLIN_FLAGSCLEAR_RFLC_MSK << IFX_ASCLIN_FLAGSCLEAR_RFLC_OFF);
-
-        //check for error condition
-        if ((MODULE_ASCLIN1.FLAGS.U) & ((IFX_ASCLIN_FLAGS_PE_MSK << IFX_ASCLIN_FLAGS_PE_OFF) |//parity error
-                                        (IFX_ASCLIN_FLAGS_FE_MSK << IFX_ASCLIN_FLAGS_FE_OFF) | //framing error
-                                        (IFX_ASCLIN_FLAGS_RFO_MSK << IFX_ASCLIN_FLAGS_RFO_OFF))) // FIFO overflow
-        {
-            //reset error flags;
-            MODULE_ASCLIN1.FLAGSCLEAR.U = ((IFX_ASCLIN_FLAGSCLEAR_PEC_MSK << IFX_ASCLIN_FLAGSCLEAR_PEC_OFF) | \
-                                           (IFX_ASCLIN_FLAGSCLEAR_FEC_MSK << IFX_ASCLIN_FLAGSCLEAR_FEC_OFF) | \
-                                           (IFX_ASCLIN_FLAGSCLEAR_RFOC_MSK << IFX_ASCLIN_FLAGSCLEAR_RFOC_OFF));
-
-        }
-        else{
-            *chr = ret;
-            res = 1;
-        }
-    }
-    return res;
-}
+//    //IOCR ALTI set Alternate Input A selected
+//    MODULE_ASCLIN1.IOCR.B.ALTI = 0x0;
+//
+//    //TX pin p15.0 set
+//    MODULE_P15.IOCR0.B.PC0 = 0x12; // P15.0 = tx = output ALt 2 type output
+//    MODULE_P15.OUT.B.P0 = 1;
+//
+//    //Rx pin p15.1 set?
+////    MODULE_P15.IOCR0.B.PC1 = 0x10; //P15.1 rx = input = 0x10 = default
+////    MODULE_P15.IOCR0.B.PC1 = 0x01; //pull-down
+//
+//    //config baud rate 9600
+//    MODULE_ASCLIN1.BITCON.U = (9 << 0) //prescaler 10
+//                            | (15 << 16) // oversampling 16
+//                            | (9 << 24) // samplepoint; position at 9
+//                            | (1u << 31); // 3 samples per bit => sampling at 7, 8, 9
+//
+//    //Baud Rate set 9600 = 100MHz/(prescaler) / (oversampling) * (numerator / denominator);
+//    unsigned int numerator = 48;
+//    unsigned int denominator = 3125;
+//    MODULE_ASCLIN1.BRG.U = (denominator << 0) | (numerator << 16); // dominator | numerator
+//
+//
+//    // setting 전에 0한 다음 세팅 다 하고 킬려고 일단 끔.//
+//    MODULE_ASCLIN1.CSR.U = 0;
+//
+//    //TXFIFO set
+//    MODULE_ASCLIN1.TXFIFOCON.U = (1 << 6) //INW: 1byte
+//                               | (1 << 1) //ENO
+//                               | (1 << 0); //FLUSH
+//    //configure TX and RX FIFOs
+//    MODULE_ASCLIN1.RXFIFOCON.U = (0 << 31) //BUF;0으로 해서 RXFIFO 쓴다고 해야 통신이 되는듯???
+//                               | (1 << 6) //OUTW
+//                               | (1 << 1) //ENI
+//                               | (1 << 0); //FLUSH
+//    //data format 8N1
+//    MODULE_ASCLIN1.FRAMECON.U = (1 << 9 ) //stop
+//                               |(0 << 16) // MODE: Init
+//                               |(0 << 30); //pen : no parity;
+//
+//    //pairty set (you must set putty too.)
+////    MODULE_ASCLIN0.FRAMECON.U = (1 << 9 ) //stop
+////                               |(0 << 16) // MODE: Init
+////                               |(1 << 30) //yes parity
+////                               |(1 << 31); //odd parity;
+//    //bit length per data
+//    MODULE_ASCLIN1.DATCON.U = (7 <<0); //DATLEN= 8bit
+//    //UART 통신 프레임 설정 레지스터
+//    MODULE_ASCLIN1.FRAMECON.B.MODE = 1; //set init mode
+//
+//    MODULE_ASCLIN1.CSR.U = 1;
+//    // setting is end. turn on the clock.//
+//
+//
+//    MODULE_ASCLIN1.FLAGSSET.U = (IFX_ASCLIN_FLAGSSET_TFLS_MSK << IFX_ASCLIN_FLAGSSET_TFLS_OFF);
+//                                //0x1u << 31u;
+//                                //TFFS 1 => TFL ON
+//    //txfifo에 데이터가 차있으면 0, 비면 1을 쓰는 인터럽트를 사용하겠다는 뜻.
+//    //fifo queue가 가득 찼으면 0, 하나라도 비면 1로 인터럽트.
+//
+//    //ASCLIN0 RX interrupt Initialization
+////    volatile Ifx_SRC_SRCR *src;
+////    src = (volatile Ifx_SRC_SRCR *)(&MODULE_SRC.ASCLIN.ASCLIN[1].RX);
+//////    MODULE_SRC.ASCLIN.ASCLIN[0].RX.B.SRPN = ISR_PRIORITY_ASCLIN0_RX;
+////    //or this way
+////    src -> B.SRPN = ISR_PRIORITY_ASCLIN1_RX; //priority
+////    src -> B.TOS = 0; //cpu number to request
+////    src -> B.CLRR = 1; //clear request
+////    MODULE_ASCLIN1.FLAGSENABLE.B.RFLE = 1; //enable RXFIFO fill level flag;
+////    src -> B.SRE = 1; //interrupt enable
+////    delay_ms(1000);
+//
+//}
+//void Asclin1_OutUart(const unsigned char chr){
+//    while (!(MODULE_ASCLIN1.FLAGS.B.TFL != 0)); //txdata에 빈 공간이 남으면 1을 반환하면서 탈출.
+//
+//    //TX CLEAR => 해당 flag를 확인했으므로 내림.
+//    MODULE_ASCLIN1.FLAGSCLEAR.U = (IFX_ASCLIN_FLAGSCLEAR_TFLC_MSK << IFX_ASCLIN_FLAGSCLEAR_TFLC_OFF);
+//                                   //0x1u << 31u;
+//
+//    //Send the character 해당 자리에 글짜 쓰기.
+//    MODULE_ASCLIN1.TXDATA.U = chr;
+//    //이럼 clock에 따라 txdata에 있는 데이터를 전송하고 삭제함. => TFL이 1이 되게 됨. => 데이터 더 받을 수 있음. 반복.
+//}
+//unsigned char Asclin1_InUart(void){
+////    while ( MODULE_ASCLIN0.FLAGS.B.RFL != 0 ){};
+////    MODULE_ASCLIN0.FLAGSCLEAR.U = (IFX_ASCLIN_FLAGSCLEAR_RFLC_MSK << IFX_ASCLIN_FLAGSCLEAR_RFLC_OFF);
+////
+////    unsigned char chr = MODULE_ASCLIN0.RXDATA.U;
+////    return chr;
+//    unsigned char ch;
+//    while (Asclin1_PollUart(&ch)==0);
+//    return ch;
+//}
+//int Asclin1_PollUart(unsigned char *chr){
+//    unsigned char ret;
+//    int res= 0;
+//
+//    if (MODULE_ASCLIN1.FLAGS.B.RFL == 1) { //receive했다면
+//        //receive message
+//        ret = (unsigned char)MODULE_ASCLIN1.RXDATA.U;
+//
+//        //RX clear
+//        MODULE_ASCLIN1.FLAGSCLEAR.U = (IFX_ASCLIN_FLAGSCLEAR_RFLC_MSK << IFX_ASCLIN_FLAGSCLEAR_RFLC_OFF);
+//
+//        //check for error condition
+//        if ((MODULE_ASCLIN1.FLAGS.U) & ((IFX_ASCLIN_FLAGS_PE_MSK << IFX_ASCLIN_FLAGS_PE_OFF) |//parity error
+//                                        (IFX_ASCLIN_FLAGS_FE_MSK << IFX_ASCLIN_FLAGS_FE_OFF) | //framing error
+//                                        (IFX_ASCLIN_FLAGS_RFO_MSK << IFX_ASCLIN_FLAGS_RFO_OFF))) // FIFO overflow
+//        {
+//            //reset error flags;
+//            MODULE_ASCLIN1.FLAGSCLEAR.U = ((IFX_ASCLIN_FLAGSCLEAR_PEC_MSK << IFX_ASCLIN_FLAGSCLEAR_PEC_OFF) | \
+//                                           (IFX_ASCLIN_FLAGSCLEAR_FEC_MSK << IFX_ASCLIN_FLAGSCLEAR_FEC_OFF) | \
+//                                           (IFX_ASCLIN_FLAGSCLEAR_RFOC_MSK << IFX_ASCLIN_FLAGSCLEAR_RFOC_OFF));
+//
+//        }
+//        else{
+//            *chr = ret;
+//            res = 1;
+//        }
+//    }
+//    return res;
+//}
 
 void Bluetooth_IsOK(void)
 {
@@ -304,10 +304,10 @@ void BT_IR_Init(void){
 }
 
 int interCount = 0;
-IFX_INTERRUPT(Asclin1RxIsrHandler, 0, ISR_PRIORITY_ASCLIN1_RX);
-void Asclin1RxIsrHandler (void){
-    interCount+=1;
-    char c = Asclin1_InUart(); //unsigned?
-    Asclin0_OutUart(c);
-}
-
+//IFX_INTERRUPT(Asclin1RxIsrHandler, 0, ISR_PRIORITY_ASCLIN1_RX);
+//void Asclin1RxIsrHandler (void){
+//    interCount+=1;
+//    char c = Asclin1_InUart(); //unsigned?
+//    Asclin0_OutUart(c);
+//}
+//

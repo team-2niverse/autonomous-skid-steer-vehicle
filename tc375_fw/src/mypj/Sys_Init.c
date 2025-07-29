@@ -62,14 +62,14 @@ void SYSTEM_INIT(void){
     GPIO_Init();
     Buzzer_Init();
     Asclin0_InitUart();
-//    ScuEru_Init(); P2.1
-//    gpt1_init();
+//    Asclin1_InitUart();
+//    ScuEru_Init();
+    gpt1_init();
     gpt2_init();
 //    Ultrasonics_Init();
 //    US_IR_init();
 //    Bluetooth_Init();
 //    CAN_Init(BD_500K, CAN_NODE0);
-//    Asclin1_InitUart();
 //    Evadc_Init();
     Motor_Init();
 }

@@ -62,12 +62,12 @@
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
 /*********************************************************************************************************************/
 void Bluetooth_Init(void);
-void Asclin1_InitUart(void);
+//void Asclin1_InitUart(void);
 
 unsigned char Asclin1_InUart(void);
-void Asclin1_OutUart(const unsigned char chr);
+//void Asclin1_OutUart(const unsigned char chr);
 
-int Asclin1_PollUart(unsigned char *chr);
+//int Asclin1_PollUart(unsigned char *chr);
 void Bluetooth_IsOK(void);
 void Bluetooth_SetName(char *name);
 void Bluetooth_SetPwd (char *pwd);
@@ -79,6 +79,6 @@ void Bluetooth_SendByteBlocked(unsigned char ch);
 void Bluetooth_printf (const char *fmt, ...);
 
 void BT_IR_Init(void);
-void Asclin1RxIsrHandler(void);
+//void Asclin1RxIsrHandler(void);
 
 #endif /* BLUETOOTH_H_ */
