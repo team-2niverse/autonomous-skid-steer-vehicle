@@ -12,7 +12,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="${ProjName}" buildArtefactType="com.infineon.aurix.buildsystem.managed.buildArtefactType.elf" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.infineon.aurix.buildsystem.managed.buildArtefactType.elf,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="com.infineon.aurix.buildsystem.managed.configuration.binary.15457117" name="TriCore Debug (TASKING)" parent="com.infineon.aurix.buildsystem.managed.configuration.binary">
+				<configuration artifactName="${ProjName}" buildArtefactType="com.infineon.aurix.buildsystem.managed.buildArtefactType.elf" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.infineon.aurix.buildsystem.managed.buildArtefactType.elf,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" errorParsers="com.infineon.aurix.buildsystem.managed.TaskingErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="com.infineon.aurix.buildsystem.managed.configuration.binary.15457117" name="TriCore Debug (TASKING)" parent="com.infineon.aurix.buildsystem.managed.configuration.binary">
 					<folderInfo id="com.infineon.aurix.buildsystem.managed.configuration.binary.15457117." name="/" resourcePath="">
 						<toolChain id="com.infineon.aurix.buildsystem.managed.toolChain.tasking.exe.binary.438384821" name="TASKING" superClass="com.infineon.aurix.buildsystem.managed.toolChain.tasking.exe.binary">
 							<option id="com.tasking.ctc.cpu.1425403349" name="Processor" superClass="com.tasking.ctc.cpu" value="tc37x" valueType="string"/>
@@ -22,6 +22,12 @@
 							<tool id="com.infineon.aurix.buildsystem.managed.tool.c.compiler.tasking.debug.276472861" name="TASKING C/C++ Compiler" superClass="com.infineon.aurix.buildsystem.managed.tool.c.compiler.tasking.debug">
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.infineon.aurix.buildsystem.managed.c.compiler.tasking.include.1728966512" name="Include paths (-I)" superClass="com.infineon.aurix.buildsystem.managed.c.compiler.tasking.include" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/App}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/App/Controller}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/App/Main}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/BSW}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/BSW/Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/BSW/IO}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Configurations}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Libraries}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Libraries/Infra}&quot;"/>
@@ -70,7 +76,6 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Libraries/iLLD/TC37A/Tricore/Stm/Std}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Libraries/iLLD/TC37A/Tricore/_Impl}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Libraries/iLLD/TC37A/Tricore/_PinMap}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/driver}&quot;"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.infineon.aurix.buildsystem.managed.c.compiler.tasking.preprocessor.definedSymbols.1342919785" name="Defined symbols (-D)" superClass="com.infineon.aurix.buildsystem.managed.c.compiler.tasking.preprocessor.definedSymbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__CPU__=tc37x"/>
@@ -106,7 +111,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="SCR|MCS|HSM|Libraries/iLLD/TC37A/Tricore/Gtm/Pwm|Libraries/iLLD/TC37A/Tricore/Hssl/Hssl|Libraries/iLLD/TC37A/Tricore/Iom/Driver|Libraries/Service/CpuGeneric/StdIf|Libraries/iLLD/TC37A/Tricore/Gtm/Tom/Timer|Libraries/Service/CpuGeneric/If/Ccu6If|Libraries/iLLD/TC37A/Tricore/Ccu6/Std|Libraries/iLLD/TC37A/Tricore/Gtm/Tom|Libraries/iLLD/TC37A/Tricore/Gpt12/Std|Libraries/iLLD/TC37A/Tricore/Dts/Std|Libraries/iLLD/TC37A/Tricore/Dma/Std|Libraries/iLLD/TC37A/Tricore/Ccu6/TPwm|Libraries/iLLD/TC37A/Tricore/Edsadc|Libraries/iLLD/TC37A/Tricore/Geth/Std|Libraries/iLLD/TC37A/Tricore/Psi5/Psi5|Libraries/iLLD/TC37A/Tricore/Stm/Timer|Libraries/Service/CpuGeneric/SysSe/Time|Libraries/iLLD/TC37A/Tricore/Ccu6/TimerWithTrigger|Libraries/iLLD/TC37A/Tricore/Dma|Libraries/iLLD/TC37A/Tricore/Gtm/Tim/Timer|Libraries/.ads|Libraries/iLLD/TC37A/Tricore/Psi5s/Std|Libraries/iLLD/TC37A/Tricore/Psi5|Libraries/iLLD/TC37A/Tricore/Dma/Dma|Libraries/iLLD/TC37A/Tricore/Sent/Std|Libraries/iLLD/TC37A/Tricore/I2c/I2c|Libraries/iLLD/TC37A/Tricore/Iom|Libraries/iLLD/TC37A/Tricore/Gtm/Tom/Pwm|Libraries/iLLD/TC37A/Tricore/Convctrl/Std|Libraries/iLLD/TC37A/Tricore/Flash|Libraries/iLLD/TC37A/Tricore/Ccu6/Timer|Libraries/iLLD/TC37A/Tricore/Asclin/Std|Libraries/iLLD/TC37A/Tricore/Flash/Std|Libraries/iLLD/TC37A/Tricore/Psi5s/Psi5s|Libraries/iLLD/TC37A/Tricore/Dts/Dts|Libraries/iLLD/TC37A/Tricore/Eray/Eray|Libraries/Service/CpuGeneric/SysSe/General|Libraries/iLLD/TC37A/Tricore/Gpt12/IncrEnc|Libraries/iLLD/TC37A/Tricore/Dts|Libraries/iLLD/TC37A/Tricore/Msc/Msc|Libraries/iLLD/TC37A/Tricore/Fce/Std|Libraries/Service/CpuGeneric/SysSe/Comm|Libraries/Service/CpuGeneric/SysSe/Math|Libraries/iLLD/TC37A/Tricore/Smu/Smu|Libraries/iLLD/TC37A/Tricore/Psi5/Std|Libraries/iLLD/TC37A/Tricore/Port/Io|Libraries/iLLD/TC37A/Tricore/Gtm/Atom/PwmHl|Libraries/iLLD/TC37A/Tricore/Psi5s|Libraries/iLLD/TC37A/Tricore/Sent/Sent|Libraries/iLLD/TC37A/Tricore/I2c/Std|Libraries/iLLD/TC37A/Tricore/I2c|Libraries/iLLD/TC37A/Tricore/_Lib|Libraries/iLLD/TC37A/Tricore/Qspi/SpiSlave|Libraries/iLLD/TC37A/Tricore/Gtm/Tom/Dtm_PwmHl|Libraries/iLLD/TC37A/Tricore/Geth/Eth|Libraries/iLLD/TC37A/Tricore/Qspi/Std|Libraries/iLLD/TC37A/Tricore/Ccu6/Icu|Libraries/iLLD/TC37A/Tricore/Asclin/Asc|Libraries/iLLD/TC37A/Tricore/Hssl/Std|Libraries/iLLD/TC37A/Tricore/_Lib/DataHandling|Libraries/iLLD/TC37A/Tricore/Msc|Libraries/iLLD/TC37A/Tricore/Smu/Std|Libraries/iLLD/TC37A/Tricore/Edsadc/Edsadc|Libraries/iLLD/TC37A/Tricore/Sent|Libraries/iLLD/TC37A/Tricore/Qspi/SpiMaster|Libraries/iLLD/TC37A/Tricore/Edsadc/Std|Libraries/iLLD/TC37A/Tricore/Ccu6/PwmBc|Libraries/iLLD/TC37A/Tricore/Eray/Std|Libraries/iLLD/TC37A/Tricore/Qspi|Libraries/iLLD/TC37A/Tricore/Convctrl|Libraries/iLLD/TC37A/Tricore/Hssl|Libraries/iLLD/TC37A/Tricore/Eray|Libraries/iLLD/TC37A/Tricore/Asclin/Spi|Libraries/iLLD/TC37A/Tricore/Ccu6|Libraries/iLLD/TC37A/Tricore/Smu|Libraries/iLLD/TC37A/Tricore/Gtm/Atom/Dtm_PwmHl|Libraries/iLLD/TC37A/Tricore/Iom/Std|Libraries/iLLD/TC37A/Tricore/Geth|Libraries/iLLD/TC37A/Tricore/Gpt12|Libraries/iLLD/TC37A/Tricore/Asclin|Libraries/iLLD/TC37A/Tricore/Fce/Crc|Libraries/iLLD/TC37A/Tricore/Gtm/Tim|Libraries/iLLD/TC37A/Tricore/_Build|Libraries/iLLD/TC37A/Tricore/Msc/Std|Libraries/iLLD/TC37A/Tricore/Iom/Iom|Libraries/iLLD/TC37A/Tricore/Ccu6/PwmHl|Libraries/iLLD/TC37A/Tricore/Gtm/Tom/PwmHl|Libraries/iLLD/TC37A/Tricore/Gtm/Trig|Libraries/Service/CpuGeneric/If|Libraries/iLLD/TC37A/Tricore/Fce|Libraries/iLLD/TC37A/Tricore/Gtm/Tim/In|Libraries/iLLD/TC37A/Tricore/_Lib/InternalMux|Libraries/iLLD/TC37A/Tricore/Gtm/Atom/Timer|Libraries/iLLD/TC37A/Tricore/Asclin/Lin" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+						<entry excluding="HSM|SCR|MCS|Libraries/iLLD/TC37A/Tricore/Gtm/Pwm|Libraries/iLLD/TC37A/Tricore/Hssl/Hssl|Libraries/iLLD/TC37A/Tricore/Iom/Driver|Libraries/Service/CpuGeneric/StdIf|Libraries/iLLD/TC37A/Tricore/Gtm/Tom/Timer|Libraries/Service/CpuGeneric/If/Ccu6If|Libraries/iLLD/TC37A/Tricore/Ccu6/Std|Libraries/iLLD/TC37A/Tricore/Gtm/Tom|Libraries/iLLD/TC37A/Tricore/Gpt12/Std|Libraries/iLLD/TC37A/Tricore/Dts/Std|Libraries/iLLD/TC37A/Tricore/Dma/Std|Libraries/iLLD/TC37A/Tricore/Ccu6/TPwm|Libraries/iLLD/TC37A/Tricore/Edsadc|Libraries/iLLD/TC37A/Tricore/Geth/Std|Libraries/iLLD/TC37A/Tricore/Psi5/Psi5|Libraries/iLLD/TC37A/Tricore/Stm/Timer|Libraries/Service/CpuGeneric/SysSe/Time|Libraries/iLLD/TC37A/Tricore/Ccu6/TimerWithTrigger|Libraries/iLLD/TC37A/Tricore/Dma|Libraries/iLLD/TC37A/Tricore/Gtm/Tim/Timer|Libraries/.ads|Libraries/iLLD/TC37A/Tricore/Psi5s/Std|Libraries/iLLD/TC37A/Tricore/Psi5|Libraries/iLLD/TC37A/Tricore/Dma/Dma|Libraries/iLLD/TC37A/Tricore/Sent/Std|Libraries/iLLD/TC37A/Tricore/I2c/I2c|Libraries/iLLD/TC37A/Tricore/Iom|Libraries/iLLD/TC37A/Tricore/Gtm/Tom/Pwm|Libraries/iLLD/TC37A/Tricore/Convctrl/Std|Libraries/iLLD/TC37A/Tricore/Flash|Libraries/iLLD/TC37A/Tricore/Ccu6/Timer|Libraries/iLLD/TC37A/Tricore/Asclin/Std|Libraries/iLLD/TC37A/Tricore/Flash/Std|Libraries/iLLD/TC37A/Tricore/Psi5s/Psi5s|Libraries/iLLD/TC37A/Tricore/Dts/Dts|Libraries/iLLD/TC37A/Tricore/Eray/Eray|Libraries/Service/CpuGeneric/SysSe/General|Libraries/iLLD/TC37A/Tricore/Gpt12/IncrEnc|Libraries/iLLD/TC37A/Tricore/Dts|Libraries/iLLD/TC37A/Tricore/Msc/Msc|Libraries/iLLD/TC37A/Tricore/Fce/Std|Libraries/Service/CpuGeneric/SysSe/Comm|Libraries/Service/CpuGeneric/SysSe/Math|Libraries/iLLD/TC37A/Tricore/Smu/Smu|Libraries/iLLD/TC37A/Tricore/Psi5/Std|Libraries/iLLD/TC37A/Tricore/Port/Io|Libraries/iLLD/TC37A/Tricore/Gtm/Atom/PwmHl|Libraries/iLLD/TC37A/Tricore/Psi5s|Libraries/iLLD/TC37A/Tricore/Sent/Sent|Libraries/iLLD/TC37A/Tricore/I2c/Std|Libraries/iLLD/TC37A/Tricore/I2c|Libraries/iLLD/TC37A/Tricore/_Lib|Libraries/iLLD/TC37A/Tricore/Qspi/SpiSlave|Libraries/iLLD/TC37A/Tricore/Gtm/Tom/Dtm_PwmHl|Libraries/iLLD/TC37A/Tricore/Geth/Eth|Libraries/iLLD/TC37A/Tricore/Qspi/Std|Libraries/iLLD/TC37A/Tricore/Ccu6/Icu|Libraries/iLLD/TC37A/Tricore/Asclin/Asc|Libraries/iLLD/TC37A/Tricore/Hssl/Std|Libraries/iLLD/TC37A/Tricore/_Lib/DataHandling|Libraries/iLLD/TC37A/Tricore/Msc|Libraries/iLLD/TC37A/Tricore/Smu/Std|Libraries/iLLD/TC37A/Tricore/Edsadc/Edsadc|Libraries/iLLD/TC37A/Tricore/Sent|Libraries/iLLD/TC37A/Tricore/Qspi/SpiMaster|Libraries/iLLD/TC37A/Tricore/Edsadc/Std|Libraries/iLLD/TC37A/Tricore/Ccu6/PwmBc|Libraries/iLLD/TC37A/Tricore/Eray/Std|Libraries/iLLD/TC37A/Tricore/Qspi|Libraries/iLLD/TC37A/Tricore/Convctrl|Libraries/iLLD/TC37A/Tricore/Hssl|Libraries/iLLD/TC37A/Tricore/Eray|Libraries/iLLD/TC37A/Tricore/Asclin/Spi|Libraries/iLLD/TC37A/Tricore/Ccu6|Libraries/iLLD/TC37A/Tricore/Smu|Libraries/iLLD/TC37A/Tricore/Gtm/Atom/Dtm_PwmHl|Libraries/iLLD/TC37A/Tricore/Iom/Std|Libraries/iLLD/TC37A/Tricore/Geth|Libraries/iLLD/TC37A/Tricore/Gpt12|Libraries/iLLD/TC37A/Tricore/Asclin|Libraries/iLLD/TC37A/Tricore/Fce/Crc|Libraries/iLLD/TC37A/Tricore/Gtm/Tim|Libraries/iLLD/TC37A/Tricore/_Build|Libraries/iLLD/TC37A/Tricore/Msc/Std|Libraries/iLLD/TC37A/Tricore/Iom/Iom|Libraries/iLLD/TC37A/Tricore/Ccu6/PwmHl|Libraries/iLLD/TC37A/Tricore/Gtm/Tom/PwmHl|Libraries/iLLD/TC37A/Tricore/Gtm/Trig|Libraries/Service/CpuGeneric/If|Libraries/iLLD/TC37A/Tricore/Fce|Libraries/iLLD/TC37A/Tricore/Gtm/Tim/In|Libraries/iLLD/TC37A/Tricore/_Lib/InternalMux|Libraries/iLLD/TC37A/Tricore/Gtm/Atom/Timer|Libraries/iLLD/TC37A/Tricore/Asclin/Lin" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -288,7 +293,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="SCR|MCS|HSM" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+						<entry excluding="MCS|SCR|HSM" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -480,7 +485,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="SCR|MCS|HSM" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+						<entry excluding="MCS|SCR|HSM" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -670,7 +675,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="SCR|MCS|HSM" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+						<entry excluding="MCS|SCR|HSM" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

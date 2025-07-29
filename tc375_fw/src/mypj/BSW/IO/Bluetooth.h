@@ -1,5 +1,5 @@
 /**********************************************************************************************************************
- * \file Cpu0_Main.h
+ * \file Bluetooth.h
  * \copyright Copyright (C) Infineon Technologies AG 2019
  * 
  * Use of this file is subject to the terms of use agreed between (i) you or the company in which ordinary course of 
@@ -25,17 +25,23 @@
  * IN THE SOFTWARE.
  *********************************************************************************************************************/
 
-#ifndef CPU0_MAIN_H_
-#define CPU0_MAIN_H_
+#ifndef BLUETOOTH_H_
+#define BLUETOOTH_H_
 
 /*********************************************************************************************************************/
 /*-----------------------------------------------------Includes------------------------------------------------------*/
 /*********************************************************************************************************************/
-#include "Ifx_Types.h"
-#include "IfxCpu.h"
+#include <asclin.h>
+#include "Ifx_reg.h"
+#include "IfxAsclin_bf.h"
 #include "IfxScuWdt.h"
-#include "Sys_Init.h"
+#include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 #include "isr_priority.h"
+#include "CompilerTasking.h"
+#include "GPIO.h"
 /*********************************************************************************************************************/
 /*------------------------------------------------------Macros-------------------------------------------------------*/
 /*********************************************************************************************************************/
@@ -55,6 +61,24 @@
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
 /*********************************************************************************************************************/
+void Bluetooth_Init(void);
+void Asclin1_InitUart(void);
+
+unsigned char Asclin1_InUart(void);
+void Asclin1_OutUart(const unsigned char chr);
+
+int Asclin1_PollUart(unsigned char *chr);
+void Bluetooth_IsOK(void);
+void Bluetooth_SetName(char *name);
+void Bluetooth_SetPwd (char *pwd);
 
 
-#endif /* CPU0_MAIN_H_ */
+char Bluetooth_RecvByteBlocked(void);
+char Bluetooth_RecvByteNonBlocked (void);
+void Bluetooth_SendByteBlocked(unsigned char ch);
+void Bluetooth_printf (const char *fmt, ...);
+
+void BT_IR_Init(void);
+void Asclin1RxIsrHandler(void);
+
+#endif /* BLUETOOTH_H_ */

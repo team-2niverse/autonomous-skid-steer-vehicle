@@ -32,28 +32,54 @@
 //extern uint64 timer_start;
 //extern uint64 timer_end;
 
+extern ExtU_skid_steer_controller_T skid_steer_controller_U;
+extern ExtY_skid_steer_controller_T skid_steer_controller_Y;
 
 void core0_main(void)
 {
     SYSTEM_INIT();
+//
+//    my_printf("Test start\n");
+////    float dist = 0;
+//    int i= 100;
+//    int j = 0;
+//    while(1){
+//        int pwm = i-(j/100);
+//        Motor_movChB_PWM(pwm,0);
+//        j+=1;
+////        my_printf("debg start\n");
+////        MODULE_P13.OUT.B.P2 = 1; // Rear TRIG_HIGH
+////        runGpt12_T6();//timer run => 10us
+////        while(!is_ready()) {
+////         }
+////        my_printf("dist : %f\n", get_distance());
+////        my_printf("dist : %f\n", )
+////        my_printf("encoder : %d\n", get_encoder());
+//        my_printf("pwm : %d , v : %f\n", pwm, get_timeV());
+//        delay_ms(10);
+//    };
+    skid_steer_controller_initialize();
 
-    my_printf("Test start\n");
-//    float dist = 0;
-    int i= 100;
-    int j = 0;
-    while(1){
-        int pwm = i-(j/100);
-        Motor_movChB_PWM(pwm,0);
-        j+=1;
-//        my_printf("debg start\n");
-//        MODULE_P13.OUT.B.P2 = 1; // Rear TRIG_HIGH
-//        runGpt12_T6();//timer run => 10us
-//        while(!is_ready()) {
-//         }
-//        my_printf("dist : %f\n", get_distance());
-//        my_printf("dist : %f\n", )
-//        my_printf("encoder : %d\n", get_encoder());
-        my_printf("pwm : %d , v : %f\n", pwm, get_timeV());
+    while(1) {
+        // ... (입력 데이터 준비) ...
+        skid_steer_controller_U.v_target = 0.1;
+        skid_steer_controller_U.w_target = 0.0;
+        skid_steer_controller_U.enc_pulse_L = 0;
+        skid_steer_controller_U.enc_pulse_R = 0;
+
+        // ... (핵심 함수 호출) ...
+        skid_steer_controller_step();
+
+        // ... (출력 데이터 처리) ...
+        ssv_set_motor_L(skid_steer_controller_Y.pwm_L,
+                        skid_steer_controller_Y.dir_L,
+                        skid_steer_controller_Y.brake_L);
+
+        ssv_set_motor_R(skid_steer_controller_Y.pwm_R,
+                        skid_steer_controller_Y.dir_R,
+                        skid_steer_controller_Y.brake_R);
+
+        // ... (10ms 대기) ...
         delay_ms(10);
-    };
+    }
 }

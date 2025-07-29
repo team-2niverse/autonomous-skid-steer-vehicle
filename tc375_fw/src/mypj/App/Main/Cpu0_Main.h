@@ -1,5 +1,5 @@
 /**********************************************************************************************************************
- * \file UltraSonic.h
+ * \file Cpu0_Main.h
  * \copyright Copyright (C) Infineon Technologies AG 2019
  * 
  * Use of this file is subject to the terms of use agreed between (i) you or the company in which ordinary course of 
@@ -25,16 +25,18 @@
  * IN THE SOFTWARE.
  *********************************************************************************************************************/
 
-#ifndef ULTRASONIC_H_
-#define ULTRASONIC_H_
+#ifndef CPU0_MAIN_H_
+#define CPU0_MAIN_H_
 
 /*********************************************************************************************************************/
 /*-----------------------------------------------------Includes------------------------------------------------------*/
 /*********************************************************************************************************************/
-#include "IfxPort_reg.h"
-#include "Platform_Types.h"
-#include "asclin.h"
+#include "Ifx_Types.h"
+#include "IfxCpu.h"
+#include "IfxScuWdt.h"
+#include "Sys_Init.h"
 #include "isr_priority.h"
+#include "skid_steer_controller.h"
 /*********************************************************************************************************************/
 /*------------------------------------------------------Macros-------------------------------------------------------*/
 /*********************************************************************************************************************/
@@ -54,13 +56,6 @@
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
 /*********************************************************************************************************************/
-void Ultrasonics_Init(void);
-void US_TestPinSetting(void);
-float Ultrasonic_ReadSensor_noFilt(void);
-void Ultrasonic_IR_Read_noFilt(void);
-void US_IR_init(void);
-void US_Echo_test_Handler(void);
-void US_Echo_Int0_Handler(void);
-int is_ready(void);
-float get_distance(void);
-#endif /* ULTRASONIC_H_ */
+
+
+#endif /* CPU0_MAIN_H_ */

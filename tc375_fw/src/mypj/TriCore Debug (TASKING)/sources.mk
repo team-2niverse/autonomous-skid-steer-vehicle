@@ -24,7 +24,10 @@ SECONDARY_SIZE :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-. \
+App/Controller \
+App/Main \
+BSW/Driver \
+BSW/IO \
 Configurations \
 Libraries/Infra/Platform/Tricore/Compilers \
 Libraries/Infra/Ssw/TC37A/Tricore \
@@ -46,5 +49,5 @@ Libraries/iLLD/TC37A/Tricore/Src/Std \
 Libraries/iLLD/TC37A/Tricore/Stm/Std \
 Libraries/iLLD/TC37A/Tricore/_Impl \
 Libraries/iLLD/TC37A/Tricore/_PinMap \
-driver \
+. \
 
