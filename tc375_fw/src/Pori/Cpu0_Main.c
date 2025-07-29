@@ -24,14 +24,16 @@
  * CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
  * IN THE SOFTWARE.
  *********************************************************************************************************************/
+#include "My_Stdio.h"
 #include "Ifx_Types.h"
 #include "IfxCpu.h"
 #include "IfxScuWdt.h"
 
-#include "Stdio.h"
 #include "Stm.h"
 #include "Asclin.h"
 #include "Ultrasonic.h"
+#include "Can.h"
+#include "Motor.h"
 
 IFX_ALIGN(4) IfxCpu_syncEvent g_cpuSyncEvent = 0;
 
@@ -56,9 +58,12 @@ void core0_main(void)
     
     Asclin0_initUart();
     Ultrasonic_initInt();
+    Can_init(BD_1M, CAN_NODE0);
+    Motor_initEncoder();
     
     while(1) {
-        my_printf("dist_back: %f        dist_left: %f        dist_right: %f\r\n", Ultrasonic_getBackDist(), Ultrasonic_getLeftDist(), Ultrasonic_getRightDist());
+        // my_printf("dist_back: %f        dist_left: %f        dist_right: %f\r\n", Ultrasonic_getBackDist(), Ultrasonic_getLeftDist(), Ultrasonic_getRightDist());
+        my_printf("erpm: %d\r\n", Motor_getErpmA());
         my_delay_ms(10);
     }
 }
