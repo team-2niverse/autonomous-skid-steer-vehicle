@@ -50,9 +50,8 @@
 /*********************************************************************************************************************/
 /*---------------------------------------------Function Implementations----------------------------------------------*/
 /*********************************************************************************************************************/
-//buzzer
 void Buzzer_Init(){
-    MODULE_P02.IOCR0.B.PC3 = 0x10;
+    MODULE_P23.IOCR4.B.PC5 = 0x10;
 }
 
 void Buzzer_Buzz(unsigned int hz){
@@ -62,13 +61,12 @@ void Buzzer_Buzz(unsigned int hz){
 
 
     volatile int loop = 1000000000 / hz / 2 / 5 ; //근데 debugger config보니까 100Mhz라서 *2해줌.
-    MODULE_P02.OUT.B.P3 = 1;
+    MODULE_P23.OUT.B.P5 = 1;
     for (int i =0; i < loop ; i++){}
 
-    MODULE_P02.OUT.B.P3 = 0;
+    MODULE_P23.OUT.B.P5 = 0;
     for (int i =0; i < loop ; i++){}
 }
-
 
 void Buzzer_Beep(unsigned int hz, int duration_ms){
     int unit_beep = 1000000000 / hz;
@@ -81,37 +79,25 @@ void Buzzer_Beep(unsigned int hz, int duration_ms){
     }
 }
 
-void Play_Song(void){
-    int song[] = {NOTE_E6, NOTE_D6, NOTE_E6, NOTE_D6, NOTE_E6, NOTE_B5, NOTE_D6, NOTE_C6, NOTE_A5};
-    int duration[] = {
-        8, 8, 8, 8, 8, 8, 8, 8, 4 //8분음표, 4분음표
-    };
+static int beepCnt = 0;
+static int beepOnOff = 0;
 
-    for (int i=0; i < 9 ; i++){
-        Buzzer_Beep(song[i], (1000/duration[i]));
-    }
+void setBeepCycle(int cycle){
+    beepOnOff = cycle; // cycle * 10.24us
 }
 
-//IFX_INTERRUPT(IsrGpt1T3Handler, 1, ISR_PRIORITY_GPT1T3_TIMER);
-//void IsrGpt1T3Handler(void){
-//    MODULE_P02.OUT.B.P3 ^=1 ;
-//}
-int beepCnt = 0;
-int beepOnOff = 0;
 IFX_INTERRUPT(IsrGpt1T3Handler_Beep, 0, ISR_PRIORITY_GPT1T3_TIMER);
 void IsrGpt1T3Handler_Beep(void)
 {
     if ((beepCnt < beepOnOff) || (beepOnOff == 1)) { //beepOnOff이하에선 부저 끄고켜서 음을 만듦.
-        MODULE_P02.OUT.B.P3 ^= 1;
+        MODULE_P23.OUT.B.P5 ^= 1;
     }
-    else if (beepCnt < beepOnOff * 2) { //음 발생한 시간만큼 부저 꺼놓음.
-        MODULE_P02.OUT.B.P3 = 0;
+    else if (beepCnt < beepOnOff * 2 || beepOnOff == 0) { //음 발생한 시간만큼 부저 꺼놓음.
+        MODULE_P23.OUT.B.P5 = 0;
     }
     else {
          beepCnt = 0;
     }
     beepCnt++;
 }
-void setBeepCycle(int cycle){
- beepOnOff = cycle;
-}
+

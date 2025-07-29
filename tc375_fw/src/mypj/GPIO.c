@@ -52,44 +52,43 @@
 /*********************************************************************************************************************/
 void GPIO_Init(void){
     //LED1
-    MODULE_P10.IOCR0.B.PC2 = 0x10; //핀 output설정 완료
-    MODULE_P10.OUT.B.P2 = 0; // LED1 OFF is default;
+    MODULE_P23.IOCR0.B.PC1 = 0x10; // P23.1 LED1 Output setting
+    MODULE_P23.OUT.B.P1 = 0; // LED1 OFF is default;
 
     //LED2
-    MODULE_P10.IOCR0.B.PC1 = 0x10; //핀 output설정 완료
-    MODULE_P10.OUT.B.P1 = 0; // LED1 OFF is default;
+    MODULE_P23.IOCR0.B.PC3 = 0x10; // P23.3 LED2 Output setting
+    MODULE_P23.OUT.B.P3 = 0; // LED2 OFF is default;
 
-    //SW1
-    MODULE_P02.IOCR0.B.PC0 = 0x2;
-
-    //SW2
-    MODULE_P02.IOCR0.B.PC1 = 0x2;
+//    MODULE_P02.IOCR0.B.PC0 = 0x2; // SW1
+//    MODULE_P02.IOCR0.B.PC1 = 0x2; // Sw2
 }
 
 void GPIO_SetLed(unsigned char num_LED, unsigned char onOff){
     if (num_LED == 1){
-        if (onOff==0){
-            MODULE_P10.OUT.B.P2 = 0; // LED1 OFF
-        }
-        else if (onOff == 1){
-            MODULE_P10.OUT.B.P2 = 1; // LED1 ON
-        }
+        MODULE_P23.OUT.B.P1 = onOff;
+//        if (onOff==0){
+//            MODULE_P10.OUT.B.P2 = 0; // LED1 OFF
+//        }
+//        else if (onOff == 1){
+//            MODULE_P10.OUT.B.P2 = 1; // LED1 ON
+//        }
     }
     else if (num_LED == 2){
-        if (onOff==0){
-            MODULE_P10.OUT.B.P1 = 0; // LED1 OFF
-        }
-        else if (onOff == 1){
-            MODULE_P10.OUT.B.P1 = 1; // LED1 ON
-        }
+        MODULE_P23.OUT.B.P3 = onOff;
+//        if (onOff==0){
+//            MODULE_P10.OUT.B.P1 = 0; // LED1 OFF
+//        }
+//        else if (onOff == 1){
+//            MODULE_P10.OUT.B.P1 = 1; // LED1 ON
+//        }
     }
 }
 void GPIO_ToggleLed(unsigned char num_LED){
     if (num_LED == 1){
-        MODULE_P10.OUT.B.P2 ^= 1; // LED1 ONOFF
+        MODULE_P23.OUT.B.P1 ^= 1; // LED1 ONOFF
     }
     else if (num_LED == 2){
-        MODULE_P10.OUT.B.P1 ^= 1; // LED1 OFF is default;
+        MODULE_P23.OUT.B.P3 ^= 1; // LED1 OFF is default;
     }
 }
 
@@ -113,30 +112,50 @@ int GPIO_getSW2(void){
     return (MODULE_P02.IN.B.P1==0); //pull-up device ; default is high;
 }
 
-void delay(void){
-    volatile int i=0;
-    while (i < 10000000){ //delay 기능 구현 volatile
-        i++;
-    }
-    i=0;
-}
-void delayMS(int duration_ms){
-    int unit_beep = 100000000; //100MHz CPU clock = 100000000 tick / 1s
 
-    int time = duration_ms*1000; //1s
-
-    int loop = time / unit_beep  / 3; //
-    volatile int i =0;
-    while (i < loop){
-        i++;
-    }
-}
 void delay_ms(unsigned int ms)
 {
     waitTime(IfxStm_getTicksFromMilliseconds(BSP_DEFAULT_TIMER, ms));    /* Wait 500 milliseconds            */
 }
 
 
+/* LED Toggle (Left, Right, Both) & GPT2 ISR*/
+static volatile unsigned int Left_Led_Flag = 0;
+static volatile unsigned int Right_Led_Flag = 0;
+void Left_ToggleLed(void)
+{
+    stopGpt12_T6();
+    Left_Led_Flag = 1;
+    Right_Led_Flag = 0;
+    runGpt12_T6();
+}
+
+void Right_ToggleLed(void)
+{
+    stopGpt12_T6();
+    Left_Led_Flag = 0;
+    Right_Led_Flag = 1;
+    runGpt12_T6();
+}
+
+void Both_ToggleLed(void)
+{
+    stopGpt12_T6();
+    Left_Led_Flag = 1;
+    Right_Led_Flag = 1;
+    runGpt12_T6();
+}
+
+static volatile unsigned int g_Cnt10us=0;
+IFX_INTERRUPT(IsrGpt2T6LEDHandler, 0 , ISR_PRIORITY_GPT2T6_TIMER);
+void IsrGpt2T6LEDHandler(void){
+    g_Cnt10us++;
+    if (g_Cnt10us >= 50000){ //500ms = 500000us
+        MODULE_P23.OUT.B.P1 ^= Left_Led_Flag;
+        MODULE_P23.OUT.B.P3 ^= Right_Led_Flag;
+        g_Cnt10us=0;
+    }
+}
 
 
 

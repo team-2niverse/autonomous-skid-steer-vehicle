@@ -61,12 +61,13 @@
 /*********************************************************************************************************************/
 void gpt1_init(void);
 void gpt2_init(void);
-void IsrGpt2T6Handler(void);
-void IsrGpt2T6BuzzerHandler(void);
+void runGpt12_T3(void);
+void stopGpt12_T3(void);
 void runGpt12_T6(void);
 void stopGpt12_T6(void);
-void Task_100ms(void);
-void Task_200ms(void);
-void Task_500ms(void);
+
+//void IsrGpt2T6Handler(void);
+//void IsrGpt2T6BuzzerHandler(void);
+
 
 #endif /* GPT12_H_ */

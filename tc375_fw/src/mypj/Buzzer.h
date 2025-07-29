@@ -70,8 +70,8 @@ void Buzzer_Init(void);
 void buzzer_Buzz(unsigned int hz);
 void Buzzer_Beep(unsigned int hz, int duration_ms);
 void Play_Song(void);
-//void IsrGpt1T3Handler(void);
-void IsrGpt1T3Handler_Beep(void);
 void setBeepCycle(int cycle);
+
+//void IsrGpt1T3Handler_Beep(void);
 
 #endif /* BUZZER_H_ */

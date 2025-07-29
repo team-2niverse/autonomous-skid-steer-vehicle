@@ -62,7 +62,6 @@ void gpt1_init(void){
     //prescaler ; 1024
     MODULE_GPT120.T3CON.B.T3I = 0x5;
     MODULE_GPT120.T3CON.B.BPS1 = 0x2;
-
     MODULE_GPT120.T3CON.B.T3UD = 0x1; //direction : count down
 //    MODULE_GPT120.T3.U = 375; // 1clock = 10.24us => 375clock = 3840.00 us => 3옥타브 도의 130hz,7692us 주기의 대략 절반
     MODULE_GPT120.T3.U =  93; //5옥타브 도
@@ -73,10 +72,10 @@ void gpt1_init(void){
 //    MODULE_GPT120.T2.U = 375;
     MODULE_GPT120.T2.U = 93;
 
-    //init iterrupt
+    /* Interrupt Initialization */
     MODULE_SRC.GPT12.GPT12[0].T3.B.SRPN = ISR_PRIORITY_GPT1T3_TIMER; //interrupt priority set
     MODULE_SRC.GPT12.GPT12[0].T3.B.CLRR = 1; //clear request
-    MODULE_SRC.GPT12.GPT12[0].T3.B.TOS = 2; //cpu1 (from part1 M p16-5)
+    MODULE_SRC.GPT12.GPT12[0].T3.B.TOS = 0; //cpu1 (from part1 M p16-5)
     MODULE_SRC.GPT12.GPT12[0].T3.B.SRE = 1; //interrupt enable
 
 //    MODULE_ASCLIN0.FLAGSENABLE.B.RFLE =1; // enable RXFIFO fill level flag; << why?
@@ -84,6 +83,12 @@ void gpt1_init(void){
     MODULE_GPT120.T3CON.B.T3R = 1; //timer run.
 }
 
+void runGpt12_T3(void){
+    MODULE_GPT120.T3CON.B.T3R = 1;
+}
+void stopGpt12_T3(void){
+    MODULE_GPT120.T3CON.B.T3R = 0;
+}
 
 void gpt2_init(void){
 
@@ -108,57 +113,21 @@ void gpt2_init(void){
 
     MODULE_GPT120.CAPREL.U = 250u; //set CAPREL reload value
 
-    volatile Ifx_SRC_SRCR *src;
-    src = (volatile Ifx_SRC_SRCR*)(&MODULE_SRC.GPT12.GPT12[0].T6);
-    src -> B.SRPN = ISR_PRIORITY_GPT2T6_TIMER;
-    src -> B.TOS = 0;
-    src -> B.CLRR = 1;
-    src -> B.SRE  = 1;
+    /* Interrupt Initialization */
+    MODULE_SRC.GPT12.GPT12[0].T6.B.SRPN = ISR_PRIORITY_GPT2T6_TIMER;
+    MODULE_SRC.GPT12.GPT12[0].T6.B.TOS = 0;
+    MODULE_SRC.GPT12.GPT12[0].T6.B.CLRR = 1;
+    MODULE_SRC.GPT12.GPT12[0].T6.B.SRE  = 1;
 //    runGpt12_T6();//timer run
     //t3R=1;로 해도 됨?
 }
 
-
-
-
-
-//static volatile unsigned int cntDelay = 0;
-static volatile unsigned int g_Cnt10us=0;
-IFX_INTERRUPT(IsrGpt2T6BuzzerHandler, 0 , ISR_PRIORITY_GPT2T6_TIMER);
-void IsrGpt2T6BuzzerHandler(void){
-    g_Cnt10us++;
-    if (g_Cnt10us >= 2){
-        MODULE_P13.OUT.B.P2 = 0; // Rear TRIG_LOW
-        stopGpt12_T6();
-        g_Cnt10us=0;
-    }
-}
-
-
-//IFX_INTERRUPT(IsrGpt2T6Handler, 0 , ISR_PRIORITY_GPT2T6_TIMER);
-void IsrGpt2T6Handler(void){
-    g_Cnt10us++;
-    if (g_Cnt10us % 10000 ==0) {Task_100ms();}
-    if (g_Cnt10us % 20000 ==0) {Task_200ms();}
-    if (g_Cnt10us % 50000 ==0) {Task_500ms();}
-
-}
 void runGpt12_T6(void){
     MODULE_GPT120.T6CON.B.T6R = 1;
 }
 void stopGpt12_T6(void){
     MODULE_GPT120.T6CON.B.T6R = 0;
-}
-
-
-void Task_100ms(void){
-    if(GPIO_getSW1()){GPIO_SetLed(2,1);}
-    else {GPIO_SetLed(2,0);}
-}
-void Task_200ms(void){
-    my_printf("Task 200ms Called!\n");
-}
-void Task_500ms(void){
-    GPIO_ToggleLed(1);
+    GPIO_SetLed(1, 0);
+    GPIO_SetLed(2, 0);
 }
 
