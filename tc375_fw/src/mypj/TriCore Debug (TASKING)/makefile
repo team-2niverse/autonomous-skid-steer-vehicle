@@ -8,7 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include driver/subdir.mk
+-include MATLAB/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/_PinMap/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/_Impl/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Stm/Std/subdir.mk
@@ -19,8 +19,6 @@ RM := rm -rf
 -include Libraries/iLLD/TC37A/Tricore/Mtu/Std/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Gtm/Std/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Gtm/Atom/Pwm/subdir.mk
--include Libraries/iLLD/TC37A/Tricore/Evadc/Std/subdir.mk
--include Libraries/iLLD/TC37A/Tricore/Evadc/Adc/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Cpu/Trap/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Cpu/Std/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Cpu/Irq/subdir.mk
@@ -31,6 +29,15 @@ RM := rm -rf
 -include Libraries/Infra/Platform/Tricore/Compilers/subdir.mk
 -include Configurations/Debug/subdir.mk
 -include Configurations/subdir.mk
+-include BSW/ULTRASONIC/subdir.mk
+-include BSW/STM/subdir.mk
+-include BSW/MOTOR/subdir.mk
+-include BSW/GTM_ATOM_PWM/subdir.mk
+-include BSW/GPT12/subdir.mk
+-include BSW/GPIO/subdir.mk
+-include BSW/ENCODER/subdir.mk
+-include BSW/CAN/subdir.mk
+-include BSW/ASCLIN/subdir.mk
 -include subdir.mk
 ifneq ($(MAKECMDGOALS),clean)
 ifneq ($(strip $(C++_DEPS)),)
@@ -61,39 +68,39 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := mypj
+BUILD_ARTIFACT_NAME := combine
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 SECONDARY_SIZE += \
-mypj.siz \
+combine.siz \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: mypj.elf secondary-outputs
+main-build: combine.elf secondary-outputs
 
 # Tool invocations
-mypj.elf: $(OBJS) makefile $(OPTIONAL_TOOL_DEPS)
+combine.elf: $(OBJS) makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: TASKING Linker'
-	cctc --lsl-file="../Lcf_Tasking_Tricore_Tc.lsl" -Wl-Oc -Wl-OL -Wl-Ot -Wl-Ox -Wl-Oy -Wl--map-file="mypj.map" -Wl-mc -Wl-mf -Wl-mi -Wl-mk -Wl-ml -Wl-mm -Wl-md -Wl-mr -Wl-mu --no-warnings= -Wl--error-limit=42 --fp-model=3 -lrt --lsl-core=vtc --exceptions --strict --anachronisms --force-c++ -Ctc37x -o"mypj.elf" -Wl-o"mypj.hex:IHEX" $(OBJS)
+	cctc --lsl-file="../Lcf_Tasking_Tricore_Tc.lsl" -Wl-Oc -Wl-OL -Wl-Ot -Wl-Ox -Wl-Oy -Wl--map-file="combine.map" -Wl-mc -Wl-mf -Wl-mi -Wl-mk -Wl-ml -Wl-mm -Wl-md -Wl-mr -Wl-mu --no-warnings= -Wl--error-limit=42 --fp-model=3 -lrt --lsl-core=vtc --exceptions --strict --anachronisms --force-c++ -Ctc37x -o"combine.elf" -Wl-o"combine.hex:IHEX" $(OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-mypj.siz: mypj.elf makefile $(OPTIONAL_TOOL_DEPS)
+combine.siz: combine.elf makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Invoking: Print Size'
-	elfsize  "mypj.elf"
+	elfsize  "combine.elf"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) mypj.siz mypj.elf
+	-$(RM) combine.siz combine.elf
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_SIZE)
