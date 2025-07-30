@@ -622,3 +622,6 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 
 !ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-30 15:56:36.457
 !MESSAGE Include paths were discovered in 107 milliseconds.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-30 21:53:55.920
+!MESSAGE Indexed 'combine' (101 sources, 526 headers) in 12.3 sec: 103,726 declarations; 135,817 references; 12 unresolved inclusions; 706 syntax errors; 1,119 unresolved names (0.46%)

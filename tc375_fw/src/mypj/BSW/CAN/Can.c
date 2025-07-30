@@ -249,6 +249,9 @@ void Can_TxIsrHandler(void)
 
 IFX_INTERRUPT(Can_Rx_Isr_Handler, 0, ISR_PRIORITY_CAN_RX);
 
+extern left_target_v;
+extern right_target_v;
+
 void Can_Rx_Isr_Handler (void) {
     unsigned int rxID;
     uint8 rxData[8] = {0, };
@@ -264,5 +267,9 @@ void Can_Rx_Isr_Handler (void) {
             dist_front = tofVal;
         else
             dist_front = 0xFFFFFFFF;
+    }
+    else if (rxID == 0x100){
+        left_target_v = rxData[3] << 24 | rxData[2] << 16 | rxData[1] << 8 | rxData[0];
+        right_target_v = rxData[7] << 24 | rxData[6] << 16 | rxData[5] << 8 | rxData[4];
     }
 }
