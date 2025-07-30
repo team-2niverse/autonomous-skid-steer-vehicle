@@ -33,7 +33,6 @@ BSW/GTM_ATOM_PWM \
 BSW/MOTOR \
 BSW/STM \
 BSW/ULTRASONIC \
-Configurations/Debug \
 Configurations \
 . \
 Libraries/Infra/Platform/Tricore/Compilers \
