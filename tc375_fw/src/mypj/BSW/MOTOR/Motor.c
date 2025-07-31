@@ -22,6 +22,37 @@
 #define MOTOR_R_BRAKE_PORT      &MODULE_P02
 #define MOTOR_R_BRAKE_PIN       6
 
+boolean_T brake_L = 0;
+boolean_T brake_R = 0;
+boolean_T dir_L = 0;
+boolean_T dir_R = 0;
+
+boolean_T Get_Dir(boolean_T LR){
+    if (LR==0){
+        return dir_L;
+    }
+    else{
+        return dir_R;
+    }
+}
+boolean_T Get_Brake(boolean_T LR){
+    if (LR==0){
+        return brake_L;
+    }
+    else{
+        return brake_R;
+    }
+}
+
+void Set_Brake(boolean_T LR, boolean_T value){
+    if (LR == 0){
+        brake_L = value;
+    }
+    else{
+        brake_R  = value;
+    }
+}
+
 void Motor_Init(void)
 {
     /* --- GPIO 핀들을 출력(Push-pull) 모드로 설정 --- */

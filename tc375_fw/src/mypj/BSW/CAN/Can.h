@@ -53,6 +53,7 @@ void Can_Send_Dist_Data(unsigned int id, uint16 front_dist, uint16 left_dist, ui
 void Can_Send_Vel_Data(unsigned int id, uint32 left_vel, uint32 right_vel); //const?
 unsigned int Can_Get_Front_Dist(void);
 
-//void Can_Rx_Isr_Handler (void)
+void Can_Rx_Isr_Handler (void);
+uint32 get_t(int typ);
 
 #endif /* CAN_H_ */

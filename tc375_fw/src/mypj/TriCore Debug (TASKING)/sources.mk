@@ -24,6 +24,7 @@ SECONDARY_SIZE :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+ASW/ABE \
 BSW/ASCLIN \
 BSW/CAN \
 BSW/ENCODER \

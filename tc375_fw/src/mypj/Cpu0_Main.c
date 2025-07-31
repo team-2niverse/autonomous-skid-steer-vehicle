@@ -19,21 +19,32 @@ uint16 f2u16(float a){
 void core0_main(void)
 {
     System_Init();
-
+    uint64 t1 = 0;
+    uint64 t2 = 0;
+    Motor_Set_Left(50, 0, Get_Brake(0));
+    Motor_Set_Right(50, 0, Get_Brake(1));
     while(1)
     {
         //
-        uint16 back = f2u16(Ultrasonic_Get_Back_Dist());
-        uint16 left= f2u16(Ultrasonic_Get_Left_Dist());
-        uint16 right = f2u16(Ultrasonic_Get_Right_Dist());
-        uint16 front = Can_Get_Front_Dist();
-        int id = 202;
-        Can_Send_Dist_Data(&id, front, left, right, back);
-
-        uint32 v_left = Encoder_Get_V_Left();
-        uint32 v_right = Encoder_Get_V_Right();
-        int vid = 201;
-        Can_Send_Vel_Data(&vid, v_left, v_right);
+//        uint16 back = f2u16(Ultrasonic_Get_Back_Dist());
+//        uint16 left= f2u16(Ultrasonic_Get_Left_Dist());
+//        uint16 right = f2u16(Ultrasonic_Get_Right_Dist());
+//        t2 = Stm_Get_Time_Us();
+        float front = Can_Get_Front_Dist(); //2900us=>  3ms
+//        my_printf("front %f, sensing delta t: %llu\n", front, t2 - t1);
+        my_printf("front %f, lv : %d, rv : %d\n", front, Encoder_Get_V_Left(), Encoder_Get_V_Right());
+//        t1 = t2;
+        my_printf("tof interrupt time : %d, get data time : %d", get_t(0), get_t(1));
+        Check_Abe(front);
+        Motor_Set_Left(50, 0, Get_Brake(0));
+        Motor_Set_Right(50, 0, Get_Brake(1));
+//        int id = 202;
+//        Can_Send_Dist_Data(&id, front, left, right, back);
+//
+//        uint32 v_left = Encoder_Get_V_Left();
+//        uint32 v_right = Encoder_Get_V_Right();
+//        int vid = 201;
+//        Can_Send_Vel_Data(&vid, v_left, v_right);
 
 
 

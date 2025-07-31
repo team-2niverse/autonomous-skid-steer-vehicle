@@ -37,6 +37,7 @@ RM := rm -rf
 -include BSW/ENCODER/subdir.mk
 -include BSW/CAN/subdir.mk
 -include BSW/ASCLIN/subdir.mk
+-include ASW/ABE/subdir.mk
 -include subdir.mk
 ifneq ($(MAKECMDGOALS),clean)
 ifneq ($(strip $(C++_DEPS)),)

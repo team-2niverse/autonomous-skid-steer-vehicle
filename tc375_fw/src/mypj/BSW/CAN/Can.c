@@ -249,27 +249,40 @@ void Can_TxIsrHandler(void)
 
 IFX_INTERRUPT(Can_Rx_Isr_Handler, 0, ISR_PRIORITY_CAN_RX);
 
-extern left_target_v;
-extern right_target_v;
-
+volatile int left_target_v =0;
+volatile int right_target_v=0;
+volatile uint64 t =0;
+uint64 t2 = 0;
+volatile uint64 t3 = 0;
 void Can_Rx_Isr_Handler (void) {
+    t = Stm_Get_Time_Ms() - t2;
+    t2 = Stm_Get_Time_Ms();
     unsigned int rxID;
     uint8 rxData[8] = {0, };
     int rxLen;
     Can_Recv_Msg(&rxID, rxData, &rxLen);
 
-    if (rxID == 522) {
+    if (rxID == 522) { //ToF Senser
         unsigned int tofVal = rxData[2] << 16 | rxData[1] << 8 | rxData[0];
         uint8 dis_status = rxData[3];
         uint16 signal_strength =  rxData[5] << 8 | rxData[4];
 
         if (signal_strength != 0)
-            dist_front = tofVal;
+            dist_front = tofVal/10; //mm => cm;
         else
             dist_front = 0xFFFFFFFF;
     }
     else if (rxID == 0x100){
         left_target_v = rxData[3] << 24 | rxData[2] << 16 | rxData[1] << 8 | rxData[0];
         right_target_v = rxData[7] << 24 | rxData[6] << 16 | rxData[5] << 8 | rxData[4];
+    }
+    t3 = Stm_Get_Time_Ms()-t2;
+}
+uint32 get_t(int typ){
+    if (typ == 0){
+        return (uint32)t;
+    }
+    else{
+        return (uint32)t3;
     }
 }
