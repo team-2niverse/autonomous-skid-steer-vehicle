@@ -27,7 +27,7 @@ boolean_T brake_R = 0;
 boolean_T dir_L = 0;
 boolean_T dir_R = 0;
 
-boolean_T Get_Dir(boolean_T LR){
+boolean_T Motor_Get_Dir(boolean_T LR){
     if (LR==0){
         return dir_L;
     }
@@ -35,7 +35,7 @@ boolean_T Get_Dir(boolean_T LR){
         return dir_R;
     }
 }
-boolean_T Get_Brake(boolean_T LR){
+boolean_T Motor_Get_Brake(boolean_T LR){
     if (LR==0){
         return brake_L;
     }
@@ -43,8 +43,15 @@ boolean_T Get_Brake(boolean_T LR){
         return brake_R;
     }
 }
-
-void Set_Brake(boolean_T LR, boolean_T value){
+void Motor_Set_Dir(boolean_T LR, boolean_T value){
+    if (LR==0){
+        dir_L=value;
+    }
+    else{
+        dir_R=value;
+    }
+}
+void Motor_Set_Brake(boolean_T LR, boolean_T value){
     if (LR == 0){
         brake_L = value;
     }

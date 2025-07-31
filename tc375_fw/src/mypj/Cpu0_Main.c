@@ -21,8 +21,9 @@ void core0_main(void)
     System_Init();
     uint64 t1 = 0;
     uint64 t2 = 0;
-    Motor_Set_Left(50, 0, Get_Brake(0));
-    Motor_Set_Right(50, 0, Get_Brake(1));
+    Motor_Set_Left(50, 1, Motor_Get_Brake(0));
+    Motor_Set_Right(50, 1, Motor_Get_Brake(1));
+
     while(1)
     {
         //
@@ -34,10 +35,20 @@ void core0_main(void)
 //        my_printf("front %f, sensing delta t: %llu\n", front, t2 - t1);
         my_printf("front %f, lv : %d, rv : %d\n", front, Encoder_Get_V_Left(), Encoder_Get_V_Right());
 //        t1 = t2;
-        my_printf("tof interrupt time : %d, get data time : %d", get_t(0), get_t(1));
-        Check_Abe(front);
-        Motor_Set_Left(50, 0, Get_Brake(0));
-        Motor_Set_Right(50, 0, Get_Brake(1));
+//        my_printf("tof interrupt time : %d, get data time : %d", get_t(0), get_t(1));
+        if (front != 0)
+            Abe_Check(front);
+        Motor_Set_Left(50, 1, Motor_Get_Brake(0));
+        Motor_Set_Right(50, 1, Motor_Get_Brake(1));
+        if (Motor_Get_Brake(0)==1){
+            if (t1 > 1000){
+                Motor_Set_Brake(0,0);
+                Motor_Set_Brake(1,0);
+                t1 = 0;
+            }
+            else t1++;
+
+        }
 //        int id = 202;
 //        Can_Send_Dist_Data(&id, front, left, right, back);
 //

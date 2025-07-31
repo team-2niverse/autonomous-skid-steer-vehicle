@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc66892a --dep-file=Can.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW\\\\ABE -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ASCLIN -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ENCODER -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPT12 -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GTM_ATOM_PWM -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ISR -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\MOTOR -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\STM -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ULTRASONIC -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\MATLAB -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o BSW/CAN/Can.src ../BSW/CAN/Can.c"
+	.compiler_invocation	"ctc -f cc99308a --dep-file=Can.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW\\\\ABE -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ASCLIN -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ENCODER -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPT12 -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GTM_ATOM_PWM -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ISR -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\MOTOR -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\PID -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\STM -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ULTRASONIC -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\MATLAB -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o BSW/CAN/Can.src ../BSW/CAN/Can.c"
 	.compiler_name		"ctc"
 	;source	'../BSW/CAN/Can.c'
 
@@ -13,20 +13,20 @@ $TC162
 	
 	.global	Can_Get_Front_Dist
 ; Function Can_Get_Front_Dist
-.L40:
+.L42:
 Can_Get_Front_Dist:	.type	func
 	movh.a	a15,#@his(dist_front)
 	lea	a15,[a15]@los(dist_front)
 	ld.w	d2,[a15]
-.L570:
+.L588:
 	j	.L2
 .L2:
 	ret
-.L206:
+.L222:
 	
 __Can_Get_Front_Dist_function_end:
 	.size	Can_Get_Front_Dist,__Can_Get_Front_Dist_function_end-Can_Get_Front_Dist
-.L104:
+.L110:
 	; End of function
 	
 	.sdecl	'.text.Can.Can_Init',code,cluster('Can_Init')
@@ -35,100 +35,100 @@ __Can_Get_Front_Dist_function_end:
 	
 	.global	Can_Init
 ; Function Can_Init
-.L42:
+.L44:
 Can_Init:	.type	func
 	sub.a	a10,#16
-.L234:
+.L252:
 	mov	e8,d5,d4
-.L309:
+.L327:
 	movh.a	a4,#61444
 	lea	a4,[a4]@los(0xf003b400)
-.L310:
+.L328:
 	mov	d4,#6
-.L236:
+.L254:
 	mov	d5,#128
-.L235:
+.L253:
 	mov	d15,#128
-.L140:
+.L156:
 	or	d5,d15
-.L311:
+.L329:
 	call	IfxPort_setPinMode
-.L141:
+.L157:
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003b400)
-.L312:
+.L330:
 	insert	d0,d0,#0,#6,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003b400),d0
-.L313:
+.L331:
 	movh.a	a4,#@his(g_mcmcan)
 	lea	a4,[a4]@los(g_mcmcan)
-.L314:
+.L332:
 	movh.a	a5,#61472
 	call	IfxCan_Can_initModuleConfig
-.L315:
+.L333:
 	movh.a	a4,#@his(g_mcmcan)
 	lea	a4,[a4]@los(g_mcmcan)
-.L316:
+.L334:
 	add.a	a4,#4
-.L317:
+.L335:
 	movh.a	a5,#@his(g_mcmcan)
 	lea	a5,[a5]@los(g_mcmcan)
-.L318:
+.L336:
 	call	IfxCan_Can_initModule
-.L319:
+.L337:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L320:
+.L338:
 	lea	a4,[a15]72
-.L321:
+.L339:
 	movh.a	a5,#@his(g_mcmcan)
 	lea	a5,[a5]@los(g_mcmcan)
-.L322:
+.L340:
 	add.a	a5,#4
 	call	IfxCan_Can_initNodeConfig
-.L323:
+.L341:
 	mov	d15,#0
-.L237:
+.L255:
 	jeq	d15,d8,.L3
-.L238:
+.L256:
 	mov	d15,#1
-.L239:
+.L257:
 	jeq	d15,d8,.L4
-.L240:
+.L258:
 	mov	d15,#2
-.L241:
+.L259:
 	jeq	d15,d8,.L5
-.L242:
+.L260:
 	j	.L6
 .L3:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L324:
+.L342:
 	mov	d15,#1
-.L325:
+.L343:
 	st.b	[a15]284,d15
-.L326:
+.L344:
 	j	.L7
 .L4:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L327:
+.L345:
 	mov	d15,#15625
 	sh	d15,#5
-.L328:
+.L346:
 	st.w	[a15]80,d15
-.L329:
+.L347:
 	j	.L8
 .L5:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L330:
+.L348:
 	mov	d15,#15625
 	sh	d15,#6
-.L331:
+.L349:
 	st.w	[a15]80,d15
-.L332:
+.L350:
 	j	.L9
 .L6:
 .L9:
@@ -136,220 +136,220 @@ Can_Init:	.type	func
 .L7:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L333:
+.L351:
 	mov	d15,#0
-.L334:
+.L352:
 	st.b	[a15]284,d15
-.L243:
+.L261:
 	jne	d9,#0,.L10
-.L244:
+.L262:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L335:
+.L353:
 	mov	d15,#0
-.L336:
+.L354:
 	st.b	[a15]76,d15
-.L151:
+.L167:
 	movh.a	a15,#@his(.2.ini)
 	lea	a15,[a15]@los(.2.ini)
 	lea	a15,[a15]0
-.L337:
+.L355:
 	lea	a2,[a10]0
 	mov.a	a4,#3
 .L11:
 	ld.w	d15,[a15+]
 	st.w	[a2+],d15
 	loop	a4,.L11
-.L338:
+.L356:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L339:
+.L357:
 	lea	a2,[a10]0
-.L340:
+.L358:
 	st.a	[a15]280,a2
-.L152:
+.L168:
 	j	.L12
 .L10:
 	jne	d9,#2,.L13
-.L245:
+.L263:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L341:
+.L359:
 	mov	d15,#2
-.L342:
+.L360:
 	st.b	[a15]76,d15
-.L155:
+.L171:
 	movh.a	a15,#@his(.3.ini)
 	lea	a15,[a15]@los(.3.ini)
 	lea	a15,[a15]0
-.L343:
+.L361:
 	lea	a2,[a10]0
 	mov.a	a4,#3
 .L14:
 	ld.w	d15,[a15+]
 	st.w	[a2+],d15
 	loop	a4,.L14
-.L344:
+.L362:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L345:
+.L363:
 	lea	a2,[a10]0
-.L346:
+.L364:
 	st.a	[a15]280,a2
 .L13:
 .L12:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L347:
+.L365:
 	mov	d15,#2
-.L348:
+.L366:
 	st.b	[a15]78,d15
-.L349:
+.L367:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L350:
+.L368:
 	mov	d15,#1
-.L351:
+.L369:
 	st.b	[a15]165,d15
-.L352:
+.L370:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L353:
+.L371:
 	mov	d15,#31
-.L354:
+.L372:
 	st.h	[a15]276,d15
-.L355:
+.L373:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L356:
+.L374:
 	mov	d15,#0
-.L357:
+.L375:
 	st.b	[a15]274,d15
-.L358:
+.L376:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L359:
+.L377:
 	mov	d15,#0
-.L360:
+.L378:
 	st.b	[a15]278,d15
-.L361:
+.L379:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L362:
+.L380:
 	lea	a4,[a15]8
-.L363:
+.L381:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L364:
+.L382:
 	lea	a5,[a15]72
 	call	IfxCan_Can_initNode
-.L365:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L366:
-	mov	d15,#3
-.L367:
-	st.b	[a15]124,d15
-.L368:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L369:
-	mov	d15,#0
-.L370:
-	st.b	[a15]125,d15
-.L371:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L372:
-	mov	d15,#0
-.L373:
-	st.b	[a15]126,d15
-.L374:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L375:
-	mov	d15,#15
-.L376:
-	st.b	[a15]132,d15
-.L377:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L378:
-	mov	d15,#0
-.L379:
-	st.b	[a15]116,d15
-.L380:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L381:
-	mov	d15,#8
-.L382:
-	st.b	[a15]117,d15
 .L383:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
 .L384:
-	mov	d15,#2
+	mov	d15,#3
 .L385:
-	st.b	[a15]121,d15
+	st.b	[a15]124,d15
 .L386:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
 .L387:
-	mov	d15,#1
+	mov	d15,#0
 .L388:
-	st.b	[a15]119,d15
+	st.b	[a15]125,d15
 .L389:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
 .L390:
-	mov	d15,#1
+	mov	d15,#0
 .L391:
-	st.b	[a15]156,d15
+	st.b	[a15]126,d15
 .L392:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
 .L393:
-	mov	d15,#30
+	mov	d15,#15
 .L394:
-	st.h	[a15]258,d15
+	st.b	[a15]132,d15
 .L395:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
 .L396:
-	mov	d15,#1
+	mov	d15,#0
 .L397:
-	st.b	[a15]256,d15
+	st.b	[a15]116,d15
 .L398:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
 .L399:
-	mov	d15,#0
+	mov	d15,#8
 .L400:
-	st.b	[a15]260,d15
+	st.b	[a15]117,d15
 .L401:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
 .L402:
-	lea	a4,[a15]40
+	mov	d15,#2
 .L403:
+	st.b	[a15]121,d15
+.L404:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L404:
+.L405:
+	mov	d15,#1
+.L406:
+	st.b	[a15]119,d15
+.L407:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L408:
+	mov	d15,#1
+.L409:
+	st.b	[a15]156,d15
+.L410:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L411:
+	mov	d15,#30
+.L412:
+	st.h	[a15]258,d15
+.L413:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L414:
+	mov	d15,#1
+.L415:
+	st.b	[a15]256,d15
+.L416:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L417:
+	mov	d15,#0
+.L418:
+	st.b	[a15]260,d15
+.L419:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L420:
+	lea	a4,[a15]40
+.L421:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L422:
 	lea	a5,[a15]72
 	call	IfxCan_Can_initNode
-.L405:
+.L423:
 	mov	d4,#0
-.L406:
+.L424:
 	mov	d5,#2047
 	call	Can_Set_Filter_Range
-.L407:
+.L425:
 	ret
-.L134:
+.L150:
 	
 __Can_Init_function_end:
 	.size	Can_Init,__Can_Init_function_end-Can_Init
-.L69:
+.L75:
 	; End of function
 	
 	.sdecl	'.text.Can.Can_Set_Filter_Range',code,cluster('Can_Set_Filter_Range')
@@ -358,56 +358,56 @@ __Can_Init_function_end:
 	
 	.global	Can_Set_Filter_Range
 ; Function Can_Set_Filter_Range
-.L44:
+.L46:
 Can_Set_Filter_Range:	.type	func
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L412:
+.L430:
 	mov	d15,#0
-.L413:
+.L431:
 	st.b	[a15]288,d15
-.L414:
+.L432:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L415:
+.L433:
 	mov	d15,#0
-.L416:
+.L434:
 	st.b	[a15]290,d15
-.L417:
+.L435:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L418:
+.L436:
 	mov	d15,#1
-.L419:
+.L437:
 	st.b	[a15]289,d15
-.L420:
+.L438:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L421:
+.L439:
 	st.w	[a15]292,d4
-.L422:
+.L440:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L423:
+.L441:
 	st.w	[a15]296,d5
-.L424:
+.L442:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L425:
+.L443:
 	lea	a4,[a15]40
-.L426:
+.L444:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L427:
+.L445:
 	lea	a5,[a15]288
 	call	IfxCan_Can_setStandardFilter
-.L246:
+.L264:
 	ret
-.L158:
+.L174:
 	
 __Can_Set_Filter_Range_function_end:
 	.size	Can_Set_Filter_Range,__Can_Set_Filter_Range_function_end-Can_Set_Filter_Range
-.L74:
+.L80:
 	; End of function
 	
 	.sdecl	'.text.Can.Can_Set_Filter_Mask',code,cluster('Can_Set_Filter_Mask')
@@ -416,56 +416,56 @@ __Can_Set_Filter_Range_function_end:
 	
 	.global	Can_Set_Filter_Mask
 ; Function Can_Set_Filter_Mask
-.L46:
+.L48:
 Can_Set_Filter_Mask:	.type	func
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L432:
+.L450:
 	mov	d15,#0
-.L433:
+.L451:
 	st.b	[a15]288,d15
-.L434:
+.L452:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L435:
+.L453:
 	mov	d15,#2
-.L436:
+.L454:
 	st.b	[a15]290,d15
-.L437:
+.L455:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L438:
+.L456:
 	mov	d15,#1
-.L439:
+.L457:
 	st.b	[a15]289,d15
-.L440:
+.L458:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L441:
+.L459:
 	st.w	[a15]292,d4
-.L442:
+.L460:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L443:
+.L461:
 	st.w	[a15]296,d5
-.L444:
+.L462:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L445:
+.L463:
 	lea	a4,[a15]40
-.L446:
+.L464:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L447:
+.L465:
 	lea	a5,[a15]288
 	call	IfxCan_Can_setStandardFilter
-.L247:
+.L265:
 	ret
-.L162:
+.L178:
 	
 __Can_Set_Filter_Mask_function_end:
 	.size	Can_Set_Filter_Mask,__Can_Set_Filter_Mask_function_end-Can_Set_Filter_Mask
-.L79:
+.L85:
 	; End of function
 	
 	.sdecl	'.text.Can.Can_Send_Msg',code,cluster('Can_Send_Msg')
@@ -474,83 +474,83 @@ __Can_Set_Filter_Mask_function_end:
 	
 	.global	Can_Send_Msg
 ; Function Can_Send_Msg
-.L48:
+.L50:
 Can_Send_Msg:	.type	func
 	mov	d15,d4
-.L250:
+.L268:
 	mov.aa	a12,a4
-.L252:
+.L270:
 	mov	d8,d5
-.L253:
+.L271:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L452:
+.L470:
 	lea	a4,[a15]304
-.L249:
+.L267:
 	call	IfxCan_Can_initMessage
-.L248:
+.L266:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L453:
+.L471:
 	st.w	[a15]306,d15
-.L454:
+.L472:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L455:
+.L473:
 	extr.u	d15,d8,#0,#8
-.L251:
+.L269:
 	st.b	[a15]313,d15
-.L172:
+.L188:
 	mov	d15,#0
-.L254:
+.L272:
 	j	.L15
 .L16:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L456:
+.L474:
 	addsc.a	a15,a15,d15,#0
-.L457:
+.L475:
 	addsc.a	a2,a12,d15,#0
 	ld.bu	d0,[a2]
-.L458:
+.L476:
 	st.b	[a15]336,d0
-.L459:
+.L477:
 	add	d15,#1
 .L15:
 	mov	d0,#8
-.L460:
+.L478:
 	jlt	d15,d0,.L16
-.L173:
+.L189:
 	j	.L17
 .L18:
 .L17:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L461:
+.L479:
 	lea	a4,[a15]8
-.L462:
+.L480:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L463:
+.L481:
 	lea	a5,[a15]304
-.L464:
+.L482:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L465:
+.L483:
 	lea	a6,[a15]336
-.L466:
+.L484:
 	call	IfxCan_Can_sendMessage
-.L467:
+.L485:
 	mov	d15,#32
-.L468:
+.L486:
 	jeq	d15,d2,.L18
-.L469:
+.L487:
 	ret
-.L165:
+.L181:
 	
 __Can_Send_Msg_function_end:
 	.size	Can_Send_Msg,__Can_Send_Msg_function_end-Can_Send_Msg
-.L84:
+.L90:
 	; End of function
 	
 	.sdecl	'.text.Can.Can_Send_Data',code,cluster('Can_Send_Data')
@@ -559,83 +559,83 @@ __Can_Send_Msg_function_end:
 	
 	.global	Can_Send_Data
 ; Function Can_Send_Data
-.L50:
+.L52:
 Can_Send_Data:	.type	func
 	mov	d15,d4
-.L257:
+.L275:
 	mov.aa	a12,a4
-.L259:
+.L277:
 	mov	d8,d5
-.L260:
+.L278:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L647:
+.L675:
 	lea	a4,[a15]304
-.L256:
+.L274:
 	call	IfxCan_Can_initMessage
-.L255:
+.L273:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L648:
+.L676:
 	st.w	[a15]306,d15
-.L649:
+.L677:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L650:
+.L678:
 	extr.u	d15,d8,#0,#8
-.L258:
+.L276:
 	st.b	[a15]313,d15
-.L224:
+.L242:
 	mov	d15,#0
-.L261:
+.L279:
 	j	.L19
 .L20:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L651:
+.L679:
 	addsc.a	a15,a15,d15,#0
-.L652:
+.L680:
 	addsc.a	a2,a12,d15,#0
 	ld.bu	d0,[a2]
-.L653:
+.L681:
 	st.b	[a15]336,d0
-.L654:
+.L682:
 	add	d15,#1
 .L19:
 	mov	d0,#8
-.L655:
+.L683:
 	jlt	d15,d0,.L20
-.L225:
+.L243:
 	j	.L21
 .L22:
 .L21:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L656:
+.L684:
 	lea	a4,[a15]8
-.L657:
+.L685:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L658:
+.L686:
 	lea	a5,[a15]304
-.L659:
+.L687:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L660:
+.L688:
 	lea	a6,[a15]336
-.L661:
+.L689:
 	call	IfxCan_Can_sendMessage
-.L662:
+.L690:
 	mov	d15,#32
-.L663:
+.L691:
 	jeq	d15,d2,.L22
-.L664:
+.L692:
 	ret
-.L220:
+.L238:
 	
 __Can_Send_Data_function_end:
 	.size	Can_Send_Data,__Can_Send_Data_function_end-Can_Send_Data
-.L119:
+.L135:
 	; End of function
 	
 	.sdecl	'.text.Can.Can_Send_Dist_Data',code,cluster('Can_Send_Dist_Data')
@@ -644,124 +644,124 @@ __Can_Send_Data_function_end:
 	
 	.global	Can_Send_Dist_Data
 ; Function Can_Send_Dist_Data
-.L52:
+.L54:
 Can_Send_Dist_Data:	.type	func
 	mov	e8,d5,d4
 	mov	e10,d7,d6
 	ld.hu	d12,[a10]0
-.L263:
+.L281:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L499:
+.L517:
 	lea	a4,[a15]304
 	call	IfxCan_Can_initMessage
-.L262:
+.L280:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L265:
+.L283:
 	st.w	[a15]306,d8
-.L266:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L500:
-	mov	d15,#8
-.L501:
-	st.b	[a15]313,d15
-.L502:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L267:
-	and	d15,d9,#255
-.L268:
-	st.b	[a15]336,d15
-.L503:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L504:
-	sha	d9,#-8
-.L505:
-	and	d15,d9,#255
-.L506:
-	st.b	[a15]337,d15
-.L507:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L269:
-	and	d15,d10,#255
-.L270:
-	st.b	[a15]338,d15
-.L508:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L509:
-	sha	d10,#-8
-.L510:
-	and	d15,d10,#255
-.L511:
-	st.b	[a15]339,d15
-.L512:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L271:
-	and	d15,d11,#255
-.L272:
-	st.b	[a15]340,d15
-.L513:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L514:
-	sha	d11,#-8
-.L515:
-	and	d15,d11,#255
-.L516:
-	st.b	[a15]341,d15
-.L517:
+.L284:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
 .L518:
-	and	d15,d12,#255
+	mov	d15,#8
 .L519:
-	st.b	[a15]342,d15
+	st.b	[a15]313,d15
 .L520:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
+.L285:
+	and	d15,d9,#255
+.L286:
+	st.b	[a15]336,d15
 .L521:
-	sha	d12,#-8
-.L264:
-	and	d15,d12,#255
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
 .L522:
-	st.b	[a15]343,d15
+	sha	d9,#-8
 .L523:
+	and	d15,d9,#255
+.L524:
+	st.b	[a15]337,d15
+.L525:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L287:
+	and	d15,d10,#255
+.L288:
+	st.b	[a15]338,d15
+.L526:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L527:
+	sha	d10,#-8
+.L528:
+	and	d15,d10,#255
+.L529:
+	st.b	[a15]339,d15
+.L530:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L289:
+	and	d15,d11,#255
+.L290:
+	st.b	[a15]340,d15
+.L531:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L532:
+	sha	d11,#-8
+.L533:
+	and	d15,d11,#255
+.L534:
+	st.b	[a15]341,d15
+.L535:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L536:
+	and	d15,d12,#255
+.L537:
+	st.b	[a15]342,d15
+.L538:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L539:
+	sha	d12,#-8
+.L282:
+	and	d15,d12,#255
+.L540:
+	st.b	[a15]343,d15
+.L541:
 	j	.L23
 .L24:
 .L23:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L524:
+.L542:
 	lea	a4,[a15]8
-.L525:
+.L543:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L526:
+.L544:
 	lea	a5,[a15]304
-.L527:
+.L545:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L528:
+.L546:
 	lea	a6,[a15]336
-.L529:
+.L547:
 	call	IfxCan_Can_sendMessage
-.L530:
+.L548:
 	mov	d15,#32
-.L531:
+.L549:
 	jeq	d15,d2,.L24
-.L532:
+.L550:
 	ret
-.L195:
+.L211:
 	
 __Can_Send_Dist_Data_function_end:
 	.size	Can_Send_Dist_Data,__Can_Send_Dist_Data_function_end-Can_Send_Dist_Data
-.L94:
+.L100:
 	; End of function
 	
 	.sdecl	'.text.Can.Can_Send_Vel_Data',code,cluster('Can_Send_Vel_Data')
@@ -770,115 +770,115 @@ __Can_Send_Dist_Data_function_end:
 	
 	.global	Can_Send_Vel_Data
 ; Function Can_Send_Vel_Data
-.L54:
+.L56:
 Can_Send_Vel_Data:	.type	func
 	mov	e8,d5,d4
 	mov	d10,d6
-.L274:
+.L292:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L537:
+.L555:
 	lea	a4,[a15]304
 	call	IfxCan_Can_initMessage
-.L273:
+.L291:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L275:
+.L293:
 	st.w	[a15]306,d8
-.L276:
+.L294:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L538:
-	mov	d15,#8
-.L539:
-	st.b	[a15]313,d15
-.L540:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L277:
-	and	d15,d9,#255
-.L278:
-	st.b	[a15]336,d15
-.L541:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L279:
-	extr.u	d0,d9,#8,#8
-.L280:
-	st.b	[a15]337,d0
-.L542:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L281:
-	extr.u	d0,d9,#16,#8
-.L282:
-	st.b	[a15]338,d0
-.L543:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L283:
-	extr.u	d0,d9,#24,#8
-.L284:
-	st.b	[a15]339,d0
-.L544:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L545:
-	and	d15,d10,#255
-.L546:
-	st.b	[a15]340,d15
-.L547:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L548:
-	extr.u	d15,d10,#8,#8
-.L549:
-	st.b	[a15]341,d15
-.L550:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L551:
-	extr.u	d15,d10,#16,#8
-.L552:
-	st.b	[a15]342,d15
-.L553:
-	movh.a	a15,#@his(g_mcmcan)
-	lea	a15,[a15]@los(g_mcmcan)
-.L554:
-	extr.u	d15,d10,#24,#8
-.L555:
-	st.b	[a15]343,d15
 .L556:
+	mov	d15,#8
+.L557:
+	st.b	[a15]313,d15
+.L558:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L295:
+	and	d15,d9,#255
+.L296:
+	st.b	[a15]336,d15
+.L559:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L297:
+	extr.u	d0,d9,#8,#8
+.L298:
+	st.b	[a15]337,d0
+.L560:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L299:
+	extr.u	d0,d9,#16,#8
+.L300:
+	st.b	[a15]338,d0
+.L561:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L301:
+	extr.u	d0,d9,#24,#8
+.L302:
+	st.b	[a15]339,d0
+.L562:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L563:
+	and	d15,d10,#255
+.L564:
+	st.b	[a15]340,d15
+.L565:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L566:
+	extr.u	d15,d10,#8,#8
+.L567:
+	st.b	[a15]341,d15
+.L568:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L569:
+	extr.u	d15,d10,#16,#8
+.L570:
+	st.b	[a15]342,d15
+.L571:
+	movh.a	a15,#@his(g_mcmcan)
+	lea	a15,[a15]@los(g_mcmcan)
+.L572:
+	extr.u	d15,d10,#24,#8
+.L573:
+	st.b	[a15]343,d15
+.L574:
 	j	.L25
 .L26:
 .L25:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L557:
+.L575:
 	lea	a4,[a15]8
-.L558:
+.L576:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L559:
+.L577:
 	lea	a5,[a15]304
-.L560:
+.L578:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L561:
+.L579:
 	lea	a6,[a15]336
-.L562:
+.L580:
 	call	IfxCan_Can_sendMessage
-.L563:
+.L581:
 	mov	d15,#32
-.L564:
+.L582:
 	jeq	d15,d2,.L26
-.L565:
+.L583:
 	ret
-.L202:
+.L218:
 	
 __Can_Send_Vel_Data_function_end:
 	.size	Can_Send_Vel_Data,__Can_Send_Vel_Data_function_end-Can_Send_Vel_Data
-.L99:
+.L105:
 	; End of function
 	
 	.sdecl	'.text.Can.Can_Recv_Msg',code,cluster('Can_Recv_Msg')
@@ -887,104 +887,104 @@ __Can_Send_Vel_Data_function_end:
 	
 	.global	Can_Recv_Msg
 ; Function Can_Recv_Msg
-.L56:
+.L58:
 Can_Recv_Msg:	.type	func
 	mov.aa	a12,a4
-.L288:
+.L306:
 	mov.aa	a13,a5
-.L289:
+.L307:
 	mov.aa	a14,a6
-.L290:
+.L308:
 	mov	d8,#0
-.L291:
+.L309:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L474:
+.L492:
 	ld.a	a15,[a15]44
-.L475:
+.L493:
 	mov	d0,#0
-.L184:
+.L200:
 	mov	d15,#1
-.L476:
+.L494:
 	sh	d15,d15,d0
-.L292:
+.L310:
 	st.w	[a15]336,d15
-.L185:
+.L201:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L477:
+.L495:
 	mov	d15,#1
-.L293:
+.L311:
 	st.b	[a15]333,d15
-.L478:
+.L496:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L479:
+.L497:
 	mov	d15,#0
-.L480:
+.L498:
 	st.b	[a15]334,d15
-.L481:
+.L499:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L482:
+.L500:
 	lea	a4,[a15]40
-.L285:
+.L303:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L483:
+.L501:
 	lea	a5,[a15]320
-.L287:
+.L305:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L484:
+.L502:
 	lea	a6,[a15]344
-.L286:
+.L304:
 	call	IfxCan_Can_readMessage
-.L485:
+.L503:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L486:
+.L504:
 	ld.w	d15,[a15]322
-.L487:
+.L505:
 	st.w	[a12],d15
-.L192:
+.L208:
 	mov	d15,#0
-.L294:
+.L312:
 	j	.L27
 .L28:
 	addsc.a	a15,a13,d15,#0
-.L488:
+.L506:
 	movh.a	a2,#@his(g_mcmcan)
 	lea	a2,[a2]@los(g_mcmcan)
-.L489:
+.L507:
 	addsc.a	a2,a2,d15,#0
 	ld.bu	d0,[a2]344
-.L490:
+.L508:
 	st.b	[a15],d0
-.L491:
+.L509:
 	add	d15,#1
 .L27:
 	mov	d0,#8
-.L492:
+.L510:
 	jlt	d15,d0,.L28
-.L193:
+.L209:
 	movh.a	a15,#@his(g_mcmcan)
 	lea	a15,[a15]@los(g_mcmcan)
-.L493:
+.L511:
 	ld.bu	d15,[a15]329
-.L295:
+.L313:
 	st.w	[a14],d15
-.L494:
+.L512:
 	mov	d2,d8
-.L296:
+.L314:
 	j	.L29
 .L29:
 	ret
-.L175:
+.L191:
 	
 __Can_Recv_Msg_function_end:
 	.size	Can_Recv_Msg,__Can_Recv_Msg_function_end-Can_Recv_Msg
-.L89:
+.L95:
 	; End of function
 	
 	.sdecl	'.text.inttab0.intvec.01e',code
@@ -998,213 +998,257 @@ __Can_Recv_Msg_function_end:
 	
 	.global	Can_Rx_Isr_Handler
 ; Function Can_Rx_Isr_Handler
-.L58:
+.L60:
 Can_Rx_Isr_Handler:	.type	func
 	sub.a	a10,#16
-.L297:
+.L315:
 	svlcx
-.L575:
+.L593:
 	movh.a	a15,#@his(t)
 	lea	a15,[a15]@los(t)
-.L576:
+.L594:
 	call	Stm_Get_Time_Ms
 	mov	e0,d2
-.L577:
+.L595:
 	movh.a	a2,#@his(t2)
 	lea	a2,[a2]@los(t2)
 	ld.d	e2,[a2]0
-.L578:
+.L596:
 	subx	d0,d0,d2
 	subc	d1,d1,d3
-.L579:
+.L597:
 	st.d	[a15]0,e0
-.L580:
+.L598:
 	movh.a	a15,#@his(t2)
 	lea	a15,[a15]@los(t2)
-.L581:
+.L599:
 	call	Stm_Get_Time_Ms
 	mov	e0,d2
-.L582:
+.L600:
 	st.d	[a15]0,e0
-.L208:
+.L224:
 	movh.a	a15,#@his(.4.ini)
 	lea	a15,[a15]@los(.4.ini)
 	lea	a15,[a15]0
-.L583:
+.L601:
 	lea	a2,[a10]4
 	mov.a	a4,#7
 .L30:
 	ld.bu	d15,[a15+]
 	st.b	[a2+],d15
 	loop	a4,.L30
-.L584:
+.L602:
 	lea	a4,[a10]0
-.L585:
+.L603:
 	lea	a5,[a10]4
-.L586:
+.L604:
 	lea	a6,[a10]12
 	call	Can_Recv_Msg
-.L587:
+.L605:
 	ld.w	d15,[a10]
-.L588:
+.L606:
 	mov	d0,#522
-.L589:
+.L607:
 	jne	d15,d0,.L31
-.L213:
+.L229:
 	ld.bu	d15,[a10]6
-.L590:
+.L608:
 	sha	d0,d15,#16
-.L591:
+.L609:
 	ld.bu	d15,[a10]5
-.L592:
+.L610:
 	sha	d15,d15,#8
-.L593:
+.L611:
 	or	d0,d15
-.L594:
+.L612:
 	ld.bu	d15,[a10]4
-.L298:
+.L316:
 	or	d0,d15
-.L595:
+.L613:
 	ld.bu	d15,[a10]9
-.L596:
+.L614:
 	sha	d1,d15,#8
-.L597:
+.L615:
 	ld.bu	d15,[a10]8
-.L300:
+.L318:
 	or	d1,d15
-.L598:
+.L616:
 	jeq	d1,#0,.L32
-.L599:
+.L617:
 	movh.a	a15,#@his(dist_front)
 	lea	a15,[a15]@los(dist_front)
-.L600:
+.L618:
 	mov	d15,#10
-.L601:
+.L619:
 	div.u	e0,d0,d15
-.L299:
+.L317:
 	st.w	[a15],d0
-.L602:
+.L620:
 	j	.L33
 .L32:
 	movh.a	a15,#@his(dist_front)
 	lea	a15,[a15]@los(dist_front)
-.L603:
+.L621:
 	mov	d15,#-1
-.L604:
+.L622:
 	st.w	[a15],d15
 .L33:
 	j	.L34
 .L31:
 	ld.w	d15,[a10]
-.L605:
+.L623:
 	mov	d0,#256
-.L606:
+.L624:
 	jne	d15,d0,.L35
-.L607:
+.L625:
 	movh.a	a15,#@his(left_target_v)
 	lea	a15,[a15]@los(left_target_v)
-.L608:
+.L626:
 	ld.bu	d15,[a10]7
-.L609:
+.L627:
 	sha	d0,d15,#24
-.L610:
+.L628:
 	ld.bu	d15,[a10]6
-.L611:
+.L629:
 	sha	d15,d15,#16
-.L612:
+.L630:
 	or	d0,d15
-.L613:
+.L631:
 	ld.bu	d15,[a10]5
-.L614:
+.L632:
 	sha	d15,d15,#8
-.L615:
+.L633:
 	or	d0,d15
-.L616:
+.L634:
 	ld.bu	d15,[a10]4
-.L617:
+.L635:
 	or	d0,d15
-.L618:
+.L636:
 	st.w	[a15],d0
-.L619:
+.L637:
 	movh.a	a15,#@his(right_target_v)
 	lea	a15,[a15]@los(right_target_v)
-.L620:
+.L638:
 	ld.bu	d15,[a10]11
-.L621:
+.L639:
 	sha	d0,d15,#24
-.L622:
+.L640:
 	ld.bu	d15,[a10]10
-.L623:
+.L641:
 	sha	d15,d15,#16
-.L624:
+.L642:
 	or	d0,d15
-.L625:
+.L643:
 	ld.bu	d15,[a10]9
-.L626:
+.L644:
 	sha	d15,d15,#8
-.L627:
+.L645:
 	or	d0,d15
-.L628:
+.L646:
 	ld.bu	d15,[a10]8
-.L629:
+.L647:
 	or	d0,d15
-.L630:
+.L648:
 	st.w	[a15],d0
 .L35:
 .L34:
 	movh.a	a15,#@his(t3)
 	lea	a15,[a15]@los(t3)
-.L631:
+.L649:
 	call	Stm_Get_Time_Ms
 	mov	e8,d2
-.L632:
+.L650:
 	movh.a	a12,#@his(t2)
 	lea	a12,[a12]@los(t2)
 	ld.d	e10,[a12]0
-.L633:
+.L651:
 	subx	d8,d8,d10
 	subc	d9,d9,d11
-.L634:
+.L652:
 	st.d	[a15]0,e8
-.L635:
+.L653:
 	rslcx
 	rfe
-.L207:
+.L223:
 	
 __Can_Rx_Isr_Handler_function_end:
 	.size	Can_Rx_Isr_Handler,__Can_Rx_Isr_Handler_function_end-Can_Rx_Isr_Handler
-.L109:
+.L115:
 	; End of function
 	
-	.sdecl	'.text.Can.get_t',code,cluster('get_t')
-	.sect	'.text.Can.get_t'
+	.sdecl	'.text.Can.Can_Get_T',code,cluster('Can_Get_T')
+	.sect	'.text.Can.Can_Get_T'
 	.align	2
 	
-	.global	get_t
-; Function get_t
-.L60:
-get_t:	.type	func
+	.global	Can_Get_T
+; Function Can_Get_T
+.L62:
+Can_Get_T:	.type	func
 	jne	d4,#0,.L36
-.L640:
+.L658:
 	movh.a	a15,#@his(t)
 	lea	a15,[a15]@los(t)
 	ld.d	e2,[a15]0
-.L641:
+.L659:
 	j	.L37
 .L36:
 	movh.a	a15,#@his(t3)
 	lea	a15,[a15]@los(t3)
 	ld.d	e2,[a15]0
-.L642:
+.L660:
 	j	.L38
 .L38:
 .L37:
 	ret
-.L218:
+.L234:
 	
-__get_t_function_end:
-	.size	get_t,__get_t_function_end-get_t
-.L114:
+__Can_Get_T_function_end:
+	.size	Can_Get_T,__Can_Get_T_function_end-Can_Get_T
+.L120:
+	; End of function
+	
+	.sdecl	'.text.Can.Can_Get_Target_Speed_L',code,cluster('Can_Get_Target_Speed_L')
+	.sect	'.text.Can.Can_Get_Target_Speed_L'
+	.align	2
+	
+	.global	Can_Get_Target_Speed_L
+; Function Can_Get_Target_Speed_L
+.L64:
+Can_Get_Target_Speed_L:	.type	func
+	movh.a	a15,#@his(left_target_v)
+	lea	a15,[a15]@los(left_target_v)
+	ld.w	d2,[a15]
+.L665:
+	j	.L39
+.L39:
+	ret
+.L236:
+	
+__Can_Get_Target_Speed_L_function_end:
+	.size	Can_Get_Target_Speed_L,__Can_Get_Target_Speed_L_function_end-Can_Get_Target_Speed_L
+.L125:
+	; End of function
+	
+	.sdecl	'.text.Can.Can_Get_Target_Speed_R',code,cluster('Can_Get_Target_Speed_R')
+	.sect	'.text.Can.Can_Get_Target_Speed_R'
+	.align	2
+	
+	.global	Can_Get_Target_Speed_R
+; Function Can_Get_Target_Speed_R
+.L66:
+Can_Get_Target_Speed_R:	.type	func
+	movh.a	a15,#@his(left_target_v)
+	lea	a15,[a15]@los(left_target_v)
+	ld.w	d2,[a15]
+.L670:
+	j	.L40
+.L40:
+	ret
+.L237:
+	
+__Can_Get_Target_Speed_R_function_end:
+	.size	Can_Get_Target_Speed_R,__Can_Get_Target_Speed_R_function_end-Can_Get_Target_Speed_R
+.L130:
 	; End of function
 	
 	.sdecl	'.bss.Can.g_mcmcan',data,cluster('g_mcmcan')
@@ -1311,6 +1355,8 @@ t3:	.type	object
 	.calls	'Can_Send_Vel_Data','',0
 	.calls	'Can_Recv_Msg','',0
 	.calls	'Can_Rx_Isr_Handler','',16
+	.calls	'Can_Get_T','',0
+	.calls	'Can_Get_Target_Speed_L','',0
 	.extern	IfxPort_setPinMode
 	.extern	IfxCan_RXD00B_P20_7_IN
 	.extern	IfxCan_RXD02A_P15_1_IN
@@ -1325,21 +1371,21 @@ t3:	.type	object
 	.extern	IfxCan_Can_initNode
 	.extern	IfxCan_Can_initNodeConfig
 	.extern	Stm_Get_Time_Ms
-	.calls	'get_t','',0
+	.calls	'Can_Get_Target_Speed_R','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L62:
+.L68:
 	.word	172959
 	.half	3
-	.word	.L63
+	.word	.L69
 	.byte	4
-.L61:
+.L67:
 	.byte	1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L64
+	.word	.L70
 	.byte	2,1,1,3
 	.word	222
 	.byte	4
@@ -1356,7 +1402,7 @@ t3:	.type	object
 	.word	282
 	.byte	6,0,4
 	.byte	'Ifx__stopPerfCounters',0,3,1,169,2,17,1,1,6,0
-.L232:
+.L250:
 	.byte	7
 	.byte	'unsigned long long int',0,8,7,9
 	.byte	'void',0,3
@@ -1375,10 +1421,10 @@ t3:	.type	object
 	.byte	'value',0,2,143,1,43
 	.word	368
 	.byte	6,0
-.L166:
+.L182:
 	.byte	7
 	.byte	'unsigned int',0,4,7
-.L170:
+.L186:
 	.byte	7
 	.byte	'int',0,4,5,7
 	.byte	'unsigned int',0,4,7,10
@@ -1404,10 +1450,10 @@ t3:	.type	object
 	.byte	'B',0
 	.word	525
 	.byte	4,2,35,0,0
-.L215:
+.L231:
 	.byte	7
 	.byte	'unsigned char',0,1,8
-.L197:
+.L213:
 	.byte	7
 	.byte	'unsigned short int',0,2,7,10
 	.byte	'_Ifx_SCU_WDTCPU_CON1_Bits',0,4,217,9,16,4,11
@@ -2867,26 +2913,26 @@ t3:	.type	object
 	.byte	'IfxPort_OutputIdx_alt5',0,168,1,18
 	.byte	'IfxPort_OutputIdx_alt6',0,176,1,18
 	.byte	'IfxPort_OutputIdx_alt7',0,184,1,0
-.L139:
+.L155:
 	.byte	4
 	.byte	'IfxPort_setPinModeOutput',0,3,5,168,5,17,1,1
-.L142:
+.L158:
 	.byte	5
 	.byte	'port',0,5,168,5,49
 	.word	9172
-.L144:
+.L160:
 	.byte	5
 	.byte	'pinIndex',0,5,168,5,61
 	.word	661
-.L146:
+.L162:
 	.byte	5
 	.byte	'mode',0,5,168,5,90
 	.word	9177
-.L148:
+.L164:
 	.byte	5
 	.byte	'index',0,5,168,5,114
 	.word	9273
-.L150:
+.L166:
 	.byte	6,0,17,5,189,1,9,4,18
 	.byte	'IfxPort_State_notChanged',0,0,18
 	.byte	'IfxPort_State_high',0,1,18
@@ -2912,7 +2958,7 @@ t3:	.type	object
 	.byte	'IfxCpu_areInterruptsEnabled',0,3,7,229,5,20
 	.word	661
 	.byte	1,1,6,0
-.L159:
+.L175:
 	.byte	7
 	.byte	'unsigned long int',0,4,7,8
 	.byte	'IfxCpu_getPerformanceCounter',0,3,7,251,6,19
@@ -6389,18 +6435,18 @@ t3:	.type	object
 	.byte	'IfxCan_Interrupt_protocolErrorArbitration',0,27,18
 	.byte	'IfxCan_Interrupt_protocolErrorData',0,28,18
 	.byte	'IfxCan_Interrupt_AccessToReservedAddress',0,29,0
-.L183:
+.L199:
 	.byte	4
 	.byte	'IfxCan_Node_clearInterruptFlag',0,3,12,238,13,17,1,1
-.L186:
+.L202:
 	.byte	5
 	.byte	'node',0,12,238,13,59
 	.word	30009
-.L188:
+.L204:
 	.byte	5
 	.byte	'interrupt',0,12,238,13,82
 	.word	31069
-.L190:
+.L206:
 	.byte	6,0,20
 	.word	230
 	.byte	21
@@ -7808,36 +7854,36 @@ t3:	.type	object
 	.byte	'can',0,14,166,7,86
 	.word	36654
 	.byte	0
-.L135:
+.L151:
 	.byte	17,19,33,9,1,18
 	.byte	'BD_NOUSE',0,0,18
 	.byte	'BD_500K',0,1,18
 	.byte	'BD_1M',0,2,0
-.L137:
+.L153:
 	.byte	17,19,39,9,1,18
 	.byte	'CAN_NODE0',0,0,18
 	.byte	'CAN_NODE2',0,2,0
-.L153:
+.L169:
 	.byte	27
 	.word	45399
-.L156:
+.L172:
 	.byte	27
 	.word	45399
 	.byte	27
 	.word	661
-.L168:
+.L184:
 	.byte	3
 	.word	46017
-.L176:
+.L192:
 	.byte	3
 	.word	486
-.L178:
+.L194:
 	.byte	3
 	.word	661
-.L180:
+.L196:
 	.byte	3
 	.word	502
-.L210:
+.L226:
 	.byte	15,8
 	.word	661
 	.byte	16,7,0,28
@@ -26269,7 +26315,7 @@ t3:	.type	object
 	.byte	29
 	.byte	'IfxCan_Can_NodeConfig',0,14,233,5,3
 	.word	45503
-.L227:
+.L245:
 	.byte	25,19,20,9,224,2,13
 	.byte	'canConfig',0
 	.word	36659
@@ -26309,25 +26355,25 @@ t3:	.type	object
 	.byte	29
 	.byte	'CAN_NODE',0,19,42,3
 	.word	45977
-.L228:
+.L246:
 	.byte	14
 	.word	486
-.L229:
+.L247:
 	.byte	14
 	.word	502
-.L230:
+.L248:
 	.byte	14
 	.word	502
-.L231:
+.L249:
 	.byte	14
 	.word	368
-.L233:
+.L251:
 	.byte	14
 	.word	368
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L63:
+.L69:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -26340,12 +26386,12 @@ t3:	.type	object
 	.byte	0,0,31,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L64:
-	.word	.L302-.L301
-.L301:
+.L70:
+	.word	.L320-.L319
+.L319:
 	.half	3
-	.word	.L304-.L303
-.L303:
+	.word	.L322-.L321
+.L321:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
 	.byte	'C:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can',0
@@ -26392,2019 +26438,2137 @@ t3:	.type	object
 	.byte	'IfxStm_regdef.h',0,1,0,0
 	.byte	'IfxSmu_regdef.h',0,1,0,0
 	.byte	'IfxDmu_regdef.h',0,1,0,0,0
-.L304:
-.L302:
+.L322:
+.L320:
 	.sdecl	'.debug_info',debug,cluster('Can_Init')
 	.sect	'.debug_info'
-.L65:
+.L71:
 	.word	429
 	.half	3
-	.word	.L66
+	.word	.L72
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L68,.L67
+	.word	.L74,.L73
 	.byte	2
-	.word	.L61
+	.word	.L67
 	.byte	3
 	.byte	'Can_Init',0,1,17,6,1,1,1
-	.word	.L42,.L134,.L41
+	.word	.L44,.L150,.L43
 	.byte	4
 	.byte	'ls_baudrate',0,1,17,29
-	.word	.L135,.L136
+	.word	.L151,.L152
 	.byte	4
 	.byte	'CAN_Node',0,1,17,51
-	.word	.L137,.L138
+	.word	.L153,.L154
 	.byte	5
-	.word	.L42,.L134
+	.word	.L44,.L150
 	.byte	6
-	.word	.L139,.L140,.L141
+	.word	.L155,.L156,.L157
 	.byte	7
-	.word	.L142,.L143
+	.word	.L158,.L159
 	.byte	7
-	.word	.L144,.L145
+	.word	.L160,.L161
 	.byte	7
-	.word	.L146,.L147
+	.word	.L162,.L163
 	.byte	7
-	.word	.L148,.L149
+	.word	.L164,.L165
 	.byte	8
-	.word	.L150,.L140,.L141
+	.word	.L166,.L156,.L157
 	.byte	0,5
-	.word	.L151,.L152
+	.word	.L167,.L168
 	.byte	9
 	.byte	'pins',0,1,44,31
-	.word	.L153,.L154
+	.word	.L169,.L170
 	.byte	0,5
-	.word	.L155,.L12
+	.word	.L171,.L12
 	.byte	9
 	.byte	'pins',0,1,53,31
-	.word	.L156,.L157
+	.word	.L172,.L173
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Can_Init')
 	.sect	'.debug_abbrev'
-.L66:
+.L72:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,29,1,49
 	.byte	16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,0,49,16,17,1,18,1,0,0,9,52,0,3,8,58,15,59,15,57,15,73,16,2,6
 	.byte	0,0,0
 	.sdecl	'.debug_line',debug,cluster('Can_Init')
 	.sect	'.debug_line'
-.L67:
-	.word	.L306-.L305
-.L305:
+.L73:
+	.word	.L324-.L323
+.L323:
 	.half	3
-	.word	.L308-.L307
-.L307:
+	.word	.L326-.L325
+.L325:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/CAN/Can.c',0,0,0,0
 	.byte	'C:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Port\\Std\\IfxPort.h',0
 	.byte	0,0,0,0
-.L308:
+.L326:
 	.byte	5,6,7,0,5,2
-	.word	.L42
+	.word	.L44
 	.byte	3,16,1,5,31,9
-	.half	.L309-.L42
+	.half	.L327-.L44
 	.byte	3,3,1,5,42,9
-	.half	.L310-.L309
-	.byte	1,5,45,9
-	.half	.L236-.L310
-	.byte	1,5,74,9
-	.half	.L235-.L236
-	.byte	1,4,2,5,61,9
-	.half	.L140-.L235
-	.byte	3,150,5,1,5,40,9
-	.half	.L311-.L140
-	.byte	1,4,1,5,21,9
-	.half	.L141-.L311
-	.byte	3,235,122,1,5,25,9
-	.half	.L312-.L141
-	.byte	1,5,34,9
-	.half	.L313-.L312
-	.byte	3,2,1,5,55,9
-	.half	.L314-.L313
-	.byte	1,5,28,9
-	.half	.L315-.L314
-	.byte	3,1,1,5,36,9
-	.half	.L316-.L315
-	.byte	1,5,49,9
-	.half	.L317-.L316
-	.byte	1,5,57,9
-	.half	.L318-.L317
-	.byte	1,5,32,9
-	.half	.L319-.L318
-	.byte	3,1,1,5,40,9
-	.half	.L320-.L319
-	.byte	1,5,57,9
-	.half	.L321-.L320
-	.byte	1,5,65,9
-	.half	.L322-.L321
-	.byte	1,5,14,9
-	.half	.L323-.L322
-	.byte	3,4,1,9
-	.half	.L238-.L323
-	.byte	3,3,1,9
-	.half	.L240-.L238
-	.byte	3,3,1,5,13,9
-	.half	.L3-.L240
-	.byte	3,123,1,5,57,9
-	.half	.L324-.L3
-	.byte	1,5,55,9
-	.half	.L325-.L324
-	.byte	1,5,13,9
-	.half	.L326-.L325
-	.byte	3,1,1,9
-	.half	.L4-.L326
-	.byte	3,2,1,5,56,9
-	.half	.L327-.L4
-	.byte	1,5,54,9
 	.half	.L328-.L327
-	.byte	1,5,13,9
-	.half	.L329-.L328
-	.byte	3,1,1,9
-	.half	.L5-.L329
-	.byte	3,2,1,5,56,9
-	.half	.L330-.L5
-	.byte	1,5,54,9
+	.byte	1,5,45,9
+	.half	.L254-.L328
+	.byte	1,5,74,9
+	.half	.L253-.L254
+	.byte	1,4,2,5,61,9
+	.half	.L156-.L253
+	.byte	3,150,5,1,5,40,9
+	.half	.L329-.L156
+	.byte	1,4,1,5,21,9
+	.half	.L157-.L329
+	.byte	3,235,122,1,5,25,9
+	.half	.L330-.L157
+	.byte	1,5,34,9
 	.half	.L331-.L330
-	.byte	1,5,13,9
+	.byte	3,2,1,5,55,9
 	.half	.L332-.L331
-	.byte	3,1,1,5,5,9
-	.half	.L7-.L332
-	.byte	3,3,1,5,49,9
-	.half	.L333-.L7
-	.byte	1,5,47,9
+	.byte	1,5,28,9
+	.half	.L333-.L332
+	.byte	3,1,1,5,36,9
 	.half	.L334-.L333
-	.byte	1,5,5,9
-	.half	.L243-.L334
-	.byte	3,2,1,5,9,7,9
-	.half	.L244-.L243
-	.byte	3,1,1,5,41,9
-	.half	.L335-.L244
-	.byte	1,5,39,9
+	.byte	1,5,49,9
+	.half	.L335-.L334
+	.byte	1,5,57,9
 	.half	.L336-.L335
-	.byte	1,5,9,9
-	.half	.L151-.L336
-	.byte	3,2,1,5,36,9
-	.half	.L337-.L151
-	.byte	3,127,1,5,9,9
+	.byte	1,5,32,9
+	.half	.L337-.L336
+	.byte	3,1,1,5,40,9
 	.half	.L338-.L337
-	.byte	3,6,1,5,40,9
+	.byte	1,5,57,9
 	.half	.L339-.L338
-	.byte	1,5,37,9
+	.byte	1,5,65,9
 	.half	.L340-.L339
-	.byte	1,5,56,9
-	.half	.L152-.L340
-	.byte	3,121,1,5,12,9
-	.half	.L10-.L152
-	.byte	3,8,1,5,9,7,9
-	.half	.L245-.L10
-	.byte	3,1,1,5,41,9
-	.half	.L341-.L245
-	.byte	1,5,39,9
-	.half	.L342-.L341
-	.byte	1,5,9,9
-	.half	.L155-.L342
-	.byte	3,2,1,5,36,9
-	.half	.L343-.L155
-	.byte	3,127,1,5,9,9
+	.byte	1,5,14,9
+	.half	.L341-.L340
+	.byte	3,4,1,9
+	.half	.L256-.L341
+	.byte	3,3,1,9
+	.half	.L258-.L256
+	.byte	3,3,1,5,13,9
+	.half	.L3-.L258
+	.byte	3,123,1,5,57,9
+	.half	.L342-.L3
+	.byte	1,5,55,9
+	.half	.L343-.L342
+	.byte	1,5,13,9
 	.half	.L344-.L343
-	.byte	3,6,1,5,40,9
-	.half	.L345-.L344
-	.byte	1,5,37,9
+	.byte	3,1,1,9
+	.half	.L4-.L344
+	.byte	3,2,1,5,56,9
+	.half	.L345-.L4
+	.byte	1,5,54,9
 	.half	.L346-.L345
-	.byte	1,5,5,9
-	.half	.L12-.L346
-	.byte	3,3,1,5,41,9
-	.half	.L347-.L12
-	.byte	1,5,39,9
-	.half	.L348-.L347
-	.byte	1,5,5,9
+	.byte	1,5,13,9
+	.half	.L347-.L346
+	.byte	3,1,1,9
+	.half	.L5-.L347
+	.byte	3,2,1,5,56,9
+	.half	.L348-.L5
+	.byte	1,5,54,9
 	.half	.L349-.L348
-	.byte	3,1,1,5,75,9
+	.byte	1,5,13,9
 	.half	.L350-.L349
-	.byte	1,5,73,9
-	.half	.L351-.L350
-	.byte	1,5,5,9
+	.byte	3,1,1,5,5,9
+	.half	.L7-.L350
+	.byte	3,3,1,5,49,9
+	.half	.L351-.L7
+	.byte	1,5,47,9
 	.half	.L352-.L351
-	.byte	3,1,1,5,61,9
-	.half	.L353-.L352
-	.byte	1,5,59,9
+	.byte	1,5,5,9
+	.half	.L261-.L352
+	.byte	3,2,1,5,9,7,9
+	.half	.L262-.L261
+	.byte	3,1,1,5,41,9
+	.half	.L353-.L262
+	.byte	1,5,39,9
 	.half	.L354-.L353
-	.byte	1,5,5,9
-	.half	.L355-.L354
-	.byte	3,1,1,5,66,9
+	.byte	1,5,9,9
+	.half	.L167-.L354
+	.byte	3,2,1,5,36,9
+	.half	.L355-.L167
+	.byte	3,127,1,5,9,9
 	.half	.L356-.L355
-	.byte	1,5,64,9
+	.byte	3,6,1,5,40,9
 	.half	.L357-.L356
-	.byte	1,5,5,9
+	.byte	1,5,37,9
 	.half	.L358-.L357
-	.byte	3,1,1,5,66,9
-	.half	.L359-.L358
-	.byte	1,5,64,9
-	.half	.L360-.L359
-	.byte	1,5,26,9
-	.half	.L361-.L360
-	.byte	3,1,1,5,34,9
-	.half	.L362-.L361
-	.byte	1,5,48,9
-	.half	.L363-.L362
 	.byte	1,5,56,9
+	.half	.L168-.L358
+	.byte	3,121,1,5,12,9
+	.half	.L10-.L168
+	.byte	3,8,1,5,9,7,9
+	.half	.L263-.L10
+	.byte	3,1,1,5,41,9
+	.half	.L359-.L263
+	.byte	1,5,39,9
+	.half	.L360-.L359
+	.byte	1,5,9,9
+	.half	.L171-.L360
+	.byte	3,2,1,5,36,9
+	.half	.L361-.L171
+	.byte	3,127,1,5,9,9
+	.half	.L362-.L361
+	.byte	3,6,1,5,40,9
+	.half	.L363-.L362
+	.byte	1,5,37,9
 	.half	.L364-.L363
 	.byte	1,5,5,9
-	.half	.L365-.L364
-	.byte	3,3,1,5,46,9
+	.half	.L12-.L364
+	.byte	3,3,1,5,41,9
+	.half	.L365-.L12
+	.byte	1,5,39,9
 	.half	.L366-.L365
-	.byte	1,5,44,9
+	.byte	1,5,5,9
 	.half	.L367-.L366
-	.byte	1,5,5,9
+	.byte	3,1,1,5,75,9
 	.half	.L368-.L367
-	.byte	3,1,1,5,61,9
+	.byte	1,5,73,9
 	.half	.L369-.L368
-	.byte	1,5,59,9
+	.byte	1,5,5,9
 	.half	.L370-.L369
-	.byte	1,5,5,9
+	.byte	3,1,1,5,61,9
 	.half	.L371-.L370
-	.byte	3,1,1,5,60,9
+	.byte	1,5,59,9
 	.half	.L372-.L371
-	.byte	1,5,58,9
+	.byte	1,5,5,9
 	.half	.L373-.L372
-	.byte	1,5,5,9
+	.byte	3,1,1,5,66,9
 	.half	.L374-.L373
-	.byte	3,1,1,5,51,9
+	.byte	1,5,64,9
 	.half	.L375-.L374
-	.byte	1,5,49,9
+	.byte	1,5,5,9
 	.half	.L376-.L375
-	.byte	1,5,5,9
+	.byte	3,1,1,5,66,9
 	.half	.L377-.L376
-	.byte	3,2,1,5,59,9
+	.byte	1,5,64,9
 	.half	.L378-.L377
-	.byte	1,5,57,9
+	.byte	1,5,26,9
 	.half	.L379-.L378
-	.byte	1,5,5,9
+	.byte	3,1,1,5,34,9
 	.half	.L380-.L379
-	.byte	3,1,1,5,60,9
+	.byte	1,5,48,9
 	.half	.L381-.L380
-	.byte	1,5,58,9
+	.byte	1,5,56,9
 	.half	.L382-.L381
 	.byte	1,5,5,9
 	.half	.L383-.L382
-	.byte	3,1,1,5,78,9
+	.byte	3,3,1,5,46,9
 	.half	.L384-.L383
-	.byte	1,5,76,9
+	.byte	1,5,44,9
 	.half	.L385-.L384
 	.byte	1,5,5,9
 	.half	.L386-.L385
-	.byte	3,1,1,5,76,9
+	.byte	3,1,1,5,61,9
 	.half	.L387-.L386
-	.byte	1,5,74,9
+	.byte	1,5,59,9
 	.half	.L388-.L387
 	.byte	1,5,5,9
 	.half	.L389-.L388
-	.byte	3,2,1,5,71,9
+	.byte	3,1,1,5,60,9
 	.half	.L390-.L389
-	.byte	1,5,69,9
+	.byte	1,5,58,9
 	.half	.L391-.L390
 	.byte	1,5,5,9
 	.half	.L392-.L391
-	.byte	3,1,1,5,61,9
+	.byte	3,1,1,5,51,9
 	.half	.L393-.L392
-	.byte	1,5,59,9
+	.byte	1,5,49,9
 	.half	.L394-.L393
 	.byte	1,5,5,9
 	.half	.L395-.L394
-	.byte	3,1,1,5,66,9
+	.byte	3,2,1,5,59,9
 	.half	.L396-.L395
-	.byte	1,5,64,9
+	.byte	1,5,57,9
 	.half	.L397-.L396
 	.byte	1,5,5,9
 	.half	.L398-.L397
-	.byte	3,1,1,5,66,9
+	.byte	3,1,1,5,60,9
 	.half	.L399-.L398
-	.byte	1,5,64,9
+	.byte	1,5,58,9
 	.half	.L400-.L399
-	.byte	1,5,26,9
+	.byte	1,5,5,9
 	.half	.L401-.L400
-	.byte	3,1,1,5,34,9
+	.byte	3,1,1,5,78,9
 	.half	.L402-.L401
-	.byte	1,5,48,9
+	.byte	1,5,76,9
 	.half	.L403-.L402
-	.byte	1,5,56,9
+	.byte	1,5,5,9
 	.half	.L404-.L403
-	.byte	1,5,26,9
+	.byte	3,1,1,5,76,9
 	.half	.L405-.L404
-	.byte	3,3,1,5,31,9
+	.byte	1,5,74,9
 	.half	.L406-.L405
-	.byte	1,5,1,9
+	.byte	1,5,5,9
 	.half	.L407-.L406
+	.byte	3,2,1,5,71,9
+	.half	.L408-.L407
+	.byte	1,5,69,9
+	.half	.L409-.L408
+	.byte	1,5,5,9
+	.half	.L410-.L409
+	.byte	3,1,1,5,61,9
+	.half	.L411-.L410
+	.byte	1,5,59,9
+	.half	.L412-.L411
+	.byte	1,5,5,9
+	.half	.L413-.L412
+	.byte	3,1,1,5,66,9
+	.half	.L414-.L413
+	.byte	1,5,64,9
+	.half	.L415-.L414
+	.byte	1,5,5,9
+	.half	.L416-.L415
+	.byte	3,1,1,5,66,9
+	.half	.L417-.L416
+	.byte	1,5,64,9
+	.half	.L418-.L417
+	.byte	1,5,26,9
+	.half	.L419-.L418
+	.byte	3,1,1,5,34,9
+	.half	.L420-.L419
+	.byte	1,5,48,9
+	.half	.L421-.L420
+	.byte	1,5,56,9
+	.half	.L422-.L421
+	.byte	1,5,26,9
+	.half	.L423-.L422
+	.byte	3,3,1,5,31,9
+	.half	.L424-.L423
+	.byte	1,5,1,9
+	.half	.L425-.L424
 	.byte	3,1,1,7,9
-	.half	.L69-.L407
+	.half	.L75-.L425
 	.byte	0,1,1
-.L306:
+.L324:
 	.sdecl	'.debug_ranges',debug,cluster('Can_Init')
 	.sect	'.debug_ranges'
-.L68:
-	.word	-1,.L42,0,.L69-.L42,0,0
+.L74:
+	.word	-1,.L44,0,.L75-.L44,0,0
 	.sdecl	'.debug_info',debug,cluster('Can_Set_Filter_Range')
 	.sect	'.debug_info'
-.L70:
+.L76:
 	.word	312
 	.half	3
-	.word	.L71
+	.word	.L77
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L73,.L72
+	.word	.L79,.L78
 	.byte	2
-	.word	.L61
+	.word	.L67
 	.byte	3
 	.byte	'Can_Set_Filter_Range',0,1,90,6,1,1,1
-	.word	.L44,.L158,.L43
+	.word	.L46,.L174,.L45
 	.byte	4
 	.byte	'start',0,1,90,34
-	.word	.L159,.L160
+	.word	.L175,.L176
 	.byte	4
 	.byte	'end',0,1,90,48
-	.word	.L159,.L161
+	.word	.L175,.L177
 	.byte	5
-	.word	.L44,.L158
+	.word	.L46,.L174
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Can_Set_Filter_Range')
 	.sect	'.debug_abbrev'
-.L71:
+.L77:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Can_Set_Filter_Range')
 	.sect	'.debug_line'
-.L72:
-	.word	.L409-.L408
-.L408:
+.L78:
+	.word	.L427-.L426
+.L426:
 	.half	3
-	.word	.L411-.L410
-.L410:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../BSW/CAN/Can.c',0,0,0,0,0
-.L411:
-	.byte	5,5,7,0,5,2
-	.word	.L44
-	.byte	3,219,0,1,5,33,9
-	.half	.L412-.L44
-	.byte	1,5,31,9
-	.half	.L413-.L412
-	.byte	1,5,5,9
-	.half	.L414-.L413
-	.byte	3,1,1,5,31,9
-	.half	.L415-.L414
-	.byte	1,5,29,9
-	.half	.L416-.L415
-	.byte	1,5,5,9
-	.half	.L417-.L416
-	.byte	3,1,1,5,47,9
-	.half	.L418-.L417
-	.byte	1,5,45,9
-	.half	.L419-.L418
-	.byte	1,5,5,9
-	.half	.L420-.L419
-	.byte	3,1,1,5,28,9
-	.half	.L421-.L420
-	.byte	1,5,5,9
-	.half	.L422-.L421
-	.byte	3,1,1,5,28,9
-	.half	.L423-.L422
-	.byte	1,5,35,9
-	.half	.L424-.L423
-	.byte	3,1,1,5,43,9
-	.half	.L425-.L424
-	.byte	1,5,57,9
-	.half	.L426-.L425
-	.byte	1,5,65,9
-	.half	.L427-.L426
-	.byte	1,5,1,9
-	.half	.L246-.L427
-	.byte	3,1,1,7,9
-	.half	.L74-.L246
-	.byte	0,1,1
-.L409:
-	.sdecl	'.debug_ranges',debug,cluster('Can_Set_Filter_Range')
-	.sect	'.debug_ranges'
-.L73:
-	.word	-1,.L44,0,.L74-.L44,0,0
-	.sdecl	'.debug_info',debug,cluster('Can_Set_Filter_Mask')
-	.sect	'.debug_info'
-.L75:
-	.word	309
-	.half	3
-	.word	.L76
-	.byte	4,1
-	.byte	'../BSW/CAN/Can.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
-	.byte	12,1
-	.word	.L78,.L77
-	.byte	2
-	.word	.L61
-	.byte	3
-	.byte	'Can_Set_Filter_Mask',0,1,100,6,1,1,1
-	.word	.L46,.L162,.L45
-	.byte	4
-	.byte	'id',0,1,100,33
-	.word	.L159,.L163
-	.byte	4
-	.byte	'mask',0,1,100,44
-	.word	.L159,.L164
-	.byte	5
-	.word	.L46,.L162
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('Can_Set_Filter_Mask')
-	.sect	'.debug_abbrev'
-.L76:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('Can_Set_Filter_Mask')
-	.sect	'.debug_line'
-.L77:
 	.word	.L429-.L428
 .L428:
-	.half	3
-	.word	.L431-.L430
-.L430:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/CAN/Can.c',0,0,0,0,0
-.L431:
+.L429:
 	.byte	5,5,7,0,5,2
 	.word	.L46
-	.byte	3,229,0,1,5,33,9
-	.half	.L432-.L46
+	.byte	3,219,0,1,5,33,9
+	.half	.L430-.L46
 	.byte	1,5,31,9
-	.half	.L433-.L432
+	.half	.L431-.L430
 	.byte	1,5,5,9
-	.half	.L434-.L433
+	.half	.L432-.L431
 	.byte	3,1,1,5,31,9
-	.half	.L435-.L434
+	.half	.L433-.L432
 	.byte	1,5,29,9
-	.half	.L436-.L435
+	.half	.L434-.L433
 	.byte	1,5,5,9
-	.half	.L437-.L436
+	.half	.L435-.L434
 	.byte	3,1,1,5,47,9
-	.half	.L438-.L437
+	.half	.L436-.L435
 	.byte	1,5,45,9
+	.half	.L437-.L436
+	.byte	1,5,5,9
+	.half	.L438-.L437
+	.byte	3,1,1,5,28,9
 	.half	.L439-.L438
 	.byte	1,5,5,9
 	.half	.L440-.L439
 	.byte	3,1,1,5,28,9
 	.half	.L441-.L440
-	.byte	1,5,5,9
-	.half	.L442-.L441
-	.byte	3,1,1,5,28,9
-	.half	.L443-.L442
 	.byte	1,5,35,9
-	.half	.L444-.L443
+	.half	.L442-.L441
 	.byte	3,1,1,5,43,9
-	.half	.L445-.L444
+	.half	.L443-.L442
 	.byte	1,5,57,9
-	.half	.L446-.L445
+	.half	.L444-.L443
 	.byte	1,5,65,9
-	.half	.L447-.L446
+	.half	.L445-.L444
 	.byte	1,5,1,9
-	.half	.L247-.L447
+	.half	.L264-.L445
 	.byte	3,1,1,7,9
-	.half	.L79-.L247
+	.half	.L80-.L264
 	.byte	0,1,1
-.L429:
-	.sdecl	'.debug_ranges',debug,cluster('Can_Set_Filter_Mask')
+.L427:
+	.sdecl	'.debug_ranges',debug,cluster('Can_Set_Filter_Range')
 	.sect	'.debug_ranges'
-.L78:
-	.word	-1,.L46,0,.L79-.L46,0,0
-	.sdecl	'.debug_info',debug,cluster('Can_Send_Msg')
+.L79:
+	.word	-1,.L46,0,.L80-.L46,0,0
+	.sdecl	'.debug_info',debug,cluster('Can_Set_Filter_Mask')
 	.sect	'.debug_info'
-.L80:
-	.word	345
+.L81:
+	.word	309
 	.half	3
-	.word	.L81
+	.word	.L82
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L83,.L82
+	.word	.L84,.L83
 	.byte	2
-	.word	.L61
+	.word	.L67
+	.byte	3
+	.byte	'Can_Set_Filter_Mask',0,1,100,6,1,1,1
+	.word	.L48,.L178,.L47
+	.byte	4
+	.byte	'id',0,1,100,33
+	.word	.L175,.L179
+	.byte	4
+	.byte	'mask',0,1,100,44
+	.word	.L175,.L180
+	.byte	5
+	.word	.L48,.L178
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Can_Set_Filter_Mask')
+	.sect	'.debug_abbrev'
+.L82:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Can_Set_Filter_Mask')
+	.sect	'.debug_line'
+.L83:
+	.word	.L447-.L446
+.L446:
+	.half	3
+	.word	.L449-.L448
+.L448:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/CAN/Can.c',0,0,0,0,0
+.L449:
+	.byte	5,5,7,0,5,2
+	.word	.L48
+	.byte	3,229,0,1,5,33,9
+	.half	.L450-.L48
+	.byte	1,5,31,9
+	.half	.L451-.L450
+	.byte	1,5,5,9
+	.half	.L452-.L451
+	.byte	3,1,1,5,31,9
+	.half	.L453-.L452
+	.byte	1,5,29,9
+	.half	.L454-.L453
+	.byte	1,5,5,9
+	.half	.L455-.L454
+	.byte	3,1,1,5,47,9
+	.half	.L456-.L455
+	.byte	1,5,45,9
+	.half	.L457-.L456
+	.byte	1,5,5,9
+	.half	.L458-.L457
+	.byte	3,1,1,5,28,9
+	.half	.L459-.L458
+	.byte	1,5,5,9
+	.half	.L460-.L459
+	.byte	3,1,1,5,28,9
+	.half	.L461-.L460
+	.byte	1,5,35,9
+	.half	.L462-.L461
+	.byte	3,1,1,5,43,9
+	.half	.L463-.L462
+	.byte	1,5,57,9
+	.half	.L464-.L463
+	.byte	1,5,65,9
+	.half	.L465-.L464
+	.byte	1,5,1,9
+	.half	.L265-.L465
+	.byte	3,1,1,7,9
+	.half	.L85-.L265
+	.byte	0,1,1
+.L447:
+	.sdecl	'.debug_ranges',debug,cluster('Can_Set_Filter_Mask')
+	.sect	'.debug_ranges'
+.L84:
+	.word	-1,.L48,0,.L85-.L48,0,0
+	.sdecl	'.debug_info',debug,cluster('Can_Send_Msg')
+	.sect	'.debug_info'
+.L86:
+	.word	345
+	.half	3
+	.word	.L87
+	.byte	4,1
+	.byte	'../BSW/CAN/Can.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L89,.L88
+	.byte	2
+	.word	.L67
 	.byte	3
 	.byte	'Can_Send_Msg',0,1,110,6,1,1,1
-	.word	.L48,.L165,.L47
+	.word	.L50,.L181,.L49
 	.byte	4
 	.byte	'id',0,1,110,32
-	.word	.L166,.L167
+	.word	.L182,.L183
 	.byte	4
 	.byte	'txData',0,1,110,49
-	.word	.L168,.L169
+	.word	.L184,.L185
 	.byte	4
 	.byte	'len',0,1,110,61
-	.word	.L170,.L171
+	.word	.L186,.L187
 	.byte	5
-	.word	.L48,.L165
+	.word	.L50,.L181
 	.byte	5
-	.word	.L172,.L173
+	.word	.L188,.L189
 	.byte	6
 	.byte	'i',0,1,119,14
-	.word	.L170,.L174
+	.word	.L186,.L190
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Can_Send_Msg')
 	.sect	'.debug_abbrev'
-.L81:
+.L87:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Can_Send_Msg')
 	.sect	'.debug_line'
-.L82:
-	.word	.L449-.L448
-.L448:
+.L88:
+	.word	.L467-.L466
+.L466:
 	.half	3
-	.word	.L451-.L450
-.L450:
+	.word	.L469-.L468
+.L468:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/CAN/Can.c',0,0,0,0,0
-.L451:
+.L469:
 	.byte	5,6,7,0,5,2
-	.word	.L48
+	.word	.L50
 	.byte	3,237,0,1,5,29,9
-	.half	.L253-.L48
+	.half	.L271-.L50
 	.byte	3,3,1,5,37,9
-	.half	.L452-.L253
+	.half	.L470-.L271
 	.byte	1,5,5,9
-	.half	.L248-.L452
+	.half	.L266-.L470
 	.byte	3,2,1,5,30,9
-	.half	.L453-.L248
+	.half	.L471-.L266
 	.byte	1,5,5,9
-	.half	.L454-.L453
+	.half	.L472-.L471
 	.byte	3,1,1,5,37,9
-	.half	.L455-.L454
+	.half	.L473-.L472
 	.byte	1,5,35,9
-	.half	.L251-.L455
+	.half	.L269-.L473
 	.byte	1,5,16,9
-	.half	.L172-.L251
+	.half	.L188-.L269
 	.byte	3,3,1,5,26,9
-	.half	.L254-.L172
+	.half	.L272-.L188
 	.byte	1,5,9,9
-	.half	.L16-.L254
+	.half	.L16-.L272
 	.byte	3,1,1,5,24,9
-	.half	.L456-.L16
+	.half	.L474-.L16
 	.byte	1,5,36,9
-	.half	.L457-.L456
+	.half	.L475-.L474
 	.byte	1,5,28,9
-	.half	.L458-.L457
+	.half	.L476-.L475
 	.byte	1,5,29,9
-	.half	.L459-.L458
+	.half	.L477-.L476
 	.byte	3,127,1,5,25,9
-	.half	.L15-.L459
+	.half	.L15-.L477
 	.byte	1,5,26,9
-	.half	.L460-.L15
+	.half	.L478-.L15
 	.byte	1,5,105,7,9
-	.half	.L173-.L460
+	.half	.L189-.L478
 	.byte	3,6,1,5,36,9
-	.half	.L17-.L173
+	.half	.L17-.L189
 	.byte	1,5,44,9
-	.half	.L461-.L17
+	.half	.L479-.L17
 	.byte	1,5,58,9
-	.half	.L462-.L461
+	.half	.L480-.L479
 	.byte	1,5,66,9
-	.half	.L463-.L462
+	.half	.L481-.L480
 	.byte	1,5,85,9
-	.half	.L464-.L463
+	.half	.L482-.L481
 	.byte	1,5,93,9
-	.half	.L465-.L464
+	.half	.L483-.L482
 	.byte	1,5,74,9
-	.half	.L466-.L465
+	.half	.L484-.L483
 	.byte	1,5,12,9
-	.half	.L467-.L466
+	.half	.L485-.L484
 	.byte	3,127,1,5,105,9
-	.half	.L468-.L467
+	.half	.L486-.L485
 	.byte	3,1,1,5,1,7,9
-	.half	.L469-.L468
+	.half	.L487-.L486
 	.byte	3,3,1,7,9
-	.half	.L84-.L469
+	.half	.L90-.L487
 	.byte	0,1,1
-.L449:
+.L467:
 	.sdecl	'.debug_ranges',debug,cluster('Can_Send_Msg')
 	.sect	'.debug_ranges'
-.L83:
-	.word	-1,.L48,0,.L84-.L48,0,0
+.L89:
+	.word	-1,.L50,0,.L90-.L50,0,0
 	.sdecl	'.debug_info',debug,cluster('Can_Recv_Msg')
 	.sect	'.debug_info'
-.L85:
+.L91:
 	.word	436
 	.half	3
-	.word	.L86
+	.word	.L92
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L88,.L87
+	.word	.L94,.L93
 	.byte	2
-	.word	.L61
+	.word	.L67
 	.byte	3
 	.byte	'Can_Recv_Msg',0,1,212,1,5
-	.word	.L170
+	.word	.L186
 	.byte	1,1,1
-	.word	.L56,.L175,.L55
+	.word	.L58,.L191,.L57
 	.byte	4
 	.byte	'id',0,1,212,1,32
-	.word	.L176,.L177
+	.word	.L192,.L193
 	.byte	4
 	.byte	'rxData',0,1,212,1,43
-	.word	.L178,.L179
+	.word	.L194,.L195
 	.byte	4
 	.byte	'len',0,1,212,1,56
-	.word	.L180,.L181
+	.word	.L196,.L197
 	.byte	5
-	.word	.L56,.L175
+	.word	.L58,.L191
 	.byte	6
 	.byte	'err',0,1,214,1,9
-	.word	.L170,.L182
+	.word	.L186,.L198
 	.byte	7
-	.word	.L183,.L184,.L185
+	.word	.L199,.L200,.L201
 	.byte	8
-	.word	.L186,.L187
+	.word	.L202,.L203
 	.byte	8
-	.word	.L188,.L189
+	.word	.L204,.L205
 	.byte	9
-	.word	.L190,.L184,.L185
+	.word	.L206,.L200,.L201
 	.byte	6
 	.byte	'value',0,2,240,13,12
-	.word	.L159,.L191
+	.word	.L175,.L207
 	.byte	0,0,5
-	.word	.L192,.L193
+	.word	.L208,.L209
 	.byte	6
 	.byte	'i',0,1,228,1,14
-	.word	.L170,.L194
+	.word	.L186,.L210
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Can_Recv_Msg')
 	.sect	'.debug_abbrev'
-.L86:
+.L92:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,17
 	.byte	1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Can_Recv_Msg')
 	.sect	'.debug_line'
-.L87:
-	.word	.L471-.L470
-.L470:
+.L93:
+	.word	.L489-.L488
+.L488:
 	.half	3
-	.word	.L473-.L472
-.L472:
+	.word	.L491-.L490
+.L490:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/CAN/Can.c',0,0,0,0
 	.byte	'C:\\\\Users\\\\USER\\\\Desktop\\\\Coding\\\\C\\\\proj1\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Can\\Std\\IfxCan.h',0
 	.byte	0,0,0,0
-.L473:
+.L491:
 	.byte	5,5,7,0,5,2
-	.word	.L56
+	.word	.L58
 	.byte	3,211,1,1,5,13,9
-	.half	.L290-.L56
+	.half	.L308-.L58
 	.byte	3,2,1,5,36,9
-	.half	.L291-.L290
+	.half	.L309-.L308
 	.byte	3,2,1,5,55,9
-	.half	.L474-.L291
+	.half	.L492-.L309
 	.byte	1,5,62,9
-	.half	.L475-.L474
+	.half	.L493-.L492
 	.byte	1,4,2,5,21,9
-	.half	.L184-.L475
+	.half	.L200-.L493
 	.byte	3,152,12,1,5,24,9
-	.half	.L476-.L184
+	.half	.L494-.L200
 	.byte	1,5,16,9
-	.half	.L292-.L476
+	.half	.L310-.L494
 	.byte	3,1,1,4,1,5,5,9
-	.half	.L185-.L292
+	.half	.L201-.L310
 	.byte	3,234,115,1,5,38,9
-	.half	.L477-.L185
+	.half	.L495-.L201
 	.byte	1,5,36,9
-	.half	.L293-.L477
+	.half	.L311-.L495
 	.byte	1,5,5,9
-	.half	.L478-.L293
+	.half	.L496-.L311
 	.byte	3,1,1,5,38,9
-	.half	.L479-.L478
+	.half	.L497-.L496
 	.byte	1,5,36,9
-	.half	.L480-.L479
+	.half	.L498-.L497
 	.byte	1,5,29,9
-	.half	.L481-.L480
+	.half	.L499-.L498
 	.byte	3,3,1,5,37,9
-	.half	.L482-.L481
+	.half	.L500-.L499
 	.byte	1,5,29,9
-	.half	.L285-.L482
+	.half	.L303-.L500
 	.byte	3,1,1,5,37,9
-	.half	.L483-.L285
+	.half	.L501-.L303
 	.byte	1,5,39,9
-	.half	.L287-.L483
+	.half	.L305-.L501
 	.byte	3,1,1,5,47,9
-	.half	.L484-.L287
+	.half	.L502-.L305
 	.byte	1,5,28,9
-	.half	.L286-.L484
+	.half	.L304-.L502
 	.byte	1,5,11,9
-	.half	.L485-.L286
+	.half	.L503-.L304
 	.byte	3,2,1,5,25,9
-	.half	.L486-.L485
+	.half	.L504-.L503
 	.byte	1,5,9,9
-	.half	.L487-.L486
+	.half	.L505-.L504
 	.byte	1,5,16,9
-	.half	.L192-.L487
+	.half	.L208-.L505
 	.byte	3,1,1,5,26,9
-	.half	.L294-.L192
+	.half	.L312-.L208
 	.byte	1,5,15,9
-	.half	.L28-.L294
+	.half	.L28-.L312
 	.byte	3,1,1,5,21,9
-	.half	.L488-.L28
+	.half	.L506-.L28
 	.byte	1,5,36,9
-	.half	.L489-.L488
+	.half	.L507-.L506
 	.byte	1,5,19,9
-	.half	.L490-.L489
+	.half	.L508-.L507
 	.byte	1,5,29,9
-	.half	.L491-.L490
+	.half	.L509-.L508
 	.byte	3,127,1,5,25,9
-	.half	.L27-.L491
+	.half	.L27-.L509
 	.byte	1,5,26,9
-	.half	.L492-.L27
+	.half	.L510-.L27
 	.byte	1,5,12,7,9
-	.half	.L193-.L492
+	.half	.L209-.L510
 	.byte	3,3,1,5,26,9
-	.half	.L493-.L193
+	.half	.L511-.L209
 	.byte	1,5,10,9
-	.half	.L295-.L493
+	.half	.L313-.L511
 	.byte	1,5,5,9
-	.half	.L494-.L295
+	.half	.L512-.L313
 	.byte	3,2,1,5,1,9
-	.half	.L29-.L494
+	.half	.L29-.L512
 	.byte	3,1,1,7,9
-	.half	.L89-.L29
+	.half	.L95-.L29
 	.byte	0,1,1
-.L471:
+.L489:
 	.sdecl	'.debug_ranges',debug,cluster('Can_Recv_Msg')
 	.sect	'.debug_ranges'
-.L88:
-	.word	-1,.L56,0,.L89-.L56,0,0
+.L94:
+	.word	-1,.L58,0,.L95-.L58,0,0
 	.sdecl	'.debug_info',debug,cluster('Can_Send_Dist_Data')
 	.sect	'.debug_info'
-.L90:
+.L96:
 	.word	387
 	.half	3
-	.word	.L91
+	.word	.L97
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L93,.L92
+	.word	.L99,.L98
 	.byte	2
-	.word	.L61
+	.word	.L67
 	.byte	3
 	.byte	'Can_Send_Dist_Data',0,1,148,1,6,1,1,1
-	.word	.L52,.L195,.L51
+	.word	.L54,.L211,.L53
 	.byte	4
 	.byte	'id',0,1,148,1,38
-	.word	.L166,.L196
+	.word	.L182,.L212
 	.byte	4
 	.byte	'front_dist',0,1,148,1,49
-	.word	.L197,.L198
+	.word	.L213,.L214
 	.byte	4
 	.byte	'left_dist',0,1,148,1,68
-	.word	.L197,.L199
+	.word	.L213,.L215
 	.byte	4
 	.byte	'right_dist',0,1,148,1,86
-	.word	.L197,.L200
+	.word	.L213,.L216
 	.byte	4
 	.byte	'back_dist',0,1,148,1,105
-	.word	.L197,.L201
+	.word	.L213,.L217
 	.byte	5
-	.word	.L52,.L195
+	.word	.L54,.L211
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Can_Send_Dist_Data')
 	.sect	'.debug_abbrev'
-.L91:
+.L97:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Can_Send_Dist_Data')
 	.sect	'.debug_line'
-.L92:
-	.word	.L496-.L495
-.L495:
+.L98:
+	.word	.L514-.L513
+.L513:
 	.half	3
-	.word	.L498-.L497
-.L497:
+	.word	.L516-.L515
+.L515:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/CAN/Can.c',0,0,0,0,0
-.L498:
+.L516:
 	.byte	5,6,7,0,5,2
-	.word	.L52
+	.word	.L54
 	.byte	3,147,1,1,5,29,9
-	.half	.L263-.L52
+	.half	.L281-.L54
 	.byte	3,3,1,5,37,9
-	.half	.L499-.L263
+	.half	.L517-.L281
 	.byte	1,5,5,9
-	.half	.L262-.L499
+	.half	.L280-.L517
 	.byte	3,2,1,5,30,9
-	.half	.L265-.L262
+	.half	.L283-.L280
 	.byte	1,5,5,9
-	.half	.L266-.L265
+	.half	.L284-.L283
 	.byte	3,1,1,5,37,9
-	.half	.L500-.L266
+	.half	.L518-.L284
 	.byte	1,5,35,9
-	.half	.L501-.L500
-	.byte	1,5,5,9
-	.half	.L502-.L501
-	.byte	3,4,1,5,45,9
-	.half	.L267-.L502
-	.byte	1,5,24,9
-	.half	.L268-.L267
-	.byte	1,5,5,9
-	.half	.L503-.L268
-	.byte	3,1,1,5,46,9
-	.half	.L504-.L503
-	.byte	1,5,52,9
-	.half	.L505-.L504
-	.byte	1,5,24,9
-	.half	.L506-.L505
-	.byte	1,5,5,9
-	.half	.L507-.L506
-	.byte	3,1,1,5,44,9
-	.half	.L269-.L507
-	.byte	1,5,24,9
-	.half	.L270-.L269
-	.byte	1,5,5,9
-	.half	.L508-.L270
-	.byte	3,1,1,5,45,9
-	.half	.L509-.L508
-	.byte	1,5,51,9
-	.half	.L510-.L509
-	.byte	1,5,24,9
-	.half	.L511-.L510
-	.byte	1,5,5,9
-	.half	.L512-.L511
-	.byte	3,1,1,5,45,9
-	.half	.L271-.L512
-	.byte	1,5,24,9
-	.half	.L272-.L271
-	.byte	1,5,5,9
-	.half	.L513-.L272
-	.byte	3,1,1,5,46,9
-	.half	.L514-.L513
-	.byte	1,5,52,9
-	.half	.L515-.L514
-	.byte	1,5,24,9
-	.half	.L516-.L515
-	.byte	1,5,5,9
-	.half	.L517-.L516
-	.byte	3,1,1,5,44,9
-	.half	.L518-.L517
-	.byte	1,5,24,9
 	.half	.L519-.L518
 	.byte	1,5,5,9
 	.half	.L520-.L519
-	.byte	3,1,1,5,45,9
-	.half	.L521-.L520
-	.byte	1,5,51,9
-	.half	.L264-.L521
+	.byte	3,4,1,5,45,9
+	.half	.L285-.L520
 	.byte	1,5,24,9
-	.half	.L522-.L264
-	.byte	1,5,105,9
+	.half	.L286-.L285
+	.byte	1,5,5,9
+	.half	.L521-.L286
+	.byte	3,1,1,5,46,9
+	.half	.L522-.L521
+	.byte	1,5,52,9
 	.half	.L523-.L522
-	.byte	3,4,1,5,36,9
-	.half	.L23-.L523
-	.byte	1,5,44,9
-	.half	.L524-.L23
-	.byte	1,5,58,9
+	.byte	1,5,24,9
+	.half	.L524-.L523
+	.byte	1,5,5,9
 	.half	.L525-.L524
-	.byte	1,5,66,9
-	.half	.L526-.L525
-	.byte	1,5,85,9
+	.byte	3,1,1,5,44,9
+	.half	.L287-.L525
+	.byte	1,5,24,9
+	.half	.L288-.L287
+	.byte	1,5,5,9
+	.half	.L526-.L288
+	.byte	3,1,1,5,45,9
 	.half	.L527-.L526
-	.byte	1,5,93,9
+	.byte	1,5,51,9
 	.half	.L528-.L527
-	.byte	1,5,74,9
+	.byte	1,5,24,9
 	.half	.L529-.L528
-	.byte	1,5,12,9
+	.byte	1,5,5,9
 	.half	.L530-.L529
-	.byte	3,127,1,5,105,9
-	.half	.L531-.L530
-	.byte	3,1,1,5,1,7,9
+	.byte	3,1,1,5,45,9
+	.half	.L289-.L530
+	.byte	1,5,24,9
+	.half	.L290-.L289
+	.byte	1,5,5,9
+	.half	.L531-.L290
+	.byte	3,1,1,5,46,9
 	.half	.L532-.L531
+	.byte	1,5,52,9
+	.half	.L533-.L532
+	.byte	1,5,24,9
+	.half	.L534-.L533
+	.byte	1,5,5,9
+	.half	.L535-.L534
+	.byte	3,1,1,5,44,9
+	.half	.L536-.L535
+	.byte	1,5,24,9
+	.half	.L537-.L536
+	.byte	1,5,5,9
+	.half	.L538-.L537
+	.byte	3,1,1,5,45,9
+	.half	.L539-.L538
+	.byte	1,5,51,9
+	.half	.L282-.L539
+	.byte	1,5,24,9
+	.half	.L540-.L282
+	.byte	1,5,105,9
+	.half	.L541-.L540
+	.byte	3,4,1,5,36,9
+	.half	.L23-.L541
+	.byte	1,5,44,9
+	.half	.L542-.L23
+	.byte	1,5,58,9
+	.half	.L543-.L542
+	.byte	1,5,66,9
+	.half	.L544-.L543
+	.byte	1,5,85,9
+	.half	.L545-.L544
+	.byte	1,5,93,9
+	.half	.L546-.L545
+	.byte	1,5,74,9
+	.half	.L547-.L546
+	.byte	1,5,12,9
+	.half	.L548-.L547
+	.byte	3,127,1,5,105,9
+	.half	.L549-.L548
+	.byte	3,1,1,5,1,7,9
+	.half	.L550-.L549
 	.byte	3,9,1,7,9
-	.half	.L94-.L532
+	.half	.L100-.L550
 	.byte	0,1,1
-.L496:
+.L514:
 	.sdecl	'.debug_ranges',debug,cluster('Can_Send_Dist_Data')
 	.sect	'.debug_ranges'
-.L93:
-	.word	-1,.L52,0,.L94-.L52,0,0
+.L99:
+	.word	-1,.L54,0,.L100-.L54,0,0
 	.sdecl	'.debug_info',debug,cluster('Can_Send_Vel_Data')
 	.sect	'.debug_info'
-.L95:
+.L101:
 	.word	337
 	.half	3
-	.word	.L96
+	.word	.L102
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L98,.L97
+	.word	.L104,.L103
 	.byte	2
-	.word	.L61
+	.word	.L67
 	.byte	3
 	.byte	'Can_Send_Vel_Data',0,1,179,1,6,1,1,1
-	.word	.L54,.L202,.L53
+	.word	.L56,.L218,.L55
 	.byte	4
 	.byte	'id',0,1,179,1,37
-	.word	.L166,.L203
+	.word	.L182,.L219
 	.byte	4
 	.byte	'left_vel',0,1,179,1,48
-	.word	.L159,.L204
+	.word	.L175,.L220
 	.byte	4
 	.byte	'right_vel',0,1,179,1,65
-	.word	.L159,.L205
+	.word	.L175,.L221
 	.byte	5
-	.word	.L54,.L202
+	.word	.L56,.L218
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Can_Send_Vel_Data')
 	.sect	'.debug_abbrev'
-.L96:
+.L102:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Can_Send_Vel_Data')
 	.sect	'.debug_line'
-.L97:
-	.word	.L534-.L533
-.L533:
+.L103:
+	.word	.L552-.L551
+.L551:
 	.half	3
-	.word	.L536-.L535
-.L535:
+	.word	.L554-.L553
+.L553:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/CAN/Can.c',0,0,0,0,0
-.L536:
+.L554:
 	.byte	5,6,7,0,5,2
-	.word	.L54
+	.word	.L56
 	.byte	3,178,1,1,5,29,9
-	.half	.L274-.L54
+	.half	.L292-.L56
 	.byte	3,3,1,5,37,9
-	.half	.L537-.L274
+	.half	.L555-.L292
 	.byte	1,5,5,9
-	.half	.L273-.L537
+	.half	.L291-.L555
 	.byte	3,2,1,5,30,9
-	.half	.L275-.L273
+	.half	.L293-.L291
 	.byte	1,5,5,9
-	.half	.L276-.L275
+	.half	.L294-.L293
 	.byte	3,1,1,5,37,9
-	.half	.L538-.L276
+	.half	.L556-.L294
 	.byte	1,5,35,9
-	.half	.L539-.L538
+	.half	.L557-.L556
 	.byte	1,5,5,9
-	.half	.L540-.L539
-	.byte	3,5,1,5,50,9
-	.half	.L277-.L540
-	.byte	1,5,24,9
-	.half	.L278-.L277
-	.byte	1,5,5,9
-	.half	.L541-.L278
-	.byte	3,1,1,5,52,9
-	.half	.L279-.L541
-	.byte	1,5,24,9
-	.half	.L280-.L279
-	.byte	1,5,5,9
-	.half	.L542-.L280
-	.byte	3,1,1,5,52,9
-	.half	.L281-.L542
-	.byte	1,5,24,9
-	.half	.L282-.L281
-	.byte	1,5,5,9
-	.half	.L543-.L282
-	.byte	3,1,1,5,52,9
-	.half	.L283-.L543
-	.byte	1,5,24,9
-	.half	.L284-.L283
-	.byte	1,5,5,9
-	.half	.L544-.L284
-	.byte	3,2,1,5,51,9
-	.half	.L545-.L544
-	.byte	1,5,24,9
-	.half	.L546-.L545
-	.byte	1,5,5,9
-	.half	.L547-.L546
-	.byte	3,1,1,5,53,9
-	.half	.L548-.L547
-	.byte	1,5,24,9
-	.half	.L549-.L548
-	.byte	1,5,5,9
-	.half	.L550-.L549
-	.byte	3,1,1,5,53,9
-	.half	.L551-.L550
-	.byte	1,5,24,9
-	.half	.L552-.L551
-	.byte	1,5,5,9
-	.half	.L553-.L552
-	.byte	3,1,1,5,53,9
-	.half	.L554-.L553
-	.byte	1,5,24,9
-	.half	.L555-.L554
-	.byte	1,5,105,9
-	.half	.L556-.L555
-	.byte	3,4,1,5,36,9
-	.half	.L25-.L556
-	.byte	1,5,44,9
-	.half	.L557-.L25
-	.byte	1,5,58,9
 	.half	.L558-.L557
-	.byte	1,5,66,9
-	.half	.L559-.L558
-	.byte	1,5,85,9
-	.half	.L560-.L559
-	.byte	1,5,93,9
-	.half	.L561-.L560
-	.byte	1,5,74,9
-	.half	.L562-.L561
-	.byte	1,5,12,9
+	.byte	3,5,1,5,50,9
+	.half	.L295-.L558
+	.byte	1,5,24,9
+	.half	.L296-.L295
+	.byte	1,5,5,9
+	.half	.L559-.L296
+	.byte	3,1,1,5,52,9
+	.half	.L297-.L559
+	.byte	1,5,24,9
+	.half	.L298-.L297
+	.byte	1,5,5,9
+	.half	.L560-.L298
+	.byte	3,1,1,5,52,9
+	.half	.L299-.L560
+	.byte	1,5,24,9
+	.half	.L300-.L299
+	.byte	1,5,5,9
+	.half	.L561-.L300
+	.byte	3,1,1,5,52,9
+	.half	.L301-.L561
+	.byte	1,5,24,9
+	.half	.L302-.L301
+	.byte	1,5,5,9
+	.half	.L562-.L302
+	.byte	3,2,1,5,51,9
 	.half	.L563-.L562
-	.byte	3,127,1,5,105,9
+	.byte	1,5,24,9
 	.half	.L564-.L563
-	.byte	3,1,1,5,1,7,9
+	.byte	1,5,5,9
 	.half	.L565-.L564
+	.byte	3,1,1,5,53,9
+	.half	.L566-.L565
+	.byte	1,5,24,9
+	.half	.L567-.L566
+	.byte	1,5,5,9
+	.half	.L568-.L567
+	.byte	3,1,1,5,53,9
+	.half	.L569-.L568
+	.byte	1,5,24,9
+	.half	.L570-.L569
+	.byte	1,5,5,9
+	.half	.L571-.L570
+	.byte	3,1,1,5,53,9
+	.half	.L572-.L571
+	.byte	1,5,24,9
+	.half	.L573-.L572
+	.byte	1,5,105,9
+	.half	.L574-.L573
+	.byte	3,4,1,5,36,9
+	.half	.L25-.L574
+	.byte	1,5,44,9
+	.half	.L575-.L25
+	.byte	1,5,58,9
+	.half	.L576-.L575
+	.byte	1,5,66,9
+	.half	.L577-.L576
+	.byte	1,5,85,9
+	.half	.L578-.L577
+	.byte	1,5,93,9
+	.half	.L579-.L578
+	.byte	1,5,74,9
+	.half	.L580-.L579
+	.byte	1,5,12,9
+	.half	.L581-.L580
+	.byte	3,127,1,5,105,9
+	.half	.L582-.L581
+	.byte	3,1,1,5,1,7,9
+	.half	.L583-.L582
 	.byte	3,7,1,7,9
-	.half	.L99-.L565
+	.half	.L105-.L583
 	.byte	0,1,1
-.L534:
+.L552:
 	.sdecl	'.debug_ranges',debug,cluster('Can_Send_Vel_Data')
 	.sect	'.debug_ranges'
-.L98:
-	.word	-1,.L54,0,.L99-.L54,0,0
+.L104:
+	.word	-1,.L56,0,.L105-.L56,0,0
 	.sdecl	'.debug_info',debug,cluster('Can_Get_Front_Dist')
 	.sect	'.debug_info'
-.L100:
+.L106:
 	.word	280
 	.half	3
-	.word	.L101
+	.word	.L107
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L103,.L102
+	.word	.L109,.L108
 	.byte	2
-	.word	.L61
+	.word	.L67
 	.byte	3
 	.byte	'Can_Get_Front_Dist',0,1,12,14
-	.word	.L166
+	.word	.L182
 	.byte	1,1,1
-	.word	.L40,.L206,.L39
+	.word	.L42,.L222,.L41
 	.byte	4
-	.word	.L40,.L206
+	.word	.L42,.L222
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Can_Get_Front_Dist')
 	.sect	'.debug_abbrev'
-.L101:
+.L107:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Can_Get_Front_Dist')
 	.sect	'.debug_line'
-.L102:
-	.word	.L567-.L566
-.L566:
+.L108:
+	.word	.L585-.L584
+.L584:
 	.half	3
-	.word	.L569-.L568
-.L568:
+	.word	.L587-.L586
+.L586:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/CAN/Can.c',0,0,0,0,0
-.L569:
+.L587:
 	.byte	5,12,7,0,5,2
-	.word	.L40
+	.word	.L42
 	.byte	3,12,1,5,5,9
-	.half	.L570-.L40
+	.half	.L588-.L42
 	.byte	1,5,1,9
-	.half	.L2-.L570
+	.half	.L2-.L588
 	.byte	3,1,1,7,9
-	.half	.L104-.L2
+	.half	.L110-.L2
 	.byte	0,1,1
-.L567:
+.L585:
 	.sdecl	'.debug_ranges',debug,cluster('Can_Get_Front_Dist')
 	.sect	'.debug_ranges'
-.L103:
-	.word	-1,.L40,0,.L104-.L40,0,0
+.L109:
+	.word	-1,.L42,0,.L110-.L42,0,0
 	.sdecl	'.debug_info',debug,cluster('Can_Rx_Isr_Handler')
 	.sect	'.debug_info'
-.L105:
+.L111:
 	.word	428
 	.half	3
-	.word	.L106
+	.word	.L112
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L108,.L107
+	.word	.L114,.L113
 	.byte	2
-	.word	.L61
+	.word	.L67
 	.byte	3
 	.byte	'Can_Rx_Isr_Handler',0,1,129,2,6,1,1,1
-	.word	.L58,.L207,.L57
+	.word	.L60,.L223,.L59
 	.byte	4
-	.word	.L58,.L207
+	.word	.L60,.L223
 	.byte	4
-	.word	.L208,.L207
+	.word	.L224,.L223
 	.byte	5
 	.byte	'rxID',0,1,132,2,18
-	.word	.L166,.L209
+	.word	.L182,.L225
 	.byte	5
 	.byte	'rxData',0,1,133,2,11
-	.word	.L210,.L211
+	.word	.L226,.L227
 	.byte	5
 	.byte	'rxLen',0,1,134,2,9
-	.word	.L170,.L212
+	.word	.L186,.L228
 	.byte	4
-	.word	.L213,.L33
+	.word	.L229,.L33
 	.byte	5
 	.byte	'tofVal',0,1,138,2,22
-	.word	.L166,.L214
+	.word	.L182,.L230
 	.byte	5
 	.byte	'dis_status',0,1,139,2,15
-	.word	.L215,.L216
+	.word	.L231,.L232
 	.byte	5
 	.byte	'signal_strength',0,1,140,2,16
-	.word	.L197,.L217
+	.word	.L213,.L233
 	.byte	0,0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Can_Rx_Isr_Handler')
 	.sect	'.debug_abbrev'
-.L106:
+.L112:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Can_Rx_Isr_Handler')
 	.sect	'.debug_line'
-.L107:
-	.word	.L572-.L571
-.L571:
+.L113:
+	.word	.L590-.L589
+.L589:
 	.half	3
-	.word	.L574-.L573
-.L573:
+	.word	.L592-.L591
+.L591:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/CAN/Can.c',0,0,0,0,0
-.L574:
+.L592:
 	.byte	5,6,7,0,5,2
-	.word	.L58
+	.word	.L60
 	.byte	3,128,2,1,5,5,9
-	.half	.L575-.L58
+	.half	.L593-.L60
 	.byte	3,1,1,5,24,9
-	.half	.L576-.L575
-	.byte	1,5,29,9
-	.half	.L577-.L576
-	.byte	1,5,27,9
-	.half	.L578-.L577
-	.byte	1,5,7,9
-	.half	.L579-.L578
-	.byte	1,5,5,9
-	.half	.L580-.L579
-	.byte	3,1,1,5,25,9
-	.half	.L581-.L580
-	.byte	1,5,8,9
-	.half	.L582-.L581
-	.byte	1,5,23,9
-	.half	.L208-.L582
-	.byte	3,2,1,5,21,9
-	.half	.L583-.L208
-	.byte	1,5,19,9
-	.half	.L584-.L583
-	.byte	3,2,1,5,25,9
-	.half	.L585-.L584
-	.byte	1,5,34,9
-	.half	.L586-.L585
-	.byte	1,5,9,9
-	.half	.L587-.L586
-	.byte	3,2,1,5,17,9
-	.half	.L588-.L587
-	.byte	1,5,5,9
-	.half	.L589-.L588
-	.byte	1,5,37,7,9
-	.half	.L213-.L589
-	.byte	3,1,1,5,41,9
-	.half	.L590-.L213
-	.byte	1,5,55,9
-	.half	.L591-.L590
-	.byte	1,5,59,9
-	.half	.L592-.L591
-	.byte	1,5,47,9
-	.half	.L593-.L592
-	.byte	1,5,72,9
 	.half	.L594-.L593
-	.byte	1,5,64,9
-	.half	.L298-.L594
-	.byte	1,5,41,9
-	.half	.L595-.L298
-	.byte	3,2,1,5,45,9
+	.byte	1,5,29,9
+	.half	.L595-.L594
+	.byte	1,5,27,9
 	.half	.L596-.L595
-	.byte	1,5,58,9
+	.byte	1,5,7,9
 	.half	.L597-.L596
-	.byte	1,5,50,9
-	.half	.L300-.L597
-	.byte	1,5,9,9
-	.half	.L598-.L300
-	.byte	3,2,1,5,13,7,9
+	.byte	1,5,5,9
+	.half	.L598-.L597
+	.byte	3,1,1,5,25,9
 	.half	.L599-.L598
-	.byte	3,1,1,5,33,9
+	.byte	1,5,8,9
 	.half	.L600-.L599
-	.byte	1,5,32,9
-	.half	.L601-.L600
-	.byte	1,5,24,9
-	.half	.L299-.L601
-	.byte	1,5,35,9
-	.half	.L602-.L299
-	.byte	1,5,13,9
-	.half	.L32-.L602
-	.byte	3,2,1,5,26,9
-	.half	.L603-.L32
-	.byte	1,5,24,9
+	.byte	1,5,23,9
+	.half	.L224-.L600
+	.byte	3,2,1,5,21,9
+	.half	.L601-.L224
+	.byte	1,5,19,9
+	.half	.L602-.L601
+	.byte	3,2,1,5,25,9
+	.half	.L603-.L602
+	.byte	1,5,34,9
 	.half	.L604-.L603
 	.byte	1,5,9,9
-	.half	.L33-.L604
+	.half	.L605-.L604
+	.byte	3,2,1,5,17,9
+	.half	.L606-.L605
+	.byte	1,5,5,9
+	.half	.L607-.L606
+	.byte	1,5,37,7,9
+	.half	.L229-.L607
+	.byte	3,1,1,5,41,9
+	.half	.L608-.L229
+	.byte	1,5,55,9
+	.half	.L609-.L608
+	.byte	1,5,59,9
+	.half	.L610-.L609
+	.byte	1,5,47,9
+	.half	.L611-.L610
+	.byte	1,5,72,9
+	.half	.L612-.L611
+	.byte	1,5,64,9
+	.half	.L316-.L612
+	.byte	1,5,41,9
+	.half	.L613-.L316
+	.byte	3,2,1,5,45,9
+	.half	.L614-.L613
+	.byte	1,5,58,9
+	.half	.L615-.L614
+	.byte	1,5,50,9
+	.half	.L318-.L615
+	.byte	1,5,9,9
+	.half	.L616-.L318
+	.byte	3,2,1,5,13,7,9
+	.half	.L617-.L616
+	.byte	3,1,1,5,33,9
+	.half	.L618-.L617
+	.byte	1,5,32,9
+	.half	.L619-.L618
+	.byte	1,5,24,9
+	.half	.L317-.L619
+	.byte	1,5,35,9
+	.half	.L620-.L317
+	.byte	1,5,13,9
+	.half	.L32-.L620
+	.byte	3,2,1,5,26,9
+	.half	.L621-.L32
+	.byte	1,5,24,9
+	.half	.L622-.L621
+	.byte	1,5,9,9
+	.half	.L33-.L622
 	.byte	3,127,1,5,14,9
 	.half	.L31-.L33
 	.byte	3,3,1,5,22,9
-	.half	.L605-.L31
+	.half	.L623-.L31
 	.byte	1,5,10,9
-	.half	.L606-.L605
-	.byte	1,5,9,7,9
-	.half	.L607-.L606
-	.byte	3,1,1,5,31,9
-	.half	.L608-.L607
-	.byte	1,5,35,9
-	.half	.L609-.L608
-	.byte	1,5,49,9
-	.half	.L610-.L609
-	.byte	1,5,53,9
-	.half	.L611-.L610
-	.byte	1,5,41,9
-	.half	.L612-.L611
-	.byte	1,5,67,9
-	.half	.L613-.L612
-	.byte	1,5,71,9
-	.half	.L614-.L613
-	.byte	1,5,59,9
-	.half	.L615-.L614
-	.byte	1,5,84,9
-	.half	.L616-.L615
-	.byte	1,5,76,9
-	.half	.L617-.L616
-	.byte	1,5,23,9
-	.half	.L618-.L617
-	.byte	1,5,9,9
-	.half	.L619-.L618
-	.byte	3,1,1,5,32,9
-	.half	.L620-.L619
-	.byte	1,5,36,9
-	.half	.L621-.L620
-	.byte	1,5,50,9
-	.half	.L622-.L621
-	.byte	1,5,54,9
-	.half	.L623-.L622
-	.byte	1,5,42,9
 	.half	.L624-.L623
-	.byte	1,5,68,9
+	.byte	1,5,9,7,9
 	.half	.L625-.L624
-	.byte	1,5,72,9
+	.byte	3,1,1,5,31,9
 	.half	.L626-.L625
-	.byte	1,5,60,9
+	.byte	1,5,35,9
 	.half	.L627-.L626
-	.byte	1,5,85,9
+	.byte	1,5,49,9
 	.half	.L628-.L627
-	.byte	1,5,77,9
+	.byte	1,5,53,9
 	.half	.L629-.L628
-	.byte	1,5,24,9
+	.byte	1,5,41,9
 	.half	.L630-.L629
-	.byte	1,5,5,9
-	.half	.L34-.L630
-	.byte	3,2,1,5,25,9
-	.half	.L631-.L34
-	.byte	1,5,28,9
+	.byte	1,5,67,9
+	.half	.L631-.L630
+	.byte	1,5,71,9
 	.half	.L632-.L631
-	.byte	1,5,27,9
+	.byte	1,5,59,9
 	.half	.L633-.L632
-	.byte	1,5,8,9
+	.byte	1,5,84,9
 	.half	.L634-.L633
-	.byte	1,5,1,9
+	.byte	1,5,76,9
 	.half	.L635-.L634
+	.byte	1,5,23,9
+	.half	.L636-.L635
+	.byte	1,5,9,9
+	.half	.L637-.L636
+	.byte	3,1,1,5,32,9
+	.half	.L638-.L637
+	.byte	1,5,36,9
+	.half	.L639-.L638
+	.byte	1,5,50,9
+	.half	.L640-.L639
+	.byte	1,5,54,9
+	.half	.L641-.L640
+	.byte	1,5,42,9
+	.half	.L642-.L641
+	.byte	1,5,68,9
+	.half	.L643-.L642
+	.byte	1,5,72,9
+	.half	.L644-.L643
+	.byte	1,5,60,9
+	.half	.L645-.L644
+	.byte	1,5,85,9
+	.half	.L646-.L645
+	.byte	1,5,77,9
+	.half	.L647-.L646
+	.byte	1,5,24,9
+	.half	.L648-.L647
+	.byte	1,5,5,9
+	.half	.L34-.L648
+	.byte	3,2,1,5,25,9
+	.half	.L649-.L34
+	.byte	1,5,28,9
+	.half	.L650-.L649
+	.byte	1,5,27,9
+	.half	.L651-.L650
+	.byte	1,5,8,9
+	.half	.L652-.L651
+	.byte	1,5,1,9
+	.half	.L653-.L652
 	.byte	3,1,1,9
-	.half	.L109-.L635
+	.half	.L115-.L653
 	.byte	0,1,1
-.L572:
+.L590:
 	.sdecl	'.debug_ranges',debug,cluster('Can_Rx_Isr_Handler')
 	.sect	'.debug_ranges'
-.L108:
-	.word	-1,.L58,0,.L109-.L58,0,0
-	.sdecl	'.debug_info',debug,cluster('get_t')
+.L114:
+	.word	-1,.L60,0,.L115-.L60,0,0
+	.sdecl	'.debug_info',debug,cluster('Can_Get_T')
 	.sect	'.debug_info'
-.L110:
-	.word	285
+.L116:
+	.word	289
 	.half	3
-	.word	.L111
+	.word	.L117
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L113,.L112
+	.word	.L119,.L118
 	.byte	2
-	.word	.L61
+	.word	.L67
 	.byte	3
-	.byte	'get_t',0,1,153,2,8
-	.word	.L159
+	.byte	'Can_Get_T',0,1,153,2,8
+	.word	.L175
 	.byte	1,1,1
-	.word	.L60,.L218,.L59
+	.word	.L62,.L234,.L61
 	.byte	4
-	.byte	'typ',0,1,153,2,18
-	.word	.L170,.L219
+	.byte	'typ',0,1,153,2,22
+	.word	.L186,.L235
 	.byte	5
-	.word	.L60,.L218
+	.word	.L62,.L234
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('get_t')
+	.sdecl	'.debug_abbrev',debug,cluster('Can_Get_T')
 	.sect	'.debug_abbrev'
-.L111:
+.L117:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('get_t')
+	.sdecl	'.debug_line',debug,cluster('Can_Get_T')
 	.sect	'.debug_line'
-.L112:
-	.word	.L637-.L636
-.L636:
+.L118:
+	.word	.L655-.L654
+.L654:
 	.half	3
-	.word	.L639-.L638
-.L638:
+	.word	.L657-.L656
+.L656:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/CAN/Can.c',0,0,0,0,0
-.L639:
+.L657:
 	.byte	5,5,7,0,5,2
-	.word	.L60
+	.word	.L62
 	.byte	3,153,2,1,5,24,7,9
-	.half	.L640-.L60
+	.half	.L658-.L62
 	.byte	3,1,1,5,9,9
-	.half	.L641-.L640
+	.half	.L659-.L658
 	.byte	1,5,24,9
-	.half	.L36-.L641
+	.half	.L36-.L659
 	.byte	3,3,1,5,9,9
-	.half	.L642-.L36
+	.half	.L660-.L36
 	.byte	1,5,1,9
-	.half	.L37-.L642
+	.half	.L37-.L660
 	.byte	3,2,1,7,9
-	.half	.L114-.L37
+	.half	.L120-.L37
 	.byte	0,1,1
-.L637:
-	.sdecl	'.debug_ranges',debug,cluster('get_t')
+.L655:
+	.sdecl	'.debug_ranges',debug,cluster('Can_Get_T')
 	.sect	'.debug_ranges'
-.L113:
-	.word	-1,.L60,0,.L114-.L60,0,0
-	.sdecl	'.debug_info',debug,cluster('Can_Send_Data')
+.L119:
+	.word	-1,.L62,0,.L120-.L62,0,0
+	.sdecl	'.debug_info',debug,cluster('Can_Get_Target_Speed_L')
 	.sect	'.debug_info'
-.L115:
-	.word	351
+.L121:
+	.word	285
 	.half	3
-	.word	.L116
+	.word	.L122
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1
-	.word	.L118,.L117
+	.word	.L124,.L123
 	.byte	2
-	.word	.L61
+	.word	.L67
 	.byte	3
-	.byte	'Can_Send_Data',0,1,129,1,6,1,1,1
-	.word	.L50,.L220,.L49
+	.byte	'Can_Get_Target_Speed_L',0,1,161,2,5
+	.word	.L186
+	.byte	1,1,1
+	.word	.L64,.L236,.L63
 	.byte	4
-	.byte	'id',0,1,129,1,33
-	.word	.L166,.L221
-	.byte	4
-	.byte	'txData',0,1,129,1,50
-	.word	.L168,.L222
-	.byte	4
-	.byte	'len',0,1,129,1,62
-	.word	.L170,.L223
-	.byte	5
-	.word	.L50,.L220
-	.byte	5
-	.word	.L224,.L225
-	.byte	6
-	.byte	'i',0,1,138,1,14
-	.word	.L170,.L226
-	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('Can_Send_Data')
+	.word	.L64,.L236
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Can_Get_Target_Speed_L')
 	.sect	'.debug_abbrev'
-.L116:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
-	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('Can_Send_Data')
+.L122:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Can_Get_Target_Speed_L')
 	.sect	'.debug_line'
-.L117:
-	.word	.L644-.L643
-.L643:
+.L123:
+	.word	.L662-.L661
+.L661:
 	.half	3
-	.word	.L646-.L645
-.L645:
+	.word	.L664-.L663
+.L663:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/CAN/Can.c',0,0,0,0,0
-.L646:
-	.byte	5,6,7,0,5,2
-	.word	.L50
-	.byte	3,128,1,1,5,29,9
-	.half	.L260-.L50
-	.byte	3,3,1,5,37,9
-	.half	.L647-.L260
-	.byte	1,5,5,9
-	.half	.L255-.L647
-	.byte	3,2,1,5,30,9
-	.half	.L648-.L255
-	.byte	1,5,5,9
-	.half	.L649-.L648
-	.byte	3,1,1,5,37,9
-	.half	.L650-.L649
-	.byte	1,5,35,9
-	.half	.L258-.L650
-	.byte	1,5,16,9
-	.half	.L224-.L258
-	.byte	3,3,1,5,26,9
-	.half	.L261-.L224
-	.byte	1,5,9,9
-	.half	.L20-.L261
-	.byte	3,1,1,5,24,9
-	.half	.L651-.L20
-	.byte	1,5,36,9
-	.half	.L652-.L651
-	.byte	1,5,28,9
-	.half	.L653-.L652
-	.byte	1,5,29,9
-	.half	.L654-.L653
-	.byte	3,127,1,5,25,9
-	.half	.L19-.L654
-	.byte	1,5,26,9
-	.half	.L655-.L19
-	.byte	1,5,105,7,9
-	.half	.L225-.L655
-	.byte	3,6,1,5,36,9
-	.half	.L21-.L225
-	.byte	1,5,44,9
-	.half	.L656-.L21
-	.byte	1,5,58,9
-	.half	.L657-.L656
-	.byte	1,5,66,9
-	.half	.L658-.L657
-	.byte	1,5,85,9
-	.half	.L659-.L658
-	.byte	1,5,93,9
-	.half	.L660-.L659
-	.byte	1,5,74,9
-	.half	.L661-.L660
-	.byte	1,5,12,9
-	.half	.L662-.L661
-	.byte	3,127,1,5,105,9
-	.half	.L663-.L662
-	.byte	3,1,1,5,1,7,9
-	.half	.L664-.L663
-	.byte	3,3,1,7,9
-	.half	.L119-.L664
+.L664:
+	.byte	5,12,7,0,5,2
+	.word	.L64
+	.byte	3,161,2,1,5,5,9
+	.half	.L665-.L64
+	.byte	1,5,1,9
+	.half	.L39-.L665
+	.byte	3,1,1,7,9
+	.half	.L125-.L39
 	.byte	0,1,1
-.L644:
-	.sdecl	'.debug_ranges',debug,cluster('Can_Send_Data')
+.L662:
+	.sdecl	'.debug_ranges',debug,cluster('Can_Get_Target_Speed_L')
 	.sect	'.debug_ranges'
-.L118:
-	.word	-1,.L50,0,.L119-.L50,0,0
-	.sdecl	'.debug_info',debug,cluster('g_mcmcan')
-	.sect	'.debug_info'
-.L120:
-	.word	244
-	.half	3
-	.word	.L121
-	.byte	4,1
-	.byte	'../BSW/CAN/Can.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
-	.byte	12,1,2
-	.word	.L61
-	.byte	3
-	.byte	'g_mcmcan',0,20,8,12
-	.word	.L227
-	.byte	1,5,3
-	.word	g_mcmcan
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('g_mcmcan')
-	.sect	'.debug_abbrev'
-.L121:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('dist_front')
-	.sect	'.debug_info'
-.L122:
-	.word	245
-	.half	3
-	.word	.L123
-	.byte	4,1
-	.byte	'../BSW/CAN/Can.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
-	.byte	12,1,2
-	.word	.L61
-	.byte	3
-	.byte	'dist_front',0,20,10,30
-	.word	.L228
-	.byte	5,3
-	.word	dist_front
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('dist_front')
-	.sect	'.debug_abbrev'
-.L123:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('left_target_v')
-	.sect	'.debug_info'
 .L124:
-	.word	250
-	.half	3
-	.word	.L125
-	.byte	4,1
-	.byte	'../BSW/CAN/Can.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
-	.byte	12,1,2
-	.word	.L61
-	.byte	3
-	.byte	'left_target_v',0,20,252,1,14
-	.word	.L229
-	.byte	1,5,3
-	.word	left_target_v
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('left_target_v')
-	.sect	'.debug_abbrev'
-.L125:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('right_target_v')
+	.word	-1,.L64,0,.L125-.L64,0,0
+	.sdecl	'.debug_info',debug,cluster('Can_Get_Target_Speed_R')
 	.sect	'.debug_info'
 .L126:
-	.word	251
+	.word	285
 	.half	3
 	.word	.L127
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L129,.L128
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Can_Get_Target_Speed_R',0,1,164,2,5
+	.word	.L186
+	.byte	1,1,1
+	.word	.L66,.L237,.L65
+	.byte	4
+	.word	.L66,.L237
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Can_Get_Target_Speed_R')
+	.sect	'.debug_abbrev'
+.L127:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Can_Get_Target_Speed_R')
+	.sect	'.debug_line'
+.L128:
+	.word	.L667-.L666
+.L666:
+	.half	3
+	.word	.L669-.L668
+.L668:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/CAN/Can.c',0,0,0,0,0
+.L669:
+	.byte	5,12,7,0,5,2
+	.word	.L66
+	.byte	3,164,2,1,5,5,9
+	.half	.L670-.L66
+	.byte	1,5,1,9
+	.half	.L40-.L670
+	.byte	3,1,1,7,9
+	.half	.L130-.L40
+	.byte	0,1,1
+.L667:
+	.sdecl	'.debug_ranges',debug,cluster('Can_Get_Target_Speed_R')
+	.sect	'.debug_ranges'
+.L129:
+	.word	-1,.L66,0,.L130-.L66,0,0
+	.sdecl	'.debug_info',debug,cluster('Can_Send_Data')
+	.sect	'.debug_info'
+.L131:
+	.word	351
+	.half	3
+	.word	.L132
+	.byte	4,1
+	.byte	'../BSW/CAN/Can.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L134,.L133
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Can_Send_Data',0,1,129,1,6,1,1,1
+	.word	.L52,.L238,.L51
+	.byte	4
+	.byte	'id',0,1,129,1,33
+	.word	.L182,.L239
+	.byte	4
+	.byte	'txData',0,1,129,1,50
+	.word	.L184,.L240
+	.byte	4
+	.byte	'len',0,1,129,1,62
+	.word	.L186,.L241
+	.byte	5
+	.word	.L52,.L238
+	.byte	5
+	.word	.L242,.L243
+	.byte	6
+	.byte	'i',0,1,138,1,14
+	.word	.L186,.L244
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Can_Send_Data')
+	.sect	'.debug_abbrev'
+.L132:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Can_Send_Data')
+	.sect	'.debug_line'
+.L133:
+	.word	.L672-.L671
+.L671:
+	.half	3
+	.word	.L674-.L673
+.L673:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/CAN/Can.c',0,0,0,0,0
+.L674:
+	.byte	5,6,7,0,5,2
+	.word	.L52
+	.byte	3,128,1,1,5,29,9
+	.half	.L278-.L52
+	.byte	3,3,1,5,37,9
+	.half	.L675-.L278
+	.byte	1,5,5,9
+	.half	.L273-.L675
+	.byte	3,2,1,5,30,9
+	.half	.L676-.L273
+	.byte	1,5,5,9
+	.half	.L677-.L676
+	.byte	3,1,1,5,37,9
+	.half	.L678-.L677
+	.byte	1,5,35,9
+	.half	.L276-.L678
+	.byte	1,5,16,9
+	.half	.L242-.L276
+	.byte	3,3,1,5,26,9
+	.half	.L279-.L242
+	.byte	1,5,9,9
+	.half	.L20-.L279
+	.byte	3,1,1,5,24,9
+	.half	.L679-.L20
+	.byte	1,5,36,9
+	.half	.L680-.L679
+	.byte	1,5,28,9
+	.half	.L681-.L680
+	.byte	1,5,29,9
+	.half	.L682-.L681
+	.byte	3,127,1,5,25,9
+	.half	.L19-.L682
+	.byte	1,5,26,9
+	.half	.L683-.L19
+	.byte	1,5,105,7,9
+	.half	.L243-.L683
+	.byte	3,6,1,5,36,9
+	.half	.L21-.L243
+	.byte	1,5,44,9
+	.half	.L684-.L21
+	.byte	1,5,58,9
+	.half	.L685-.L684
+	.byte	1,5,66,9
+	.half	.L686-.L685
+	.byte	1,5,85,9
+	.half	.L687-.L686
+	.byte	1,5,93,9
+	.half	.L688-.L687
+	.byte	1,5,74,9
+	.half	.L689-.L688
+	.byte	1,5,12,9
+	.half	.L690-.L689
+	.byte	3,127,1,5,105,9
+	.half	.L691-.L690
+	.byte	3,1,1,5,1,7,9
+	.half	.L692-.L691
+	.byte	3,3,1,7,9
+	.half	.L135-.L692
+	.byte	0,1,1
+.L672:
+	.sdecl	'.debug_ranges',debug,cluster('Can_Send_Data')
+	.sect	'.debug_ranges'
+.L134:
+	.word	-1,.L52,0,.L135-.L52,0,0
+	.sdecl	'.debug_info',debug,cluster('g_mcmcan')
+	.sect	'.debug_info'
+.L136:
+	.word	244
+	.half	3
+	.word	.L137
+	.byte	4,1
+	.byte	'../BSW/CAN/Can.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1,2
-	.word	.L61
+	.word	.L67
+	.byte	3
+	.byte	'g_mcmcan',0,20,8,12
+	.word	.L245
+	.byte	1,5,3
+	.word	g_mcmcan
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('g_mcmcan')
+	.sect	'.debug_abbrev'
+.L137:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('dist_front')
+	.sect	'.debug_info'
+.L138:
+	.word	245
+	.half	3
+	.word	.L139
+	.byte	4,1
+	.byte	'../BSW/CAN/Can.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L67
+	.byte	3
+	.byte	'dist_front',0,20,10,30
+	.word	.L246
+	.byte	5,3
+	.word	dist_front
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('dist_front')
+	.sect	'.debug_abbrev'
+.L139:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('left_target_v')
+	.sect	'.debug_info'
+.L140:
+	.word	250
+	.half	3
+	.word	.L141
+	.byte	4,1
+	.byte	'../BSW/CAN/Can.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L67
+	.byte	3
+	.byte	'left_target_v',0,20,252,1,14
+	.word	.L247
+	.byte	1,5,3
+	.word	left_target_v
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('left_target_v')
+	.sect	'.debug_abbrev'
+.L141:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('right_target_v')
+	.sect	'.debug_info'
+.L142:
+	.word	251
+	.half	3
+	.word	.L143
+	.byte	4,1
+	.byte	'../BSW/CAN/Can.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L67
 	.byte	3
 	.byte	'right_target_v',0,20,253,1,14
-	.word	.L230
+	.word	.L248
 	.byte	1,5,3
 	.word	right_target_v
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('right_target_v')
 	.sect	'.debug_abbrev'
-.L127:
+.L143:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('t')
 	.sect	'.debug_info'
-.L128:
+.L144:
 	.word	238
 	.half	3
-	.word	.L129
+	.word	.L145
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1,2
-	.word	.L61
+	.word	.L67
 	.byte	3
 	.byte	't',0,20,254,1,17
-	.word	.L231
+	.word	.L249
 	.byte	1,5,3
 	.word	t
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('t')
 	.sect	'.debug_abbrev'
-.L129:
+.L145:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('t2')
 	.sect	'.debug_info'
-.L130:
+.L146:
 	.word	239
 	.half	3
-	.word	.L131
+	.word	.L147
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1,2
-	.word	.L61
+	.word	.L67
 	.byte	3
 	.byte	't2',0,20,255,1,8
-	.word	.L232
+	.word	.L250
 	.byte	1,5,3
 	.word	t2
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('t2')
 	.sect	'.debug_abbrev'
-.L131:
+.L147:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('t3')
 	.sect	'.debug_info'
-.L132:
+.L148:
 	.word	239
 	.half	3
-	.word	.L133
+	.word	.L149
 	.byte	4,1
 	.byte	'../BSW/CAN/Can.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0
 	.byte	12,1,2
-	.word	.L61
+	.word	.L67
 	.byte	3
 	.byte	't3',0,20,128,2,17
-	.word	.L233
+	.word	.L251
 	.byte	1,5,3
 	.word	t3
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('t3')
 	.sect	'.debug_abbrev'
-.L133:
+.L149:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Get_Front_Dist')
 	.sect	'.debug_loc'
-.L39:
-	.word	-1,.L40,0,.L206-.L40
+.L41:
+	.word	-1,.L42,0,.L222-.L42
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Can_Get_T')
+	.sect	'.debug_loc'
+.L61:
+	.word	-1,.L62,0,.L234-.L62
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L235:
+	.word	-1,.L62,0,.L234-.L62
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Can_Get_Target_Speed_L')
+	.sect	'.debug_loc'
+.L63:
+	.word	-1,.L64,0,.L236-.L64
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Can_Get_Target_Speed_R')
+	.sect	'.debug_loc'
+.L65:
+	.word	-1,.L66,0,.L237-.L66
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Init')
 	.sect	'.debug_loc'
-.L138:
-	.word	-1,.L42,0,.L235-.L42
+.L154:
+	.word	-1,.L44,0,.L253-.L44
 	.half	1
 	.byte	85
-	.word	.L243-.L42,.L244-.L42
+	.word	.L261-.L44,.L262-.L44
 	.half	1
 	.byte	89
-	.word	.L10-.L42,.L245-.L42
+	.word	.L10-.L44,.L263-.L44
 	.half	1
 	.byte	89
 	.word	0,0
-.L41:
-	.word	-1,.L42,0,.L234-.L42
+.L43:
+	.word	-1,.L44,0,.L252-.L44
 	.half	2
 	.byte	138,0
-	.word	.L234-.L42,.L134-.L42
+	.word	.L252-.L44,.L150-.L44
 	.half	2
 	.byte	138,16
-	.word	.L134-.L42,.L134-.L42
+	.word	.L150-.L44,.L150-.L44
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L149:
+.L165:
 	.word	0,0
-.L136:
-	.word	-1,.L42,0,.L236-.L42
+.L152:
+	.word	-1,.L44,0,.L254-.L44
 	.half	1
 	.byte	84
-	.word	.L237-.L42,.L238-.L42
+	.word	.L255-.L44,.L256-.L44
 	.half	1
 	.byte	88
-	.word	.L239-.L42,.L240-.L42
+	.word	.L257-.L44,.L258-.L44
 	.half	1
 	.byte	88
-	.word	.L241-.L42,.L242-.L42
+	.word	.L259-.L44,.L260-.L44
 	.half	1
 	.byte	88
 	.word	0,0
-.L147:
+.L163:
 	.word	0,0
-.L145:
+.L161:
 	.word	0,0
-.L154:
-	.word	-1,.L42,0,.L134-.L42
+.L170:
+	.word	-1,.L44,0,.L150-.L44
 	.half	2
 	.byte	145,112
 	.word	0,0
-.L157:
-	.word	-1,.L42,0,.L134-.L42
+.L173:
+	.word	-1,.L44,0,.L150-.L44
 	.half	2
 	.byte	145,112
 	.word	0,0
-.L143:
+.L159:
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Recv_Msg')
 	.sect	'.debug_loc'
-.L55:
-	.word	-1,.L56,0,.L175-.L56
+.L57:
+	.word	-1,.L58,0,.L191-.L58
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L182:
-	.word	-1,.L56,.L291-.L56,.L175-.L56
+.L198:
+	.word	-1,.L58,.L309-.L58,.L191-.L58
 	.half	1
 	.byte	88
-	.word	.L296-.L56,.L175-.L56
+	.word	.L314-.L58,.L191-.L58
 	.half	1
 	.byte	82
 	.word	0,0
-.L194:
-	.word	-1,.L56,.L294-.L56,.L295-.L56
+.L210:
+	.word	-1,.L58,.L312-.L58,.L313-.L58
 	.half	1
 	.byte	95
 	.word	0,0
-.L177:
-	.word	-1,.L56,0,.L285-.L56
+.L193:
+	.word	-1,.L58,0,.L303-.L58
 	.half	1
 	.byte	100
-	.word	.L288-.L56,.L175-.L56
+	.word	.L306-.L58,.L191-.L58
 	.half	1
 	.byte	108
 	.word	0,0
-.L189:
+.L205:
 	.word	0,0
-.L181:
-	.word	-1,.L56,0,.L286-.L56
+.L197:
+	.word	-1,.L58,0,.L304-.L58
 	.half	1
 	.byte	102
-	.word	.L290-.L56,.L175-.L56
+	.word	.L308-.L58,.L191-.L58
 	.half	1
 	.byte	110
 	.word	0,0
-.L187:
+.L203:
 	.word	0,0
-.L179:
-	.word	-1,.L56,0,.L287-.L56
+.L195:
+	.word	-1,.L58,0,.L305-.L58
 	.half	1
 	.byte	101
-	.word	.L289-.L56,.L175-.L56
+	.word	.L307-.L58,.L191-.L58
 	.half	1
 	.byte	109
 	.word	0,0
-.L191:
-	.word	-1,.L56,.L292-.L56,.L293-.L56
+.L207:
+	.word	-1,.L58,.L310-.L58,.L311-.L58
 	.half	1
 	.byte	95
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Rx_Isr_Handler')
 	.sect	'.debug_loc'
-.L57:
-	.word	-1,.L58,0,.L297-.L58
+.L59:
+	.word	-1,.L60,0,.L315-.L60
 	.half	2
 	.byte	138,0
-	.word	.L297-.L58,.L207-.L58
+	.word	.L315-.L60,.L223-.L60
 	.half	2
 	.byte	138,16
-	.word	.L207-.L58,.L207-.L58
+	.word	.L223-.L60,.L223-.L60
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L216:
+.L232:
 	.word	0,0
-.L211:
-	.word	-1,.L58,0,.L207-.L58
+.L227:
+	.word	-1,.L60,0,.L223-.L60
 	.half	2
 	.byte	145,116
 	.word	0,0
-.L209:
-	.word	-1,.L58,0,.L207-.L58
+.L225:
+	.word	-1,.L60,0,.L223-.L60
 	.half	2
 	.byte	145,112
 	.word	0,0
-.L212:
-	.word	-1,.L58,0,.L207-.L58
+.L228:
+	.word	-1,.L60,0,.L223-.L60
 	.half	2
 	.byte	145,124
 	.word	0,0
-.L217:
-	.word	-1,.L58,.L300-.L58,.L299-.L58
+.L233:
+	.word	-1,.L60,.L318-.L60,.L317-.L60
 	.half	1
 	.byte	81
-	.word	.L32-.L58,.L33-.L58
+	.word	.L32-.L60,.L33-.L60
 	.half	1
 	.byte	81
 	.word	0,0
-.L214:
-	.word	-1,.L58,.L298-.L58,.L299-.L58
+.L230:
+	.word	-1,.L60,.L316-.L60,.L317-.L60
 	.half	5
 	.byte	144,32,157,32,0
-	.word	.L32-.L58,.L33-.L58
+	.word	.L32-.L60,.L33-.L60
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Send_Data')
 	.sect	'.debug_loc'
-.L49:
-	.word	-1,.L50,0,.L220-.L50
+.L51:
+	.word	-1,.L52,0,.L238-.L52
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L226:
-	.word	-1,.L50,.L261-.L50,.L21-.L50
+.L244:
+	.word	-1,.L52,.L279-.L52,.L21-.L52
 	.half	1
 	.byte	95
 	.word	0,0
-.L221:
-	.word	-1,.L50,0,.L255-.L50
+.L239:
+	.word	-1,.L52,0,.L273-.L52
 	.half	1
 	.byte	84
-	.word	.L257-.L50,.L258-.L50
+	.word	.L275-.L52,.L276-.L52
 	.half	1
 	.byte	95
 	.word	0,0
-.L223:
-	.word	-1,.L50,0,.L255-.L50
+.L241:
+	.word	-1,.L52,0,.L273-.L52
 	.half	1
 	.byte	85
-	.word	.L260-.L50,.L220-.L50
+	.word	.L278-.L52,.L238-.L52
 	.half	1
 	.byte	88
 	.word	0,0
-.L222:
-	.word	-1,.L50,0,.L256-.L50
+.L240:
+	.word	-1,.L52,0,.L274-.L52
 	.half	1
 	.byte	100
-	.word	.L259-.L50,.L220-.L50
+	.word	.L277-.L52,.L238-.L52
 	.half	1
 	.byte	108
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Send_Dist_Data')
 	.sect	'.debug_loc'
-.L51:
-	.word	-1,.L52,0,.L195-.L52
+.L53:
+	.word	-1,.L54,0,.L211-.L54
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L201:
-	.word	-1,.L52,0,.L195-.L52
+.L217:
+	.word	-1,.L54,0,.L211-.L54
 	.half	2
 	.byte	145,0
-	.word	.L263-.L52,.L264-.L52
+	.word	.L281-.L54,.L282-.L54
 	.half	1
 	.byte	92
 	.word	0,0
-.L198:
-	.word	-1,.L52,0,.L262-.L52
+.L214:
+	.word	-1,.L54,0,.L280-.L54
 	.half	1
 	.byte	85
-	.word	.L267-.L52,.L268-.L52
+	.word	.L285-.L54,.L286-.L54
 	.half	1
 	.byte	89
 	.word	0,0
-.L196:
-	.word	-1,.L52,0,.L262-.L52
+.L212:
+	.word	-1,.L54,0,.L280-.L54
 	.half	1
 	.byte	84
-	.word	.L265-.L52,.L266-.L52
+	.word	.L283-.L54,.L284-.L54
 	.half	1
 	.byte	88
 	.word	0,0
-.L199:
-	.word	-1,.L52,0,.L262-.L52
+.L215:
+	.word	-1,.L54,0,.L280-.L54
 	.half	1
 	.byte	86
-	.word	.L269-.L52,.L270-.L52
+	.word	.L287-.L54,.L288-.L54
 	.half	1
 	.byte	90
 	.word	0,0
-.L200:
-	.word	-1,.L52,0,.L262-.L52
+.L216:
+	.word	-1,.L54,0,.L280-.L54
 	.half	1
 	.byte	87
-	.word	.L271-.L52,.L272-.L52
+	.word	.L289-.L54,.L290-.L54
 	.half	1
 	.byte	91
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Send_Msg')
 	.sect	'.debug_loc'
-.L47:
-	.word	-1,.L48,0,.L165-.L48
+.L49:
+	.word	-1,.L50,0,.L181-.L50
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L174:
-	.word	-1,.L48,.L254-.L48,.L17-.L48
+.L190:
+	.word	-1,.L50,.L272-.L50,.L17-.L50
 	.half	1
 	.byte	95
 	.word	0,0
-.L167:
-	.word	-1,.L48,0,.L248-.L48
+.L183:
+	.word	-1,.L50,0,.L266-.L50
 	.half	1
 	.byte	84
-	.word	.L250-.L48,.L251-.L48
+	.word	.L268-.L50,.L269-.L50
 	.half	1
 	.byte	95
 	.word	0,0
-.L171:
-	.word	-1,.L48,0,.L248-.L48
+.L187:
+	.word	-1,.L50,0,.L266-.L50
 	.half	1
 	.byte	85
-	.word	.L253-.L48,.L165-.L48
+	.word	.L271-.L50,.L181-.L50
 	.half	1
 	.byte	88
 	.word	0,0
-.L169:
-	.word	-1,.L48,0,.L249-.L48
+.L185:
+	.word	-1,.L50,0,.L267-.L50
 	.half	1
 	.byte	100
-	.word	.L252-.L48,.L165-.L48
+	.word	.L270-.L50,.L181-.L50
 	.half	1
 	.byte	108
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Send_Vel_Data')
 	.sect	'.debug_loc'
-.L53:
-	.word	-1,.L54,0,.L202-.L54
+.L55:
+	.word	-1,.L56,0,.L218-.L56
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L203:
-	.word	-1,.L54,0,.L273-.L54
+.L219:
+	.word	-1,.L56,0,.L291-.L56
 	.half	1
 	.byte	84
-	.word	.L275-.L54,.L276-.L54
+	.word	.L293-.L56,.L294-.L56
 	.half	1
 	.byte	88
 	.word	0,0
-.L204:
-	.word	-1,.L54,0,.L273-.L54
+.L220:
+	.word	-1,.L56,0,.L291-.L56
 	.half	1
 	.byte	85
-	.word	.L277-.L54,.L278-.L54
+	.word	.L295-.L56,.L296-.L56
 	.half	1
 	.byte	89
-	.word	.L279-.L54,.L280-.L54
+	.word	.L297-.L56,.L298-.L56
 	.half	1
 	.byte	89
-	.word	.L281-.L54,.L282-.L54
+	.word	.L299-.L56,.L300-.L56
 	.half	1
 	.byte	89
-	.word	.L283-.L54,.L284-.L54
+	.word	.L301-.L56,.L302-.L56
 	.half	1
 	.byte	89
 	.word	0,0
-.L205:
-	.word	-1,.L54,0,.L273-.L54
+.L221:
+	.word	-1,.L56,0,.L291-.L56
 	.half	1
 	.byte	86
-	.word	.L274-.L54,.L202-.L54
+	.word	.L292-.L56,.L218-.L56
 	.half	1
 	.byte	90
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Set_Filter_Mask')
 	.sect	'.debug_loc'
-.L45:
-	.word	-1,.L46,0,.L162-.L46
+.L47:
+	.word	-1,.L48,0,.L178-.L48
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L163:
-	.word	-1,.L46,0,.L247-.L46
+.L179:
+	.word	-1,.L48,0,.L265-.L48
 	.half	1
 	.byte	84
 	.word	0,0
-.L164:
-	.word	-1,.L46,0,.L247-.L46
+.L180:
+	.word	-1,.L48,0,.L265-.L48
 	.half	1
 	.byte	85
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Set_Filter_Range')
 	.sect	'.debug_loc'
-.L43:
-	.word	-1,.L44,0,.L158-.L44
+.L45:
+	.word	-1,.L46,0,.L174-.L46
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L161:
-	.word	-1,.L44,0,.L246-.L44
+.L177:
+	.word	-1,.L46,0,.L264-.L46
 	.half	1
 	.byte	85
 	.word	0,0
-.L160:
-	.word	-1,.L44,0,.L246-.L44
-	.half	1
-	.byte	84
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('get_t')
-	.sect	'.debug_loc'
-.L59:
-	.word	-1,.L60,0,.L218-.L60
-	.half	2
-	.byte	138,0
-	.word	0,0
-.L219:
-	.word	-1,.L60,0,.L218-.L60
+.L176:
+	.word	-1,.L46,0,.L264-.L46
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L665:
+.L693:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -28412,57 +28576,67 @@ t3:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('Can_Get_Front_Dist')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L665,.L40,.L206-.L40
+	.word	.L693,.L42,.L222-.L42
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Can_Init')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L665,.L42,.L134-.L42
+	.word	.L693,.L44,.L150-.L44
 	.byte	4
-	.word	(.L234-.L42)/2
+	.word	(.L252-.L44)/2
 	.byte	19,16,22,26,3,19,138,16,4
-	.word	(.L134-.L234)/2
+	.word	(.L150-.L252)/2
 	.byte	19,0,8,26,0,0
 	.sdecl	'.debug_frame',debug,cluster('Can_Set_Filter_Range')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L665,.L44,.L158-.L44
+	.word	.L693,.L46,.L174-.L46
 	.sdecl	'.debug_frame',debug,cluster('Can_Set_Filter_Mask')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L665,.L46,.L162-.L46
+	.word	.L693,.L48,.L178-.L48
 	.sdecl	'.debug_frame',debug,cluster('Can_Send_Msg')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L665,.L48,.L165-.L48
+	.word	.L693,.L50,.L181-.L50
 	.sdecl	'.debug_frame',debug,cluster('Can_Send_Data')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L665,.L50,.L220-.L50
+	.word	.L693,.L52,.L238-.L52
 	.sdecl	'.debug_frame',debug,cluster('Can_Send_Dist_Data')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L665,.L52,.L195-.L52
+	.word	.L693,.L54,.L211-.L54
 	.sdecl	'.debug_frame',debug,cluster('Can_Send_Vel_Data')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L665,.L54,.L202-.L54
+	.word	.L693,.L56,.L218-.L56
 	.sdecl	'.debug_frame',debug,cluster('Can_Recv_Msg')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L665,.L56,.L175-.L56
+	.word	.L693,.L58,.L191-.L58
 	.sdecl	'.debug_frame',debug,cluster('Can_Rx_Isr_Handler')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L665,.L58,.L207-.L58
+	.word	.L693,.L60,.L223-.L60
 	.byte	4
-	.word	(.L297-.L58)/2
+	.word	(.L315-.L60)/2
 	.byte	19,16,22,26,3,19,138,16,4
-	.word	(.L207-.L297)/2
+	.word	(.L223-.L315)/2
 	.byte	19,0,8,26,0,0
-	.sdecl	'.debug_frame',debug,cluster('get_t')
+	.sdecl	'.debug_frame',debug,cluster('Can_Get_T')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L665,.L60,.L218-.L60
+	.word	.L693,.L62,.L234-.L62
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Can_Get_Target_Speed_L')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L693,.L64,.L236-.L64
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Can_Get_Target_Speed_R')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L693,.L66,.L237-.L66
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	; Module end

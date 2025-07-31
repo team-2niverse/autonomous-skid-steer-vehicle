@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;combine/BSW/PID/PID.c&apos; to &apos;Pid.c&apos;" description="Rename resource &apos;PID.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="BSW/PID/PID.c" name="Pid.c" stamp="1753967282472" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;combine/BSW/PID/PID.h&apos; to &apos;Pid.h&apos;" description="Rename resource &apos;PID.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="BSW/PID/PID.h" name="Pid.h" stamp="1753967287991" updateReferences="true"/>
+</session>

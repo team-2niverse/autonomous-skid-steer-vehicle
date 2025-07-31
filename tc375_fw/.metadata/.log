@@ -946,3 +946,444 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 
 !ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 16:28:02.605
 !MESSAGE Include paths were discovered in 42 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:16:23.330
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:16:23.330
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:16:23.382
+!MESSAGE Include paths were discovered in 50 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:17:51.330
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:17:51.331
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:17:51.401
+!MESSAGE Include paths were discovered in 70 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:19:08.993
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:19:08.994
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:19:09.059
+!MESSAGE Include paths were discovered in 63 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:19:42.785
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:19:42.786
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:19:42.839
+!MESSAGE Include paths were discovered in 51 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:20:11.464
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:20:11.465
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:20:11.511
+!MESSAGE Include paths were discovered in 45 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:20:37.883
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:20:37.883
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:20:37.928
+!MESSAGE Include paths were discovered in 43 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:21:13.262
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:21:13.263
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:21:13.337
+!MESSAGE Include paths were discovered in 73 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:21:47.877
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1341 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:21:47.937
+!MESSAGE Include paths were discovered in 58 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:22:34.586
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:22:34.588
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:22:34.673
+!MESSAGE Include paths were discovered in 83 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:23:56.502
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:23:56.502
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:23:56.542
+!MESSAGE Include paths were discovered in 38 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:25:23.149
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1287 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:25:23.207
+!MESSAGE Include paths were discovered in 55 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:25:28.174
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 148 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:25:28.213
+!MESSAGE Include paths were discovered in 38 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:26:09.562
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:26:09.563
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:26:09.650
+!MESSAGE Include paths were discovered in 86 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:26:35.029
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:26:35.030
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:26:35.075
+!MESSAGE Include paths were discovered in 43 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:27:58.133
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1377 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:27:58.170
+!MESSAGE Include paths were discovered in 36 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:28:51.769
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:28:51.770
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:28:51.814
+!MESSAGE Include paths were discovered in 43 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:30:06.288
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1405 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:30:06.347
+!MESSAGE Include paths were discovered in 58 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:39:14.679
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:39:14.680
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:39:14.712
+!MESSAGE Include paths were discovered in 31 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:41:18.460
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:41:18.461
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:41:18.553
+!MESSAGE Include paths were discovered in 90 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:41:58.386
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:41:58.387
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:41:58.430
+!MESSAGE Include paths were discovered in 41 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:46:51.382
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:46:51.383
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:46:51.416
+!MESSAGE Include paths were discovered in 32 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:47:35.287
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:47:35.289
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:47:35.320
+!MESSAGE Include paths were discovered in 30 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:47:44.007
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:47:44.009
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:47:44.087
+!MESSAGE Include paths were discovered in 78 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:48:58.899
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 176 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:48:58.930
+!MESSAGE Include paths were discovered in 29 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:49:35.046
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:49:35.047
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:49:35.086
+!MESSAGE Include paths were discovered in 37 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:50:06.547
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:50:06.549
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:50:06.609
+!MESSAGE Include paths were discovered in 59 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:51:33.843
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:51:33.843
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:51:33.874
+!MESSAGE Include paths were discovered in 30 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:53:34.322
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:53:34.322
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:53:34.365
+!MESSAGE Include paths were discovered in 41 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:54:07.026
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:54:07.027
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:54:07.064
+!MESSAGE Include paths were discovered in 36 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:54:32.963
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:54:32.964
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:54:33.003
+!MESSAGE Include paths were discovered in 37 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:58:24.807
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:58:24.807
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:58:24.870
+!MESSAGE Include paths were discovered in 61 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:58:51.308
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:58:51.310
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:58:51.346
+!MESSAGE Include paths were discovered in 36 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:59:36.686
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:59:36.687
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 17:59:36.722
+!MESSAGE Include paths were discovered in 34 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:00:02.269
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:00:02.270
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:00:02.302
+!MESSAGE Include paths were discovered in 31 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:01:38.629
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:01:38.629
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:01:38.685
+!MESSAGE Include paths were discovered in 54 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:03:17.608
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:03:17.608
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:03:17.650
+!MESSAGE Include paths were discovered in 39 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:06:26.899
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:06:26.899
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:06:26.941
+!MESSAGE Include paths were discovered in 41 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:18:51.248
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:18:51.249
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:18:51.342
+!MESSAGE Include paths were discovered in 92 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:20:21.903
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 153 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 18:20:21.944
+!MESSAGE Include paths were discovered in 40 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 22:03:10.380
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1126 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 22:03:10.433
+!MESSAGE Include paths were discovered in 50 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 22:04:03.362
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 178 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 22:04:03.410
+!MESSAGE Include paths were discovered in 47 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 22:05:16.170
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1247 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 22:05:16.208
+!MESSAGE Include paths were discovered in 36 milliseconds.
+
+!ENTRY org.eclipse.cdt.ui 4 4 2025-07-31 22:07:49.373
+!MESSAGE Error
+!STACK 1
+C Model Exception: Core Exception [code 275] A resource exists with a different case: '/combine/BSW/PID/PID.c'.
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:47)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2382)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2407)
+	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1230)
+	at org.eclipse.cdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:88)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/combine/BSW/PID/PID.c'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.File.create(File.java:109)
+	at org.eclipse.core.internal.resources.File.create(File.java:181)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createFile(NewSourceFileGenerator.java:150)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createNewFile(NewSourceFileGenerator.java:139)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createEmptyFile(NewSourceFileGenerator.java:117)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createSourceFile(NewSourceFileGenerator.java:108)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileCreationWizardPage.createFile(NewSourceFileCreationWizardPage.java:167)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.AbstractFileCreationWizard.finishPage(AbstractFileCreationWizard.java:43)
+	at org.eclipse.cdt.internal.ui.wizards.NewElementWizard.lambda$1(NewElementWizard.java:88)
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
+	... 7 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/combine/BSW/PID/PID.c'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 19 more
+!SUBENTRY 1 org.eclipse.cdt.core 4 966 2025-07-31 22:07:49.374
+!MESSAGE A resource exists with a different case: '/combine/BSW/PID/PID.c'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/combine/BSW/PID/PID.c)[275]: java.lang.Exception: A resource exists with a different case: '/combine/BSW/PID/PID.c'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.File.create(File.java:109)
+	at org.eclipse.core.internal.resources.File.create(File.java:181)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createFile(NewSourceFileGenerator.java:150)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createNewFile(NewSourceFileGenerator.java:139)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createEmptyFile(NewSourceFileGenerator.java:117)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createSourceFile(NewSourceFileGenerator.java:108)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileCreationWizardPage.createFile(NewSourceFileCreationWizardPage.java:167)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.AbstractFileCreationWizard.finishPage(AbstractFileCreationWizard.java:43)
+	at org.eclipse.cdt.internal.ui.wizards.NewElementWizard.lambda$1(NewElementWizard.java:88)
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2382)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2407)
+	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1230)
+	at org.eclipse.cdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:88)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 2 org.eclipse.core.resources 4 275 2025-07-31 22:07:49.374
+!MESSAGE A resource exists with a different case: '/combine/BSW/PID/PID.c'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/combine/BSW/PID/PID.c'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.File.create(File.java:109)
+	at org.eclipse.core.internal.resources.File.create(File.java:181)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createFile(NewSourceFileGenerator.java:150)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createNewFile(NewSourceFileGenerator.java:139)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createEmptyFile(NewSourceFileGenerator.java:117)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createSourceFile(NewSourceFileGenerator.java:108)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileCreationWizardPage.createFile(NewSourceFileCreationWizardPage.java:167)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.AbstractFileCreationWizard.finishPage(AbstractFileCreationWizard.java:43)
+	at org.eclipse.cdt.internal.ui.wizards.NewElementWizard.lambda$1(NewElementWizard.java:88)
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2382)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2407)
+	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1230)
+	at org.eclipse.cdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:88)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 22:08:49.311
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1253 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 22:08:49.350
+!MESSAGE Include paths were discovered in 37 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 22:09:49.714
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1085 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-07-31 22:09:49.754
+!MESSAGE Include paths were discovered in 38 milliseconds.

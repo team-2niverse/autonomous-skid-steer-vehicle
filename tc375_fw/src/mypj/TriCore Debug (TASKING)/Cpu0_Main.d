@@ -296,3 +296,5 @@ Cpu0_Main.o :	"C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer
 "C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GTM_ATOM_PWM\Gtm_Atom_Pwm.h" :
 Cpu0_Main.o :	"C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\ULTRASONIC\Ultrasonic.h"
 "C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\ULTRASONIC\Ultrasonic.h" :
+Cpu0_Main.o :	"C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\ASW\\ABE\Abe.h"
+"C:\\Users\\USER\\Desktop\\Coding\\C\\proj1\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\ASW\\ABE\Abe.h" :

@@ -31,7 +31,8 @@ void Motor_Set_Right(uint8_T pwm, boolean_T dir, boolean_T brake);
  * @param dir 모터 방향 (1: 정방향, 0: 역방향)
  * @param brake 브레이크 신호 (1: 브레이크 활성화)
  */
-void Set_Brake(boolean_T LR, boolean_T value);
-boolean_T Get_Dir(boolean_T LR);
-boolean_T Get_Brake(boolean_T LR);
+void Motor_Set_Brake(boolean_T LR, boolean_T value);
+boolean_T Motor_Get_Dir(boolean_T LR);
+boolean_T Motor_Get_Brake(boolean_T LR);
+void Motor_Set_Dir(boolean_T LR, boolean_T value);
 #endif /* MOTOR_H_ */

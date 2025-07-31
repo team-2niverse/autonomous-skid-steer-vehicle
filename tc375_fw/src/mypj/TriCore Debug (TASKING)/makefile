@@ -30,6 +30,7 @@ RM := rm -rf
 -include Configurations/subdir.mk
 -include BSW/ULTRASONIC/subdir.mk
 -include BSW/STM/subdir.mk
+-include BSW/PID/subdir.mk
 -include BSW/MOTOR/subdir.mk
 -include BSW/GTM_ATOM_PWM/subdir.mk
 -include BSW/GPT12/subdir.mk

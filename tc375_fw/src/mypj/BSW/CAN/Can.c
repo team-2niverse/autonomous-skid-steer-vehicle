@@ -278,11 +278,17 @@ void Can_Rx_Isr_Handler (void) {
     }
     t3 = Stm_Get_Time_Ms()-t2;
 }
-uint32 get_t(int typ){
+uint32 Can_Get_T(int typ){
     if (typ == 0){
         return (uint32)t;
     }
     else{
         return (uint32)t3;
     }
+}
+int Can_Get_Target_Speed_L(void){
+    return left_target_v;
+}
+int Can_Get_Target_Speed_R(void){
+    return left_target_v;
 }

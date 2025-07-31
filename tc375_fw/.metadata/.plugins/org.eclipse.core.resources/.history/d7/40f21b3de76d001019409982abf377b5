@@ -1,0 +1,27 @@
+/**********************************************************************************************************************
+ * file Sys_Init.c
+ * copyright Copyright (C) Infineon Technologies AG 2019
+ * Boost Software License - Version 1.0 - August 17th, 2003
+ *********************************************************************************************************************/
+#include "Sys_Init.h"
+
+void System_Init(void){
+    IfxCpu_enableInterrupts();
+
+    // !!WATCHDOG0 AND SAFETY WATCHDOG ARE DISABLED HERE!!
+    // Enable the watchdogs and service them periodically if it is required
+    IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
+    IfxScuWdt_disableSafetyWatchdog(IfxScuWdt_getSafetyWatchdogPassword());
+
+    // Driver Init
+    Asclin0_InitUart();
+    Can_Init(BD_1M, CAN_NODE0); //인자 수정 필요
+    Encoder_Init();
+    Buzzer_Init();
+    Led_Init();
+    Gpt12_Gpt1_Init();
+    Gpt12_Gpt2_Init();
+    Gtm_Atom_Pwm_Init();
+//    Motor_Init();
+//    Ultrasonic_Init();
+}

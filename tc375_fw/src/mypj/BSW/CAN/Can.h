@@ -54,6 +54,7 @@ void Can_Send_Vel_Data(unsigned int id, uint32 left_vel, uint32 right_vel); //co
 unsigned int Can_Get_Front_Dist(void);
 
 void Can_Rx_Isr_Handler (void);
-uint32 get_t(int typ);
-
+uint32 Can_Get_T(int typ);
+int Can_Get_Target_Speed_L(void);
+int Can_Get_Target_Speed_R(void);
 #endif /* CAN_H_ */
