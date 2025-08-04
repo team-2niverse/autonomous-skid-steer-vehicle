@@ -40,7 +40,7 @@ void Gpt12_Gpt1_Init(void){
     MODULE_ASCLIN0.FLAGSENABLE.B.RFLE =1; // enable RXFIFO fill level flag;
     */
 
-    MODULE_GPT120.T3CON.B.T3R = 1; //timer run.
+    //MODULE_GPT120.T3CON.B.T3R = 1; //timer run.
 }
 
 void Gpt12_Run_Gpt1_T3(void){
