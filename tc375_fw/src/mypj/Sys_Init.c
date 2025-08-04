@@ -8,20 +8,21 @@
 void System_Init(void){
     IfxCpu_enableInterrupts();
 
-    // !!WATCHDOG0 AND SAFETY WATCHDOG ARE DISABLED HERE!!
-    // Enable the watchdogs and service them periodically if it is required
+    /*
+    !!WATCHDOG0 AND SAFETY WATCHDOG ARE DISABLED HERE!!
+    Enable the watchdogs and service them periodically if it is required
+    */
     IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
     IfxScuWdt_disableSafetyWatchdog(IfxScuWdt_getSafetyWatchdogPassword());
 
     // Driver Init
     Asclin0_InitUart();
-    Can_Init(BD_1M, CAN_NODE0); //인자 수정 필요
+    Can_Init(BD_1M, CAN_NODE0); //CAN 사양에 따라 인자 수정
     Encoder_Init();
     Buzzer_Init();
     Led_Init();
     Gpt12_Gpt1_Init();
     Gpt12_Gpt2_Init();
-//    Gtm_Atom_Pwm_Init();
     Motor_Init();
     Ultrasonic_Init();
 }

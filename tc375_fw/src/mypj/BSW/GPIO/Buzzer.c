@@ -40,7 +40,7 @@ static int beepOnOff = 0;
 
 void Buzzer_Set_Beep_Cycle(int cycle){
     beepOnOff = cycle; // cycle * 10.24us
-    GPT12_Run_Gpt1_T3();
+    Gpt12_Run_Gpt1_T3();
 }
 
 IFX_INTERRUPT(Buzzer_Gpt1_T3_Handler_Beep, 0, ISR_PRIORITY_GPT1T3_TIMER);

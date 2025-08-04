@@ -1,14 +1,15 @@
 /**********************************************************************************************************************
- * file Abe.h
+ * file Aeb.h
  * copyright Copyright (C) Infineon Technologies AG 2019
  * Boost Software License - Version 1.0 - August 17th, 2003
  *********************************************************************************************************************/
-#ifndef ABE_H_
-#define ABE_H_
+#ifndef AEB_H_
+#define AEB_H_
 
+#include "Motor.h"
 #include "Platform_Types.h"
 
 // Function Prototypes
-void Abe_Check(float front_dist);
+void Aeb_Check(float front_dist);
 
-#endif /* ABE_H_ */
+#endif /* AEB_H_ */

@@ -126,6 +126,7 @@ void Can_Send_Msg(unsigned int id, const uint8 *txData, int len)
     {
     }
 }
+
 void Can_Send_Data(unsigned int id, const uint8 *txData, int len)
 {
     /* Initialization of the TX message with the default configuration */
@@ -145,6 +146,7 @@ void Can_Send_Data(unsigned int id, const uint8 *txData, int len)
     {
     }
 }
+
 void Can_Send_Dist_Data(unsigned int id, uint16 front_dist, uint16 left_dist, uint16 right_dist, uint16 back_dist)
 {
     /* Initialization of the TX message with the default configuration */
@@ -176,6 +178,7 @@ void Can_Send_Dist_Data(unsigned int id, uint16 front_dist, uint16 left_dist, ui
     uint16 received_data4 = (rxData[7] << 8) | rxData[6];
     */
 }
+
 void Can_Send_Vel_Data(unsigned int id, uint32 left_vel, uint32 right_vel)
 {
     /* Initialization of the TX message with the default configuration */
@@ -207,7 +210,6 @@ void Can_Send_Vel_Data(unsigned int id, uint32 left_vel, uint32 right_vel)
     uint16 received_data2 = (rxData[7] << 24) | (rxData[6] << 16) | (rxData[5] << 8) | rxData[4];
     */
 }
-
 
 int Can_Recv_Msg(unsigned int *id, uint8 *rxData, int *len)
 {
@@ -254,7 +256,9 @@ volatile int right_target_v=0;
 volatile uint64 t =0;
 uint64 t2 = 0;
 volatile uint64 t3 = 0;
-void Can_Rx_Isr_Handler (void) {
+
+void Can_Rx_Isr_Handler (void)
+{
     t = Stm_Get_Time_Ms() - t2;
     t2 = Stm_Get_Time_Ms();
     unsigned int rxID;
@@ -278,6 +282,7 @@ void Can_Rx_Isr_Handler (void) {
     }
     t3 = Stm_Get_Time_Ms()-t2;
 }
+
 uint32 Can_Get_T(int typ){
     if (typ == 0){
         return (uint32)t;
@@ -286,9 +291,11 @@ uint32 Can_Get_T(int typ){
         return (uint32)t3;
     }
 }
+
 int Can_Get_Target_Speed_L(void){
     return left_target_v;
 }
+
 int Can_Get_Target_Speed_R(void){
     return left_target_v;
 }

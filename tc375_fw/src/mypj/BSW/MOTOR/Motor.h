@@ -35,4 +35,6 @@ void Motor_Set_Brake(boolean_T LR, boolean_T value);
 boolean_T Motor_Get_Dir(boolean_T LR);
 boolean_T Motor_Get_Brake(boolean_T LR);
 void Motor_Set_Dir(boolean_T LR, boolean_T value);
+void Motor_Stop(); //브레이크 함수
+
 #endif /* MOTOR_H_ */

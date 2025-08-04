@@ -74,6 +74,8 @@ void Motor_Init(void)
 
 void Motor_Set_Left(uint8_T pwm, boolean_T dir, boolean_T brake)
 {
+    dir_L = dir;
+
     if (brake)
     {
         IfxPort_setPinHigh(MOTOR_L_BRAKE_PORT, MOTOR_L_BRAKE_PIN);
@@ -100,6 +102,8 @@ void Motor_Set_Left(uint8_T pwm, boolean_T dir, boolean_T brake)
 
 void Motor_Set_Right(uint8_T pwm, boolean_T dir, boolean_T brake)
 {
+    dir_R = dir;
+
     if (brake)
     {
         IfxPort_setPinHigh(MOTOR_R_BRAKE_PORT, MOTOR_R_BRAKE_PIN);
@@ -121,4 +125,10 @@ void Motor_Set_Right(uint8_T pwm, boolean_T dir, boolean_T brake)
         uint32 duty_ticks = (uint32)((float32)pwm * (PWM_PERIOD / 255.0f));
         Gtm_Atom_Pwm_Set_Duty_Cycle_B(duty_ticks);
     }
+}
+
+void Motor_Stop(void)
+{
+    Motor_Set_Left(0, 1, 1);
+    Motor_Set_Right(0, 1, 1);
 }
