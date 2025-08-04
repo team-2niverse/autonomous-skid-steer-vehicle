@@ -3,10 +3,7 @@
  * copyright Copyright (C) Infineon Technologies AG 2019
  * Boost Software License - Version 1.0 - August 17th, 2003
  *********************************************************************************************************************/
-
-#include <stdbool.h>
-#include "Can.h"
-#include "Motor.h"
+#include "Pid.h"
 
 /* PID 변수 */
 volatile float left_speed_value = 0;
