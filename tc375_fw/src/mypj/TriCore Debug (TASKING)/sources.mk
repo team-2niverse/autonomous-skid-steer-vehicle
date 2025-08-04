@@ -24,7 +24,8 @@ SECONDARY_SIZE :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-ASW/ABE \
+ASW/AEB \
+ASW/PARKING \
 BSW/ASCLIN \
 BSW/CAN \
 BSW/ENCODER \
@@ -35,6 +36,7 @@ BSW/MOTOR \
 BSW/PID \
 BSW/STM \
 BSW/ULTRASONIC \
+Configurations/Debug \
 Configurations \
 . \
 Libraries/Infra/Platform/Tricore/Compilers \

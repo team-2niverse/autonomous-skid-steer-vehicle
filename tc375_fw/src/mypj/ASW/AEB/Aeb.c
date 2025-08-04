@@ -1,10 +1,9 @@
 /**********************************************************************************************************************
- * file Abe.c
+ * file Aeb.c
  * copyright Copyright (C) Infineon Technologies AG 2019
  * Boost Software License - Version 1.0 - August 17th, 2003
  *********************************************************************************************************************/
-#include "Abe.h"
-#include "Motor.h"
+#include "Aeb.h"
 
 #define MAX_VEL 7000
 #define BRAKE_THRESHOLDA 1.2
@@ -13,12 +12,13 @@
 #define DIST_THRESHOLDB 12
 
 // Function Prototypes
-void Abe_Check(float front_dist){
-    int cnd = (Motor_Get_Dir(0)==0 && Motor_Get_Dir(1)==0);
-    if (cnd==1){
-        if (front_dist > 20) return;
+void Aeb_Check(float front_dist){
+    int cnd = (Motor_Get_Dir(0)==1 && Motor_Get_Dir(1)==1);
 
-        if (front_dist < 10) {
+    if (cnd==1){
+        if (front_dist > 50) return;
+
+        if (front_dist < 30) {
             Motor_Set_Brake(0, 1);
             Motor_Set_Brake(1, 1);
             Motor_Set_Left(0, 0, 1); //brake = 1;

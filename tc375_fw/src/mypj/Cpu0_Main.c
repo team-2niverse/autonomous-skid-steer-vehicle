@@ -37,9 +37,9 @@ void core0_main(void)
 //        t1 = t2;
 //        my_printf("tof interrupt time : %d, get data time : %d", get_t(0), get_t(1));
         if (front != 0)
-            Abe_Check(front);
-        Motor_Set_Left(50, 1, Motor_Get_Brake(0));
-        Motor_Set_Right(50, 1, Motor_Get_Brake(1));
+            Aeb_Check(front);
+        Motor_Set_Left(100, 1, Motor_Get_Brake(0));
+        Motor_Set_Right(100, 1, Motor_Get_Brake(1));
         if (Motor_Get_Brake(0)==1){
             if (t1 > 1000){
                 Motor_Set_Brake(0,0);
@@ -56,9 +56,6 @@ void core0_main(void)
 //        uint32 v_right = Encoder_Get_V_Right();
 //        int vid = 201;
 //        Can_Send_Vel_Data(&vid, v_left, v_right);
-
-
-
 
     }
 }
