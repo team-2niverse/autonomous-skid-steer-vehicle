@@ -3,9 +3,12 @@
  * copyright Copyright (C) Infineon Technologies AG 2019
  * Boost Software License - Version 1.0 - August 17th, 2003
  *********************************************************************************************************************/
-
 #ifndef PID_H_
 #define PID_H_
+
+#include <stdbool.h>
+#include "Can.h"
+#include "Motor.h"
 
 void PID_ISR(void);
 int Constrain(int x, int a, int b);
