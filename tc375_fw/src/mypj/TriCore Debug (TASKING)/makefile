@@ -27,10 +27,10 @@ RM := rm -rf
 -include Libraries/Service/CpuGeneric/SysSe/Bsp/subdir.mk
 -include Libraries/Infra/Ssw/TC37A/Tricore/subdir.mk
 -include Libraries/Infra/Platform/Tricore/Compilers/subdir.mk
--include Configurations/Debug/subdir.mk
 -include Configurations/subdir.mk
 -include BSW/ULTRASONIC/subdir.mk
 -include BSW/STM/subdir.mk
+-include BSW/PID/subdir.mk
 -include BSW/MOTOR/subdir.mk
 -include BSW/GTM_ATOM_PWM/subdir.mk
 -include BSW/GPT12/subdir.mk
@@ -38,6 +38,7 @@ RM := rm -rf
 -include BSW/ENCODER/subdir.mk
 -include BSW/CAN/subdir.mk
 -include BSW/ASCLIN/subdir.mk
+-include ASW/ABE/subdir.mk
 -include subdir.mk
 ifneq ($(MAKECMDGOALS),clean)
 ifneq ($(strip $(C++_DEPS)),)

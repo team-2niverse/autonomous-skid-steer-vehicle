@@ -126,6 +126,88 @@ void Can_Send_Msg(unsigned int id, const uint8 *txData, int len)
     {
     }
 }
+void Can_Send_Data(unsigned int id, const uint8 *txData, int len)
+{
+    /* Initialization of the TX message with the default configuration */
+    IfxCan_Can_initMessage(&g_mcmcan.txMsg);
+
+    g_mcmcan.txMsg.messageId = id;
+    g_mcmcan.txMsg.dataLengthCode = len;
+
+    /* Define the content of the data to be transmitted */
+    for (int i = 0; i < 8; i++) {
+        g_mcmcan.txData[i] = txData[i];
+    }
+
+    /* Send the CAN message with the previously defined TX message content */
+    while( IfxCan_Status_notSentBusy ==
+           IfxCan_Can_sendMessage(&g_mcmcan.canSrcNode, &g_mcmcan.txMsg, (uint32 *)&g_mcmcan.txData[0]) )
+    {
+    }
+}
+void Can_Send_Dist_Data(unsigned int id, uint16 front_dist, uint16 left_dist, uint16 right_dist, uint16 back_dist)
+{
+    /* Initialization of the TX message with the default configuration */
+    IfxCan_Can_initMessage(&g_mcmcan.txMsg);
+
+    g_mcmcan.txMsg.messageId = id;
+    g_mcmcan.txMsg.dataLengthCode = 8;  // 8 bytes (4 x uint16)
+
+    /* Pack uint16 data into txData array */
+    /* Little-endian 방식으로 데이터 패킹 */
+    g_mcmcan.txData[0] = (uint8)(front_dist & 0xFF);        // data1 LSB
+    g_mcmcan.txData[1] = (uint8)((front_dist >> 8) & 0xFF); // data1 MSB
+    g_mcmcan.txData[2] = (uint8)(left_dist & 0xFF);        // data2 LSB
+    g_mcmcan.txData[3] = (uint8)((left_dist >> 8) & 0xFF); // data2 MSB
+    g_mcmcan.txData[4] = (uint8)(right_dist & 0xFF);        // data3 LSB
+    g_mcmcan.txData[5] = (uint8)((right_dist >> 8) & 0xFF); // data3 MSB
+    g_mcmcan.txData[6] = (uint8)(back_dist & 0xFF);        // data4 LSB
+    g_mcmcan.txData[7] = (uint8)((back_dist >> 8) & 0xFF); // data4 MSB
+
+    /* Send the CAN message with the previously defined TX message content */
+    while( IfxCan_Status_notSentBusy ==
+           IfxCan_Can_sendMessage(&g_mcmcan.canSrcNode, &g_mcmcan.txMsg, (uint32 *)&g_mcmcan.txData[0]) )
+    {
+    }
+    /*
+    uint16 received_data1 = (rxData[1] << 8) | rxData[0];
+    uint16 received_data2 = (rxData[3] << 8) | rxData[2];
+    uint16 received_data3 = (rxData[5] << 8) | rxData[4];
+    uint16 received_data4 = (rxData[7] << 8) | rxData[6];
+    */
+}
+void Can_Send_Vel_Data(unsigned int id, uint32 left_vel, uint32 right_vel)
+{
+    /* Initialization of the TX message with the default configuration */
+    IfxCan_Can_initMessage(&g_mcmcan.txMsg);
+
+    g_mcmcan.txMsg.messageId = id;
+    g_mcmcan.txMsg.dataLengthCode = 8;  // 8 bytes (4 x uint16)
+
+    /* Pack uint32 data into txData array */
+    /* Little-endian 방식으로 데이터 패킹 */
+    /* 2) uint32 2개 → 8 byte Little-Endian 패킹 */
+    g_mcmcan.txData[0] =  (uint8)(left_vel       & 0xFF);
+    g_mcmcan.txData[1] =  (uint8)((left_vel >> 8)  & 0xFF);
+    g_mcmcan.txData[2] =  (uint8)((left_vel >> 16) & 0xFF);
+    g_mcmcan.txData[3] =  (uint8)((left_vel >> 24) & 0xFF);
+
+    g_mcmcan.txData[4] =  (uint8)(right_vel       & 0xFF);
+    g_mcmcan.txData[5] =  (uint8)((right_vel >> 8)  & 0xFF);
+    g_mcmcan.txData[6] =  (uint8)((right_vel >> 16) & 0xFF);
+    g_mcmcan.txData[7] =  (uint8)((right_vel >> 24) & 0xFF);
+
+    /* Send the CAN message with the previously defined TX message content */
+    while( IfxCan_Status_notSentBusy ==
+           IfxCan_Can_sendMessage(&g_mcmcan.canSrcNode, &g_mcmcan.txMsg, (uint32 *)&g_mcmcan.txData[0]) )
+    {
+    }
+    /*
+    uint16 received_data1 = (rxData[3] << 24) | (rxData[2] << 16) | (rxData[1] << 8) | rxData[0];
+    uint16 received_data2 = (rxData[7] << 24) | (rxData[6] << 16) | (rxData[5] << 8) | rxData[4];
+    */
+}
+
 
 int Can_Recv_Msg(unsigned int *id, uint8 *rxData, int *len)
 {
@@ -167,20 +249,46 @@ void Can_TxIsrHandler(void)
 
 IFX_INTERRUPT(Can_Rx_Isr_Handler, 0, ISR_PRIORITY_CAN_RX);
 
+volatile int left_target_v =0;
+volatile int right_target_v=0;
+volatile uint64 t =0;
+uint64 t2 = 0;
+volatile uint64 t3 = 0;
 void Can_Rx_Isr_Handler (void) {
+    t = Stm_Get_Time_Ms() - t2;
+    t2 = Stm_Get_Time_Ms();
     unsigned int rxID;
     uint8 rxData[8] = {0, };
     int rxLen;
     Can_Recv_Msg(&rxID, rxData, &rxLen);
 
-    if (rxID == 522) {
+    if (rxID == 522) { //ToF Senser
         unsigned int tofVal = rxData[2] << 16 | rxData[1] << 8 | rxData[0];
         uint8 dis_status = rxData[3];
         uint16 signal_strength =  rxData[5] << 8 | rxData[4];
 
         if (signal_strength != 0)
-            dist_front = tofVal;
+            dist_front = tofVal/10; //mm => cm;
         else
             dist_front = 0xFFFFFFFF;
     }
+    else if (rxID == 0x100){
+        left_target_v = rxData[3] << 24 | rxData[2] << 16 | rxData[1] << 8 | rxData[0];
+        right_target_v = rxData[7] << 24 | rxData[6] << 16 | rxData[5] << 8 | rxData[4];
+    }
+    t3 = Stm_Get_Time_Ms()-t2;
+}
+uint32 Can_Get_T(int typ){
+    if (typ == 0){
+        return (uint32)t;
+    }
+    else{
+        return (uint32)t3;
+    }
+}
+int Can_Get_Target_Speed_L(void){
+    return left_target_v;
+}
+int Can_Get_Target_Speed_R(void){
+    return left_target_v;
 }
