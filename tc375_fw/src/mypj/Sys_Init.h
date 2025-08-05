@@ -12,7 +12,6 @@
 #include "IfxCpu.h"
 
 // BSW
-#include "isr_priority.h"
 #include "Can.h"
 #include "Encoder.h"
 #include "Buzzer.h"
@@ -24,7 +23,6 @@
 #include "Ultrasonic.h"
 
 // ASW
-#include "Aeb.h"
 #include "Parking.h"
 
 void System_Init(void);

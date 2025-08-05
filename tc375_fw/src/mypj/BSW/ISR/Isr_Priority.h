@@ -14,8 +14,9 @@
 
 // for timer
 #define ISR_PRIORITY_STM0 20
-#define ISR_PRIORITY_GPT1T3_TIMER 21
-#define ISR_PRIORITY_GPT2T6_TIMER 22
+#define ISR_PRIORITY_STM1 21
+#define ISR_PRIORITY_GPT1T3_TIMER 22
+#define ISR_PRIORITY_GPT2T6_TIMER 23
 
 // for can (remote control)
 #define ISR_PRIORITY_CAN_RX 30

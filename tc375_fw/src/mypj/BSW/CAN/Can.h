@@ -3,6 +3,9 @@
  * copyright Copyright (C) Infineon Technologies AG 2019
  * Boost Software License - Version 1.0 - August 17th, 2003
  *********************************************************************************************************************/
+
+// CAN 전체 수정
+
 #ifndef CAN_H_
 #define CAN_H_
 
@@ -13,6 +16,8 @@
 #include "IfxPort.h"
 #include "Isr_Priority.h"
 #include "Platform_Types.h"
+#include "Motor.h"
+#include "Encoder.h"
 
 #define CAN_MESSAGE_ID              (uint32)0x777           /* Message ID that will be used in arbitration phase    */
 #define MAXIMUM_CAN_DATA_PAYLOAD    2                       /* Define maximum classical CAN payload in 4-byte words */
@@ -43,18 +48,14 @@ typedef enum{
 
 // Function Prototypes
 void Can_Init(CAN_BAUDRATES ls_baudrate, CAN_NODE CAN_Node);
+int Can_Get_Aeb(void);
+
 void Can_Set_Filter_Range(uint32 start, uint32 end);
 void Can_Set_Filter_Mask(uint32 id, uint32 mask);
 
 void Can_Send_Msg(unsigned int id, const uint8 *txData, int len);
 int Can_Recv_Msg(unsigned int *id, uint8 *rxData, int *len);
 
-void Can_Send_Dist_Data(unsigned int id, uint16 front_dist, uint16 left_dist, uint16 right_dist, uint16 back_dist); //const?
-void Can_Send_Vel_Data(unsigned int id, uint32 left_vel, uint32 right_vel); //const?
-unsigned int Can_Get_Front_Dist(void);
+//void Can_Rx_Isr_Handler (void);
 
-void Can_Rx_Isr_Handler (void);
-uint32 Can_Get_T(int typ);
-int Can_Get_Target_Speed_L(void);
-int Can_Get_Target_Speed_R(void);
 #endif /* CAN_H_ */

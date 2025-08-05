@@ -8,12 +8,10 @@
 void System_Init(void){
     IfxCpu_enableInterrupts();
 
-    /*
-    !!WATCHDOG0 AND SAFETY WATCHDOG ARE DISABLED HERE!!
-    Enable the watchdogs and service them periodically if it is required
-    */
+    // !!WATCHDOG0 AND SAFETY WATCHDOG ARE DISABLED HERE!!
     IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
     IfxScuWdt_disableSafetyWatchdog(IfxScuWdt_getSafetyWatchdogPassword());
+    // Enable the watchdogs and service them periodically if it is required
 
     // Driver Init
     Asclin0_InitUart();

@@ -40,7 +40,6 @@ RM := rm -rf
 -include BSW/CAN/subdir.mk
 -include BSW/ASCLIN/subdir.mk
 -include ASW/PARKING/subdir.mk
--include ASW/AEB/subdir.mk
 -include subdir.mk
 ifneq ($(MAKECMDGOALS),clean)
 ifneq ($(strip $(C++_DEPS)),)
