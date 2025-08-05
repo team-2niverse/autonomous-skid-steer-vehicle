@@ -9,6 +9,7 @@
 #include "Ifx_reg.h"
 #include "CompilerTasking.h"
 #include "Isr_Priority.h"
+#include "Gpt12.h"
 
 #define NOTE_C5 523
 #define NOTE_D5 587
