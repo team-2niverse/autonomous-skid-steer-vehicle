@@ -3,9 +3,6 @@
  * copyright Copyright (C) Infineon Technologies AG 2019
  * Boost Software License - Version 1.0 - August 17th, 2003
  *********************************************************************************************************************/
-
-// CAN 전체 수정
-
 #ifndef CAN_H_
 #define CAN_H_
 
@@ -55,6 +52,11 @@ void Can_Set_Filter_Mask(uint32 id, uint32 mask);
 
 void Can_Send_Msg(unsigned int id, const uint8 *txData, int len);
 int Can_Recv_Msg(unsigned int *id, uint8 *rxData, int *len);
+
+int Can_Get_Aeb(void);
+int Can_Get_Parking(void);
+int Can_Get_Turn_Left(void);
+int Can_Get_Turn_Right(void);
 
 //void Can_Rx_Isr_Handler (void);
 

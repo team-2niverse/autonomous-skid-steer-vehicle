@@ -3,9 +3,6 @@
  * copyright Copyright (C) Infineon Technologies AG 2019
  * Boost Software License - Version 1.0 - August 17th, 2003
  *********************************************************************************************************************/
-
-// CAN 전체 수정
-
 #include "Ultrasonic.h"
 
 void Ultrasonic_Echo_Init(void);
@@ -16,23 +13,23 @@ static volatile uint64 start_back = 0;
 static volatile uint64 start_left = 0;
 static volatile uint64 start_right = 0;
 
-static volatile float dist_back = (float)0; //단위 mm
-static volatile float dist_left = (float)0;
-static volatile float dist_right = (float)0;
+static volatile uint8 dist_back = 0; //단위 mm
+static volatile uint8 dist_left = 0;
+static volatile uint8 dist_right = 0;
 
 static volatile int update_back = 0;
 static volatile int update_left = 0;
 static volatile int update_right = 0;
 
-float Ultrasonic_Get_Back_Dist(void) {
+uint8 Ultrasonic_Get_Back_Dist(void) {
     return dist_back;
 }
 
-float Ultrasonic_Get_Left_Dist(void) {
+uint8 Ultrasonic_Get_Left_Dist(void) {
     return dist_left;
 }
 
-float Ultrasonic_Get_Right_Dist(void) {
+uint8 Ultrasonic_Get_Right_Dist(void) {
     return dist_right;
 }
 
@@ -108,16 +105,6 @@ void Ultrasonic_Stm_Init_10us(void) {
     MODULE_STM0.CMP[0].U = (unsigned int)((MODULE_STM0.TIM0.U | ((uint64)MODULE_STM0.CAP.U << 32)) + 10*CPU_CLOCK_MHZ);
 }
 
-void Ultrasonic_Send_Can_Msg(void) {
-    if (update_back && update_left && update_right) {
-        uint8 txData[8] = {dist_back, dist_left, dist_right, 0, };
-        Can_Send_Msg(20, txData, 3);
-        update_back = 0;
-        update_left = 0;
-        update_right = 0;
-    }
-}
-
 IFX_INTERRUPT(Ultrasonic_Stm0_Isr_Handler, 0, ISR_PRIORITY_STM0);
 IFX_INTERRUPT(Ultrasonic_Eru2_Isr_Handler, 0, ISR_PRIORITY_ERU2);
 
@@ -145,23 +132,24 @@ void Ultrasonic_Eru2_Isr_Handler(void) {
         else
             dist_back = (uint8)((Stm_Get_Time_Us()-start_back) * 0.1715);
         update_back = 1;
-        Ultrasonic_Send_Can_Msg();
         MODULE_SCU.FMR.B.FC3 = 1;
-    } else if (MODULE_SCU.EIFR.B.INTF5) {
+    }
+
+    else if (MODULE_SCU.EIFR.B.INTF5) {
         if (MODULE_P15.IN.B.P8)
             start_left = Stm_Get_Time_Us();
         else
             dist_left = (uint8)((Stm_Get_Time_Us()-start_left) * 0.1715);
         update_left = 1;
-        Ultrasonic_Send_Can_Msg();
         MODULE_SCU.FMR.B.FC5 = 1;
-    } else if (MODULE_SCU.EIFR.B.INTF7) {
+    }
+
+    else if (MODULE_SCU.EIFR.B.INTF7) {
         if (MODULE_P15.IN.B.P1)
             start_right = Stm_Get_Time_Us();
         else
             dist_right = (uint8)((Stm_Get_Time_Us()-start_right) * 0.1715);
         update_right = 1;
-        Ultrasonic_Send_Can_Msg();
         MODULE_SCU.FMR.B.FC7 = 1;
     }
 }

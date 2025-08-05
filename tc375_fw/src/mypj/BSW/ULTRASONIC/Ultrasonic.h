@@ -10,14 +10,13 @@
 #include "Isr_Priority.h"
 #include "Ifx_Types.h"
 #include "IfxCpu.h"
-#include "Can.h"
 
 // Function Prototype
 void Ultrasonic_Init(void);
-float Ultrasonic_Get_Back_Dist(void);
-float Ultrasonic_Get_Left_Dist(void);
-float Ultrasonic_Get_Right_Dist(void);
-void Ultrasonic_Send_Can_Msg(void);
+void Ultrasonic_Echo_Init(void);
+uint8 Ultrasonic_Get_Back_Dist(void);
+uint8 Ultrasonic_Get_Left_Dist(void);
+uint8 Ultrasonic_Get_Right_Dist(void);
 
 //void Ultrasonic_Stm0_Isr_Handler(void);
 //void Ultrasonic_Eru2_Isr_Handler(void)

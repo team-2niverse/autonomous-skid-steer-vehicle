@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc4624a --dep-file=Led.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW\\\\PARKING -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ASCLIN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ENCODER -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPT12 -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GTM_ATOM_PWM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ISR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\MOTOR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\PID -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\STM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ULTRASONIC -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\MATLAB -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o BSW/GPIO/Led.src ../BSW/GPIO/Led.c"
+	.compiler_invocation	"ctc -f cc9288a --dep-file=Led.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW\\\\PARKING -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ASCLIN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ENCODER -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPT12 -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GTM_ATOM_PWM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ISR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\MOTOR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\PID -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\STM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ULTRASONIC -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\MATLAB -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o BSW/GPIO/Led.src ../BSW/GPIO/Led.c"
 	.compiler_name		"ctc"
 	;source	'../BSW/GPIO/Led.c'
 
@@ -13,46 +13,46 @@ $TC162
 	
 	.global	Led_Init
 ; Function Led_Init
-.L19:
+.L21:
 Led_Init:	.type	func
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003b711)
-.L167:
+.L173:
 	mov	d15,#16
-.L168:
+.L174:
 	insert	d15,d0,d15,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003b711),d15
-.L169:
+.L175:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003b700)
-.L170:
+.L176:
 	insert	d15,d15,#0,#1,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003b700),d15
-.L171:
+.L177:
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003b713)
-.L172:
+.L178:
 	mov	d15,#16
-.L173:
+.L179:
 	insert	d15,d0,d15,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003b713),d15
-.L174:
+.L180:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003b700)
-.L175:
+.L181:
 	insert	d15,d15,#0,#3,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003b700),d15
-.L176:
+.L182:
 	ret
-.L127:
+.L131:
 	
 __Led_Init_function_end:
 	.size	Led_Init,__Led_Init_function_end-Led_Init
-.L53:
+.L55:
 	; End of function
 	
 	.sdecl	'.text.Led.Led_Set',code,cluster('Led_Set')
@@ -61,35 +61,35 @@ __Led_Init_function_end:
 	
 	.global	Led_Set
 ; Function Led_Set
-.L21:
+.L23:
 Led_Set:	.type	func
 	jne	d4,#1,.L2
-.L181:
+.L187:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003b700)
-.L182:
+.L188:
 	insert	d15,d15,d5,#1,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003b700),d15
-.L183:
+.L189:
 	j	.L3
 .L2:
 	jne	d4,#2,.L4
-.L184:
+.L190:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003b700)
-.L185:
+.L191:
 	insert	d15,d15,d5,#3,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003b700),d15
 .L4:
 .L3:
 	ret
-.L128:
+.L132:
 	
 __Led_Set_function_end:
 	.size	Led_Set,__Led_Set_function_end-Led_Set
-.L58:
+.L60:
 	; End of function
 	
 	.sdecl	'.text.Led.Led_Toggle',code,cluster('Led_Toggle')
@@ -98,30 +98,30 @@ __Led_Set_function_end:
 	
 	.global	Led_Toggle
 ; Function Led_Toggle
-.L23:
+.L25:
 Led_Toggle:	.type	func
 	jne	d4,#1,.L5
-.L190:
+.L196:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003b700)
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003b700)
-.L191:
+.L197:
 	extr.u	d0,d0,#1,#1
 	xor	d0,d0,#1
 	insert	d15,d15,d0,#1,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003b700),d15
-.L192:
+.L198:
 	j	.L6
 .L5:
 	jne	d4,#2,.L7
-.L193:
+.L199:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003b700)
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003b700)
-.L194:
+.L200:
 	extr.u	d0,d0,#3,#1
 	xor	d0,d0,#1
 	insert	d15,d15,d0,#3,#1
@@ -130,11 +130,11 @@ Led_Toggle:	.type	func
 .L7:
 .L6:
 	ret
-.L132:
+.L136:
 	
 __Led_Toggle_function_end:
 	.size	Led_Toggle,__Led_Toggle_function_end-Led_Toggle
-.L63:
+.L65:
 	; End of function
 	
 	.sdecl	'.text.Led.Led_Omr_Toggle',code,cluster('Led_Omr_Toggle')
@@ -143,33 +143,33 @@ __Led_Toggle_function_end:
 	
 	.global	Led_Omr_Toggle
 ; Function Led_Omr_Toggle
-.L25:
+.L27:
 Led_Omr_Toggle:	.type	func
 	jne	d4,#1,.L8
-.L199:
+.L205:
 	mov	d15,#4
 	addih	d15,d15,#4
-.L200:
+.L206:
 	movh.a	a15,#61444
 	st.w	[a15]@los(0xf003aa04),d15
-.L201:
+.L207:
 	j	.L9
 .L8:
 	jne	d4,#2,.L10
-.L202:
+.L208:
 	mov	d15,#2
 	addih	d15,d15,#2
-.L203:
+.L209:
 	movh.a	a15,#61444
 	st.w	[a15]@los(0xf003aa04),d15
 .L10:
 .L9:
 	ret
-.L134:
+.L138:
 	
 __Led_Omr_Toggle_function_end:
 	.size	Led_Omr_Toggle,__Led_Omr_Toggle_function_end-Led_Omr_Toggle
-.L68:
+.L70:
 	; End of function
 	
 	.sdecl	'.text.Led.Led_Get_Sw1',code,cluster('Led_Get_Sw1')
@@ -178,22 +178,22 @@ __Led_Omr_Toggle_function_end:
 	
 	.global	Led_Get_Sw1
 ; Function Led_Get_Sw1
-.L27:
+.L29:
 Led_Get_Sw1:	.type	func
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003a224)
 	and	d15,#1
-.L208:
+.L214:
 	eq	d2,d15,#0
-.L209:
+.L215:
 	j	.L11
 .L11:
 	ret
-.L137:
+.L141:
 	
 __Led_Get_Sw1_function_end:
 	.size	Led_Get_Sw1,__Led_Get_Sw1_function_end-Led_Get_Sw1
-.L73:
+.L75:
 	; End of function
 	
 	.sdecl	'.text.Led.Led_Get_Sw2',code,cluster('Led_Get_Sw2')
@@ -202,22 +202,22 @@ __Led_Get_Sw1_function_end:
 	
 	.global	Led_Get_Sw2
 ; Function Led_Get_Sw2
-.L29:
+.L31:
 Led_Get_Sw2:	.type	func
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003a224)
 	extr.u	d15,d15,#1,#1
-.L214:
+.L220:
 	eq	d2,d15,#0
-.L215:
+.L221:
 	j	.L12
 .L12:
 	ret
-.L138:
+.L142:
 	
 __Led_Get_Sw2_function_end:
 	.size	Led_Get_Sw2,__Led_Get_Sw2_function_end-Led_Get_Sw2
-.L78:
+.L80:
 	; End of function
 	
 	.sdecl	'.text.Led.delay_ms',code,cluster('delay_ms')
@@ -226,150 +226,146 @@ __Led_Get_Sw2_function_end:
 	
 	.global	delay_ms
 ; Function delay_ms
-.L31:
+.L33:
 delay_ms:	.type	func
 	mov	d8,d4
-.L147:
+.L153:
 	lea	a15,0xf0001000
-.L109:
+.L113:
 	jz.a	a15,.L13
 .L13:
 	mov	d4,#0
-.L146:
+.L152:
 	call	IfxScuCcu_getSourceFrequency
-.L157:
+.L163:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036030)
 	and	d15,#15
 	itof	d15,d15
-.L158:
+.L164:
 	div.f	d15,d2,d15
-.L159:
+.L165:
 	j	.L14
 .L14:
 	j	.L15
 .L15:
 	ftoiz	d15,d15
-.L118:
+.L122:
 	mov	d0,#1000
-.L160:
+.L166:
 	div	e0,d15,d0
-.L161:
+.L167:
 	mul	d8,d0
-.L148:
+.L154:
 	j	.L16
 .L16:
 	mov	e4,d8
 	call	waitTime
-.L162:
+.L168:
 	ret
-.L105:
+.L109:
 	
 __delay_ms_function_end:
 	.size	delay_ms,__delay_ms_function_end-delay_ms
-.L48:
+.L50:
 	; End of function
 	
-	.sdecl	'.text.Led.Led_Left_Toggle',code,cluster('Led_Left_Toggle')
-	.sect	'.text.Led.Led_Left_Toggle'
+	.sdecl	'.text.Led.Led_Toggle_Set',code,cluster('Led_Toggle_Set')
+	.sect	'.text.Led.Led_Toggle_Set'
 	.align	2
 	
-	.global	Led_Left_Toggle
-; Function Led_Left_Toggle
-.L33:
-Led_Left_Toggle:	.type	func
-	call	Gpt12_Stop_Gpt2_T6
-.L220:
-	movh.a	a15,#@his(Left_Led_Flag)
-	lea	a15,[a15]@los(Left_Led_Flag)
-.L221:
-	mov	d15,#1
-.L222:
-	st.w	[a15],d15
-.L223:
-	movh.a	a15,#@his(Right_Led_Flag)
-	lea	a15,[a15]@los(Right_Led_Flag)
-.L224:
-	mov	d15,#0
-.L225:
-	st.w	[a15],d15
-.L226:
-	call	Gpt12_Run_Gpt2_T6
-.L227:
-	ret
-.L139:
-	
-__Led_Left_Toggle_function_end:
-	.size	Led_Left_Toggle,__Led_Left_Toggle_function_end-Led_Left_Toggle
-.L83:
-	; End of function
-	
-	.sdecl	'.text.Led.Led_Right_Toggle',code,cluster('Led_Right_Toggle')
-	.sect	'.text.Led.Led_Right_Toggle'
-	.align	2
-	
-	.global	Led_Right_Toggle
-; Function Led_Right_Toggle
+	.global	Led_Toggle_Set
+; Function Led_Toggle_Set
 .L35:
-Led_Right_Toggle:	.type	func
-	call	Gpt12_Stop_Gpt2_T6
-.L232:
+Led_Toggle_Set:	.type	func
 	movh.a	a15,#@his(Left_Led_Flag)
 	lea	a15,[a15]@los(Left_Led_Flag)
-.L233:
-	mov	d15,#0
-.L234:
-	st.w	[a15],d15
-.L235:
+.L226:
+	st.w	[a15],d4
+.L227:
 	movh.a	a15,#@his(Right_Led_Flag)
 	lea	a15,[a15]@los(Right_Led_Flag)
-.L236:
-	mov	d15,#1
-.L237:
-	st.w	[a15],d15
-.L238:
-	call	Gpt12_Run_Gpt2_T6
-.L239:
+.L228:
+	st.w	[a15],d5
+.L229:
 	ret
-.L140:
+.L143:
 	
-__Led_Right_Toggle_function_end:
-	.size	Led_Right_Toggle,__Led_Right_Toggle_function_end-Led_Right_Toggle
-.L88:
+__Led_Toggle_Set_function_end:
+	.size	Led_Toggle_Set,__Led_Toggle_Set_function_end-Led_Toggle_Set
+.L85:
 	; End of function
 	
-	.sdecl	'.text.Led.Led_Both_Toggle',code,cluster('Led_Both_Toggle')
-	.sect	'.text.Led.Led_Both_Toggle'
+	.sdecl	'.text.Led.Led_Toggle_On',code,cluster('Led_Toggle_On')
+	.sect	'.text.Led.Led_Toggle_On'
 	.align	2
 	
-	.global	Led_Both_Toggle
-; Function Led_Both_Toggle
+	.global	Led_Toggle_On
+; Function Led_Toggle_On
 .L37:
-Led_Both_Toggle:	.type	func
-	call	Gpt12_Stop_Gpt2_T6
-.L244:
-	movh.a	a15,#@his(Left_Led_Flag)
-	lea	a15,[a15]@los(Left_Led_Flag)
-.L245:
-	mov	d15,#1
-.L246:
-	st.w	[a15],d15
-.L247:
-	movh.a	a15,#@his(Right_Led_Flag)
-	lea	a15,[a15]@los(Right_Led_Flag)
-.L248:
-	mov	d15,#1
-.L249:
-	st.w	[a15],d15
-.L250:
+Led_Toggle_On:	.type	func
+	movh.a	a15,#@his(Led_Toggle_Flag)
+	lea	a15,[a15]@los(Led_Toggle_Flag)
+	ld.w	d15,[a15]
+.L234:
+	jne	d15,#0,.L17
+.L235:
 	call	Gpt12_Run_Gpt2_T6
-.L251:
+.L236:
+	movh.a	a15,#@his(Led_Toggle_Flag)
+	lea	a15,[a15]@los(Led_Toggle_Flag)
+.L237:
+	mov	d15,#1
+.L238:
+	st.w	[a15],d15
+.L17:
 	ret
-.L141:
+.L146:
 	
-__Led_Both_Toggle_function_end:
-	.size	Led_Both_Toggle,__Led_Both_Toggle_function_end-Led_Both_Toggle
-.L93:
+__Led_Toggle_On_function_end:
+	.size	Led_Toggle_On,__Led_Toggle_On_function_end-Led_Toggle_On
+.L90:
+	; End of function
+	
+	.sdecl	'.text.Led.Led_Toggle_Off',code,cluster('Led_Toggle_Off')
+	.sect	'.text.Led.Led_Toggle_Off'
+	.align	2
+	
+	.global	Led_Toggle_Off
+; Function Led_Toggle_Off
+.L39:
+Led_Toggle_Off:	.type	func
+	movh.a	a15,#@his(Led_Toggle_Flag)
+	lea	a15,[a15]@los(Led_Toggle_Flag)
+	ld.w	d15,[a15]
+.L243:
+	jne	d15,#1,.L18
+.L244:
+	call	Gpt12_Stop_Gpt2_T6
+.L245:
+	movh.a	a15,#@his(Led_Toggle_Flag)
+	lea	a15,[a15]@los(Led_Toggle_Flag)
+.L246:
+	mov	d15,#0
+.L247:
+	st.w	[a15],d15
+.L248:
+	mov	d4,#1
+.L249:
+	mov	d5,#0
+	call	Led_Set
+.L250:
+	mov	d4,#2
+.L251:
+	mov	d5,#0
+	call	Led_Set
+.L18:
+	ret
+.L147:
+	
+__Led_Toggle_Off_function_end:
+	.size	Led_Toggle_Off,__Led_Toggle_Off_function_end-Led_Toggle_Off
+.L95:
 	; End of function
 	
 	.sdecl	'.text.inttab0.intvec.017',code
@@ -383,7 +379,7 @@ __Led_Both_Toggle_function_end:
 	
 	.global	Led_Isr_Gpt2_T6_Handler
 ; Function Led_Isr_Gpt2_T6_Handler
-.L39:
+.L41:
 Led_Isr_Gpt2_T6_Handler:	.type	func
 	svlcx
 .L256:
@@ -402,7 +398,7 @@ Led_Isr_Gpt2_T6_Handler:	.type	func
 .L259:
 	mov.u	d8,#50000
 .L260:
-	jlt.u	d15,d8,.L17
+	jlt.u	d15,d8,.L19
 .L261:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003b700)
@@ -444,14 +440,14 @@ Led_Isr_Gpt2_T6_Handler:	.type	func
 	mov	d15,#0
 .L271:
 	st.w	[a15],d15
-.L17:
+.L19:
 	rslcx
 	rfe
-.L142:
+.L148:
 	
 __Led_Isr_Gpt2_T6_Handler_function_end:
 	.size	Led_Isr_Gpt2_T6_Handler,__Led_Isr_Gpt2_T6_Handler_function_end-Led_Isr_Gpt2_T6_Handler
-.L98:
+.L100:
 	; End of function
 	
 	.sdecl	'.data.Led.Left_Led_Flag',data,cluster('Left_Led_Flag')
@@ -466,6 +462,12 @@ Left_Led_Flag:	.type	object
 Right_Led_Flag:	.type	object
 	.size	Right_Led_Flag,4
 	.space	4
+	.sdecl	'.data.Led.Led_Toggle_Flag',data,cluster('Led_Toggle_Flag')
+	.sect	'.data.Led.Led_Toggle_Flag'
+	.align	2
+Led_Toggle_Flag:	.type	object
+	.size	Led_Toggle_Flag,4
+	.space	4
 	.sdecl	'.data.Led.g_Cnt10us',data,cluster('g_Cnt10us')
 	.sect	'.data.Led.g_Cnt10us'
 	.align	2
@@ -474,12 +476,9 @@ g_Cnt10us:	.type	object
 	.space	4
 	.calls	'delay_ms','IfxScuCcu_getSourceFrequency'
 	.calls	'delay_ms','waitTime'
-	.calls	'Led_Left_Toggle','Gpt12_Stop_Gpt2_T6'
-	.calls	'Led_Left_Toggle','Gpt12_Run_Gpt2_T6'
-	.calls	'Led_Right_Toggle','Gpt12_Stop_Gpt2_T6'
-	.calls	'Led_Right_Toggle','Gpt12_Run_Gpt2_T6'
-	.calls	'Led_Both_Toggle','Gpt12_Stop_Gpt2_T6'
-	.calls	'Led_Both_Toggle','Gpt12_Run_Gpt2_T6'
+	.calls	'Led_Toggle_On','Gpt12_Run_Gpt2_T6'
+	.calls	'Led_Toggle_Off','Gpt12_Stop_Gpt2_T6'
+	.calls	'Led_Toggle_Off','Led_Set'
 	.calls	'Led_Init','',0
 	.calls	'Led_Set','',0
 	.calls	'Led_Toggle','',0
@@ -487,9 +486,9 @@ g_Cnt10us:	.type	object
 	.calls	'Led_Get_Sw1','',0
 	.calls	'Led_Get_Sw2','',0
 	.calls	'delay_ms','',0
-	.calls	'Led_Left_Toggle','',0
-	.calls	'Led_Right_Toggle','',0
-	.calls	'Led_Both_Toggle','',0
+	.calls	'Led_Toggle_Set','',0
+	.calls	'Led_Toggle_On','',0
+	.calls	'Led_Toggle_Off','',0
 	.extern	IfxScuCcu_getSourceFrequency
 	.extern	waitTime
 	.extern	Gpt12_Run_Gpt2_T6
@@ -497,18 +496,18 @@ g_Cnt10us:	.type	object
 	.calls	'Led_Isr_Gpt2_T6_Handler','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L41:
+.L43:
 	.word	157135
 	.half	3
-	.word	.L42
+	.word	.L44
 	.byte	4
-.L40:
+.L42:
 	.byte	1
 	.byte	'../BSW/GPIO/Led.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L43
+	.word	.L45
 	.byte	2,1,1,3
 	.word	202
 	.byte	4
@@ -517,7 +516,7 @@ g_Cnt10us:	.type	object
 	.word	205
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
-.L123:
+.L127:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,149,2,18
@@ -544,10 +543,10 @@ g_Cnt10us:	.type	object
 	.byte	'value',0,2,143,1,43
 	.word	348
 	.byte	6,0
-.L106:
+.L110:
 	.byte	7
 	.byte	'unsigned int',0,4,7
-.L136:
+.L140:
 	.byte	7
 	.byte	'int',0,4,5,7
 	.byte	'unsigned int',0,4,7,10
@@ -573,7 +572,7 @@ g_Cnt10us:	.type	object
 	.byte	'B',0
 	.word	505
 	.byte	4,2,35,0,0
-.L129:
+.L133:
 	.byte	7
 	.byte	'unsigned char',0,1,8,7
 	.byte	'unsigned short int',0,2,7,10
@@ -2041,12 +2040,12 @@ g_Cnt10us:	.type	object
 	.byte	'timeSec',0,7,152,14,40
 	.word	262
 	.byte	19,6,0,0
-.L125:
+.L129:
 	.byte	8
 	.byte	'IfxScuCcu_getStmFrequency',0,3,7,203,13,20
 	.word	262
 	.byte	1,1
-.L126:
+.L130:
 	.byte	6,0,17,9,155,1,9,1,18
 	.byte	'IfxCpu_ResourceCpu_0',0,0,18
 	.byte	'IfxCpu_ResourceCpu_1',0,1,18
@@ -2721,18 +2720,18 @@ g_Cnt10us:	.type	object
 	.byte	'stm',0,12,194,4,39
 	.word	13841
 	.byte	6,0
-.L117:
+.L121:
 	.byte	8
 	.byte	'IfxStm_getFrequency',0,3,12,211,4,20
 	.word	262
 	.byte	1,1
-.L119:
+.L123:
 	.byte	5
 	.byte	'stm',0,12,211,4,49
 	.word	13841
-.L121:
+.L125:
 	.byte	19
-.L122:
+.L126:
 	.byte	6,6,0,0,8
 	.byte	'IfxStm_getLower',0,3,12,222,4,19
 	.word	9767
@@ -2740,23 +2739,23 @@ g_Cnt10us:	.type	object
 	.byte	'stm',0,12,222,4,44
 	.word	13841
 	.byte	6,0
-.L115:
+.L119:
 	.byte	7
 	.byte	'long int',0,4,5
-.L108:
+.L112:
 	.byte	8
 	.byte	'IfxStm_getTicksFromMilliseconds',0,3,12,153,5,19
 	.word	13977
 	.byte	1,1
-.L110:
+.L114:
 	.byte	5
 	.byte	'stm',0,12,153,5,60
 	.word	13841
-.L112:
+.L116:
 	.byte	5
 	.byte	'milliSeconds',0,12,153,5,72
 	.word	9767
-.L114:
+.L118:
 	.byte	19,6,0,0,7
 	.byte	'long long int',0,8,5,8
 	.byte	'IfxStm_now',0,3,12,223,5,19
@@ -23899,19 +23898,19 @@ g_Cnt10us:	.type	object
 	.byte	28
 	.byte	'Ifx_ASCLIN_LIN',0,27,166,5,3
 	.word	157094
-.L143:
+.L149:
 	.byte	14
 	.word	466
-.L144:
+.L150:
 	.byte	14
 	.word	466
-.L145:
+.L151:
 	.byte	14
 	.word	466
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L42:
+.L44:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -23924,12 +23923,12 @@ g_Cnt10us:	.type	object
 	.byte	15,0,0,31,38,0,73,19,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L43:
-	.word	.L150-.L149
-.L149:
+.L45:
+	.word	.L156-.L155
+.L155:
 	.half	3
-	.word	.L152-.L151
-.L151:
+	.word	.L158-.L157
+.L157:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
@@ -23972,459 +23971,405 @@ g_Cnt10us:	.type	object
 	.byte	'IfxCbs_regdef.h',0,1,0,0
 	.byte	'IfxGpt12_regdef.h',0,1,0,0
 	.byte	'IfxAsclin_regdef.h',0,1,0,0,0
-.L152:
-.L150:
+.L158:
+.L156:
 	.sdecl	'.debug_info',debug,cluster('delay_ms')
 	.sect	'.debug_info'
-.L44:
+.L46:
 	.word	424
 	.half	3
-	.word	.L45
+	.word	.L47
 	.byte	4,1
 	.byte	'../BSW/GPIO/Led.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L47,.L46
+	.word	.L49,.L48
 	.byte	2
-	.word	.L40
+	.word	.L42
 	.byte	3
 	.byte	'delay_ms',0,1,79,6,1,1,1
-	.word	.L31,.L105,.L30
+	.word	.L33,.L109,.L32
 	.byte	4
 	.byte	'ms',0,1,79,28
-	.word	.L106,.L107
-	.byte	5
-	.word	.L31,.L105
-	.byte	6
-	.word	.L108,.L109,.L16
-	.byte	7
 	.word	.L110,.L111
+	.byte	5
+	.word	.L33,.L109
+	.byte	6
+	.word	.L112,.L113,.L16
 	.byte	7
-	.word	.L112,.L113
+	.word	.L114,.L115
+	.byte	7
+	.word	.L116,.L117
 	.byte	8
-	.word	.L114,.L109,.L16
+	.word	.L118,.L113,.L16
 	.byte	9
 	.byte	'freq',0,2,155,5,12
-	.word	.L115,.L116
-	.byte	6
-	.word	.L117,.L109,.L118
-	.byte	7
 	.word	.L119,.L120
+	.byte	6
+	.word	.L121,.L113,.L122
+	.byte	7
+	.word	.L123,.L124
 	.byte	8
-	.word	.L121,.L109,.L118
+	.word	.L125,.L113,.L122
 	.byte	8
-	.word	.L122,.L13,.L15
+	.word	.L126,.L13,.L15
 	.byte	9
 	.byte	'result',0,2,214,4,13
-	.word	.L123,.L124
+	.word	.L127,.L128
 	.byte	6
-	.word	.L125,.L13,.L14
+	.word	.L129,.L13,.L14
 	.byte	10
-	.word	.L126,.L13,.L14
+	.word	.L130,.L13,.L14
 	.byte	0,0,0,0,0,0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('delay_ms')
 	.sect	'.debug_abbrev'
-.L45:
+.L47:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,29,1,49
 	.byte	16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,1,49,16,17,1,18,1,0,0,9,52,0,3,8,58,15,59,15,57,15,73,16,2,6
 	.byte	0,0,10,11,0,49,16,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('delay_ms')
 	.sect	'.debug_line'
-.L46:
-	.word	.L154-.L153
-.L153:
+.L48:
+	.word	.L160-.L159
+.L159:
 	.half	3
-	.word	.L156-.L155
-.L155:
+	.word	.L162-.L161
+.L161:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Led.c',0,0,0,0
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Stm\\Std\\IfxStm.h',0
 	.byte	0,0,0
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Scu\\Std\\IfxScuCcu.h',0
 	.byte	0,0,0,0
-.L156:
+.L162:
 	.byte	5,6,7,0,5,2
-	.word	.L31
+	.word	.L33
 	.byte	3,206,0,1,5,46,9
-	.half	.L147-.L31
+	.half	.L153-.L33
 	.byte	3,2,1,4,2,5,5,9
-	.half	.L109-.L147
+	.half	.L113-.L153
 	.byte	3,132,4,1,4,3,5,41,7,9
-	.half	.L13-.L109
+	.half	.L13-.L113
 	.byte	3,248,8,1,5,77,9
-	.half	.L157-.L13
+	.half	.L163-.L13
 	.byte	1,5,62,9
-	.half	.L158-.L157
+	.half	.L164-.L163
 	.byte	1,5,5,9
-	.half	.L159-.L158
+	.half	.L165-.L164
 	.byte	1,4,2,9
-	.half	.L14-.L159
+	.half	.L14-.L165
 	.byte	3,141,119,1,5,19,9
 	.half	.L15-.L14
 	.byte	3,193,0,1,5,21,9
-	.half	.L118-.L15
+	.half	.L122-.L15
 	.byte	3,1,1,5,18,9
-	.half	.L160-.L118
+	.half	.L166-.L122
 	.byte	1,5,28,9
-	.half	.L161-.L160
+	.half	.L167-.L166
 	.byte	1,5,5,9
-	.half	.L148-.L161
+	.half	.L154-.L167
 	.byte	1,4,1,5,45,9
-	.half	.L16-.L148
+	.half	.L16-.L154
 	.byte	3,181,123,1,5,1,9
-	.half	.L162-.L16
+	.half	.L168-.L16
 	.byte	3,1,1,7,9
-	.half	.L48-.L162
+	.half	.L50-.L168
 	.byte	0,1,1
-.L154:
+.L160:
 	.sdecl	'.debug_ranges',debug,cluster('delay_ms')
 	.sect	'.debug_ranges'
-.L47:
-	.word	-1,.L31,0,.L48-.L31,0,0
+.L49:
+	.word	-1,.L33,0,.L50-.L33,0,0
 	.sdecl	'.debug_info',debug,cluster('Led_Init')
 	.sect	'.debug_info'
-.L49:
+.L51:
 	.word	246
 	.half	3
-	.word	.L50
+	.word	.L52
 	.byte	4,1
 	.byte	'../BSW/GPIO/Led.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L52,.L51
+	.word	.L54,.L53
 	.byte	2
-	.word	.L40
+	.word	.L42
 	.byte	3
 	.byte	'Led_Init',0,1,8,6,1,1,1
-	.word	.L19,.L127,.L18
+	.word	.L21,.L131,.L20
 	.byte	4
-	.word	.L19,.L127
+	.word	.L21,.L131
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Led_Init')
 	.sect	'.debug_abbrev'
-.L50:
+.L52:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Led_Init')
 	.sect	'.debug_line'
-.L51:
-	.word	.L164-.L163
-.L163:
+.L53:
+	.word	.L170-.L169
+.L169:
 	.half	3
-	.word	.L166-.L165
-.L165:
+	.word	.L172-.L171
+.L171:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Led.c',0,0,0,0,0
-.L166:
+.L172:
 	.byte	5,23,7,0,5,2
-	.word	.L19
+	.word	.L21
 	.byte	3,9,1,5,30,9
-	.half	.L167-.L19
+	.half	.L173-.L21
 	.byte	1,5,28,9
-	.half	.L168-.L167
-	.byte	1,5,21,9
-	.half	.L169-.L168
-	.byte	3,1,1,5,25,9
-	.half	.L170-.L169
-	.byte	1,5,23,9
-	.half	.L171-.L170
-	.byte	3,3,1,5,30,9
-	.half	.L172-.L171
-	.byte	1,5,28,9
-	.half	.L173-.L172
-	.byte	1,5,21,9
 	.half	.L174-.L173
-	.byte	3,1,1,5,25,9
+	.byte	1,5,21,9
 	.half	.L175-.L174
-	.byte	1,5,1,9
+	.byte	3,1,1,5,25,9
 	.half	.L176-.L175
+	.byte	1,5,23,9
+	.half	.L177-.L176
+	.byte	3,3,1,5,30,9
+	.half	.L178-.L177
+	.byte	1,5,28,9
+	.half	.L179-.L178
+	.byte	1,5,21,9
+	.half	.L180-.L179
+	.byte	3,1,1,5,25,9
+	.half	.L181-.L180
+	.byte	1,5,1,9
+	.half	.L182-.L181
 	.byte	3,6,1,7,9
-	.half	.L53-.L176
+	.half	.L55-.L182
 	.byte	0,1,1
-.L164:
+.L170:
 	.sdecl	'.debug_ranges',debug,cluster('Led_Init')
 	.sect	'.debug_ranges'
-.L52:
-	.word	-1,.L19,0,.L53-.L19,0,0
+.L54:
+	.word	-1,.L21,0,.L55-.L21,0,0
 	.sdecl	'.debug_info',debug,cluster('Led_Set')
 	.sect	'.debug_info'
-.L54:
+.L56:
 	.word	283
 	.half	3
-	.word	.L55
+	.word	.L57
 	.byte	4,1
 	.byte	'../BSW/GPIO/Led.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L57,.L56
+	.word	.L59,.L58
 	.byte	2
-	.word	.L40
+	.word	.L42
 	.byte	3
 	.byte	'Led_Set',0,1,23,6,1,1,1
-	.word	.L21,.L128,.L20
+	.word	.L23,.L132,.L22
 	.byte	4
 	.byte	'num_LED',0,1,23,28
-	.word	.L129,.L130
+	.word	.L133,.L134
 	.byte	4
 	.byte	'onOff',0,1,23,51
-	.word	.L129,.L131
+	.word	.L133,.L135
 	.byte	5
-	.word	.L21,.L128
+	.word	.L23,.L132
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Led_Set')
 	.sect	'.debug_abbrev'
-.L55:
+.L57:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Led_Set')
 	.sect	'.debug_line'
-.L56:
-	.word	.L178-.L177
-.L177:
+.L58:
+	.word	.L184-.L183
+.L183:
 	.half	3
-	.word	.L180-.L179
-.L179:
+	.word	.L186-.L185
+.L185:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Led.c',0,0,0,0,0
-.L180:
+.L186:
 	.byte	5,5,7,0,5,2
-	.word	.L21
+	.word	.L23
 	.byte	3,23,1,5,25,7,9
-	.half	.L181-.L21
+	.half	.L187-.L23
 	.byte	3,1,1,5,29,9
-	.half	.L182-.L181
+	.half	.L188-.L187
 	.byte	1,5,36,9
-	.half	.L183-.L182
+	.half	.L189-.L188
 	.byte	1,5,10,9
-	.half	.L2-.L183
+	.half	.L2-.L189
 	.byte	3,11,1,5,25,7,9
-	.half	.L184-.L2
+	.half	.L190-.L2
 	.byte	3,1,1,5,29,9
-	.half	.L185-.L184
+	.half	.L191-.L190
 	.byte	1,5,1,9
-	.half	.L3-.L185
+	.half	.L3-.L191
 	.byte	3,10,1,7,9
-	.half	.L58-.L3
+	.half	.L60-.L3
 	.byte	0,1,1
-.L178:
+.L184:
 	.sdecl	'.debug_ranges',debug,cluster('Led_Set')
 	.sect	'.debug_ranges'
-.L57:
-	.word	-1,.L21,0,.L58-.L21,0,0
+.L59:
+	.word	-1,.L23,0,.L60-.L23,0,0
 	.sdecl	'.debug_info',debug,cluster('Led_Toggle')
 	.sect	'.debug_info'
-.L59:
+.L61:
 	.word	268
 	.half	3
-	.word	.L60
+	.word	.L62
 	.byte	4,1
 	.byte	'../BSW/GPIO/Led.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L62,.L61
+	.word	.L64,.L63
 	.byte	2
-	.word	.L40
+	.word	.L42
 	.byte	3
 	.byte	'Led_Toggle',0,1,49,6,1,1,1
-	.word	.L23,.L132,.L22
+	.word	.L25,.L136,.L24
 	.byte	4
 	.byte	'num_LED',0,1,49,31
-	.word	.L129,.L133
+	.word	.L133,.L137
 	.byte	5
-	.word	.L23,.L132
+	.word	.L25,.L136
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Led_Toggle')
 	.sect	'.debug_abbrev'
-.L60:
+.L62:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Led_Toggle')
 	.sect	'.debug_line'
-.L61:
-	.word	.L187-.L186
-.L186:
+.L63:
+	.word	.L193-.L192
+.L192:
 	.half	3
-	.word	.L189-.L188
-.L188:
+	.word	.L195-.L194
+.L194:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Led.c',0,0,0,0,0
-.L189:
+.L195:
 	.byte	5,5,7,0,5,2
-	.word	.L23
+	.word	.L25
 	.byte	3,49,1,5,25,7,9
-	.half	.L190-.L23
+	.half	.L196-.L25
 	.byte	3,1,1,5,29,9
-	.half	.L191-.L190
+	.half	.L197-.L196
 	.byte	1,5,33,9
-	.half	.L192-.L191
+	.half	.L198-.L197
 	.byte	1,5,10,9
-	.half	.L5-.L192
+	.half	.L5-.L198
 	.byte	3,2,1,5,25,7,9
-	.half	.L193-.L5
+	.half	.L199-.L5
 	.byte	3,1,1,5,29,9
-	.half	.L194-.L193
+	.half	.L200-.L199
 	.byte	1,5,1,9
-	.half	.L6-.L194
+	.half	.L6-.L200
 	.byte	3,2,1,7,9
-	.half	.L63-.L6
+	.half	.L65-.L6
 	.byte	0,1,1
-.L187:
+.L193:
 	.sdecl	'.debug_ranges',debug,cluster('Led_Toggle')
 	.sect	'.debug_ranges'
-.L62:
-	.word	-1,.L23,0,.L63-.L23,0,0
+.L64:
+	.word	-1,.L25,0,.L65-.L25,0,0
 	.sdecl	'.debug_info',debug,cluster('Led_Omr_Toggle')
 	.sect	'.debug_info'
-.L64:
+.L66:
 	.word	272
 	.half	3
-	.word	.L65
+	.word	.L67
 	.byte	4,1
 	.byte	'../BSW/GPIO/Led.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L67,.L66
+	.word	.L69,.L68
 	.byte	2
-	.word	.L40
+	.word	.L42
 	.byte	3
 	.byte	'Led_Omr_Toggle',0,1,58,6,1,1,1
-	.word	.L25,.L134,.L24
+	.word	.L27,.L138,.L26
 	.byte	4
 	.byte	'num_LED',0,1,58,35
-	.word	.L129,.L135
+	.word	.L133,.L139
 	.byte	5
-	.word	.L25,.L134
+	.word	.L27,.L138
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Led_Omr_Toggle')
 	.sect	'.debug_abbrev'
-.L65:
+.L67:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Led_Omr_Toggle')
 	.sect	'.debug_line'
-.L66:
-	.word	.L196-.L195
-.L195:
+.L68:
+	.word	.L202-.L201
+.L201:
 	.half	3
-	.word	.L198-.L197
-.L197:
+	.word	.L204-.L203
+.L203:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Led.c',0,0,0,0,0
-.L198:
+.L204:
 	.byte	5,5,7,0,5,2
-	.word	.L25
+	.word	.L27
 	.byte	3,58,1,5,39,7,9
-	.half	.L199-.L25
+	.half	.L205-.L27
 	.byte	3,1,1,5,26,9
-	.half	.L200-.L199
+	.half	.L206-.L205
 	.byte	1,5,48,9
-	.half	.L201-.L200
+	.half	.L207-.L206
 	.byte	1,5,10,9
-	.half	.L8-.L201
+	.half	.L8-.L207
 	.byte	3,3,1,5,39,7,9
-	.half	.L202-.L8
+	.half	.L208-.L8
 	.byte	3,1,1,5,26,9
-	.half	.L203-.L202
+	.half	.L209-.L208
 	.byte	1,5,1,9
-	.half	.L9-.L203
+	.half	.L9-.L209
 	.byte	3,4,1,7,9
-	.half	.L68-.L9
+	.half	.L70-.L9
 	.byte	0,1,1
-.L196:
+.L202:
 	.sdecl	'.debug_ranges',debug,cluster('Led_Omr_Toggle')
 	.sect	'.debug_ranges'
-.L67:
-	.word	-1,.L25,0,.L68-.L25,0,0
+.L69:
+	.word	-1,.L27,0,.L70-.L27,0,0
 	.sdecl	'.debug_info',debug,cluster('Led_Get_Sw1')
 	.sect	'.debug_info'
-.L69:
+.L71:
 	.word	253
 	.half	3
-	.word	.L70
+	.word	.L72
 	.byte	4,1
 	.byte	'../BSW/GPIO/Led.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L72,.L71
+	.word	.L74,.L73
 	.byte	2
-	.word	.L40
+	.word	.L42
 	.byte	3
 	.byte	'Led_Get_Sw1',0,1,71,5
-	.word	.L136
+	.word	.L140
 	.byte	1,1,1
-	.word	.L27,.L137,.L26
+	.word	.L29,.L141,.L28
 	.byte	4
-	.word	.L27,.L137
+	.word	.L29,.L141
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Led_Get_Sw1')
 	.sect	'.debug_abbrev'
-.L70:
+.L72:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Led_Get_Sw1')
 	.sect	'.debug_line'
-.L71:
-	.word	.L205-.L204
-.L204:
-	.half	3
-	.word	.L207-.L206
-.L206:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../BSW/GPIO/Led.c',0,0,0,0,0
-.L207:
-	.byte	5,28,7,0,5,2
-	.word	.L27
-	.byte	3,199,0,1,5,31,9
-	.half	.L208-.L27
-	.byte	1,5,5,9
-	.half	.L209-.L208
-	.byte	1,5,1,9
-	.half	.L11-.L209
-	.byte	3,1,1,7,9
-	.half	.L73-.L11
-	.byte	0,1,1
-.L205:
-	.sdecl	'.debug_ranges',debug,cluster('Led_Get_Sw1')
-	.sect	'.debug_ranges'
-.L72:
-	.word	-1,.L27,0,.L73-.L27,0,0
-	.sdecl	'.debug_info',debug,cluster('Led_Get_Sw2')
-	.sect	'.debug_info'
-.L74:
-	.word	253
-	.half	3
-	.word	.L75
-	.byte	4,1
-	.byte	'../BSW/GPIO/Led.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
-	.byte	1
-	.word	.L77,.L76
-	.byte	2
-	.word	.L40
-	.byte	3
-	.byte	'Led_Get_Sw2',0,1,74,5
-	.word	.L136
-	.byte	1,1,1
-	.word	.L29,.L138,.L28
-	.byte	4
-	.word	.L29,.L138
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('Led_Get_Sw2')
-	.sect	'.debug_abbrev'
-.L75:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('Led_Get_Sw2')
-	.sect	'.debug_line'
-.L76:
+.L73:
 	.word	.L211-.L210
 .L210:
 	.half	3
@@ -24435,48 +24380,50 @@ g_Cnt10us:	.type	object
 .L213:
 	.byte	5,28,7,0,5,2
 	.word	.L29
-	.byte	3,202,0,1,5,31,9
+	.byte	3,199,0,1,5,31,9
 	.half	.L214-.L29
 	.byte	1,5,5,9
 	.half	.L215-.L214
 	.byte	1,5,1,9
-	.half	.L12-.L215
+	.half	.L11-.L215
 	.byte	3,1,1,7,9
-	.half	.L78-.L12
+	.half	.L75-.L11
 	.byte	0,1,1
 .L211:
-	.sdecl	'.debug_ranges',debug,cluster('Led_Get_Sw2')
+	.sdecl	'.debug_ranges',debug,cluster('Led_Get_Sw1')
 	.sect	'.debug_ranges'
-.L77:
-	.word	-1,.L29,0,.L78-.L29,0,0
-	.sdecl	'.debug_info',debug,cluster('Led_Left_Toggle')
+.L74:
+	.word	-1,.L29,0,.L75-.L29,0,0
+	.sdecl	'.debug_info',debug,cluster('Led_Get_Sw2')
 	.sect	'.debug_info'
-.L79:
+.L76:
 	.word	253
 	.half	3
-	.word	.L80
+	.word	.L77
 	.byte	4,1
 	.byte	'../BSW/GPIO/Led.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L82,.L81
+	.word	.L79,.L78
 	.byte	2
-	.word	.L40
+	.word	.L42
 	.byte	3
-	.byte	'Led_Left_Toggle',0,1,88,6,1,1,1
-	.word	.L33,.L139,.L32
+	.byte	'Led_Get_Sw2',0,1,74,5
+	.word	.L140
+	.byte	1,1,1
+	.word	.L31,.L142,.L30
 	.byte	4
-	.word	.L33,.L139
+	.word	.L31,.L142
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('Led_Left_Toggle')
+	.sdecl	'.debug_abbrev',debug,cluster('Led_Get_Sw2')
 	.sect	'.debug_abbrev'
-.L80:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('Led_Left_Toggle')
+.L77:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Led_Get_Sw2')
 	.sect	'.debug_line'
-.L81:
+.L78:
 	.word	.L217-.L216
 .L216:
 	.half	3
@@ -24485,184 +24432,234 @@ g_Cnt10us:	.type	object
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Led.c',0,0,0,0,0
 .L219:
-	.byte	5,23,7,0,5,2
-	.word	.L33
-	.byte	3,217,0,1,5,5,9
-	.half	.L220-.L33
-	.byte	3,1,1,5,21,9
-	.half	.L221-.L220
-	.byte	1,5,19,9
-	.half	.L222-.L221
+	.byte	5,28,7,0,5,2
+	.word	.L31
+	.byte	3,202,0,1,5,31,9
+	.half	.L220-.L31
 	.byte	1,5,5,9
-	.half	.L223-.L222
-	.byte	3,1,1,5,22,9
-	.half	.L224-.L223
-	.byte	1,5,20,9
-	.half	.L225-.L224
-	.byte	1,5,22,9
-	.half	.L226-.L225
-	.byte	3,1,1,5,1,9
-	.half	.L227-.L226
+	.half	.L221-.L220
+	.byte	1,5,1,9
+	.half	.L12-.L221
 	.byte	3,1,1,7,9
-	.half	.L83-.L227
+	.half	.L80-.L12
 	.byte	0,1,1
 .L217:
-	.sdecl	'.debug_ranges',debug,cluster('Led_Left_Toggle')
+	.sdecl	'.debug_ranges',debug,cluster('Led_Get_Sw2')
 	.sect	'.debug_ranges'
-.L82:
-	.word	-1,.L33,0,.L83-.L33,0,0
-	.sdecl	'.debug_info',debug,cluster('Led_Right_Toggle')
+.L79:
+	.word	-1,.L31,0,.L80-.L31,0,0
+	.sdecl	'.debug_info',debug,cluster('Led_Toggle_Set')
 	.sect	'.debug_info'
-.L84:
-	.word	254
+.L81:
+	.word	287
 	.half	3
-	.word	.L85
+	.word	.L82
 	.byte	4,1
 	.byte	'../BSW/GPIO/Led.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L87,.L86
+	.word	.L84,.L83
 	.byte	2
-	.word	.L40
+	.word	.L42
 	.byte	3
-	.byte	'Led_Right_Toggle',0,1,96,6,1,1,1
-	.word	.L35,.L140,.L34
+	.byte	'Led_Toggle_Set',0,1,91,6,1,1,1
+	.word	.L35,.L143,.L34
 	.byte	4
-	.word	.L35,.L140
+	.byte	'left',0,1,91,34
+	.word	.L110,.L144
+	.byte	4
+	.byte	'right',0,1,91,53
+	.word	.L110,.L145
+	.byte	5
+	.word	.L35,.L143
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('Led_Right_Toggle')
+	.sdecl	'.debug_abbrev',debug,cluster('Led_Toggle_Set')
 	.sect	'.debug_abbrev'
-.L85:
+.L82:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Led_Toggle_Set')
+	.sect	'.debug_line'
+.L83:
+	.word	.L223-.L222
+.L222:
+	.half	3
+	.word	.L225-.L224
+.L224:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/GPIO/Led.c',0,0,0,0,0
+.L225:
+	.byte	5,5,7,0,5,2
+	.word	.L35
+	.byte	3,220,0,1,5,19,9
+	.half	.L226-.L35
+	.byte	1,5,5,9
+	.half	.L227-.L226
+	.byte	3,1,1,5,20,9
+	.half	.L228-.L227
+	.byte	1,5,1,9
+	.half	.L229-.L228
+	.byte	3,1,1,7,9
+	.half	.L85-.L229
+	.byte	0,1,1
+.L223:
+	.sdecl	'.debug_ranges',debug,cluster('Led_Toggle_Set')
+	.sect	'.debug_ranges'
+.L84:
+	.word	-1,.L35,0,.L85-.L35,0,0
+	.sdecl	'.debug_info',debug,cluster('Led_Toggle_On')
+	.sect	'.debug_info'
+.L86:
+	.word	251
+	.half	3
+	.word	.L87
+	.byte	4,1
+	.byte	'../BSW/GPIO/Led.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L89,.L88
+	.byte	2
+	.word	.L42
+	.byte	3
+	.byte	'Led_Toggle_On',0,1,96,6,1,1,1
+	.word	.L37,.L146,.L36
+	.byte	4
+	.word	.L37,.L146
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Led_Toggle_On')
+	.sect	'.debug_abbrev'
+.L87:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('Led_Right_Toggle')
+	.sdecl	'.debug_line',debug,cluster('Led_Toggle_On')
 	.sect	'.debug_line'
-.L86:
-	.word	.L229-.L228
-.L228:
-	.half	3
+.L88:
 	.word	.L231-.L230
 .L230:
+	.half	3
+	.word	.L233-.L232
+.L232:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Led.c',0,0,0,0,0
-.L231:
-	.byte	5,23,7,0,5,2
-	.word	.L35
-	.byte	3,225,0,1,5,5,9
-	.half	.L232-.L35
-	.byte	3,1,1,5,21,9
-	.half	.L233-.L232
-	.byte	1,5,19,9
-	.half	.L234-.L233
-	.byte	1,5,5,9
+.L233:
+	.byte	5,8,7,0,5,2
+	.word	.L37
+	.byte	3,224,0,1,5,5,9
+	.half	.L234-.L37
+	.byte	1,5,26,7,9
 	.half	.L235-.L234
-	.byte	3,1,1,5,22,9
+	.byte	3,2,1,5,9,9
 	.half	.L236-.L235
-	.byte	1,5,20,9
+	.byte	3,1,1,5,27,9
 	.half	.L237-.L236
-	.byte	1,5,22,9
+	.byte	1,5,25,9
 	.half	.L238-.L237
-	.byte	3,1,1,5,1,9
-	.half	.L239-.L238
-	.byte	3,1,1,7,9
-	.half	.L88-.L239
+	.byte	1,5,1,9
+	.half	.L17-.L238
+	.byte	3,2,1,7,9
+	.half	.L90-.L17
 	.byte	0,1,1
-.L229:
-	.sdecl	'.debug_ranges',debug,cluster('Led_Right_Toggle')
+.L231:
+	.sdecl	'.debug_ranges',debug,cluster('Led_Toggle_On')
 	.sect	'.debug_ranges'
-.L87:
-	.word	-1,.L35,0,.L88-.L35,0,0
-	.sdecl	'.debug_info',debug,cluster('Led_Both_Toggle')
-	.sect	'.debug_info'
 .L89:
-	.word	253
+	.word	-1,.L37,0,.L90-.L37,0,0
+	.sdecl	'.debug_info',debug,cluster('Led_Toggle_Off')
+	.sect	'.debug_info'
+.L91:
+	.word	252
 	.half	3
-	.word	.L90
+	.word	.L92
 	.byte	4,1
 	.byte	'../BSW/GPIO/Led.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L92,.L91
+	.word	.L94,.L93
 	.byte	2
-	.word	.L40
+	.word	.L42
 	.byte	3
-	.byte	'Led_Both_Toggle',0,1,104,6,1,1,1
-	.word	.L37,.L141,.L36
+	.byte	'Led_Toggle_Off',0,1,104,6,1,1,1
+	.word	.L39,.L147,.L38
 	.byte	4
-	.word	.L37,.L141
+	.word	.L39,.L147
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('Led_Both_Toggle')
+	.sdecl	'.debug_abbrev',debug,cluster('Led_Toggle_Off')
 	.sect	'.debug_abbrev'
-.L90:
+.L92:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('Led_Both_Toggle')
+	.sdecl	'.debug_line',debug,cluster('Led_Toggle_Off')
 	.sect	'.debug_line'
-.L91:
-	.word	.L241-.L240
-.L240:
+.L93:
+	.word	.L240-.L239
+.L239:
 	.half	3
-	.word	.L243-.L242
-.L242:
+	.word	.L242-.L241
+.L241:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Led.c',0,0,0,0,0
-.L243:
-	.byte	5,23,7,0,5,2
-	.word	.L37
-	.byte	3,233,0,1,5,5,9
-	.half	.L244-.L37
-	.byte	3,1,1,5,21,9
+.L242:
+	.byte	5,8,7,0,5,2
+	.word	.L39
+	.byte	3,232,0,1,5,5,9
+	.half	.L243-.L39
+	.byte	1,5,27,7,9
+	.half	.L244-.L243
+	.byte	3,2,1,5,9,9
 	.half	.L245-.L244
-	.byte	1,5,19,9
+	.byte	3,1,1,5,27,9
 	.half	.L246-.L245
-	.byte	1,5,5,9
+	.byte	1,5,25,9
 	.half	.L247-.L246
-	.byte	3,1,1,5,22,9
+	.byte	1,5,17,9
 	.half	.L248-.L247
-	.byte	1,5,20,9
+	.byte	3,1,1,5,20,9
 	.half	.L249-.L248
-	.byte	1,5,22,9
+	.byte	1,5,17,9
 	.half	.L250-.L249
-	.byte	3,1,1,5,1,9
+	.byte	3,1,1,5,20,9
 	.half	.L251-.L250
-	.byte	3,1,1,7,9
-	.half	.L93-.L251
+	.byte	1,5,1,9
+	.half	.L18-.L251
+	.byte	3,2,1,7,9
+	.half	.L95-.L18
 	.byte	0,1,1
-.L241:
-	.sdecl	'.debug_ranges',debug,cluster('Led_Both_Toggle')
+.L240:
+	.sdecl	'.debug_ranges',debug,cluster('Led_Toggle_Off')
 	.sect	'.debug_ranges'
-.L92:
-	.word	-1,.L37,0,.L93-.L37,0,0
+.L94:
+	.word	-1,.L39,0,.L95-.L39,0,0
 	.sdecl	'.debug_info',debug,cluster('Led_Isr_Gpt2_T6_Handler')
 	.sect	'.debug_info'
-.L94:
+.L96:
 	.word	261
 	.half	3
-	.word	.L95
+	.word	.L97
 	.byte	4,1
 	.byte	'../BSW/GPIO/Led.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L97,.L96
+	.word	.L99,.L98
 	.byte	2
-	.word	.L40
+	.word	.L42
 	.byte	3
-	.byte	'Led_Isr_Gpt2_T6_Handler',0,1,115,6,1,1,1
-	.word	.L39,.L142,.L38
+	.byte	'Led_Isr_Gpt2_T6_Handler',0,1,117,6,1,1,1
+	.word	.L41,.L148,.L40
 	.byte	4
-	.word	.L39,.L142
+	.word	.L41,.L148
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Led_Isr_Gpt2_T6_Handler')
 	.sect	'.debug_abbrev'
-.L95:
+.L97:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Led_Isr_Gpt2_T6_Handler')
 	.sect	'.debug_line'
-.L96:
+.L98:
 	.word	.L253-.L252
 .L252:
 	.half	3
@@ -24672,9 +24669,9 @@ g_Cnt10us:	.type	object
 	.byte	'../BSW/GPIO/Led.c',0,0,0,0,0
 .L255:
 	.byte	5,6,7,0,5,2
-	.word	.L39
-	.byte	3,242,0,1,5,5,9
-	.half	.L256-.L39
+	.word	.L41
+	.byte	3,244,0,1,5,5,9
+	.half	.L256-.L41
 	.byte	3,1,1,5,14,9
 	.half	.L257-.L256
 	.byte	1,5,9,9
@@ -24706,41 +24703,19 @@ g_Cnt10us:	.type	object
 	.byte	1,5,18,9
 	.half	.L271-.L270
 	.byte	1,5,1,9
-	.half	.L17-.L271
+	.half	.L19-.L271
 	.byte	3,2,1,9
-	.half	.L98-.L17
+	.half	.L100-.L19
 	.byte	0,1,1
 .L253:
 	.sdecl	'.debug_ranges',debug,cluster('Led_Isr_Gpt2_T6_Handler')
 	.sect	'.debug_ranges'
-.L97:
-	.word	-1,.L39,0,.L98-.L39,0,0
+.L99:
+	.word	-1,.L41,0,.L100-.L41,0,0
 	.sdecl	'.debug_info',debug,cluster('Left_Led_Flag')
 	.sect	'.debug_info'
-.L99:
-	.word	228
-	.half	3
-	.word	.L100
-	.byte	4,1
-	.byte	'../BSW/GPIO/Led.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
-	.byte	1,2
-	.word	.L40
-	.byte	3
-	.byte	'Left_Led_Flag',0,16,86,30
-	.word	.L143
-	.byte	5,3
-	.word	Left_Led_Flag
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('Left_Led_Flag')
-	.sect	'.debug_abbrev'
-.L100:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('Right_Led_Flag')
-	.sect	'.debug_info'
 .L101:
-	.word	229
+	.word	228
 	.half	3
 	.word	.L102
 	.byte	4,1
@@ -24748,21 +24723,21 @@ g_Cnt10us:	.type	object
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1,2
-	.word	.L40
+	.word	.L42
 	.byte	3
-	.byte	'Right_Led_Flag',0,16,87,30
-	.word	.L144
+	.byte	'Left_Led_Flag',0,16,86,30
+	.word	.L149
 	.byte	5,3
-	.word	Right_Led_Flag
+	.word	Left_Led_Flag
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('Right_Led_Flag')
+	.sdecl	'.debug_abbrev',debug,cluster('Left_Led_Flag')
 	.sect	'.debug_abbrev'
 .L102:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('g_Cnt10us')
+	.sdecl	'.debug_info',debug,cluster('Right_Led_Flag')
 	.sect	'.debug_info'
 .L103:
-	.word	224
+	.word	229
 	.half	3
 	.word	.L104
 	.byte	4,1
@@ -24770,134 +24745,188 @@ g_Cnt10us:	.type	object
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1,2
-	.word	.L40
+	.word	.L42
 	.byte	3
-	.byte	'g_Cnt10us',0,16,112,30
-	.word	.L145
+	.byte	'Right_Led_Flag',0,16,87,30
+	.word	.L150
+	.byte	5,3
+	.word	Right_Led_Flag
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Right_Led_Flag')
+	.sect	'.debug_abbrev'
+.L104:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('Led_Toggle_Flag')
+	.sect	'.debug_info'
+.L105:
+	.word	230
+	.half	3
+	.word	.L106
+	.byte	4,1
+	.byte	'../BSW/GPIO/Led.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1,2
+	.word	.L42
+	.byte	3
+	.byte	'Led_Toggle_Flag',0,16,88,21
+	.word	.L110
+	.byte	5,3
+	.word	Led_Toggle_Flag
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Led_Toggle_Flag')
+	.sect	'.debug_abbrev'
+.L106:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('g_Cnt10us')
+	.sect	'.debug_info'
+.L107:
+	.word	224
+	.half	3
+	.word	.L108
+	.byte	4,1
+	.byte	'../BSW/GPIO/Led.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1,2
+	.word	.L42
+	.byte	3
+	.byte	'g_Cnt10us',0,16,114,30
+	.word	.L151
 	.byte	5,3
 	.word	g_Cnt10us
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('g_Cnt10us')
 	.sect	'.debug_abbrev'
-.L104:
+.L108:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_loc',debug,cluster('Led_Both_Toggle')
-	.sect	'.debug_loc'
-.L36:
-	.word	-1,.L37,0,.L141-.L37
-	.half	2
-	.byte	138,0
-	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Led_Get_Sw1')
 	.sect	'.debug_loc'
-.L26:
-	.word	-1,.L27,0,.L137-.L27
+.L28:
+	.word	-1,.L29,0,.L141-.L29
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Led_Get_Sw2')
 	.sect	'.debug_loc'
-.L28:
-	.word	-1,.L29,0,.L138-.L29
+.L30:
+	.word	-1,.L31,0,.L142-.L31
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Led_Init')
 	.sect	'.debug_loc'
-.L18:
-	.word	-1,.L19,0,.L127-.L19
+.L20:
+	.word	-1,.L21,0,.L131-.L21
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Led_Isr_Gpt2_T6_Handler')
 	.sect	'.debug_loc'
-.L38:
-	.word	-1,.L39,0,.L142-.L39
-	.half	2
-	.byte	138,0
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('Led_Left_Toggle')
-	.sect	'.debug_loc'
-.L32:
-	.word	-1,.L33,0,.L139-.L33
+.L40:
+	.word	-1,.L41,0,.L148-.L41
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Led_Omr_Toggle')
 	.sect	'.debug_loc'
-.L24:
-	.word	-1,.L25,0,.L134-.L25
+.L26:
+	.word	-1,.L27,0,.L138-.L27
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L135:
-	.word	-1,.L25,0,.L134-.L25
+.L139:
+	.word	-1,.L27,0,.L138-.L27
 	.half	1
 	.byte	84
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('Led_Right_Toggle')
-	.sect	'.debug_loc'
-.L34:
-	.word	-1,.L35,0,.L140-.L35
-	.half	2
-	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Led_Set')
-	.sect	'.debug_loc'
-.L20:
-	.word	-1,.L21,0,.L128-.L21
-	.half	2
-	.byte	138,0
-	.word	0,0
-.L130:
-	.word	-1,.L21,0,.L128-.L21
-	.half	1
-	.byte	84
-	.word	0,0
-.L131:
-	.word	-1,.L21,0,.L128-.L21
-	.half	1
-	.byte	85
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('Led_Toggle')
 	.sect	'.debug_loc'
 .L22:
 	.word	-1,.L23,0,.L132-.L23
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L133:
+.L134:
 	.word	-1,.L23,0,.L132-.L23
 	.half	1
 	.byte	84
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('delay_ms')
+.L135:
+	.word	-1,.L23,0,.L132-.L23
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Led_Toggle')
 	.sect	'.debug_loc'
-.L30:
-	.word	-1,.L31,0,.L105-.L31
+.L24:
+	.word	-1,.L25,0,.L136-.L25
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L116:
-	.word	-1,.L31,.L118-.L31,.L105-.L31
+.L137:
+	.word	-1,.L25,0,.L136-.L25
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Led_Toggle_Off')
+	.sect	'.debug_loc'
+.L38:
+	.word	-1,.L39,0,.L147-.L39
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Led_Toggle_On')
+	.sect	'.debug_loc'
+.L36:
+	.word	-1,.L37,0,.L146-.L37
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Led_Toggle_Set')
+	.sect	'.debug_loc'
+.L34:
+	.word	-1,.L35,0,.L143-.L35
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L144:
+	.word	-1,.L35,0,.L143-.L35
+	.half	1
+	.byte	84
+	.word	0,0
+.L145:
+	.word	-1,.L35,0,.L143-.L35
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('delay_ms')
+	.sect	'.debug_loc'
+.L32:
+	.word	-1,.L33,0,.L109-.L33
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L120:
+	.word	-1,.L33,.L122-.L33,.L109-.L33
 	.half	1
 	.byte	95
 	.word	0,0
-.L113:
+.L117:
 	.word	0,0
-.L107:
-	.word	-1,.L31,0,.L146-.L31
+.L111:
+	.word	-1,.L33,0,.L152-.L33
 	.half	1
 	.byte	84
-	.word	.L147-.L31,.L148-.L31
+	.word	.L153-.L33,.L154-.L33
 	.half	1
 	.byte	88
 	.word	0,0
+.L128:
+	.word	0,0
 .L124:
 	.word	0,0
-.L120:
-	.word	0,0
-.L111:
+.L115:
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
@@ -24909,51 +24938,52 @@ g_Cnt10us:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('Led_Init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L272,.L19,.L127-.L19
+	.word	.L272,.L21,.L131-.L21
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Led_Set')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L272,.L21,.L128-.L21
+	.word	.L272,.L23,.L132-.L23
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Led_Toggle')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L272,.L23,.L132-.L23
+	.word	.L272,.L25,.L136-.L25
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Led_Omr_Toggle')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L272,.L25,.L134-.L25
+	.word	.L272,.L27,.L138-.L27
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Led_Get_Sw1')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L272,.L27,.L137-.L27
+	.word	.L272,.L29,.L141-.L29
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Led_Get_Sw2')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L272,.L29,.L138-.L29
+	.word	.L272,.L31,.L142-.L31
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('delay_ms')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L272,.L31,.L105-.L31
-	.sdecl	'.debug_frame',debug,cluster('Led_Left_Toggle')
+	.word	.L272,.L33,.L109-.L33
+	.sdecl	'.debug_frame',debug,cluster('Led_Toggle_Set')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L272,.L35,.L143-.L35
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Led_Toggle_On')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L272,.L33,.L139-.L33
-	.sdecl	'.debug_frame',debug,cluster('Led_Right_Toggle')
+	.word	.L272,.L37,.L146-.L37
+	.sdecl	'.debug_frame',debug,cluster('Led_Toggle_Off')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L272,.L35,.L140-.L35
-	.sdecl	'.debug_frame',debug,cluster('Led_Both_Toggle')
-	.sect	'.debug_frame'
-	.word	12
-	.word	.L272,.L37,.L141-.L37
+	.word	.L272,.L39,.L147-.L39
 	.sdecl	'.debug_frame',debug,cluster('Led_Isr_Gpt2_T6_Handler')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L272,.L39,.L142-.L39
+	.word	.L272,.L41,.L148-.L41
 	; Module end

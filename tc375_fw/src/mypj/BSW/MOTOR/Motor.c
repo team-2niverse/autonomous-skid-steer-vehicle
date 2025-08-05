@@ -48,7 +48,6 @@ void Motor_Set_Left(uint8 dir, uint8 duty) {
 }
 
 void Motor_Stop_Left(void) {
-    Gtm_Atom_Pwm_Set_Duty_Cycle_A(0);
     MODULE_P02.OUT.B.P7 = 1;
     MODULE_P10.OUT.B.P1 = 1;
 }
@@ -72,7 +71,6 @@ void Motor_Set_Right(uint8 dir, uint8 duty) {
 }
 
 void Motor_Stop_Right(void) {
-    Gtm_Atom_Pwm_Set_Duty_Cycle_B(0);
     MODULE_P02.OUT.B.P6 = 1;
     MODULE_P10.OUT.B.P2 = 1;
 }
