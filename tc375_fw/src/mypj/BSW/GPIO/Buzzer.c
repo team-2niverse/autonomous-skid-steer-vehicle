@@ -35,12 +35,26 @@ void Buzzer_Beep(unsigned int hz, int duration_ms){
     }
 }
 
-static int beepCnt = 0;
-static int beepOnOff = 0;
+static unsigned int beepCnt = 0;
+static unsigned int beepOnOff = 0;
+static unsigned int Buzzer_Flag = 0;
 
 void Buzzer_Set_Beep_Cycle(int cycle){
     beepOnOff = cycle; // cycle * 10.24us
-    Gpt12_Run_Gpt1_T3();
+}
+
+void Buzzer_On(void) {
+    if(Buzzer_Flag == 0) {
+        Gpt12_Run_Gpt1_T3();
+        Buzzer_Flag = 1;
+    }
+}
+
+void Buzzer_Off(void) {
+    if(Buzzer_Flag == 1) {
+        Gpt12_Stop_Gpt1_T3();
+        Buzzer_Flag = 0;
+    }
 }
 
 IFX_INTERRUPT(Buzzer_Gpt1_T3_Handler_Beep, 0, ISR_PRIORITY_GPT1T3_TIMER);

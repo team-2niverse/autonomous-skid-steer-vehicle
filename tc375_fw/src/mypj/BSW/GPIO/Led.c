@@ -85,28 +85,30 @@ void delay_ms(unsigned int ms)
 /* LED Toggle (Left, Right, Both) & GPT2 ISR*/
 static volatile unsigned int Left_Led_Flag = 0;
 static volatile unsigned int Right_Led_Flag = 0;
-void Led_Left_Toggle(void)
+static unsigned int Led_Toggle_Flag = 0;
+
+
+void Led_Toggle_Set(unsigned int left, unsigned int right)
 {
-    Gpt12_Stop_Gpt2_T6();
-    Left_Led_Flag = 1;
-    Right_Led_Flag = 0;
-    Gpt12_Run_Gpt2_T6();
+    Left_Led_Flag = left;
+    Right_Led_Flag = right;
+}
+void Led_Toggle_On(void) {
+    if(Led_Toggle_Flag == 0)
+    {
+        Gpt12_Run_Gpt2_T6();
+        Led_Toggle_Flag = 1;
+    }
 }
 
-void Led_Right_Toggle(void)
-{
-    Gpt12_Stop_Gpt2_T6();
-    Left_Led_Flag = 0;
-    Right_Led_Flag = 1;
-    Gpt12_Run_Gpt2_T6();
-}
-
-void Led_Both_Toggle(void)
-{
-    Gpt12_Stop_Gpt2_T6();
-    Left_Led_Flag = 1;
-    Right_Led_Flag = 1;
-    Gpt12_Run_Gpt2_T6();
+void Led_Toggle_Off(void) {
+    if(Led_Toggle_Flag == 1)
+    {
+        Gpt12_Stop_Gpt2_T6();
+        Led_Toggle_Flag = 0;
+        Led_Set(1, 0);
+        Led_Set(2, 0);
+    }
 }
 
 static volatile unsigned int g_Cnt10us=0;

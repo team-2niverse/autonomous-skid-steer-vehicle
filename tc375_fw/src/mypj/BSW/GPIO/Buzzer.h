@@ -31,6 +31,9 @@ void Buzzer_Buzz(unsigned int hz);
 void Buzzer_Beep(unsigned int hz, int duration_ms);
 void Buzzer_Set_Beep_Cycle(int cycle);
 
+void Buzzer_On(void);
+void Buzzer_Off(void);
+
 //void Buzzer_Gpt1_T3_Handler_Beep(void);
 
 #endif /* BUZZER_H_ */
