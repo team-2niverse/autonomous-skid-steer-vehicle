@@ -11,10 +11,9 @@
 #include "Ultrasonic.h"
 #include "Led.h" //delay_ms()
 #include "Buzzer.h"
-#include "Can.h"
 #include "Platform_Types.h"
 
 // Function Prototypes
-void Parking_On();
+void Parking_On(void);
 
 #endif /* PARKING_PARKING_H_ */

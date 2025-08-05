@@ -12,24 +12,19 @@ static volatile unsigned int stm0_cnt = 0;
 static volatile uint64 start_back = 0;
 static volatile uint64 start_left = 0;
 static volatile uint64 start_right = 0;
+static volatile float dist_back = (float)0;
+static volatile float dist_left = (float)0;
+static volatile float dist_right = (float)0;
 
-static volatile uint8 dist_back = 0; //단위 mm
-static volatile uint8 dist_left = 0;
-static volatile uint8 dist_right = 0;
-
-static volatile int update_back = 0;
-static volatile int update_left = 0;
-static volatile int update_right = 0;
-
-uint8 Ultrasonic_Get_Back_Dist(void) {
+float Ultrasonic_Get_Back_Dist(void) {
     return dist_back;
 }
 
-uint8 Ultrasonic_Get_Left_Dist(void) {
+float Ultrasonic_Get_Left_Dist(void) {
     return dist_left;
 }
 
-uint8 Ultrasonic_Get_Right_Dist(void) {
+float Ultrasonic_Get_Right_Dist(void) {
     return dist_right;
 }
 
@@ -130,26 +125,19 @@ void Ultrasonic_Eru2_Isr_Handler(void) {
         if (MODULE_P02.IN.B.P0)
             start_back = Stm_Get_Time_Us();
         else
-            dist_back = (uint8)((Stm_Get_Time_Us()-start_back) * 0.1715);
-        update_back = 1;
+            dist_back = (float)0.0343 * (Stm_Get_Time_Us() - start_back) / 2.0;
         MODULE_SCU.FMR.B.FC3 = 1;
-    }
-
-    else if (MODULE_SCU.EIFR.B.INTF5) {
+    } else if (MODULE_SCU.EIFR.B.INTF5) {
         if (MODULE_P15.IN.B.P8)
             start_left = Stm_Get_Time_Us();
         else
-            dist_left = (uint8)((Stm_Get_Time_Us()-start_left) * 0.1715);
-        update_left = 1;
+            dist_left = (float)0.0343 * (Stm_Get_Time_Us() - start_left) / 2.0;
         MODULE_SCU.FMR.B.FC5 = 1;
-    }
-
-    else if (MODULE_SCU.EIFR.B.INTF7) {
+    } else if (MODULE_SCU.EIFR.B.INTF7) {
         if (MODULE_P15.IN.B.P1)
             start_right = Stm_Get_Time_Us();
         else
-            dist_right = (uint8)((Stm_Get_Time_Us()-start_right) * 0.1715);
-        update_right = 1;
+            dist_right = (float)0.0343 * (Stm_Get_Time_Us() - start_right) / 2.0;
         MODULE_SCU.FMR.B.FC7 = 1;
     }
 }
