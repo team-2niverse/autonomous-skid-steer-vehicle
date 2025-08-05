@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc5936a --dep-file=Ultrasonic.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW\\\\PARKING -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ASCLIN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ENCODER -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPT12 -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GTM_ATOM_PWM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ISR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\MOTOR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\PID -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\STM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ULTRASONIC -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\MATLAB -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o BSW/ULTRASONIC/Ultrasonic.src ../BSW/ULTRASONIC/Ultrasonic.c"
+	.compiler_invocation	"ctc -f cc20212a --dep-file=Ultrasonic.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW\\\\PARKING -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ASCLIN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ENCODER -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPT12 -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GTM_ATOM_PWM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ISR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\MOTOR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\PID -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\STM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ULTRASONIC -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\MATLAB -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o BSW/ULTRASONIC/Ultrasonic.src ../BSW/ULTRASONIC/Ultrasonic.c"
 	.compiler_name		"ctc"
 	;source	'../BSW/ULTRASONIC/Ultrasonic.c'
 
@@ -17,16 +17,16 @@ $TC162
 Ultrasonic_Get_Back_Dist:	.type	func
 	movh.a	a15,#@his(dist_back)
 	lea	a15,[a15]@los(dist_back)
-	ld.bu	d2,[a15]
-.L252:
+	ld.w	d2,[a15]
+.L174:
 	j	.L2
 .L2:
 	ret
-.L131:
+.L106:
 	
 __Ultrasonic_Get_Back_Dist_function_end:
 	.size	Ultrasonic_Get_Back_Dist,__Ultrasonic_Get_Back_Dist_function_end-Ultrasonic_Get_Back_Dist
-.L64:
+.L59:
 	; End of function
 	
 	.sdecl	'.text.Ultrasonic.Ultrasonic_Get_Left_Dist',code,cluster('Ultrasonic_Get_Left_Dist')
@@ -39,16 +39,16 @@ __Ultrasonic_Get_Back_Dist_function_end:
 Ultrasonic_Get_Left_Dist:	.type	func
 	movh.a	a15,#@his(dist_left)
 	lea	a15,[a15]@los(dist_left)
-	ld.bu	d2,[a15]
-.L257:
+	ld.w	d2,[a15]
+.L179:
 	j	.L3
 .L3:
 	ret
-.L132:
+.L107:
 	
 __Ultrasonic_Get_Left_Dist_function_end:
 	.size	Ultrasonic_Get_Left_Dist,__Ultrasonic_Get_Left_Dist_function_end-Ultrasonic_Get_Left_Dist
-.L69:
+.L64:
 	; End of function
 	
 	.sdecl	'.text.Ultrasonic.Ultrasonic_Get_Right_Dist',code,cluster('Ultrasonic_Get_Right_Dist')
@@ -61,16 +61,16 @@ __Ultrasonic_Get_Left_Dist_function_end:
 Ultrasonic_Get_Right_Dist:	.type	func
 	movh.a	a15,#@his(dist_right)
 	lea	a15,[a15]@los(dist_right)
-	ld.bu	d2,[a15]
-.L262:
+	ld.w	d2,[a15]
+.L184:
 	j	.L4
 .L4:
 	ret
-.L133:
+.L108:
 	
 __Ultrasonic_Get_Right_Dist_function_end:
 	.size	Ultrasonic_Get_Right_Dist,__Ultrasonic_Get_Right_Dist_function_end-Ultrasonic_Get_Right_Dist
-.L74:
+.L69:
 	; End of function
 	
 	.sdecl	'.text.Ultrasonic.Ultrasonic_Init',code,cluster('Ultrasonic_Init')
@@ -83,65 +83,65 @@ __Ultrasonic_Get_Right_Dist_function_end:
 Ultrasonic_Init:	.type	func
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003aa14)
-.L160:
+.L151:
 	mov	d15,#16
-.L161:
+.L152:
 	insert	d15,d0,d15,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa14),d15
-.L162:
+.L153:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003a210)
-.L163:
+.L154:
 	insert	d15,d15,#2,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003a210),d15
-.L164:
+.L155:
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003af17)
-.L165:
+.L156:
 	mov	d15,#16
-.L166:
+.L157:
 	insert	d15,d0,d15,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003af17),d15
-.L167:
+.L158:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003af18)
-.L168:
+.L159:
 	insert	d15,d15,#2,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003af18),d15
-.L169:
+.L160:
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003af10)
-.L170:
+.L161:
 	mov	d15,#16
-.L171:
+.L162:
 	insert	d15,d0,d15,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003af10),d15
-.L172:
+.L163:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003af11)
-.L173:
+.L164:
 	insert	d15,d15,#2,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003af11),d15
-.L174:
+.L165:
 	call	Ultrasonic_Echo_Init
-.L175:
+.L166:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003aa00)
-.L176:
+.L167:
 	or	d15,#16
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa00),d15
-.L177:
+.L168:
 	call	Ultrasonic_Stm_Init_10us
-.L178:
+.L169:
 	ret
-.L110:
+.L104:
 	
 __Ultrasonic_Init_function_end:
 	.size	Ultrasonic_Init,__Ultrasonic_Init_function_end-Ultrasonic_Init
@@ -157,249 +157,249 @@ __Ultrasonic_Init_function_end:
 .L39:
 Ultrasonic_Echo_Init:	.type	func
 	movh.a	a15,#61443
-.L147:
+.L138:
 	lea	a15,[a15]@los(0xf00362a8)
-.L183:
+.L189:
 	ld.w	d15,[a15]
 	extr.u	d15,d15,#2,#14
-.L149:
+.L140:
 	xor	d1,d15,#63
-.L150:
+.L141:
 	j	.L5
 .L5:
 	movh.a	a15,#61443
-.L148:
+.L139:
 	ld.w	d15,[a15]@los(0xf00362a8)
-.L184:
+.L190:
 	jz.t	d15:1,.L6
-.L185:
+.L191:
 	sha	d15,d1,#2
 	or	d15,#1
-.L186:
+.L192:
 	movh.a	a15,#61443
 	ld.w	d0,[a15]@los(0xf00362a8)
 	extr.u	d0,d0,#16,#16
-.L187:
+.L193:
 	sha	d0,d0,#16
-.L188:
+.L194:
 	or	d15,d0
-.L189:
+.L195:
 	movh.a	a15,#61443
 	st.w	[a15]@los(0xf00362a8),d15
 .L6:
 	sha	d15,d1,#2
 	or	d15,#2
-.L190:
+.L196:
 	movh.a	a15,#61443
 	ld.w	d0,[a15]@los(0xf00362a8)
 	extr.u	d0,d0,#16,#16
-.L191:
+.L197:
 	sha	d0,d0,#16
-.L192:
+.L198:
 	or	d15,d0
-.L193:
+.L199:
 	movh.a	a15,#61443
 	st.w	[a15]@los(0xf00362a8),d15
-.L194:
+.L200:
 	j	.L7
 .L8:
 .L7:
 	movh.a	a15,#61443
 	ld.w	d15,[a15]@los(0xf00362a8)
 	and	d15,#1
-.L195:
+.L201:
 	jeq	d15,#1,.L8
-.L120:
+.L118:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036216)
-.L196:
+.L202:
 	insert	d15,d15,#2,#4,#3
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf0036216),d15
-.L197:
-	movh.a	a15,#61443
-	ld.bu	d15,[a15]@los(0xf0036217)
-.L198:
-	or	d15,#2
-	movh.a	a15,#61443
-	st.b	[a15]@los(0xf0036217),d15
-.L199:
-	movh.a	a15,#61443
-	ld.bu	d15,[a15]@los(0xf0036217)
-.L200:
-	or	d15,#1
-	movh.a	a15,#61443
-	st.b	[a15]@los(0xf0036217),d15
-.L201:
-	movh.a	a15,#61443
-	ld.bu	d15,[a15]@los(0xf0036217)
-.L202:
-	or	d15,#8
-	movh.a	a15,#61443
-	st.b	[a15]@los(0xf0036217),d15
 .L203:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036217)
 .L204:
-	insert	d15,d15,#2,#4,#3
+	or	d15,#2
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf0036217),d15
 .L205:
 	movh.a	a15,#61443
-	ld.bu	d15,[a15]@los(0xf003621a)
+	ld.bu	d15,[a15]@los(0xf0036217)
 .L206:
+	or	d15,#1
+	movh.a	a15,#61443
+	st.b	[a15]@los(0xf0036217),d15
+.L207:
+	movh.a	a15,#61443
+	ld.bu	d15,[a15]@los(0xf0036217)
+.L208:
+	or	d15,#8
+	movh.a	a15,#61443
+	st.b	[a15]@los(0xf0036217),d15
+.L209:
+	movh.a	a15,#61443
+	ld.bu	d15,[a15]@los(0xf0036217)
+.L210:
+	insert	d15,d15,#2,#4,#3
+	movh.a	a15,#61443
+	st.b	[a15]@los(0xf0036217),d15
+.L211:
+	movh.a	a15,#61443
+	ld.bu	d15,[a15]@los(0xf003621a)
+.L212:
 	insert	d15,d15,#0,#4,#3
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf003621a),d15
-.L207:
-	movh.a	a15,#61443
-	ld.bu	d15,[a15]@los(0xf003621b)
-.L208:
-	or	d15,#2
-	movh.a	a15,#61443
-	st.b	[a15]@los(0xf003621b),d15
-.L209:
-	movh.a	a15,#61443
-	ld.bu	d15,[a15]@los(0xf003621b)
-.L210:
-	or	d15,#1
-	movh.a	a15,#61443
-	st.b	[a15]@los(0xf003621b),d15
-.L211:
-	movh.a	a15,#61443
-	ld.bu	d15,[a15]@los(0xf003621b)
-.L212:
-	or	d15,#8
-	movh.a	a15,#61443
-	st.b	[a15]@los(0xf003621b),d15
 .L213:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf003621b)
 .L214:
-	insert	d15,d15,#2,#4,#3
+	or	d15,#2
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf003621b),d15
 .L215:
 	movh.a	a15,#61443
-	ld.bu	d15,[a15]@los(0xf003621e)
+	ld.bu	d15,[a15]@los(0xf003621b)
 .L216:
+	or	d15,#1
+	movh.a	a15,#61443
+	st.b	[a15]@los(0xf003621b),d15
+.L217:
+	movh.a	a15,#61443
+	ld.bu	d15,[a15]@los(0xf003621b)
+.L218:
+	or	d15,#8
+	movh.a	a15,#61443
+	st.b	[a15]@los(0xf003621b),d15
+.L219:
+	movh.a	a15,#61443
+	ld.bu	d15,[a15]@los(0xf003621b)
+.L220:
+	insert	d15,d15,#2,#4,#3
+	movh.a	a15,#61443
+	st.b	[a15]@los(0xf003621b),d15
+.L221:
+	movh.a	a15,#61443
+	ld.bu	d15,[a15]@los(0xf003621e)
+.L222:
 	insert	d15,d15,#2,#4,#3
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf003621e),d15
-.L217:
-	movh.a	a15,#61443
-	ld.bu	d15,[a15]@los(0xf003621f)
-.L218:
-	or	d15,#2
-	movh.a	a15,#61443
-	st.b	[a15]@los(0xf003621f),d15
-.L219:
-	movh.a	a15,#61443
-	ld.bu	d15,[a15]@los(0xf003621f)
-.L220:
-	or	d15,#1
-	movh.a	a15,#61443
-	st.b	[a15]@los(0xf003621f),d15
-.L221:
-	movh.a	a15,#61443
-	ld.bu	d15,[a15]@los(0xf003621f)
-.L222:
-	or	d15,#8
-	movh.a	a15,#61443
-	st.b	[a15]@los(0xf003621f),d15
 .L223:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf003621f)
 .L224:
-	insert	d15,d15,#2,#4,#3
+	or	d15,#2
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf003621f),d15
 .L225:
 	movh.a	a15,#61443
-	ld.bu	d15,[a15]@los(0xf0036231)
+	ld.bu	d15,[a15]@los(0xf003621f)
 .L226:
+	or	d15,#1
+	movh.a	a15,#61443
+	st.b	[a15]@los(0xf003621f),d15
+.L227:
+	movh.a	a15,#61443
+	ld.bu	d15,[a15]@los(0xf003621f)
+.L228:
+	or	d15,#8
+	movh.a	a15,#61443
+	st.b	[a15]@los(0xf003621f),d15
+.L229:
+	movh.a	a15,#61443
+	ld.bu	d15,[a15]@los(0xf003621f)
+.L230:
+	insert	d15,d15,#2,#4,#3
+	movh.a	a15,#61443
+	st.b	[a15]@los(0xf003621f),d15
+.L231:
+	movh.a	a15,#61443
+	ld.bu	d15,[a15]@los(0xf0036231)
+.L232:
 	insert	d15,d15,#1,#6,#2
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf0036231),d15
-.L227:
+.L233:
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf0038888)
-.L228:
+.L234:
 	mov	d15,#12
-.L229:
+.L235:
 	insert	d15,d0,d15,#0,#8
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf0038888),d15
-.L230:
+.L236:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf0038889)
-.L231:
+.L237:
 	insert	d15,d15,#0,#3,#3
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf0038889),d15
-.L232:
+.L238:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003888b)
-.L233:
+.L239:
 	or	d15,#2
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003888b),d15
-.L234:
+.L240:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf0038889)
-.L235:
+.L241:
 	or	d15,#4
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf0038889),d15
-.L125:
+.L123:
 	movh.a	a15,#61443
 	ld.w	d15,[a15]@los(0xf00362a8)
-.L236:
+.L242:
 	jz.t	d15:1,.L9
-.L237:
+.L243:
 	sha	d15,d1,#2
 	or	d15,#1
-.L238:
+.L244:
 	movh.a	a15,#61443
 	ld.w	d0,[a15]@los(0xf00362a8)
 	extr.u	d0,d0,#16,#16
-.L239:
+.L245:
 	sha	d0,d0,#16
-.L240:
+.L246:
 	or	d15,d0
-.L241:
+.L247:
 	movh.a	a15,#61443
 	st.w	[a15]@los(0xf00362a8),d15
 .L9:
 	sha	d1,#2
-.L151:
+.L142:
 	or	d15,d1,#3
-.L242:
+.L248:
 	movh.a	a15,#61443
 	ld.w	d0,[a15]@los(0xf00362a8)
 	extr.u	d0,d0,#16,#16
-.L243:
+.L249:
 	sha	d0,d0,#16
-.L244:
+.L250:
 	or	d15,d0
-.L245:
+.L251:
 	movh.a	a15,#61443
 	st.w	[a15]@los(0xf00362a8),d15
-.L246:
+.L252:
 	j	.L10
 .L11:
 .L10:
 	movh.a	a15,#61443
 	ld.w	d15,[a15]@los(0xf00362a8)
-.L247:
+.L253:
 	jz.t	d15:0,.L11
-.L126:
+.L124:
 	ret
-.L111:
+.L109:
 	
 __Ultrasonic_Echo_Init_function_end:
 	.size	Ultrasonic_Echo_Init,__Ultrasonic_Echo_Init_function_end-Ultrasonic_Echo_Init
-.L59:
+.L74:
 	; End of function
 	
 	.sdecl	'.text.Ultrasonic.Ultrasonic_Stm_Init_10us',code,cluster('Ultrasonic_Stm_Init_10us')
@@ -411,76 +411,76 @@ __Ultrasonic_Echo_Init_function_end:
 .L41:
 Ultrasonic_Stm_Init_10us:	.type	func
 	ld.bu	d15,0xf0001038
-.L267:
+.L258:
 	or	d15,#31
 	st.b	0xf0001038,d15
-.L268:
+.L259:
 	ld.bu	d15,0xf0001039
-.L269:
+.L260:
 	insert	d15,d15,#0,#0,#5
 	st.b	0xf0001039,d15
-.L270:
+.L261:
 	ld.bu	d15,0xf000103c
-.L271:
+.L262:
 	insert	d15,d15,#0,#2,#1
 	st.b	0xf000103c,d15
-.L272:
+.L263:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf0038301)
-.L273:
+.L264:
 	insert	d15,d15,#0,#3,#3
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf0038301),d15
-.L274:
+.L265:
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf0038300)
-.L275:
+.L266:
 	mov	d15,#20
-.L276:
+.L267:
 	insert	d15,d0,d15,#0,#8
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf0038300),d15
-.L277:
+.L268:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf0038303)
-.L278:
+.L269:
 	or	d15,#2
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf0038303),d15
-.L279:
+.L270:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf0038301)
-.L280:
+.L271:
 	or	d15,#4
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf0038301),d15
-.L281:
+.L272:
 	ld.bu	d15,0xf0001040
-.L282:
+.L273:
 	or	d15,#1
 	st.b	0xf0001040,d15
-.L283:
+.L274:
 	ld.bu	d15,0xf000103c
-.L284:
+.L275:
 	or	d15,#1
 	st.b	0xf000103c,d15
-.L285:
+.L276:
 	ld.w	d15,0xf0001010
-.L286:
+.L277:
 	ld.w	d0,0xf000102c
-.L287:
+.L278:
 	mov	d0,#0
-.L288:
+.L279:
 	or	d15,d0
-.L289:
+.L280:
 	mov	e0,#1000
-.L290:
+.L281:
 	addx	d15,d15,d0
-.L291:
+.L282:
 	st.w	0xf0001030,d15
-.L292:
+.L283:
 	ret
-.L134:
+.L128:
 	
 __Ultrasonic_Stm_Init_10us_function_end:
 	.size	Ultrasonic_Stm_Init_10us,__Ultrasonic_Stm_Init_10us_function_end-Ultrasonic_Stm_Init_10us
@@ -501,109 +501,109 @@ __Ultrasonic_Stm_Init_10us_function_end:
 .L43:
 Ultrasonic_Stm0_Isr_Handler:	.type	func
 	svlcx
-.L297:
+.L288:
 	ld.w	d15,0xf0001010
-.L298:
+.L289:
 	ld.w	d8,0xf000102c
-.L299:
+.L290:
 	mov	d8,#0
-.L300:
+.L291:
 	or	d15,d8
-.L301:
+.L292:
 	mov	e8,#1000
-.L302:
+.L293:
 	addx	d15,d15,d8
-.L303:
+.L294:
 	st.w	0xf0001030,d15
-.L304:
+.L295:
 	movh.a	a15,#@his(stm0_cnt)
 	lea	a15,[a15]@los(stm0_cnt)
 	movh.a	a12,#@his(stm0_cnt)
 	lea	a12,[a12]@los(stm0_cnt)
 	ld.w	d15,[a12]
-.L305:
+.L296:
 	add	d15,#1
 	st.w	[a15],d15
-.L306:
+.L297:
 	movh.a	a15,#@his(stm0_cnt)
 	lea	a15,[a15]@los(stm0_cnt)
 	ld.w	d15,[a15]
-.L307:
+.L298:
 	jne	d15,#1,.L12
-.L308:
+.L299:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003aa00)
-.L309:
+.L300:
 	insert	d15,d15,#0,#4,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa00),d15
-.L310:
+.L301:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003af00)
-.L311:
+.L302:
 	or	d15,#128
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003af00),d15
-.L312:
+.L303:
 	j	.L13
 .L12:
 	movh.a	a15,#@his(stm0_cnt)
 	lea	a15,[a15]@los(stm0_cnt)
 	ld.w	d15,[a15]
-.L313:
+.L304:
 	jne	d15,#2,.L14
-.L314:
+.L305:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003af00)
-.L315:
+.L306:
 	insert	d15,d15,#0,#7,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003af00),d15
-.L316:
+.L307:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003af00)
-.L317:
+.L308:
 	or	d15,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003af00),d15
-.L318:
+.L309:
 	j	.L15
 .L14:
 	movh.a	a15,#@his(stm0_cnt)
 	lea	a15,[a15]@los(stm0_cnt)
 	ld.w	d15,[a15]
-.L319:
+.L310:
 	jne	d15,#3,.L16
-.L320:
+.L311:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003af00)
-.L321:
+.L312:
 	insert	d15,d15,#0,#0,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003af00),d15
-.L322:
+.L313:
 	j	.L17
 .L16:
 	movh.a	a15,#@his(stm0_cnt)
 	lea	a15,[a15]@los(stm0_cnt)
 	ld.w	d15,[a15]
-.L323:
+.L314:
 	mov	d8,#2000
-.L324:
+.L315:
 	jne	d15,d8,.L18
-.L325:
+.L316:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003aa00)
-.L326:
+.L317:
 	or	d15,#16
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003aa00),d15
-.L327:
+.L318:
 	movh.a	a15,#@his(stm0_cnt)
 	lea	a15,[a15]@los(stm0_cnt)
-.L328:
+.L319:
 	mov	d15,#0
-.L329:
+.L320:
 	st.w	[a15],d15
 .L18:
 .L17:
@@ -611,7 +611,7 @@ Ultrasonic_Stm0_Isr_Handler:	.type	func
 .L13:
 	rslcx
 	rfe
-.L135:
+.L129:
 	
 __Ultrasonic_Stm0_Isr_Handler_function_end:
 	.size	Ultrasonic_Stm0_Isr_Handler,__Ultrasonic_Stm0_Isr_Handler_function_end-Ultrasonic_Stm0_Isr_Handler
@@ -632,172 +632,157 @@ __Ultrasonic_Stm0_Isr_Handler_function_end:
 .L45:
 Ultrasonic_Eru2_Isr_Handler:	.type	func
 	svlcx
-.L334:
+.L325:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036220)
-.L335:
+.L326:
 	jz.t	d15:3,.L19
-.L336:
+.L327:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003a224)
-.L337:
+.L328:
 	jz.t	d15:0,.L20
-.L338:
+.L329:
 	movh.a	a15,#@his(start_back)
 	lea	a15,[a15]@los(start_back)
-.L339:
+.L330:
 	call	Stm_Get_Time_Us
-.L340:
+.L331:
 	st.d	[a15]0,e2
-.L341:
+.L332:
 	j	.L21
 .L20:
 	movh.a	a15,#@his(dist_back)
 	lea	a15,[a15]@los(dist_back)
-.L342:
+.L333:
 	call	Stm_Get_Time_Us
-.L343:
+.L334:
 	movh.a	a2,#@his(start_back)
 	lea	a2,[a2]@los(start_back)
 	ld.d	e0,[a2]0
-.L344:
+.L335:
 	subx	d4,d2,d0
 	subc	d5,d3,d1
 	call	__f_ulltof
-.L345:
-	mov.u	d15,#40370
-	addih	d15,d15,#15919
-.L346:
-	mul.f	d4,d2,d15
-.L347:
-	call	__f_ftouc
-.L348:
-	st.b	[a15],d2
-.L21:
-	movh.a	a15,#@his(update_back)
-	lea	a15,[a15]@los(update_back)
-.L349:
-	mov	d15,#1
-.L350:
+.L336:
+	mov	d15,#32296
+	addih	d15,d15,#15628
+.L337:
+	mul.f	d15,d2,d15
+.L338:
+	movh	d8,#16384
+.L339:
+	div.f	d15,d15,d8
+.L340:
 	st.w	[a15],d15
-.L351:
+.L21:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036226)
-.L352:
+.L341:
 	or	d15,#8
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf0036226),d15
-.L353:
+.L342:
 	j	.L22
 .L19:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036220)
-.L354:
+.L343:
 	jz.t	d15:5,.L23
-.L355:
+.L344:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003af25)
-.L356:
+.L345:
 	jz.t	d15:0,.L24
-.L357:
+.L346:
 	movh.a	a15,#@his(start_left)
 	lea	a15,[a15]@los(start_left)
-.L358:
+.L347:
 	call	Stm_Get_Time_Us
-.L359:
+.L348:
 	st.d	[a15]0,e2
-.L360:
+.L349:
 	j	.L25
 .L24:
 	movh.a	a15,#@his(dist_left)
 	lea	a15,[a15]@los(dist_left)
-.L361:
+.L350:
 	call	Stm_Get_Time_Us
-.L362:
+.L351:
 	movh.a	a2,#@his(start_left)
 	lea	a2,[a2]@los(start_left)
 	ld.d	e0,[a2]0
-.L363:
+.L352:
 	subx	d4,d2,d0
 	subc	d5,d3,d1
 	call	__f_ulltof
-.L364:
-	mov.u	d15,#40370
-	addih	d15,d15,#15919
-.L365:
-	mul.f	d4,d2,d15
-.L366:
-	call	__f_ftouc
-.L367:
-	st.b	[a15],d2
-.L25:
-	movh.a	a15,#@his(update_left)
-	lea	a15,[a15]@los(update_left)
-.L368:
-	mov	d15,#1
-.L369:
+.L353:
+	mov	d15,#32296
+	addih	d15,d15,#15628
+.L354:
+	mul.f	d15,d2,d15
+.L355:
+	movh	d8,#16384
+.L356:
+	div.f	d15,d15,d8
+.L357:
 	st.w	[a15],d15
-.L370:
+.L25:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036226)
-.L371:
+.L358:
 	or	d15,#32
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf0036226),d15
-.L372:
+.L359:
 	j	.L26
 .L23:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036220)
-.L373:
+.L360:
 	jz.t	d15:7,.L27
-.L374:
+.L361:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003af24)
-.L375:
+.L362:
 	jz.t	d15:1,.L28
-.L376:
+.L363:
 	movh.a	a15,#@his(start_right)
 	lea	a15,[a15]@los(start_right)
-.L377:
+.L364:
 	call	Stm_Get_Time_Us
-.L378:
+.L365:
 	st.d	[a15]0,e2
-.L379:
+.L366:
 	j	.L29
 .L28:
 	movh.a	a15,#@his(dist_right)
 	lea	a15,[a15]@los(dist_right)
-.L380:
+.L367:
 	call	Stm_Get_Time_Us
-.L381:
+.L368:
 	movh.a	a2,#@his(start_right)
 	lea	a2,[a2]@los(start_right)
 	ld.d	e0,[a2]0
-.L382:
+.L369:
 	subx	d4,d2,d0
 	subc	d5,d3,d1
 	call	__f_ulltof
-.L383:
-	mov.u	d15,#40370
-	addih	d15,d15,#15919
-.L384:
-	mul.f	d4,d2,d15
-.L385:
-	call	__f_ftouc
-.L386:
-	st.b	[a15],d2
-.L29:
-	movh.a	a15,#@his(update_right)
-	lea	a15,[a15]@los(update_right)
-.L387:
-	mov	d15,#1
-.L388:
+.L370:
+	mov	d15,#32296
+	addih	d15,d15,#15628
+.L371:
+	mul.f	d15,d2,d15
+.L372:
+	movh	d8,#16384
+.L373:
+	div.f	d15,d15,d8
+.L374:
 	st.w	[a15],d15
-.L389:
+.L29:
 	movh.a	a15,#61443
 	ld.bu	d15,[a15]@los(0xf0036226)
-.L390:
+.L375:
 	or	d15,#128
 	movh.a	a15,#61443
 	st.b	[a15]@los(0xf0036226),d15
@@ -806,7 +791,7 @@ Ultrasonic_Eru2_Isr_Handler:	.type	func
 .L22:
 	rslcx
 	rfe
-.L136:
+.L130:
 	
 __Ultrasonic_Eru2_Isr_Handler_function_end:
 	.size	Ultrasonic_Eru2_Isr_Handler,__Ultrasonic_Eru2_Isr_Handler_function_end-Ultrasonic_Eru2_Isr_Handler
@@ -839,39 +824,23 @@ start_right:	.type	object
 	.space	8
 	.sdecl	'.data.Ultrasonic.dist_back',data,cluster('dist_back')
 	.sect	'.data.Ultrasonic.dist_back'
+	.align	2
 dist_back:	.type	object
-	.size	dist_back,1
-	.space	1
+	.size	dist_back,4
+	.space	4
 	.sdecl	'.data.Ultrasonic.dist_left',data,cluster('dist_left')
 	.sect	'.data.Ultrasonic.dist_left'
+	.align	2
 dist_left:	.type	object
-	.size	dist_left,1
-	.space	1
+	.size	dist_left,4
+	.space	4
 	.sdecl	'.data.Ultrasonic.dist_right',data,cluster('dist_right')
 	.sect	'.data.Ultrasonic.dist_right'
+	.align	2
 dist_right:	.type	object
-	.size	dist_right,1
-	.space	1
-	.sdecl	'.data.Ultrasonic.update_back',data,cluster('update_back')
-	.sect	'.data.Ultrasonic.update_back'
-	.align	2
-update_back:	.type	object
-	.size	update_back,4
-	.space	4
-	.sdecl	'.data.Ultrasonic.update_left',data,cluster('update_left')
-	.sect	'.data.Ultrasonic.update_left'
-	.align	2
-update_left:	.type	object
-	.size	update_left,4
-	.space	4
-	.sdecl	'.data.Ultrasonic.update_right',data,cluster('update_right')
-	.sect	'.data.Ultrasonic.update_right'
-	.align	2
-update_right:	.type	object
-	.size	update_right,4
+	.size	dist_right,4
 	.space	4
 	.calls	'Ultrasonic_Eru2_Isr_Handler','__f_ulltof'
-	.calls	'Ultrasonic_Eru2_Isr_Handler','__f_ftouc'
 	.calls	'Ultrasonic_Init','Ultrasonic_Echo_Init'
 	.calls	'Ultrasonic_Init','Ultrasonic_Stm_Init_10us'
 	.calls	'Ultrasonic_Eru2_Isr_Handler','Stm_Get_Time_Us'
@@ -884,12 +853,11 @@ update_right:	.type	object
 	.calls	'Ultrasonic_Stm0_Isr_Handler','',0
 	.extern	Stm_Get_Time_Us
 	.extern	__f_ulltof
-	.extern	__f_ftouc
 	.calls	'Ultrasonic_Eru2_Isr_Handler','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L47:
-	.word	128081
+	.word	128066
 	.half	3
 	.word	.L48
 	.byte	4
@@ -907,7 +875,9 @@ update_right:	.type	object
 	.byte	'fun',0,1,58,43
 	.word	218
 	.byte	6,0,7
-	.byte	'__fract',0,4,128,1,7
+	.byte	'__fract',0,4,128,1
+.L105:
+	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,149,2,18
 	.word	263
@@ -957,11 +927,9 @@ update_right:	.type	object
 	.byte	4,2,35,0,13
 	.byte	'B',0
 	.word	518
-	.byte	4,2,35,0,0
-.L130:
-	.byte	7
+	.byte	4,2,35,0,0,7
 	.byte	'unsigned char',0,1,8
-.L112:
+.L110:
 	.byte	7
 	.byte	'unsigned short int',0,2,7,10
 	.byte	'_Ifx_SCU_WDTCPU_CON1_Bits',0,4,217,9,16,4,11
@@ -1071,14 +1039,14 @@ update_right:	.type	object
 	.byte	'password',0,3,166,4,82
 	.word	671
 	.byte	6,0
-.L119:
+.L117:
 	.byte	4
 	.byte	'IfxScuWdt_clearSafetyEndinitInline',0,3,3,199,4,17,1,1
-.L121:
+.L119:
 	.byte	5
 	.byte	'password',0,3,199,4,59
 	.word	671
-.L123:
+.L121:
 	.byte	6,0,4
 	.byte	'IfxScuWdt_setCpuEndinitInline',0,3,3,146,5,17,1,1,5
 	.byte	'watchdog',0,3,146,5,63
@@ -1087,14 +1055,14 @@ update_right:	.type	object
 	.byte	'password',0,3,146,5,80
 	.word	671
 	.byte	6,0
-.L124:
+.L122:
 	.byte	4
 	.byte	'IfxScuWdt_setSafetyEndinitInline',0,3,3,179,5,17,1,1
-.L127:
+.L125:
 	.byte	5
 	.byte	'password',0,3,179,5,57
 	.word	671
-.L129:
+.L127:
 	.byte	6,0,8
 	.byte	'IfxScuWdt_getCpuWatchdogPasswordInline',0,3,3,222,4,19
 	.word	671
@@ -1102,12 +1070,12 @@ update_right:	.type	object
 	.byte	'watchdog',0,3,222,4,74
 	.word	1258
 	.byte	6,0
-.L114:
+.L112:
 	.byte	8
 	.byte	'IfxScuWdt_getSafetyWatchdogPasswordInline',0,3,3,131,5,19
 	.word	671
 	.byte	1,1
-.L115:
+.L113:
 	.byte	6,0,10
 	.byte	'_Ifx_P_OUT_Bits',0,6,145,3,16,4,11
 	.byte	'P0',0,1
@@ -2679,7 +2647,7 @@ update_right:	.type	object
 	.word	10703
 	.byte	4,2,35,8,0,14
 	.word	10743
-.L117:
+.L115:
 	.byte	3
 	.word	10804
 	.byte	7
@@ -19929,36 +19897,27 @@ update_right:	.type	object
 	.byte	6,2,35,24,0,25
 	.byte	'IfxCpu_Perf',0,8,213,1,3
 	.word	127916
-.L137:
+.L131:
 	.byte	14
 	.word	479
-.L138:
+.L132:
 	.byte	14
 	.word	361
-.L139:
+.L133:
 	.byte	14
 	.word	361
-.L140:
+.L134:
 	.byte	14
 	.word	361
-.L141:
+.L135:
 	.byte	14
-	.word	654
-.L142:
+	.word	275
+.L136:
 	.byte	14
-	.word	654
-.L143:
+	.word	275
+.L137:
 	.byte	14
-	.word	654
-.L144:
-	.byte	14
-	.word	495
-.L145:
-	.byte	14
-	.word	495
-.L146:
-	.byte	14
-	.word	495
+	.word	275
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -19974,11 +19933,11 @@ update_right:	.type	object
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
 .L49:
-	.word	.L153-.L152
-.L152:
+	.word	.L144-.L143
+.L143:
 	.half	3
-	.word	.L155-.L154
-.L154:
+	.word	.L146-.L145
+.L145:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
@@ -20010,8 +19969,8 @@ update_right:	.type	object
 	.byte	0,0,0
 	.byte	'IfxSmu_regdef.h',0,1,0,0
 	.byte	'IfxDmu_regdef.h',0,1,0,0,0
-.L155:
-.L153:
+.L146:
+.L144:
 	.sdecl	'.debug_info',debug,cluster('Ultrasonic_Init')
 	.sect	'.debug_info'
 .L50:
@@ -20027,10 +19986,10 @@ update_right:	.type	object
 	.byte	2
 	.word	.L46
 	.byte	3
-	.byte	'Ultrasonic_Init',0,1,36,6,1,1,1
-	.word	.L37,.L110,.L36
+	.byte	'Ultrasonic_Init',0,1,31,6,1,1,1
+	.word	.L37,.L104,.L36
 	.byte	4
-	.word	.L37,.L110
+	.word	.L37,.L104
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Ultrasonic_Init')
 	.sect	'.debug_abbrev'
@@ -20040,66 +19999,66 @@ update_right:	.type	object
 	.sdecl	'.debug_line',debug,cluster('Ultrasonic_Init')
 	.sect	'.debug_line'
 .L52:
-	.word	.L157-.L156
-.L156:
+	.word	.L148-.L147
+.L147:
 	.half	3
-	.word	.L159-.L158
-.L158:
+	.word	.L150-.L149
+.L149:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0,0,0,0,0
-.L159:
+.L150:
 	.byte	5,23,7,0,5,2
 	.word	.L37
-	.byte	3,37,1,5,30,9
-	.half	.L160-.L37
+	.byte	3,32,1,5,30,9
+	.half	.L151-.L37
 	.byte	1,5,28,9
+	.half	.L152-.L151
+	.byte	1,5,23,9
+	.half	.L153-.L152
+	.byte	3,1,1,5,28,9
+	.half	.L154-.L153
+	.byte	1,5,23,9
+	.half	.L155-.L154
+	.byte	3,3,1,5,30,9
+	.half	.L156-.L155
+	.byte	1,5,28,9
+	.half	.L157-.L156
+	.byte	1,5,23,9
+	.half	.L158-.L157
+	.byte	3,1,1,5,28,9
+	.half	.L159-.L158
+	.byte	1,5,23,9
+	.half	.L160-.L159
+	.byte	3,3,1,5,30,9
 	.half	.L161-.L160
-	.byte	1,5,23,9
+	.byte	1,5,28,9
 	.half	.L162-.L161
-	.byte	3,1,1,5,28,9
+	.byte	1,5,23,9
 	.half	.L163-.L162
-	.byte	1,5,23,9
+	.byte	3,1,1,5,28,9
 	.half	.L164-.L163
-	.byte	3,3,1,5,30,9
-	.half	.L165-.L164
-	.byte	1,5,28,9
-	.half	.L166-.L165
-	.byte	1,5,23,9
-	.half	.L167-.L166
-	.byte	3,1,1,5,28,9
-	.half	.L168-.L167
-	.byte	1,5,23,9
-	.half	.L169-.L168
-	.byte	3,3,1,5,30,9
-	.half	.L170-.L169
-	.byte	1,5,28,9
-	.half	.L171-.L170
-	.byte	1,5,23,9
-	.half	.L172-.L171
-	.byte	3,1,1,5,28,9
-	.half	.L173-.L172
 	.byte	1,5,25,9
-	.half	.L174-.L173
+	.half	.L165-.L164
 	.byte	3,2,1,5,21,9
-	.half	.L175-.L174
+	.half	.L166-.L165
 	.byte	3,2,1,5,25,9
-	.half	.L176-.L175
+	.half	.L167-.L166
 	.byte	1,5,29,9
-	.half	.L177-.L176
+	.half	.L168-.L167
 	.byte	3,2,1,5,1,9
-	.half	.L178-.L177
+	.half	.L169-.L168
 	.byte	3,1,1,7,9
-	.half	.L54-.L178
+	.half	.L54-.L169
 	.byte	0,1,1
-.L157:
+.L148:
 	.sdecl	'.debug_ranges',debug,cluster('Ultrasonic_Init')
 	.sect	'.debug_ranges'
 .L53:
 	.word	-1,.L37,0,.L54-.L37,0,0
-	.sdecl	'.debug_info',debug,cluster('Ultrasonic_Echo_Init')
+	.sdecl	'.debug_info',debug,cluster('Ultrasonic_Get_Back_Dist')
 	.sect	'.debug_info'
 .L55:
-	.word	431
+	.word	279
 	.half	3
 	.word	.L56
 	.byte	4,1
@@ -20111,216 +20070,44 @@ update_right:	.type	object
 	.byte	2
 	.word	.L46
 	.byte	3
-	.byte	'Ultrasonic_Echo_Init',0,1,56,6,1,1,1
-	.word	.L39,.L111,.L38
+	.byte	'Ultrasonic_Get_Back_Dist',0,1,19,7
+	.word	.L105
+	.byte	1,1,1
+	.word	.L31,.L106,.L30
 	.byte	4
-	.word	.L39,.L111
-	.byte	5
-	.byte	'pw',0,1,57,12
-	.word	.L112,.L113
-	.byte	6
-	.word	.L114,.L39,.L5
-	.byte	7
-	.word	.L115,.L39,.L5
-	.byte	5
-	.byte	'password',0,2,133,5,19
-	.word	.L112,.L116
-	.byte	5
-	.byte	'watchdog',0,2,134,5,19
-	.word	.L117,.L118
-	.byte	0,0,6
-	.word	.L119,.L5,.L120
-	.byte	8
-	.word	.L121,.L122
-	.byte	9
-	.word	.L123,.L5,.L120
-	.byte	0,6
-	.word	.L124,.L125,.L126
-	.byte	8
-	.word	.L127,.L128
-	.byte	9
-	.word	.L129,.L125,.L126
-	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('Ultrasonic_Echo_Init')
+	.word	.L31,.L106
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ultrasonic_Get_Back_Dist')
 	.sect	'.debug_abbrev'
 .L56:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,6,29,1
-	.byte	49,16,17,1,18,1,0,0,7,11,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('Ultrasonic_Echo_Init')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ultrasonic_Get_Back_Dist')
 	.sect	'.debug_line'
 .L57:
-	.word	.L180-.L179
-.L179:
+	.word	.L171-.L170
+.L170:
 	.half	3
-	.word	.L182-.L181
-.L181:
+	.word	.L173-.L172
+.L172:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0,0,0,0
-	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Scu\\Std\\IfxScuWdt.h',0
-	.byte	0,0,0,0
-.L182:
-	.byte	4,2,5,41,7,0,5,2
-	.word	.L39
-	.byte	3,133,5,1,5,33,9
-	.half	.L183-.L39
-	.byte	3,5,1,5,14,9
-	.half	.L149-.L183
-	.byte	3,1,1,5,5,9
-	.half	.L150-.L149
-	.byte	3,2,1,5,24,9
-	.half	.L5-.L150
-	.byte	3,187,127,1,5,5,9
-	.half	.L184-.L5
-	.byte	1,5,37,7,9
-	.half	.L185-.L184
-	.byte	3,5,1,5,43,9
-	.half	.L186-.L185
-	.byte	3,1,1,5,48,9
-	.half	.L187-.L186
-	.byte	1,5,66,9
-	.half	.L188-.L187
-	.byte	3,127,1,5,25,9
-	.half	.L189-.L188
-	.byte	3,126,1,5,33,9
-	.half	.L6-.L189
-	.byte	3,9,1,5,39,9
-	.half	.L190-.L6
-	.byte	3,1,1,5,44,9
-	.half	.L191-.L190
-	.byte	1,5,62,9
-	.half	.L192-.L191
-	.byte	3,127,1,5,21,9
-	.half	.L193-.L192
-	.byte	3,126,1,5,40,9
-	.half	.L194-.L193
-	.byte	3,6,1,5,27,9
-	.half	.L7-.L194
-	.byte	1,5,40,9
-	.half	.L195-.L7
-	.byte	1,4,1,5,25,7,9
-	.half	.L120-.L195
-	.byte	3,228,123,1,5,32,9
-	.half	.L196-.L120
-	.byte	1,5,25,9
-	.half	.L197-.L196
-	.byte	3,1,1,5,31,9
-	.half	.L198-.L197
-	.byte	1,5,25,9
-	.half	.L199-.L198
-	.byte	3,1,1,5,31,9
-	.half	.L200-.L199
-	.byte	1,5,25,9
-	.half	.L201-.L200
-	.byte	3,1,1,5,32,9
-	.half	.L202-.L201
-	.byte	1,5,25,9
-	.half	.L203-.L202
-	.byte	3,1,1,5,31,9
-	.half	.L204-.L203
-	.byte	1,5,25,9
-	.half	.L205-.L204
-	.byte	3,3,1,5,32,9
-	.half	.L206-.L205
-	.byte	1,5,25,9
-	.half	.L207-.L206
-	.byte	3,1,1,5,31,9
-	.half	.L208-.L207
-	.byte	1,5,25,9
-	.half	.L209-.L208
-	.byte	3,1,1,5,31,9
-	.half	.L210-.L209
-	.byte	1,5,25,9
-	.half	.L211-.L210
-	.byte	3,1,1,5,32,9
-	.half	.L212-.L211
-	.byte	1,5,25,9
-	.half	.L213-.L212
-	.byte	3,1,1,5,31,9
-	.half	.L214-.L213
-	.byte	1,5,25,9
-	.half	.L215-.L214
-	.byte	3,3,1,5,32,9
-	.half	.L216-.L215
-	.byte	1,5,25,9
-	.half	.L217-.L216
-	.byte	3,1,1,5,31,9
-	.half	.L218-.L217
-	.byte	1,5,25,9
-	.half	.L219-.L218
-	.byte	3,1,1,5,31,9
-	.half	.L220-.L219
-	.byte	1,5,25,9
-	.half	.L221-.L220
-	.byte	3,1,1,5,32,9
-	.half	.L222-.L221
-	.byte	1,5,25,9
-	.half	.L223-.L222
-	.byte	3,1,1,5,31,9
-	.half	.L224-.L223
-	.byte	1,5,25,9
-	.half	.L225-.L224
-	.byte	3,2,1,5,31,9
-	.half	.L226-.L225
-	.byte	1,9
-	.half	.L227-.L226
-	.byte	3,3,1,5,39,9
-	.half	.L228-.L227
-	.byte	1,5,37,9
-	.half	.L229-.L228
-	.byte	1,5,31,9
-	.half	.L230-.L229
-	.byte	3,1,1,5,36,9
-	.half	.L231-.L230
-	.byte	1,5,31,9
-	.half	.L232-.L231
-	.byte	3,1,1,5,37,9
-	.half	.L233-.L232
-	.byte	1,5,31,9
-	.half	.L234-.L233
-	.byte	3,1,1,5,36,9
-	.half	.L235-.L234
-	.byte	1,4,2,5,24,9
-	.half	.L125-.L235
-	.byte	3,222,4,1,5,5,9
-	.half	.L236-.L125
-	.byte	1,5,37,7,9
-	.half	.L237-.L236
-	.byte	3,5,1,5,43,9
-	.half	.L238-.L237
-	.byte	3,1,1,5,48,9
-	.half	.L239-.L238
-	.byte	1,5,66,9
-	.half	.L240-.L239
-	.byte	3,127,1,5,25,9
-	.half	.L241-.L240
-	.byte	3,126,1,5,33,9
-	.half	.L9-.L241
-	.byte	3,9,1,5,39,9
-	.half	.L242-.L9
-	.byte	3,1,1,5,44,9
-	.half	.L243-.L242
-	.byte	1,5,62,9
-	.half	.L244-.L243
-	.byte	3,127,1,5,21,9
-	.half	.L245-.L244
-	.byte	3,126,1,5,40,9
-	.half	.L246-.L245
-	.byte	3,6,1,5,27,9
-	.half	.L10-.L246
-	.byte	1,5,40,9
-	.half	.L247-.L10
-	.byte	1,4,1,5,1,7,9
-	.half	.L126-.L247
-	.byte	3,149,123,1,7,9
-	.half	.L59-.L126
+	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0,0,0,0,0
+.L173:
+	.byte	5,12,7,0,5,2
+	.word	.L31
+	.byte	3,19,1,5,5,9
+	.half	.L174-.L31
+	.byte	1,5,1,9
+	.half	.L2-.L174
+	.byte	3,1,1,7,9
+	.half	.L59-.L2
 	.byte	0,1,1
-.L180:
-	.sdecl	'.debug_ranges',debug,cluster('Ultrasonic_Echo_Init')
+.L171:
+	.sdecl	'.debug_ranges',debug,cluster('Ultrasonic_Get_Back_Dist')
 	.sect	'.debug_ranges'
 .L58:
-	.word	-1,.L39,0,.L59-.L39,0,0
-	.sdecl	'.debug_info',debug,cluster('Ultrasonic_Get_Back_Dist')
+	.word	-1,.L31,0,.L59-.L31,0,0
+	.sdecl	'.debug_info',debug,cluster('Ultrasonic_Get_Left_Dist')
 	.sect	'.debug_info'
 .L60:
 	.word	279
@@ -20335,47 +20122,47 @@ update_right:	.type	object
 	.byte	2
 	.word	.L46
 	.byte	3
-	.byte	'Ultrasonic_Get_Back_Dist',0,1,24,7
-	.word	.L130
+	.byte	'Ultrasonic_Get_Left_Dist',0,1,23,7
+	.word	.L105
 	.byte	1,1,1
-	.word	.L31,.L131,.L30
+	.word	.L33,.L107,.L32
 	.byte	4
-	.word	.L31,.L131
+	.word	.L33,.L107
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('Ultrasonic_Get_Back_Dist')
+	.sdecl	'.debug_abbrev',debug,cluster('Ultrasonic_Get_Left_Dist')
 	.sect	'.debug_abbrev'
 .L61:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('Ultrasonic_Get_Back_Dist')
+	.sdecl	'.debug_line',debug,cluster('Ultrasonic_Get_Left_Dist')
 	.sect	'.debug_line'
 .L62:
-	.word	.L249-.L248
-.L248:
+	.word	.L176-.L175
+.L175:
 	.half	3
-	.word	.L251-.L250
-.L250:
+	.word	.L178-.L177
+.L177:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0,0,0,0,0
-.L251:
+.L178:
 	.byte	5,12,7,0,5,2
-	.word	.L31
-	.byte	3,24,1,5,5,9
-	.half	.L252-.L31
+	.word	.L33
+	.byte	3,23,1,5,5,9
+	.half	.L179-.L33
 	.byte	1,5,1,9
-	.half	.L2-.L252
+	.half	.L3-.L179
 	.byte	3,1,1,7,9
-	.half	.L64-.L2
+	.half	.L64-.L3
 	.byte	0,1,1
-.L249:
-	.sdecl	'.debug_ranges',debug,cluster('Ultrasonic_Get_Back_Dist')
+.L176:
+	.sdecl	'.debug_ranges',debug,cluster('Ultrasonic_Get_Left_Dist')
 	.sect	'.debug_ranges'
 .L63:
-	.word	-1,.L31,0,.L64-.L31,0,0
-	.sdecl	'.debug_info',debug,cluster('Ultrasonic_Get_Left_Dist')
+	.word	-1,.L33,0,.L64-.L33,0,0
+	.sdecl	'.debug_info',debug,cluster('Ultrasonic_Get_Right_Dist')
 	.sect	'.debug_info'
 .L65:
-	.word	279
+	.word	280
 	.half	3
 	.word	.L66
 	.byte	4,1
@@ -20387,47 +20174,47 @@ update_right:	.type	object
 	.byte	2
 	.word	.L46
 	.byte	3
-	.byte	'Ultrasonic_Get_Left_Dist',0,1,28,7
-	.word	.L130
+	.byte	'Ultrasonic_Get_Right_Dist',0,1,27,7
+	.word	.L105
 	.byte	1,1,1
-	.word	.L33,.L132,.L32
+	.word	.L35,.L108,.L34
 	.byte	4
-	.word	.L33,.L132
+	.word	.L35,.L108
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('Ultrasonic_Get_Left_Dist')
+	.sdecl	'.debug_abbrev',debug,cluster('Ultrasonic_Get_Right_Dist')
 	.sect	'.debug_abbrev'
 .L66:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('Ultrasonic_Get_Left_Dist')
+	.sdecl	'.debug_line',debug,cluster('Ultrasonic_Get_Right_Dist')
 	.sect	'.debug_line'
 .L67:
-	.word	.L254-.L253
-.L253:
+	.word	.L181-.L180
+.L180:
 	.half	3
-	.word	.L256-.L255
-.L255:
+	.word	.L183-.L182
+.L182:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0,0,0,0,0
-.L256:
+.L183:
 	.byte	5,12,7,0,5,2
-	.word	.L33
-	.byte	3,28,1,5,5,9
-	.half	.L257-.L33
+	.word	.L35
+	.byte	3,27,1,5,5,9
+	.half	.L184-.L35
 	.byte	1,5,1,9
-	.half	.L3-.L257
+	.half	.L4-.L184
 	.byte	3,1,1,7,9
-	.half	.L69-.L3
+	.half	.L69-.L4
 	.byte	0,1,1
-.L254:
-	.sdecl	'.debug_ranges',debug,cluster('Ultrasonic_Get_Left_Dist')
+.L181:
+	.sdecl	'.debug_ranges',debug,cluster('Ultrasonic_Get_Right_Dist')
 	.sect	'.debug_ranges'
 .L68:
-	.word	-1,.L33,0,.L69-.L33,0,0
-	.sdecl	'.debug_info',debug,cluster('Ultrasonic_Get_Right_Dist')
+	.word	-1,.L35,0,.L69-.L35,0,0
+	.sdecl	'.debug_info',debug,cluster('Ultrasonic_Echo_Init')
 	.sect	'.debug_info'
 .L70:
-	.word	280
+	.word	431
 	.half	3
 	.word	.L71
 	.byte	4,1
@@ -20439,43 +20226,215 @@ update_right:	.type	object
 	.byte	2
 	.word	.L46
 	.byte	3
-	.byte	'Ultrasonic_Get_Right_Dist',0,1,32,7
-	.word	.L130
-	.byte	1,1,1
-	.word	.L35,.L133,.L34
+	.byte	'Ultrasonic_Echo_Init',0,1,51,6,1,1,1
+	.word	.L39,.L109,.L38
 	.byte	4
-	.word	.L35,.L133
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('Ultrasonic_Get_Right_Dist')
+	.word	.L39,.L109
+	.byte	5
+	.byte	'pw',0,1,52,12
+	.word	.L110,.L111
+	.byte	6
+	.word	.L112,.L39,.L5
+	.byte	7
+	.word	.L113,.L39,.L5
+	.byte	5
+	.byte	'password',0,2,133,5,19
+	.word	.L110,.L114
+	.byte	5
+	.byte	'watchdog',0,2,134,5,19
+	.word	.L115,.L116
+	.byte	0,0,6
+	.word	.L117,.L5,.L118
+	.byte	8
+	.word	.L119,.L120
+	.byte	9
+	.word	.L121,.L5,.L118
+	.byte	0,6
+	.word	.L122,.L123,.L124
+	.byte	8
+	.word	.L125,.L126
+	.byte	9
+	.word	.L127,.L123,.L124
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ultrasonic_Echo_Init')
 	.sect	'.debug_abbrev'
 .L71:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('Ultrasonic_Get_Right_Dist')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,6,29,1
+	.byte	49,16,17,1,18,1,0,0,7,11,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ultrasonic_Echo_Init')
 	.sect	'.debug_line'
 .L72:
-	.word	.L259-.L258
-.L258:
+	.word	.L186-.L185
+.L185:
 	.half	3
-	.word	.L261-.L260
-.L260:
+	.word	.L188-.L187
+.L187:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0,0,0,0,0
-.L261:
-	.byte	5,12,7,0,5,2
-	.word	.L35
-	.byte	3,32,1,5,5,9
-	.half	.L262-.L35
-	.byte	1,5,1,9
-	.half	.L4-.L262
-	.byte	3,1,1,7,9
-	.half	.L74-.L4
+	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0,0,0,0
+	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Scu\\Std\\IfxScuWdt.h',0
+	.byte	0,0,0,0
+.L188:
+	.byte	4,2,5,41,7,0,5,2
+	.word	.L39
+	.byte	3,133,5,1,5,33,9
+	.half	.L189-.L39
+	.byte	3,5,1,5,14,9
+	.half	.L140-.L189
+	.byte	3,1,1,5,5,9
+	.half	.L141-.L140
+	.byte	3,2,1,5,24,9
+	.half	.L5-.L141
+	.byte	3,187,127,1,5,5,9
+	.half	.L190-.L5
+	.byte	1,5,37,7,9
+	.half	.L191-.L190
+	.byte	3,5,1,5,43,9
+	.half	.L192-.L191
+	.byte	3,1,1,5,48,9
+	.half	.L193-.L192
+	.byte	1,5,66,9
+	.half	.L194-.L193
+	.byte	3,127,1,5,25,9
+	.half	.L195-.L194
+	.byte	3,126,1,5,33,9
+	.half	.L6-.L195
+	.byte	3,9,1,5,39,9
+	.half	.L196-.L6
+	.byte	3,1,1,5,44,9
+	.half	.L197-.L196
+	.byte	1,5,62,9
+	.half	.L198-.L197
+	.byte	3,127,1,5,21,9
+	.half	.L199-.L198
+	.byte	3,126,1,5,40,9
+	.half	.L200-.L199
+	.byte	3,6,1,5,27,9
+	.half	.L7-.L200
+	.byte	1,5,40,9
+	.half	.L201-.L7
+	.byte	1,4,1,5,25,7,9
+	.half	.L118-.L201
+	.byte	3,223,123,1,5,32,9
+	.half	.L202-.L118
+	.byte	1,5,25,9
+	.half	.L203-.L202
+	.byte	3,1,1,5,31,9
+	.half	.L204-.L203
+	.byte	1,5,25,9
+	.half	.L205-.L204
+	.byte	3,1,1,5,31,9
+	.half	.L206-.L205
+	.byte	1,5,25,9
+	.half	.L207-.L206
+	.byte	3,1,1,5,32,9
+	.half	.L208-.L207
+	.byte	1,5,25,9
+	.half	.L209-.L208
+	.byte	3,1,1,5,31,9
+	.half	.L210-.L209
+	.byte	1,5,25,9
+	.half	.L211-.L210
+	.byte	3,3,1,5,32,9
+	.half	.L212-.L211
+	.byte	1,5,25,9
+	.half	.L213-.L212
+	.byte	3,1,1,5,31,9
+	.half	.L214-.L213
+	.byte	1,5,25,9
+	.half	.L215-.L214
+	.byte	3,1,1,5,31,9
+	.half	.L216-.L215
+	.byte	1,5,25,9
+	.half	.L217-.L216
+	.byte	3,1,1,5,32,9
+	.half	.L218-.L217
+	.byte	1,5,25,9
+	.half	.L219-.L218
+	.byte	3,1,1,5,31,9
+	.half	.L220-.L219
+	.byte	1,5,25,9
+	.half	.L221-.L220
+	.byte	3,3,1,5,32,9
+	.half	.L222-.L221
+	.byte	1,5,25,9
+	.half	.L223-.L222
+	.byte	3,1,1,5,31,9
+	.half	.L224-.L223
+	.byte	1,5,25,9
+	.half	.L225-.L224
+	.byte	3,1,1,5,31,9
+	.half	.L226-.L225
+	.byte	1,5,25,9
+	.half	.L227-.L226
+	.byte	3,1,1,5,32,9
+	.half	.L228-.L227
+	.byte	1,5,25,9
+	.half	.L229-.L228
+	.byte	3,1,1,5,31,9
+	.half	.L230-.L229
+	.byte	1,5,25,9
+	.half	.L231-.L230
+	.byte	3,2,1,5,31,9
+	.half	.L232-.L231
+	.byte	1,9
+	.half	.L233-.L232
+	.byte	3,3,1,5,39,9
+	.half	.L234-.L233
+	.byte	1,5,37,9
+	.half	.L235-.L234
+	.byte	1,5,31,9
+	.half	.L236-.L235
+	.byte	3,1,1,5,36,9
+	.half	.L237-.L236
+	.byte	1,5,31,9
+	.half	.L238-.L237
+	.byte	3,1,1,5,37,9
+	.half	.L239-.L238
+	.byte	1,5,31,9
+	.half	.L240-.L239
+	.byte	3,1,1,5,36,9
+	.half	.L241-.L240
+	.byte	1,4,2,5,24,9
+	.half	.L123-.L241
+	.byte	3,227,4,1,5,5,9
+	.half	.L242-.L123
+	.byte	1,5,37,7,9
+	.half	.L243-.L242
+	.byte	3,5,1,5,43,9
+	.half	.L244-.L243
+	.byte	3,1,1,5,48,9
+	.half	.L245-.L244
+	.byte	1,5,66,9
+	.half	.L246-.L245
+	.byte	3,127,1,5,25,9
+	.half	.L247-.L246
+	.byte	3,126,1,5,33,9
+	.half	.L9-.L247
+	.byte	3,9,1,5,39,9
+	.half	.L248-.L9
+	.byte	3,1,1,5,44,9
+	.half	.L249-.L248
+	.byte	1,5,62,9
+	.half	.L250-.L249
+	.byte	3,127,1,5,21,9
+	.half	.L251-.L250
+	.byte	3,126,1,5,40,9
+	.half	.L252-.L251
+	.byte	3,6,1,5,27,9
+	.half	.L10-.L252
+	.byte	1,5,40,9
+	.half	.L253-.L10
+	.byte	1,4,1,5,1,7,9
+	.half	.L124-.L253
+	.byte	3,144,123,1,7,9
+	.half	.L74-.L124
 	.byte	0,1,1
-.L259:
-	.sdecl	'.debug_ranges',debug,cluster('Ultrasonic_Get_Right_Dist')
+.L186:
+	.sdecl	'.debug_ranges',debug,cluster('Ultrasonic_Echo_Init')
 	.sect	'.debug_ranges'
 .L73:
-	.word	-1,.L35,0,.L74-.L35,0,0
+	.word	-1,.L39,0,.L74-.L39,0,0
 	.sdecl	'.debug_info',debug,cluster('Ultrasonic_Stm_Init_10us')
 	.sect	'.debug_info'
 .L75:
@@ -20491,10 +20450,10 @@ update_right:	.type	object
 	.byte	2
 	.word	.L46
 	.byte	3
-	.byte	'Ultrasonic_Stm_Init_10us',0,1,92,6,1,1,1
-	.word	.L41,.L134,.L40
+	.byte	'Ultrasonic_Stm_Init_10us',0,1,87,6,1,1,1
+	.word	.L41,.L128,.L40
 	.byte	4
-	.word	.L41,.L134
+	.word	.L41,.L128
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Ultrasonic_Stm_Init_10us')
 	.sect	'.debug_abbrev'
@@ -20504,72 +20463,72 @@ update_right:	.type	object
 	.sdecl	'.debug_line',debug,cluster('Ultrasonic_Stm_Init_10us')
 	.sect	'.debug_line'
 .L77:
-	.word	.L264-.L263
-.L263:
+	.word	.L255-.L254
+.L254:
 	.half	3
-	.word	.L266-.L265
-.L265:
+	.word	.L257-.L256
+.L256:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0,0,0,0,0
-.L266:
+.L257:
 	.byte	5,24,7,0,5,2
 	.word	.L41
-	.byte	3,220,0,1,5,32,9
-	.half	.L267-.L41
+	.byte	3,215,0,1,5,32,9
+	.half	.L258-.L41
 	.byte	1,5,24,9
-	.half	.L268-.L267
+	.half	.L259-.L258
 	.byte	3,1,1,5,33,9
-	.half	.L269-.L268
+	.half	.L260-.L259
 	.byte	1,5,22,9
-	.half	.L270-.L269
+	.half	.L261-.L260
 	.byte	3,1,1,5,30,9
-	.half	.L271-.L270
+	.half	.L262-.L261
 	.byte	1,5,34,9
-	.half	.L272-.L271
+	.half	.L263-.L262
 	.byte	3,2,1,5,39,9
-	.half	.L273-.L272
+	.half	.L264-.L263
 	.byte	1,5,34,9
-	.half	.L274-.L273
+	.half	.L265-.L264
 	.byte	3,1,1,5,42,9
-	.half	.L275-.L274
+	.half	.L266-.L265
 	.byte	1,5,40,9
-	.half	.L276-.L275
+	.half	.L267-.L266
 	.byte	1,5,34,9
-	.half	.L277-.L276
+	.half	.L268-.L267
 	.byte	3,1,1,5,40,9
-	.half	.L278-.L277
+	.half	.L269-.L268
 	.byte	1,5,34,9
-	.half	.L279-.L278
+	.half	.L270-.L269
 	.byte	3,1,1,5,39,9
-	.half	.L280-.L279
+	.half	.L271-.L270
 	.byte	1,5,23,9
-	.half	.L281-.L280
+	.half	.L272-.L271
 	.byte	3,2,1,5,32,9
-	.half	.L282-.L281
+	.half	.L273-.L272
 	.byte	1,5,22,9
-	.half	.L283-.L282
+	.half	.L274-.L273
 	.byte	3,1,1,5,30,9
-	.half	.L284-.L283
+	.half	.L275-.L274
 	.byte	1,5,60,9
-	.half	.L285-.L284
+	.half	.L276-.L275
 	.byte	3,2,1,5,89,9
-	.half	.L286-.L285
+	.half	.L277-.L276
 	.byte	1,5,92,9
-	.half	.L287-.L286
+	.half	.L278-.L277
 	.byte	1,5,63,9
-	.half	.L288-.L287
+	.half	.L279-.L278
 	.byte	1,5,104,9
-	.half	.L289-.L288
+	.half	.L280-.L279
 	.byte	1,5,100,9
-	.half	.L290-.L289
+	.half	.L281-.L280
 	.byte	1,5,26,9
-	.half	.L291-.L290
+	.half	.L282-.L281
 	.byte	1,5,1,9
-	.half	.L292-.L291
+	.half	.L283-.L282
 	.byte	3,1,1,7,9
-	.half	.L79-.L292
+	.half	.L79-.L283
 	.byte	0,1,1
-.L264:
+.L255:
 	.sdecl	'.debug_ranges',debug,cluster('Ultrasonic_Stm_Init_10us')
 	.sect	'.debug_ranges'
 .L78:
@@ -20589,10 +20548,10 @@ update_right:	.type	object
 	.byte	2
 	.word	.L46
 	.byte	3
-	.byte	'Ultrasonic_Stm0_Isr_Handler',0,1,111,6,1,1,1
-	.word	.L43,.L135,.L42
+	.byte	'Ultrasonic_Stm0_Isr_Handler',0,1,106,6,1,1,1
+	.word	.L43,.L129,.L42
 	.byte	4
-	.word	.L43,.L135
+	.word	.L43,.L129
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Ultrasonic_Stm0_Isr_Handler')
 	.sect	'.debug_abbrev'
@@ -20602,94 +20561,94 @@ update_right:	.type	object
 	.sdecl	'.debug_line',debug,cluster('Ultrasonic_Stm0_Isr_Handler')
 	.sect	'.debug_line'
 .L82:
-	.word	.L294-.L293
-.L293:
+	.word	.L285-.L284
+.L284:
 	.half	3
-	.word	.L296-.L295
-.L295:
+	.word	.L287-.L286
+.L286:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0,0,0,0,0
-.L296:
+.L287:
 	.byte	5,6,7,0,5,2
 	.word	.L43
-	.byte	3,238,0,1,5,60,9
-	.half	.L297-.L43
+	.byte	3,233,0,1,5,60,9
+	.half	.L288-.L43
 	.byte	3,1,1,5,89,9
-	.half	.L298-.L297
+	.half	.L289-.L288
 	.byte	1,5,92,9
-	.half	.L299-.L298
+	.half	.L290-.L289
 	.byte	1,5,63,9
-	.half	.L300-.L299
+	.half	.L291-.L290
 	.byte	1,5,104,9
-	.half	.L301-.L300
+	.half	.L292-.L291
 	.byte	1,5,100,9
-	.half	.L302-.L301
+	.half	.L293-.L292
 	.byte	1,5,26,9
-	.half	.L303-.L302
+	.half	.L294-.L293
 	.byte	1,5,5,9
-	.half	.L304-.L303
+	.half	.L295-.L294
 	.byte	3,1,1,5,13,9
-	.half	.L305-.L304
+	.half	.L296-.L295
 	.byte	1,5,9,9
-	.half	.L306-.L305
+	.half	.L297-.L296
 	.byte	3,1,1,5,5,9
-	.half	.L307-.L306
+	.half	.L298-.L297
 	.byte	1,5,25,7,9
-	.half	.L308-.L307
+	.half	.L299-.L298
 	.byte	3,1,1,5,29,9
-	.half	.L309-.L308
+	.half	.L300-.L299
 	.byte	1,5,25,9
-	.half	.L310-.L309
+	.half	.L301-.L300
 	.byte	3,1,1,5,29,9
-	.half	.L311-.L310
+	.half	.L302-.L301
 	.byte	1,5,32,9
-	.half	.L312-.L311
+	.half	.L303-.L302
 	.byte	3,127,1,5,16,9
-	.half	.L12-.L312
+	.half	.L12-.L303
 	.byte	3,2,1,5,12,9
-	.half	.L313-.L12
+	.half	.L304-.L12
 	.byte	1,5,25,7,9
-	.half	.L314-.L313
+	.half	.L305-.L304
 	.byte	3,1,1,5,29,9
-	.half	.L315-.L314
+	.half	.L306-.L305
 	.byte	1,5,25,9
+	.half	.L307-.L306
+	.byte	3,1,1,5,29,9
+	.half	.L308-.L307
+	.byte	1,5,32,9
+	.half	.L309-.L308
+	.byte	3,127,1,5,16,9
+	.half	.L14-.L309
+	.byte	3,2,1,5,12,9
+	.half	.L310-.L14
+	.byte	1,5,25,7,9
+	.half	.L311-.L310
+	.byte	3,1,1,5,29,9
+	.half	.L312-.L311
+	.byte	1,5,32,9
+	.half	.L313-.L312
+	.byte	1,5,16,9
+	.half	.L16-.L313
+	.byte	3,1,1,5,28,9
+	.half	.L314-.L16
+	.byte	1,5,12,9
+	.half	.L315-.L314
+	.byte	1,5,25,7,9
 	.half	.L316-.L315
 	.byte	3,1,1,5,29,9
 	.half	.L317-.L316
-	.byte	1,5,32,9
-	.half	.L318-.L317
-	.byte	3,127,1,5,16,9
-	.half	.L14-.L318
-	.byte	3,2,1,5,12,9
-	.half	.L319-.L14
-	.byte	1,5,25,7,9
-	.half	.L320-.L319
-	.byte	3,1,1,5,29,9
-	.half	.L321-.L320
-	.byte	1,5,32,9
-	.half	.L322-.L321
-	.byte	1,5,16,9
-	.half	.L16-.L322
-	.byte	3,1,1,5,28,9
-	.half	.L323-.L16
-	.byte	1,5,12,9
-	.half	.L324-.L323
-	.byte	1,5,25,7,9
-	.half	.L325-.L324
-	.byte	3,1,1,5,29,9
-	.half	.L326-.L325
 	.byte	1,5,9,9
-	.half	.L327-.L326
+	.half	.L318-.L317
 	.byte	3,1,1,5,20,9
-	.half	.L328-.L327
+	.half	.L319-.L318
 	.byte	1,5,18,9
-	.half	.L329-.L328
+	.half	.L320-.L319
 	.byte	1,5,1,9
-	.half	.L13-.L329
+	.half	.L13-.L320
 	.byte	3,2,1,9
 	.half	.L84-.L13
 	.byte	0,1,1
-.L294:
+.L285:
 	.sdecl	'.debug_ranges',debug,cluster('Ultrasonic_Stm0_Isr_Handler')
 	.sect	'.debug_ranges'
 .L83:
@@ -20697,7 +20656,7 @@ update_right:	.type	object
 	.sdecl	'.debug_info',debug,cluster('Ultrasonic_Eru2_Isr_Handler')
 	.sect	'.debug_info'
 .L85:
-	.word	279
+	.word	278
 	.half	3
 	.word	.L86
 	.byte	4,1
@@ -20709,10 +20668,10 @@ update_right:	.type	object
 	.byte	2
 	.word	.L46
 	.byte	3
-	.byte	'Ultrasonic_Eru2_Isr_Handler',0,1,128,1,6,1,1,1
-	.word	.L45,.L136,.L44
+	.byte	'Ultrasonic_Eru2_Isr_Handler',0,1,123,6,1,1,1
+	.word	.L45,.L130,.L44
 	.byte	4
-	.word	.L45,.L136
+	.word	.L45,.L130
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Ultrasonic_Eru2_Isr_Handler')
 	.sect	'.debug_abbrev'
@@ -20722,152 +20681,140 @@ update_right:	.type	object
 	.sdecl	'.debug_line',debug,cluster('Ultrasonic_Eru2_Isr_Handler')
 	.sect	'.debug_line'
 .L87:
-	.word	.L331-.L330
-.L330:
+	.word	.L322-.L321
+.L321:
 	.half	3
-	.word	.L333-.L332
-.L332:
+	.word	.L324-.L323
+.L323:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0,0,0,0,0
-.L333:
+.L324:
 	.byte	5,6,7,0,5,2
 	.word	.L45
-	.byte	3,255,0,1,5,26,9
-	.half	.L334-.L45
+	.byte	3,250,0,1,5,26,9
+	.half	.L325-.L45
 	.byte	3,1,1,5,5,9
+	.half	.L326-.L325
+	.byte	1,5,28,7,9
+	.half	.L327-.L326
+	.byte	3,1,1,5,9,9
+	.half	.L328-.L327
+	.byte	1,5,13,7,9
+	.half	.L329-.L328
+	.byte	3,1,1,5,41,9
+	.half	.L330-.L329
+	.byte	1,5,24,9
+	.half	.L331-.L330
+	.byte	1,5,43,9
+	.half	.L332-.L331
+	.byte	1,5,13,9
+	.half	.L20-.L332
+	.byte	3,2,1,5,57,9
+	.half	.L333-.L20
+	.byte	1,5,62,9
+	.half	.L334-.L333
+	.byte	1,5,60,9
 	.half	.L335-.L334
-	.byte	1,5,28,7,9
+	.byte	1,5,32,9
 	.half	.L336-.L335
-	.byte	3,1,1,5,9,9
+	.byte	1,5,39,9
 	.half	.L337-.L336
-	.byte	1,5,13,7,9
+	.byte	1,5,76,9
 	.half	.L338-.L337
-	.byte	3,1,1,5,41,9
+	.byte	1,5,74,9
 	.half	.L339-.L338
-	.byte	1,5,24,9
+	.byte	1,5,23,9
 	.half	.L340-.L339
-	.byte	1,5,43,9
-	.half	.L341-.L340
-	.byte	1,5,13,9
-	.half	.L20-.L341
-	.byte	3,2,1,5,49,9
-	.half	.L342-.L20
-	.byte	1,5,52,9
-	.half	.L343-.L342
-	.byte	1,5,51,9
+	.byte	1,5,25,9
+	.half	.L21-.L340
+	.byte	3,1,1,5,30,9
+	.half	.L341-.L21
+	.byte	1,5,33,9
+	.half	.L342-.L341
+	.byte	1,9
+	.half	.L19-.L342
+	.byte	3,1,1,5,12,9
+	.half	.L343-.L19
+	.byte	1,5,28,7,9
 	.half	.L344-.L343
-	.byte	1,5,66,9
+	.byte	3,1,1,5,9,9
 	.half	.L345-.L344
-	.byte	1,5,64,9
+	.byte	1,5,13,7,9
 	.half	.L346-.L345
-	.byte	1,5,25,9
-	.half	.L347-.L346
-	.byte	1,5,23,9
-	.half	.L348-.L347
-	.byte	1,5,9,9
-	.half	.L21-.L348
-	.byte	3,1,1,5,23,9
-	.half	.L349-.L21
-	.byte	1,5,21,9
-	.half	.L350-.L349
-	.byte	1,5,25,9
-	.half	.L351-.L350
-	.byte	3,1,1,5,30,9
-	.half	.L352-.L351
-	.byte	1,5,24,9
-	.half	.L353-.L352
-	.byte	3,127,1,5,31,9
-	.half	.L19-.L353
-	.byte	3,4,1,5,10,9
-	.half	.L354-.L19
-	.byte	1,5,28,7,9
-	.half	.L355-.L354
-	.byte	3,1,1,5,9,9
-	.half	.L356-.L355
-	.byte	1,5,13,7,9
-	.half	.L357-.L356
 	.byte	3,1,1,5,41,9
-	.half	.L358-.L357
+	.half	.L347-.L346
 	.byte	1,5,24,9
-	.half	.L359-.L358
+	.half	.L348-.L347
 	.byte	1,5,43,9
-	.half	.L360-.L359
+	.half	.L349-.L348
 	.byte	1,5,13,9
-	.half	.L24-.L360
-	.byte	3,2,1,5,49,9
-	.half	.L361-.L24
-	.byte	1,5,52,9
-	.half	.L362-.L361
-	.byte	1,5,51,9
-	.half	.L363-.L362
-	.byte	1,5,66,9
-	.half	.L364-.L363
-	.byte	1,5,64,9
-	.half	.L365-.L364
-	.byte	1,5,25,9
-	.half	.L366-.L365
+	.half	.L24-.L349
+	.byte	3,2,1,5,57,9
+	.half	.L350-.L24
+	.byte	1,5,62,9
+	.half	.L351-.L350
+	.byte	1,5,60,9
+	.half	.L352-.L351
+	.byte	1,5,32,9
+	.half	.L353-.L352
+	.byte	1,5,39,9
+	.half	.L354-.L353
+	.byte	1,5,76,9
+	.half	.L355-.L354
+	.byte	1,5,74,9
+	.half	.L356-.L355
 	.byte	1,5,23,9
-	.half	.L367-.L366
-	.byte	1,5,9,9
-	.half	.L25-.L367
-	.byte	3,1,1,5,23,9
-	.half	.L368-.L25
-	.byte	1,5,21,9
-	.half	.L369-.L368
+	.half	.L357-.L356
 	.byte	1,5,25,9
-	.half	.L370-.L369
+	.half	.L25-.L357
 	.byte	3,1,1,5,30,9
-	.half	.L371-.L370
-	.byte	1,5,24,9
-	.half	.L372-.L371
-	.byte	3,127,1,5,31,9
-	.half	.L23-.L372
-	.byte	3,4,1,5,10,9
-	.half	.L373-.L23
+	.half	.L358-.L25
+	.byte	1,5,33,9
+	.half	.L359-.L358
+	.byte	1,9
+	.half	.L23-.L359
+	.byte	3,1,1,5,12,9
+	.half	.L360-.L23
 	.byte	1,5,28,7,9
-	.half	.L374-.L373
+	.half	.L361-.L360
 	.byte	3,1,1,5,9,9
-	.half	.L375-.L374
+	.half	.L362-.L361
 	.byte	1,5,13,7,9
-	.half	.L376-.L375
+	.half	.L363-.L362
 	.byte	3,1,1,5,42,9
-	.half	.L377-.L376
+	.half	.L364-.L363
 	.byte	1,5,25,9
-	.half	.L378-.L377
+	.half	.L365-.L364
 	.byte	1,5,44,9
-	.half	.L379-.L378
+	.half	.L366-.L365
 	.byte	1,5,13,9
-	.half	.L28-.L379
-	.byte	3,2,1,5,50,9
-	.half	.L380-.L28
-	.byte	1,5,53,9
-	.half	.L381-.L380
-	.byte	1,5,52,9
-	.half	.L382-.L381
-	.byte	1,5,68,9
-	.half	.L383-.L382
-	.byte	1,5,66,9
-	.half	.L384-.L383
-	.byte	1,5,26,9
-	.half	.L385-.L384
+	.half	.L28-.L366
+	.byte	3,2,1,5,58,9
+	.half	.L367-.L28
+	.byte	1,5,63,9
+	.half	.L368-.L367
+	.byte	1,5,61,9
+	.half	.L369-.L368
+	.byte	1,5,33,9
+	.half	.L370-.L369
+	.byte	1,5,40,9
+	.half	.L371-.L370
+	.byte	1,5,78,9
+	.half	.L372-.L371
+	.byte	1,5,76,9
+	.half	.L373-.L372
 	.byte	1,5,24,9
-	.half	.L386-.L385
-	.byte	1,5,9,9
-	.half	.L29-.L386
-	.byte	3,1,1,5,24,9
-	.half	.L387-.L29
-	.byte	1,5,22,9
-	.half	.L388-.L387
+	.half	.L374-.L373
 	.byte	1,5,25,9
-	.half	.L389-.L388
+	.half	.L29-.L374
 	.byte	3,1,1,5,30,9
-	.half	.L390-.L389
+	.half	.L375-.L29
 	.byte	1,5,1,9
-	.half	.L22-.L390
+	.half	.L22-.L375
 	.byte	3,2,1,9
 	.half	.L89-.L22
 	.byte	0,1,1
-.L331:
+.L322:
 	.sdecl	'.debug_ranges',debug,cluster('Ultrasonic_Eru2_Isr_Handler')
 	.sect	'.debug_ranges'
 .L88:
@@ -20886,7 +20833,7 @@ update_right:	.type	object
 	.word	.L46
 	.byte	3
 	.byte	'stm0_cnt',0,11,11,30
-	.word	.L137
+	.word	.L131
 	.byte	5,3
 	.word	stm0_cnt
 	.byte	0
@@ -20908,7 +20855,7 @@ update_right:	.type	object
 	.word	.L46
 	.byte	3
 	.byte	'start_back',0,11,12,24
-	.word	.L138
+	.word	.L132
 	.byte	5,3
 	.word	start_back
 	.byte	0
@@ -20930,7 +20877,7 @@ update_right:	.type	object
 	.word	.L46
 	.byte	3
 	.byte	'start_left',0,11,13,24
-	.word	.L139
+	.word	.L133
 	.byte	5,3
 	.word	start_left
 	.byte	0
@@ -20952,7 +20899,7 @@ update_right:	.type	object
 	.word	.L46
 	.byte	3
 	.byte	'start_right',0,11,14,24
-	.word	.L140
+	.word	.L134
 	.byte	5,3
 	.word	start_right
 	.byte	0
@@ -20973,8 +20920,8 @@ update_right:	.type	object
 	.byte	1,2
 	.word	.L46
 	.byte	3
-	.byte	'dist_back',0,11,16,23
-	.word	.L141
+	.byte	'dist_back',0,11,15,23
+	.word	.L135
 	.byte	5,3
 	.word	dist_back
 	.byte	0
@@ -20995,8 +20942,8 @@ update_right:	.type	object
 	.byte	1,2
 	.word	.L46
 	.byte	3
-	.byte	'dist_left',0,11,17,23
-	.word	.L142
+	.byte	'dist_left',0,11,16,23
+	.word	.L136
 	.byte	5,3
 	.word	dist_left
 	.byte	0
@@ -21017,8 +20964,8 @@ update_right:	.type	object
 	.byte	1,2
 	.word	.L46
 	.byte	3
-	.byte	'dist_right',0,11,18,23
-	.word	.L143
+	.byte	'dist_right',0,11,17,23
+	.word	.L137
 	.byte	5,3
 	.word	dist_right
 	.byte	0
@@ -21026,150 +20973,84 @@ update_right:	.type	object
 	.sect	'.debug_abbrev'
 .L103:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('update_back')
-	.sect	'.debug_info'
-.L104:
-	.word	239
-	.half	3
-	.word	.L105
-	.byte	4,1
-	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
-	.byte	1,2
-	.word	.L46
-	.byte	3
-	.byte	'update_back',0,11,20,21
-	.word	.L144
-	.byte	5,3
-	.word	update_back
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('update_back')
-	.sect	'.debug_abbrev'
-.L105:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('update_left')
-	.sect	'.debug_info'
-.L106:
-	.word	239
-	.half	3
-	.word	.L107
-	.byte	4,1
-	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
-	.byte	1,2
-	.word	.L46
-	.byte	3
-	.byte	'update_left',0,11,21,21
-	.word	.L145
-	.byte	5,3
-	.word	update_left
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('update_left')
-	.sect	'.debug_abbrev'
-.L107:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('update_right')
-	.sect	'.debug_info'
-.L108:
-	.word	240
-	.half	3
-	.word	.L109
-	.byte	4,1
-	.byte	'../BSW/ULTRASONIC/Ultrasonic.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
-	.byte	1,2
-	.word	.L46
-	.byte	3
-	.byte	'update_right',0,11,22,21
-	.word	.L146
-	.byte	5,3
-	.word	update_right
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('update_right')
-	.sect	'.debug_abbrev'
-.L109:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
 	.sdecl	'.debug_loc',debug,cluster('Ultrasonic_Echo_Init')
 	.sect	'.debug_loc'
 .L38:
-	.word	-1,.L39,0,.L111-.L39
+	.word	-1,.L39,0,.L109-.L39
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L122:
+.L120:
 	.word	0,0
-.L116:
-	.word	-1,.L39,.L149-.L39,.L150-.L39
+.L114:
+	.word	-1,.L39,.L140-.L39,.L141-.L39
 	.half	1
 	.byte	95
-	.word	.L150-.L39,.L151-.L39
+	.word	.L141-.L39,.L142-.L39
 	.half	1
 	.byte	81
 	.word	0,0
-.L128:
+.L126:
 	.word	0,0
-.L113:
+.L111:
 	.word	0,0
-.L118:
-	.word	-1,.L39,.L147-.L39,.L148-.L39
+.L116:
+	.word	-1,.L39,.L138-.L39,.L139-.L39
 	.half	1
 	.byte	111
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Ultrasonic_Eru2_Isr_Handler')
 	.sect	'.debug_loc'
 .L44:
-	.word	-1,.L45,0,.L136-.L45
+	.word	-1,.L45,0,.L130-.L45
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Ultrasonic_Get_Back_Dist')
 	.sect	'.debug_loc'
 .L30:
-	.word	-1,.L31,0,.L131-.L31
+	.word	-1,.L31,0,.L106-.L31
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Ultrasonic_Get_Left_Dist')
 	.sect	'.debug_loc'
 .L32:
-	.word	-1,.L33,0,.L132-.L33
+	.word	-1,.L33,0,.L107-.L33
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Ultrasonic_Get_Right_Dist')
 	.sect	'.debug_loc'
 .L34:
-	.word	-1,.L35,0,.L133-.L35
+	.word	-1,.L35,0,.L108-.L35
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Ultrasonic_Init')
 	.sect	'.debug_loc'
 .L36:
-	.word	-1,.L37,0,.L110-.L37
+	.word	-1,.L37,0,.L104-.L37
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Ultrasonic_Stm0_Isr_Handler')
 	.sect	'.debug_loc'
 .L42:
-	.word	-1,.L43,0,.L135-.L43
+	.word	-1,.L43,0,.L129-.L43
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Ultrasonic_Stm_Init_10us')
 	.sect	'.debug_loc'
 .L40:
-	.word	-1,.L41,0,.L134-.L41
+	.word	-1,.L41,0,.L128-.L41
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L391:
+.L376:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -21177,38 +21058,38 @@ update_right:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('Ultrasonic_Get_Back_Dist')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L391,.L31,.L131-.L31
+	.word	.L376,.L31,.L106-.L31
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Ultrasonic_Get_Left_Dist')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L391,.L33,.L132-.L33
+	.word	.L376,.L33,.L107-.L33
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Ultrasonic_Get_Right_Dist')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L391,.L35,.L133-.L35
+	.word	.L376,.L35,.L108-.L35
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Ultrasonic_Init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L391,.L37,.L110-.L37
+	.word	.L376,.L37,.L104-.L37
 	.sdecl	'.debug_frame',debug,cluster('Ultrasonic_Echo_Init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L391,.L39,.L111-.L39
+	.word	.L376,.L39,.L109-.L39
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Ultrasonic_Stm_Init_10us')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L391,.L41,.L134-.L41
+	.word	.L376,.L41,.L128-.L41
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Ultrasonic_Stm0_Isr_Handler')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L391,.L43,.L135-.L43
+	.word	.L376,.L43,.L129-.L43
 	.sdecl	'.debug_frame',debug,cluster('Ultrasonic_Eru2_Isr_Handler')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L391,.L45,.L136-.L45
+	.word	.L376,.L45,.L130-.L45
 	; Module end

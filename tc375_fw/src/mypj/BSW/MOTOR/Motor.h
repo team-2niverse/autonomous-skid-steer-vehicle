@@ -11,7 +11,7 @@
 #include "Isr_Priority.h"
 #include "IfxCpu.h"
 #include "Ifx_Types.h"
-//#include "Can.h"
+#include "Can.h"
 
 // Function Prototypes
 void Motor_Init(void);
