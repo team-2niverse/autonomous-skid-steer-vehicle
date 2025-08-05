@@ -22,9 +22,9 @@ void Led_Omr_Toggle(unsigned char num_LED);
 int Led_Get_Sw1(void);
 int Led_Get_Sw2(void);
 
-void Led_Left_Toggle(void);
-void Led_Right_Toggle(void);
-void Led_Both_Toggle(void);
+void Led_Toggle_Set(unsigned int left, unsigned int right);
+void Led_Toggle_On(void);
+void Led_Toggle_Off(void);
 
 //void Led_Isr_Gpt2_T6_Handler(void);
 

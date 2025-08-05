@@ -5,6 +5,7 @@
  *********************************************************************************************************************/
 #include "Gpt12.h"
 
+/* Buzzer */
 void Gpt12_Gpt1_Init(void){
     //use CPU1 !!!! can't use CPU0;
     IfxScuWdt_clearCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());//DISR비트가 보호되고 있어서 watch dog time를 꺼야함.
@@ -17,17 +18,15 @@ void Gpt12_Gpt1_Init(void){
     MODULE_GPT120.T3CON.B.T3I = 0x5;
     MODULE_GPT120.T3CON.B.BPS1 = 0x2;
     MODULE_GPT120.T3CON.B.T3UD = 0x1; //direction : count down
-    /*
-    MODULE_GPT120.T3.U = 375; // 1clock = 10.24us => 375clock = 3840.00 us => 3옥타브 도의 130hz,7692us 주기의 대략 절반
-    */
+
+//    MODULE_GPT120.T3.U = 375; // 1clock = 10.24us => 375clock = 3840.00 us => 3옥타브 도의 130hz,7692us 주기의 대략 절반
     MODULE_GPT120.T3.U =  93; //5옥타브 도
 
     //T2 Timer
     MODULE_GPT120.T2CON.B.T2M = 0x4; //set reload mode. //Part2M, p30-15
     MODULE_GPT120.T2CON.B.T2I = 0x7; //reload input mode ; Any(rising/falling) edge T3OTL; Table220
-    /*
-    MODULE_GPT120.T2.U = 375;
-    */
+
+//    MODULE_GPT120.T2.U = 375;
     MODULE_GPT120.T2.U = 93;
 
     /* Interrupt Initialization */
@@ -44,12 +43,14 @@ void Gpt12_Gpt1_Init(void){
 }
 
 void Gpt12_Run_Gpt1_T3(void){
+    MODULE_GPT120.T3.U =  93;
     MODULE_GPT120.T3CON.B.T3R = 1;
 }
 void Gpt12_Stop_Gpt1_T3(void){
     MODULE_GPT120.T3CON.B.T3R = 0;
 }
 
+/* LED */
 void Gpt12_Gpt2_Init(void){
 
     //part2 p30-58 default값이 003으로 초기화되서 0으로 설정해야 gpt12 모듈에 클럭 들어가고 동작을 시작함.
@@ -84,6 +85,7 @@ void Gpt12_Gpt2_Init(void){
 }
 
 void Gpt12_Run_Gpt2_T6(void){
+    MODULE_GPT120.T6.U = 250u;
     MODULE_GPT120.T6CON.B.T6R = 1;
 }
 void Gpt12_Stop_Gpt2_T6(void){
