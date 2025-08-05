@@ -83,7 +83,7 @@ void Encoder_Init_Stm_200ms(void) {
     MODULE_STM1.ISCR.B.CMP0IRR = 1U;
     MODULE_STM1.ICR.B.CMP0EN = 1U;
 
-    MODULE_STM1.CMP[0].U = (unsigned int)((MODULE_STM0.TIM0.U | ((uint64)MODULE_STM0.CAP.U << 32)) + 200000*CPU_CLOCK_MHZ);
+    MODULE_STM1.CMP[0].U = (unsigned int)((MODULE_STM1.TIM0.U | ((uint64)MODULE_STM1.CAP.U << 32)) + 200000*CPU_CLOCK_MHZ);
 }
 
 IFX_INTERRUPT(Encoder_Enc0_Isr_Handler_Enc0, 0, ISR_PRIORITY_ERU0);
@@ -99,7 +99,7 @@ void Encoder_Enc1_Isr_Handler_Enc0(void) {
 }
 
 void Encoder_Stm1_Isr_Handler(void) {
-    MODULE_STM1.CMP[0].U = (unsigned int)((MODULE_STM0.TIM0.U | ((uint64)MODULE_STM0.CAP.U << 32)) + 200000*CPU_CLOCK_MHZ);
+    MODULE_STM1.CMP[0].U = (unsigned int)((MODULE_STM1.TIM0.U | ((uint64)MODULE_STM1.CAP.U << 32)) + 200000*CPU_CLOCK_MHZ);
     cntNow_enc0 = cnt_enc0;
     cntNow_enc1 = cnt_enc1;
     rpm0 = (int)(cntNow_enc0 - cntPrev_enc0) * 15;

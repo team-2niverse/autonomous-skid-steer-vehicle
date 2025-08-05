@@ -13,10 +13,9 @@
 
 // Function Prototype
 void Ultrasonic_Init(void);
-void Ultrasonic_Echo_Init(void);
-uint8 Ultrasonic_Get_Back_Dist(void);
-uint8 Ultrasonic_Get_Left_Dist(void);
-uint8 Ultrasonic_Get_Right_Dist(void);
+float Ultrasonic_Get_Back_Dist(void);
+float Ultrasonic_Get_Left_Dist(void);
+float Ultrasonic_Get_Right_Dist(void);
 
 //void Ultrasonic_Stm0_Isr_Handler(void);
 //void Ultrasonic_Eru2_Isr_Handler(void)

@@ -142,6 +142,8 @@ Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\m
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\Gtm\Std\IfxGtm_Dtm.h" :
 Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\STM\Stm.h"
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\STM\Stm.h" :
+Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\CAN\Can.h"
+"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\CAN\Can.h" :
 Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\ENCODER\Encoder.h"
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\ENCODER\Encoder.h" :
 Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\ASCLIN\Asclin.h"
@@ -274,8 +276,6 @@ Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\m
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSent_regdef.h" :
 Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxAsclin_bf.h"
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxAsclin_bf.h" :
-Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\CAN\Can.h"
-"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\CAN\Can.h" :
 Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Buzzer.h"
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Buzzer.h" :
 Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPT12\Gpt12.h"
