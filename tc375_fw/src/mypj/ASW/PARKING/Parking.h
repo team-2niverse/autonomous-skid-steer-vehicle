@@ -10,6 +10,8 @@
 #include "Motor.h"
 #include "Ultrasonic.h"
 #include "Led.h" //delay_ms()
+#include "Buzzer.h"
+#include "Can.h"
 #include "Platform_Types.h"
 
 // Function Prototypes

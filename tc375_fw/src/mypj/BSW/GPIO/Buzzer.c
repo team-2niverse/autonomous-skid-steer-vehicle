@@ -41,7 +41,7 @@ static unsigned int Buzzer_Flag = 0;
 
 void Buzzer_Set_Beep_Cycle(int cycle){
     beepOnOff = cycle; // cycle * 10.24us
-}
+} // 0: 꺼진 상태 / 1: 쭉 울리는 상태 (삐-) / 그 외는 130~260 정도로 사용 (130이 더 빠른 주기, 260이 느린 주기)
 
 void Buzzer_On(void) {
     if(Buzzer_Flag == 0) {

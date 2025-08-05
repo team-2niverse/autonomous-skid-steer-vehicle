@@ -8,9 +8,24 @@
 McmcanType g_mcmcan;
 
 static volatile int is_aeb = 0;
+static volatile int parking = 0;
+static volatile int turn_left = 0;
+static volatile int turn_right = 0;
 
 int Can_Get_Aeb(void) {
     return is_aeb;
+}
+
+int Can_Get_Parking(void) {
+    return parking;
+}
+
+int Can_Get_Turn_Left(void) {
+    return turn_left;
+}
+
+int Can_Get_Turn_Right(void) {
+    return turn_right;
 }
 
 static volatile unsigned int dist_front = 0;
@@ -166,6 +181,7 @@ void Can_Rx_Isr_Handler (void)
     int rxLen;
     Can_Recv_Msg(&rxID, rxData, &rxLen);
 
+    /* TOF Sensor + AEB */
     if (rxID == 522) {
         unsigned int tofVal = rxData[2] << 16 | rxData[1] << 8 | rxData[0];
         uint8 dis_status = rxData[3];
@@ -174,7 +190,8 @@ void Can_Rx_Isr_Handler (void)
         if (signal_strength == 0)
             dist_front = -1;
         else {
-            dist_front = tofVal;
+            dist_front = tofVal; // 단위 mm
+
             // my_printf("dist: %d \n", dist_front);
             if (dist_front < 200 + (Encoder_Get_Rpm0_Left()+Encoder_Get_Rpm1_Right())) {
                 Motor_Stop_Left();
@@ -186,8 +203,31 @@ void Can_Rx_Isr_Handler (void)
         }
     }
 
+    /* 원격 주행 (컨트롤러) */
     else if (rxID == 100) {
         Motor_Set_Left(rxData[0], rxData[1]);
         Motor_Set_Right(rxData[2], rxData[3]);
     }
+
+    /* 모드 여부 (컨트롤러 버튼) */
+//    else if (rxID == 0x102) {
+//            if (rxData[2]) {
+//                if (parking)
+//                    parking = 0;
+//                else
+//                    parking = 1;
+//            }
+//            if (rxData[4]) {
+//                if (turn_left)
+//                    turn_left = 0;
+//                else
+//                    turn_left = 1;
+//            }
+//            if (rxData[5]) {
+//                if (turn_right)
+//                    turn_right = 0;
+//                else
+//                    turn_right = 1;
+//            }
+//   }
 }
