@@ -8,6 +8,8 @@
 #define PARKING_PARKING_H_
 
 #include "Motor.h"
+#include "Ultrasonic.h"
+#include "Led.h" //delay_ms()
 #include "Platform_Types.h"
 
 // Function Prototypes
