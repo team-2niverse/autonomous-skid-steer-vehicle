@@ -5,26 +5,43 @@
  *********************************************************************************************************************/
 #include "Cpu0_Main.h"
 
-int AEB_flag = 0;
-
 void core0_main(void)
 {
     System_Init();
-    my_printf("start test\n");
+
+    volatile int parking_flag = 0;
+
+    volatile int AEB_flag = 0;
+    volatile unsigned int AEB_dist = 0;
+    volatile int AEB_rpm = 0;
 
     while(1)
     {
+//        /* 테스트용 코드 */
         AEB_flag = Can_Get_Aeb();
+        AEB_dist = Can_Get_Front_Dist();
+        AEB_rpm = Can_Get_V_Average();
 
-        if (AEB_flag == 1)
+        my_printf("rpm = %d \n", AEB_rpm);
+//        my_printf("dist = %d mm\n", AEB_dist);
+//
+//        if (AEB_flag == 1)
+//        {
+////            my_printf("\n**********************AEB ON**************************\n");
+////            my_printf("AEB_dist = %d mm\n", AEB_dist);
+////            my_printf("AEB_rpm = %d \n", AEB_rpm);
+//        }
+        /* 테스트용 코드 */
+
+
+        parking_flag = Can_Get_Parking();
+
+        if (parking_flag == 1)
         {
-            Led_Set(1, 1);
-            Led_Set(2, 1);
-        }
-        else
-        {
-            Led_Set(1, 0);
-            Led_Set(2, 0);
+            Parking_On();
+
+            parking_flag = 0;
+            Can_Let_Parking(parking_flag);
         }
     }
 }

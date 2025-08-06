@@ -21,7 +21,7 @@ int Encoder_Get_Rpm0_Left(void);
 int Encoder_Get_Rpm1_Right(void);
 
 void Encoder_Init(void);
-void Encoder_Init_Stm_200ms(void);
+void Encoder_Init_Stm_100ms(void);
 
 // void Encoder_Enc0_Isr_Handler_Enc0(void);
 // void Encoder_Enc1_Isr_Handler_Enc0(void);

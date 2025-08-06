@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc17316a --dep-file=Sys_Init.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW\\\\PARKING -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ASCLIN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ENCODER -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPT12 -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GTM_ATOM_PWM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ISR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\MOTOR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\PID -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\STM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ULTRASONIC -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\MATLAB -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o Sys_Init.src ../Sys_Init.c"
+	.compiler_invocation	"ctc -f cc10760a --dep-file=Sys_Init.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW\\\\PARKING -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ASCLIN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ENCODER -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPT12 -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GTM_ATOM_PWM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ISR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\MOTOR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\PID -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\STM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ULTRASONIC -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\MATLAB -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o Sys_Init.src ../Sys_Init.c"
 	.compiler_name		"ctc"
 	;source	'../Sys_Init.c'
 
@@ -74,10 +74,10 @@ __System_Init_function_end:
 	.extern	Motor_Init
 	.extern	Asclin0_InitUart
 	.extern	Encoder_Init
-	.extern	Can_Init
-	.extern	Led_Init
 	.extern	Gpt12_Gpt1_Init
 	.extern	Gpt12_Gpt2_Init
+	.extern	Led_Init
+	.extern	Can_Init
 	.extern	Buzzer_Init
 	.extern	Ultrasonic_Init
 	.calls	'System_Init','',0
@@ -7982,19 +7982,7 @@ __System_Init_function_end:
 	.byte	0,6,0,0,28
 	.byte	'Motor_Init',0,21,17,6,1,1,1,1,28
 	.byte	'Asclin0_InitUart',0,22,20,6,1,1,1,1,28
-	.byte	'Encoder_Init',0,23,23,6,1,1,1,1,17,24,35,9,1,18
-	.byte	'BD_NOUSE',0,0,18
-	.byte	'BD_500K',0,1,18
-	.byte	'BD_1M',0,2,0,17,24,41,9,1,18
-	.byte	'CAN_NODE0',0,0,18
-	.byte	'CAN_NODE2',0,2,0,24
-	.byte	'Can_Init',0,24,47,6,1,1,1,1,5
-	.byte	'ls_baudrate',0,24,47,29
-	.word	50397
-	.byte	5
-	.byte	'CAN_Node',0,24,47,51
-	.word	50432
-	.byte	0,22
+	.byte	'Encoder_Init',0,23,23,6,1,1,1,1,22
 	.word	49102
 	.byte	23
 	.word	49125
@@ -8275,9 +8263,21 @@ __System_Init_function_end:
 	.byte	27
 	.word	49138
 	.byte	0,6,0,0,28
-	.byte	'Led_Init',0,25,18,6,1,1,1,1,28
-	.byte	'Gpt12_Gpt1_Init',0,26,20,6,1,1,1,1,28
-	.byte	'Gpt12_Gpt2_Init',0,26,21,6,1,1,1,1,28
+	.byte	'Gpt12_Gpt1_Init',0,24,20,6,1,1,1,1,28
+	.byte	'Gpt12_Gpt2_Init',0,24,21,6,1,1,1,1,28
+	.byte	'Led_Init',0,25,18,6,1,1,1,1,17,26,36,9,1,18
+	.byte	'BD_NOUSE',0,0,18
+	.byte	'BD_500K',0,1,18
+	.byte	'BD_1M',0,2,0,17,26,42,9,1,18
+	.byte	'CAN_NODE0',0,0,18
+	.byte	'CAN_NODE2',0,2,0,24
+	.byte	'Can_Init',0,26,48,6,1,1,1,1,5
+	.byte	'ls_baudrate',0,26,48,29
+	.word	51268
+	.byte	5
+	.byte	'CAN_Node',0,26,48,51
+	.word	51303
+	.byte	0,28
 	.byte	'Buzzer_Init',0,27,30,6,1,1,1,1,28
 	.byte	'Ultrasonic_Init',0,28,15,6,1,1,1,1,9
 	.byte	'short int',0,2,5,30
@@ -94229,22 +94229,16 @@ __System_Init_function_end:
 	.byte	30
 	.byte	'Ifx_SENT_CH',0,77,186,5,3
 	.word	660885
-	.byte	30
-	.byte	'CAN_BAUDRATES',0,24,39,3
-	.word	50397
-	.byte	30
-	.byte	'CAN_NODE',0,24,44,3
-	.word	50432
 	.byte	17,18,159,1,9,1,18
 	.byte	'IfxStm_Comparator_0',0,0,18
 	.byte	'IfxStm_Comparator_1',0,1,0,30
 	.byte	'IfxStm_Comparator',0,18,163,1,3
-	.word	660950
+	.word	660911
 	.byte	17,18,167,1,9,1,18
 	.byte	'IfxStm_ComparatorInterrupt_ir0',0,0,18
 	.byte	'IfxStm_ComparatorInterrupt_ir1',0,1,0,30
 	.byte	'IfxStm_ComparatorInterrupt',0,18,171,1,3
-	.word	661028
+	.word	660989
 	.byte	17,18,175,1,9,1,18
 	.byte	'IfxStm_ComparatorOffset_0',0,0,18
 	.byte	'IfxStm_ComparatorOffset_1',0,1,18
@@ -94279,7 +94273,7 @@ __System_Init_function_end:
 	.byte	'IfxStm_ComparatorOffset_30',0,30,18
 	.byte	'IfxStm_ComparatorOffset_31',0,31,0,30
 	.byte	'IfxStm_ComparatorOffset',0,18,209,1,3
-	.word	661137
+	.word	661098
 	.byte	17,18,213,1,9,1,18
 	.byte	'IfxStm_ComparatorSize_1Bit',0,0,18
 	.byte	'IfxStm_ComparatorSize_2Bits',0,1,18
@@ -94314,18 +94308,24 @@ __System_Init_function_end:
 	.byte	'IfxStm_ComparatorSize_31Bits',0,30,18
 	.byte	'IfxStm_ComparatorSize_32Bits',0,31,0,30
 	.byte	'IfxStm_ComparatorSize',0,18,247,1,3
-	.word	662095
+	.word	662056
 	.byte	17,18,252,1,9,1,18
 	.byte	'IfxStm_SleepMode_enable',0,0,18
 	.byte	'IfxStm_SleepMode_disable',0,1,0,30
 	.byte	'IfxStm_SleepMode',0,18,128,2,3
-	.word	663115
+	.word	663076
 	.byte	17,18,132,2,9,1,18
 	.byte	'IfxStm_SuspendMode_none',0,0,18
 	.byte	'IfxStm_SuspendMode_hard',0,1,18
 	.byte	'IfxStm_SuspendMode_soft',0,2,0,30
 	.byte	'IfxStm_SuspendMode',0,18,137,2,3
-	.word	663201
+	.word	663162
+	.byte	30
+	.byte	'CAN_BAUDRATES',0,26,40,3
+	.word	51268
+	.byte	30
+	.byte	'CAN_NODE',0,26,45,3
+	.word	51303
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -94357,9 +94357,9 @@ __System_Init_function_end:
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\MOTOR',0
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ASCLIN',0
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ENCODER',0
-	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN',0
-	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO',0
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPT12',0
+	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO',0
+	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN',0
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ULTRASONIC',0
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can',0
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm',0
@@ -94397,9 +94397,9 @@ __System_Init_function_end:
 	.byte	'Motor.h',0,6,0,0
 	.byte	'Asclin.h',0,7,0,0
 	.byte	'Encoder.h',0,8,0,0
-	.byte	'Can.h',0,9,0,0
+	.byte	'Gpt12.h',0,9,0,0
 	.byte	'Led.h',0,10,0,0
-	.byte	'Gpt12.h',0,11,0,0
+	.byte	'Can.h',0,11,0,0
 	.byte	'Buzzer.h',0,10,0,0
 	.byte	'Ultrasonic.h',0,12,0,0
 	.byte	'../Sys_Init.c',0,0,0,0
