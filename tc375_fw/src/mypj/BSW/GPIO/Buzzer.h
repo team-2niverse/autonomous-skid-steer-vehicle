@@ -28,10 +28,7 @@
 
 // Function Prototypes
 void Buzzer_Init(void);
-void Buzzer_Buzz(unsigned int hz);
-void Buzzer_Beep(unsigned int hz, int duration_ms);
-void Buzzer_Set_Beep_Cycle(int cycle);
-
+void Buzzer_Set_Cycle_Ms (int cycle);
 void Buzzer_On(void);
 void Buzzer_Off(void);
 

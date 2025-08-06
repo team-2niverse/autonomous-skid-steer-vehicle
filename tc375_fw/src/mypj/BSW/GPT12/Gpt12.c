@@ -14,20 +14,15 @@ void Gpt12_Gpt1_Init(void){
 
     //T3 Timer
     MODULE_GPT120.T3CON.B.T3M = 0x0; //set timer mode
-    //prescaler ; 1024
-    MODULE_GPT120.T3CON.B.T3I = 0x5;
-    MODULE_GPT120.T3CON.B.BPS1 = 0x2;
+    MODULE_GPT120.T3CON.B.T3I = 0x0; //prescaler 4
+    MODULE_GPT120.T3CON.B.BPS1 = 0x1;
     MODULE_GPT120.T3CON.B.T3UD = 0x1; //direction : count down
-
-//    MODULE_GPT120.T3.U = 375; // 1clock = 10.24us => 375clock = 3840.00 us => 3옥타브 도의 130hz,7692us 주기의 대략 절반
-    MODULE_GPT120.T3.U =  93; //5옥타브 도
+    MODULE_GPT120.T3.U = 250u; //25MHz이므로 10us마다 발생할 것.
 
     //T2 Timer
     MODULE_GPT120.T2CON.B.T2M = 0x4; //set reload mode. //Part2M, p30-15
     MODULE_GPT120.T2CON.B.T2I = 0x7; //reload input mode ; Any(rising/falling) edge T3OTL; Table220
-
-//    MODULE_GPT120.T2.U = 375;
-    MODULE_GPT120.T2.U = 93;
+    MODULE_GPT120.T2.U = 250u;
 
     /* Interrupt Initialization */
     MODULE_SRC.GPT12.GPT12[0].T3.B.SRPN = ISR_PRIORITY_GPT1T3_TIMER; //interrupt priority set
@@ -35,15 +30,13 @@ void Gpt12_Gpt1_Init(void){
     MODULE_SRC.GPT12.GPT12[0].T3.B.TOS = 0; //cpu1 (from part1 M p16-5)
     MODULE_SRC.GPT12.GPT12[0].T3.B.SRE = 1; //interrupt enable
 
-    /*
-    MODULE_ASCLIN0.FLAGSENABLE.B.RFLE =1; // enable RXFIFO fill level flag;
-    */
 
+    //MODULE_ASCLIN0.FLAGSENABLE.B.RFLE =1; // enable RXFIFO fill level flag;
     //MODULE_GPT120.T3CON.B.T3R = 1; //timer run.
 }
 
 void Gpt12_Run_Gpt1_T3(void){
-    MODULE_GPT120.T3.U =  93;
+    MODULE_GPT120.T3.U =  250u;
     MODULE_GPT120.T3CON.B.T3R = 1;
 }
 void Gpt12_Stop_Gpt1_T3(void){
@@ -59,11 +52,9 @@ void Gpt12_Gpt2_Init(void){
     IfxScuWdt_setCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());
 
     MODULE_GPT120.T6CON.B.T6M = 0x0; //set timer mode (p30-48)
-
     //prescaler set 4 (ref Table 227, part2 M p30-52) ==> CPU 100MHz일떄 타이머 입력클럭 100/4=25MHz
     MODULE_GPT120.T6CON.B.BPS2= 0x0; //prescaler parameter
     MODULE_GPT120.T6CON.B.T6I = 0x0; //prescaler parameter
-
     MODULE_GPT120.T6CON.B.T6UD = 0x1; //config: count down
     //아마 T6CON.B.T6UDE =0인듯? t6UD에 따라 방향 결정하고 EUD는 연결안됨.
 
@@ -90,6 +81,4 @@ void Gpt12_Run_Gpt2_T6(void){
 }
 void Gpt12_Stop_Gpt2_T6(void){
     MODULE_GPT120.T6CON.B.T6R = 0;
-    Led_Set(1, 0);
-    Led_Set(2, 0);
 }
