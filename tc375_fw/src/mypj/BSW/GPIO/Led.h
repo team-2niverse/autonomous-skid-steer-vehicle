@@ -18,13 +18,6 @@ void delay_ms(unsigned int ms); //명명규칙 예외 (디버깅에서 주로 �
 void Led_Init(void);
 void Led_Set(unsigned char num_LED, unsigned char onOff);
 void Led_Toggle(unsigned char num_LED);
-void Led_Omr_Toggle(unsigned char num_LED);
-int Led_Get_Sw1(void);
-int Led_Get_Sw2(void);
-
-void Led_Toggle_Set(unsigned int left, unsigned int right);
-void Led_Toggle_On(void);
-void Led_Toggle_Off(void);
 
 //void Led_Isr_Gpt2_T6_Handler(void);
 
