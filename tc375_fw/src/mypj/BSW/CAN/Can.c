@@ -12,9 +12,9 @@ static volatile int parking = 0;
 static volatile int turn_left = 0;
 static volatile int turn_right = 0;
 
-static volatile int encoder_left;
-static volatile int encoder_right;
 static volatile unsigned int dist_front = 0;
+static volatile int v_avg = 0;
+
 
 int Can_Get_Aeb(void) {
     return is_aeb;
@@ -35,6 +35,16 @@ int Can_Get_Turn_Right(void) {
 int Can_Get_Front_Dist(void) {
     return dist_front;
 }
+
+int Can_Get_V_Average(void){
+    return v_avg;
+}
+
+
+void Can_Let_Parking(int state){
+    parking = state;
+} //외부에서 parking mode 업데이트하는 함수
+
 
 /* Function to initialize MCMCAN module and nodes related for this application use case */
 void Can_Init(CAN_BAUDRATES ls_baudrate, CAN_NODE CAN_Node)
@@ -176,6 +186,23 @@ int Can_Recv_Msg(unsigned int *id, uint8 *rxData, int *len)
 
 IFX_INTERRUPT(Can_Rx_Isr_Handler, 0, ISR_PRIORITY_CAN_RX);
 
+void Can_Aeb_On(void)
+{
+    Motor_Stop_Left();
+    Motor_Stop_Right();
+
+    is_aeb = 1;
+    Led_Set(1, 1);
+    Led_Set(2, 1);
+}
+
+void Can_Aeb_Off(void)
+{
+    is_aeb = 0;
+    Led_Set(1, 0);
+    Led_Set(2, 0);
+}
+
 void Can_Rx_Isr_Handler (void)
 {
     unsigned int rxID;
@@ -189,30 +216,28 @@ void Can_Rx_Isr_Handler (void)
         uint8 dis_status = rxData[3];
         uint16 signal_strength =  rxData[5] << 8 | rxData[4];
 
+        if (parking == 1) //주차 모드 중에는 작동하지 않음
+            return;
+
         if (signal_strength == 0)
             dist_front = -1;
         else {
             dist_front = tofVal; // 단위 mm
+            v_avg = (Encoder_Get_Rpm0_Left() + Encoder_Get_Rpm1_Right()) / 2;
 
-            encoder_left = Encoder_Get_Rpm0_Left();
-            encoder_right = Encoder_Get_Rpm1_Right();
-
-//            my_printf("\ncan_dist = %d\n", dist_front);
-//            my_printf("can_encoder_left = %d     |     ", encoder_left);
-//            my_printf("can_encoder_right = %d \n", encoder_right);
-
-            if (dist_front < 200) {
-                Motor_Stop_Left();
-                Motor_Stop_Right();
-                is_aeb = 1;
-            } else {
-                is_aeb = 0;
-            }
+            /* AEB 판단 로직 */
+            if (dist_front < 70 + v_avg)
+                Can_Aeb_On();
+            else if (dist_front > 400 && is_aeb == 1)
+                Can_Aeb_Off();
         }
     }
 
     /* 원격 주행 (컨트롤러) */
-    else if (rxID == 100) {
+    else if (rxID == 0x100) {
+        if (parking == 1) //주차 모드 중에는 작동하지 않음
+            return;
+
         Motor_Set_Left(rxData[0], rxData[1]);
         Motor_Set_Right(rxData[2], rxData[3]);
     }
@@ -227,15 +252,27 @@ void Can_Rx_Isr_Handler (void)
             }
             if (rxData[4]) {
                 if (turn_left)
+                {
                     turn_left = 0;
+                    Led_Set(1, 0);
+                }
                 else
+                {
                     turn_left = 1;
+                    Led_Set(1, 1);
+                }
             }
             if (rxData[5]) {
                 if (turn_right)
+                {
                     turn_right = 0;
+                    Led_Set(2, 0);
+                }
                 else
+                {
                     turn_right = 1;
+                    Led_Set(2, 1);
+                }
             }
    }
 }

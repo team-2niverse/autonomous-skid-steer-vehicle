@@ -15,6 +15,7 @@
 #include "Platform_Types.h"
 #include "Motor.h"
 #include "Encoder.h"
+#include "Led.h"
 
 #define CAN_MESSAGE_ID              (uint32)0x777           /* Message ID that will be used in arbitration phase    */
 #define MAXIMUM_CAN_DATA_PAYLOAD    2                       /* Define maximum classical CAN payload in 4-byte words */
@@ -57,6 +58,12 @@ int Can_Get_Parking(void);
 int Can_Get_Turn_Left(void);
 int Can_Get_Turn_Right(void);
 int Can_Get_Front_Dist(void);
+int Can_Get_V_Average(void);
+
+void Can_Let_Parking(int state);
+
+void Can_Aeb_On(void);
+void Can_Aeb_Off(void);
 
 //void Can_Rx_Isr_Handler (void);
 

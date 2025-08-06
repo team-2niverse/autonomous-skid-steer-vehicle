@@ -276,10 +276,6 @@ Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\m
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSent_regdef.h" :
 Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxAsclin_bf.h"
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxAsclin_bf.h" :
-Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Buzzer.h"
-"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Buzzer.h" :
-Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPT12\Gpt12.h"
-"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPT12\Gpt12.h" :
 Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Led.h"
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Led.h" :
 Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Service\\CpuGeneric\\SysSe\\Bsp\Bsp.h"
@@ -290,6 +286,10 @@ Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\m
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxStm_cfg.h" :
 Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPT12\Gpt12.h"
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPT12\Gpt12.h" :
+Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Led.h"
+"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Led.h" :
+Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Buzzer.h"
+"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Buzzer.h" :
 Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GTM_ATOM_PWM\Gtm_Atom_Pwm.h"
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GTM_ATOM_PWM\Gtm_Atom_Pwm.h" :
 Cpu0_Main.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\MOTOR\Motor.h"

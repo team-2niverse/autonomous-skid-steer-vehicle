@@ -308,8 +308,6 @@ Parking.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\myp
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\\Scu\\Std\IfxScuWdt.h" :
 Parking.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\CAN\Can.h"
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\CAN\Can.h" :
-Parking.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\ULTRASONIC\Ultrasonic.h"
-"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\ULTRASONIC\Ultrasonic.h" :
 Parking.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Led.h"
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Led.h" :
 Parking.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Service\\CpuGeneric\\SysSe\\Bsp\Bsp.h"
@@ -330,5 +328,7 @@ Parking.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\myp
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPT12\Gpt12.h" :
 Parking.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Led.h"
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Led.h" :
+Parking.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\ULTRASONIC\Ultrasonic.h"
+"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\ULTRASONIC\Ultrasonic.h" :
 Parking.o :	"C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Buzzer.h"
 "C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Buzzer.h" :
