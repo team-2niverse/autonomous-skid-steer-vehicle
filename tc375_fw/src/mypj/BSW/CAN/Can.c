@@ -226,7 +226,7 @@ void Can_Rx_Isr_Handler (void)
             v_avg = (Encoder_Get_Rpm0_Left() + Encoder_Get_Rpm1_Right()) / 2;
 
             /* AEB 판단 로직 */
-            if (dist_front < 70 + v_avg)
+            if (dist_front < 70 + v_avg && MODULE_P10.OUT.B.P1 == 1 && MODULE_P10.OUT.B.P2 == 1) //전진일 때만 AEB 동작 (모터 방향 확인)
                 Can_Aeb_On();
             else if (dist_front > 400 && is_aeb == 1)
                 Can_Aeb_Off();
