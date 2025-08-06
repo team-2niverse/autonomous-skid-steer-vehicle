@@ -45,7 +45,6 @@ typedef enum{
 
 // Function Prototypes
 void Can_Init(CAN_BAUDRATES ls_baudrate, CAN_NODE CAN_Node);
-int Can_Get_Aeb(void);
 
 void Can_Set_Filter_Range(uint32 start, uint32 end);
 void Can_Set_Filter_Mask(uint32 id, uint32 mask);
@@ -57,6 +56,7 @@ int Can_Get_Aeb(void);
 int Can_Get_Parking(void);
 int Can_Get_Turn_Left(void);
 int Can_Get_Turn_Right(void);
+int Can_Get_Front_Dist(void);
 
 //void Can_Rx_Isr_Handler (void);
 

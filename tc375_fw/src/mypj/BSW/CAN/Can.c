@@ -12,6 +12,10 @@ static volatile int parking = 0;
 static volatile int turn_left = 0;
 static volatile int turn_right = 0;
 
+static volatile int encoder_left;
+static volatile int encoder_right;
+static volatile unsigned int dist_front = 0;
+
 int Can_Get_Aeb(void) {
     return is_aeb;
 }
@@ -28,9 +32,7 @@ int Can_Get_Turn_Right(void) {
     return turn_right;
 }
 
-static volatile unsigned int dist_front = 0;
-
-unsigned int Can_Get_Front_Dist(void) {
+int Can_Get_Front_Dist(void) {
     return dist_front;
 }
 
@@ -192,8 +194,14 @@ void Can_Rx_Isr_Handler (void)
         else {
             dist_front = tofVal; // 단위 mm
 
-            // my_printf("dist: %d \n", dist_front);
-            if (dist_front < 200 + (Encoder_Get_Rpm0_Left()+Encoder_Get_Rpm1_Right())) {
+            encoder_left = Encoder_Get_Rpm0_Left();
+            encoder_right = Encoder_Get_Rpm1_Right();
+
+//            my_printf("\ncan_dist = %d\n", dist_front);
+//            my_printf("can_encoder_left = %d     |     ", encoder_left);
+//            my_printf("can_encoder_right = %d \n", encoder_right);
+
+            if (dist_front < 200) {
                 Motor_Stop_Left();
                 Motor_Stop_Right();
                 is_aeb = 1;
@@ -210,24 +218,24 @@ void Can_Rx_Isr_Handler (void)
     }
 
     /* 모드 여부 (컨트롤러 버튼) */
-//    else if (rxID == 0x102) {
-//            if (rxData[2]) {
-//                if (parking)
-//                    parking = 0;
-//                else
-//                    parking = 1;
-//            }
-//            if (rxData[4]) {
-//                if (turn_left)
-//                    turn_left = 0;
-//                else
-//                    turn_left = 1;
-//            }
-//            if (rxData[5]) {
-//                if (turn_right)
-//                    turn_right = 0;
-//                else
-//                    turn_right = 1;
-//            }
-//   }
+    else if (rxID == 0x102) {
+            if (rxData[2]) {
+                if (parking)
+                    parking = 0;
+                else
+                    parking = 1;
+            }
+            if (rxData[4]) {
+                if (turn_left)
+                    turn_left = 0;
+                else
+                    turn_left = 1;
+            }
+            if (rxData[5]) {
+                if (turn_right)
+                    turn_right = 0;
+                else
+                    turn_right = 1;
+            }
+   }
 }
