@@ -29,6 +29,7 @@
 // Function Prototypes
 void Buzzer_Init(void);
 void Buzzer_Set_Cycle_Ms (int cycle);
+void Buzzer_Always_On(void);
 void Buzzer_On(void);
 void Buzzer_Off(void);
 

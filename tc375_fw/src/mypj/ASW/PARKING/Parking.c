@@ -13,6 +13,7 @@ void Parking_On (void)
     uint64 end_time = 0;
     uint64 space_duration_us = 0;
     int measuring_space = 0;
+    unsigned int Buzzer_Flag = 1;
 
     float space_detect_threshold = 20.0;
     float rear_stop_threshold = 10.0;
@@ -95,34 +96,34 @@ void Parking_On (void)
             Motor_Stop_Left();
             Motor_Stop_Right();
             delay_ms(500);
+
+            Motor_Set_Left(0, 100);
+            Motor_Set_Right(0, 100);
+            delay_ms(50);
             state = 4;
         }
 
         else if (state == 4) // 후진 직선 주차
         {
-            Motor_Set_Left(0, 80);
-            Motor_Set_Right(0, 80);
+            Motor_Set_Left(0, 60);
+            Motor_Set_Right(0, 60);
 
-            if(rear_dist >= 40){
+            if(rear_dist >= 60){
                 Buzzer_Off();
+                Buzzer_Flag = 1;
             }
-            else if(rear_dist > 30){
+            else if(rear_dist > 45){
                 Buzzer_Set_Cycle_Ms(300);
-                Buzzer_On();
+                if(Buzzer_Flag) {
+                    Buzzer_On();
+                    Buzzer_Flag = 0;
+                }
             }
-            else if(rear_dist > 20){
-                Buzzer_Set_Cycle_Ms(200);
-                Buzzer_On();
+            else if(rear_dist > 30) {
+                Buzzer_Set_Cycle_Ms(150);
             }
-            else if (rear_dist >= 10)
-            {
-                Buzzer_Set_Cycle_Ms(100);
-                Buzzer_On();
-            }
-            else
-            {
+            else if (rear_dist >= 15) {
                 Buzzer_Set_Cycle_Ms(50);
-                Buzzer_On();
             }
 
             if (rear_dist <= rear_stop_threshold)
@@ -138,8 +139,9 @@ void Parking_On (void)
             // 정지 상태 유지
             Led_Set(1, 1);
             Led_Set(2, 1);
-            Buzzer_Set_Cycle_Ms(1);
-            Buzzer_On();
+            Buzzer_Off();
+            Buzzer_Always_On();
+
             delay_ms(2000);
             Led_Set(1, 0);
             Led_Set(2, 0);
