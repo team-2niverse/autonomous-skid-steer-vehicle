@@ -7,17 +7,16 @@
 
 McmcanType g_mcmcan;
 
-static volatile int is_aeb = 0;
+static volatile int aeb = 0;
 static volatile int parking = 0;
 static volatile int turn_left = 0;
 static volatile int turn_right = 0;
 
 static volatile unsigned int dist_front = 0;
-static volatile int v_avg = 0;
 
 
 int Can_Get_Aeb(void) {
-    return is_aeb;
+    return aeb;
 }
 
 int Can_Get_Parking(void) {
@@ -35,11 +34,6 @@ int Can_Get_Turn_Right(void) {
 int Can_Get_Front_Dist(void) {
     return dist_front;
 }
-
-int Can_Get_V_Average(void){
-    return v_avg;
-}
-
 
 void Can_Let_Parking(int state){
     parking = state;
@@ -185,22 +179,33 @@ int Can_Recv_Msg(unsigned int *id, uint8 *rxData, int *len)
 }
 
 IFX_INTERRUPT(Can_Rx_Isr_Handler, 0, ISR_PRIORITY_CAN_RX);
+IFX_INTERRUPT(Can_Tx_Isr_Handler, 0, ISR_PRIORITY_CAN_TX);
+
+void Can_Tx_Isr_Handler(void)
+{
+    /* Clear the "Transmission Completed" interrupt flag */
+    IfxCan_Node_clearInterruptFlag(g_mcmcan.canSrcNode.node, IfxCan_Interrupt_transmissionCompleted);
+}
 
 void Can_Aeb_On(void)
 {
     Motor_Stop_Left();
     Motor_Stop_Right();
 
-    is_aeb = 1;
+    aeb = 1;
     Led_Set(1, 1);
     Led_Set(2, 1);
+    uint8 data = 1;
+    Can_Send_Msg(0x300, &data, 1);
 }
 
 void Can_Aeb_Off(void)
 {
-    is_aeb = 0;
+    aeb = 0;
     Led_Set(1, 0);
     Led_Set(2, 0);
+    uint8 data = 0;
+    Can_Send_Msg(0x300, &data, 1);
 }
 
 void Can_Rx_Isr_Handler (void)
@@ -223,12 +228,13 @@ void Can_Rx_Isr_Handler (void)
             dist_front = -1;
         else {
             dist_front = tofVal; // 단위 mm
-            v_avg = (Encoder_Get_Rpm0_Left() + Encoder_Get_Rpm1_Right()) / 2;
 
             /* AEB 판단 로직 */
-            if (dist_front < 70 + v_avg && MODULE_P10.OUT.B.P1 == 1 && MODULE_P10.OUT.B.P2 == 1) //전진일 때만 AEB 동작 (모터 방향 확인)
+            int v_avg = (Encoder_Get_Rpm0_Left() + Encoder_Get_Rpm1_Right()) / 2;
+            if (aeb == 0 && dist_front < 70 + v_avg &&
+                MODULE_P10.OUT.B.P1 == 1 && MODULE_P10.OUT.B.P2 == 1) //전진일 때만 AEB 동작 (모터 방향 확인)
                 Can_Aeb_On();
-            else if (dist_front > 400 && is_aeb == 1)
+            else if (aeb == 1 && dist_front > 400)
                 Can_Aeb_Off();
         }
     }
@@ -237,42 +243,41 @@ void Can_Rx_Isr_Handler (void)
     else if (rxID == 0x100) {
         if (parking == 1) //주차 모드 중에는 작동하지 않음
             return;
-
         Motor_Set_Left(rxData[0], rxData[1]);
         Motor_Set_Right(rxData[2], rxData[3]);
     }
 
     /* 모드 여부 (컨트롤러 버튼) */
     else if (rxID == 0x102) {
-            if (rxData[2]) {
-                if (parking)
-                    parking = 0;
-                else
-                    parking = 1;
+        if (rxData[2]) {
+            if (parking)
+                parking = 0;
+            else
+                parking = 1;
+        }
+        if (rxData[4]) {
+            if (turn_left)
+            {
+                turn_left = 0;
+                Led_Set(1, 0);
             }
-            if (rxData[4]) {
-                if (turn_left)
-                {
-                    turn_left = 0;
-                    Led_Set(1, 0);
-                }
-                else
-                {
-                    turn_left = 1;
-                    Led_Set(1, 1);
-                }
+            else
+            {
+                turn_left = 1;
+                Led_Set(1, 1);
             }
-            if (rxData[5]) {
-                if (turn_right)
-                {
-                    turn_right = 0;
-                    Led_Set(2, 0);
-                }
-                else
-                {
-                    turn_right = 1;
-                    Led_Set(2, 1);
-                }
+        }
+        if (rxData[5]) {
+            if (turn_right)
+            {
+                turn_right = 0;
+                Led_Set(2, 0);
             }
+            else
+            {
+                turn_right = 1;
+                Led_Set(2, 1);
+            }
+        }
    }
 }
