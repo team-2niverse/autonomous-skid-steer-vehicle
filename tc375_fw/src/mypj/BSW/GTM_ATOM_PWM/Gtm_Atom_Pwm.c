@@ -23,15 +23,8 @@ void Gtm_Atom_Pwm_Init(void)
 
     IfxGtm_Cmu_setClkFrequency(&MODULE_GTM, IfxGtm_Cmu_Clk_0, CLK_FREQ);    /* Set the CMU clock 0 frequency        */
     IfxGtm_Cmu_enableClocks(&MODULE_GTM, IFXGTM_CMU_CLKEN_CLK0);            /* Enable the CMU clock 0               */
-    /*
-    IfxGtm_Cmu_setClkFrequency(&MODULE_GTM, IfxGtm_Cmu_Clk_1, CLK_FREQ);
-    IfxGtm_Cmu_enableClocks(&MODULE_GTM, IFXGTM_CMU_CLKEN_CLK1);
-    */
 
     IfxGtm_Atom_Pwm_initConfig(&g_atomConfig_PwmA, &MODULE_GTM);
-    /*
-    IfxGtm_Atom_Pwm_initConfig(&g_atomConfig, &MODULE_GTM);                 // Initialize default parameters
-    */
 
     g_atomConfig_PwmA.atom = PWM_A.atom;
     g_atomConfig_PwmA.atomChannel = PWM_A.channel;

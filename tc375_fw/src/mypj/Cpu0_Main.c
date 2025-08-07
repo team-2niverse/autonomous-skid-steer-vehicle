@@ -11,10 +11,6 @@ void core0_main(void)
 
     volatile int parking_flag = 0;
 
-    volatile int AEB_flag = 0;
-    volatile unsigned int AEB_dist = 0;
-    volatile int AEB_rpm = 0;
-
     while(1)
     {
         parking_flag = Can_Get_Parking();

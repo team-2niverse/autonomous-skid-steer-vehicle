@@ -29,10 +29,6 @@ void Gpt12_Gpt1_Init(void){
     MODULE_SRC.GPT12.GPT12[0].T3.B.CLRR = 1; //clear request
     MODULE_SRC.GPT12.GPT12[0].T3.B.TOS = 0; //cpu1 (from part1 M p16-5)
     MODULE_SRC.GPT12.GPT12[0].T3.B.SRE = 1; //interrupt enable
-
-
-    //MODULE_ASCLIN0.FLAGSENABLE.B.RFLE =1; // enable RXFIFO fill level flag;
-    //MODULE_GPT120.T3CON.B.T3R = 1; //timer run.
 }
 
 void Gpt12_Run_Gpt1_T3(void){
@@ -70,9 +66,6 @@ void Gpt12_Gpt2_Init(void){
     MODULE_SRC.GPT12.GPT12[0].T6.B.TOS = 0;
     MODULE_SRC.GPT12.GPT12[0].T6.B.CLRR = 1;
     MODULE_SRC.GPT12.GPT12[0].T6.B.SRE  = 1;
-    /*
-    runGpt12_T6();//timer run
-    */
 }
 
 void Gpt12_Run_Gpt2_T6(void){
