@@ -58,7 +58,6 @@ int Can_Get_Parking(void);
 int Can_Get_Turn_Left(void);
 int Can_Get_Turn_Right(void);
 int Can_Get_Front_Dist(void);
-int Can_Get_V_Average(void);
 
 void Can_Let_Parking(int state);
 

@@ -17,23 +17,6 @@ void core0_main(void)
 
     while(1)
     {
-//        /* 테스트용 코드 */
-        AEB_flag = Can_Get_Aeb();
-        AEB_dist = Can_Get_Front_Dist();
-        AEB_rpm = Can_Get_V_Average();
-
-        my_printf("rpm = %d \n", AEB_rpm);
-//        my_printf("dist = %d mm\n", AEB_dist);
-//
-//        if (AEB_flag == 1)
-//        {
-////            my_printf("\n**********************AEB ON**************************\n");
-////            my_printf("AEB_dist = %d mm\n", AEB_dist);
-////            my_printf("AEB_rpm = %d \n", AEB_rpm);
-//        }
-        /* 테스트용 코드 */
-
-
         parking_flag = Can_Get_Parking();
 
         if (parking_flag == 1)

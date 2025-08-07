@@ -5,35 +5,45 @@
  *********************************************************************************************************************/
 #include "Encoder.h"
 
-//static volatile uint64 cnt_enc0 = 0;
-//static volatile uint64 cntNow_enc0 = 0;
-//static volatile uint64 cntPrev_enc0 = 0;
-//static volatile int rpm0 = 0;
-//
-//static volatile uint64 cnt_enc1 = 0;
-//static volatile uint64 cntNow_enc1 = 0;
-//static volatile uint64 cntPrev_enc1 = 0;
-//static volatile int rpm1 = 0;
+#define BUF_SIZE 5
 
 static volatile uint8 lastStatus_eru0 = 0;
 static volatile uint64 prev_eru0 = 0;
 static volatile uint64 diff_eru0 = 0;
+static volatile uint64 buffer_eru0[BUF_SIZE] = {0, };
+static volatile int idx_eru0 = 0;
 
 static volatile uint8 lastStatus_eru1 = 0;
 static volatile uint64 prev_eru1 = 0;
 static volatile uint64 diff_eru1 = 0;
+static volatile uint64 buffer_eru1[BUF_SIZE] = {0, };
+static volatile int idx_eru1 = 0;
 
 int Encoder_Get_Rpm0_Left(void) {
-    if (diff_eru0 && Stm_Get_Time_Us() - prev_eru0 < 150000)
-        return (int)(1500000/diff_eru0);
-    else
+    if (diff_eru0 && Stm_Get_Time_Us() - prev_eru0 < 150000) {
+        if (buffer_eru0[idx_eru0] > 100000/BUF_SIZE)
+            return (int)(1500000/buffer_eru0[idx_eru0]);
+        else {
+            uint64 sum = 0;
+            for (int i = 0; i < BUF_SIZE; i++)
+                sum += buffer_eru0[i];
+            return (int)(1500000/(sum/BUF_SIZE));
+        }
+    } else
         return 0;
 }
 
 int Encoder_Get_Rpm1_Right(void) {
-    if (diff_eru1 && Stm_Get_Time_Us() - prev_eru1 < 150000)
-        return (int)(1500000/diff_eru1);
-    else
+    if (diff_eru1 && Stm_Get_Time_Us() - prev_eru1 < 150000) {
+        if (buffer_eru1[idx_eru1] > 100000/BUF_SIZE)
+            return (int)(1500000/buffer_eru1[idx_eru1]);
+        else {
+            uint64 sum = 0;
+            for (int i = 0; i < BUF_SIZE; i++)
+                sum += buffer_eru1[i];
+            return (int)(1500000/(sum/BUF_SIZE));
+        }
+    } else
         return 0;
 }
 
@@ -81,7 +91,7 @@ void Encoder_Init(void) {
 
     IfxScuWdt_setSafetyEndinitInline(pw);
 
-    // Encoder_Init_Stm_100ms();
+    Encoder_Init_Stm_100ms();
 }
 
 void Encoder_Init_Stm_100ms(void) {
@@ -102,7 +112,7 @@ void Encoder_Init_Stm_100ms(void) {
 
 IFX_INTERRUPT(Encoder_Enc0_Isr_Handler, 0, ISR_PRIORITY_ERU0);
 IFX_INTERRUPT(Encoder_Enc1_Isr_Handler, 0, ISR_PRIORITY_ERU1);
-// IFX_INTERRUPT(Encoder_Stm1_Isr_Handler, 0, ISR_PRIORITY_STM1);
+IFX_INTERRUPT(Encoder_Stm1_Isr_Handler, 0, ISR_PRIORITY_STM1);
 
 void Encoder_Enc0_Isr_Handler(void) {
     uint64 now = Stm_Get_Time_Us();
@@ -113,7 +123,10 @@ void Encoder_Enc0_Isr_Handler(void) {
     diff_eru0 = diff;
     prev_eru0 = now;
     lastStatus_eru0 = status;
-    // my_printf("diff0: %d\n", (int)(diff_eru0));
+
+    idx_eru0++;
+    idx_eru0 %= BUF_SIZE;
+    buffer_eru0[idx_eru0] = diff;
 }
 
 void Encoder_Enc1_Isr_Handler(void) {
@@ -125,18 +138,32 @@ void Encoder_Enc1_Isr_Handler(void) {
     diff_eru1 = diff;
     prev_eru1 = now;
     lastStatus_eru1 = status;
-    // my_printf("diff1: %d\n", (int)(diff_eru1));
+
+    idx_eru1++;
+    idx_eru1 %= BUF_SIZE;
+    buffer_eru1[idx_eru1] = diff;
 }
 
-//void Encoder_Stm1_Isr_Handler(void) {
-//    uint8 data = 0;
-//    Can_Send_Msg(0, &data, 1);
-//    MODULE_STM1.CMP[0].U = (unsigned int)((MODULE_STM1.TIM0.U | ((uint64)MODULE_STM1.CAP.U << 32)) + 100000*CPU_CLOCK_MHZ);
-////    cntNow_enc0 = cnt_enc0;
-////    cntNow_enc1 = cnt_enc1;
-////    rpm0 = (int)(cntNow_enc0 - cntPrev_enc0) * 15;
-////    rpm1 = (int)(cntNow_enc1 - cntPrev_enc1) * 15;
-////    cntPrev_enc0 = cntNow_enc0;
-////    cntPrev_enc1 = cntNow_enc1;
-//
-//}
+void Encoder_Stm1_Isr_Handler(void) {
+    MODULE_STM1.CMP[0].U = (unsigned int)((MODULE_STM1.TIM0.U | ((uint64)MODULE_STM1.CAP.U << 32)) + 100000*CPU_CLOCK_MHZ);
+    uint8 txData[8] = {0, };
+    int rpm0 = Encoder_Get_Rpm0_Left();
+    int rpm1 = Encoder_Get_Rpm1_Right();
+
+    if (!MODULE_P10.OUT.B.P1)
+        rpm0 *= -1;
+
+    if (!MODULE_P10.OUT.B.P2)
+        rpm1 *= -1;
+
+    txData[0] = (uint8)(rpm0 & 0xFF);
+    txData[1] = (uint8)((rpm0 >> 8) & 0xFF);
+    txData[2] = (uint8)((rpm0 >> 16) & 0xFF);
+    txData[3] = (uint8)((rpm0 >> 24) & 0xFF);
+    txData[4] = (uint8)(rpm1 & 0xFF);
+    txData[5] = (uint8)((rpm1 >> 8) & 0xFF);
+    txData[6] = (uint8)((rpm1 >> 16) & 0xFF);
+    txData[7] = (uint8)((rpm1 >> 24) & 0xFF);
+
+    Can_Send_Msg(0x201, txData, 8);
+}

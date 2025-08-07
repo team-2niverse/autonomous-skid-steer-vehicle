@@ -12,7 +12,6 @@
 #include "IfxCpu.h"
 #include "Isr_Priority.h"
 #include "Platform_Types.h"
-#include "Asclin.h"
 #include "Stm.h"
 #include "Can.h"
 
