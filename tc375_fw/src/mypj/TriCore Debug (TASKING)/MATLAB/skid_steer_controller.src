@@ -1,0 +1,1338 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc17356a --dep-file=skid_steer_controller.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW\\\\PARKING -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ASCLIN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ENCODER -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPT12 -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GTM_ATOM_PWM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ISR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\MOTOR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\PID -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\STM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ULTRASONIC -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\MATLAB -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o MATLAB/skid_steer_controller.src ../MATLAB/skid_steer_controller.c"
+	.compiler_name		"ctc"
+	;source	'../MATLAB/skid_steer_controller.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.skid_steer_controller.skid_steer_controller_step',code,cluster('skid_steer_controller_step')
+	.sect	'.text.skid_steer_controller.skid_steer_controller_step'
+	.align	2
+	
+	.global	skid_steer_controller_step
+; Function skid_steer_controller_step
+.L13:
+skid_steer_controller_step:	.type	func
+	movh.a	a15,#@his(skid_steer_controller_U)
+	lea	a15,[a15]@los(skid_steer_controller_U)
+.L98:
+	ld.w	d15,[a15]4
+.L99:
+	mov	d0,#7864
+	addih	d0,d0,#15749
+.L100:
+	mul.f	d8,d15,d0
+.L62:
+	movh.a	a15,#@his(skid_steer_controller_U)
+	lea	a15,[a15]@los(skid_steer_controller_U)
+.L101:
+	ld.w	d15,[a15]
+.L102:
+	sub.f	d0,d15,d8
+.L103:
+	movh.a	a15,#@his(skid_steer_controller_U)
+	lea	a15,[a15]@los(skid_steer_controller_U)
+.L104:
+	ld.w	d15,[a15]8
+.L105:
+	movh.a	a15,#@his(skid_steer_controller_DW)
+	lea	a15,[a15]@los(skid_steer_controller_DW)
+.L106:
+	ld.w	d1,[a15]16
+.L107:
+	sub	d15,d1
+.L108:
+	itof	d15,d15
+.L109:
+	mov	d1,#16625
+	addih	d1,d1,#15406
+.L110:
+	msub.f	d9,d0,d15,d1
+.L64:
+	mov	d15,#19069
+	addih	d15,d15,#48765
+.L111:
+	mul.f	d0,d9,d15
+.L112:
+	movh.a	a15,#@his(skid_steer_controller_DW)
+	lea	a15,[a15]@los(skid_steer_controller_DW)
+.L113:
+	ld.w	d15,[a15]4
+.L114:
+	sub.f	d15,d0,d15
+.L115:
+	mov	d0,#22301
+	addih	d0,d0,#16346
+.L116:
+	mul.f	d10,d15,d0
+.L65:
+	mov.u	d15,#42027
+	addih	d15,d15,#16286
+.L117:
+	movh.a	a15,#@his(skid_steer_controller_DW)
+	lea	a15,[a15]@los(skid_steer_controller_DW)
+.L118:
+	ld.w	d0,[a15]
+.L119:
+	madd.f	d15,d0,d9,d15
+.L120:
+	add.f	d0,d15,d10
+.L66:
+	movh	d15,#16256
+.L121:
+	cmp.f	d15,d0,d15
+	extr.u	d15,d15,#2,#1
+.L122:
+	jeq	d15,#0,.L2
+.L123:
+	movh	d0,#16256
+.L124:
+	j	.L3
+.L2:
+	movh	d15,#49024
+.L125:
+	cmp.f	d15,d0,d15
+	extr.u	d15,d15,#0,#1
+.L126:
+	jeq	d15,#0,.L4
+.L127:
+	movh	d0,#49024
+.L4:
+.L3:
+	movh.a	a15,#@his(skid_steer_controller_Y)
+	lea	a15,[a15]@los(skid_steer_controller_Y)
+.L128:
+	mov	d15,#0
+.L129:
+	cmp.f	d15,d0,d15
+	and	d15,#6
+	ne	d15,d15,#0
+.L130:
+	st.b	[a15]1,d15
+.L131:
+	insert	d15,d0,#0,#31,#1
+.L67:
+	movh	d0,#17279
+.L132:
+	mul.f	d4,d15,d0
+	call	floor
+.L69:
+	mov	d11,d2
+.L71:
+	mov	d4,d11
+.L70:
+	call	rtIsNaN
+.L73:
+	jeq	d2,#0,.L5
+.L133:
+	movh.a	a15,#@his(skid_steer_controller_Y)
+	lea	a15,[a15]@los(skid_steer_controller_Y)
+.L134:
+	mov	d0,#0
+.L135:
+	st.b	[a15],d0
+.L136:
+	j	.L6
+.L5:
+	movh.a	a15,#@his(skid_steer_controller_Y)
+	lea	a15,[a15]@los(skid_steer_controller_Y)
+.L137:
+	mov	d4,d11
+.L74:
+	call	__f_ftouc
+.L75:
+	st.b	[a15],d2
+.L6:
+	movh.a	a15,#@his(skid_steer_controller_Y)
+	lea	a15,[a15]@los(skid_steer_controller_Y)
+.L138:
+	mov.u	d0,#52429
+	addih	d0,d0,#15692
+.L139:
+	cmp.f	d15,d15,d0
+.L68:
+	extr.u	d15,d15,#0,#1
+.L140:
+	st.b	[a15]2,d15
+.L141:
+	movh.a	a15,#@his(skid_steer_controller_U)
+	lea	a15,[a15]@los(skid_steer_controller_U)
+.L142:
+	ld.w	d15,[a15]
+.L143:
+	add.f	d0,d15,d8
+.L144:
+	movh.a	a15,#@his(skid_steer_controller_U)
+	lea	a15,[a15]@los(skid_steer_controller_U)
+.L145:
+	ld.w	d15,[a15]12
+.L146:
+	movh.a	a15,#@his(skid_steer_controller_DW)
+	lea	a15,[a15]@los(skid_steer_controller_DW)
+.L147:
+	ld.w	d1,[a15]20
+.L148:
+	sub	d15,d1
+.L149:
+	itof	d15,d15
+.L150:
+	mov	d1,#16625
+	addih	d1,d1,#15406
+.L151:
+	msub.f	d8,d0,d15,d1
+.L63:
+	mov	d15,#19069
+	addih	d15,d15,#48765
+.L152:
+	mul.f	d0,d8,d15
+.L153:
+	movh.a	a15,#@his(skid_steer_controller_DW)
+	lea	a15,[a15]@los(skid_steer_controller_DW)
+.L154:
+	ld.w	d15,[a15]12
+.L155:
+	sub.f	d15,d0,d15
+.L156:
+	mov	d0,#22301
+	addih	d0,d0,#16346
+.L157:
+	mul.f	d11,d15,d0
+.L72:
+	mov.u	d0,#42027
+	addih	d0,d0,#16286
+.L158:
+	movh.a	a15,#@his(skid_steer_controller_DW)
+	lea	a15,[a15]@los(skid_steer_controller_DW)
+.L159:
+	ld.w	d15,[a15]8
+.L160:
+	madd.f	d15,d15,d8,d0
+.L161:
+	add.f	d0,d15,d11
+.L76:
+	movh	d15,#16256
+.L162:
+	cmp.f	d15,d0,d15
+	extr.u	d15,d15,#2,#1
+.L163:
+	jeq	d15,#0,.L7
+.L164:
+	movh	d0,#16256
+.L165:
+	j	.L8
+.L7:
+	movh	d15,#49024
+.L166:
+	cmp.f	d15,d0,d15
+	extr.u	d15,d15,#0,#1
+.L167:
+	jeq	d15,#0,.L9
+.L168:
+	movh	d0,#49024
+.L9:
+.L8:
+	movh.a	a15,#@his(skid_steer_controller_Y)
+	lea	a15,[a15]@los(skid_steer_controller_Y)
+.L169:
+	mov	d15,#0
+.L170:
+	cmp.f	d15,d0,d15
+	and	d15,#6
+	ne	d15,d15,#0
+.L171:
+	st.b	[a15]4,d15
+.L172:
+	insert	d12,d0,#0,#31,#1
+.L77:
+	movh	d15,#17279
+.L173:
+	mul.f	d4,d12,d15
+	call	floor
+.L78:
+	mov	d15,d2
+.L80:
+	mov	d4,d15
+.L79:
+	call	rtIsNaN
+.L82:
+	jeq	d2,#0,.L10
+.L174:
+	movh.a	a15,#@his(skid_steer_controller_Y)
+	lea	a15,[a15]@los(skid_steer_controller_Y)
+.L175:
+	mov	d15,#0
+.L81:
+	st.b	[a15]3,d15
+.L176:
+	j	.L11
+.L10:
+	movh.a	a15,#@his(skid_steer_controller_Y)
+	lea	a15,[a15]@los(skid_steer_controller_Y)
+.L177:
+	mov	d4,d15
+.L83:
+	call	__f_ftouc
+.L84:
+	st.b	[a15]3,d2
+.L11:
+	movh.a	a15,#@his(skid_steer_controller_Y)
+	lea	a15,[a15]@los(skid_steer_controller_Y)
+.L178:
+	mov.u	d15,#52429
+	addih	d15,d15,#15692
+.L179:
+	cmp.f	d15,d12,d15
+	extr.u	d15,d15,#0,#1
+.L180:
+	st.b	[a15]5,d15
+.L181:
+	movh.a	a15,#@his(skid_steer_controller_DW)
+	lea	a15,[a15]@los(skid_steer_controller_DW)
+.L182:
+	movh.a	a2,#@his(skid_steer_controller_U)
+	lea	a2,[a2]@los(skid_steer_controller_U)
+.L183:
+	ld.w	d15,[a2]8
+.L184:
+	st.w	[a15]16,d15
+.L185:
+	movh.a	a15,#@his(skid_steer_controller_DW)
+	lea	a15,[a15]@los(skid_steer_controller_DW)
+.L186:
+	mov	d15,#627
+	addih	d15,d15,#15986
+.L187:
+	mul.f	d15,d9,d15
+.L188:
+	mov.u	d0,#55050
+	addih	d0,d0,#15395
+.L189:
+	movh.a	a2,#@his(skid_steer_controller_DW)
+	lea	a2,[a2]@los(skid_steer_controller_DW)
+.L190:
+	ld.w	d1,[a2]
+.L191:
+	madd.f	d15,d1,d15,d0
+	st.w	[a15],d15
+.L192:
+	movh.a	a15,#@his(skid_steer_controller_DW)
+	lea	a15,[a15]@los(skid_steer_controller_DW)
+.L193:
+	mov.u	d0,#55050
+	addih	d0,d0,#15395
+.L194:
+	movh.a	a2,#@his(skid_steer_controller_DW)
+	lea	a2,[a2]@los(skid_steer_controller_DW)
+.L195:
+	ld.w	d15,[a2]4
+.L196:
+	madd.f	d15,d15,d10,d0
+	st.w	[a15]4,d15
+.L197:
+	movh.a	a15,#@his(skid_steer_controller_DW)
+	lea	a15,[a15]@los(skid_steer_controller_DW)
+.L198:
+	movh.a	a2,#@his(skid_steer_controller_U)
+	lea	a2,[a2]@los(skid_steer_controller_U)
+.L199:
+	ld.w	d15,[a2]12
+.L200:
+	st.w	[a15]20,d15
+.L201:
+	movh.a	a15,#@his(skid_steer_controller_DW)
+	lea	a15,[a15]@los(skid_steer_controller_DW)
+.L202:
+	mov	d15,#627
+	addih	d15,d15,#15986
+.L203:
+	mul.f	d0,d8,d15
+.L204:
+	mov.u	d1,#55050
+	addih	d1,d1,#15395
+.L205:
+	movh.a	a2,#@his(skid_steer_controller_DW)
+	lea	a2,[a2]@los(skid_steer_controller_DW)
+.L206:
+	ld.w	d15,[a2]8
+.L207:
+	madd.f	d15,d15,d0,d1
+	st.w	[a15]8,d15
+.L208:
+	movh.a	a15,#@his(skid_steer_controller_DW)
+	lea	a15,[a15]@los(skid_steer_controller_DW)
+.L209:
+	mov.u	d0,#55050
+	addih	d0,d0,#15395
+.L210:
+	movh.a	a2,#@his(skid_steer_controller_DW)
+	lea	a2,[a2]@los(skid_steer_controller_DW)
+.L211:
+	ld.w	d15,[a2]12
+.L212:
+	madd.f	d15,d15,d11,d0
+	st.w	[a15]12,d15
+.L213:
+	ret
+.L48:
+	
+__skid_steer_controller_step_function_end:
+	.size	skid_steer_controller_step,__skid_steer_controller_step_function_end-skid_steer_controller_step
+.L31:
+	; End of function
+	
+	.sdecl	'.text.skid_steer_controller.skid_steer_controller_initialize',code,cluster('skid_steer_controller_initialize')
+	.sect	'.text.skid_steer_controller.skid_steer_controller_initialize'
+	.align	2
+	
+	.global	skid_steer_controller_initialize
+; Function skid_steer_controller_initialize
+.L15:
+skid_steer_controller_initialize:	.type	func
+	mov	d4,#4
+	call	rt_InitInfAndNaN
+.L93:
+	ret
+.L47:
+	
+__skid_steer_controller_initialize_function_end:
+	.size	skid_steer_controller_initialize,__skid_steer_controller_initialize_function_end-skid_steer_controller_initialize
+.L26:
+	; End of function
+	
+	.sdecl	'.text.skid_steer_controller.skid_steer_controller_terminate',code,cluster('skid_steer_controller_terminate')
+	.sect	'.text.skid_steer_controller.skid_steer_controller_terminate'
+	.align	2
+	
+	.global	skid_steer_controller_terminate
+; Function skid_steer_controller_terminate
+.L17:
+skid_steer_controller_terminate:	.type	func
+	ret
+.L56:
+	
+__skid_steer_controller_terminate_function_end:
+	.size	skid_steer_controller_terminate,__skid_steer_controller_terminate_function_end-skid_steer_controller_terminate
+.L36:
+	; End of function
+	
+	.sdecl	'.bss.skid_steer_controller.skid_steer_controller_DW',data,cluster('skid_steer_controller_DW')
+	.sect	'.bss.skid_steer_controller.skid_steer_controller_DW'
+	.global	skid_steer_controller_DW
+	.align	4
+skid_steer_controller_DW:	.type	object
+	.size	skid_steer_controller_DW,24
+	.space	24
+	.sdecl	'.bss.skid_steer_controller.skid_steer_controller_U',data,cluster('skid_steer_controller_U')
+	.sect	'.bss.skid_steer_controller.skid_steer_controller_U'
+	.global	skid_steer_controller_U
+	.align	4
+skid_steer_controller_U:	.type	object
+	.size	skid_steer_controller_U,16
+	.space	16
+	.sdecl	'.bss.skid_steer_controller.skid_steer_controller_Y',data,cluster('skid_steer_controller_Y')
+	.sect	'.bss.skid_steer_controller.skid_steer_controller_Y'
+	.global	skid_steer_controller_Y
+	.align	2
+skid_steer_controller_Y:	.type	object
+	.size	skid_steer_controller_Y,6
+	.space	6
+	.sdecl	'.bss.skid_steer_controller.skid_steer_controller_M_',data,cluster('skid_steer_controller_M_')
+	.sect	'.bss.skid_steer_controller.skid_steer_controller_M_'
+	.align	4
+skid_steer_controller_M_:	.type	object
+	.size	skid_steer_controller_M_,4
+	.space	4
+	.sdecl	'.rodata.skid_steer_controller.skid_steer_controller_M',data,rom,cluster('skid_steer_controller_M')
+	.sect	'.rodata.skid_steer_controller.skid_steer_controller_M'
+	.global	skid_steer_controller_M
+	.align	4
+skid_steer_controller_M:	.type	object
+	.size	skid_steer_controller_M,4
+	.word	skid_steer_controller_M_
+	.calls	'skid_steer_controller_step','__f_ftouc'
+	.calls	'skid_steer_controller_step','floor'
+	.calls	'skid_steer_controller_step','rtIsNaN'
+	.calls	'skid_steer_controller_initialize','rt_InitInfAndNaN'
+	.calls	'skid_steer_controller_step','',0
+	.calls	'skid_steer_controller_initialize','',0
+	.extern	rt_InitInfAndNaN
+	.extern	rtIsNaN
+	.extern	floor
+	.extern	__f_ftouc
+	.calls	'skid_steer_controller_terminate','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L19:
+	.word	1377
+	.half	3
+	.word	.L20
+	.byte	4
+.L18:
+	.byte	1
+	.byte	'../MATLAB/skid_steer_controller.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L21
+.L49:
+	.byte	2
+	.byte	'float',0,4,4,3
+	.byte	'__fabs',0
+	.word	218
+	.byte	1,1,1,1,4
+	.byte	'd',0
+	.word	218
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,5
+	.byte	'rt_InitInfAndNaN',0,1,32,13,1,1,1,1,6
+	.byte	'realSize',0,1,32,37
+	.word	251
+	.byte	0,2
+	.byte	'unsigned char',0,1,8,7
+	.byte	'rtIsNaN',0,1,35,18
+	.word	310
+	.byte	1,1,1,1,6
+	.byte	'value',0,1,35,33
+	.word	218
+	.byte	0,7
+	.byte	'floor',0,2,204,1,25
+	.word	218
+	.byte	1,1,1,1,8,2,204,1,43
+	.word	218
+	.byte	0,2
+	.byte	'short int',0,2,5,9
+	.byte	'__wchar_t',0,3,1,1
+	.word	391
+	.byte	9
+	.byte	'__size_t',0,3,1,1
+	.word	251
+	.byte	2
+	.byte	'int',0,4,5,9
+	.byte	'__ptrdiff_t',0,3,1,1
+	.word	439
+	.byte	10,1,11
+	.word	466
+	.byte	9
+	.byte	'__codeptr',0,3,1,1
+	.word	468
+	.byte	2
+	.byte	'char',0,1,6,9
+	.byte	'int8_T',0,4,51,21
+	.word	491
+	.byte	9
+	.byte	'uint8_T',0,4,52,23
+	.word	310
+	.byte	9
+	.byte	'int16_T',0,4,53,15
+	.word	391
+	.byte	2
+	.byte	'unsigned short int',0,2,7,9
+	.byte	'uint16_T',0,4,54,24
+	.word	546
+	.byte	9
+	.byte	'int32_T',0,4,55,13
+	.word	439
+	.byte	9
+	.byte	'uint32_T',0,4,56,22
+	.word	251
+	.byte	2
+	.byte	'long long int',0,8,5,9
+	.byte	'int64_T',0,4,57,19
+	.word	618
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'uint64_T',0,4,58,28
+	.word	651
+	.byte	9
+	.byte	'real32_T',0,4,59,15
+	.word	218
+	.byte	9
+	.byte	'real64_T',0,4,60,16
+	.word	218
+	.byte	9
+	.byte	'real_T',0,4,66,16
+	.word	218
+	.byte	9
+	.byte	'boolean_T',0,4,68,23
+	.word	310
+	.byte	2
+	.byte	'char',0,1,6,9
+	.byte	'char_T',0,4,73,14
+	.word	761
+	.byte	12
+	.word	761
+	.byte	11
+	.word	784
+	.byte	13
+	.word	789
+.L61:
+	.byte	14
+	.byte	'tag_RTM_skid_steer_controller_T',0,5,71,8,4,15
+	.byte	'errorStatus',0
+	.word	794
+	.byte	4,2,35,0,0,9
+	.byte	'RT_MODEL_skid_steer_controller_T',0,6,24,48
+	.word	799
+	.byte	9
+	.byte	'size_t',0,7,24,25
+	.word	251
+.L57:
+	.byte	16,5,43,9,24,15
+	.byte	'Integrator_DSTATE',0
+	.word	218
+	.byte	4,2,35,0,15
+	.byte	'Filter_DSTATE',0
+	.word	218
+	.byte	4,2,35,4,15
+	.byte	'Integrator_DSTATE_h',0
+	.word	218
+	.byte	4,2,35,8,15
+	.byte	'Filter_DSTATE_m',0
+	.word	218
+	.byte	4,2,35,12,15
+	.byte	'UnitDelay_DSTATE',0
+	.word	439
+	.byte	4,2,35,16,15
+	.byte	'UnitDelay1_DSTATE',0
+	.word	439
+	.byte	4,2,35,20,0,9
+	.byte	'DW_skid_steer_controller_T',0,5,50,3
+	.word	914
+.L58:
+	.byte	16,5,53,9,16,15
+	.byte	'v_target',0
+	.word	218
+	.byte	4,2,35,0,15
+	.byte	'w_target',0
+	.word	218
+	.byte	4,2,35,4,15
+	.byte	'enc_pulse_L',0
+	.word	439
+	.byte	4,2,35,8,15
+	.byte	'enc_pulse_R',0
+	.word	439
+	.byte	4,2,35,12,0,9
+	.byte	'ExtU_skid_steer_controller_T',0,5,58,3
+	.word	1112
+.L59:
+	.byte	16,5,61,9,6,15
+	.byte	'pwm_L',0
+	.word	310
+	.byte	1,2,35,0,15
+	.byte	'dir_L',0
+	.word	310
+	.byte	1,2,35,1,15
+	.byte	'brake_L',0
+	.word	310
+	.byte	1,2,35,2,15
+	.byte	'pwm_R',0
+	.word	310
+	.byte	1,2,35,3,15
+	.byte	'dir_R',0
+	.word	310
+	.byte	1,2,35,4,15
+	.byte	'brake_R',0
+	.word	310
+	.byte	1,2,35,5,0,9
+	.byte	'ExtY_skid_steer_controller_T',0,5,68,3
+	.word	1233
+	.byte	11
+	.word	799
+.L60:
+	.byte	12
+	.word	1370
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L20:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,4,5,0,3,8,73,19,0,0,5,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,6,5,0,3,8
+	.byte	58,15,59,15,57,15,73,19,0,0,7,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,8,5,0,58,15
+	.byte	59,15,57,15,73,19,0,0,9,22,0,3,8,58,15,59,15,57,15,73,19,0,0,10,21,0,54,15,0,0,11,15,0,73,19,0,0,12,38
+	.byte	0,73,19,0,0,13,53,0,73,19,0,0,14,19,1,3,8,58,15,59,15,57,15,11,15,0,0,15,13,0,3,8,73,19,11,15,56,9,0,0
+	.byte	16,19,1,58,15,59,15,57,15,11,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L21:
+	.word	.L86-.L85
+.L85:
+	.half	3
+	.word	.L88-.L87
+.L87:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\Infineon\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0,0
+	.byte	'..\\MATLAB\\rt_nonfinite.h',0,0,0,0
+	.byte	'math.h',0,1,0,0
+	.byte	'../MATLAB/skid_steer_controller.c',0,0,0,0
+	.byte	'..\\MATLAB\\rtwtypes.h',0,0,0,0
+	.byte	'..\\MATLAB\\skid_steer_controller.h',0,0,0,0
+	.byte	'..\\MATLAB\\skid_steer_controller_types.h',0,0,0,0
+	.byte	'stddef.h',0,1,0,0,0
+.L88:
+.L86:
+	.sdecl	'.debug_info',debug,cluster('skid_steer_controller_initialize')
+	.sect	'.debug_info'
+.L22:
+	.word	287
+	.half	3
+	.word	.L23
+	.byte	4,1
+	.byte	'../MATLAB/skid_steer_controller.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L25,.L24
+	.byte	2
+	.word	.L18
+	.byte	3
+	.byte	'skid_steer_controller_initialize',0,1,220,1,6,1,1,1
+	.word	.L15,.L47,.L14
+	.byte	4
+	.word	.L15,.L47
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('skid_steer_controller_initialize')
+	.sect	'.debug_abbrev'
+.L23:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('skid_steer_controller_initialize')
+	.sect	'.debug_line'
+.L24:
+	.word	.L90-.L89
+.L89:
+	.half	3
+	.word	.L92-.L91
+.L91:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MATLAB/skid_steer_controller.c',0,0,0,0,0
+.L92:
+	.byte	5,20,7,0,5,2
+	.word	.L15
+	.byte	3,224,1,1,5,1,9
+	.half	.L93-.L15
+	.byte	3,1,1,7,9
+	.half	.L26-.L93
+	.byte	0,1,1
+.L90:
+	.sdecl	'.debug_ranges',debug,cluster('skid_steer_controller_initialize')
+	.sect	'.debug_ranges'
+.L25:
+	.word	-1,.L15,0,.L26-.L15,0,0
+	.sdecl	'.debug_info',debug,cluster('skid_steer_controller_step')
+	.sect	'.debug_info'
+.L27:
+	.word	441
+	.half	3
+	.word	.L28
+	.byte	4,1
+	.byte	'../MATLAB/skid_steer_controller.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L30,.L29
+	.byte	2
+	.word	.L18
+	.byte	3
+	.byte	'skid_steer_controller_step',0,1,40,6,1,1,1
+	.word	.L13,.L48,.L12
+	.byte	4
+	.word	.L13,.L48
+	.byte	5
+	.byte	'rtb_Abs',0,1,42,10
+	.word	.L49,.L50
+	.byte	5
+	.byte	'rtb_FilterCoefficient',0,1,43,10
+	.word	.L49,.L51
+	.byte	5
+	.byte	'rtb_FilterCoefficient_h',0,1,44,10
+	.word	.L49,.L52
+	.byte	5
+	.byte	'rtb_Filter_a',0,1,45,10
+	.word	.L49,.L53
+	.byte	5
+	.byte	'rtb_Integrator_p',0,1,46,10
+	.word	.L49,.L54
+	.byte	5
+	.byte	'tmp',0,1,47,10
+	.word	.L49,.L55
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('skid_steer_controller_step')
+	.sect	'.debug_abbrev'
+.L28:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('skid_steer_controller_step')
+	.sect	'.debug_line'
+.L29:
+	.word	.L95-.L94
+.L94:
+	.half	3
+	.word	.L97-.L96
+.L96:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MATLAB/skid_steer_controller.c',0,0,0,0,0
+.L97:
+	.byte	5,21,7,0,5,2
+	.word	.L13
+	.byte	3,51,1,5,44,9
+	.half	.L98-.L13
+	.byte	1,5,13,9
+	.half	.L99-.L98
+	.byte	1,5,19,9
+	.half	.L100-.L99
+	.byte	1,9
+	.half	.L62-.L100
+	.byte	3,11,1,5,42,9
+	.half	.L101-.L62
+	.byte	1,5,52,9
+	.half	.L102-.L101
+	.byte	1,5,6,9
+	.half	.L103-.L102
+	.byte	3,1,1,5,29,9
+	.half	.L104-.L103
+	.byte	1,5,6,9
+	.half	.L105-.L104
+	.byte	3,1,1,5,30,9
+	.half	.L106-.L105
+	.byte	1,5,42,9
+	.half	.L107-.L106
+	.byte	3,127,1,5,65,9
+	.half	.L108-.L107
+	.byte	3,127,1,5,51,9
+	.half	.L109-.L108
+	.byte	3,2,1,5,63,9
+	.half	.L110-.L109
+	.byte	3,126,1,5,28,9
+	.half	.L64-.L110
+	.byte	3,9,1,5,49,9
+	.half	.L111-.L64
+	.byte	1,5,5,9
+	.half	.L112-.L111
+	.byte	3,1,1,5,29,9
+	.half	.L113-.L112
+	.byte	1,5,62,9
+	.half	.L114-.L113
+	.byte	3,127,1,5,47,9
+	.half	.L115-.L114
+	.byte	3,1,1,5,45,9
+	.half	.L116-.L115
+	.byte	1,5,23,9
+	.half	.L65-.L116
+	.byte	3,6,1,9
+	.half	.L117-.L65
+	.byte	3,1,1,5,47,9
+	.half	.L118-.L117
+	.byte	1,5,55,9
+	.half	.L119-.L118
+	.byte	3,127,1,5,67,9
+	.half	.L120-.L119
+	.byte	3,1,1,5,26,9
+	.half	.L66-.L120
+	.byte	3,4,1,5,24,9
+	.half	.L121-.L66
+	.byte	1,5,3,9
+	.half	.L122-.L121
+	.byte	1,5,24,7,9
+	.half	.L123-.L122
+	.byte	3,1,1,5,27,9
+	.half	.L124-.L123
+	.byte	1,5,33,9
+	.half	.L2-.L124
+	.byte	3,1,1,5,31,9
+	.half	.L125-.L2
+	.byte	1,5,10,9
+	.half	.L126-.L125
+	.byte	1,5,24,7,9
+	.half	.L127-.L126
+	.byte	3,1,1,5,3,9
+	.half	.L3-.L127
+	.byte	3,9,1,5,56,9
+	.half	.L128-.L3
+	.byte	1,5,53,9
+	.half	.L129-.L128
+	.byte	1,5,33,9
+	.half	.L130-.L129
+	.byte	1,5,22,9
+	.half	.L131-.L130
+	.byte	3,3,1,5,15,9
+	.half	.L67-.L131
+	.byte	3,5,1,5,21,9
+	.half	.L132-.L67
+	.byte	1,5,7,9
+	.half	.L69-.L132
+	.byte	1,5,15,9
+	.half	.L71-.L69
+	.byte	3,1,1,5,3,9
+	.half	.L73-.L71
+	.byte	1,5,5,7,9
+	.half	.L133-.L73
+	.byte	3,2,1,5,37,9
+	.half	.L134-.L133
+	.byte	1,5,35,9
+	.half	.L135-.L134
+	.byte	1,5,39,9
+	.half	.L136-.L135
+	.byte	1,5,5,9
+	.half	.L5-.L136
+	.byte	3,3,1,5,37,9
+	.half	.L137-.L5
+	.byte	1,5,35,9
+	.half	.L75-.L137
+	.byte	1,5,3,9
+	.half	.L6-.L75
+	.byte	3,9,1,5,57,9
+	.half	.L138-.L6
+	.byte	1,5,55,9
+	.half	.L139-.L138
+	.byte	1,5,35,9
+	.half	.L140-.L139
+	.byte	1,5,23,9
+	.half	.L141-.L140
+	.byte	3,11,1,5,46,9
+	.half	.L142-.L141
+	.byte	1,5,56,9
+	.half	.L143-.L142
+	.byte	1,5,6,9
+	.half	.L144-.L143
+	.byte	3,1,1,5,29,9
+	.half	.L145-.L144
+	.byte	1,5,6,9
+	.half	.L146-.L145
+	.byte	3,1,1,5,30,9
+	.half	.L147-.L146
+	.byte	1,5,42,9
+	.half	.L148-.L147
+	.byte	3,127,1,5,69,9
+	.half	.L149-.L148
+	.byte	3,127,1,5,52,9
+	.half	.L150-.L149
+	.byte	3,2,1,5,67,9
+	.half	.L151-.L150
+	.byte	3,126,1,5,30,9
+	.half	.L63-.L151
+	.byte	3,9,1,5,51,9
+	.half	.L152-.L63
+	.byte	1,5,5,9
+	.half	.L153-.L152
+	.byte	3,1,1,5,29,9
+	.half	.L154-.L153
+	.byte	1,5,68,9
+	.half	.L155-.L154
+	.byte	3,127,1,5,49,9
+	.half	.L156-.L155
+	.byte	3,1,1,5,47,9
+	.half	.L157-.L156
+	.byte	1,5,14,9
+	.half	.L72-.L157
+	.byte	3,6,1,9
+	.half	.L158-.L72
+	.byte	3,1,1,5,38,9
+	.half	.L159-.L158
+	.byte	1,5,50,9
+	.half	.L160-.L159
+	.byte	3,127,1,5,60,9
+	.half	.L161-.L160
+	.byte	3,1,1,5,17,9
+	.half	.L76-.L161
+	.byte	3,4,1,5,15,9
+	.half	.L162-.L76
+	.byte	1,5,3,9
+	.half	.L163-.L162
+	.byte	1,5,15,7,9
+	.half	.L164-.L163
+	.byte	3,1,1,5,18,9
+	.half	.L165-.L164
+	.byte	1,5,24,9
+	.half	.L7-.L165
+	.byte	3,1,1,5,22,9
+	.half	.L166-.L7
+	.byte	1,5,10,9
+	.half	.L167-.L166
+	.byte	1,5,15,7,9
+	.half	.L168-.L167
+	.byte	3,1,1,5,3,9
+	.half	.L8-.L168
+	.byte	3,9,1,5,47,9
+	.half	.L169-.L8
+	.byte	1,5,44,9
+	.half	.L170-.L169
+	.byte	1,5,33,9
+	.half	.L171-.L170
+	.byte	1,5,13,9
+	.half	.L172-.L171
+	.byte	3,3,1,5,15,9
+	.half	.L77-.L172
+	.byte	3,5,1,5,21,9
+	.half	.L173-.L77
+	.byte	1,5,7,9
+	.half	.L78-.L173
+	.byte	1,5,15,9
+	.half	.L80-.L78
+	.byte	3,1,1,5,3,9
+	.half	.L82-.L80
+	.byte	1,5,5,7,9
+	.half	.L174-.L82
+	.byte	3,2,1,5,37,9
+	.half	.L175-.L174
+	.byte	1,5,35,9
+	.half	.L81-.L175
+	.byte	1,5,39,9
+	.half	.L176-.L81
+	.byte	1,5,5,9
+	.half	.L10-.L176
+	.byte	3,3,1,5,37,9
+	.half	.L177-.L10
+	.byte	1,5,35,9
+	.half	.L84-.L177
+	.byte	1,5,3,9
+	.half	.L11-.L84
+	.byte	3,9,1,5,48,9
+	.half	.L178-.L11
+	.byte	1,5,46,9
+	.half	.L179-.L178
+	.byte	1,5,35,9
+	.half	.L180-.L179
+	.byte	1,5,3,9
+	.half	.L181-.L180
+	.byte	3,5,1,5,5,9
+	.half	.L182-.L181
+	.byte	3,1,1,5,28,9
+	.half	.L183-.L182
+	.byte	1,5,45,9
+	.half	.L184-.L183
+	.byte	3,127,1,5,3,9
+	.half	.L185-.L184
+	.byte	3,6,1,5,49,9
+	.half	.L186-.L185
+	.byte	1,5,67,9
+	.half	.L187-.L186
+	.byte	1,5,7,9
+	.half	.L188-.L187
+	.byte	3,1,1,5,3,9
+	.half	.L189-.L188
+	.byte	3,127,1,5,27,9
+	.half	.L190-.L189
+	.byte	1,5,46,9
+	.half	.L191-.L190
+	.byte	1,5,3,9
+	.half	.L192-.L191
+	.byte	3,4,1,5,45,9
+	.half	.L193-.L192
+	.byte	1,5,3,9
+	.half	.L194-.L193
+	.byte	1,5,27,9
+	.half	.L195-.L194
+	.byte	1,5,42,9
+	.half	.L196-.L195
+	.byte	1,5,3,9
+	.half	.L197-.L196
+	.byte	3,5,1,5,5,9
+	.half	.L198-.L197
+	.byte	3,1,1,5,28,9
+	.half	.L199-.L198
+	.byte	1,5,46,9
+	.half	.L200-.L199
+	.byte	3,127,1,5,3,9
+	.half	.L201-.L200
+	.byte	3,6,1,5,51,9
+	.half	.L202-.L201
+	.byte	1,5,69,9
+	.half	.L203-.L202
+	.byte	1,5,24,9
+	.half	.L204-.L203
+	.byte	3,1,1,5,3,9
+	.half	.L205-.L204
+	.byte	3,127,1,5,27,9
+	.half	.L206-.L205
+	.byte	1,5,48,9
+	.half	.L207-.L206
+	.byte	1,5,3,9
+	.half	.L208-.L207
+	.byte	3,4,1,5,47,9
+	.half	.L209-.L208
+	.byte	1,5,3,9
+	.half	.L210-.L209
+	.byte	1,5,27,9
+	.half	.L211-.L210
+	.byte	1,5,44,9
+	.half	.L212-.L211
+	.byte	1,5,1,9
+	.half	.L213-.L212
+	.byte	3,1,1,7,9
+	.half	.L31-.L213
+	.byte	0,1,1
+.L95:
+	.sdecl	'.debug_ranges',debug,cluster('skid_steer_controller_step')
+	.sect	'.debug_ranges'
+.L30:
+	.word	-1,.L13,0,.L31-.L13,0,0
+	.sdecl	'.debug_info',debug,cluster('skid_steer_controller_terminate')
+	.sect	'.debug_info'
+.L32:
+	.word	286
+	.half	3
+	.word	.L33
+	.byte	4,1
+	.byte	'../MATLAB/skid_steer_controller.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L35,.L34
+	.byte	2
+	.word	.L18
+	.byte	3
+	.byte	'skid_steer_controller_terminate',0,1,229,1,6,1,1,1
+	.word	.L17,.L56,.L16
+	.byte	4
+	.word	.L17,.L56
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('skid_steer_controller_terminate')
+	.sect	'.debug_abbrev'
+.L33:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('skid_steer_controller_terminate')
+	.sect	'.debug_line'
+.L34:
+	.word	.L215-.L214
+.L214:
+	.half	3
+	.word	.L217-.L216
+.L216:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MATLAB/skid_steer_controller.c',0,0,0,0,0
+.L217:
+	.byte	5,1,7,0,5,2
+	.word	.L17
+	.byte	3,231,1,1,7,9
+	.half	.L36-.L17
+	.byte	0,1,1
+.L215:
+	.sdecl	'.debug_ranges',debug,cluster('skid_steer_controller_terminate')
+	.sect	'.debug_ranges'
+.L35:
+	.word	-1,.L17,0,.L36-.L17,0,0
+	.sdecl	'.debug_info',debug,cluster('skid_steer_controller_DW')
+	.sect	'.debug_info'
+.L37:
+	.word	256
+	.half	3
+	.word	.L38
+	.byte	4,1
+	.byte	'../MATLAB/skid_steer_controller.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1,2
+	.word	.L18
+	.byte	3
+	.byte	'skid_steer_controller_DW',0,3,26,28
+	.word	.L57
+	.byte	1,5,3
+	.word	skid_steer_controller_DW
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('skid_steer_controller_DW')
+	.sect	'.debug_abbrev'
+.L38:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('skid_steer_controller_U')
+	.sect	'.debug_info'
+.L39:
+	.word	255
+	.half	3
+	.word	.L40
+	.byte	4,1
+	.byte	'../MATLAB/skid_steer_controller.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1,2
+	.word	.L18
+	.byte	3
+	.byte	'skid_steer_controller_U',0,3,29,30
+	.word	.L58
+	.byte	1,5,3
+	.word	skid_steer_controller_U
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('skid_steer_controller_U')
+	.sect	'.debug_abbrev'
+.L40:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('skid_steer_controller_Y')
+	.sect	'.debug_info'
+.L41:
+	.word	255
+	.half	3
+	.word	.L42
+	.byte	4,1
+	.byte	'../MATLAB/skid_steer_controller.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1,2
+	.word	.L18
+	.byte	3
+	.byte	'skid_steer_controller_Y',0,3,32,30
+	.word	.L59
+	.byte	1,5,3
+	.word	skid_steer_controller_Y
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('skid_steer_controller_Y')
+	.sect	'.debug_abbrev'
+.L42:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('skid_steer_controller_M')
+	.sect	'.debug_info'
+.L43:
+	.word	255
+	.half	3
+	.word	.L44
+	.byte	4,1
+	.byte	'../MATLAB/skid_steer_controller.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1,2
+	.word	.L18
+	.byte	3
+	.byte	'skid_steer_controller_M',0,3,36,41
+	.word	.L60
+	.byte	1,5,3
+	.word	skid_steer_controller_M
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('skid_steer_controller_M')
+	.sect	'.debug_abbrev'
+.L44:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('skid_steer_controller_M_')
+	.sect	'.debug_info'
+.L45:
+	.word	255
+	.half	3
+	.word	.L46
+	.byte	4,1
+	.byte	'../MATLAB/skid_steer_controller.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1,2
+	.word	.L18
+	.byte	3
+	.byte	'skid_steer_controller_M_',0,3,35,41
+	.word	.L61
+	.byte	5,3
+	.word	skid_steer_controller_M_
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('skid_steer_controller_M_')
+	.sect	'.debug_abbrev'
+.L46:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_loc',debug,cluster('skid_steer_controller_initialize')
+	.sect	'.debug_loc'
+.L14:
+	.word	-1,.L15,0,.L47-.L15
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('skid_steer_controller_step')
+	.sect	'.debug_loc'
+.L50:
+	.word	-1,.L13,.L62-.L13,.L63-.L13
+	.half	1
+	.byte	88
+	.word	.L76-.L13,.L77-.L13
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L77-.L13,.L48-.L13
+	.half	1
+	.byte	92
+	.word	0,0
+.L51:
+	.word	-1,.L13,.L65-.L13,.L48-.L13
+	.half	1
+	.byte	90
+	.word	0,0
+.L52:
+	.word	-1,.L13,.L72-.L13,.L48-.L13
+	.half	1
+	.byte	91
+	.word	0,0
+.L53:
+	.word	-1,.L13,.L64-.L13,.L48-.L13
+	.half	1
+	.byte	89
+	.word	0,0
+.L54:
+	.word	-1,.L13,.L66-.L13,.L67-.L13
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L67-.L13,.L68-.L13
+	.half	1
+	.byte	95
+	.word	.L63-.L13,.L48-.L13
+	.half	1
+	.byte	88
+	.word	0,0
+.L12:
+	.word	-1,.L13,0,.L48-.L13
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L55:
+	.word	-1,.L13,.L69-.L13,.L70-.L13
+	.half	1
+	.byte	82
+	.word	.L71-.L13,.L72-.L13
+	.half	1
+	.byte	91
+	.word	.L70-.L13,.L73-.L13
+	.half	1
+	.byte	84
+	.word	.L74-.L13,.L75-.L13
+	.half	1
+	.byte	84
+	.word	.L78-.L13,.L79-.L13
+	.half	1
+	.byte	82
+	.word	.L80-.L13,.L81-.L13
+	.half	1
+	.byte	95
+	.word	.L79-.L13,.L82-.L13
+	.half	1
+	.byte	84
+	.word	.L10-.L13,.L11-.L13
+	.half	1
+	.byte	95
+	.word	.L83-.L13,.L84-.L13
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('skid_steer_controller_terminate')
+	.sect	'.debug_loc'
+.L16:
+	.word	-1,.L17,0,.L56-.L17
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L218:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('skid_steer_controller_step')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L218,.L13,.L48-.L13
+	.sdecl	'.debug_frame',debug,cluster('skid_steer_controller_initialize')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L218,.L15,.L47-.L15
+	.sdecl	'.debug_frame',debug,cluster('skid_steer_controller_terminate')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L218,.L17,.L56-.L17
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	; Module end
