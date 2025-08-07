@@ -5,46 +5,25 @@
  *********************************************************************************************************************/
 #include "Encoder.h"
 
-#define BUF_SIZE 5
+static volatile uint8 lastStatus_enc0 = 0;
+static volatile uint64 prev_enc0 = 0;
+static volatile uint64 intCnt_enc0 = 0;
+static volatile uint64 diffSum_enc0 = 0;
 
-static volatile uint8 lastStatus_eru0 = 0;
-static volatile uint64 prev_eru0 = 0;
-static volatile uint64 diff_eru0 = 0;
-static volatile uint64 buffer_eru0[BUF_SIZE] = {0, };
-static volatile int idx_eru0 = 0;
+static volatile uint8 lastStatus_enc1 = 0;
+static volatile uint64 prev_enc1 = 0;
+static volatile uint64 intCnt_enc1 = 0;
+static volatile uint64 diffSum_enc1 = 0;
 
-static volatile uint8 lastStatus_eru1 = 0;
-static volatile uint64 prev_eru1 = 0;
-static volatile uint64 diff_eru1 = 0;
-static volatile uint64 buffer_eru1[BUF_SIZE] = {0, };
-static volatile int idx_eru1 = 0;
+static volatile int rpm0 = 0;
+static volatile int rpm1 = 0;
 
 int Encoder_Get_Rpm0_Left(void) {
-    if (diff_eru0 && Stm_Get_Time_Us() - prev_eru0 < 150000) {
-        if (buffer_eru0[idx_eru0] > 100000/BUF_SIZE)
-            return (int)(1500000/buffer_eru0[idx_eru0]);
-        else {
-            uint64 sum = 0;
-            for (int i = 0; i < BUF_SIZE; i++)
-                sum += buffer_eru0[i];
-            return (int)(1500000/(sum/BUF_SIZE));
-        }
-    } else
-        return 0;
+    return rpm0;
 }
 
 int Encoder_Get_Rpm1_Right(void) {
-    if (diff_eru1 && Stm_Get_Time_Us() - prev_eru1 < 150000) {
-        if (buffer_eru1[idx_eru1] > 100000/BUF_SIZE)
-            return (int)(1500000/buffer_eru1[idx_eru1]);
-        else {
-            uint64 sum = 0;
-            for (int i = 0; i < BUF_SIZE; i++)
-                sum += buffer_eru1[i];
-            return (int)(1500000/(sum/BUF_SIZE));
-        }
-    } else
-        return 0;
+    return rpm1;
 }
 
 void Encoder_Init(void) {
@@ -116,45 +95,51 @@ IFX_INTERRUPT(Encoder_Stm1_Isr_Handler, 0, ISR_PRIORITY_STM1);
 
 void Encoder_Enc0_Isr_Handler(void) {
     uint64 now = Stm_Get_Time_Us();
-    uint64 diff = now - prev_eru0;
+    uint64 diff = now - prev_enc0;
     uint8 status = MODULE_P15.IN.B.P4;
-    if (diff < 500 || status == lastStatus_eru0)
+    if (diff < 500 || status == lastStatus_enc0)
         return;
-    diff_eru0 = diff;
-    prev_eru0 = now;
-    lastStatus_eru0 = status;
-
-    idx_eru0++;
-    idx_eru0 %= BUF_SIZE;
-    buffer_eru0[idx_eru0] = diff;
+    intCnt_enc0++;
+    diffSum_enc0 += diff;
+    prev_enc0 = now;
+    lastStatus_enc0 = status;
 }
 
 void Encoder_Enc1_Isr_Handler(void) {
     uint64 now = Stm_Get_Time_Us();
-    uint64 diff = now - prev_eru1;
+    uint64 diff = now - prev_enc1;
     uint8 status = MODULE_P33.IN.B.P7;
-    if (diff < 500 || status == lastStatus_eru1)
+    if (diff < 500 || status == lastStatus_enc1)
         return;
-    diff_eru1 = diff;
-    prev_eru1 = now;
-    lastStatus_eru1 = status;
-
-    idx_eru1++;
-    idx_eru1 %= BUF_SIZE;
-    buffer_eru1[idx_eru1] = diff;
+    intCnt_enc1++;
+    diffSum_enc1 += diff;
+    prev_enc1 = now;
+    lastStatus_enc1 = status;
 }
 
 void Encoder_Stm1_Isr_Handler(void) {
     MODULE_STM1.CMP[0].U = (unsigned int)((MODULE_STM1.TIM0.U | ((uint64)MODULE_STM1.CAP.U << 32)) + 100000*CPU_CLOCK_MHZ);
     uint8 txData[8] = {0, };
-    int rpm0 = Encoder_Get_Rpm0_Left();
-    int rpm1 = Encoder_Get_Rpm1_Right();
 
-    if (!MODULE_P10.OUT.B.P1)
-        rpm0 *= -1;
+    if (intCnt_enc0 > 0) {
+        rpm0 = 1500000/(int)(diffSum_enc0/intCnt_enc0);
+        if (!MODULE_P10.OUT.B.P1)
+            rpm0 *= -1;
+    } else
+        rpm0 = 0;
 
-    if (!MODULE_P10.OUT.B.P2)
-        rpm1 *= -1;
+    if (intCnt_enc1 > 0) {
+        rpm1 = 1500000/(int)(diffSum_enc1/intCnt_enc1);
+        if (!MODULE_P10.OUT.B.P2)
+            rpm1 *= -1;
+    } else
+        rpm1 = 0;
+
+    intCnt_enc0 = 0;
+    diffSum_enc0 = 0;
+
+    intCnt_enc1 = 0;
+    diffSum_enc1 = 0;
 
     txData[0] = (uint8)(rpm0 & 0xFF);
     txData[1] = (uint8)((rpm0 >> 8) & 0xFF);
