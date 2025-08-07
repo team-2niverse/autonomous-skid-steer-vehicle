@@ -10,7 +10,6 @@
 #define ISR_PRIORITY_ERU0 10 //Encoder
 #define ISR_PRIORITY_ERU1 11 //Encoder
 #define ISR_PRIORITY_ERU2 12 //Ultrasonic
-#define ISR_PRIORITY_ERU3 13
 
 // for timer
 #define ISR_PRIORITY_STM0 20
