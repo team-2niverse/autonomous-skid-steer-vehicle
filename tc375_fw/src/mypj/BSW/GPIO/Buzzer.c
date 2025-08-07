@@ -12,26 +12,26 @@ void Buzzer_Init ()
 }
 
 static unsigned int BeepCnt = 0;
-
 void Buzzer_Set_Cycle_Ms (int cycle)
 {
     BeepCnt = cycle * 100;
-} // 0: 꺼진 상태 / 1: 쭉 울리는 상태 (삐-) / 그 외는 130~260 정도로 사용 (130이 더 빠른 주기, 260이 느린 주기)
+}
+
+void Buzzer_Always_On(void)
+{
+    MODULE_P23.OUT.B.P5 = 1;
+}
 
 void Buzzer_On (void)
 {
-    if(BeepCnt == 100) // always ON
-        MODULE_P23.OUT.B.P5 = 1;
-    else if(BeepCnt == 0) // always OFF
-        MODULE_P23.OUT.B.P5 = 0;
-    else
-        Gpt12_Run_Gpt1_T3();
+     Gpt12_Run_Gpt1_T3();
 }
 
 void Buzzer_Off (void)
 {
     Gpt12_Stop_Gpt1_T3();
     MODULE_P23.OUT.B.P5 = 0;
+    BeepCnt = 0;
 }
 
 static volatile unsigned int g_Cnt10us = 0;
