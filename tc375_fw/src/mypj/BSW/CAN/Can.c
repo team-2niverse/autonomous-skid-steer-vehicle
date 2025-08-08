@@ -37,6 +37,10 @@ int Can_Get_Front_Dist(void) {
 
 void Can_Let_Parking(int state){
     parking = state;
+    if (state == 0) {
+        uint8 data = 1;
+        Can_Send_Msg(0x301, &data, 1);
+    }
 } //외부에서 parking mode 업데이트하는 함수
 
 
@@ -250,6 +254,8 @@ void Can_Rx_Isr_Handler (void)
     /* 모드 여부 (컨트롤러 버튼) */
     else if (rxID == 0x102) {
         if (rxData[2]) {
+            if (aeb == 1)
+                return;
             if (parking)
                 parking = 0;
             else

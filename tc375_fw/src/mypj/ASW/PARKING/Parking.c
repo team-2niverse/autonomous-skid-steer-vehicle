@@ -15,8 +15,8 @@ void Parking_On (void)
     int measuring_space = 0;
     unsigned int Buzzer_Flag = 1;
 
-    float space_detect_threshold = 20.0;
-    float rear_stop_threshold = 10.0;
+    float space_detect_threshold = 35.0;
+    float rear_stop_threshold = 7.0;
 
     while (1)
     {
@@ -44,20 +44,17 @@ void Parking_On (void)
                     space_duration_us = end_time - start_time;
                     measuring_space = 0;
 
-                    if (space_duration_us >= 400000)  // 0.5초 이상 빈 공간이면
+                    if (space_duration_us >= 400000)  // 0.4초 이상 빈 공간이면
                     {
                         Motor_Stop_Left();
                         Motor_Stop_Right();
                         delay_ms(500);  // 안정화 대기
 
-                        // 측정된 공간 시간의 절반만큼 후진
-                        uint64 half_duration_ms = space_duration_us * 2.55 / 1000;
-                        if (half_duration_ms > 1750)
-                            half_duration_ms = 1500;
+                        uint64 half_duration_ms = 1450;
 
                         Motor_Set_Left(0, 90);
                         Motor_Set_Right(0, 90);
-                        delay_ms((int) half_duration_ms);
+                        delay_ms((int)half_duration_ms);
                         Motor_Stop_Left();
                         Motor_Stop_Right();
 
@@ -91,7 +88,7 @@ void Parking_On (void)
             Motor_Set_Left(0, 80);
             Motor_Set_Right(0, 255);
 
-            delay_ms(565);
+            delay_ms(555);
 
             Motor_Stop_Left();
             Motor_Stop_Right();
