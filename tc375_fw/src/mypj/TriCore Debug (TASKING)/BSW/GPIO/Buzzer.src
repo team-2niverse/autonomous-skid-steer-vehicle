@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc4816a --dep-file=Buzzer.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW\\\\PARKING -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ASCLIN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ENCODER -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPT12 -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GTM_ATOM_PWM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ISR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\MOTOR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\PID -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\STM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ULTRASONIC -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\MATLAB -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o BSW/GPIO/Buzzer.src ../BSW/GPIO/Buzzer.c"
+	.compiler_invocation	"ctc -f cc16600a --dep-file=Buzzer.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\ASW\\\\PARKING -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ASCLIN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\CAN -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ENCODER -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPIO -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GPT12 -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\GTM_ATOM_PWM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ISR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\MOTOR -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\STM -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\BSW\\\\ULTRASONIC -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Configurations -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o BSW/GPIO/Buzzer.src ../BSW/GPIO/Buzzer.c"
 	.compiler_name		"ctc"
 	;source	'../BSW/GPIO/Buzzer.c'
 
@@ -13,30 +13,30 @@ $TC162
 	
 	.global	Buzzer_Init
 ; Function Buzzer_Init
-.L8:
+.L4:
 Buzzer_Init:	.type	func
 	movh.a	a15,#61444
 	ld.bu	d0,[a15]@los(0xf003b715)
-.L67:
+.L71:
 	mov	d15,#16
-.L68:
+.L72:
 	insert	d15,d0,d15,#3,#5
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003b715),d15
-.L69:
+.L73:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003b700)
-.L70:
+.L74:
 	insert	d15,d15,#0,#5,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003b700),d15
-.L71:
+.L75:
 	ret
-.L50:
+.L53:
 	
 __Buzzer_Init_function_end:
 	.size	Buzzer_Init,__Buzzer_Init_function_end-Buzzer_Init
-.L25:
+.L23:
 	; End of function
 	
 	.sdecl	'.text.Buzzer.Buzzer_Set_Cycle_Ms',code,cluster('Buzzer_Set_Cycle_Ms')
@@ -45,21 +45,44 @@ __Buzzer_Init_function_end:
 	
 	.global	Buzzer_Set_Cycle_Ms
 ; Function Buzzer_Set_Cycle_Ms
-.L10:
+.L6:
 Buzzer_Set_Cycle_Ms:	.type	func
 	movh.a	a15,#@his(BeepCnt)
 	lea	a15,[a15]@los(BeepCnt)
-.L76:
+.L80:
 	mul	d15,d4,#100
-.L77:
+.L81:
 	st.w	[a15],d15
-.L78:
+.L82:
 	ret
-.L51:
+.L54:
 	
 __Buzzer_Set_Cycle_Ms_function_end:
 	.size	Buzzer_Set_Cycle_Ms,__Buzzer_Set_Cycle_Ms_function_end-Buzzer_Set_Cycle_Ms
-.L30:
+.L28:
+	; End of function
+	
+	.sdecl	'.text.Buzzer.Buzzer_Always_On',code,cluster('Buzzer_Always_On')
+	.sect	'.text.Buzzer.Buzzer_Always_On'
+	.align	2
+	
+	.global	Buzzer_Always_On
+; Function Buzzer_Always_On
+.L8:
+Buzzer_Always_On:	.type	func
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf003b700)
+.L87:
+	or	d15,#32
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf003b700),d15
+.L88:
+	ret
+.L57:
+	
+__Buzzer_Always_On_function_end:
+	.size	Buzzer_Always_On,__Buzzer_Always_On_function_end-Buzzer_Always_On
+.L33:
 	; End of function
 	
 	.sdecl	'.text.Buzzer.Buzzer_On',code,cluster('Buzzer_On')
@@ -68,49 +91,16 @@ __Buzzer_Set_Cycle_Ms_function_end:
 	
 	.global	Buzzer_On
 ; Function Buzzer_On
-.L12:
+.L10:
 Buzzer_On:	.type	func
-	movh.a	a15,#@his(BeepCnt)
-	lea	a15,[a15]@los(BeepCnt)
-	ld.w	d0,[a15]
-.L83:
-	mov	d15,#100
-.L84:
-	jne	d15,d0,.L2
-.L85:
-	movh.a	a15,#61444
-	ld.bu	d15,[a15]@los(0xf003b700)
-.L86:
-	or	d15,#32
-	movh.a	a15,#61444
-	st.b	[a15]@los(0xf003b700),d15
-.L87:
-	j	.L3
-.L2:
-	movh.a	a15,#@his(BeepCnt)
-	lea	a15,[a15]@los(BeepCnt)
-	ld.w	d15,[a15]
-.L88:
-	jne	d15,#0,.L4
-.L89:
-	movh.a	a15,#61444
-	ld.bu	d15,[a15]@los(0xf003b700)
-.L90:
-	insert	d15,d15,#0,#5,#1
-	movh.a	a15,#61444
-	st.b	[a15]@los(0xf003b700),d15
-.L91:
-	j	.L5
-.L4:
 	call	Gpt12_Run_Gpt1_T3
-.L5:
-.L3:
+.L93:
 	ret
-.L54:
+.L58:
 	
 __Buzzer_On_function_end:
 	.size	Buzzer_On,__Buzzer_On_function_end-Buzzer_On
-.L35:
+.L38:
 	; End of function
 	
 	.sdecl	'.text.Buzzer.Buzzer_Off',code,cluster('Buzzer_Off')
@@ -119,23 +109,30 @@ __Buzzer_On_function_end:
 	
 	.global	Buzzer_Off
 ; Function Buzzer_Off
-.L14:
+.L12:
 Buzzer_Off:	.type	func
 	call	Gpt12_Stop_Gpt1_T3
-.L96:
+.L98:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003b700)
-.L97:
+.L99:
 	insert	d15,d15,#0,#5,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003b700),d15
-.L98:
+.L100:
+	movh.a	a15,#@his(BeepCnt)
+	lea	a15,[a15]@los(BeepCnt)
+.L101:
+	mov	d15,#0
+.L102:
+	st.w	[a15],d15
+.L103:
 	ret
-.L55:
+.L59:
 	
 __Buzzer_Off_function_end:
 	.size	Buzzer_Off,__Buzzer_Off_function_end-Buzzer_Off
-.L40:
+.L43:
 	; End of function
 	
 	.sdecl	'.text.inttab0.intvec.016',code
@@ -149,54 +146,54 @@ __Buzzer_Off_function_end:
 	
 	.global	Buzzer_Gpt1_T3_Handler_Beep
 ; Function Buzzer_Gpt1_T3_Handler_Beep
-.L16:
+.L14:
 Buzzer_Gpt1_T3_Handler_Beep:	.type	func
 	svlcx
-.L103:
+.L108:
 	movh.a	a15,#@his(g_Cnt10us)
 	lea	a15,[a15]@los(g_Cnt10us)
 	movh.a	a12,#@his(g_Cnt10us)
 	lea	a12,[a12]@los(g_Cnt10us)
 	ld.w	d15,[a12]
-.L104:
+.L109:
 	add	d15,#1
 	st.w	[a15],d15
-.L105:
+.L110:
 	movh.a	a15,#@his(g_Cnt10us)
 	lea	a15,[a15]@los(g_Cnt10us)
 	ld.w	d15,[a15]
-.L106:
+.L111:
 	movh.a	a15,#@his(BeepCnt)
 	lea	a15,[a15]@los(BeepCnt)
 	ld.w	d8,[a15]
-.L107:
-	jlt.u	d15,d8,.L6
-.L108:
+.L112:
+	jlt.u	d15,d8,.L2
+.L113:
 	movh.a	a15,#61444
 	ld.bu	d15,[a15]@los(0xf003b700)
 	movh.a	a15,#61444
 	ld.bu	d8,[a15]@los(0xf003b700)
-.L109:
+.L114:
 	extr.u	d8,d8,#5,#1
 	xor	d8,d8,#1
 	insert	d15,d15,d8,#5,#1
 	movh.a	a15,#61444
 	st.b	[a15]@los(0xf003b700),d15
-.L110:
+.L115:
 	movh.a	a15,#@his(g_Cnt10us)
 	lea	a15,[a15]@los(g_Cnt10us)
-.L111:
+.L116:
 	mov	d15,#0
-.L112:
+.L117:
 	st.w	[a15],d15
-.L6:
+.L2:
 	rslcx
 	rfe
-.L56:
+.L60:
 	
 __Buzzer_Gpt1_T3_Handler_Beep_function_end:
 	.size	Buzzer_Gpt1_T3_Handler_Beep,__Buzzer_Gpt1_T3_Handler_Beep_function_end-Buzzer_Gpt1_T3_Handler_Beep
-.L45:
+.L48:
 	; End of function
 	
 	.sdecl	'.data.Buzzer.BeepCnt',data,cluster('BeepCnt')
@@ -215,6 +212,7 @@ g_Cnt10us:	.type	object
 	.calls	'Buzzer_Off','Gpt12_Stop_Gpt1_T3'
 	.calls	'Buzzer_Init','',0
 	.calls	'Buzzer_Set_Cycle_Ms','',0
+	.calls	'Buzzer_Always_On','',0
 	.calls	'Buzzer_On','',0
 	.calls	'Buzzer_Off','',0
 	.extern	Gpt12_Run_Gpt1_T3
@@ -222,18 +220,18 @@ g_Cnt10us:	.type	object
 	.calls	'Buzzer_Gpt1_T3_Handler_Beep','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L18:
+.L16:
 	.word	640859
 	.half	3
-	.word	.L19
+	.word	.L17
 	.byte	4
-.L17:
+.L15:
 	.byte	1
 	.byte	'../BSW/GPIO/Buzzer.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L20
+	.word	.L18
 	.byte	2,1,1,3
 	.word	205
 	.byte	4
@@ -267,10 +265,10 @@ g_Cnt10us:	.type	object
 	.byte	'value',0,2,143,1,43
 	.word	351
 	.byte	6,0
-.L57:
+.L61:
 	.byte	7
 	.byte	'unsigned int',0,4,7
-.L52:
+.L55:
 	.byte	7
 	.byte	'int',0,4,5,7
 	.byte	'unsigned int',0,4,7,10
@@ -92524,13 +92522,13 @@ g_Cnt10us:	.type	object
 	.byte	'IfxStm_SuspendMode_soft',0,2,0,26
 	.byte	'IfxStm_SuspendMode',0,12,137,2,3
 	.word	640744
-.L58:
+.L62:
 	.byte	14
 	.word	469
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L19:
+.L17:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -92542,12 +92540,12 @@ g_Cnt10us:	.type	object
 	.byte	15,11,15,0,0,30,38,0,73,19,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L20:
-	.word	.L60-.L59
-.L59:
+.L18:
+	.word	.L64-.L63
+.L63:
 	.half	3
-	.word	.L62-.L61
-.L61:
+	.word	.L66-.L65
+.L65:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
@@ -92618,396 +92616,437 @@ g_Cnt10us:	.type	object
 	.byte	0,0,0
 	.byte	'C:\\\\Project_Mini\\\\autonomous-skid-steer-vehicle\\\\tc375_fw\\\\src\\\\mypj\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxSrc_cfg.h',0
 	.byte	0,0,0,0
-.L62:
-.L60:
+.L66:
+.L64:
 	.sdecl	'.debug_info',debug,cluster('Buzzer_Init')
 	.sect	'.debug_info'
-.L21:
+.L19:
 	.word	252
 	.half	3
-	.word	.L22
+	.word	.L20
 	.byte	4,1
 	.byte	'../BSW/GPIO/Buzzer.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L24,.L23
+	.word	.L22,.L21
 	.byte	2
-	.word	.L17
+	.word	.L15
 	.byte	3
 	.byte	'Buzzer_Init',0,1,8,6,1,1,1
-	.word	.L8,.L50,.L7
+	.word	.L4,.L53,.L3
 	.byte	4
-	.word	.L8,.L50
+	.word	.L4,.L53
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Buzzer_Init')
 	.sect	'.debug_abbrev'
-.L22:
+.L20:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Buzzer_Init')
 	.sect	'.debug_line'
-.L23:
-	.word	.L64-.L63
-.L63:
+.L21:
+	.word	.L68-.L67
+.L67:
 	.half	3
-	.word	.L66-.L65
-.L65:
+	.word	.L70-.L69
+.L69:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Buzzer.c',0,0,0,0,0
-.L66:
+.L70:
 	.byte	5,23,7,0,5,2
-	.word	.L8
+	.word	.L4
 	.byte	3,9,1,5,30,9
-	.half	.L67-.L8
+	.half	.L71-.L4
 	.byte	1,5,28,9
-	.half	.L68-.L67
+	.half	.L72-.L71
 	.byte	1,5,21,9
-	.half	.L69-.L68
+	.half	.L73-.L72
 	.byte	3,1,1,5,25,9
-	.half	.L70-.L69
+	.half	.L74-.L73
 	.byte	1,5,1,9
-	.half	.L71-.L70
+	.half	.L75-.L74
 	.byte	3,1,1,7,9
-	.half	.L25-.L71
+	.half	.L23-.L75
 	.byte	0,1,1
-.L64:
+.L68:
 	.sdecl	'.debug_ranges',debug,cluster('Buzzer_Init')
 	.sect	'.debug_ranges'
-.L24:
-	.word	-1,.L8,0,.L25-.L8,0,0
+.L22:
+	.word	-1,.L4,0,.L23-.L4,0,0
 	.sdecl	'.debug_info',debug,cluster('Buzzer_Set_Cycle_Ms')
 	.sect	'.debug_info'
-.L26:
+.L24:
 	.word	278
 	.half	3
-	.word	.L27
+	.word	.L25
 	.byte	4,1
 	.byte	'../BSW/GPIO/Buzzer.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L29,.L28
+	.word	.L27,.L26
 	.byte	2
-	.word	.L17
+	.word	.L15
 	.byte	3
-	.byte	'Buzzer_Set_Cycle_Ms',0,1,16,6,1,1,1
-	.word	.L10,.L51,.L9
+	.byte	'Buzzer_Set_Cycle_Ms',0,1,15,6,1,1,1
+	.word	.L6,.L54,.L5
 	.byte	4
-	.byte	'cycle',0,1,16,31
-	.word	.L52,.L53
+	.byte	'cycle',0,1,15,31
+	.word	.L55,.L56
 	.byte	5
-	.word	.L10,.L51
+	.word	.L6,.L54
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Buzzer_Set_Cycle_Ms')
 	.sect	'.debug_abbrev'
-.L27:
+.L25:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Buzzer_Set_Cycle_Ms')
 	.sect	'.debug_line'
-.L28:
-	.word	.L73-.L72
-.L72:
+.L26:
+	.word	.L77-.L76
+.L76:
 	.half	3
-	.word	.L75-.L74
-.L74:
+	.word	.L79-.L78
+.L78:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Buzzer.c',0,0,0,0,0
-.L75:
+.L79:
 	.byte	5,5,7,0,5,2
-	.word	.L10
-	.byte	3,17,1,5,21,9
-	.half	.L76-.L10
+	.word	.L6
+	.byte	3,16,1,5,21,9
+	.half	.L80-.L6
 	.byte	1,5,13,9
-	.half	.L77-.L76
+	.half	.L81-.L80
 	.byte	1,5,1,9
-	.half	.L78-.L77
+	.half	.L82-.L81
 	.byte	3,1,1,7,9
-	.half	.L30-.L78
+	.half	.L28-.L82
 	.byte	0,1,1
-.L73:
+.L77:
 	.sdecl	'.debug_ranges',debug,cluster('Buzzer_Set_Cycle_Ms')
 	.sect	'.debug_ranges'
-.L29:
-	.word	-1,.L10,0,.L30-.L10,0,0
-	.sdecl	'.debug_info',debug,cluster('Buzzer_On')
+.L27:
+	.word	-1,.L6,0,.L28-.L6,0,0
+	.sdecl	'.debug_info',debug,cluster('Buzzer_Always_On')
 	.sect	'.debug_info'
-.L31:
-	.word	250
+.L29:
+	.word	257
 	.half	3
-	.word	.L32
+	.word	.L30
 	.byte	4,1
 	.byte	'../BSW/GPIO/Buzzer.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L34,.L33
+	.word	.L32,.L31
 	.byte	2
-	.word	.L17
+	.word	.L15
 	.byte	3
-	.byte	'Buzzer_On',0,1,21,6,1,1,1
-	.word	.L12,.L54,.L11
+	.byte	'Buzzer_Always_On',0,1,20,6,1,1,1
+	.word	.L8,.L57,.L7
 	.byte	4
-	.word	.L12,.L54
+	.word	.L8,.L57
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Buzzer_Always_On')
+	.sect	'.debug_abbrev'
+.L30:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Buzzer_Always_On')
+	.sect	'.debug_line'
+.L31:
+	.word	.L84-.L83
+.L83:
+	.half	3
+	.word	.L86-.L85
+.L85:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/GPIO/Buzzer.c',0,0,0,0,0
+.L86:
+	.byte	5,21,7,0,5,2
+	.word	.L8
+	.byte	3,21,1,5,25,9
+	.half	.L87-.L8
+	.byte	1,5,1,9
+	.half	.L88-.L87
+	.byte	3,1,1,7,9
+	.half	.L33-.L88
+	.byte	0,1,1
+.L84:
+	.sdecl	'.debug_ranges',debug,cluster('Buzzer_Always_On')
+	.sect	'.debug_ranges'
+.L32:
+	.word	-1,.L8,0,.L33-.L8,0,0
+	.sdecl	'.debug_info',debug,cluster('Buzzer_On')
+	.sect	'.debug_info'
+.L34:
+	.word	250
+	.half	3
+	.word	.L35
+	.byte	4,1
+	.byte	'../BSW/GPIO/Buzzer.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L37,.L36
+	.byte	2
+	.word	.L15
+	.byte	3
+	.byte	'Buzzer_On',0,1,25,6,1,1,1
+	.word	.L10,.L58,.L9
+	.byte	4
+	.word	.L10,.L58
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Buzzer_On')
 	.sect	'.debug_abbrev'
-.L32:
+.L35:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Buzzer_On')
 	.sect	'.debug_line'
-.L33:
-	.word	.L80-.L79
-.L79:
+.L36:
+	.word	.L90-.L89
+.L89:
 	.half	3
-	.word	.L82-.L81
-.L81:
+	.word	.L92-.L91
+.L91:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Buzzer.c',0,0,0,0,0
-.L82:
-	.byte	5,8,7,0,5,2
-	.word	.L12
-	.byte	3,22,1,5,19,9
-	.half	.L83-.L12
-	.byte	1,5,5,9
-	.half	.L84-.L83
-	.byte	1,5,25,7,9
-	.half	.L85-.L84
-	.byte	3,1,1,5,29,9
-	.half	.L86-.L85
-	.byte	1,5,32,9
-	.half	.L87-.L86
-	.byte	1,5,13,9
-	.half	.L2-.L87
-	.byte	3,1,1,5,10,9
-	.half	.L88-.L2
-	.byte	1,5,25,7,9
-	.half	.L89-.L88
-	.byte	3,1,1,5,29,9
-	.half	.L90-.L89
-	.byte	1,5,32,9
-	.half	.L91-.L90
-	.byte	1,5,26,9
-	.half	.L4-.L91
-	.byte	3,2,1,5,1,9
-	.half	.L3-.L4
+.L92:
+	.byte	5,23,7,0,5,2
+	.word	.L10
+	.byte	3,26,1,5,1,9
+	.half	.L93-.L10
 	.byte	3,1,1,7,9
-	.half	.L35-.L3
+	.half	.L38-.L93
 	.byte	0,1,1
-.L80:
+.L90:
 	.sdecl	'.debug_ranges',debug,cluster('Buzzer_On')
 	.sect	'.debug_ranges'
-.L34:
-	.word	-1,.L12,0,.L35-.L12,0,0
+.L37:
+	.word	-1,.L10,0,.L38-.L10,0,0
 	.sdecl	'.debug_info',debug,cluster('Buzzer_Off')
 	.sect	'.debug_info'
-.L36:
+.L39:
 	.word	251
 	.half	3
-	.word	.L37
+	.word	.L40
 	.byte	4,1
 	.byte	'../BSW/GPIO/Buzzer.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L39,.L38
+	.word	.L42,.L41
 	.byte	2
-	.word	.L17
+	.word	.L15
 	.byte	3
-	.byte	'Buzzer_Off',0,1,31,6,1,1,1
-	.word	.L14,.L55,.L13
+	.byte	'Buzzer_Off',0,1,30,6,1,1,1
+	.word	.L12,.L59,.L11
 	.byte	4
-	.word	.L14,.L55
+	.word	.L12,.L59
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Buzzer_Off')
 	.sect	'.debug_abbrev'
-.L37:
+.L40:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Buzzer_Off')
 	.sect	'.debug_line'
-.L38:
-	.word	.L93-.L92
-.L92:
-	.half	3
+.L41:
 	.word	.L95-.L94
 .L94:
+	.half	3
+	.word	.L97-.L96
+.L96:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Buzzer.c',0,0,0,0,0
-.L95:
+.L97:
 	.byte	5,23,7,0,5,2
-	.word	.L14
-	.byte	3,32,1,5,21,9
-	.half	.L96-.L14
+	.word	.L12
+	.byte	3,31,1,5,21,9
+	.half	.L98-.L12
 	.byte	3,1,1,5,25,9
-	.half	.L97-.L96
+	.half	.L99-.L98
+	.byte	1,5,5,9
+	.half	.L100-.L99
+	.byte	3,1,1,5,15,9
+	.half	.L101-.L100
+	.byte	1,5,13,9
+	.half	.L102-.L101
 	.byte	1,5,1,9
-	.half	.L98-.L97
+	.half	.L103-.L102
 	.byte	3,1,1,7,9
-	.half	.L40-.L98
+	.half	.L43-.L103
 	.byte	0,1,1
-.L93:
+.L95:
 	.sdecl	'.debug_ranges',debug,cluster('Buzzer_Off')
 	.sect	'.debug_ranges'
-.L39:
-	.word	-1,.L14,0,.L40-.L14,0,0
+.L42:
+	.word	-1,.L12,0,.L43-.L12,0,0
 	.sdecl	'.debug_info',debug,cluster('Buzzer_Gpt1_T3_Handler_Beep')
 	.sect	'.debug_info'
-.L41:
+.L44:
 	.word	268
 	.half	3
-	.word	.L42
+	.word	.L45
 	.byte	4,1
 	.byte	'../BSW/GPIO/Buzzer.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1
-	.word	.L44,.L43
+	.word	.L47,.L46
 	.byte	2
-	.word	.L17
+	.word	.L15
 	.byte	3
 	.byte	'Buzzer_Gpt1_T3_Handler_Beep',0,1,40,6,1,1,1
-	.word	.L16,.L56,.L15
+	.word	.L14,.L60,.L13
 	.byte	4
-	.word	.L16,.L56
+	.word	.L14,.L60
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Buzzer_Gpt1_T3_Handler_Beep')
 	.sect	'.debug_abbrev'
-.L42:
+.L45:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Buzzer_Gpt1_T3_Handler_Beep')
 	.sect	'.debug_line'
-.L43:
-	.word	.L100-.L99
-.L99:
+.L46:
+	.word	.L105-.L104
+.L104:
 	.half	3
-	.word	.L102-.L101
-.L101:
+	.word	.L107-.L106
+.L106:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../BSW/GPIO/Buzzer.c',0,0,0,0,0
-.L102:
+.L107:
 	.byte	5,6,7,0,5,2
-	.word	.L16
+	.word	.L14
 	.byte	3,39,1,5,5,9
-	.half	.L103-.L16
+	.half	.L108-.L14
 	.byte	3,1,1,5,14,9
-	.half	.L104-.L103
-	.byte	1,5,9,9
-	.half	.L105-.L104
-	.byte	3,1,1,5,22,9
-	.half	.L106-.L105
-	.byte	1,5,5,9
-	.half	.L107-.L106
-	.byte	1,5,25,7,9
-	.half	.L108-.L107
-	.byte	3,1,1,5,29,9
 	.half	.L109-.L108
 	.byte	1,5,9,9
 	.half	.L110-.L109
-	.byte	3,1,1,5,21,9
+	.byte	3,1,1,5,22,9
 	.half	.L111-.L110
-	.byte	1,5,19,9
+	.byte	1,5,5,9
 	.half	.L112-.L111
+	.byte	1,5,25,7,9
+	.half	.L113-.L112
+	.byte	3,1,1,5,29,9
+	.half	.L114-.L113
+	.byte	1,5,9,9
+	.half	.L115-.L114
+	.byte	3,1,1,5,21,9
+	.half	.L116-.L115
+	.byte	1,5,19,9
+	.half	.L117-.L116
 	.byte	1,5,1,9
-	.half	.L6-.L112
+	.half	.L2-.L117
 	.byte	3,2,1,9
-	.half	.L45-.L6
+	.half	.L48-.L2
 	.byte	0,1,1
-.L100:
+.L105:
 	.sdecl	'.debug_ranges',debug,cluster('Buzzer_Gpt1_T3_Handler_Beep')
 	.sect	'.debug_ranges'
-.L44:
-	.word	-1,.L16,0,.L45-.L16,0,0
+.L47:
+	.word	-1,.L14,0,.L48-.L14,0,0
 	.sdecl	'.debug_info',debug,cluster('BeepCnt')
 	.sect	'.debug_info'
-.L46:
+.L49:
 	.word	225
 	.half	3
-	.word	.L47
+	.word	.L50
 	.byte	4,1
 	.byte	'../BSW/GPIO/Buzzer.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1,2
-	.word	.L17
+	.word	.L15
 	.byte	3
 	.byte	'BeepCnt',0,16,14,21
-	.word	.L57
+	.word	.L61
 	.byte	5,3
 	.word	BeepCnt
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('BeepCnt')
 	.sect	'.debug_abbrev'
-.L47:
+.L50:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
 	.sdecl	'.debug_info',debug,cluster('g_Cnt10us')
 	.sect	'.debug_info'
-.L48:
+.L51:
 	.word	227
 	.half	3
-	.word	.L49
+	.word	.L52
 	.byte	4,1
 	.byte	'../BSW/GPIO/Buzzer.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Project_Mini\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\TriCore Debug (TASKING)\\',0,12
 	.byte	1,2
-	.word	.L17
+	.word	.L15
 	.byte	3
 	.byte	'g_Cnt10us',0,16,37,30
-	.word	.L58
+	.word	.L62
 	.byte	5,3
 	.word	g_Cnt10us
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('g_Cnt10us')
 	.sect	'.debug_abbrev'
-.L49:
+.L52:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_loc',debug,cluster('Buzzer_Always_On')
+	.sect	'.debug_loc'
+.L7:
+	.word	-1,.L8,0,.L57-.L8
+	.half	2
+	.byte	138,0
+	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Buzzer_Gpt1_T3_Handler_Beep')
 	.sect	'.debug_loc'
-.L15:
-	.word	-1,.L16,0,.L56-.L16
+.L13:
+	.word	-1,.L14,0,.L60-.L14
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Buzzer_Init')
 	.sect	'.debug_loc'
-.L7:
-	.word	-1,.L8,0,.L50-.L8
+.L3:
+	.word	-1,.L4,0,.L53-.L4
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Buzzer_Off')
 	.sect	'.debug_loc'
-.L13:
-	.word	-1,.L14,0,.L55-.L14
+.L11:
+	.word	-1,.L12,0,.L59-.L12
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Buzzer_On')
 	.sect	'.debug_loc'
-.L11:
-	.word	-1,.L12,0,.L54-.L12
+.L9:
+	.word	-1,.L10,0,.L58-.L10
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Buzzer_Set_Cycle_Ms')
 	.sect	'.debug_loc'
-.L9:
-	.word	-1,.L10,0,.L51-.L10
+.L5:
+	.word	-1,.L6,0,.L54-.L6
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L53:
-	.word	-1,.L10,0,.L51-.L10
+.L56:
+	.word	-1,.L6,0,.L54-.L6
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L113:
+.L118:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -93015,23 +93054,28 @@ g_Cnt10us:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('Buzzer_Init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L113,.L8,.L50-.L8
+	.word	.L118,.L4,.L53-.L4
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Buzzer_Set_Cycle_Ms')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L113,.L10,.L51-.L10
+	.word	.L118,.L6,.L54-.L6
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Buzzer_Always_On')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L118,.L8,.L57-.L8
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Buzzer_On')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L113,.L12,.L54-.L12
+	.word	.L118,.L10,.L58-.L10
 	.sdecl	'.debug_frame',debug,cluster('Buzzer_Off')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L113,.L14,.L55-.L14
+	.word	.L118,.L12,.L59-.L12
 	.sdecl	'.debug_frame',debug,cluster('Buzzer_Gpt1_T3_Handler_Beep')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L113,.L16,.L56-.L16
+	.word	.L118,.L14,.L60-.L14
 	; Module end

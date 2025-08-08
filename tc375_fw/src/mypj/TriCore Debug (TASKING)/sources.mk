@@ -32,7 +32,6 @@ BSW/GPIO \
 BSW/GPT12 \
 BSW/GTM_ATOM_PWM \
 BSW/MOTOR \
-BSW/PID \
 BSW/STM \
 BSW/ULTRASONIC \
 Configurations/Debug \
@@ -56,5 +55,4 @@ Libraries/iLLD/TC37A/Tricore/Src/Std \
 Libraries/iLLD/TC37A/Tricore/Stm/Std \
 Libraries/iLLD/TC37A/Tricore/_Impl \
 Libraries/iLLD/TC37A/Tricore/_PinMap \
-MATLAB \
 

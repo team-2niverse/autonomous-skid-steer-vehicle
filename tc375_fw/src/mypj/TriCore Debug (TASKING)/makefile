@@ -8,7 +8,6 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include MATLAB/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/_PinMap/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/_Impl/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Stm/Std/subdir.mk
@@ -31,7 +30,6 @@ RM := rm -rf
 -include Configurations/subdir.mk
 -include BSW/ULTRASONIC/subdir.mk
 -include BSW/STM/subdir.mk
--include BSW/PID/subdir.mk
 -include BSW/MOTOR/subdir.mk
 -include BSW/GTM_ATOM_PWM/subdir.mk
 -include BSW/GPT12/subdir.mk
