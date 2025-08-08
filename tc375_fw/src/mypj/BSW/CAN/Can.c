@@ -254,6 +254,8 @@ void Can_Rx_Isr_Handler (void)
     /* 모드 여부 (컨트롤러 버튼) */
     else if (rxID == 0x102) {
         if (rxData[2]) {
+            if (aeb == 1)
+                return;
             if (parking)
                 parking = 0;
             else
