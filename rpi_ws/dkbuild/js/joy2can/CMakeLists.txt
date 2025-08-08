@@ -18,8 +18,12 @@ find_package(can_msgs REQUIRED)
 add_executable(joy2can_node src/joy2can_node.cpp)
 ament_target_dependencies(joy2can_node rclcpp std_msgs sensor_msgs can_msgs)
 
+add_executable(can2rpm_node src/can2rpm_node.cpp)
+ament_target_dependencies(can2rpm_node rclcpp std_msgs can_msgs)
+
 install(TARGETS
 	joy2can_node
+	can2rpm_node
 	DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY
