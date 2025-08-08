@@ -44,7 +44,7 @@ void Parking_On (void)
                     space_duration_us = end_time - start_time;
                     measuring_space = 0;
 
-                    if (space_duration_us >= 400000)  // 0.5초 이상 빈 공간이면
+                    if (space_duration_us >= 400000)  // 0.4초 이상 빈 공간이면
                     {
                         Motor_Stop_Left();
                         Motor_Stop_Right();
