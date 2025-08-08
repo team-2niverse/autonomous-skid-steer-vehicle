@@ -222,7 +222,6 @@ void Can_Rx_Isr_Handler (void)
     /* TOF Sensor + AEB */
     if (rxID == 522) {
         unsigned int tofVal = rxData[2] << 16 | rxData[1] << 8 | rxData[0];
-        uint8 dis_status = rxData[3];
         uint16 signal_strength =  rxData[5] << 8 | rxData[4];
 
         if (parking == 1) //주차 모드 중에는 작동하지 않음
