@@ -8,4 +8,17 @@
 
 #include "Sys_Init.h"
 
+#include "geth_lwip.h"
+
+/* Includes ETH, TCP/IP examples */
+#include "IfxGeth_Eth.h"
+#include "Ifx_Lwip.h"
+#include "Configuration.h"
+#include "ConfigurationIsr.h"
+#include "can-ethernet.h"
+#include "DoIP.h"
+#include "someip.h"
+#include "tcp_echo.h"
+#include "udp_echo.h"
+
 #endif /* CPU0_MAIN_H_ */

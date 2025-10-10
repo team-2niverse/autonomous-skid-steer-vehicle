@@ -8,7 +8,6 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include MATLAB/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/_PinMap/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/_Impl/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Stm/Std/subdir.mk
@@ -19,6 +18,10 @@ RM := rm -rf
 -include Libraries/iLLD/TC37A/Tricore/Mtu/Std/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Gtm/Std/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Gtm/Atom/Pwm/subdir.mk
+-include Libraries/iLLD/TC37A/Tricore/Geth/Std/subdir.mk
+-include Libraries/iLLD/TC37A/Tricore/Geth/Eth/subdir.mk
+-include Libraries/iLLD/TC37A/Tricore/Evadc/Std/subdir.mk
+-include Libraries/iLLD/TC37A/Tricore/Evadc/Adc/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Cpu/Trap/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Cpu/Std/subdir.mk
 -include Libraries/iLLD/TC37A/Tricore/Cpu/Irq/subdir.mk
@@ -27,29 +30,47 @@ RM := rm -rf
 -include Libraries/Service/CpuGeneric/SysSe/Bsp/subdir.mk
 -include Libraries/Infra/Ssw/TC37A/Tricore/subdir.mk
 -include Libraries/Infra/Platform/Tricore/Compilers/subdir.mk
--include Configurations/Debug/subdir.mk
+-include Libraries/Ethernet/lwip/src/netif/ppp/polarssl/subdir.mk
+-include Libraries/Ethernet/lwip/src/netif/ppp/subdir.mk
+-include Libraries/Ethernet/lwip/src/netif/subdir.mk
+-include Libraries/Ethernet/lwip/src/core/ipv6/subdir.mk
+-include Libraries/Ethernet/lwip/src/core/ipv4/subdir.mk
+-include Libraries/Ethernet/lwip/src/core/subdir.mk
+-include Libraries/Ethernet/lwip/src/api/subdir.mk
+-include Libraries/Ethernet/lwip/port/src/subdir.mk
+-include Libraries/Ethernet/Phy_Dp83825i/subdir.mk
 -include Configurations/subdir.mk
 -include BSW/ULTRASONIC/subdir.mk
 -include BSW/STM/subdir.mk
--include BSW/PID/subdir.mk
 -include BSW/MOTOR/subdir.mk
 -include BSW/GTM_ATOM_PWM/subdir.mk
 -include BSW/GPT12/subdir.mk
 -include BSW/GPIO/subdir.mk
+-include BSW/ETHERNET/subdir.mk
 -include BSW/ENCODER/subdir.mk
 -include BSW/CAN/subdir.mk
 -include BSW/ASCLIN/subdir.mk
+-include ASW/SOMEIP/subdir.mk
 -include ASW/PARKING/subdir.mk
 -include subdir.mk
 ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C++M_DEPS)),)
+-include $(C++M_DEPS)
+endif
 ifneq ($(strip $(C++_DEPS)),)
 -include $(C++_DEPS)
+endif
+ifneq ($(strip $(CCM_DEPS)),)
+-include $(CCM_DEPS)
 endif
 ifneq ($(strip $(CC_DEPS)),)
 -include $(CC_DEPS)
 endif
 ifneq ($(strip $(CPP_DEPS)),)
 -include $(CPP_DEPS)
+endif
+ifneq ($(strip $(CXXM_DEPS)),)
+-include $(CXXM_DEPS)
 endif
 ifneq ($(strip $(CXX_DEPS)),)
 -include $(CXX_DEPS)
@@ -87,12 +108,17 @@ all: main-build
 main-build: combine.elf secondary-outputs
 
 # Tool invocations
-combine.elf: $(OBJS) makefile $(OPTIONAL_TOOL_DEPS)
+combine.elf: $(OBJS) makefile $(OPTIONAL_TOOL_DEPS) .combine.elf.opt
 	@echo 'Building target: $@'
 	@echo 'Invoking: TASKING Linker'
-	cctc --lsl-file="../Lcf_Tasking_Tricore_Tc.lsl" -Wl-Oc -Wl-OL -Wl-Ot -Wl-Ox -Wl-Oy -Wl--map-file="combine.map" -Wl-mc -Wl-mf -Wl-mi -Wl-mk -Wl-ml -Wl-mm -Wl-md -Wl-mr -Wl-mu --no-warnings= -Wl--error-limit=42 --fp-model=3 -lrt --lsl-core=vtc --exceptions --strict --anachronisms --force-c++ -Ctc37x -o"combine.elf" -Wl-o"combine.hex:IHEX" $(OBJS)
+	cctc -f .combine.elf.opt
 	@echo 'Finished building target: $@'
 	@echo ' '
+
+.combine.elf.opt:
+	@argfile .combine.elf.opt --lsl-file="../Lcf_Tasking_Tricore_Tc.lsl" -Wl-Oc -Wl-OL -Wl-Ot -Wl-Ox -Wl-Oy -Wl--map-file="combine.map" -Wl-mc -Wl-mf -Wl-mi -Wl-mk -Wl-ml -Wl-mm -Wl-md -Wl-mr -Wl-mu --no-warnings= -Wl--error-limit=42 --fp-model=3 -lrt --lsl-core=vtc --exceptions --strict --anachronisms --force-c++ -Ctc37x -o"combine.elf" -Wl-o"combine.hex:IHEX" $(OBJS)
+
+.PHONY: .combine.elf.opt
 
 combine.siz: combine.elf makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Invoking: Print Size'

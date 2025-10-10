@@ -1,0 +1,26 @@
+62   INFO  [main] Log5J : ***  90.3965  ***  **********************************************************
+65   INFO  [main] Log5J : ***  93.4383  ***  Logger configuration successful. Configuration file used: 
+65   INFO  [main] Log5J : ***  93.7098  ***  C:\Infineon\AURIX-Studio-1.10.16\configuration\org.eclipse.osgi\397\0\.cp\lib\log4j.properties
+66   INFO  [main] Log5J : ***  94.2683  ***  **********************************************************
+134  INFO  [main] ISysProductFactory : ***  162.8274  ***  Found product: Name: com.infineon.aurix.buildsystem.aurixide, winIDEA package: winIDEA_IFX_ADS
+141  INFO  [main] CmdRunner : Running: 'C:\Users\USER\AppData\Local\iSYSTEM\b18\PackageManager.exe init --afr-path="C:\Infineon\AURIX-Studio-1.10.16\local_AFR" --owner="C:\Infineon\AURIX-Studio-1.10.16\AURIX-studio.exe"'
+1470 INFO  [main] CmdRunner : Operation finished in 1329ms Return code: 0
+1470 INFO  [main] CmdRunner : Output: >>><<<
+1471 INFO  [main] WinIdeaUpdateManager : WinIdeaUpdateManager: initialization:
+1471 INFO  [main] WinIdeaUpdateManager :  - Product folder: C:\Infineon\AURIX-Studio-1.10.16
+1471 INFO  [main] WinIdeaUpdateManager :  - Product exe (owner): C:\Infineon\AURIX-Studio-1.10.16\AURIX-studio.exe
+1472 INFO  [main] WinIdeaUpdateManager :  - Package manager: C:\Users\USER\AppData\Local\iSYSTEM\b18\PackageManager.exe
+1473 INFO  [main] WinIdeaUpdateManager :  - Local AFR: C:\Infineon\AURIX-Studio-1.10.16\local_AFR
+1473 INFO  [main] WinIdeaUpdateManager :  - Update channel: Production
+1475 INFO  [main] ISysPluginConfiguration : ***  1504.0108  ***  Loading debug plugin properties from 'C:\Infineon\AURIX-Studio-1.10.16\isys_debugger_configuration.json'
+1480 INFO  [main] ISysPluginConfiguration : ***  1508.7779  ***  Loaded plugin configuration:
+	 - Enable embedded: false
+	 - Enable portable false
+	 - Default selection: Custom
+	 - Default install path: '\winIDEA'
+1481 INFO  [main] ISystemPreferences : ***  1509.7121  ***  State location loaded at C:\Users\USER\Desktop\workspace_all\project2\autonomous-skid-steer-vehicle\tc375_fw\.metadata\.plugins\si.isystem.eclipse.debug
+1504 INFO  [main] ISystemPreferences : ***  1533.0416  ***  Preferences loaded: Install type: Custom, Custom path: '\winIDEA'
+1509 INFO  [main] ISysDebugPlugin : ***  1537.9914  ***  Starting Plugin si.isystem.eclipse.debug version 921.33400.216241.
+1511 INFO  [main] ISysDebugPlugin : ***  1539.8551  ***  Plugin si.isystem.eclipse.debug started.
+189709 INFO  [Framework stop - Equinox Container: b36d55ae-0629-449f-b2a0-e71bb608321b] ISysDebugPlugin : ***  189737.1061  ***  Stopping Plugin si.isystem.eclipse.debug
+189762 INFO  [Framework stop - Equinox Container: b36d55ae-0629-449f-b2a0-e71bb608321b] ISysDebugPlugin : ***  189790.6675  ***  Plugin si.isystem.eclipse.debug stopped.

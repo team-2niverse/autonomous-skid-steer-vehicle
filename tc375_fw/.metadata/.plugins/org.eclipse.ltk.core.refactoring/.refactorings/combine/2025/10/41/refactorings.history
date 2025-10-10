@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;combine/BSW/Ethernet&apos; to &apos;ETHERNET&apos;" description="Rename resource &apos;Ethernet&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="BSW/Ethernet" name="ETHERNET" stamp="1760078834173" updateReferences="true"/>
+</session>
