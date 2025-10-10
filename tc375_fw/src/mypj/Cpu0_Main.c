@@ -4,6 +4,7 @@
  * Boost Software License - Version 1.0 - August 17th, 2003
  *********************************************************************************************************************/
 #include "Cpu0_Main.h"
+#include "someip.h"
 
 void core0_main(void)
 {
@@ -29,10 +30,12 @@ void core0_main(void)
     DoIP_Init();
     SOMEIP_Init();
     SOMEIPSD_Init();
+    SomeIp_Init_10ms_Interrupt();
     while (1)
     {
         Ifx_Lwip_pollTimerFlags(); /* Poll LwIP timers and trigger protocols execution if required */
         Ifx_Lwip_pollReceiveFlags(); /* Receive data package through ETH */
+        SOMEIP_Periodic_Event_Trigger();
     } /* End of while */
 
 

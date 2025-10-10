@@ -11,8 +11,12 @@
 
 #define CPU_CLOCK_MHZ 100
 
+
+
 uint64 Stm_Get_Tick(void);
+
 uint64 Stm_Get_Time_Us(void);
+
 uint64 Stm_Get_Time_Ms(void);
 
 #endif /* STM_H_ */

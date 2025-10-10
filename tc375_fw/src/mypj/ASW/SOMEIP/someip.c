@@ -9,6 +9,38 @@
 #include <string.h>
 #include "Ifx_Lwip.h"
 
+#define MAX_SUBSCRIBERS 10
+#define SOMEIP_EVENT_ID_COUNTER 0x8001
+
+Subscriber g_subscribers[MAX_SUBSCRIBERS];
+int g_subscriber_count = 0;
+
+#include "IfxStm.h"
+#include "Isr_Priority.h"
+
+volatile boolean g_10ms_event_flag = FALSE;
+
+IFX_INTERRUPT(ISR_SomeIp_10ms, 0, ISR_PRIORITY_STM_10MS);
+
+void ISR_SomeIp_10ms(void)
+{
+    IfxStm_clearCompareFlag(&MODULE_STM0, IfxStm_Comparator_0);
+    g_10ms_event_flag = TRUE;
+}
+
+void SomeIp_Init_10ms_Interrupt(void)
+{
+    IfxStm_CompareConfig stmCompareConfig;
+    IfxStm_initCompareConfig(&stmCompareConfig, &MODULE_STM0);
+
+    stmCompareConfig.triggerPriority = ISR_PRIORITY_STM_10MS;
+    stmCompareConfig.typeOfService = IfxSrc_Tos_cpu0;
+    stmCompareConfig.comparator = IfxStm_Comparator_0;
+    stmCompareConfig.ticks = 1000000; // 10ms
+    
+    IfxStm_initCompare(&MODULE_STM0, &stmCompareConfig);
+}
+
 #if LWIP_UDP
 
 struct udp_pcb *g_SOMEIPSD_PCB;
@@ -193,7 +225,30 @@ void SOMEIPSD_Recv_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, con
 			if (SD_Type == 0x00) {
 				SOMEIPSD_SendOfferService(a, b, c, d);
 			} else if (SD_Type == 0x06) {
+				// First, send acknowledgment
 				SOMEIPSD_SendSubEvtGrpAck(a, b, c, d);
+
+				// Then, add client to subscriber list
+				if (g_subscriber_count < MAX_SUBSCRIBERS)
+				{
+					boolean found = FALSE;
+					for (int i = 0; i < g_subscriber_count; i++)
+					{
+						if (g_subscribers[i].port == port && ip_addr_cmp(&g_subscribers[i].addr, addr))
+						{
+							found = TRUE;
+							break;
+						}
+					}
+
+					if (!found)
+					{
+						g_subscribers[g_subscriber_count].addr = *addr;
+						g_subscribers[g_subscriber_count].port = port;
+						g_subscriber_count++;
+						my_printf("New subscriber added. Total: %d\n", g_subscriber_count);
+					}
+				}
 			}
 		}
 		pbuf_free(p);
@@ -262,6 +317,54 @@ void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_a
 		}
 		pbuf_free(p);
 	}
+}
+
+void SOMEIP_SendEvent(void)
+{
+    static uint32 event_counter = 0;
+    event_counter++;
+
+    // 1. Construct SOME/IP Event Message
+    uint8 event_msg[] = {
+        0x01, 0x00,                         // Service ID: 0x0100
+        (uint8)(SOMEIP_EVENT_ID_COUNTER >> 8), (uint8)(SOMEIP_EVENT_ID_COUNTER & 0xFF), // Method ID (Event): 0x8001
+        0x00, 0x00, 0x00, 0x0C,             // Length: 12 bytes (8 header + 4 payload)
+        0x00, 0x00, 0x00, 0x00,             // Request ID: Not relevant for notifications
+        0x01,                               // Protocol Version
+        0x01,                               // Interface Version
+        0x02,                               // Message Type: NOTIFICATION
+        0x00,                               // Return Code
+        // Payload
+        (uint8)(event_counter >> 24),
+        (uint8)(event_counter >> 16),
+        (uint8)(event_counter >> 8),
+        (uint8)(event_counter & 0xFF)
+    };
+
+    // 2. Send to all subscribers
+    for (int i = 0; i < g_subscriber_count; i++)
+    {
+        struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(event_msg), PBUF_RAM);
+        if (txbuf != NULL)
+        {
+            pbuf_take(txbuf, event_msg, sizeof(event_msg));
+            udp_sendto(g_SOMEIPSERVICE_PCB, txbuf, &g_subscribers[i].addr, g_subscribers[i].port);
+            pbuf_free(txbuf);
+        }
+    }
+    my_printf("Sent event notification with counter: %u\n", event_counter);
+}
+
+void SOMEIP_Periodic_Event_Trigger(void)
+{
+    if (g_10ms_event_flag == TRUE)
+    {
+        g_10ms_event_flag = FALSE; // 플래그 리셋
+        if (g_subscriber_count > 0)
+        {
+            SOMEIP_SendEvent();
+        }
+    }
 }
 
 #endif /* LWIP_UDP */

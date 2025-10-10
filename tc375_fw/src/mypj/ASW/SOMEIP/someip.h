@@ -1,10 +1,7 @@
 #ifndef _SOMEIP_RAW_UDP_SOMEIP_H_
 #define _SOMEIP_RAW_UDP_SOMEIP_H_
 
-void SOMEIPSD_Init(void);
-void SOMEIP_Init(void);
-void SOMEIPSD_SendSubEvtGrpAck(unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d);
-void SOMEIPSD_SendOfferService(unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d);
+#include "lwip/ip_addr.h" // ip_addr_t 타입을 위해 추가
 
 /* Subscriber structure */
 typedef struct {
@@ -12,8 +9,16 @@ typedef struct {
     uint16 port;
 } Subscriber;
 
-/* Function declaration for sending events */
+void SOMEIPSD_Init(void);
+void SOMEIP_Init(void);
+void SOMEIPSD_SendOfferService(unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d);
+void SOMEIPSD_SendSubEvtGrpAck(unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d);
+
+/* Functions for Event/Notification */
 void SOMEIP_SendEvent(void);
+void SOMEIP_Periodic_Event_Trigger(void);
+void SomeIp_Init_10ms_Interrupt(void); // 타이머 초기화 함수 선언 추가
 
+extern volatile boolean g_10ms_event_flag; // 10ms 플래그 변수 선언 추가
 
-#endif /* 0_SRC_0_APPSW_TRICORE_ETHERNET_APPS_SOMEIP_RAW_UDP_SOMEIP_H_ */
+#endif /* _SOMEIP_RAW_UDP_SOMEIP_H_ */
