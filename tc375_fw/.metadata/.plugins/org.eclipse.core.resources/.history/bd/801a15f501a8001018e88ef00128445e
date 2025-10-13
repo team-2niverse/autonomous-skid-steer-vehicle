@@ -221,10 +221,10 @@ void SOMEIPSD_Recv_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, con
 		if (ServiceID == 0xFFFFU && MethodID == 0x8100U)
 		{
 		    SD_Type = *(((uint8*)p->payload) + 24);
-			if (SD_Type == 0x06) { //00
+			if (SD_Type == 0x00) {
 				SOMEIPSD_SendOfferService(a, b, c, d);
 			}
-			else if (SD_Type == 0x00) {//06
+			else if (SD_Type == 0x06) {
 				// First, send acknowledgment
 				SOMEIPSD_SendSubEvtGrpAck(a, b, c, d);
 

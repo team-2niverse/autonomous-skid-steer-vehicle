@@ -4294,3 +4294,9 @@ java.io.FileNotFoundException: C:\Users\USER\ADSDocuments\1.10.16\tc4-hardware.j
 
 !ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-13 15:39:49.781
 !MESSAGE Include paths were discovered in 41 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-13 15:58:04.446
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1823 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-13 15:58:04.480
+!MESSAGE Include paths were discovered in 31 milliseconds.
