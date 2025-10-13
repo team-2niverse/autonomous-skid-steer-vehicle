@@ -80,3 +80,15 @@ Ultrasonic.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-sk
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxDmu_regdef.h" :
 Ultrasonic.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\ISR\Isr_Priority.h"
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\ISR\Isr_Priority.h" :
+Ultrasonic.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\\Stm\\Std\IfxStm.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\\Stm\\Std\IfxStm.h" :
+Ultrasonic.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxStm_cfg.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxStm_cfg.h" :
+Ultrasonic.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\Src\Std\IfxSrc.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\Src\Std\IfxSrc.h" :
+Ultrasonic.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxSrc_cfg.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxSrc_cfg.h" :
+Ultrasonic.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCbs_reg.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCbs_reg.h" :
+Ultrasonic.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCbs_regdef.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCbs_regdef.h" :

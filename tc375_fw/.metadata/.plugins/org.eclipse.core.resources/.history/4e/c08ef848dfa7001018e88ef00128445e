@@ -1,0 +1,57 @@
+/**********************************************************************************************************************
+ * file Cpu0_Main.c
+ * copyright Copyright (C) Infineon Technologies AG 2019
+ * Boost Software License - Version 1.0 - August 17th, 2003
+ *********************************************************************************************************************/
+#include "Cpu0_Main.h"
+#include "someip.h"
+
+void core0_main(void)
+{
+    System_Init();
+
+//    /* Define a MAC Address */ //due to test board, it doesn't have MAC Address, so we just defined it.
+//    eth_addr_t ethAddr = {
+//            .addr[0] = 0x00,
+//            .addr[1] = 0x00,
+//            .addr[2] = 0x0c,
+//            .addr[3] = 0x11,
+//            .addr[4] = 0x11,
+//            .addr[5] = 0x11   };
+//
+//    initLwip(ethAddr); /* Initialize LwIP with the MAC address */
+//
+//    uint8 dstAddr[6] = {0xff,0xff,0xff,0xff,0xff,0xff};
+//    uint8 data[39] = "Hyundai NGV Mobility Embedded SW School";
+//    geth_sendETH(dstAddr, data, 39);
+//
+//    UdpEchoInit();
+//    TcpEchoInit();
+//    DoIP_Init();
+//    SOMEIP_Init();
+//    SOMEIPSD_Init();
+    //SomeIp_Init_100ms_Interrupt();
+    while (1)
+    {
+        Ifx_Lwip_pollTimerFlags(); /* Poll LwIP timers and trigger protocols execution if required */
+        Ifx_Lwip_pollReceiveFlags(); /* Receive data package through ETH */
+        SOMEIP_Periodic_Event_Trigger();
+    } /* End of while */
+
+
+
+//    volatile int parking_flag = 0;
+//
+//    while(1)
+//    {
+//        parking_flag = Can_Get_Parking();
+//
+//        if (parking_flag == 1)
+//        {
+//            Parking_On();
+//
+//            parking_flag = 0;
+//            Can_Let_Parking(parking_flag);
+//        }
+//    }
+}

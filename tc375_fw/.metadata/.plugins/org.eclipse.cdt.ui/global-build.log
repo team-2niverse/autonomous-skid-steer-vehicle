@@ -1,5 +1,5 @@
 Build started...
-11:17:30 **** Incremental Build of configuration TriCore Debug (TASKING) for project combine ****
+15:14:56 **** Incremental Build of configuration TriCore Debug (TASKING) for project combine ****
 amk -j12 all 
 TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
 cctc -cs --dep-file="Cpu0_Main.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "Cpu0_Main.src" "../Cpu0_Main.c"
@@ -12,7 +12,7 @@ Finished building target: combine.elf
 Invoking: Print Size
 elfsize  "combine.elf"
 Total sizes:
-ROM: 0x1f8a9 (129193) = code: 0x186ac (100012) + romdata: 0x71fd (29181)
-RAM: 0x1d3da (119770) = data + bss
+ROM: 0x1f5d9 (128473) = code: 0x18436 (99382) + romdata: 0x71a3 (29091)
+RAM: 0x1d3d6 (119766) = data + bss
 Finished building: combine.siz
  

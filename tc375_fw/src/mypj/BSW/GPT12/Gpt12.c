@@ -12,23 +12,36 @@ void Gpt12_Gpt1_Init(void){
     MODULE_GPT120.CLC.U = 0; //DISR enable설정
     IfxScuWdt_setCpuEndinit(IfxScuWdt_getGlobalEndinitPassword());
 
-    //T3 Timer
+    //T3 Timer (for Buzzer)
     MODULE_GPT120.T3CON.B.T3M = 0x0; //set timer mode
     MODULE_GPT120.T3CON.B.T3I = 0x0; //prescaler 4
     MODULE_GPT120.T3CON.B.BPS1 = 0x1;
     MODULE_GPT120.T3CON.B.T3UD = 0x1; //direction : count down
-    MODULE_GPT120.T3.U = 250u; //25MHz이므로 10us마다 발생할 것.
+    MODULE_GPT120.T3.U = 250u; //25MHz -> 10us interrupt
 
-    //T2 Timer
+    //T2 Timer (for Buzzer)
     MODULE_GPT120.T2CON.B.T2M = 0x4; //set reload mode. //Part2M, p30-15
     MODULE_GPT120.T2CON.B.T2I = 0x7; //reload input mode ; Any(rising/falling) edge T3OTL; Table220
     MODULE_GPT120.T2.U = 250u;
 
+    //T4 Timer (for LwIP)
+    MODULE_GPT120.T4CON.B.T4M = 0x0; //set timer mode
+    MODULE_GPT120.T4CON.B.T4I = 0x0; //prescaler 4
+    MODULE_GPT120.T4CON.B.T4UD = 0x1; //direction : count down
+    MODULE_GPT120.T4.U = 25000u; //25MHz -> 1ms interrupt
+
     /* Interrupt Initialization */
+    // T3 Interrupt (Buzzer)
     MODULE_SRC.GPT12.GPT12[0].T3.B.SRPN = ISR_PRIORITY_GPT1T3_TIMER; //interrupt priority set
     MODULE_SRC.GPT12.GPT12[0].T3.B.CLRR = 1; //clear request
     MODULE_SRC.GPT12.GPT12[0].T3.B.TOS = 0; //cpu1 (from part1 M p16-5)
     MODULE_SRC.GPT12.GPT12[0].T3.B.SRE = 1; //interrupt enable
+
+    // T4 Interrupt (LwIP)
+    MODULE_SRC.GPT12.GPT12[0].T4.B.SRPN = ISR_PRIORITY_GPT1T4_TIMER; //interrupt priority set
+    MODULE_SRC.GPT12.GPT12[0].T4.B.CLRR = 1; //clear request
+    MODULE_SRC.GPT12.GPT12[0].T4.B.TOS = 0;
+    MODULE_SRC.GPT12.GPT12[0].T4.B.SRE = 1; //interrupt enable
 }
 
 void Gpt12_Run_Gpt1_T3(void){
@@ -37,6 +50,11 @@ void Gpt12_Run_Gpt1_T3(void){
 }
 void Gpt12_Stop_Gpt1_T3(void){
     MODULE_GPT120.T3CON.B.T3R = 0;
+}
+
+void Gpt12_Run_Gpt1_T4(void){
+    MODULE_GPT120.T4.U =  25000u;
+    MODULE_GPT120.T4CON.B.T4R = 1;
 }
 
 /* LED */

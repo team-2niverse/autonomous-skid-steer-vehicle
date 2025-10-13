@@ -23,5 +23,7 @@ void Gpt12_Run_Gpt1_T3(void);
 void Gpt12_Stop_Gpt1_T3(void);
 void Gpt12_Run_Gpt2_T6(void);
 void Gpt12_Stop_Gpt2_T6(void);
+void Gpt12_Run_Gpt1_T4(void);
+
 
 #endif /* GPT12_H_ */

@@ -83,7 +83,7 @@ void Ultrasonic_Echo_Init(void) {
 
     IfxScuWdt_setSafetyEndinitInline(pw);
 }
-
+#include "IfxStm.h"
 void Ultrasonic_Stm_Init_10us(void) {
     MODULE_STM0.CMCON.B.MSIZE0 = 31;
     MODULE_STM0.CMCON.B.MSTART0 = 0;
@@ -118,6 +118,8 @@ void Ultrasonic_Stm0_Isr_Handler(void) {
         MODULE_P10.OUT.B.P4 = 1;    // Back trig on
         stm0_cnt = 0;
     }
+//    IfxStm_clearCompareFlag(&MODULE_STM0, IfxStm_Comparator_1);
+//    MODULE_SRC.STM.STM[0].SR[1].B.CLRR = 1;
 }
 
 void Ultrasonic_Eru2_Isr_Handler(void) {
