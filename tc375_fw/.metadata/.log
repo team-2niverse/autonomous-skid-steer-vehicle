@@ -4019,3 +4019,9 @@ java.lang.IllegalArgumentException: Path must include project and resource name:
 
 !ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-10 20:20:26.371
 !MESSAGE Include paths were discovered in 86 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-13 10:42:37.958
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1636 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-13 10:42:38.003
+!MESSAGE Include paths were discovered in 41 milliseconds.

@@ -19,6 +19,6 @@ void SOMEIP_SendEvent(void);
 void SOMEIP_Periodic_Event_Trigger(void);
 void SomeIp_Init_100ms_Interrupt(void); // 타이머 초기화 함수 선언 추가
 
-extern volatile boolean g_100ms_event_flag; // 10ms 플래그 변수 선언 추가
+extern volatile boolean g_10ms_event_flag; // 10ms 플래그 변수 선언 추가
 
 #endif /* _SOMEIP_RAW_UDP_SOMEIP_H_ */

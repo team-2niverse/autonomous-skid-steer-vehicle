@@ -361,9 +361,9 @@ void SOMEIP_SendEvent(void)
 
 void SOMEIP_Periodic_Event_Trigger(void)
 {
-    if (g_100ms_event_flag == TRUE)
+    if (g_10ms_event_flag == TRUE)
     {
-        g_100ms_event_flag = FALSE; // 플래그 리셋
+        g_10ms_event_flag = FALSE; // 플래그 리셋
         if (g_subscriber_count > 0)
         {
             SOMEIP_SendEvent();

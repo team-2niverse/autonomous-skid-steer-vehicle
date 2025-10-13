@@ -18,31 +18,27 @@ int g_subscriber_count = 0;
 #include "IfxStm.h"
 #include "Isr_Priority.h"
 
-volatile boolean g_100ms_event_flag = FALSE;
+volatile boolean g_10ms_event_flag = FALSE;
 
 IFX_INTERRUPT(ISR_SomeIp_10ms, 0, ISR_PRIORITY_STM_10MS);
-void ISR_SomeIp_100ms(void)
+
+void ISR_SomeIp_10ms(void)
 {
-//    IfxStm_clearCompareFlag(&MODULE_STM0, IfxStm_Comparator_0);
-    MODULE_STM0.CMP[1].U = (unsigned int)((MODULE_STM0.TIM0.U | ((uint64)MODULE_STM0.CAP.U << 32)) + 100000*CPU_CLOCK_MHZ);
-    g_100ms_event_flag = TRUE;
+    IfxStm_clearCompareFlag(&MODULE_STM0, IfxStm_Comparator_0);
+    g_10ms_event_flag = TRUE;
 }
 
-void SomeIp_Init_100ms_Interrupt(void)
+void SomeIp_Init_10ms_Interrupt(void)
 {
-    MODULE_STM0.CMCON.B.MSIZE1 = 31;
-    MODULE_STM0.CMCON.B.MSTART1 = 0;
-    MODULE_STM0.ICR.B.CMP1OS = 0;
+    IfxStm_CompareConfig stmCompareConfig;
+    IfxStm_initCompareConfig(&stmCompareConfig, &MODULE_STM0);
 
-    MODULE_SRC.STM.STM[0].SR[1].B.TOS = 0;
-    MODULE_SRC.STM.STM[0].SR[1].B.SRPN = ISR_PRIORITY_STM0;
-    MODULE_SRC.STM.STM[0].SR[1].B.CLRR = 1;
-    MODULE_SRC.STM.STM[0].SR[1].B.SRE = 1;
-
-    MODULE_STM0.ISCR.B.CMP1IRR = 1U;
-    MODULE_STM0.ICR.B.CMP1EN = 1U;
-
-    MODULE_STM0.CMP[1].U = (unsigned int)((MODULE_STM0.TIM0.U | ((uint64)MODULE_STM0.CAP.U << 32)) + 100000*CPU_CLOCK_MHZ);
+    stmCompareConfig.triggerPriority = ISR_PRIORITY_STM_10MS;
+    stmCompareConfig.typeOfService = IfxSrc_Tos_cpu0;
+    stmCompareConfig.comparator = IfxStm_Comparator_0;
+    stmCompareConfig.ticks = 1000000; // 10ms
+    
+    IfxStm_initCompare(&MODULE_STM0, &stmCompareConfig);
 }
 
 #if LWIP_UDP
@@ -361,9 +357,9 @@ void SOMEIP_SendEvent(void)
 
 void SOMEIP_Periodic_Event_Trigger(void)
 {
-    if (g_100ms_event_flag == TRUE)
+    if (g_10ms_event_flag == TRUE)
     {
-        g_100ms_event_flag = FALSE; // 플래그 리셋
+        g_10ms_event_flag = FALSE; // 플래그 리셋
         if (g_subscriber_count > 0)
         {
             SOMEIP_SendEvent();

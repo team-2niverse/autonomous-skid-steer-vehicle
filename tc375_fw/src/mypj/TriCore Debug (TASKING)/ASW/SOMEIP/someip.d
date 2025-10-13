@@ -2,6 +2,8 @@ someip.o :	../ASW/SOMEIP/someip.c
 ../ASW/SOMEIP/someip.c :
 someip.o :	..\ASW\SOMEIP\someip.h
 ..\ASW\SOMEIP\someip.h :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h" :
 someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
 someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Configurations\lwipopts.h"
@@ -38,58 +40,6 @@ someip.o :	"C:\Infineon\AURIX-Studio-1.10.16\tools\Compilers\Tasking_1.1r8\ctc\i
 "C:\Infineon\AURIX-Studio-1.10.16\tools\Compilers\Tasking_1.1r8\ctc\include\ctype.h" :
 someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\stats.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\stats.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\mem.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\mem.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\memp.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\memp.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\memp_std.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\memp_std.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\memp_std.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\memp_std.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\memp_priv.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\memp_priv.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\mem.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\mem.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\mem_priv.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\mem_priv.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\mem.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\mem.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\stats.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\stats.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\udp.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\udp.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\netif.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\netif.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
 someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h"
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h" :
 someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
@@ -106,56 +56,8 @@ someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-s
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
 someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h"
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\netif.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\netif.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip4.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip4.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip4_addr.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip4_addr.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\netif.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\netif.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\prot\ip4.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\prot\ip4.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip4_addr.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip4_addr.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip6.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip6.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\prot\ip.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\prot\ip.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip6_addr.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip6_addr.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\prot\udp.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\prot\udp.h" :
-someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Led.h"
-"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Led.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\STM\Stm.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\STM\Stm.h" :
 someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Ifx_Types.h"
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Ifx_Types.h" :
 someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\IfxCpu.h"
@@ -216,6 +118,108 @@ someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-s
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxDmu_reg.h" :
 someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxDmu_regdef.h"
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxDmu_regdef.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\stats.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\stats.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\mem.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\mem.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\memp.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\memp.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\memp_std.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\memp_std.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\memp_std.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\memp_std.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\memp_priv.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\memp_priv.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\mem.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\mem.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\mem_priv.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\priv\mem_priv.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\mem.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\mem.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\stats.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\stats.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\udp.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\udp.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\netif.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\netif.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip_addr.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\netif.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\netif.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip4.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip4.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\def.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\pbuf.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip4_addr.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip4_addr.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\err.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\netif.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\netif.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\prot\ip4.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\prot\ip4.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip4_addr.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip4_addr.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip6.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip6.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\opt.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\prot\ip.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\prot\ip.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip6_addr.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\ip6_addr.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\prot\udp.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Ethernet\\lwip\\src\\include\lwip\prot\udp.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Led.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\BSW\\GPIO\Led.h" :
 someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\\Scu\\Std\IfxScuWdt.h"
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\\Scu\\Std\IfxScuWdt.h" :
 someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Service\\CpuGeneric\\SysSe\\Bsp\Bsp.h"
@@ -510,3 +514,5 @@ someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-s
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxGeth_bf.h" :
 someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxPort_bf.h"
 "C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxPort_bf.h" :
+someip.o :	"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\\Stm\\Std\IfxStm.h"
+"C:\\Users\\USER\\Desktop\\workspace_all\\project2\\autonomous-skid-steer-vehicle\\tc375_fw\\src\\mypj\\Libraries\\iLLD\\TC37A\\Tricore\\Stm\\Std\IfxStm.h" :
