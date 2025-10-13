@@ -23,7 +23,7 @@ volatile boolean g_100ms_event_flag = FALSE;
 IFX_INTERRUPT(ISR_SomeIp_100ms, 0, ISR_PRIORITY_STM_100MS);
 void ISR_SomeIp_100ms(void)
 {
-    IfxStm_clearCompareFlag(&MODULE_STM0, IfxStm_Comparator_1);
+//    IfxStm_clearCompareFlag(&MODULE_STM0, IfxStm_Comparator_0);
 //    MODULE_STM0.CMP[1].U = (unsigned int)((MODULE_STM0.TIM0.U | ((uint64)MODULE_STM0.CAP.U << 32)) + 100000*CPU_CLOCK_MHZ);
     MODULE_STM0.CMP[1].U += 100000 * CPU_CLOCK_MHZ;
     g_100ms_event_flag = TRUE;

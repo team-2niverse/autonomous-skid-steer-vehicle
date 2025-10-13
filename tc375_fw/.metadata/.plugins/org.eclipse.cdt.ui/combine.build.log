@@ -1,52 +1,7 @@
-10:42:38 **** Incremental Build of configuration TriCore Debug (TASKING) for project combine ****
+11:17:30 **** Incremental Build of configuration TriCore Debug (TASKING) for project combine ****
 amk -j12 all 
 TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
-cctc -cs --dep-file="Libraries/Ethernet/lwip/port/src/Ifx_Lwip.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "Libraries/Ethernet/lwip/port/src/Ifx_Lwip.src" "../Libraries/Ethernet/lwip/port/src/Ifx_Lwip.c"
-cctc -cs --dep-file="BSW/ULTRASONIC/Ultrasonic.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/ULTRASONIC/Ultrasonic.src" "../BSW/ULTRASONIC/Ultrasonic.c"
-cctc -cs --dep-file="BSW/STM/Stm.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/STM/Stm.src" "../BSW/STM/Stm.c"
-cctc -cs --dep-file="BSW/MOTOR/Motor.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/MOTOR/Motor.src" "../BSW/MOTOR/Motor.c"
-cctc -cs --dep-file="BSW/GPT12/Gpt12.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/GPT12/Gpt12.src" "../BSW/GPT12/Gpt12.c"
-cctc -cs --dep-file="BSW/GPIO/Buzzer.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/GPIO/Buzzer.src" "../BSW/GPIO/Buzzer.c"
-cctc -cs --dep-file="BSW/GPIO/Led.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/GPIO/Led.src" "../BSW/GPIO/Led.c"
-cctc -cs --dep-file="BSW/ETHERNET/DoIP.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/ETHERNET/DoIP.src" "../BSW/ETHERNET/DoIP.c"
-cctc -cs --dep-file="BSW/ETHERNET/can-ethernet.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/ETHERNET/can-ethernet.src" "../BSW/ETHERNET/can-ethernet.c"
-cctc -cs --dep-file="BSW/ETHERNET/geth_lwip.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/ETHERNET/geth_lwip.src" "../BSW/ETHERNET/geth_lwip.c"
-cctc -cs --dep-file="BSW/ETHERNET/tcp_echo.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/ETHERNET/tcp_echo.src" "../BSW/ETHERNET/tcp_echo.c"
-cctc -cs --dep-file="BSW/ENCODER/Encoder.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/ENCODER/Encoder.src" "../BSW/ENCODER/Encoder.c"
-cctc -cs --dep-file="BSW/CAN/Can.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/CAN/Can.src" "../BSW/CAN/Can.c"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/ULTRASONIC/Ultrasonic.o" "BSW/ULTRASONIC/Ultrasonic.src"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/STM/Stm.o" "BSW/STM/Stm.src"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/GPT12/Gpt12.o" "BSW/GPT12/Gpt12.src"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/GPIO/Led.o" "BSW/GPIO/Led.src"
-cctc -cs --dep-file="BSW/ASCLIN/Asclin.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/ASCLIN/Asclin.src" "../BSW/ASCLIN/Asclin.c"
-cctc -cs --dep-file="ASW/SOMEIP/someip.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "ASW/SOMEIP/someip.src" "../ASW/SOMEIP/someip.c"
-cctc -cs --dep-file="ASW/PARKING/Parking.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "ASW/PARKING/Parking.src" "../ASW/PARKING/Parking.c"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/ETHERNET/DoIP.o" "BSW/ETHERNET/DoIP.src"
 cctc -cs --dep-file="Cpu0_Main.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "Cpu0_Main.src" "../Cpu0_Main.c"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/GPIO/Buzzer.o" "BSW/GPIO/Buzzer.src"
-cctc -cs --dep-file="Sys_Init.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "Sys_Init.src" "../Sys_Init.c"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/MOTOR/Motor.o" "BSW/MOTOR/Motor.src"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/ENCODER/Encoder.o" "BSW/ENCODER/Encoder.src"
-ctc W514: ["C:\Infineon\AURIX-Studio-1.10.16\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" 103/1] empty declaration
-0 errors, 1 warnings
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/ETHERNET/tcp_echo.o" "BSW/ETHERNET/tcp_echo.src"
-ctc W523: ["../BSW/ETHERNET/can-ethernet.c" 371/47] pointers to different types at argument #2
-ctc W523: ["../BSW/ETHERNET/can-ethernet.c" 421/50] pointers to different types at argument #2
-0 errors, 2 warnings
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/ETHERNET/can-ethernet.o" "BSW/ETHERNET/can-ethernet.src"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/ASCLIN/Asclin.o" "BSW/ASCLIN/Asclin.src"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/CAN/Can.o" "BSW/CAN/Can.src"
-ctc W514: ["C:\Infineon\AURIX-Studio-1.10.16\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" 103/1] empty declaration
-0 errors, 1 warnings
-astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/Ethernet/lwip/port/src/Ifx_Lwip.o" "Libraries/Ethernet/lwip/port/src/Ifx_Lwip.src"
-ctc W514: ["C:\Infineon\AURIX-Studio-1.10.16\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" 103/1] empty declaration
-0 errors, 1 warnings
-astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/ETHERNET/geth_lwip.o" "BSW/ETHERNET/geth_lwip.src"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "ASW/PARKING/Parking.o" "ASW/PARKING/Parking.src"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "Sys_Init.o" "Sys_Init.src"
-ctc W514: ["C:\Infineon\AURIX-Studio-1.10.16\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" 103/1] empty declaration
-0 errors, 1 warnings
-astc -Og -Os --no-warnings= --error-limit=42 -o  "ASW/SOMEIP/someip.o" "ASW/SOMEIP/someip.src"
 astc -Og -Os --no-warnings= --error-limit=42 -o  "Cpu0_Main.o" "Cpu0_Main.src"
 Building target: combine.elf
 Invoking: TASKING Linker
@@ -56,10 +11,10 @@ Finished building target: combine.elf
 Invoking: Print Size
 elfsize  "combine.elf"
 Total sizes:
-ROM: 0x1f913 (129299) = code: 0x18716 (100118) + romdata: 0x71fd (29181)
+ROM: 0x1f8a9 (129193) = code: 0x186ac (100012) + romdata: 0x71fd (29181)
 RAM: 0x1d3da (119770) = data + bss
 Finished building: combine.siz
  
 
-10:42:45 Build Finished. 0 errors, 6 warnings. (took 6s.998ms)
+11:17:33 Build Finished. 0 errors, 0 warnings. (took 3s.73ms)
 

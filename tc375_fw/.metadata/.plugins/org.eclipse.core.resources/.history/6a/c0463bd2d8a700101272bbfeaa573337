@@ -26,6 +26,6 @@
 #define ISR_PRIORITY_ASCLIN0_RX 91
 
 // for 10ms event timer
-#define ISR_PRIORITY_STM_100MS       15
+#define ISR_PRIORITY_STM_100MS       10
 
 #endif /* ISR_PRIORITY_H_ */
