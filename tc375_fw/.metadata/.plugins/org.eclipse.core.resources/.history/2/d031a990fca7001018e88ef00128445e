@@ -8,8 +8,6 @@
 #include "Configuration.h"
 #include <string.h>
 #include "Ifx_Lwip.h"
-#include "Gpt12.h"
-#include "Isr_Priority.h"
 
 #define MAX_SUBSCRIBERS 10
 #define SOMEIP_EVENT_ID_COUNTER 0x8001
@@ -17,28 +15,37 @@
 Subscriber g_subscribers[MAX_SUBSCRIBERS];
 int g_subscriber_count = 0;
 
+#include "IfxStm.h"
+#include "Isr_Priority.h"
+
 volatile boolean g_100ms_event_flag = FALSE;
 
-/* This interrupt is raised by the GPT12 T5 timer every 1ms */
-IFX_INTERRUPT(SomeIp_Gpt2_T5_Isr_Handler, 0, ISR_PRIORITY_GPT2T5_TIMER);
-void SomeIp_Gpt2_T5_Isr_Handler(void)
+IFX_INTERRUPT(ISR_SomeIp_100ms, 0, ISR_PRIORITY_STM_100MS);
+void ISR_SomeIp_100ms(void)
 {
-    static volatile uint32 counter = 0;
-    counter++;
-
-    if (counter == 100)
-    {
-        counter = 0;
-        g_100ms_event_flag = TRUE;
-    }
+    IfxStm_clearCompareFlag(&MODULE_STM0, IfxStm_Comparator_1);
+//    MODULE_STM0.CMP[1].U = (unsigned int)((MODULE_STM0.TIM0.U | ((uint64)MODULE_STM0.CAP.U << 32)) + 100000*CPU_CLOCK_MHZ);
+    MODULE_STM0.CMP[1].U += 100000 * CPU_CLOCK_MHZ;
+    g_100ms_event_flag = TRUE;
 }
 
 void SomeIp_Init_100ms_Interrupt(void)
 {
-    /* Start the GPT12 timer (T5) for the 100ms event tick (based on 1ms hardware tick) */
-    Gpt12_Run_Gpt2_T5();
-}
+    MODULE_STM0.CMCON.B.MSIZE1 = 31;
+    MODULE_STM0.CMCON.B.MSTART1 = 0;
+    MODULE_STM0.ICR.B.CMP1OS = 0;
 
+    MODULE_SRC.STM.STM[0].SR[1].B.TOS = 0;
+    MODULE_SRC.STM.STM[0].SR[1].B.SRPN = ISR_PRIORITY_STM_100MS;
+    MODULE_SRC.STM.STM[0].SR[1].B.CLRR = 1;
+    MODULE_SRC.STM.STM[0].SR[1].B.SRE = 1;
+
+    MODULE_STM0.ISCR.B.CMP1IRR = 1U;
+    MODULE_STM0.ICR.B.CMP1EN = 1U;
+
+//    MODULE_STM0.CMP[1].U = (unsigned int)((MODULE_STM0.TIM0.U | ((uint64)MODULE_STM0.CAP.U << 32)) + 100000*CPU_CLOCK_MHZ);
+    MODULE_STM0.CMP[1].U = MODULE_STM0.TIM0.U + 100000 * CPU_CLOCK_MHZ;
+}
 
 #if LWIP_UDP
 

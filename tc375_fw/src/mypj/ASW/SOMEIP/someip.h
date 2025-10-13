@@ -2,7 +2,7 @@
 #define _SOMEIP_RAW_UDP_SOMEIP_H_
 
 #include "lwip/ip_addr.h" // ip_addr_t 타입을 위해 추가
-#include "Stm.h"
+#include "Gpt12.h"
 /* Subscriber structure */
 typedef struct {
     ip_addr_t addr;

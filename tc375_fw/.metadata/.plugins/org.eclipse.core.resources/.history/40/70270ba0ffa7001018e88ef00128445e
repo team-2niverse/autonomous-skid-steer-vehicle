@@ -35,7 +35,7 @@ void core0_main(void)
     {
         Ifx_Lwip_pollTimerFlags(); /* Poll LwIP timers and trigger protocols execution if required */
         Ifx_Lwip_pollReceiveFlags(); /* Receive data package through ETH */
-        SOMEIP_Periodic_Event_Trigger();
+//        SOMEIP_Periodic_Event_Trigger();
     } /* End of while */
 
 
