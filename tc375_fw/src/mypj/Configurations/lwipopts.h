@@ -28,6 +28,10 @@
 #ifndef __LWIPOPTS_H__
 #define __LWIPOPTS_H__
 
+#include "Motor.h"
+#include "Led.h"
+
+
 /*********************************************************************************************************************/
 /*------------------------------------------------------Macros-------------------------------------------------------*/
 /*********************************************************************************************************************/
@@ -44,7 +48,11 @@
 #define SYS_LIGHTWEIGHT_PROT    0                   /* Disable inter-task protection                                        */
 #define LWIP_ICMP               1
 
-
+#define LWIP_IGMP 1
+#define LWIP_IPV4 1
+#define LWIP_MULTICAST_TX_OPTIONS 1 //?
+#define MEMP_NUM_IGMP_GROUP 8 //?
+#define LWIP_LOOPIF_MULTICAST 1 //?
 
 #define ETH_PAD_SIZE            2                   /* Add 2 bytes before the Ethernet header to ensure payload alignment   */
 

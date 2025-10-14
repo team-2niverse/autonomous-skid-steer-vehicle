@@ -58,6 +58,7 @@
 //#include <UART_Logging.h>
 #include "Asclin.h"
 #include "CompilerTasking.h"
+#include "igmp.h"
 
 /******************************************************************************/
 /*-----------------------------------Macros-----------------------------------*/
@@ -399,6 +400,10 @@ void Ifx_Lwip_init(eth_addr_t ethAddr)
     netif_add(&g_Lwip.netif, &default_ipaddr, &default_netmask, &default_gw,
         (void *)0, ifx_netif_init, ethernet_input);
     netif_set_default(&g_Lwip.netif);
+
+    g_Lwip.netif.flags |= NETIF_FLAG_IGMP;
+    igmp_start(&g_Lwip.netif);
+
     netif_set_up(&g_Lwip.netif);
 
 #if LWIP_NETIF_HOSTNAME
@@ -417,7 +422,22 @@ void Ifx_Lwip_init(eth_addr_t ethAddr)
     netif_add_ext_callback(&g_extCallback, netif_state_changed);
 #endif
     LWIP_DEBUGF(IFX_LWIP_DEBUG, ("Ifx_Lwip_init end!\n"));
+#if LWIP_IGMP
+    ip_addr_t multicast_ip;
+    IP4_ADDR(&multicast_ip, 224, 224, 224, 245); // 예시 멀티캐스트 그룹 주소
+
+    err_t err = igmp_joingroup(&default_ipaddr, &multicast_ip);
+    if (err == ERR_OK) {
+        // 성공: 해당 그룹의 멀티캐스트 패킷을 받을 준비가 됨
+        my_printf("IGMP Group Joined: 224.224.224.245 \n");
+
+    } else {
+        // 실패: 오류 처리
+        my_printf("IGMP Group Join Failed: %d\n", err);
+    }
+
 }
+#endif
 
 /** Returns the current time in milliseconds,
  * may be the same as sys_jiffies or at least based on it. */

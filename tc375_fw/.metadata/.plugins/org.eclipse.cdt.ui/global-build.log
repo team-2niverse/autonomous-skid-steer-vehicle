@@ -1,15 +1,14 @@
 Build started...
-15:58:05 **** Incremental Build of configuration TriCore Debug (TASKING) for project combine ****
+22:41:06 **** Incremental Build of configuration TriCore Debug (TASKING) for project combine ****
 amk -j12 all 
 TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
 cctc -cs --dep-file="ASW/SOMEIP/someip.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "ASW/SOMEIP/someip.src" "../ASW/SOMEIP/someip.c"
-cctc -cs --dep-file="Cpu0_Main.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "Cpu0_Main.src" "../Cpu0_Main.c"
 ctc W514: ["C:\Infineon\AURIX-Studio-1.10.16\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" 103/1] empty declaration
-ctc W505: ["../ASW/SOMEIP/someip.c" 39/5] implicit declaration of function "Gpt12_Run_Gpt2_T5"
-ctc W577: ["../ASW/SOMEIP/someip.c" 39/22] calling a function without a prototype
-0 errors, 3 warnings
+ctc W505: ["../ASW/SOMEIP/someip.c" 60/5] implicit declaration of function "Gpt12_Run_Gpt2_T5"
+ctc W577: ["../ASW/SOMEIP/someip.c" 60/22] calling a function without a prototype
+ctc W537: ["../ASW/SOMEIP/someip.c" 22/30] unused variable "dist_front"
+0 errors, 4 warnings
 astc -Og -Os --no-warnings= --error-limit=42 -o  "ASW/SOMEIP/someip.o" "ASW/SOMEIP/someip.src"
-astc -Og -Os --no-warnings= --error-limit=42 -o  "Cpu0_Main.o" "Cpu0_Main.src"
 Building target: combine.elf
 Invoking: TASKING Linker
 cctc -f .combine.elf.opt
@@ -18,7 +17,7 @@ Finished building target: combine.elf
 Invoking: Print Size
 elfsize  "combine.elf"
 Total sizes:
-ROM: 0x1f7d5 (128981) = code: 0x185ec (99820) + romdata: 0x71e9 (29161)
-RAM: 0x1d3de (119774) = data + bss
+ROM: 0x2162f (136751) = code: 0x19c3c (105532) + romdata: 0x79f3 (31219)
+RAM: 0x1d4e1 (120033) = data + bss
 Finished building: combine.siz
  

@@ -30,28 +30,22 @@ void core0_main(void)
     DoIP_Init();
     SOMEIP_Init();
     SOMEIPSD_Init();
-    SomeIp_Init_100ms_Interrupt();
+    //SomeIp_Init_100ms_Interrupt();
+
+    volatile int parking_flag = 0;
     while (1)
     {
         Ifx_Lwip_pollTimerFlags(); /* Poll LwIP timers and trigger protocols execution if required */
         Ifx_Lwip_pollReceiveFlags(); /* Receive data package through ETH */
         SOMEIP_Periodic_Event_Trigger();
+        parking_flag = Can_Get_Parking();
+        if (parking_flag == 1)
+        {
+            Parking_On();
+
+            parking_flag = 0;
+            Can_Let_Parking(parking_flag);
+        }
     } /* End of while */
 
-
-
-//    volatile int parking_flag = 0;
-//
-//    while(1)
-//    {
-//        parking_flag = Can_Get_Parking();
-//
-//        if (parking_flag == 1)
-//        {
-//            Parking_On();
-//
-//            parking_flag = 0;
-//            Can_Let_Parking(parking_flag);
-//        }
-//    }
 }
