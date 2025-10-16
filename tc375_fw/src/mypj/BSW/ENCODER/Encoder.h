@@ -22,6 +22,10 @@ int Encoder_Get_Rpm1_Right(void);
 void Encoder_Init(void);
 void Encoder_Init_Stm_100ms(void);
 
+uint64 Encoder_Get_IntCnt_Right(void);
+uint64 Encoder_Get_IntCnt_Left(void);
+uint64 Encoder_Get_DiffSum_Right(void);
+uint64 Encoder_Get_Diffsum_Left(void);
 // void Encoder_Enc0_Isr_Handler_Enc0(void);
 // void Encoder_Enc1_Isr_Handler_Enc0(void);
 // void Encoder_Stm1_Isr_Handler(void);

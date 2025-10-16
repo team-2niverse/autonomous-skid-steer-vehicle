@@ -26,6 +26,19 @@ int Encoder_Get_Rpm1_Right(void) {
     return rpm1;
 }
 
+uint64 Encoder_Get_Diffsum_Left(void) {
+    return diffSum_enc0;
+}
+uint64 Encoder_Get_DiffSum_Right(void) {
+    return diffSum_enc1;
+}
+uint64 Encoder_Get_IntCnt_Left(void) {
+    return intCnt_enc0;
+}
+uint64 Encoder_Get_IntCnt_Right(void) {
+    return intCnt_enc1;
+}
+
 void Encoder_Init(void) {
     MODULE_P15.IOCR4.B.PC4 = 0x02;  // input: EICR0.EXIS0.0
     MODULE_P33.IOCR4.B.PC7 = 0x02;  // input: EICR2.EXIS0.0

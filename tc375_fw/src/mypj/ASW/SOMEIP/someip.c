@@ -10,9 +10,13 @@
 #include "Ifx_Lwip.h"
 #include "Gpt12.h"
 #include "Isr_Priority.h"
+#include "Encoder.h"
 
 #define MAX_SUBSCRIBERS 10
 #define SOMEIP_EVENT_ID_COUNTER 0x0200
+static volatile int sp_rpm0 = 0;
+static volatile int sp_rpm1 = 0;
+
 
 static volatile int aeb = 0;
 static volatile int parking = 0;
@@ -38,7 +42,7 @@ Subscriber g_subscribers[4] = {
     { .group_id = 0x0202, .isSub = 0, .timer = 0},
     { .group_id = 0x0203, .isSub = 0, .timer = 1}
 };
-int g_subscriber_count = 0;
+//int g_subscriber_count = 0;
 
 volatile boolean g_100ms_event_flag = FALSE;
 
@@ -314,26 +318,17 @@ void SOMEIPSD_Recv_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, con
 				SOMEIPSD_SendSubEvtGrpAck(a, b, c, d);
 
 				// Then, add client to subscriber list
-				if (g_subscriber_count < MAX_SUBSCRIBERS)
-				{
-					boolean found = FALSE;
-					for (int i = 0; i < g_subscriber_count; i++)
-					{
-						if (g_subscribers[i].port == port && ip_addr_cmp(&g_subscribers[i].addr, addr))
-						{
-							found = TRUE;
-							break;
-						}
-					}
-
-					if (!found)
-					{
-						g_subscribers[g_subscriber_count].addr = *addr;
-						g_subscribers[g_subscriber_count].port = port;
-						g_subscriber_count++;
-						my_printf("New subscriber added. Total: %d\n", g_subscriber_count);
-					}
-				}
+                for (int i = 0; i < 4; i++)
+                {
+                    if (g_subscribers[i].group_id == ((*(((uint8*)p->payload) + 38) << 8) + *(((uint8*)p->payload) + 39))
+                            && g_subscribers[i].isSub == 0 )
+                    {
+                        g_subscribers[i].isSub = 1;
+                        g_subscribers[i].addr = *addr;
+                        g_subscribers[i].port = port;
+                        my_printf("New subscriber added. groud_id : %d\n", g_subscribers[i].group_id);
+                    }
+                }
 			}
 		}
 		pbuf_free(p);
@@ -489,8 +484,7 @@ void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_a
 
 void SOMEIP_SendEvent(int i)
 {
-    static uint32 event_counter = 0;
-    event_counter++;
+    Subscriber subscribed = g_subscribers[i];
 
     // 1. Construct SOME/IP Event Message
     uint8 event_msg[] = {
@@ -502,26 +496,60 @@ void SOMEIP_SendEvent(int i)
         0x01,                               // Interface Version
         0x02,                               // Message Type: NOTIFICATION
         0x00,                               // Return Code
-        // Payload
-        (uint8)(event_counter >> 24),
-        (uint8)(event_counter >> 16),
-        (uint8)(event_counter >> 8),
-        (uint8)(event_counter & 0xFF)
+        0x00, 0x00, 0x00, 0x00,             //payload
+        0x00, 0x00, 0x00, 0x00              //payload (8bytes)
     };
 
-    // 2. Send to all subscribers
-    for (int i = 0; i < g_subscriber_count; i++)
-    {
-
-        struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(event_msg), PBUF_RAM);
-        if (txbuf != NULL)
-        {
-            pbuf_take(txbuf, event_msg, sizeof(event_msg));
-            udp_sendto(g_SOMEIPSERVICE_PCB, txbuf, &g_subscribers[i].addr, g_subscribers[i].port);
-            pbuf_free(txbuf);
-        }
+    if (i == 0 ){ //Get Motors RPM
+        int cnt0 = Encoder_Get_IntCnt_Left();
+        if ( cnt0 > 0) {
+                sp_rpm0 = 1500000/(int)(Encoder_Get_Diffsum_Left()/cnt0);
+                if (!MODULE_P10.OUT.B.P1)
+                    sp_rpm0 *= -1;
+        } else
+            sp_rpm0 = 0;
+        int cnt1 = Encoder_Get_IntCnt_Right();
+        if (cnt1 > 0) {
+            sp_rpm1 = 1500000/(int)(Encoder_Get_DiffSum_Right()/cnt1);
+            if (!MODULE_P10.OUT.B.P2)
+                sp_rpm1 *= -1;
+        } else
+            sp_rpm1 = 0;
+        /* Send Response Message */
+//        err_t err;
+        event_msg[14] = 0x80;
+        event_msg[16] = (uint8)(sp_rpm0 & 0xFF);
+        event_msg[17] = (uint8)((sp_rpm0 >> 8) & 0xFF);
+        event_msg[18] = (uint8)((sp_rpm0 >> 16) & 0xFF);
+        event_msg[19] = (uint8)((sp_rpm0 >> 24) & 0xFF);
+        event_msg[20] = (uint8)(sp_rpm1 & 0xFF);
+        event_msg[21] = (uint8)((sp_rpm1 >> 8) & 0xFF);
+        event_msg[22] = (uint8)((sp_rpm1 >> 16) & 0xFF);
+        event_msg[23] = (uint8)((sp_rpm1 >> 24) & 0xFF);
     }
-    my_printf("Sent event notification with counter: %u\n", event_counter);
+    else if (i == 1 && subscribed.isSub > 0){ // Get AEB mode
+        event_msg[14] = Can_Get_Aeb();
+    }
+    else if (i == 2 && subscribed.isSub > 0){ // Get parking mode
+        event_msg[14] = Can_Get_Parking();
+    }
+    else if (i == 3){ //Get Distances
+        int front_dist = Can_Get_Front_Dist();
+        event_msg[14] = 0x80;
+        event_msg[16] = (uint8)(front_dist & 0xFF);
+        event_msg[17] = (uint8)((front_dist >> 8) & 0xFF);
+        event_msg[18] = (uint8)((front_dist >> 16) & 0xFF);
+        event_msg[19] = (uint8)((front_dist >> 24) & 0xFF);
+    }
+    // 2. Send to subscribed event
+    struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(event_msg), PBUF_RAM);
+    if (txbuf != NULL)
+    {
+        pbuf_take(txbuf, event_msg, sizeof(event_msg));
+        udp_sendto(g_SOMEIPSERVICE_PCB, txbuf, &g_subscribers[i].addr, g_subscribers[i].port);
+        pbuf_free(txbuf);
+    }
+    my_printf("Sent event notification with id : %u\n", subscribed.group_id);
 }
 
 void SOMEIP_Periodic_Event_Trigger(void)
