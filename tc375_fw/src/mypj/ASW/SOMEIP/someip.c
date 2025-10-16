@@ -19,7 +19,7 @@ static volatile int parking = 0;
 static volatile int turn_left = 0;
 static volatile int turn_right = 0;
 
-static volatile unsigned int dist_front = 0;
+//static volatile unsigned int dist_front = 0;
 
 Service serviceList[] = {
     {//SetValue
@@ -32,10 +32,12 @@ Service serviceList[] = {
     }
 };
 
-
-
-
-Subscriber g_subscribers[MAX_SUBSCRIBERS];
+Subscriber g_subscribers[4] = {
+    { .group_id = 0x0200, .isSub = 0, .timer = 1},
+    { .group_id = 0x0201, .isSub = 0, .timer = 0},
+    { .group_id = 0x0202, .isSub = 0, .timer = 0},
+    { .group_id = 0x0203, .isSub = 0, .timer = 1}
+};
 int g_subscriber_count = 0;
 
 volatile boolean g_100ms_event_flag = FALSE;
@@ -485,7 +487,7 @@ void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_a
     }
 }
 
-void SOMEIP_SendEvent(void)
+void SOMEIP_SendEvent(int i)
 {
     static uint32 event_counter = 0;
     event_counter++;
@@ -527,9 +529,10 @@ void SOMEIP_Periodic_Event_Trigger(void)
     if (g_100ms_event_flag == TRUE)
     {
         g_100ms_event_flag = FALSE; // 플래그 리셋
-        if (g_subscriber_count > 0)
+        for (int i=0 ; i < 4 ; i++ )
         {
-            SOMEIP_SendEvent();
+            if (g_subscribers[i].isSub > 0 && g_subscribers[i].timer > 0)
+                SOMEIP_SendEvent(i);
         }
     }
 }

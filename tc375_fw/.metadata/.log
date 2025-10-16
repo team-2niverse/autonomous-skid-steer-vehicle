@@ -4864,3 +4864,538 @@ C Model Exception: C Model Status [Element someip.c does not exist.]
 
 !ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-14 22:41:05.550
 !MESSAGE Include paths were discovered in 25 milliseconds.
+!SESSION 2025-10-16 12:22:24.004 -----------------------------------------------
+eclipse.buildId=1.10.16
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -perspective com.infineon.aurix.buildmanager.perspective.c
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -perspective com.infineon.aurix.buildmanager.perspective.c
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-10-16 12:22:27.714
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2025-10-16 12:22:28.440
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-10-16 12:22:28.440
+!MESSAGE Commands should really have a category: plug-in='com.infineon.aurix.buildsystem.debug', id='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand', categoryId='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand'
+
+!ENTRY org.eclipse.ui 2 0 2025-10-16 12:22:29.190
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-10-16 12:22:29.190
+!MESSAGE Commands should really have a category: plug-in='com.infineon.aurix.buildsystem.debug', id='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand', categoryId='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand'
+
+!ENTRY com.infineon.aurix.buildsystem 4 0 2025-10-16 12:22:34.165
+!MESSAGE ConnectException
+!STACK 0
+java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:573)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at com.infineon.aurix.buildsystem.IFXNetworkUtils$1.run(IFXNetworkUtils.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1055)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+	at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.sendHeadersAsync(Http1Exchange.java:239)
+	at java.net.http/jdk.internal.net.http.Exchange.lambda$responseAsyncImpl0$9(Exchange.java:472)
+	at java.net.http/jdk.internal.net.http.Exchange.checkFor407(Exchange.java:404)
+	at java.net.http/jdk.internal.net.http.Exchange.lambda$responseAsyncImpl0$10(Exchange.java:476)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:476)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:380)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:372)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:408)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:449)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:439)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:341)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:157)
+	at java.base/java.util.concurrent.CompletableFuture.completeAsync(CompletableFuture.java:2673)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsync(MultiExchange.java:294)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.sendAsync(HttpClientImpl.java:654)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:552)
+	... 3 more
+Caused by: java.nio.channels.UnresolvedAddressException
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:149)
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:157)
+	at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+	... 29 more
+
+!ENTRY com.infineon.aurix.buildsystem.analytics 2 0 2025-10-16 12:22:34.277
+!MESSAGE Unable to initialize Analytics Service.
+
+!ENTRY com.infineon.aurix.buildsystem.analytics 4 0 2025-10-16 12:22:34.277
+!MESSAGE java.net.MalformedURLException: no protocol: 
+!STACK 0
+java.lang.IllegalArgumentException: java.net.MalformedURLException: no protocol: 
+	at com.google.api.client.http.GenericUrl.parseURL(GenericUrl.java:679)
+	at com.google.api.client.http.GenericUrl.<init>(GenericUrl.java:125)
+	at com.google.api.client.http.GenericUrl.<init>(GenericUrl.java:108)
+	at com.infineon.aurix.buildsystem.analytics.AnalyticsService.<init>(AnalyticsService.java:69)
+	at com.infineon.aurix.buildsystem.analytics.AnalyticsService.getInstance(AnalyticsService.java:98)
+	at com.infineon.aurix.buildsystem.Logger.logError(Logger.java:34)
+	at com.infineon.aurix.buildsystem.IFXNetworkUtils$1.run(IFXNetworkUtils.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.MalformedURLException: no protocol: 
+	at java.base/java.net.URL.<init>(URL.java:674)
+	at java.base/java.net.URL.<init>(URL.java:569)
+	at java.base/java.net.URL.<init>(URL.java:516)
+	at com.google.api.client.http.GenericUrl.parseURL(GenericUrl.java:677)
+	... 7 more
+
+!ENTRY com.infineon.aurix.buildsystem.notification 2 0 2025-10-16 12:22:34.308
+!MESSAGE Unable to initialize Notification Service.
+
+!ENTRY com.infineon.aurix.buildsystem.notification 4 0 2025-10-16 12:22:34.311
+!MESSAGE java.net.MalformedURLException: no protocol: 
+!STACK 0
+java.lang.IllegalArgumentException: java.net.MalformedURLException: no protocol: 
+	at com.google.api.client.http.GenericUrl.parseURL(GenericUrl.java:679)
+	at com.google.api.client.http.GenericUrl.<init>(GenericUrl.java:125)
+	at com.google.api.client.http.GenericUrl.<init>(GenericUrl.java:108)
+	at com.infineon.aurix.buildsystem.notification.NotificationService.<init>(NotificationService.java:64)
+	at com.infineon.aurix.buildsystem.notification.NotificationService.getInstance(NotificationService.java:89)
+	at com.infineon.aurix.buildsystem.analytics.AnalyticsService.send(AnalyticsService.java:190)
+	at com.infineon.aurix.buildsystem.analytics.AnalyticsService.sendError(AnalyticsService.java:119)
+	at com.infineon.aurix.buildsystem.Logger.logError(Logger.java:34)
+	at com.infineon.aurix.buildsystem.IFXNetworkUtils$1.run(IFXNetworkUtils.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.MalformedURLException: no protocol: 
+	at java.base/java.net.URL.<init>(URL.java:674)
+	at java.base/java.net.URL.<init>(URL.java:569)
+	at java.base/java.net.URL.<init>(URL.java:516)
+	at com.google.api.client.http.GenericUrl.parseURL(GenericUrl.java:677)
+	... 9 more
+
+!ENTRY com.infineon.aurix.buildsystem.notification 4 0 2025-10-16 12:22:34.471
+!MESSAGE NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:892)
+	at com.google.api.client.util.Preconditions.checkNotNull(Preconditions.java:125)
+	at com.google.api.client.http.GenericUrl.buildAuthority(GenericUrl.java:389)
+	at com.google.api.client.http.GenericUrl.build(GenericUrl.java:374)
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:883)
+	at com.infineon.aurix.buildsystem.notification.NotificationService$NotificationGetJob.run(NotificationService.java:205)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-16 12:22:34.849
+!MESSAGE Cannot open remote device description from URL https://itools.infineon.com/aurix_ide/ADS/com.infineon.aurix.buildsystem/1.10.16/tc4-hardware.json. Resource does not exist
+
+!ENTRY com.infineon.aurix.buildsystem 4 0 2025-10-16 12:22:34.860
+!MESSAGE C:\Users\USER\ADSDocuments\1.10.16\tc4-hardware.json (지정된 파일을 찾을 수 없습니다)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\USER\ADSDocuments\1.10.16\tc4-hardware.json (지정된 파일을 찾을 수 없습니다)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:134)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:122)
+	at com.google.common.io.ByteSource.openBufferedStream(ByteSource.java:120)
+	at com.infineon.aurix.buildsystem.configuration.contributor.CachedURLHardwareContainerConnector.getHardwareContainerJsonInputStream(CachedURLHardwareContainerConnector.java:60)
+	at com.infineon.aurix.buildsystem.configuration.contributor.AbstractSupportedHardwareContributor.getSupportedHardwareContribution(AbstractSupportedHardwareContributor.java:29)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.lambda$40(SupportedHardwareManager.java:367)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.getSupportedHardwareContributions(SupportedHardwareManager.java:374)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.parseConfig(SupportedHardwareManager.java:76)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.getInstance(SupportedHardwareManager.java:65)
+	at com.infineon.aurix.buildsystem.AurixIDEStartup.earlyStartup(AurixIDEStartup.java:37)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2699)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem.notification 4 0 2025-10-16 12:22:34.862
+!MESSAGE NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:892)
+	at com.google.api.client.util.Preconditions.checkNotNull(Preconditions.java:125)
+	at com.google.api.client.http.GenericUrl.buildAuthority(GenericUrl.java:389)
+	at com.google.api.client.http.GenericUrl.build(GenericUrl.java:374)
+	at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:883)
+	at com.infineon.aurix.buildsystem.notification.NotificationService$NotificationGetJob.run(NotificationService.java:205)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-10-16 12:23:21.651
+!MESSAGE Indexed 'combine' (194 sources, 880 headers) in 23.7 sec: 116,293 declarations; 191,268 references; 12 unresolved inclusions; 717 syntax errors; 1,172 unresolved names (0.38%)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-16 12:24:14.842
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 35 milliseconds. (full boost)
+
+!ENTRY org.eclipse.core.resources 4 2 2025-10-16 12:24:14.843
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Path must include project and resource name: /combine
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:68)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Workspace.java:2229)
+	at org.eclipse.core.internal.resources.Container.getFile(Container.java:196)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:113)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:1)
+	at org.eclipse.core.internal.resources.AliasManager$LocationMap.matchingResourcesDo(AliasManager.java:213)
+	at org.eclipse.core.internal.resources.AliasManager.internalComputeAliases(AliasManager.java:545)
+	at org.eclipse.core.internal.resources.AliasManager.computeAliases(AliasManager.java:430)
+	at org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.resourceChanged(RefreshLocalAliasVisitor.java:76)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeLastModified(RefreshLocalVisitor.java:264)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:318)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1021)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1004)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:338)
+	at org.eclipse.cdt.core.resources.ResourcesUtil.refreshWorkspaceFiles(ResourcesUtil.java:43)
+	at com.infineon.aurix.buildsystem.build.booster.iLLDAligner.process(iLLDAligner.java:126)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.boost(BoosterBuilder.java:70)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.build(BoosterBuilder.java:58)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-16 12:24:14.949
+!MESSAGE Include paths were discovered in 96 milliseconds.
+
+!ENTRY org.eclipse.core.resources 4 75 2025-10-16 12:24:43.860
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 com.infineon.aurix.buildsystem 4 75 2025-10-16 12:24:43.860
+!MESSAGE Errors running builder 'Project Booster' on project 'combine'.
+!STACK 0
+java.lang.IllegalArgumentException: Path must include project and resource name: /combine
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:68)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Workspace.java:2229)
+	at org.eclipse.core.internal.resources.Container.getFile(Container.java:196)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:113)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:1)
+	at org.eclipse.core.internal.resources.AliasManager$LocationMap.matchingResourcesDo(AliasManager.java:213)
+	at org.eclipse.core.internal.resources.AliasManager.internalComputeAliases(AliasManager.java:545)
+	at org.eclipse.core.internal.resources.AliasManager.computeAliases(AliasManager.java:430)
+	at org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.resourceChanged(RefreshLocalAliasVisitor.java:76)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeLastModified(RefreshLocalVisitor.java:264)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:318)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1021)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1004)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:338)
+	at org.eclipse.cdt.core.resources.ResourcesUtil.refreshWorkspaceFiles(ResourcesUtil.java:43)
+	at com.infineon.aurix.buildsystem.build.booster.iLLDAligner.process(iLLDAligner.java:126)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.boost(BoosterBuilder.java:70)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.build(BoosterBuilder.java:58)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-16 12:26:05.741
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 25 milliseconds. (incremental boost)
+
+!ENTRY org.eclipse.core.resources 4 2 2025-10-16 12:26:05.741
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Path must include project and resource name: /combine
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:68)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Workspace.java:2229)
+	at org.eclipse.core.internal.resources.Container.getFile(Container.java:196)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:113)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:1)
+	at org.eclipse.core.internal.resources.AliasManager$LocationMap.matchingResourcesDo(AliasManager.java:213)
+	at org.eclipse.core.internal.resources.AliasManager.internalComputeAliases(AliasManager.java:545)
+	at org.eclipse.core.internal.resources.AliasManager.computeAliases(AliasManager.java:430)
+	at org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.resourceChanged(RefreshLocalAliasVisitor.java:76)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeLastModified(RefreshLocalVisitor.java:264)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:318)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1021)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1004)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:338)
+	at org.eclipse.cdt.core.resources.ResourcesUtil.refreshWorkspaceFiles(ResourcesUtil.java:43)
+	at com.infineon.aurix.buildsystem.build.booster.iLLDAligner.process(iLLDAligner.java:126)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.boost(BoosterBuilder.java:74)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.build(BoosterBuilder.java:58)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-16 12:26:05.786
+!MESSAGE Include paths were discovered in 40 milliseconds.
+
+!ENTRY org.eclipse.core.resources 4 75 2025-10-16 12:26:10.538
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 com.infineon.aurix.buildsystem 4 75 2025-10-16 12:26:10.538
+!MESSAGE Errors running builder 'Project Booster' on project 'combine'.
+!STACK 0
+java.lang.IllegalArgumentException: Path must include project and resource name: /combine
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:68)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Workspace.java:2229)
+	at org.eclipse.core.internal.resources.Container.getFile(Container.java:196)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:113)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:1)
+	at org.eclipse.core.internal.resources.AliasManager$LocationMap.matchingResourcesDo(AliasManager.java:213)
+	at org.eclipse.core.internal.resources.AliasManager.internalComputeAliases(AliasManager.java:545)
+	at org.eclipse.core.internal.resources.AliasManager.computeAliases(AliasManager.java:430)
+	at org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.resourceChanged(RefreshLocalAliasVisitor.java:76)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeLastModified(RefreshLocalVisitor.java:264)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:318)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1021)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1004)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:338)
+	at org.eclipse.cdt.core.resources.ResourcesUtil.refreshWorkspaceFiles(ResourcesUtil.java:43)
+	at com.infineon.aurix.buildsystem.build.booster.iLLDAligner.process(iLLDAligner.java:126)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.boost(BoosterBuilder.java:74)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.build(BoosterBuilder.java:58)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-16 12:27:09.084
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 20 milliseconds. (incremental boost)
+
+!ENTRY org.eclipse.core.resources 4 2 2025-10-16 12:27:09.085
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Path must include project and resource name: /combine
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:68)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Workspace.java:2229)
+	at org.eclipse.core.internal.resources.Container.getFile(Container.java:196)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:113)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:1)
+	at org.eclipse.core.internal.resources.AliasManager$LocationMap.matchingResourcesDo(AliasManager.java:213)
+	at org.eclipse.core.internal.resources.AliasManager.internalComputeAliases(AliasManager.java:545)
+	at org.eclipse.core.internal.resources.AliasManager.computeAliases(AliasManager.java:430)
+	at org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.resourceChanged(RefreshLocalAliasVisitor.java:76)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeLastModified(RefreshLocalVisitor.java:264)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:318)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1021)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1004)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:338)
+	at org.eclipse.cdt.core.resources.ResourcesUtil.refreshWorkspaceFiles(ResourcesUtil.java:43)
+	at com.infineon.aurix.buildsystem.build.booster.iLLDAligner.process(iLLDAligner.java:126)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.boost(BoosterBuilder.java:74)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.build(BoosterBuilder.java:58)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-16 12:27:09.120
+!MESSAGE Include paths were discovered in 33 milliseconds.
+
+!ENTRY org.eclipse.core.resources 4 75 2025-10-16 12:27:32.427
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 com.infineon.aurix.buildsystem 4 75 2025-10-16 12:27:32.428
+!MESSAGE Errors running builder 'Project Booster' on project 'combine'.
+!STACK 0
+java.lang.IllegalArgumentException: Path must include project and resource name: /combine
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:68)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Workspace.java:2229)
+	at org.eclipse.core.internal.resources.Container.getFile(Container.java:196)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:113)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:1)
+	at org.eclipse.core.internal.resources.AliasManager$LocationMap.matchingResourcesDo(AliasManager.java:213)
+	at org.eclipse.core.internal.resources.AliasManager.internalComputeAliases(AliasManager.java:545)
+	at org.eclipse.core.internal.resources.AliasManager.computeAliases(AliasManager.java:430)
+	at org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.resourceChanged(RefreshLocalAliasVisitor.java:76)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeLastModified(RefreshLocalVisitor.java:264)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:318)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1021)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1004)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:338)
+	at org.eclipse.cdt.core.resources.ResourcesUtil.refreshWorkspaceFiles(ResourcesUtil.java:43)
+	at com.infineon.aurix.buildsystem.build.booster.iLLDAligner.process(iLLDAligner.java:126)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.boost(BoosterBuilder.java:74)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.build(BoosterBuilder.java:58)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-16 12:27:59.073
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 30 milliseconds. (incremental boost)
+
+!ENTRY org.eclipse.core.resources 4 2 2025-10-16 12:27:59.074
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Path must include project and resource name: /combine
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:68)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Workspace.java:2229)
+	at org.eclipse.core.internal.resources.Container.getFile(Container.java:196)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:113)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:1)
+	at org.eclipse.core.internal.resources.AliasManager$LocationMap.matchingResourcesDo(AliasManager.java:213)
+	at org.eclipse.core.internal.resources.AliasManager.internalComputeAliases(AliasManager.java:545)
+	at org.eclipse.core.internal.resources.AliasManager.computeAliases(AliasManager.java:430)
+	at org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.resourceChanged(RefreshLocalAliasVisitor.java:76)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeLastModified(RefreshLocalVisitor.java:264)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:318)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1021)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1004)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:338)
+	at org.eclipse.cdt.core.resources.ResourcesUtil.refreshWorkspaceFiles(ResourcesUtil.java:43)
+	at com.infineon.aurix.buildsystem.build.booster.iLLDAligner.process(iLLDAligner.java:126)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.boost(BoosterBuilder.java:74)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.build(BoosterBuilder.java:58)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-16 12:27:59.124
+!MESSAGE Include paths were discovered in 47 milliseconds.
+
+!ENTRY org.eclipse.core.resources 4 75 2025-10-16 12:28:03.928
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 com.infineon.aurix.buildsystem 4 75 2025-10-16 12:28:03.928
+!MESSAGE Errors running builder 'Project Booster' on project 'combine'.
+!STACK 0
+java.lang.IllegalArgumentException: Path must include project and resource name: /combine
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:68)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Workspace.java:2229)
+	at org.eclipse.core.internal.resources.Container.getFile(Container.java:196)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:113)
+	at org.eclipse.core.internal.resources.AliasManager$FindAliasesDoit.accept(AliasManager.java:1)
+	at org.eclipse.core.internal.resources.AliasManager$LocationMap.matchingResourcesDo(AliasManager.java:213)
+	at org.eclipse.core.internal.resources.AliasManager.internalComputeAliases(AliasManager.java:545)
+	at org.eclipse.core.internal.resources.AliasManager.computeAliases(AliasManager.java:430)
+	at org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.resourceChanged(RefreshLocalAliasVisitor.java:76)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeLastModified(RefreshLocalVisitor.java:264)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:318)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1021)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1004)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:338)
+	at org.eclipse.cdt.core.resources.ResourcesUtil.refreshWorkspaceFiles(ResourcesUtil.java:43)
+	at com.infineon.aurix.buildsystem.build.booster.iLLDAligner.process(iLLDAligner.java:126)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.boost(BoosterBuilder.java:74)
+	at com.infineon.aurix.buildsystem.build.booster.BoosterBuilder.build(BoosterBuilder.java:58)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-16 12:28:14.839
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2612 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-16 12:28:14.918
+!MESSAGE Include paths were discovered in 76 milliseconds.

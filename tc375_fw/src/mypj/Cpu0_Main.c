@@ -30,7 +30,7 @@ void core0_main(void)
     DoIP_Init();
     SOMEIP_Init();
     SOMEIPSD_Init();
-    //SomeIp_Init_100ms_Interrupt();
+    SomeIp_Init_100ms_Interrupt();
 
     volatile int parking_flag = 0;
     while (1)
@@ -41,11 +41,11 @@ void core0_main(void)
         parking_flag = Can_Get_Parking();
         if (parking_flag == 1)
         {
+            SOMEIP_SendEvent(2); //parking start
             Parking_On();
-
             parking_flag = 0;
             Can_Let_Parking(parking_flag);
+            SOMEIP_SendEvent(2); //parking end
         }
     } /* End of while */
-
 }

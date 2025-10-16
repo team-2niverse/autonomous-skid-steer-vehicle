@@ -5,10 +5,12 @@
 #include "Gpt12.h"
 /* Subscriber structure */
 typedef struct {
-    ip_addr_t addr;
-    uint16 port;
+    uint16 group_id; //서비스그룹id
+    uint8 isSub; //구독여부
+    uint8 timer; //timer event 여부
+    ip_addr_t addr; //목적지 ip
+    uint16 port; //목적지 port
 } Subscriber;
-
 //서비스랑 메서드의 정의는 있는데 누가(ip,port)하는지는 몰라서 SOMEIP-SD로 찾는것.
 //service 설계할때 arxml에서 전체 서비스 리스트랑, 메서드 리스트 있어서 알고 있다고 가정.
 typedef struct {
@@ -24,7 +26,7 @@ void SOMEIPSD_SendOfferService(unsigned char ip_a, unsigned char ip_b, unsigned 
 void SOMEIPSD_SendSubEvtGrpAck(unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d);
 
 /* Functions for Event/Notification */
-void SOMEIP_SendEvent(void);
+void SOMEIP_SendEvent(int i);
 void SOMEIP_Periodic_Event_Trigger(void);
 void SomeIp_Init_100ms_Interrupt(void); // 타이머 초기화 함수 선언 추가
 
