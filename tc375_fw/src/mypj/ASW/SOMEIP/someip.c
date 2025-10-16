@@ -12,16 +12,20 @@
 #include "Isr_Priority.h"
 #include "Encoder.h"
 
+
+
 #define MAX_SUBSCRIBERS 10
 #define SOMEIP_EVENT_ID_COUNTER 0x0200
 static volatile int sp_rpm0 = 0;
 static volatile int sp_rpm1 = 0;
 
 
-static volatile int aeb = 0;
-static volatile int parking = 0;
-static volatile int turn_left = 0;
-static volatile int turn_right = 0;
+//static volatile int aeb = 0;
+//static volatile int parking = 0;
+
+
+static volatile int sp_turn_left = 0;
+static volatile int sp_turn_right = 0;
 
 //static volatile unsigned int dist_front = 0;
 
@@ -414,34 +418,34 @@ void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_a
                         }
                         else if (MethodID == 0x0101U) {  //set Car mode & LED on/off
                             if (savebuf[18]) {
-                                if (aeb == 1)
+                                if (Can_Get_Aeb() == 1)
                                     return;
-                                if (parking)
-                                    parking = 0;
+                                if (Can_Get_Parking())
+                                    Can_Set_Parking(0);
                                 else
-                                    parking = 1;
+                                    Can_Set_Parking(1);
                             }
                             if (savebuf[16]) {
-                                if (turn_left)
+                                if (sp_turn_left)
                                 {
-                                    turn_left = 0;
+                                    sp_turn_left = 0;
                                     Led_Set(1, 0);
                                 }
                                 else
                                 {
-                                    turn_left = 1;
+                                    sp_turn_left = 1;
                                     Led_Set(1, 1);
                                 }
                             }
                             if (savebuf[21]) {
-                                if (turn_right)
+                                if (sp_turn_right)
                                 {
-                                    turn_right = 0;
+                                    sp_turn_right = 0;
                                     Led_Set(2, 0);
                                 }
                                 else
                                 {
-                                    turn_right = 1;
+                                    sp_turn_right = 1;
                                     Led_Set(2, 1);
                                 }
                             }

@@ -54,6 +54,8 @@ void Can_Send_Msg(unsigned int id, const uint8 *txData, int len);
 int Can_Recv_Msg(unsigned int *id, uint8 *rxData, int *len);
 
 int Can_Get_Aeb(void);
+void Can_Set_Parking(int i);
+
 int Can_Get_Parking(void);
 int Can_Get_Turn_Left(void);
 int Can_Get_Turn_Right(void);

@@ -22,6 +22,9 @@ int Can_Get_Aeb(void) {
 int Can_Get_Parking(void) {
     return parking;
 }
+void Can_Set_Parking(int i){
+    parking = i;
+}
 
 int Can_Get_Turn_Left(void) {
     return turn_left;
