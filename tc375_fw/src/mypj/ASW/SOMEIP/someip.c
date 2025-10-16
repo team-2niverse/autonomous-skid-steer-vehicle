@@ -404,7 +404,7 @@ void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_a
                             Motor_Set_Right(savebuf[18], savebuf[19]);
                         }
                         else if (MethodID == 0x0101U) {  //set Car mode & LED on/off
-                            if (savebuf[18]) {
+                            if (savebuf[16]) {
                                 if (Can_Get_Aeb() == 1)
                                     return;
                                 if (Can_Get_Parking())
@@ -412,7 +412,7 @@ void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_a
                                 else
                                     Can_Set_Parking(1);
                             }
-                            if (savebuf[16]) {
+                            if (savebuf[17]) {
                                 if (sp_turn_left)
                                 {
                                     sp_turn_left = 0;
@@ -424,7 +424,7 @@ void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_a
                                     Led_Set(1, 1);
                                 }
                             }
-                            if (savebuf[21]) {
+                            if (savebuf[18]) {
                                 if (sp_turn_right)
                                 {
                                     sp_turn_right = 0;
@@ -480,8 +480,8 @@ void SOMEIP_SendEvent(int i)
     uint8 event_msg[] = {
         0x20, 0x00,                         // Service ID: 0x0100
         (uint8)(SOMEIP_EVENT_ID_COUNTER >> 8), (uint8)(SOMEIP_EVENT_ID_COUNTER & 0xFF), // Method ID (Event): 0x8001
-        0x00, 0x00, 0x00, 0x0C,             // Length: 12 bytes (8 header + 4 payload)
-        0x00, 0x00, 0x00, 0x00,             // Request ID: Not relevant for notifications
+        0x00, 0x00, 0x00, 0x10,             // Length: 16 bytes (8 header + 8 payload)
+        0x00, 0x00, 0x00, 0x01,             // Request ID: Not relevant for notifications
         0x01,                               // Protocol Version
         0x01,                               // Interface Version
         0x02,                               // Message Type: NOTIFICATION
@@ -531,7 +531,6 @@ void SOMEIP_SendEvent(int i)
     }
     else if (i == 3){ //Get Distances
         int front_dist = Can_Get_Front_Dist();
-        event_msg[14] = 0x80;
         event_msg[16] = (uint8)(front_dist & 0xFF);
         event_msg[17] = (uint8)((front_dist >> 8) & 0xFF);
         event_msg[18] = (uint8)((front_dist >> 16) & 0xFF);
