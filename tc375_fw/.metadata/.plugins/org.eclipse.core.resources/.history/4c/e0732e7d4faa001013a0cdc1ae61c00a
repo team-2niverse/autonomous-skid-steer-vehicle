@@ -1,6 +1,7 @@
 #include "someip.h"
 
 
+
 #define MAX_SUBSCRIBERS 10
 #define SOMEIP_EVENT_ID_COUNTER 0x0200
 static volatile int sp_rpm0 = 0;

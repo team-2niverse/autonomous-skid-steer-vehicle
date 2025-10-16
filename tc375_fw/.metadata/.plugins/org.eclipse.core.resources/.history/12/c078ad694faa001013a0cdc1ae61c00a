@@ -1,22 +1,8 @@
 #ifndef _SOMEIP_RAW_UDP_SOMEIP_H_
 #define _SOMEIP_RAW_UDP_SOMEIP_H_
 
-#include "lwip/opt.h"
-#include "lwip/debug.h"
-#include "lwip/stats.h"
-#include "lwip/udp.h"
-#include "Led.h"
-#include "Asclin.h"
-#include "Configuration.h"
-#include <string.h>
-#include "Ifx_Lwip.h"
-#include "Gpt12.h"
-#include "Isr_Priority.h"
-#include "Encoder.h"
-
 #include "lwip/ip_addr.h" // ip_addr_t 타입을 위해 추가
 #include "Gpt12.h"
-
 /* Subscriber structure */
 typedef struct {
     uint16 group_id; //서비스그룹id

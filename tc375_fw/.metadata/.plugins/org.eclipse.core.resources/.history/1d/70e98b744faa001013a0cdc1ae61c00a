@@ -1,4 +1,17 @@
 #include "someip.h"
+#include "lwip/opt.h"
+#include "lwip/debug.h"
+#include "lwip/stats.h"
+#include "lwip/udp.h"
+#include "Led.h"
+#include "Asclin.h"
+#include "Configuration.h"
+#include <string.h>
+#include "Ifx_Lwip.h"
+#include "Gpt12.h"
+#include "Isr_Priority.h"
+#include "Encoder.h"
+
 
 
 #define MAX_SUBSCRIBERS 10

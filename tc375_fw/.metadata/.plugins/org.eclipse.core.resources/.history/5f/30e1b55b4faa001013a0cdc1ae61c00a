@@ -202,9 +202,8 @@ void Can_Aeb_On(void)
     aeb = 1;
     Led_Set(1, 1);
     Led_Set(2, 1);
-//    uint8 data = 1;
-//    Can_Send_Msg(0x300, &data, 1);
-    SOMEIP_SendEvent(1);
+    uint8 data = 1;
+    Can_Send_Msg(0x300, &data, 1);
 }
 
 void Can_Aeb_Off(void)
@@ -212,9 +211,8 @@ void Can_Aeb_Off(void)
     aeb = 0;
     Led_Set(1, 0);
     Led_Set(2, 0);
-//    uint8 data = 0;
-//    Can_Send_Msg(0x300, &data, 1);
-    SOMEIP_SendEvent(1);
+    uint8 data = 0;
+    Can_Send_Msg(0x300, &data, 1);
 }
 
 void Can_Rx_Isr_Handler (void)
