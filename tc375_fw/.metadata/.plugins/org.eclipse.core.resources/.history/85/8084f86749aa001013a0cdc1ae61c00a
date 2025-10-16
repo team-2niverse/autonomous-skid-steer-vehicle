@@ -38,19 +38,6 @@ uint64 Encoder_Get_IntCnt_Left(void) {
 uint64 Encoder_Get_IntCnt_Right(void) {
     return intCnt_enc1;
 }
-void Encoder_Set_IntCnt_Right(int i){
-    intCnt_enc1 = i;
-}
-void Encoder_Set_IntCnt_Left(int i){
-    intCnt_enc0 = i;
-}
-void Encoder_Set_DiffSum_Right(int i){
-    diffSum_enc1 = i;
-}
-void Encoder_Set_DiffSum_Left(int i){
-    diffSum_enc0 = i;
-}
-
 
 void Encoder_Init(void) {
     MODULE_P15.IOCR4.B.PC4 = 0x02;  // input: EICR0.EXIS0.0

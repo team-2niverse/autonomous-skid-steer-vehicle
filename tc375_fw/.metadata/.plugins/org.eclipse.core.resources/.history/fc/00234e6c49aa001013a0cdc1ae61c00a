@@ -425,7 +425,8 @@ void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_a
                                 if (turn_left)
                                 {
                                     turn_left = 0;
-                                    Led_Set(1, 0);
+//                                    Led_Set(1, 0);
+                                    Led_Toggle(1);
                                 }
                                 else
                                 {
@@ -525,12 +526,6 @@ void SOMEIP_SendEvent(int i)
         event_msg[21] = (uint8)((sp_rpm1 >> 8) & 0xFF);
         event_msg[22] = (uint8)((sp_rpm1 >> 16) & 0xFF);
         event_msg[23] = (uint8)((sp_rpm1 >> 24) & 0xFF);
-
-        Encoder_Set_IntCnt_Right(0);
-        Encoder_Set_IntCnt_Left(0);
-        Encoder_Set_DiffSum_Right(0);
-        Encoder_Set_DiffSum_Left(0);
-
     }
     else if (i == 1 && subscribed.isSub > 0){ // Get AEB mode
         event_msg[14] = Can_Get_Aeb();
