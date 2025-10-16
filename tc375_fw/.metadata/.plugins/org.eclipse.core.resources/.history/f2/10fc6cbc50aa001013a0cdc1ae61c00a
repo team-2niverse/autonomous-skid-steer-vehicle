@@ -117,7 +117,7 @@ void Encoder_Init(void) {
 
 IFX_INTERRUPT(Encoder_Enc0_Isr_Handler, 0, ISR_PRIORITY_ERU0);
 IFX_INTERRUPT(Encoder_Enc1_Isr_Handler, 0, ISR_PRIORITY_ERU1);
-//IFX_INTERRUPT(Encoder_Stm1_Isr_Handler, 0, ISR_PRIORITY_STM1);
+IFX_INTERRUPT(Encoder_Stm1_Isr_Handler, 0, ISR_PRIORITY_STM1);
 
 void Encoder_Enc0_Isr_Handler(void) {
     uint64 now = Stm_Get_Time_Us();

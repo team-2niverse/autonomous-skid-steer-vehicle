@@ -1,15 +1,9 @@
 Build started...
-14:21:21 **** Incremental Build of configuration TriCore Debug (TASKING) for project combine ****
+14:27:02 **** Incremental Build of configuration TriCore Debug (TASKING) for project combine ****
 amk -j12 all 
 TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
-cctc -cs --dep-file="ASW/SOMEIP/someip.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2_debug/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "ASW/SOMEIP/someip.src" "../ASW/SOMEIP/someip.c"
-ctc W514: ["C:\Infineon\AURIX-Studio-1.10.16\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" 103/1] empty declaration
-ctc W560: ["../ASW/SOMEIP/someip.c" 494/18] possible truncation at implicit conversion to type "signed int"
-ctc W560: ["../ASW/SOMEIP/someip.c" 501/18] possible truncation at implicit conversion to type "signed int"
-ctc W560: ["../ASW/SOMEIP/someip.c" 527/23] possible truncation at implicit conversion to type "unsigned char"
-ctc W560: ["../ASW/SOMEIP/someip.c" 530/23] possible truncation at implicit conversion to type "unsigned char"
-0 errors, 5 warnings
-astc -Og -Os --no-warnings= --error-limit=42 -o  "ASW/SOMEIP/someip.o" "ASW/SOMEIP/someip.src"
+cctc -cs --dep-file="BSW/ENCODER/Encoder.d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/USER/Desktop/workspace_all/project2_debug/autonomous-skid-steer-vehicle/tc375_fw/src/mypj/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "BSW/ENCODER/Encoder.src" "../BSW/ENCODER/Encoder.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "BSW/ENCODER/Encoder.o" "BSW/ENCODER/Encoder.src"
 Building target: combine.elf
 Invoking: TASKING Linker
 cctc -f .combine.elf.opt
@@ -18,7 +12,7 @@ Finished building target: combine.elf
 Invoking: Print Size
 elfsize  "combine.elf"
 Total sizes:
-ROM: 0x2186f (137327) = code: 0x19e30 (106032) + romdata: 0x7a3f (31295)
+ROM: 0x21403 (136195) = code: 0x199d4 (104916) + romdata: 0x7a2f (31279)
 RAM: 0x1d4cd (120013) = data + bss
 Finished building: combine.siz
  
