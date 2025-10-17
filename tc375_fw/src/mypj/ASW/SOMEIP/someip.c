@@ -2,7 +2,7 @@
 
 
 #define MAX_SUBSCRIBERS 10
-#define SOMEIP_EVENT_ID_COUNTER 0x0200
+#define SOMEIP_EVENT_ID_COUNTER 0x8200
 static volatile int sp_rpm0 = 0;
 static volatile int sp_rpm1 = 0;
 
@@ -28,10 +28,10 @@ Service serviceList[] = {
 };
 
 Subscriber g_subscribers[4] = {
-    { .group_id = 0x0200, .isSub = 0, .timer = 1},
-    { .group_id = 0x0201, .isSub = 0, .timer = 0},
-    { .group_id = 0x0202, .isSub = 0, .timer = 0},
-    { .group_id = 0x0203, .isSub = 0, .timer = 1}
+    { .group_id = 0x8200, .isSub = 0, .timer = 1},
+    { .group_id = 0x8201, .isSub = 0, .timer = 0},
+    { .group_id = 0x8202, .isSub = 0, .timer = 0},
+    { .group_id = 0x8203, .isSub = 0, .timer = 1}
 };
 //int g_subscriber_count = 0;
 
@@ -236,21 +236,25 @@ void SOMEIPSD_SendOfferService(unsigned char ip_a, unsigned char ip_b, unsigned 
 
 }
 
-void SOMEIPSD_SendSubEvtGrpAck(unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d)
+void SOMEIPSD_SendSubEvtGrpAck(uint8* MSG_SubEvtGrpAck, unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d)
 {
 	err_t err;
-	uint8 MSG_SubEvtGrpAck[] = {
-			0xFF, 0xFF, 0x81, 0x00, /* SOMEIP Header */
-			0x00, 0x00, 0x00, 0x28, /* SOMEIP Header Length */
-			0x00, 0x00, 0x00, 0x01, /* Request ID */
-			0x01, 0x01, 0x02, 0x00, /* SOMEIP version information */
-			0xC0, 0x00, 0x00, 0x00, /* SOMEIP-SD Flags*/
-			0x00, 0x00, 0x00, 0x10,
-			0x07, 0x00, 0x00, 0x00,
-			0x01, 0x00, 0x00, 0x01,
-			0x00, 0x00, 0x00, 0x0A,
-			0x00, 0x00, 0x00, 0x01
-	};
+//	uint8 MSG_SubEvtGrpAck[] = {
+//			0xFF, 0xFF, 0x81, 0x00, /* SOMEIP Header */
+//			0x00, 0x00, 0x00, 0x28, /* SOMEIP Header Length */
+//			0x00, 0x00, 0x00, 0x01, /* Request ID */
+//			0x01, 0x01, 0x02, 0x00, /* SOMEIP version information */
+//
+//			0xC0, 0x00, 0x00, 0x10, /* SOMEIP-SD Flags*/
+//			0x00, 0x00, 0x00, 0x10,
+//			0x07, 0x00, 0x00, 0x10,
+//
+//			0x01, 0x00, 0x00, 0x01,
+//			0x00, 0x00, 0x00, 0x0A,
+//			0x00, 0x00, 0x00, 0x01
+//	};
+	MSG_SubEvtGrpAck[24] = 0x07;
+
 
 	struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(MSG_SubEvtGrpAck), PBUF_RAM);
 	if (txbuf != NULL) {
@@ -306,7 +310,28 @@ void SOMEIPSD_Recv_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, con
 			else if (SD_Type == 0x06) {//06
 				// First, send acknowledgment
 //			    SOMEIPSD_SendOfferService(a, b, c, d);
-				SOMEIPSD_SendSubEvtGrpAck(a, b, c, d);
+			    uint8 MSG_SubEvtGrpAck[p->len];
+			    memcpy(MSG_SubEvtGrpAck, p->payload, p->len);
+			    MSG_SubEvtGrpAck[24] = 0x07;
+                struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(MSG_SubEvtGrpAck), PBUF_RAM);
+                if (txbuf != NULL) {
+                    udp_connect(g_SOMEIPSD_PCB, IP_ADDR_BROADCAST, PN_SERVICE_1);
+                    pbuf_take(txbuf, MSG_SubEvtGrpAck, sizeof(MSG_SubEvtGrpAck));
+
+                    ip_addr_t destination_ip;
+                    IP4_ADDR(&destination_ip, a, b, c, d);
+                    u16_t destination_port = PN_SOMEIPSD;
+                    err_t err = udp_sendto(g_SOMEIPSD_PCB, txbuf, &destination_ip, destination_port);
+                    if (err == ERR_OK) {
+                        my_printf("Send SOMEIP-SD ack Message !! \n");
+                    } else {
+                        my_printf("udp_sendto fail!!\n");
+                    }
+                    udp_disconnect(g_SOMEIPSD_PCB);
+                    pbuf_free(txbuf);
+                } else {
+                    my_printf("Failed to allocate memory for UDP packet buffer.\n");
+                }
 
 				// Then, add client to subscriber list
                 for (int i = 0; i < 4; i++)
@@ -350,7 +375,7 @@ void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_a
             my_printf("Received Service Request\n");
             /* Message Type: Request */
 
-            MessageType = rxBuf[14];
+            MessageType = savebuf[14];
             if (MessageType == 0x01) //0x00 ; need response, 0x01 ; no response
             {
                 /* Check Service ID & Method ID */
@@ -478,8 +503,8 @@ void SOMEIP_SendEvent(int i)
 
     // 1. Construct SOME/IP Event Message
     uint8 event_msg[] = {
-        0x20, 0x00,                         // Service ID: 0x0100
-        (uint8)(SOMEIP_EVENT_ID_COUNTER >> 8), (uint8)(SOMEIP_EVENT_ID_COUNTER & 0xFF), // Method ID (Event): 0x8001
+        0x02, 0x00,                         // Service ID: 0x0100
+        (uint8)(subscribed.group_id >> 8), (uint8)(subscribed.group_id & 0xFF), // Method ID (Event): 0x8001
         0x00, 0x00, 0x00, 0x10,             // Length: 16 bytes (8 header + 8 payload)
         0x00, 0x00, 0x00, 0x01,             // Request ID: Not relevant for notifications
         0x01,                               // Protocol Version
@@ -507,7 +532,6 @@ void SOMEIP_SendEvent(int i)
             sp_rpm1 = 0;
         /* Send Response Message */
 //        err_t err;
-        event_msg[14] = 0x80;
         event_msg[16] = (uint8)(sp_rpm0 & 0xFF);
         event_msg[17] = (uint8)((sp_rpm0 >> 8) & 0xFF);
         event_msg[18] = (uint8)((sp_rpm0 >> 16) & 0xFF);
@@ -544,7 +568,7 @@ void SOMEIP_SendEvent(int i)
         udp_sendto(g_SOMEIPSERVICE_PCB, txbuf, &g_subscribers[i].addr, g_subscribers[i].port);
         pbuf_free(txbuf);
     }
-    my_printf("Sent event notification with id : %u\n", subscribed.group_id);
+    my_printf("Sent event notification with id : %x\n", subscribed.group_id);
 }
 
 void SOMEIP_Periodic_Event_Trigger(void)

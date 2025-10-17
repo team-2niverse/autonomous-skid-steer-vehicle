@@ -37,7 +37,7 @@ typedef struct {
 void SOMEIPSD_Init(void);
 void SOMEIP_Init(void);
 void SOMEIPSD_SendOfferService(unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d, int i);
-void SOMEIPSD_SendSubEvtGrpAck(unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d);
+void SOMEIPSD_SendSubEvtGrpAck(uint8* MSG_SubEvtGrpAck, unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d);
 
 /* Functions for Event/Notification */
 void SOMEIP_SendEvent(int i);

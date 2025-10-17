@@ -21,6 +21,6 @@ void System_Init(void){
     Led_Init();
     Gpt12_Gpt1_Init();
     Gpt12_Gpt2_Init();
-    //Motor_Init();
+    Motor_Init();
     Ultrasonic_Init();
 }
