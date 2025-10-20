@@ -5549,3 +5549,123 @@ java.lang.IllegalArgumentException: Path must include project and resource name:
 
 !ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-17 11:17:11.730
 !MESSAGE Include paths were discovered in 42 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-20 17:21:38.862
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2763 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-20 17:21:38.926
+!MESSAGE Include paths were discovered in 62 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-20 17:22:03.520
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2035 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-20 17:22:03.601
+!MESSAGE Include paths were discovered in 78 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-20 22:42:22.962
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2146 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-20 22:42:23.000
+!MESSAGE Include paths were discovered in 36 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:09:24.850
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2246 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:09:24.891
+!MESSAGE Include paths were discovered in 39 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:10:02.763
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2256 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:10:02.805
+!MESSAGE Include paths were discovered in 39 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:10:37.657
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2080 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:10:37.700
+!MESSAGE Include paths were discovered in 39 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:16:14.672
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2019 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:16:14.704
+!MESSAGE Include paths were discovered in 30 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:17:36.688
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1938 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:17:36.723
+!MESSAGE Include paths were discovered in 33 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:57:38.004
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2090 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:57:38.039
+!MESSAGE Include paths were discovered in 34 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:57:55.853
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2315 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 00:57:55.898
+!MESSAGE Include paths were discovered in 44 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:30:49.085
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2360 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:30:49.133
+!MESSAGE Include paths were discovered in 46 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:30:59.106
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:30:59.107
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:30:59.164
+!MESSAGE Include paths were discovered in 54 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:35:54.164
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:35:54.166
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:35:54.213
+!MESSAGE Include paths were discovered in 44 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:50:32.291
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1907 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:50:32.324
+!MESSAGE Include paths were discovered in 31 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:51:47.242
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2704 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:51:47.333
+!MESSAGE Include paths were discovered in 88 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:58:32.958
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2072 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 01:58:33.034
+!MESSAGE Include paths were discovered in 73 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 02:12:32.121
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2185 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 02:12:32.169
+!MESSAGE Include paths were discovered in 46 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 02:14:24.259
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 2000 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 02:14:24.313
+!MESSAGE Include paths were discovered in 50 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 02:29:54.143
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project combine boosted in 1494 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-10-21 02:29:54.176
+!MESSAGE Include paths were discovered in 32 milliseconds.

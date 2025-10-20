@@ -1,0 +1,570 @@
+#include "someip.h"
+
+
+#define MAX_SUBSCRIBERS 10
+#define SOMEIP_EVENT_ID_COUNTER 0x8200
+static volatile int sp_rpm0 = 0;
+static volatile int sp_rpm1 = 0;
+
+
+//static volatile int aeb = 0;
+//static volatile int parking = 0;
+
+
+static volatile int sp_turn_left = 0;
+static volatile int sp_turn_right = 0;
+
+//static volatile unsigned int dist_front = 0;
+
+Service serviceList[] = {
+    {//SetValue
+        .service_id = 0x0100,
+        .port = 0x7725  //htons(30501),
+    },
+    {//GetStatus
+        .service_id = 0x0200,
+        .port = 0x7726  //<< 바이트 순서 바꿔야하는지 체크 htons(30502),
+    }
+};
+
+Subscriber g_subscribers[4] = {
+    { .group_id = 0x8200, .isSub = 0, .timer = 1},
+    { .group_id = 0x8201, .isSub = 0, .timer = 0},
+    { .group_id = 0x8202, .isSub = 0, .timer = 0},
+    { .group_id = 0x8203, .isSub = 0, .timer = 1}
+};
+//int g_subscriber_count = 0;
+
+volatile boolean g_100ms_event_flag = FALSE;
+
+/* This interrupt is raised by the GPT12 T5 timer every 1ms */
+IFX_INTERRUPT(SomeIp_Gpt2_T5_Isr_Handler, 0, ISR_PRIORITY_GPT2T5_TIMER);
+void SomeIp_Gpt2_T5_Isr_Handler(void)
+{
+    static volatile uint32 counter = 0;
+    counter++;
+
+    if (counter == 100)
+    {
+        counter = 0;
+        g_100ms_event_flag = TRUE;
+    }
+}
+
+void SomeIp_Init_100ms_Interrupt(void)
+{
+    /* Start the GPT12 timer (T5) for the 100ms event tick (based on 1ms hardware tick) */
+    Gpt12_Run_Gpt2_T5();
+}
+
+
+#if LWIP_UDP
+
+struct udp_pcb *g_SOMEIPSD_PCB;
+struct udp_pcb *g_SOMEIPSERVICE_PCB;
+
+void SOMEIPSD_Recv_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_addr_t *addr, uint16 port);
+void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_addr_t *addr, uint16 port);
+//err_t multicast_udp_bind_and_listen(void);
+
+void SOMEIPSD_Init(void)
+{
+    /* SOME/IP-SD Init */
+    g_SOMEIPSD_PCB = udp_new();
+    if (g_SOMEIPSD_PCB)
+    {
+        /* bind pcb to the 30490 port */
+        /* Using IP_ADDR_ANY allow the pcb to be used by any local interface */
+        err_t err = udp_bind(g_SOMEIPSD_PCB, IP_ADDR_ANY, PN_SOMEIPSD);
+        delay_ms(100);
+        if (err == ERR_OK) {
+            /* Set a receive callback for the pcb */
+            udp_recv(g_SOMEIPSD_PCB, (void *)SOMEIPSD_Recv_Callback, NULL);
+            my_printf("SOME/IP-SD PCB Initialized\n");
+        } else {
+            udp_remove(g_SOMEIPSD_PCB);
+            my_printf("SOME/IP-SD PCB init failed\n");
+        }
+    }
+}
+
+void SOMEIP_Init(void)
+{
+    /* SOME/IP Service1 Init */
+    g_SOMEIPSERVICE_PCB = udp_new();
+    if (g_SOMEIPSERVICE_PCB)
+    {
+        /* bind pcb to the 5000 port */
+        /* Using IP_ADDR_ANY allow the pcb to be used by any local interface */
+        err_t err = udp_bind(g_SOMEIPSERVICE_PCB, IP_ADDR_ANY, PN_SERVICE_1);
+        if (err == ERR_OK) {
+            /* Set a receive callback for the pcb */
+            udp_recv(g_SOMEIPSERVICE_PCB, (void *)SOMEIP_Callback, NULL);
+            my_printf("SOME/IP Service PCB Initialized!\n");
+        } else {
+            udp_remove(g_SOMEIPSERVICE_PCB);
+            my_printf("SOME/IP Service PCB init failed!\n");
+        }
+    }
+}
+
+uint32 g_InteriorLightControlCount = 0;
+void SrvWelcomeLightInteriorControl(uint8 LightOnOff)
+{
+	/* LED on if LightOnOff=1 otherwise, LED off */
+    Led_Toggle(1);
+}
+
+uint32 g_ExteriorLightControlCount = 0;
+void SrvWelcomeLightExteriorControl(uint8 LightOnOff)
+{
+	/* LED on if LightOnOff=1 otherwise, LED off */
+    Led_Toggle(2);
+	g_ExteriorLightControlCount++;
+}
+
+
+void SOMEIPSD_SendOfferService(unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d, int i)
+{
+	err_t err;
+	uint8 MSG_OfferService[] = {
+			0xFF, 0xFF, 0x81, 0x00, /* SOMEIP Header */
+			0x00, 0x00, 0x00, 0x30, /* SOMEIP Header Length */ //이 필드 밑으로 모든 바이트 수
+			0x00, 0x00, 0x00, 0x01, /* Request ID */
+			0x01, 0x01, 0x02, 0x00, /* SOMEIP version information */
+
+			0xC0, 0x00, 0x00, 0x00, /* SOMEIP-SD Flags*/
+
+			0x00, 0x00, 0x00, 0x10, /*length of entries array */
+
+			0x01, 0x00, 0x00, 0x10, //type opt1 opt2 #opt1 #opt2
+			0x01, 0x00, 0x00, 0x01, //service entry field (Service ID | Instance ID)
+			0x00, 0x00, 0x00, 0x0A, //service entry field
+			0x00, 0x00, 0x00, 0x01, //service entry field
+			0x00, 0x00, 0x00, 0x0C, /* Options Array */
+			0x00, 0x09, 0x04, 0x00,  //length , type, reserved
+			0xC0, 0xA8, 0x02, 0x14, /* IP */
+			0x00, 0x11, 0x77, 0x2D /* Port */
+	};
+	//set service id
+	MSG_OfferService[28] = (uint8)(serviceList[i].service_id >> 8) & 0xff;
+    MSG_OfferService[29] = (uint8)serviceList[i].service_id & 0xff;
+
+	//	set ip address from lwip
+	uint8 *ip = Ifx_Lwip_getIpAddrPtr();
+	MSG_OfferService[48] = ip[0];
+	MSG_OfferService[49] = ip[1];
+	MSG_OfferService[50] = ip[2];
+	MSG_OfferService[51] = ip[3];
+
+	// set supported protocol for SOME/IP
+	MSG_OfferService[53] = 0x11;  // UDP only
+
+//    MSG_OfferService[54] = (uint8)(PN_SERVICE_1 >> 8) & 0xff;
+//    MSG_OfferService[55] = (uint8)PN_SERVICE_1 & 0xff;
+    MSG_OfferService[54] = (uint8)(serviceList[i].port >> 8) & 0xff;
+    MSG_OfferService[55] = (uint8)serviceList[i].port & 0xff;
+
+	struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(MSG_OfferService), PBUF_RAM);
+    if (txbuf == NULL) {
+        my_printf("Failed to allocate memory for UDP packet buffer.\n");
+        return;
+    }
+
+//    udp_connect(g_SOMEIPSD_PCB, IP_ADDR_BROADCAST, PN_SOMEIPSD);
+    pbuf_take(txbuf, MSG_OfferService, sizeof(MSG_OfferService));
+//		pbuf_take(txbuf, (const void *)&MSG_OfferService, sizeof(MSG_OfferService));
+    ip_addr_t destination_ip;
+    IP4_ADDR(&destination_ip, ip_a, ip_b, ip_c, ip_d);
+    u16_t destination_port = PN_SOMEIPSD;
+
+    err = udp_sendto(g_SOMEIPSD_PCB, txbuf, &destination_ip, destination_port);
+    if (err == ERR_OK) {
+        my_printf("Send Offer Service Success !! \n");
+    } else {
+        my_printf("Send Offer Service Failed !! \n");
+    }
+    udp_disconnect(g_SOMEIPSD_PCB);
+
+    pbuf_free(txbuf);
+
+}
+
+void SOMEIPSD_SendSubEvtGrpAck(uint8* MSG_SubEvtGrpAck, unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d)
+{
+	err_t err;
+//	uint8 MSG_SubEvtGrpAck[] = {
+//			0xFF, 0xFF, 0x81, 0x00, /* SOMEIP Header */
+//			0x00, 0x00, 0x00, 0x30, /* SOMEIP Header Length */ //28->30하면 정상동작할듯?
+//			0x00, 0x00, 0x00, 0x01, /* Request ID */
+//			0x01, 0x01, 0x02, 0x00, /* SOMEIP version information */
+//
+//			0xC0, 0x00, 0x00, 0x10, /* SOMEIP-SD Flags*/
+//			0x00, 0x00, 0x00, 0x10,
+//			0x07, 0x00, 0x00, 0x10,
+//
+//			0x01, 0x00, 0x00, 0x01,
+//			0x00, 0x00, 0x00, 0x0A,
+//			0x00, 0x00, 0x00, 0x01
+//	};
+	MSG_SubEvtGrpAck[24] = 0x07;
+
+
+	struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(MSG_SubEvtGrpAck), PBUF_RAM);
+	if (txbuf != NULL) {
+		//udp_connect(g_SOMEIPSD_PCB, IP_ADDR_BROADCAST, PN_SOMEIPSD);
+		pbuf_take(txbuf, MSG_SubEvtGrpAck, sizeof(MSG_SubEvtGrpAck));
+
+        ip_addr_t destination_ip;
+        IP4_ADDR(&destination_ip, ip_a, ip_b, ip_c, ip_d);
+		u16_t destination_port = PN_SOMEIPSD;
+
+		err = udp_sendto(g_SOMEIPSD_PCB, txbuf, &destination_ip, destination_port);
+		if (err == ERR_OK) {
+			my_printf("Send SOMEIP Test Message !! \n");
+		} else {
+			my_printf("udp_sendto fail!!\n");
+		}
+		udp_disconnect(g_SOMEIPSD_PCB);
+
+		pbuf_free(txbuf);
+	} else {
+		my_printf(
+				"Failed to allocate memory for UDP packet buffer.\n");
+	}
+}
+
+void SOMEIPSD_Recv_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_addr_t *addr, uint16 port)
+{
+	volatile uint16 ServiceID = 0;
+	volatile uint16 MethodID = 0;
+	volatile uint8 SD_Type = 0;
+
+	if (p != NULL)
+	{
+		ServiceID = *(uint16*)(p->payload);
+		MethodID  = (*(((uint8*)p->payload) + 2) << 8) +
+                    *(((uint8*)p->payload) + 3);
+
+		unsigned char a = (unsigned char)(addr->addr);
+		unsigned char b = (unsigned char)(addr->addr >> 8);
+		unsigned char c = (unsigned char)(addr->addr >> 16);
+        unsigned char d = (unsigned char)(addr->addr >> 24);
+
+		/* Received SOME/IP-SD */
+		if (ServiceID == 0xFFFFU && MethodID == 0x8100U)
+		{
+		    SD_Type = *(((uint8*)p->payload) + 24);
+			if (SD_Type == 0x00) { //findservice => offerservice
+//			    SOMEIPSD_SendOfferService(a, b, c, d, 0);
+			    for (int i=0 ; i < sizeof(serviceList) / sizeof(serviceList[0]); i++){
+	                SOMEIPSD_SendOfferService(a, b, c, d, i);
+			    }
+			}
+			else if (SD_Type == 0x06) {//06
+			    ip_addr_t event_ip;
+
+			    uint32 ip_bytes_net_order;
+                pbuf_copy_partial(p, &ip_bytes_net_order, 4, 48);
+			    IP4_ADDR(&event_ip,
+			                 (uint8)((ip_bytes_net_order >> 24) & 0xFF), // 1st octet
+			                 (uint8)((ip_bytes_net_order >> 16) & 0xFF), // 2nd octet
+			                 (uint8)((ip_bytes_net_order >> 8) & 0xFF),  // 3rd octet
+			                 (uint8)(ip_bytes_net_order & 0xFF)          // 4th octet
+			                );
+
+			    uint16 event_port  = (*(((uint8*)p->payload) + 54) << 8) +
+		                    *(((uint8*)p->payload) + 55);
+
+				// First, send acknowledgment
+//			    SOMEIPSD_SendOfferService(a, b, c, d);
+			    uint8 MSG_SubEvtGrpAck[p->len];
+			    memcpy(MSG_SubEvtGrpAck, p->payload, p->len);
+			    MSG_SubEvtGrpAck[24] = 0x07;
+                struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(MSG_SubEvtGrpAck), PBUF_RAM);
+                if (txbuf != NULL) {
+                    udp_connect(g_SOMEIPSD_PCB, IP_ADDR_BROADCAST, PN_SERVICE_1);
+                    pbuf_take(txbuf, MSG_SubEvtGrpAck, sizeof(MSG_SubEvtGrpAck));
+
+                    ip_addr_t destination_ip;
+                    IP4_ADDR(&destination_ip, a, b, c, d);
+                    u16_t destination_port = PN_SOMEIPSD;
+                    err_t err = udp_sendto(g_SOMEIPSD_PCB, txbuf, &destination_ip, destination_port);
+                    if (err == ERR_OK) {
+                        my_printf("Send SOMEIP-SD ack Message !! \n");
+                    } else {
+                        my_printf("udp_sendto fail!!\n");
+                    }
+                    udp_disconnect(g_SOMEIPSD_PCB);
+                    pbuf_free(txbuf);
+                } else {
+                    my_printf("Failed to allocate memory for UDP packet buffer.\n");
+                }
+
+				// Then, add client to subscriber list
+                for (int i = 0; i < 4; i++)
+                {
+                    if (g_subscribers[i].group_id == ((*(((uint8*)p->payload) + 38) << 8) + *(((uint8*)p->payload) + 39))
+                            && g_subscribers[i].isSub == 0 )
+                    {
+                        g_subscribers[i].isSub = 1;
+                        g_subscribers[i].addr = event_ip; //*addr;
+                        g_subscribers[i].port = event_port; //port;
+                        my_printf("New subscriber added. groud_id : %d\n", g_subscribers[i].group_id);
+                    }
+                }
+			}
+		}
+		pbuf_free(p);
+	}
+}
+
+void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_addr_t *addr, uint16 port)
+{
+    uint16 ServiceID = 0;
+    uint16 MethodID = 0;
+    uint8 MessageType = 0;
+    if (p != NULL)
+    {
+        uint8 rxBuf[p->len];
+        memcpy(rxBuf, p->payload, p->len);
+        ServiceID = (rxBuf[0] << 8) + rxBuf[1];
+        MethodID = (rxBuf[2] << 8) + rxBuf[3];
+
+        if (ServiceID != 0x0100U)
+        {
+            my_printf("Requested Unknown Service ID\n");
+        }
+        else
+        {
+            uint8 savebuf[24];
+            memcpy(savebuf, rxBuf, 24);
+
+            //my_printf("Received Service Request\n");
+            /* Message Type: Request */
+
+            MessageType = savebuf[14];
+            if (MessageType == 0x01) //0x00 ; need response, 0x01 ; no response
+            {
+                /* Check Service ID & Method ID */
+                if (ServiceID == 0x0100U)
+                {
+                    if (MethodID == 0x0101U || MethodID == 0x0102U)
+                    {
+                        if (MethodID == 0x0101U) { SrvWelcomeLightInteriorControl(rxBuf[16]); }
+                        else { SrvWelcomeLightExteriorControl(rxBuf[16]); }
+
+                        /* Send Response Message */
+                        err_t err;
+                        rxBuf[14] = 0x80;
+                        struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(rxBuf), PBUF_RAM);
+                        if (txbuf != NULL) {
+                            udp_connect(upcb, addr, port);
+                            pbuf_take(txbuf, rxBuf, sizeof(rxBuf));
+                            ip_addr_t destination_ip;
+                            unsigned char a = (unsigned char)(addr->addr);
+                            unsigned char b = (unsigned char)(addr->addr >> 8);
+                            unsigned char c = (unsigned char)(addr->addr >> 16);
+                            unsigned char d = (unsigned char)(addr->addr >> 24);
+
+                            IP4_ADDR(&destination_ip, a, b, c, d);
+//                            u16_t destination_port = PN_SERVICE_1;
+                            err = udp_sendto(upcb, txbuf, &destination_ip, port);
+                            if (err == ERR_OK) {
+                                my_printf("Send SOME/IP Service Response!! \n");
+                            } else {
+                                my_printf("Send SOME/IP Service Response Failed!! \n");
+                            }
+                            udp_disconnect(upcb);
+                            pbuf_free(txbuf);
+                        } else {
+                            my_printf("Failed to allocate memory for UDP packet buffer.\n");
+                        }
+                    }
+                }
+            }
+            if (MessageType == 0x00) //0x00 ; need response, 0x01 ; no response
+            {
+                /* Check Service ID & Method ID */
+                if (ServiceID == 0x0100U)
+                {
+                    if (MethodID == 0x0100U || MethodID == 0x0101U)
+                    {
+
+
+                        if (MethodID == 0x0100U) { //Set motor pwm
+                            Motor_Set_Left(savebuf[16], savebuf[17]);
+                            Motor_Set_Right(savebuf[18], savebuf[19]);
+                        }
+                        else if (MethodID == 0x0101U) {  //set Car mode & LED on/off
+                            if (savebuf[16]) {
+                                if (Can_Get_Aeb() == 1)
+                                    return;
+                                if (Can_Get_Parking())
+                                    Can_Set_Parking(0);
+                                else
+                                    Can_Set_Parking(1);
+                            }
+                            if (savebuf[17]) {
+                                if (sp_turn_left)
+                                {
+                                    sp_turn_left = 0;
+                                    Led_Set(1, 0);
+                                }
+                                else
+                                {
+                                    sp_turn_left = 1;
+                                    Led_Set(1, 1);
+                                }
+                            }
+                            if (savebuf[18]) {
+                                if (sp_turn_right)
+                                {
+                                    sp_turn_right = 0;
+                                    Led_Set(2, 0);
+                                }
+                                else
+                                {
+                                    sp_turn_right = 1;
+                                    Led_Set(2, 1);
+                                }
+                            }
+                        }
+
+                        /* Send Response Message */
+                        err_t err;
+                        rxBuf[14] = 0x80;
+                        struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(rxBuf), PBUF_RAM);
+                        if (txbuf != NULL) {
+                            udp_connect(upcb, addr, port);
+                            pbuf_take(txbuf, rxBuf, sizeof(rxBuf));
+                            ip_addr_t destination_ip;
+                            unsigned char a = (unsigned char)(addr->addr);
+                            unsigned char b = (unsigned char)(addr->addr >> 8);
+                            unsigned char c = (unsigned char)(addr->addr >> 16);
+                            unsigned char d = (unsigned char)(addr->addr >> 24);
+
+                            IP4_ADDR(&destination_ip, a, b, c, d);
+//                            u16_t destination_port = PN_SERVICE_1;
+                            err = udp_sendto(upcb, txbuf, &destination_ip, port);
+//                            if (err == ERR_OK) {
+//                                my_printf("Send SOME/IP Service Response!! \n");
+//                            } else {
+//                                my_printf("Send SOME/IP Service Response Failed!! \n");
+//                            }
+                            udp_disconnect(upcb);
+                            pbuf_free(txbuf);
+                        } else {
+                            my_printf("Failed to allocate memory for UDP packet buffer.\n");
+                        }
+                    }
+                }
+            }
+        }
+        pbuf_free(p);
+    }
+}
+
+void SOMEIP_SendEvent(int i)
+{
+    Subscriber subscribed = g_subscribers[i];
+
+    // 1. Construct SOME/IP Event Message
+    uint8 event_msg[] = {
+        0x02, 0x00,                         // Service ID: 0x0100
+        (uint8)(subscribed.group_id >> 8), (uint8)(subscribed.group_id & 0xFF), // Method ID (Event): 0x8001
+        0x00, 0x00, 0x00, 0x10,             // Length: 16 bytes (8 header + 8 payload)
+        0x00, 0x00, 0x00, 0x01,             // Request ID: Not relevant for notifications
+        0x01,                               // Protocol Version
+        0x01,                               // Interface Version
+        0x02,                               // Message Type: NOTIFICATION
+        0x00,                               // Return Code
+        0x00, 0x00, 0x00, 0x00,             //payload
+        0x00, 0x00, 0x00, 0x00              //payload (8bytes)
+    };
+
+    if (i == 0 ){ //Get Motors RPM
+
+        /* Send Response Message */
+//        err_t err;
+        event_msg[16] = (uint8)(sp_rpm0 & 0xFF);
+        event_msg[17] = (uint8)((sp_rpm0 >> 8) & 0xFF);
+        event_msg[18] = (uint8)((sp_rpm0 >> 16) & 0xFF);
+        event_msg[19] = (uint8)((sp_rpm0 >> 24) & 0xFF);
+        event_msg[20] = (uint8)(sp_rpm1 & 0xFF);
+        event_msg[21] = (uint8)((sp_rpm1 >> 8) & 0xFF);
+        event_msg[22] = (uint8)((sp_rpm1 >> 16) & 0xFF);
+        event_msg[23] = (uint8)((sp_rpm1 >> 24) & 0xFF);
+
+        Encoder_Set_IntCnt_Right(0);
+        Encoder_Set_IntCnt_Left(0);
+        Encoder_Set_DiffSum_Right(0);
+        Encoder_Set_DiffSum_Left(0);
+
+    }
+    else if (i == 1 && subscribed.isSub > 0){ // Get AEB mode
+        event_msg[14] = Can_Get_Aeb();
+    }
+    else if (i == 2 && subscribed.isSub > 0){ // Get parking mode
+        event_msg[14] = Can_Get_Parking();
+    }
+    else if (i == 3){ //Get Distances
+        int front_dist = Can_Get_Front_Dist();
+        event_msg[16] = (uint8)(front_dist & 0xFF);
+        event_msg[17] = (uint8)((front_dist >> 8) & 0xFF);
+        event_msg[18] = (uint8)((front_dist >> 16) & 0xFF);
+        event_msg[19] = (uint8)((front_dist >> 24) & 0xFF);
+    }
+    // 2. Send to subscribed event
+    struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(event_msg), PBUF_RAM);
+    if (txbuf != NULL)
+    {
+        pbuf_take(txbuf, event_msg, sizeof(event_msg));
+        udp_sendto(g_SOMEIPSERVICE_PCB, txbuf, &g_subscribers[i].addr, g_subscribers[i].port);
+        pbuf_free(txbuf);
+    }
+    my_printf("Sent event notification with id : %x\n", subscribed.group_id);
+}
+
+void Calc_RPM(void){
+    int cnt0 = Encoder_Get_IntCnt_Left();
+    if ( cnt0 > 0) {
+            sp_rpm0 = 1500000/(int)(Encoder_Get_Diffsum_Left()/cnt0);
+            if (!MODULE_P10.OUT.B.P1)
+                sp_rpm0 *= -1;
+    } else
+        sp_rpm0 = 0;
+    int cnt1 = Encoder_Get_IntCnt_Right();
+    if (cnt1 > 0) {
+        sp_rpm1 = 1500000/(int)(Encoder_Get_DiffSum_Right()/cnt1);
+        if (!MODULE_P10.OUT.B.P2)
+            sp_rpm1 *= -1;
+    } else
+        sp_rpm1 = 0;
+}
+
+
+int SOMEIP_CheckSubscribers(int i){
+    if (g_subscribers[i].isSub > 0 && g_subscribers[i].timer > 0)
+        return 1;
+    else
+        return 0;
+}
+
+//void SOMEIP_Periodic_Event_Trigger(void)
+//{
+//    if (g_100ms_event_flag == TRUE)
+//    {
+//        g_100ms_event_flag = FALSE; // 플래그 리셋
+//
+//        //calc rpm
+//        Calc_RPM();
+//        for (int i=0 ; i < 4 ; i++ )
+//        {
+//            if (g_subscribers[i].isSub > 0 && g_subscribers[i].timer > 0)
+//                SOMEIP_SendEvent(i);
+//        }
+//    }
+//}
+
+#endif /* LWIP_UDP */

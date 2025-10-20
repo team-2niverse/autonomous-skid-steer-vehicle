@@ -71,6 +71,7 @@
 #define IFX_LWIP_DHCP_COARSE_PERIOD (DHCP_COARSE_TIMER_MSECS / IFX_LWIP_TIMER_TICK_MS)
 #define IFX_LWIP_DHCP_FINE_PERIOD   (DHCP_FINE_TIMER_MSECS / IFX_LWIP_TIMER_TICK_MS)
 #define IFX_LWIP_LINK_PERIOD        (100U / IFX_LWIP_TIMER_TICK_MS) /* 100 ms */
+#define IFX_LWIP_EVENT_PERIOD        (100U / IFX_LWIP_TIMER_TICK_MS) /* 100 ms */
 
 #define IFX_LWIP_FLAG_ARP           (1U << 1)
 #define IFX_LWIP_FLAG_TCP_FAST      (1U << 2)
@@ -78,7 +79,7 @@
 #define IFX_LWIP_FLAG_LINK          (1U << 4)
 #define IFX_LWIP_FLAG_DHCP_COARSE   (1U << 5)
 #define IFX_LWIP_FLAG_DHCP_FINE     (1U << 6)
-
+#define IFX_LWIP_FLAG_EVENT         (1U << 7)
 /******************************************************************************/
 /*--------------------------------Enumerations--------------------------------*/
 /******************************************************************************/
@@ -260,9 +261,13 @@ void Ifx_Lwip_onTimerTick(void)
 
     Ifx_Lwip_timerIncr(lwip->timer.link, IFX_LWIP_LINK_PERIOD, IFX_LWIP_FLAG_LINK);
 
+    Ifx_Lwip_timerIncr(lwip->timer.event, IFX_LWIP_EVENT_PERIOD, IFX_LWIP_FLAG_EVENT); // IFX_LWIP_LINK_PERIOD = 100ms 그대로 재사용
+
     lwip->timerFlags = timerFlags;
 }
 
+int SOMEIP_CheckSubscribers(int i); //전방선언
+void SOMEIP_SendEvent(int i);      //전방선언
 
 /** \brief Polling the timer event flags */
 void Ifx_Lwip_pollTimerFlags(void)
@@ -343,6 +348,18 @@ void Ifx_Lwip_pollTimerFlags(void)
     		netif_set_link_up(&g_Lwip.netif);
     	}
     }
+    if (timerFlags & IFX_LWIP_FLAG_EVENT)
+    {
+        /* only if we have a link we will check the arp */
+        if (g_Lwip.netif.flags & NETIF_FLAG_LINK_UP){
+            for (int i=0 ; i < 4 ; i++ )
+            {
+                if (SOMEIP_CheckSubscribers(i))
+                    SOMEIP_SendEvent(i);
+            }
+        }
+    }
+
 }
 
 

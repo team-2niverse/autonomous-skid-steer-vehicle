@@ -40,6 +40,8 @@ void echoSend (tcpPcb *tPcb, TcpEchoSession *es);                   /* Send func
 void echoUnpack (tcpPcb *tPcb, TcpEchoSession *es);                 /* Unpack function dequeues data from the package buffer and copies it in the session storage   */
 void echoClose (tcpPcb *tPcb, TcpEchoSession *es);                  /* Close function closes a TCP connection and deallocates session resources                     */
 
+int hex_end = 0;
+
 void TcpEchoInit(void)
 {
     g_tcpEchoPcb = tcp_new(); /* Create a new TCP protocol control block */
@@ -95,6 +97,26 @@ err_t echoAccept(void *arg, tcpPcb *newPcb, err_t err)
     }
     return retErr;                                                      /* Return result                                                                            */
 }
+//void hex_process(TcpEchoSession *es){
+//    char *start_ptr = strchr(es->storage, ':');
+//    if (!start_ptr) break;
+//
+//    char *next_start = strchr(start_ptr + 1, ':');
+//    if (!next_start) break;
+//
+//    int line_len = next_start - start_ptr;
+//    char hex_line[line_len];
+//    strncpy(hex_line, start_ptr, line_len);
+//
+//    // 처리 예: 플래시 프로그래밍 함수 호출 등
+//    printf("Parsed HEX line: %s\n", hex_line);
+//
+//    // 처리한 데이터 버퍼에서 제거
+//    int remain_len = es->nextFreeStoragePos - (next_start - es->storage);
+//    memmove(es->storage, next_start, remain_len);
+//    es->nextFreeStoragePos = remain_len;
+//    es->storage[es->nextFreeStoragePos] = '\0';
+//}
 
 /* Recv callback: it is called every time data is received through the TCP connection */
 err_t echoRecv (void *arg, tcpPcb *tpcb, pBuf *p, err_t err)
@@ -111,7 +133,8 @@ err_t echoRecv (void *arg, tcpPcb *tpcb, pBuf *p, err_t err)
         }
         else                                                            /* If the session does have leftover unprocessed data...                                    */
         {
-            echoUnpack(tpcb, es);                                       /* ... process unprocessed data ...                                                         */
+            echoUnpack(tpcb, es);                                       /* ... process unprocessed data ...
+                                                                   */
             echoSend(tpcb, es);                                         /* ... and send processed data.                                                             */
         }
         retErr = ERR_OK;                                                /* Signal a successful outcome                                                              */
@@ -131,6 +154,7 @@ err_t echoRecv (void *arg, tcpPcb *tpcb, pBuf *p, err_t err)
         es->state = ES_RECEIVING;                                       /* ... change its state to RECEIVING.                                                       */
         es->p = p;                                                      /* Set the unprocessed data buffer of the session to the received one                       */
         echoUnpack(tpcb, es);                                           /* Perform a first incoming data processing                                                 */
+        //hex_process(es); //
         echoSend(tpcb, es);                                             /* Send the first echo to remote client                                                     */
         retErr = ERR_OK;                                                /* Signal a successful outcome                                                              */
     }
@@ -158,6 +182,10 @@ err_t echoRecv (void *arg, tcpPcb *tpcb, pBuf *p, err_t err)
     }
     return retErr;                                                      /* Return result                                                                            */
 }
+
+
+
+
 
 /* Error callback: it is called if a fatal error has already occurred on the connection */
 void echoError(void *arg, err_t err)

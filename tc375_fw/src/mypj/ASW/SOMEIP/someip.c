@@ -62,77 +62,51 @@ void SomeIp_Init_100ms_Interrupt(void)
 
 struct udp_pcb *g_SOMEIPSD_PCB;
 struct udp_pcb *g_SOMEIPSERVICE_PCB;
+struct udp_pcb *g_SOMEIPEVENT_PCB;
 
 void SOMEIPSD_Recv_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_addr_t *addr, uint16 port);
 void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_addr_t *addr, uint16 port);
-err_t multicast_udp_bind_and_listen(void);
+//err_t multicast_udp_bind_and_listen(void);
 
 void SOMEIPSD_Init(void)
 {
     /* SOME/IP-SD Init */
-//    g_SOMEIPSD_PCB = udp_new();
-//    if (g_SOMEIPSD_PCB)
-//    {
-//        /* bind pcb to the 30490 port */
-//        /* Using IP_ADDR_ANY allow the pcb to be used by any local interface */
-//        err_t err = udp_bind(g_SOMEIPSD_PCB, IP_ADDR_ANY, PN_SOMEIPSD);
-//        delay_ms(100);
-//        if (err == ERR_OK) {
-//            /* Set a receive callback for the pcb */
-//            udp_recv(g_SOMEIPSD_PCB, (void *)SOMEIPSD_Recv_Callback, NULL);
-//            my_printf("SOME/IP-SD PCB Initialized\n");
-//        } else {
-//            udp_remove(g_SOMEIPSD_PCB);
-//            my_printf("SOME/IP-SD PCB init failed\n");
-//        }
-//    }
-
-    err_t errupd = multicast_udp_bind_and_listen();
-    if (errupd == ERR_OK){
-        my_printf("Multicast upd input ready! \n");
-    }
-    else{
-        my_printf("Multicast upd input not ready! \n");
-    }
-}
-
-
-
-//static struct udp_pcb *g_multicast_pcb;
-//void multicast_recv_callback(void *arg, struct udp_pcb *pcb, struct pbuf *p,
-//                             const ip_addr_t *addr, u16_t port);
-err_t multicast_udp_bind_and_listen(void)
-{
-    err_t err;
-
-    // 1. 새로운 UDP PCB 생성
     g_SOMEIPSD_PCB = udp_new();
-
-    if (g_SOMEIPSD_PCB == NULL)
+    if (g_SOMEIPSD_PCB)
     {
-        my_printf("Error: Could not create UDP PCB.\n");
-        return ERR_MEM; // 메모리 할당 실패
+        /* bind pcb to the 30490 port */
+        /* Using IP_ADDR_ANY allow the pcb to be used by any local interface */
+        err_t err = udp_bind(g_SOMEIPSD_PCB, IP_ADDR_ANY, PN_SOMEIPSD);
+        delay_ms(100);
+        if (err == ERR_OK) {
+            /* Set a receive callback for the pcb */
+            udp_recv(g_SOMEIPSD_PCB, (void *)SOMEIPSD_Recv_Callback, NULL);
+            my_printf("SOME/IP-SD PCB Initialized\n");
+        } else {
+            udp_remove(g_SOMEIPSD_PCB);
+            my_printf("SOME/IP-SD PCB init failed\n");
+        }
     }
 
-    // 2. PCB를 특정 포트에 바인딩 (IP_ADDR_ANY 사용)
-    // IP_ADDR_ANY는 모든 로컬 인터페이스에서 패킷을 받겠다는 의미입니다.
-    err = udp_bind(g_SOMEIPSD_PCB, IP_ADDR_ANY, PN_SOMEIPSD);
 
-    if (err != ERR_OK)
+    g_SOMEIPEVENT_PCB = udp_new();
+    if (g_SOMEIPEVENT_PCB)
     {
-        my_printf("Error: Could not bind UDP PCB to port %d. Error code: %d\n", PN_SOMEIPSD, err);
-        udp_remove(g_SOMEIPSD_PCB);
-        return err;
+        /* bind pcb to the 30490 port */
+        /* Using IP_ADDR_ANY allow the pcb to be used by any local interface */
+        err_t err = udp_bind(g_SOMEIPEVENT_PCB, IP_ADDR_ANY, PN_EVENT);
+        delay_ms(100);
+        if (err == ERR_OK) {
+            /* Set a receive callback for the pcb */
+//            udp_recv(g_SOMEIPEVENT_PCB, (void *)SOMEIPSD_Recv_Callback, NULL);
+            my_printf("SOME/IP Event PCB Initialized\n");
+        } else {
+            udp_remove(g_SOMEIPEVENT_PCB);
+            my_printf("SOME/IP Event PCB init failed\n");
+        }
     }
 
-    // 3. 수신 콜백 함수 등록
-    // 이 포트로 UDP 패킷이 들어오면 multicast_recv_callback 함수가 호출됩니다.
-    udp_recv(g_SOMEIPSD_PCB, SOMEIPSD_Recv_Callback, NULL);
-
-    my_printf("UDP Multicast Listener started on port %d.\n", PN_SOMEIPSD);
-    return ERR_OK;
 }
-
 
 void SOMEIP_Init(void)
 {
@@ -241,7 +215,7 @@ void SOMEIPSD_SendSubEvtGrpAck(uint8* MSG_SubEvtGrpAck, unsigned char ip_a, unsi
 	err_t err;
 //	uint8 MSG_SubEvtGrpAck[] = {
 //			0xFF, 0xFF, 0x81, 0x00, /* SOMEIP Header */
-//			0x00, 0x00, 0x00, 0x28, /* SOMEIP Header Length */
+//			0x00, 0x00, 0x00, 0x30, /* SOMEIP Header Length */ //28->30하면 정상동작할듯?
 //			0x00, 0x00, 0x00, 0x01, /* Request ID */
 //			0x01, 0x01, 0x02, 0x00, /* SOMEIP version information */
 //
@@ -258,7 +232,7 @@ void SOMEIPSD_SendSubEvtGrpAck(uint8* MSG_SubEvtGrpAck, unsigned char ip_a, unsi
 
 	struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(MSG_SubEvtGrpAck), PBUF_RAM);
 	if (txbuf != NULL) {
-		udp_connect(g_SOMEIPSD_PCB, IP_ADDR_BROADCAST, PN_SERVICE_1);
+		//udp_connect(g_SOMEIPSD_PCB, IP_ADDR_BROADCAST, PN_SOMEIPSD);
 		pbuf_take(txbuf, MSG_SubEvtGrpAck, sizeof(MSG_SubEvtGrpAck));
 
         ip_addr_t destination_ip;
@@ -308,6 +282,20 @@ void SOMEIPSD_Recv_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, con
 			    }
 			}
 			else if (SD_Type == 0x06) {//06
+			    ip_addr_t event_ip;
+
+			    uint32 ip_bytes_net_order;
+                pbuf_copy_partial(p, &ip_bytes_net_order, 4, 48);
+			    IP4_ADDR(&event_ip,
+			                 (uint8)((ip_bytes_net_order >> 0) & 0xFF), // 1st octet
+			                 (uint8)((ip_bytes_net_order >> 8) & 0xFF), // 2nd octet
+			                 (uint8)((ip_bytes_net_order >> 16) & 0xFF),  // 3rd octet
+			                 (uint8)((ip_bytes_net_order >> 24) & 0xFF)      // 4th octet
+			                );
+
+			    uint16 event_port  = (*(((uint8*)p->payload) + 54) << 8) +
+		                    *(((uint8*)p->payload) + 55);
+
 				// First, send acknowledgment
 //			    SOMEIPSD_SendOfferService(a, b, c, d);
 			    uint8 MSG_SubEvtGrpAck[p->len];
@@ -315,7 +303,7 @@ void SOMEIPSD_Recv_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, con
 			    MSG_SubEvtGrpAck[24] = 0x07;
                 struct pbuf *txbuf = pbuf_alloc(PBUF_TRANSPORT, sizeof(MSG_SubEvtGrpAck), PBUF_RAM);
                 if (txbuf != NULL) {
-                    udp_connect(g_SOMEIPSD_PCB, IP_ADDR_BROADCAST, PN_SERVICE_1);
+//                    udp_connect(g_SOMEIPSD_PCB, IP_ADDR_BROADCAST, PN_SERVICE_1);
                     pbuf_take(txbuf, MSG_SubEvtGrpAck, sizeof(MSG_SubEvtGrpAck));
 
                     ip_addr_t destination_ip;
@@ -340,8 +328,8 @@ void SOMEIPSD_Recv_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, con
                             && g_subscribers[i].isSub == 0 )
                     {
                         g_subscribers[i].isSub = 1;
-                        g_subscribers[i].addr = *addr;
-                        g_subscribers[i].port = port;
+                        g_subscribers[i].addr = event_ip; //*addr;
+                        g_subscribers[i].port = event_port; //port;
                         my_printf("New subscriber added. groud_id : %d\n", g_subscribers[i].group_id);
                     }
                 }
@@ -372,7 +360,7 @@ void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_a
             uint8 savebuf[24];
             memcpy(savebuf, rxBuf, 24);
 
-            my_printf("Received Service Request\n");
+            //my_printf("Received Service Request\n");
             /* Message Type: Request */
 
             MessageType = savebuf[14];
@@ -479,11 +467,11 @@ void SOMEIP_Callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_a
                             IP4_ADDR(&destination_ip, a, b, c, d);
 //                            u16_t destination_port = PN_SERVICE_1;
                             err = udp_sendto(upcb, txbuf, &destination_ip, port);
-                            if (err == ERR_OK) {
-                                my_printf("Send SOME/IP Service Response!! \n");
-                            } else {
-                                my_printf("Send SOME/IP Service Response Failed!! \n");
-                            }
+//                            if (err == ERR_OK) {
+//                                my_printf("Send SOME/IP Service Response!! \n");
+//                            } else {
+//                                my_printf("Send SOME/IP Service Response Failed!! \n");
+//                            }
                             udp_disconnect(upcb);
                             pbuf_free(txbuf);
                         } else {
@@ -516,20 +504,7 @@ void SOMEIP_SendEvent(int i)
     };
 
     if (i == 0 ){ //Get Motors RPM
-        int cnt0 = Encoder_Get_IntCnt_Left();
-        if ( cnt0 > 0) {
-                sp_rpm0 = 1500000/(int)(Encoder_Get_Diffsum_Left()/cnt0);
-                if (!MODULE_P10.OUT.B.P1)
-                    sp_rpm0 *= -1;
-        } else
-            sp_rpm0 = 0;
-        int cnt1 = Encoder_Get_IntCnt_Right();
-        if (cnt1 > 0) {
-            sp_rpm1 = 1500000/(int)(Encoder_Get_DiffSum_Right()/cnt1);
-            if (!MODULE_P10.OUT.B.P2)
-                sp_rpm1 *= -1;
-        } else
-            sp_rpm1 = 0;
+
         /* Send Response Message */
 //        err_t err;
         event_msg[16] = (uint8)(sp_rpm0 & 0xFF);
@@ -565,23 +540,52 @@ void SOMEIP_SendEvent(int i)
     if (txbuf != NULL)
     {
         pbuf_take(txbuf, event_msg, sizeof(event_msg));
-        udp_sendto(g_SOMEIPSERVICE_PCB, txbuf, &g_subscribers[i].addr, g_subscribers[i].port);
+//        udp_sendto(g_SOMEIPSERVICE_PCB, txbuf, &g_subscribers[i].addr, g_subscribers[i].port);
+        udp_sendto(g_SOMEIPEVENT_PCB, txbuf, &g_subscribers[i].addr, g_subscribers[i].port);
         pbuf_free(txbuf);
     }
     my_printf("Sent event notification with id : %x\n", subscribed.group_id);
 }
 
-void SOMEIP_Periodic_Event_Trigger(void)
-{
-    if (g_100ms_event_flag == TRUE)
-    {
-        g_100ms_event_flag = FALSE; // 플래그 리셋
-        for (int i=0 ; i < 4 ; i++ )
-        {
-            if (g_subscribers[i].isSub > 0 && g_subscribers[i].timer > 0)
-                SOMEIP_SendEvent(i);
-        }
-    }
+void Calc_RPM(void){
+    int cnt0 = Encoder_Get_IntCnt_Left();
+    if ( cnt0 > 0) {
+            sp_rpm0 = 1500000/(int)(Encoder_Get_Diffsum_Left()/cnt0);
+            if (!MODULE_P10.OUT.B.P1)
+                sp_rpm0 *= -1;
+    } else
+        sp_rpm0 = 0;
+    int cnt1 = Encoder_Get_IntCnt_Right();
+    if (cnt1 > 0) {
+        sp_rpm1 = 1500000/(int)(Encoder_Get_DiffSum_Right()/cnt1);
+        if (!MODULE_P10.OUT.B.P2)
+            sp_rpm1 *= -1;
+    } else
+        sp_rpm1 = 0;
 }
+
+
+int SOMEIP_CheckSubscribers(int i){
+    if (g_subscribers[i].isSub > 0 && g_subscribers[i].timer > 0)
+        return 1;
+    else
+        return 0;
+}
+
+//void SOMEIP_Periodic_Event_Trigger(void)
+//{
+//    if (g_100ms_event_flag == TRUE)
+//    {
+//        g_100ms_event_flag = FALSE; // 플래그 리셋
+//
+//        //calc rpm
+//        Calc_RPM();
+//        for (int i=0 ; i < 4 ; i++ )
+//        {
+//            if (g_subscribers[i].isSub > 0 && g_subscribers[i].timer > 0)
+//                SOMEIP_SendEvent(i);
+//        }
+//    }
+//}
 
 #endif /* LWIP_UDP */

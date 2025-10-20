@@ -201,7 +201,7 @@ void IfxGeth_Eth_configureMacCore(IfxGeth_Eth *geth, IfxGeth_Eth_MacConfig *macC
     IfxGeth_mac_setLoopbackMode(geth->gethSFR, macConfig->loopbackMode);
 
     /* packet Filter Configuration */
-    IfxGeth_mac_setPromiscuousMode(geth->gethSFR, FALSE);
+    IfxGeth_mac_setPromiscuousMode(geth->gethSFR, TRUE);
     IfxGeth_mac_setAllMulticastPassing(geth->gethSFR, TRUE);
 
     /* set MAC Address */

@@ -40,10 +40,12 @@ void SOMEIPSD_SendOfferService(unsigned char ip_a, unsigned char ip_b, unsigned 
 void SOMEIPSD_SendSubEvtGrpAck(uint8* MSG_SubEvtGrpAck, unsigned char ip_a, unsigned char ip_b, unsigned char ip_c, unsigned char ip_d);
 
 /* Functions for Event/Notification */
+void Calc_RPM(void);
+
+int SOMEIP_CheckSubscribers(int i);
 void SOMEIP_SendEvent(int i);
 void SOMEIP_Periodic_Event_Trigger(void);
 void SomeIp_Init_100ms_Interrupt(void); // 타이머 초기화 함수 선언 추가
-
 
 
 extern volatile boolean g_100ms_event_flag; // 10ms 플래그 변수 선언 추가
